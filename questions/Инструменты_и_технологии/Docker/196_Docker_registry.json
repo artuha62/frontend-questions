@@ -1,0 +1,692 @@
+{
+  "category": {
+    "id": 196,
+    "title": "Docker registry",
+    "description": " ",
+    "parentId": 164
+  },
+  "totalQuestions": 8,
+  "downloadedAt": "2026-03-10T10:07:28.361Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1907,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker Registry?\"}]}]}",
+        "title": "Что такое Docker Registry?",
+        "order": 500500,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Registry — это хранилище для Docker-образов. По сути, это «репозиторий для контейнеров», где образы можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохранять, версионировать, скачивать и распространять\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для чего нужен Registry\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы команды могли делиться образами между собой;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы CI/CD мог тянуть образы при деплое;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы хранить версии образов с тегами (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v1\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v1.1\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"latest\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы не собирать образ на каждом сервере вручную.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры Docker Registry\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Название\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где используется\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Hub\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"самый популярный публичный registry\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"GitHub Container Registry\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранение образов внутри GitHub\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"GitLab Container Registry\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для CI/CD внутри GitLab\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"self-hosted Registry\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальное или корпоративное хранилище\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как взаимодействуют\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker push\"},{\"type\":\"text\",\"text\":\" — отправить образ в registry\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull\"},{\"type\":\"text\",\"text\":\" — скачать образ из registry\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Registry — это сервис для хранения и распространения Docker-образов, аналог «GitHub, но для контейнеров». Он нужен, чтобы образы можно было легко доставлять туда, где они будут запускаться.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:27:17.609Z",
+        "updatedAt": "2025-10-22T08:27:17.609Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое none сеть?",
+        "id": 1906,
+        "premium": true,
+        "category": {
+          "id": 195,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker Hub?",
+        "id": 1908,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1908,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker Hub?\"}]}]}",
+        "title": "Что такое Docker Hub?",
+        "order": 500501,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Hub — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"публичный Docker Registry\"},{\"type\":\"text\",\"text\":\", самый популярный и официальный. Он используется для хранения, распространения и загрузки Docker-образов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что позволяет Docker Hub\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранить свои образы (публичные или приватные);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивать чужие готовые образы (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"nginx\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"postgres\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"версионировать образы с помощью тегов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":latest\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":1.2.0\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подключать CI/CD для автоматического \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"text\":\" образов.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичный процесс работы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull nginx         # скачать образ\\ndocker login              # авторизоваться\\ndocker push myrepo/app    # отправить свой образ\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чем полезен\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в большинстве проектов именно оттуда подтягиваются базовые образы;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сокращает время разработки — не нужно всё собирать с нуля;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет легко доставлять образы на сервера и в облако.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" Docker Hub — это главный публичный репозиторий Docker-образов, в котором хранятся как официальные образы, так и образы от сообщества, и который используется по умолчанию клиентом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:27:30.055Z",
+        "updatedAt": "2025-10-22T08:27:30.055Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker Registry?",
+        "id": 1907,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker Repository?",
+        "id": 1909,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1909,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker Repository?\"}]}]}",
+        "title": "Что такое Docker Repository?",
+        "order": 500502,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Repository — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"раздел внутри Docker Registry\"},{\"type\":\"text\",\"text\":\", в котором хранятся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"версии одного и того же образа\"},{\"type\":\"text\",\"text\":\". Каждая версия такого образа имеет свой тег.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если провести аналогию:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Registry\"},{\"type\":\"text\",\"text\":\" — это весь GitHub\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Repository\"},{\"type\":\"text\",\"text\":\" — это конкретный репозиторий на GitHub\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Tags\"},{\"type\":\"text\",\"text\":\" — это версии внутри репозитория\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит на примере\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Docker Hub есть репозиторий:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"library/nginx\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутри него могут быть теги:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"nginx:latest\\nnginx:1.25\\nnginx:alpine\\nnginx:stable\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все эти теги относятся к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одному репозиторию\"},{\"type\":\"text\",\"text\":\", потому что это всё — разные версии одного образа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"nginx\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Команды, которые с ним работают\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull nginx\"},{\"type\":\"text\",\"text\":\" — скачать образ (по умолчанию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"latest\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull nginx:alpine\"},{\"type\":\"text\",\"text\":\" — скачать конкретный тег из репозитория\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker push myrepo/app:1.0\"},{\"type\":\"text\",\"text\":\" — отправить версию образа в свой репозиторий\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker Repository — это хранилище версий одного образа внутри Docker Registry.\"},{\"type\":\"text\",\"text\":\" Registry может содержать много репозиториев, а каждый репозиторий — много тегов образов.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:27:43.617Z",
+        "updatedAt": "2025-10-22T08:27:43.617Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker Hub?",
+        "id": 1908,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает тег (tag) у образа?",
+        "id": 1910,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1910,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает тег (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"tag\"},{\"type\":\"text\",\"text\":\") у образа?\"}]}]}",
+        "title": "Что делает тег (tag) у образа?",
+        "order": 500503,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег у образа — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"указатель на конкретную версию образа внутри репозитория\"},{\"type\":\"text\",\"text\":\". Он помогает отличать одну сборку от другой и выбирать, какую именно версию запускать или скачивать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен тег\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"различать версии (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1.0\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"2.0\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alpine\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dev\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"управлять обновлениями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"однозначно ссылаться на конкретный образ\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull nginx:1.25\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачает конкретную версию, а:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull nginx:latest\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возьмёт версию по умолчанию, помеченную как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"latest\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Важный момент\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"это не копия\"},{\"type\":\"text\",\"text\":\", а просто метка, которая указывает на определённый образ. Один и тот же образ может иметь несколько тегов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" tag — это метка версии Docker-образа, которая позволяет однозначно идентифицировать нужную сборку.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:27:58.278Z",
+        "updatedAt": "2025-10-22T08:27:58.278Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker Repository?",
+        "id": 1909,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как выкачать Docker образ из registry?",
+        "id": 1911,
+        "premium": true,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1911,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как выкачать Docker образ из registry?\"}]}]}",
+        "title": "Как выкачать Docker образ из registry?",
+        "order": 500504,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы выкачать Docker-образ из registry, используется команда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Общий формат:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull <registry>/<repository>:<tag>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Примеры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. С Docker Hub (registry можно не указывать):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull nginx:latest\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Конкретный тег:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker pull nginx:1.25\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Из приватного registry:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker login my-registry.com            # сначала авторизация\\ndocker pull my-registry.com/app/api:2.0\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как убедиться, что образ скачан\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker images\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В списке появится скачанный образ.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" чтобы выкачать образ, используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull\"},{\"type\":\"text\",\"text\":\", указывая репозиторий и тег. После этого образ можно запускать через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker run\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:28:11.174Z",
+        "updatedAt": "2025-11-10T13:18:12.465Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает тег (tag) у образа?",
+        "id": 1910,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “immutable tag”?",
+        "id": 1912,
+        "premium": true,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1912,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “immutable tag”?\"}]}]}",
+        "title": "Что означает “immutable tag”?",
+        "order": 500505,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Immutable tag” — это тег образа, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нельзя изменить после публикации\"},{\"type\":\"text\",\"text\":\". Если тег помечен как immutable, его нельзя перезаписать новой версией образа — только создать другой тег.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем это делают\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы избежать ситуации, когда один и тот же тег указывает на разные версии образа;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы деплой всегда был предсказуемым;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v1.0\"},{\"type\":\"text\",\"text\":\" сегодня и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v1.0\"},{\"type\":\"text\",\"text\":\" через год — это один и тот же образ, байт-в-байт.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"myapp:1.0\"},{\"type\":\"text\",\"text\":\" — immutable\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"myapp:latest\"},{\"type\":\"text\",\"text\":\" — обычно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mutable\"},{\"type\":\"text\",\"text\":\" (можно перезаписывать)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Коротко\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Immutable tag = версия образа, которую нельзя менять после публикации.\"},{\"type\":\"text\",\"text\":\" Это гарантирует стабильность и повторяемость сборок.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:28:26.021Z",
+        "updatedAt": "2025-11-10T13:18:16.827Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как выкачать Docker образ из registry?",
+        "id": 1911,
+        "premium": true,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем публичный реестр отличается от приватного?",
+        "id": 1913,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1913,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем публичный реестр отличается от приватного?\"}]}]}",
+        "title": "Чем публичный реестр отличается от приватного?",
+        "order": 500506,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница в доступе и назначении:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Публичный реестр\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"образы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступны всем\"},{\"type\":\"text\",\"text\":\" без авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"любой может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скачать (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\" образ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"общих, официальных или open-source образов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пример: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker Hub (public images)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Приватный реестр\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"закрыт\"},{\"type\":\"text\",\"text\":\", нужен логин/пароль или токен\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"образы видят только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"владелец, команда или компания\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутренних сервисов и продакшена\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пример: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker Hub private repo, GitLab Registry, ECR, GCR\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Кратко\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тип\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Доступ\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Публичный\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"всем\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивание готовых образов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приватный\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"по доступу\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранение внутренних образов\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итого: публичный реестр — для открытого распространения образов, приватный — для закрытых корпоративных или личных образов, к которым нужен контроль доступа.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:29:05.650Z",
+        "updatedAt": "2025-10-22T08:29:05.650Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “immutable tag”?",
+        "id": 1912,
+        "premium": true,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какую роль играет registry в ci/cd?",
+        "id": 1914,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1914,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какую роль играет registry в ci/cd?\"}]}]}",
+        "title": "Какую роль играет registry в ci/cd?",
+        "order": 500507,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Registry в CI/CD играет роль \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"центрального хранилища артефактов\"},{\"type\":\"text\",\"text\":\", куда система сборки кладёт Docker-образы и откуда сервер деплоя их забирает.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это работает по этапам\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. CI (сборка)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Pipeline собирает образ приложения (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker build\"},{\"type\":\"text\",\"text\":\") и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"push-ит его в registry\"},{\"type\":\"text\",\"text\":\" под конкретным тегом, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"app:1.3.7\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Registry (хранение)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Образ хранится как версия — безопасно, централизованно и доступно для разных окружений (dev, stage, prod).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. CD (деплой)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сервер или оркестратор (например, Kubernetes или Docker Swarm) делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker pull\"},{\"type\":\"text\",\"text\":\" нужного тега и разворачивает контейнер.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что это даёт\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"версионирование\"},{\"type\":\"text\",\"text\":\" — легко откатиться, выбрав старый тег\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стабильность\"},{\"type\":\"text\",\"text\":\" — одно и то же окружение везде\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"быстрая доставка\"},{\"type\":\"text\",\"text\":\" — деплой без пересборки на серверах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удобная интеграция\"},{\"type\":\"text\",\"text\":\" — registry становится единой точкой, куда смотрят все этапы\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Registry — это связующее звено между сборкой и деплоем в CI/CD. CI загружает туда образ, CD скачивает и разворачивает его, обеспечивая предсказуемые и повторяемые релизы.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 196,
+        "createdAt": "2025-10-22T08:29:22.835Z",
+        "updatedAt": "2025-10-22T08:29:22.835Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 196,
+          "title": "Docker registry",
+          "directions": [
+            {
+              "categoryId": 196,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем публичный реестр отличается от приватного?",
+        "id": 1913,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Git?",
+        "id": 7516,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

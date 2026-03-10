@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 97,
+    "title": "State management (pinia|vuex)",
+    "description": " ",
+    "parentId": 6
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-09T08:22:44.227Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2960,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое менеджер состояния?\"}]}]}",
+        "title": "Что такое менеджер состояния?",
+        "order": 61100,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Менеджер состояния (state manager)\"},{\"type\":\"text\",\"text\":\" — это инструмент или библиотека, которая отвечает за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хранение\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменение\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"синхронизацию общего состояния\"},{\"type\":\"text\",\"text\":\" приложения между разными компонентами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Менеджер состояния — это централизованное хранилище данных, к которому могут обращаться все компоненты, чтобы получать или изменять общее состояние.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В контексте Vue такими менеджерами являются:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vuex\"},{\"type\":\"text\",\"text\":\" (Vue 2 / Vue 3, классический подход)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pinia\"},{\"type\":\"text\",\"text\":\" (рекомендуемый менеджер состояния для Vue 3)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Зачем вообще нужен менеджер состояния?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда приложение маленькое — достаточно props/emits.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Но когда оно растёт, появляются проблемы:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 1. “Props drilling”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Данные приходится проталкивать через много компонентов.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 2. Сложно передавать данные “вверх”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Emit работает только от дочернего к родителю.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 3. Несколько компонентов используют одну и ту же логику\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"авторизация\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корзина товаров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настройки пользователя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фильтры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тема (dark/light)\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 4. Состояние разрознено\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Непонятно, кто и где меняет данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Что даёт менеджер состояния?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. Единое хранилище (central store)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все данные — в одном месте.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. Предсказуемость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все изменения следуют определённым правилам (actions, mutations).\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. Общие данные доступны всем компонентам\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не нужно прокидывать props.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. Легко дебажить\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Есть devtools → видно историю изменений.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. Упрощает крупные приложения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разделение на модули и под-хранилища.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Пример менеджера состояния (Pinia)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { defineStore } from 'pinia'\\n\\nexport const useCounter = defineStore('counter', {\\n  state: () => ({\\n    count: 0\\n  }),\\n  actions: {\\n    increment() {\\n      this.count++\\n    }\\n  }\\n})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const counter = useCounter()\\ncounter.increment()\\nconsole.log(counter.count)\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Пример менеджера состояния (Vuex)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const store = createStore({\\n  state: {\\n    count: 0\\n  },\\n  mutations: {\\n    increment(state) {\\n      state.count++\\n    }\\n  }\\n})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Когда менеджер состояния обязателен?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"авторизация/текущий пользователь\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корзина товаров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"глобальные настройки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"несколько компонентов должны читать/изменять одни и те же данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложная логика фильтров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаты, уведомления, real-time данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"крупные SPA\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:41:01.873Z",
+        "updatedAt": "2025-11-27T19:41:01.873Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое lazy loading маршрутов?",
+        "id": 2959,
+        "premium": false,
+        "category": {
+          "id": 96,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Зачем нужен централизованный стор в SPA?",
+        "id": 2961,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2961,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен централизованный стор в SPA?\"}]}]}",
+        "title": "Зачем нужен централизованный стор в SPA?",
+        "order": 61101,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Централизованный стор (store) нужен в SPA для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хранения и управления общим состоянием приложения в одном месте\"},{\"type\":\"text\",\"text\":\", чтобы избежать хаоса, дублирования и путаницы между компонентами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Без стора данные в большом SPA раскиданы по компонентам.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Со стором — все важные данные находятся в одном источнике правды (single source of truth).\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает приложение предсказуемым и управляемым.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Основные причины, почему SPA \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"нужен\"},{\"type\":\"text\",\"text\":\" централизованный стор\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Один источник правды (Single Source of Truth)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если состояние хранится в сторе — ВСЕ компоненты используют одно и то же значение.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, информация об авторизованном пользователе:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"header показывает имя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"профиль показывает фото\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"меню показывает “Выйти”\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все берут данные из одного места → нет расхождений.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Избегание props drilling\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без стора данные приходилось бы передавать через 5–10 уровней:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"App → Layout → Page → Widget → Button\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор позволяет любому компоненту взять данные напрямую:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const user = useUserStore()\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Общий доступ к важным данным\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если много компонентов должны видеть и менять одно и то же:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корзина товаров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фильтры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настройки (theme, языки)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"статус авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущий пользователь\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор упрощает доступ.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"❌ Без стора возникает бардак:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компоненты напрямую меняют друг друга\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"данные дубируются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"трудно понять, что и где поменялось\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложные цепочки прокидывания\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"баги из-за рассинхронизации состояний\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Предсказуемость и контроль изменений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор имеет правила, как менять состояние:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex: через mutations/actions\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia: через actions\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает поведение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"детерминированным\"},{\"type\":\"text\",\"text\":\", а приложение — проще в отладке.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DevTools показывают историю изменений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue DevTools может показать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие actions были вызваны\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие состояния изменились\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда и откуда\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это критично в больших SPA.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощение логики и архитектуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор позволяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"разделять большое приложение на модули\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переиспользовать бизнес-логику\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создавать изолированные домены (auth, cart, products…)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Когда стор 100% обязателен?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"интернет-магазины (корзина, товары, фильтры)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"приложения с авторизацией (пользователь, токены)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"панель администратора\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"личный кабинет\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SPA с большим количеством взаимодействий и состояний\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"real-time приложения (чат, уведомления)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:41:53.007Z",
+        "updatedAt": "2025-11-27T19:41:53.007Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое менеджер состояния?",
+        "id": 2960,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем отличается локальное состояние компонента от глобального?",
+        "id": 2962,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2962,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем отличается локальное состояние компонента от глобального?\"}]}]}",
+        "title": "Чем отличается локальное состояние компонента от глобального?",
+        "order": 61102,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Коротко:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальное состояние\"},{\"type\":\"text\",\"text\":\" → принадлежит конкретному компоненту, используется только в нём.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глобальное состояние\"},{\"type\":\"text\",\"text\":\" → хранится в центре приложения (store) и используется многими компонентами.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Локальное состояние компонента\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это данные, которые относятся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только к одному компоненту\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"data() {\\n  return {\\n    isOpen: false,\\n    searchQuery: '',\\n    form: { name: '', email: '' }\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Или в Composition API:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const isOpen = ref(false)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 Характеристики локального состояния:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ доступно только в компоненте\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ создано внутри компонента\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ компонент сам управляет им\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ уничтожается при удалении компонента\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ не должно использоваться в других местах\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ не влияет на логику приложения\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Примеры локального состояния:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние модалки (open/close)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текст поиска в инпуте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние формы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выбранная вкладка в текущем компоненте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальные флаги (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loading\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"error\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Глобальное состояние\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это данные, которые нужны \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нескольким компонентам или всему приложению\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Обычно хранятся в менеджере состояния:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Или через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"provide/inject\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Примеры глобального состояния:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущий пользователь\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"токен авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корзина товаров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"список товаров, загруженный один раз\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настройки приложения (тема, язык)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уведомления\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние меню/сайдбара\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"web-socket данные\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 Характеристики глобального состояния:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ доступно всем компонентам\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ хранится вне компонента (store)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ существует всё время жизни приложения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ используется в нескольких модулях\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ изменяется централизованно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ влияет на работу всего приложения\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Примеры отличий (интуитивно)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример 1: корзина товаров\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальное состояние: открыта ли модалка \\\"Корзина\\\"\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глобальное состояние: список товаров в корзине\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример 2: форма профиля\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальное состояние: текущее содержимое инпутов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глобальное состояние: информация о пользователе\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример 3: темы (light/dark)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальное: какая кнопка нажата в компоненте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глобальное: текущая тема приложения\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Как понять, нужно ли состояние размещать в store?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задайте один вопрос:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❓“Состояние нужно более чем одному компоненту?”\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ДА → глобальное состояние (store)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"НЕТ → локальное\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:43:11.824Z",
+        "updatedAt": "2025-11-27T19:43:11.824Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Зачем нужен централизованный стор в SPA?",
+        "id": 2961,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое однонаправленный поток данных?",
+        "id": 2963,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2963,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое однонаправленный поток данных?\"}]}]}",
+        "title": "Что такое однонаправленный поток данных?",
+        "order": 61103,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Однонаправленный поток данных (one-way data flow)\"},{\"type\":\"text\",\"text\":\" — это принцип, по которому данные в приложении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"движутся только в одном направлении\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"родителя → к дочернему компоненту\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Именно так работает Vue (как и React).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Данные передаются сверху вниз через props, а изменения поднимаются снизу вверх через события (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"emit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\").\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компонент-потомок не может напрямую изменить данные родителя.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает архитектуру предсказуемой и контролируемой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как выглядит однонаправленный поток данных во Vue?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Данные идут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сверху вниз\"},{\"type\":\"text\",\"text\":\" → через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"props\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Child :count=\\\"counter\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний получает:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"props: ['count']\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Изменения идут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снизу вверх\"},{\"type\":\"text\",\"text\":\" → через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"emit\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент сообщает родителю:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$emit('increment')\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель обновляет данные:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Child @increment=\\\"counter++\\\" />\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Почему props нельзя изменять в дочернем компоненте?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что это нарушит однонаправленный поток данных.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue специально делает props \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"readonly\"},{\"type\":\"text\",\"text\":\", чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"предотвратить неконтролируемые изменения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"избежать непредсказуемого поведения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сохранить архитектурную чистоту\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужен однонаправленный поток данных?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. Предсказуемость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно легко понять, откуда пришло любое значение.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. Простота отладки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если данные изменились — это произошло в родителе.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. Упрощённая архитектура\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компоненты не могут случайно повлиять друг на друга.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. Избежание “магии” как в двухсторонней привязке\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(в больших приложениях двухсторонняя привязка вызывает путаницу)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. Меньше багов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенно в крупном SPA.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Пример однонаправленного потока (визуально)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"Parent data  →  props  →  Child\\nParent  ←  emit event  ←  Child\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Только так, и никак иначе.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Где нарушается однонаправленный поток?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда ребёнок пытается изменить props\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при использовании глобальных переменных напрямую\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при ненужной двусторонней привязке компонентов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue будет предупреждать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"[Vue warn]: Attempting to mutate prop \\\"count\\\"\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:44:04.605Z",
+        "updatedAt": "2025-11-27T19:44:04.605Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем отличается локальное состояние компонента от глобального?",
+        "id": 2962,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие state manager’ы используются в экосистеме Vue?",
+        "id": 2964,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2964,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие state manager’ы используются в экосистеме Vue?\"}]}]}",
+        "title": "Какие state manager’ы используются в экосистеме Vue?",
+        "order": 61104,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Pinia (рекомендуемый стор для Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Статус:\"},{\"type\":\"text\",\"text\":\" официальный state manager для Vue 3 (замена Vuex)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Разработчик:\"},{\"type\":\"text\",\"text\":\" команда Vue\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работает на Composition API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проще API, чем у Vuex\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет мутаций → только state + getters + actions\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"TypeScript-friendly\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"модульность “из коробки”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поддерживает SSR\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export const useCounter = defineStore('counter', {\\n  state: () => ({ count: 0 }),\\n  actions: {\\n    increment() {\\n      this.count++\\n    }\\n  }\\n})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Vuex (классический стор для Vue 2 и Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Статус:\"},{\"type\":\"text\",\"text\":\" legacy (устаревающий), поддерживается, но НЕ рекомендуется для новых проектов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"строгий однонаправленный поток данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"привычная архитектура (state → getters → mutations → actions)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"богатая экосистема\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"📌 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const store = createStore({\\n  state: { count: 0 },\\n  mutations: {\\n    increment(state) {\\n      state.count++\\n    }\\n  }\\n})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Дополнительные менеджеры состояния, которые встречаются реже\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти библиотеки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не являются официальной частью Vue\"},{\"type\":\"text\",\"text\":\", но иногда используются.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Zustand-like, Recoil-like решения с Composition API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Многие команды используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"composable-функции\"},{\"type\":\"text\",\"text\":\" как лёгкий стор:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export function useUser() {\\n  const user = ref(null)\\n  const setUser = (val) => user.value = val\\n  return { user, setUser }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это простой способ хранения глобального состояния без Vuex/Pinia.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Vue Observable (Vue 2 only, deprecated)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метод:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"Vue.observable({})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использовали для создания простого реактивного стора.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В Vue 3 отсутствует.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Внешние кросс-фреймворковые state manager'ы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иногда используют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Redux\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"MobX\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"XState\"},{\"type\":\"text\",\"text\":\" (машины состояний)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"RxJS\"},{\"type\":\"text\",\"text\":\" (reactive streams)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но в чистых Vue-проектах встречается редко.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В экосистеме Vue используются два основных менеджера состояния: Pinia (основной и рекомендуемый для Vue 3) и Vuex (классический для Vue 2 / устаревающий для Vue 3).\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Также можно использовать state через composables или сторонние библиотеки, но это редкость.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:45:12.146Z",
+        "updatedAt": "2025-11-27T19:45:12.146Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое однонаправленный поток данных?",
+        "id": 2963,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие преимущества даёт центральный стор?",
+        "id": 2965,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2965,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие преимущества даёт центральный стор?\"}]}]}",
+        "title": "Какие преимущества даёт центральный стор?",
+        "order": 61105,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Основные преимущества центрального стора\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Единый источник правды (Single Source of Truth)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все важные данные хранятся в одном месте.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Компоненты не держат копий состояния — они читают и изменяют именно стор.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это исключает несоответствия:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет разных версий состояния\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет расхождения между компонентами\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все смотрят в одно и то же хранилище\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Предсказуемость изменений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В сторах изменения проходят по определённым правилам:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex → через mutations/actions\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia → через actions\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это означает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"невозможно изменить состояние “случайно”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все изменения отслеживаются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легче находить баги\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удобная коммуникация между компонентами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор решает проблему props drilling:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"App → Layout → Page → ComponentA → ComponentB\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вместо сложного проброса данных:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const cart = useCartStore()\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любой компонент (любой глубины вложенности) может получить доступ к состоянию сразу.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глобальное состояние доступно в любом месте приложения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущий пользователь\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"токен авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настройки темы (light/dark)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корзина товаров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущие фильтры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уведомления\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любой компонент в любое время может получить эти данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Улучшенная структура и архитектура приложения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор позволяет разделить приложение на логические модули:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"authStore\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"cartStore\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"productStore\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"settingsStore\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это помогает держать логику организованной.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поддержка DevTools\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue DevTools показывает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменения стора\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие actions вызваны\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие данные изменились\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"историю мутаций (Vuex)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это огромная помощь в отладке.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Централизованная бизнес-логика\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор позволяет вынести:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получение данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"валидацию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обработку ошибок\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кэширование\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в одно место → удобно тестировать и повторно использовать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 8. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SSR (серверный рендеринг) поддержка\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia и Vuex умеют работать в SSR-режиме (Nuxt).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это важно для SEO и скорости загрузки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Дополнительные преимущества (часто спрашивают)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ Легче тестировать\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор — это обычные функции (actions), их очень просто покрывать тестами.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ Состояние “живёт” дольше, чем компоненты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, пользователь переходит между страницами, а корзина остаётся.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ Просто кешировать и переиспользовать данные\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"загружаем список товаров один раз → используем везде\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кэшируем фильтры\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:46:08.021Z",
+        "updatedAt": "2025-11-27T19:46:08.021Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие state manager’ы используются в экосистеме Vue?",
+        "id": 2964,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие недостатки есть у централизованного стора?",
+        "id": 2966,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2966,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие недостатки есть у централизованного стора?\"}]}]}",
+        "title": "Какие недостатки есть у централизованного стора?",
+        "order": 61106,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Основные недостатки централизованного стора\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Усложнение архитектуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда стор появляется, архитектура становится:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложнее\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"многослойнее\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"менее очевидной для новичков\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приходится думать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какое состояние должно быть глобальным?\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какое — локальным?\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"куда вынести бизнес-логику?\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хранилище сделать слишком “толстым”, приложение будет трудно поддерживать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дополнительная когнитивная нагрузка\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разработчику приходится понимать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как работает стор\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как связаны actions, state, getters\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как данные текут через приложение\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для маленьких приложений это — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"избыточная сложность\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глобальность — это риск\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глобальное состояние:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"живёт всё время\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступно всем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"может быть изменено неправильно (если архитектура нарушена)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко \\\"перегружает\\\" память, если забыть очистить данные\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это приводит к:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложноуловимым багам\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"загрязнению состояния\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проблемам при SSR (если стор не сбрасывается)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Трудности с lazy-loading\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если приложение модульное, требуется грамотно подключать store-модули лениво.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Неправильная конфигурация приводит к сложностям с разделением кода.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vuex — это особенно чувствительно.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Избыточность для небольших приложений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для простого SPA можно обойтись:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"props / emits\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"provide/inject\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"composables (Composition API)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стор может быть:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“пушкой по воробьям”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хуже читаем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложнее поддерживать, чем простые решения\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стор можно превратить в “монолитную свалку”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Частая ошибка:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"складывают всё в один модуль\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стор разрастается до сотен строк\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логика смешивается\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложно понять, что за что отвечает\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает приложение менее масштабируемым.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стор усложняет SSR и гидратацию\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенно Vuex:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отдельно создавать стор для каждого запроса\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"избегать глобальных синглтонов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"следить за утечками\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia решает это лучше, но нюансы всё равно есть.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 8. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оверхед по производительности\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждое изменение глобального состояния может вызвать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"множественные перерендеры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каскадные обновления компонентов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При неправильной архитектуре это приводит к лагам.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Дополнительные нюансы\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Труднее тестировать компоненты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если компонент сильно зависит от стора.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Нужно думать о разделении модулей\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иначе стор станет трудно управляемым.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Не всегда очевиден поток данных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенно в больших проектах с размытой границей “глобальное vs локальное”.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:47:33.483Z",
+        "updatedAt": "2025-11-27T19:47:33.483Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие преимущества даёт центральный стор?",
+        "id": 2965,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Pinia?",
+        "id": 2967,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2967,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Pinia?\"}]}]}",
+        "title": "Что такое Pinia?",
+        "order": 61107,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pinia\"},{\"type\":\"text\",\"text\":\" — это современный, официальный менеджер состояния (state manager) для Vue.js.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он является \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рекомендуемым стором для Vue 3\"},{\"type\":\"text\",\"text\":\" и полностью заменяет Vuex.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pinia — это удобное централизованное хранилище данных, построенное на Composition API, с минимальным boilerplate, без мутаций и с отличной типизацией.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Почему Pinia? (ключевые факты для собеседования)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"официально поддерживается командой Vue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проще, чем Vuex\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не использует мутации (только state + getters + actions)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работает на Composition API → компактный и читаемый код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отличная поддержка TypeScript\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"совместим с Vue DevTools\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автоматически оптимизирует reactivity\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"идеально подходит для Vue 3\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Простой пример Pinia стора\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"store/counter.js\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { defineStore } from 'pinia'\\n\\nexport const useCounterStore = defineStore('counter', {\\n  state: () => ({\\n    count: 0,\\n  }),\\n\\n  actions: {\\n    increment() {\\n      this.count++\\n    }\\n  },\\n\\n  getters: {\\n    double: (state) => state.count * 2\\n  }\\n})\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Использование в компоненте:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nimport { useCounterStore } from '@/store/counter'\\n\\nconst counter = useCounterStore()\\n\\ncounter.increment()\\nconsole.log(counter.count)\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Ключевые особенности Pinia\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нет мутаций (в отличие от Vuex)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vuex было так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"state → mutation → action → component\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Pinia — гораздо проще:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"state → action → component\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Мы можем менять state напрямую \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри\"},{\"type\":\"text\",\"text\":\" action:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.count++\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отличная поддержка TypeScript\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia была создана с учётом TS, в отличие от Vuex, который “допиливали”.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Hot Module Replacement (HMR)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Во время разработки можно менять store без перезагрузки страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поддержка плагинов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia можно расширять:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"persist (сохранение в localStorage)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"logging\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"analytics\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"caching\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SSR-френдли\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia корректно работает с:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Nuxt 3\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vite SSR\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"серверным рендерингом\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Когда использовать Pinia?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SPA со сложным состоянием\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"приложения с авторизацией\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"магазины, где есть корзина\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"личные кабинеты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"панели управления (admin)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проекты, где важна типизация\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"real-time приложения\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:48:39.134Z",
+        "updatedAt": "2025-11-27T19:48:39.134Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие недостатки есть у централизованного стора?",
+        "id": 2966,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему Pinia заменяет Vuex в экосистеме Vue3?",
+        "id": 2968,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2968,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему Pinia заменяет Vuex в экосистеме Vue3?\"}]}]}",
+        "title": "Почему Pinia заменяет Vuex в экосистеме Vue3?",
+        "order": 61108,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Ключевые причины, почему Pinia заменяет Vuex\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vuex устарел концептуально (мутации больше не нужны)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex → изменения состояния происходят через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mutations\"},{\"type\":\"text\",\"text\":\", которые:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создают много boilerplate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"плохо работают с TypeScript\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"усложняют читаемость\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заставляют писать одно и то же несколько раз\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"мутаций нет\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Есть только:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"state\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"getters\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"actions\"},{\"type\":\"text\",\"text\":\" (в них можно менять состояние напрямую)\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.count++   // валидно в Pinia\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Код проще\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"➡ Меньше слоёв\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"➡ Меньше файлов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"➡ Быстрее понимать\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Composition API как основа Pinia\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue 3 полностью ориентирован на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Vuex был создан для Vue 2 — до появления Composition API.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"использует Composition API под капотом\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чувствуется как нативная часть Vue 3\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко интегрируется с composable-функциями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшает порог входа\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex плохо вписывался в новую парадигму.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идеальная поддержка TypeScript\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex с TypeScript → боль:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"нужно вручную писать типы для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"state\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"mutations\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"actions\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"context\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Pinia типы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выводятся автоматически\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работают “из коробки”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не требуют кастомных хаков\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делало Pinia предпочтительным выбором для современных проектов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше boilerplate, чище архитектура\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex example:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mutations: {\\n  increment(state) { state.count++ }\\n},\\nactions: {\\n  increment({ commit }) { commit('increment') }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"actions: {\\n  increment() { this.count++ }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница очевидна.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Pinia значительно проще, особенно в больших проектах.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Совместимость и готовность к SSR (Nuxt 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Nuxt 3 выбрал \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pinia как стандартный стор\"},{\"type\":\"text\",\"text\":\", а не Vuex.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это автоматически закрепило его как дефолтный state manager в экосистеме Vue 3.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SSR в Pinia:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легче настраивается\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет проблем с синглтонами\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стор создаётся на каждый запрос корректно\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex → SSR сложнее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HMR: автоматическое обновление стора\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia поддерживает HMR:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стор обновляется без перезагрузки страницы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние сохраняется\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex этого не умел, или требовал ручных патчей.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плагинная система Pinia проще\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагины в Pinia:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"декларативные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компактные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко интегрируемые\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отлично подходит для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"localStorage persistence\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логирования\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"аналитики\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex → сложнее, больше boilerplate.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:49:42.403Z",
+        "updatedAt": "2025-11-27T19:49:42.403Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Pinia?",
+        "id": 2967,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему в Pinia нет мутаций?",
+        "id": 2969,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2969,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему в Pinia нет мутаций?\"}]}]}",
+        "title": "Почему в Pinia нет мутаций?",
+        "order": 61109,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Основные причины, почему в Pinia нет мутаций\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 3 использует реактивность Composition API — мутации стали лишними\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vuex мутации нужны были для того, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживать, кто изменил состояние\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обеспечить предсказуемые обновления\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"регистрировать изменения для DevTools\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в Vue 3 вся реактивность видна из коробки\"},{\"type\":\"text\",\"text\":\", и изменения состояния автоматически отслеживаются.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому необходимость в отдельном слое — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mutations\"},{\"type\":\"text\",\"text\":\" — исчезла.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Лишний слой = удалён\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"➡ Pinia упрощает архитектуру: state → actions → component\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мутации создавали избыточный boilerplate в Vuex\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сравнение:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Vuex:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mutations: {\\n  increment(state) { state.count++ }\\n},\\nactions: {\\n  increment({ commit }) { commit('increment') }\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Pinia:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"actions: {\\n  increment() { this.count++ }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Boilerplate в Vuex:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"писать mutation\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"писать action\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызывать commit\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поддерживать огромные файлы с мутациями\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Pinia убрала целый слой — меньше кода, проще жизнь.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мутации плохо работают с TypeScript\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex + TS = много боли:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложно типизировать payload\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"типы нужно объявлять вручную\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мутации легко вызывают рассинхронизацию типов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia изначально проектировалась \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"под TypeScript\"},{\"type\":\"text\",\"text\":\", поэтому:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мутации не нужны\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"действия имеют автоматическую типизацию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"state и getters выводятся автоматически\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Удаление мутаций = более чистая и строгая типизация.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В мутациях нет смысла, если можно менять state напрямую\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia позволяет:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.count++\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем тогда писать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"commit('increment')\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Или:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mutations: { increment(state) { state.count++ } }\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прямые изменения безопасны\"},{\"type\":\"text\",\"text\":\", потому что реактивность Vue 3 отслеживает всё автоматически.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Мутации — просто лишний посредник.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Vuex мутации создавали слишком много слоёв\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vuex данные текут через:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"state → mutation → action → компонент\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Pinia:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"state → action → компонент\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Меньше слоёв → проще понимать код → легче отлаживать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DevTools Vue 3 могут отслеживать изменения без мутаций\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vuex требовал мутаций, чтобы DevTools показывали:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие поля изменены\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда и кем\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pinia не нуждается в мутациях:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменения реактивного состояния Vue 3 автоматически логируются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DevTools получают информацию напрямую\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет необходимости вручную разделять мутации и действия\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"➡ Мутации потеряли смысл.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Pinia нет мутаций, потому что они стали ненужными с появлением Composition API и новой реактивности Vue 3.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прямые изменения состояния безопасны, проще и полностью отслеживаются DevTools.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удаление мутаций уменьшает boilerplate, улучшает типизацию и делает архитектуру чище и проще.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 97,
+        "createdAt": "2025-11-27T19:50:44.228Z",
+        "updatedAt": "2025-11-27T19:50:44.228Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 97,
+          "title": "State management (pinia|vuex)",
+          "directions": [
+            {
+              "categoryId": 97,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему Pinia заменяет Vuex в экосистеме Vue3?",
+        "id": 2968,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое слот в Vue?",
+        "id": 2970,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

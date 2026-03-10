@@ -1,0 +1,895 @@
+{
+  "category": {
+    "id": 130,
+    "title": "Динамическое программирование",
+    "description": " ",
+    "order": 4010,
+    "isNew": false,
+    "parentId": 10,
+    "roadmapId": null,
+    "_count": {
+      "questions": 9
+    },
+    "parent": {
+      "id": 10
+    },
+    "questions": [
+      {
+        "id": 1488,
+        "title": "Что такое динамическое программирование (DP)?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1493,
+        "title": "В чём отличие DP от жадного алгоритма?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1490,
+        "title": "Что означает 'оптимальная подструктура' в динамическом программировании?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1487,
+        "title": "Что означает “пересечение подзадач” в динамическом программировании?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1491,
+        "title": "Для чего нужно “запоминание промежуточных результатов”?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1492,
+        "title": "Что такое табуляция (tabulation) в DP?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1495,
+        "title": "Что такое “state” (состояние) в DP?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1489,
+        "title": "Почему важно правильно выбрать состояние в динамическом программировании?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1494,
+        "title": "Как решается классическая задача 'о рюкзаке' в динамическом программировании?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 130
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      }
+    ],
+    "children": []
+  },
+  "questions": [
+    {
+      "current": {
+        "id": 1488,
+        "type": "boolean",
+        "text": "Что такое динамическое программирование (DP)?",
+        "title": "Что такое динамическое программирование (DP)?",
+        "order": 401000,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Динамическое программирование (DP) — это метод решения задач путём разбивания их на перекрывающиеся подзадачи, запоминания результатов (мемоизация) или последовательного наращивания таблицы ответов (табуляция), используя свойство оптимальной подструктуры.\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Признаки: оптимальная подструктура и перекрывающиеся подзадачи.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Подходы: Top-Down (мемоизация) и Bottom-Up (табуляция).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Цель: снизить экспоненциальную сложность до полиномиальной.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробный разбор\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"DP применяют, когда наилучшее решение задачи можно собрать из наилучших решений её подзадач, а сами подзадачи повторяются. Вместо повторных вычислений мы сохраняем результаты и переиспользуем их.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Когда применять DP\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Есть оптимальная подструктура: оптимум большой задачи строится из оптимумов меньших.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Подзадачи перекрываются: множество повторяющихся вычислений.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Примеры: Фибоначчи, рюкзак 0/1, пути в сетке, размен монет, LCS/LIS, редактирование строк (Levenshtein).\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Ключевые идеи\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Состояние (state): как параметризовать подзадачу, например dp[i][w] — лучший ответ для первых i предметов и веса w.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Переход (recurrence): как вычислить текущее состояние через меньшие.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"База: значения для самых маленьких случаев.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Порядок вычислений: топологический порядок зависимостей.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подходы: Top-Down и Bottom-Up\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Top-Down (мемоизация): рекурсивно решаем подзадачу и кешируем результат. Проще писать, повторяет математическое определение, но есть риск переполнения стека.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Bottom-Up (табуляция): строим таблицу от баз к ответу. Контролируем порядок и память, нет глубокой рекурсии.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Шаблон решения\" }]\n    },\n    {\n      \"type\": \"orderedList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Определите состояние dp (какие параметры достаточно хранить).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Опишите базовые случаи (инициализация).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Выведите переход (recurrence).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Выберите порядок вычисления (или используйте рекурсию + мемоизацию).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Определите, где находится ответ (dp[n], dp[n][m], максимум по строке/столбцу и т. п.).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Оцените сложность по времени и памяти.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"При необходимости заложите хранение указателей/решайте обратным проходом, чтобы восстановить решение.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Примеры\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 4 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Фибоначчи — мемоизация (Top-Down)\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"from functools import lru_cache\\n\\n@lru_cache(None)\\ndef fib(n: int) -> int:\\n    if n <= 1:\\n        return n\\n    return fib(n - 1) + fib(n - 2)\\n\\nprint(fib(10))  # 55\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 4 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Фибоначчи — табуляция (Bottom-Up)\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def fib(n: int) -> int:\\n    if n <= 1:\\n        return n\\n    dp = [0] * (n + 1)\\n    dp[1] = 1\\n    for i in range(2, n + 1):\\n        dp[i] = dp[i - 1] + dp[i - 2]\\n    return dp[n]\\n\\nprint(fib(10))  # 55\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 4 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Рюкзак 0/1 (максимальная ценность при ограничении веса)\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Состояние: dp[i][w] — максимальная ценность, используя первые i предметов при допустимом весе w.\" }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Переход: dp[i][w] = max(dp[i-1][w], dp[i-1][w - wt[i-1]] + val[i-1]) если wt[i-1] ≤ w, иначе dp[i][w] = dp[i-1][w].\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"from typing import List\\n\\ndef knapsack(W: int, wt: List[int], val: List[int]) -> int:\\n    n = len(wt)\\n    dp = [[0] * (W + 1) for _ in range(n + 1)]\\n    for i in range(1, n + 1):\\n        for w in range(W + 1):\\n            dp[i][w] = dp[i - 1][w]\\n            if wt[i - 1] <= w:\\n                dp[i][w] = max(dp[i][w], dp[i - 1][w - wt[i - 1]] + val[i - 1])\\n    return dp[n][W]\\n\\nprint(knapsack(7, [1, 3, 4, 5], [1, 4, 5, 7]))  # 9\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 4 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подсчёт путей в сетке (оптимизация по памяти)\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Количество путей из (0,0) в (m-1,n-1) при ходах вправо/вниз. Состояние: dp[j] — число путей до текущей клетки в строке. Переход: dp[j] += dp[j-1].\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def unique_paths(m: int, n: int) -> int:\\n    dp = [1] * n  # базовая первая строка: только вправо\\n    for _ in range(1, m):\\n        for j in range(1, n):\\n            dp[j] += dp[j - 1]\\n    return dp[-1]\\n\\nprint(unique_paths(3, 7))  # 28\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Оптимизация по памяти и восстановление ответа\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Оптимизация памяти: сводите dp к 1D или двум скользящим строкам/столбцам, если переход использует только соседние слои.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Восстановление решения: храните указатели (parent/choice) либо пересчитывайте, двигаясь от ответа назад по проверке равенств перехода.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Типичные ошибки\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неверно определено состояние (не хватает параметров или их избыточно много).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неполные базовые случаи: некорректная инициализация границ.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неправильный порядок вычислений для табуляции.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Переполнение стека при глубокой рекурсии (лучше перейти на Bottom-Up).\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Как отвечать на собеседовании\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Дайте определение DP и два признака: оптимальная подструктура, перекрывающиеся подзадачи.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Опишите Top-Down и Bottom-Up, когда что выбрать.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Приведите мини-пример (Фибоначчи/рюкзак) с состоянием, переходом и оценкой сложности.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Упомяните оптимизацию по памяти и восстановление ответа.\" }] }] }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:57:06.235Z",
+        "updatedAt": "2025-10-20T10:57:06.235Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как решается классическая задача о размене монет с помощью жадного алгоритма?",
+        "id": 1480,
+        "premium": true,
+        "category": {
+          "id": 129,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чём отличие DP от жадного алгоритма?",
+        "id": 1493,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1493,
+        "type": "boolean",
+        "text": "В чём отличие DP от жадного алгоритма?",
+        "title": "В чём отличие DP от жадного алгоритма?",
+        "order": 401001,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 1\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"В чём отличие DP от жадного алгоритма?\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Короткий ответ\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"DP (динамическое программирование) системно перебирает пространство состояний и переиспользует результаты подзадач. Даёт гарантированно оптимальное решение при наличии оптимальной подструктуры; обычно дороже по времени/памяти, но универсальнее.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Жадный алгоритм делает локально лучший выбор на каждом шаге без отката. Быстрый и простой, но требует свойства жадного выбора; без него может дать неоптимум.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Развернутый ответ\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Определения и интуиция\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Динамическое программирование (DP): разбиваем задачу на подзадачи, решаем их один раз, сохраняем результат и комбинируем ответы. Основа — оптимальная подструктура (оптимум строится из оптимумов подзадач) и перекрывающиеся подзадачи.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Жадный алгоритм: выбираем на каждом шаге локально лучший вариант по некоторому критерию, не возвращаясь назад. Корректность возможна, когда выполняется свойство жадного выбора: локальный выбор можно «обменять» на часть оптимального решения без потери качества.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Ключевые отличия\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Гарантия оптимальности: DP — да (при корректной модели), жадный — только если доказано свойство жадного выбора.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Стратегия: DP строит и переиспользует таблицу/кэш состояний (bottom-up/мемоизация); жадный принимает последовательность локальных решений без кэша и откатов.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Память: DP хранит таблицы состояний (часто O(число состояний)); жадный почти всегда O(1)–O(n).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Время: DP обычно полиномиально в размере пространства состояний; жадный — часто O(n log n) или O(n).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Доказательство корректности: DP — через рекурренту и индукцию/принцип Беллмана; жадный — через обменный аргумент или доказательство жадного выбора.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Гибкость: DP применим шире; жадный намного проще и быстрее там, где применим.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Как понять, что применять\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Признаки DP: подзадачи повторяются; решение описывается через небольшое «состояние»; легко написать рекурренту; нужна точная гарантия оптимума.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Признаки жадного: можно сформулировать естественный локальный критерий (сортировка по нему + однопроходный отбор); удаётся построить обменный аргумент; не находится контрпример.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Пример 1: размен монет (минимум монет)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Монеты {1, 3, 4}, сумма 6. Жадный возьмёт 4 → остаток 2 → 1+1 = 3 монеты, что неоптимально. Оптимум — 3+3 = 2 монеты. DP находит оптимум всегда (для этой постановки).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"// Жадный размен монет (может дать неоптимум)\\nfunction coinChangeGreedy(coins, amount) {\\n  coins = [...coins].sort((a, b) => b - a);\\n  let count = 0;\\n  for (const c of coins) {\\n    const use = Math.floor(amount / c);\\n    count += use;\\n    amount -= use * c;\\n  }\\n  return amount === 0 ? count : Infinity;\\n}\\n\\nconsole.log(coinChangeGreedy([1, 3, 4], 6)); // 3 (4 + 1 + 1) — неоптимально; оптимум 2 (3 + 3)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"// DP: минимум монет (табуляция)\\nfunction coinChangeDP(coins, amount) {\\n  const INF = 1e9;\\n  const dp = new Array(amount + 1).fill(INF);\\n  dp[0] = 0;\\n  for (let a = 1; a <= amount; a++) {\\n    for (const c of coins) {\\n      if (a - c >= 0) dp[a] = Math.min(dp[a], dp[a - c] + 1);\\n    }\\n  }\\n  return dp[amount] === INF ? -1 : dp[amount];\\n}\\n\\nconsole.log(coinChangeDP([1, 3, 4], 6)); // 2 (3 + 3)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Пример 2: отбор непересекающихся интервалов (жадный работает)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Классическая задача: выбрать максимум непересекающихся интервалов. Жадный критерий — сортировать по времени окончания и брать каждое следующее непересекающееся. Доказательство через обменный аргумент.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function selectMaxActivities(intervals) {\\n  intervals.sort((a, b) => a.end - b.end);\\n  const result = [];\\n  let lastEnd = -Infinity;\\n  for (const it of intervals) {\\n    if (it.start >= lastEnd) {\\n      result.push(it);\\n      lastEnd = it.end;\\n    }\\n  }\\n  return result;\\n}\\n\\nconst intervals = [\\n  { start: 1, end: 4 },\\n  { start: 3, end: 5 },\\n  { start: 0, end: 6 },\\n  { start: 5, end: 7 },\\n  { start: 8, end: 9 },\\n];\\n\\nconsole.log(selectMaxActivities(intervals)); // жадный даёт оптимум\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Шпаргалка для собеседования\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Сформулируйте критерий оптимальности и состояние (какие параметры описывают подзадачу).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Проверьте оптимальную подструктуру и перекрываемость подзадач → если да, смело предлагайте DP (top-down с мемоизацией или bottom-up).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Попробуйте жадный критерий: отсортируйте, предложите локальный выбор, найдите/опровергните контрпример. Если контрпримеров нет и есть обменный аргумент — выбирайте жадный.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Оцените сложность по времени и памяти; укажите, почему метод гарантирует оптимальность (или когда может не сработать).\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Сводка отличий\"\n        }\n      ]\n    },\n    {\n      \"type\": \"table\",\n      \"content\": [\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableHeader\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Критерий\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableHeader\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"DP\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableHeader\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Жадный\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Идея\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Перебор состояний с переиспользованием результатов\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Локальный лучший выбор без отката\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Условия корректности\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Оптимальная подструктура, перекрывающиеся подзадачи\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Свойство жадного выбора (обменный аргумент)\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Оптимальность решения\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Гарантирована (при корректной модели)\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Не гарантирована без доказательства свойства\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Память\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Выше (таблицы состояний)\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Ниже (часто O(1)–O(n))\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Типичная сложность\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"O(число состояний × число переходов)\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"O(n log n) или O(n)\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Пример\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Минимум монет, рюкзак, LIS\"\n                    }\n                  ]\n                }\n              ]\n            },\n            {\n              \"type\": \"tableCell\",\n              \"content\": [\n                {\n                  \"type\": \"paragraph\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"Отбор интервалов, Хаффман, задачи на минимальные стоимости при канонических системах\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:58:15.700Z",
+        "updatedAt": "2025-10-20T10:58:15.700Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое динамическое программирование (DP)?",
+        "id": 1488,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает 'оптимальная подструктура' в динамическом программировании?",
+        "id": 1490,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1490,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Что означает 'оптимальная подструктура' в динамическом программировании?",
+        "order": 401002,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимальная подструктура — это свойство задачи, при котором оптимальное решение всей задачи можно получить из оптимальных решений её подзадач. Если заменить любую часть решения на более оптимальную для соответствующей подзадачи и от этого улучшится (или не ухудшится) итог, задача обладает оптимальной подструктурой — и для неё обычно можно построить динамическое программирование.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Развернутое объяснение\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Определение и интуиция\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимальная подструктура (principle of optimality, принцип Беллмана) означает: если разбить исходную задачу на подзадачи, то оптимальное решение исходной задачи состоит из оптимальных решений этих подзадач. Иначе говоря, «лучший целый путь состоит из лучших кусочков».\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужно: позволяет записать рекуррентное соотношение и решать задачу снизу-вверх (таблица) или сверху-вниз (мемоизация).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Ключевая проверка: если мы можем заменить решение подзадачи на более лучшее и тем самым улучшить итоговое решение, значит свойство выполнено.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как распознать оптимальную подструктуру\"}]},{\"type\":\"orderedList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сформулируйте подзадачи: какие более мелкие случаи естественно возникают при разбиении?\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Запишите рекуррентное соотношение: как собрать ответ из ответов на подзадачи?\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Аргумент оптимальности (exchange/cut-аргумент): покажите, что если часть решения не оптимальна для своей подзадачи, её замена улучшит решение целиком.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оцените независимость подзадач: решения подзадач не должны конфликтовать друг с другом вне рамок рекурсии.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Примеры задач с оптимальной подструктурой\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"LCS (наибольшая общая подпоследовательность): LCS(s[0..i], t[0..j]) строится из LCS меньших префиксов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Размен монет (минимум монет): оптимум для суммы x строится из оптимума для x − coin + 1 монета.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Редакционное расстояние (Левенштейн): минимум из трёх подопераций над меньшими подстроками.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Умножение цепочки матриц: оптимальный разрез точки k использует оптимальные разрезы слева и справа.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Кратчайшие пути без отрицательных циклов: оптимальный путь до v через u использует оптимальный путь до u.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Где оптимальная подструктура нарушается или неприменима\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Кратчайшие пути с отрицательными циклами: оптимального решения не существует (можно бесконечно улучшать), аргумент «замены подрешения на лучшее» не работает.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Задачи, где выбор в одной подзадаче глобально меняет пространство других подзадач (сильно связанные ограничения), могут не иметь простой оптимальной подструктуры в явном виде.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример 1: LCS (наибольшая общая подпоследовательность)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимальная подструктура: если последние символы равны, то LCS заканчивается ими и равна 1 + LCS для укороченных строк. Иначе лучшее решение — максимум из двух подзадач, где отбрасываем один символ с одной из сторон.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"from functools import lru_cache\\n\\ndef lcs_length(a: str, b: str) -> int:\\n    @lru_cache(None)\\n    def f(i: int, j: int) -> int:\\n        # длины префиксов a[:i] и b[:j]\\n        if i == 0 or j == 0:\\n            return 0\\n        if a[i - 1] == b[j - 1]:\\n            # оптимум строится из оптимумов подзадач (оптимальная подструктура)\\n            return 1 + f(i - 1, j - 1)\\n        # иначе выбираем лучший из двух разбиений\\n        return max(f(i - 1, j), f(i, j - 1))\\n\\n    return f(len(a), len(b))\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"def lcs_length_bottom_up(a: str, b: str) -> int:\\n    n, m = len(a), len(b)\\n    dp = [[0] * (m + 1) for _ in range(n + 1)]\\n    for i in range(1, n + 1):\\n        for j in range(1, m + 1):\\n            if a[i - 1] == b[j - 1]:\\n                dp[i][j] = 1 + dp[i - 1][j - 1]\\n            else:\\n                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])\\n    return dp[n][m]\\n\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Здесь любой оптимальный LCS для префиксов опирается на оптимальные LCS меньших префиксов — если бы подрешение было не оптимально, можно было бы его заменить и улучшить итог, что противоречит оптимальности.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример 2: Размен монет (минимум монет)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимальная подструктура: минимальное число монет для суммы x — это 1 + минимум по размену суммы x − c для каждой монеты c. Если бы размен для x − c был не оптимален, то замена дала бы лучшее решение для x.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"def coin_change_min(coins: list[int], amount: int) -> int:\\n    INF = amount + 1\\n    dp = [0] + [INF] * amount\\n    for x in range(1, amount + 1):\\n        for c in coins:\\n            if c <= x:\\n                dp[x] = min(dp[x], 1 + dp[x - c])\\n    return dp[amount] if dp[amount] != INF else -1\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Чем оптимальная подструктура отличается от «перекрывающихся подзадач»\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимальная подструктура — про корректность: оптимум собирается из оптимумов подзадач.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Перекрывающиеся подзадачи — про эффективность: одни и те же подзадачи возникают много раз и их выгодно кэшировать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Для ДП обычно нужны оба свойства: без оптимальной подструктуры рекуррентная формула некорректна; без перекрытий кэширование не даёт выигрыша.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как отвечать на интервью\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Дайте короткое определение: «Оптимум целой задачи собирается из оптимумов подзадач (принцип Беллмана)».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Добавьте тест на замену: «Если можно улучшить подзадачу — улучшается и всё решение».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Приведите пример: LCS/Левенштейн/размен монет/цепочка матриц.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Коротко отметьте отличие от «перекрывающихся подзадач».\"}]}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:57:14.898Z",
+        "updatedAt": "2025-11-10T11:55:31.572Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чём отличие DP от жадного алгоритма?",
+        "id": 1493,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “пересечение подзадач” в динамическом программировании?",
+        "id": 1487,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1487,
+        "type": "boolean",
+        "text": "Что означает “пересечение подзадач” в динамическом программировании?",
+        "title": "Что означает “пересечение подзадач” в динамическом программировании?",
+        "order": 401003,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Пересечение подзадач — это свойство задачи, при котором разные ветви вычислений многократно решают одни и те же подзадачи. Динамическое программирование устраняет эти повторы за счёт кэширования (мемоизации) или табличного вычисления (итеративная табуляция), вычисляя каждую уникальную подзадачу ровно один раз и существенно снижая асимптотику.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробный ответ\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Определение и интуиция\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Пересечение подзадач — это ситуация, когда множество уникальных подпроблем существенно меньше общего числа их вызовов в наивной рекурсивной раскрутке. Иными словами, одни и те же состояния вычисляются снова и снова. DP хранит ответы для уже решённых состояний (например, по ключу состояния) и повторно их использует.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Есть подпроблемы, которые повторяются в разных ветках вычислений.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Число уникальных состояний ограничено (обычно параметрами подзадачи: индексы, остаток, сумма и т. п.).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Вместе с пересечением обычно нужна оптимальная подструктура — оптимальный ответ задачи строится из оптимальных ответов подзадач.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Классический пример: числа Фибоначчи\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [{ \"type\": \"text\", \"text\": \"Наивная рекурсия многократно пересчитывает одни и те же F(k) — яркое пересечение подзадач.\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def fib_naive(n):\\n    if n <= 1:\\n        return n\\n    return fib_naive(n-1) + fib_naive(n-2)\\n\\n# Вызовы F(3), F(2) и др. повторяются многократно → экспоненциальная сложность O(φ^n).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [{ \"type\": \"text\", \"text\": \"DP устраняет повторы: мемоизация (top-down) или табуляция (bottom-up).\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"# Мемоизация (top-down)\\nfrom functools import lru_cache\\n\\n@lru_cache(maxsize=None)\\ndef fib_memo(n):\\n    if n <= 1:\\n        return n\\n    return fib_memo(n-1) + fib_memo(n-2)\\n\\n# Сложность: O(n) по времени и O(n) по памяти (кэш/стек).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"# Табуляция (bottom-up)\\ndef fib_tab(n):\\n    if n <= 1:\\n        return n\\n    a, b = 0, 1\\n    for _ in range(2, n+1):\\n        a, b = b, a + b\\n    return b\\n\\n# Сложность: O(n) времени, O(1) памяти.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Ещё примеры задач с пересечением подзадач\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Количество путей в сетке: состояние (i, j) встречается при подсчёте путей из (i-1, j) и (i, j-1). DP: dp[i][j] = dp[i-1][j] + dp[i][j-1].\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"LCS (наибольшая общая подпоследовательность): состояние (i, j) для префиксов строк повторяется в разных ветках сравнения символов.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Размен монет/сумма подмножеством: состояния (remaining_sum, idx) встречаются из разных путей выбора/пропуска монеты.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Как распознать, что есть пересечение подзадач\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Постройте рекурсивную формулу и мысленно разверните несколько уровней дерева вызовов: видите одинаковые состояния? Это оно.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Параметров у подзадачи мало, а их диапазоны ограничены (например, индексы i, j, остаток r) → число уникальных состояний конечно и невелико.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Наивная рекурсия даёт экспоненциальную сложность, но есть подозрение, что можно переиспользовать ответы.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Сравнение с «разделяй-и-властвуй»\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Разделяй-и-властвуй (quicksort/mergesort): подзадачи независимы и не пересекаются — нет смысла кэшировать.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"ДП: подзадачи повторяются → кэширование/таблица критически важны.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Типичные ошибки на собеседованиях\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Путают пересечение подзадач с оптимальной подструктурой: это разные свойства, но обычно нужны оба.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Пишут рекурсию без кэша, теряя выигрыш по времени.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Хранят слишком большой кэш, хотя часть состояний недостижима: можно оптимизировать память.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Практический мини‑пример: количество путей в сетке\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [{ \"type\": \"text\", \"text\": \"Проблема: Сколько путей из (0,0) в (m,n), двигаясь только вправо и вниз? Подзадачи dp[i][j] перекрываются, потому что dp[i][j] используется при вычислении dp[i+1][j] и dp[i][j+1].\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"python\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def grid_paths(m, n):\\n    dp = [[0]*(n+1) for _ in range(m+1)]\\n    dp[0][0] = 1\\n    for i in range(m+1):\\n        for j in range(n+1):\\n            if i == 0 and j == 0:\\n                continue\\n            from_up = dp[i-1][j] if i > 0 else 0\\n            from_left = dp[i][j-1] if j > 0 else 0\\n            dp[i][j] = from_up + from_left\\n    return dp[m][n]\\n\\n# Время O(m*n), память O(m*n) (можно сократить до O(n) одним массивом).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Краткий конспект для ответа на собеседовании\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Пересечение подзадач: одни и те же подпроблемы возникают много раз.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Решение: DP с мемоизацией (top-down) или табуляцией (bottom-up), чтобы вычислять каждую уникальную подзадачу один раз.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Проверка: ограниченное число состояний + наблюдаемые повторы в дереве рекурсии.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Итог: снижение асимптотики (часто с экспоненциальной до полиномиальной).\" }] }]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:57:03.308Z",
+        "updatedAt": "2025-10-20T10:57:03.308Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает 'оптимальная подструктура' в динамическом программировании?",
+        "id": 1490,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего нужно “запоминание промежуточных результатов”?",
+        "id": 1491,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1491,
+        "type": "boolean",
+        "text": "Для чего нужно “запоминание промежуточных результатов”?",
+        "title": "Для чего нужно “запоминание промежуточных результатов”?",
+        "order": 401004,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"“Запоминание промежуточных результатов” (мемоизация/кэширование) нужно, чтобы не пересчитывать одни и те же подзадачи или запросы многократно. Это снижает асимптотическую сложность и задержки, уменьшает нагрузку на CPU/память/сеть/БД, повышает отзывчивость интерфейса и масштабируемость системы.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Развернутое объяснение\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Что это такое\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Запоминание промежуточных результатов — это приём, при котором результаты вычислений или подзадач сохраняются и повторно используются при следующих обращениях с теми же входными данными. В алгоритмах это часто называется мемоизацией, в системной разработке — кэшированием.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Где это применяют в веб‑разработке\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Алгоритмы и структуры данных: динамическое программирование, мемоизация рекурсивных функций (например, Fibonacci, пути на графах).\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"UI/Frontend: memo/useMemo/useCallback в React, мемоизация селекторов (например, вычисление производных данных из стора), кэширование результатов форматирования и сортировки.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Backend/Node.js: кэширование ответов API, кэш горячих данных из БД, кэширование шаблонов и результатов сериализации, LRU‑кэши в памяти, Redis как внешний кэш.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Базы данных: материализованные представления, query cache на уровне приложения, денормализация с последующей синхронизацией.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Инфраструктура и билды: инкрементальные сборки, кэширование артефактов CI/CD, кэширование NPM/Yarn, HTTP‑кэширование статики (ETag, Cache‑Control).\" }]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Зачем это нужно (плюсы)\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Снижение времени выполнения и задержек за счёт устранения повторных вычислений/запросов.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Улучшение асимптотики (например, экспонента → линейная для некоторых рекурсивных задач).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Снижение нагрузки на CPU/память/сеть/БД, экономия бюджета и квот.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Повышение отзывчивости интерфейса и пропускной способности бэкенда.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Компромиссы и риски\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Память: кэш занимает RAM; возможны утечки при хранении больших ключей/значений.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Актуальность: риск устаревших данных; нужна инвалидация (TTL/версии/события).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сложность: проектирование ключей кэша, политика вытеснения (LRU/LFU), обработка конкуренции.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Чистота функций: мемоизация корректна для детерминированных операций без побочных эффектов.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Stampede/дубляж работы: при штормах кэша один и тот же расчет может запускаться множеством клиентов; полезна дедупликация in‑flight запросов.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Когда применять\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Есть повторные вызовы с одинаковыми входами (особенно дорогие вычисления).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Часто читаемые и редко изменяемые данные (read‑heavy нагрузки).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Медленные I/O операции: запросы в сеть, БД, файловую систему.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Не подходит, если данные уникальны почти всегда, либо строгая консистентность важнее скорости.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Примеры кода\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"JavaScript: простая мемоизация функции\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"javascript\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function memoize(fn, keyResolver = (...args) => JSON.stringify(args)) {\\n  const cache = new Map();\\n  return function memoized(...args) {\\n    const key = keyResolver(...args);\\n    if (cache.has(key)) return cache.get(key);\\n    const result = fn.apply(this, args);\\n    cache.set(key, result);\\n    return result;\\n  };\\n}\\n\\n// Пример: искусственно \\\"дорогая\\\" функция\\nconst slowSquare = (n) => {\\n  for (let i = 0; i < 1e7; i++); // имитация нагрузки\\n  return n * n;\\n};\\n\\nconst memoSquare = memoize(slowSquare);\\nconsole.time('first');\\nconsole.log(memoSquare(12345));\\nconsole.timeEnd('first');\\n\\nconsole.time('second (from cache)');\\nconsole.log(memoSquare(12345));\\nconsole.timeEnd('second (from cache)');\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Динамическое программирование: Fibonacci с мемоизацией и без\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"javascript\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"// Наивная рекурсия: экспоненциальная сложность ~O(φ^n)\\nfunction fibNaive(n) {\\n  return n <= 1 ? n : fibNaive(n - 1) + fibNaive(n - 2);\\n}\\n\\n// Мемоизация: храним промежуточные результаты\\nconst fibMemo = (function () {\\n  const memo = new Map([[0, 0], [1, 1]]);\\n  function f(n) {\\n    if (memo.has(n)) return memo.get(n);\\n    const val = f(n - 1) + f(n - 2);\\n    memo.set(n, val);\\n    return val;\\n  }\\n  return f;\\n})();\\n\\nconsole.time('naive 40');\\nfibNaive(40);\\nconsole.timeEnd('naive 40');\\n\\nconsole.time('memo 40');\\nfibMemo(40);\\nconsole.timeEnd('memo 40');\\n\\n// С мемоизацией сложность становится O(n) по времени и O(n) по памяти.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"React: useMemo/useCallback для дорогих вычислений и стабильных пропов\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"tsx\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"import React, { useMemo, useCallback } from 'react';\\n\\nfunction Products({ products, query }) {\\n  const normalizedQuery = useMemo(() => query.trim().toLowerCase(), [query]);\\n\\n  const visible = useMemo(\\n    () => products.filter(p => p.name.toLowerCase().includes(normalizedQuery)),\\n    [products, normalizedQuery]\\n  );\\n\\n  const onAddToCart = useCallback((id) => {\\n    // обработчик не пересоздаётся на каждый рендер\\n    // ...\\n  }, []);\\n\\n  return (\\n    <ul>\\n      {visible.map(p => (\\n        <Product key={p.id} product={p} onAddToCart={onAddToCart} />\\n      ))}\\n    </ul>\\n  );\\n}\\n\\n// Пояснение:\\n// - useMemo кэширует результат фильтрации до тех пор, пока не изменятся зависимости.\\n// - useCallback кэширует саму функцию-обработчик для оптимизации дочерних мемо-компонентов.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Node.js: кэширование ответов API (in-memory LRU + TTL)\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"javascript\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function makeLRU(capacity = 1000, ttlMs = 60_000) {\\n  const map = new Map(); // key -> { value, expiresAt }\\n\\n  function get(key) {\\n    const entry = map.get(key);\\n    if (!entry) return undefined;\\n    if (entry.expiresAt < Date.now()) { map.delete(key); return undefined; }\\n    // обновляем \\\"свежесть\\\"\\n    map.delete(key);\\n    map.set(key, entry);\\n    return entry.value;\\n  }\\n\\n  function set(key, value) {\\n    if (map.size >= capacity) {\\n      const oldestKey = map.keys().next().value;\\n      map.delete(oldestKey);\\n    }\\n    map.set(key, { value, expiresAt: Date.now() + ttlMs });\\n  }\\n\\n  return { get, set };\\n}\\n\\nconst cache = makeLRU(500, 10_000);\\n\\nasync function fetchJsonCached(url, options = {}) {\\n  const key = url + ':' + JSON.stringify(options);\\n  const cached = cache.get(key);\\n  if (cached) return cached;\\n\\n  const res = await fetch(url, options);\\n  if (!res.ok) throw new Error(res.statusText);\\n  const data = await res.json();\\n  cache.set(key, data);\\n  return data;\\n}\\n\\n(async () => {\\n  console.time('first');\\n  await fetchJsonCached('https://api.example.com/users?limit=50');\\n  console.timeEnd('first');\\n\\n  console.time('cached');\\n  await fetchJsonCached('https://api.example.com/users?limit=50');\\n  console.timeEnd('cached');\\n})();\\n\\n// В реальном сервисе добавьте дедупликацию одновременных запросов и стратегию инвалидации.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Инвалидация и стратегии кэширования\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"TTL (time-to-live): простая и надёжная экспирация по времени.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Cache-aside: приложение сначала смотрит в кэш, при промахе — в источник, затем записывает в кэш.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Write-through/Write-back: запись через кэш или отложенная запись; балансировка консистентности и производительности.\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Версионирование ключей: инвалидация по смене версии данных/схемы (например, user:123:v2).\" }] }] },\n        { \"type\": \"listItem\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"LRU/LFU: вытеснение наименее недавно/часто используемых записей для контроля RAM.\" }] }] }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Как ответить на собеседовании\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Дайте определение: хранение результатов подзадач для предотвращения повторных вычислений (мемоизация/кэширование).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Приведите алгоритмический пример: Fibonacci — с мемоизацией сложность O(n) вместо экспоненты.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Свяжите с веб‑практикой: React useMemo/useCallback, кэш ответов API/БД (Redis/LRU), HTTP‑кэш статики.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Отметьте компромиссы: память, инвалидация, консистентность, ключи, конкуренция и stampede.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сформулируйте критерии применения: повторяемость входов, дороговизна операции, read‑heavy сценарии.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Итог\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Запоминание промежуточных результатов — ключевой приём ускорения программ и систем: он сокращает вычисления, снижает задержки и стоимость, но требует продуманной инвалидации и управления памятью. Применяйте его там, где есть повторяемость входов и ощутимая цена повторного расчёта.\"\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:57:26.823Z",
+        "updatedAt": "2025-10-20T10:57:26.823Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “пересечение подзадач” в динамическом программировании?",
+        "id": 1487,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое табуляция (tabulation) в DP?",
+        "id": 1492,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1492,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Что такое табуляция (tabulation) в DP?",
+        "order": 401005,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Табуляция (bottom-up) в динамическом программировании — это подход, при котором мы итеративно заполняем таблицу (массив/матрицу) значениями подзадач, начиная с базовых случаев и двигаясь к ответу. Решение вычисляется без рекурсии, в заранее выбранном порядке, чтобы каждая подзадача опиралась на уже посчитанные меньшие. Это даёт предсказуемую сложность O(число состояний × число переходов) и позволяет оптимизировать память (например, до одной строки/столбца).\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Подробный разбор\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Идея и отличие от мемоизации (top-down)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Tabulation (bottom-up): строим ответ снизу вверх. Нет рекурсии: задаём порядок обхода состояний, и каждое новое состояние опирается на уже вычисленные.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Memoization (top-down): используем рекурсию с кешем. Состояния вычисляются по запросу, глубина рекурсии может быть проблемой, но легче писать, когда переходы сложные.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Когда известен естественный порядок вычисления и важно избегать рекурсии/стека — табуляция предпочтительнее.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые шаги табуляции\"}]},{\"type\":\"orderedList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Определите состояние DP (что означает dp[i], dp[i][j] и т. п.).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Задайте структуру хранения (массив/матрица) и размер.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Инициализируйте базовые случаи (граничные значения, нулевые состояния).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Определите корректный порядок обхода, чтобы нужные подзадачи уже были посчитаны.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Запишите переход (формулу), пройдитесь по всем состояниям и заполните таблицу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Считайте ответ из нужной ячейки (обычно dp[n], dp[n][m]).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример 1: Fibonacci — табуляция (O(n) по времени, O(1) по памяти)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Состояние: dp[i] — i-е число Фибоначчи; базовые случаи: dp[0]=0, dp[1]=1; порядок: i от 2 до n.\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"function fib(n) {\\n  if (n <= 1) return n;\\n  let a = 0, b = 1; // храним только два последних значения\\n  for (let i = 2; i <= n; i++) {\\n    const c = a + b;\\n    a = b;\\n    b = c;\\n  }\\n  return b;\\n}\\n\\nconsole.log(fib(10)); // 55\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример 2: Количество способов набрать сумму (Coin Change, комбинации)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Задача: по неограниченному набору монет coins посчитать количество способов набрать сумму amount. Состояние: dp[s] — число способов набрать сумму s. База: dp[0]=1 (один способ набрать ноль — ничего не брать). Порядок: внешне — по монетам, внутренне — по сумме в возрастающем порядке, чтобы не считать перестановки как разные способы.\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"function countWays(coins, amount) {\\n  const dp = new Array(amount + 1).fill(0);\\n  dp[0] = 1;\\n  for (const coin of coins) {\\n    for (let s = coin; s <= amount; s++) {\\n      dp[s] += dp[s - coin];\\n    }\\n  }\\n  return dp[amount];\\n}\\n\\nconsole.log(countWays([1, 2, 5], 5)); // 4 (1+1+1+1+1, 1+1+1+2, 1+2+2, 5)\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Выбор порядка обхода — частые паттерны\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Неограниченные предметы (unbounded, напр. coin change «кол-во способов»): внешний цикл по предметам, внутренний — по «весу/сумме» в возрастающем порядке.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"0/1 рюкзак (каждый предмет не более одного раза): внешний — по предметам, внутренний — по весу в убывающем порядке, чтобы не переиспользовать предмет в той же итерации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Двумерные DP (LCS, редакт. расстояние): заполняем матрицу по строкам/столбцам, начиная с базовой строки/столбца.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация памяти (rolling array)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Если переход использует только предыдущую строку/столбец, можно хранить лишь её. Пример: 0/1 рюкзак с одной строкой и обратным обходом веса:\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"function knap01(weights, values, W) {\\n  const dp = new Array(W + 1).fill(0);\\n  for (let i = 0; i < weights.length; i++) {\\n    const w = weights[i], v = values[i];\\n    for (let cap = W; cap >= w; cap--) {\\n      dp[cap] = Math.max(dp[cap], dp[cap - w] + v);\\n    }\\n  }\\n  return dp[W];\\n}\\n\\nconsole.log(knap01([2,3,4], [4,5,10], 6)); // 14 (взять предметы весов 2 и 4)\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Сложность и когда применять\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Время: O(число состояний × число переходов из каждого состояния).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Память: O(число состояний), часто уменьшается до O(размера одного слоя) при аккуратном порядке обхода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Применять, когда есть DAG подзадач с естественным порядком, важно избежать рекурсии, и/или нужно вычислить не только финальный ответ, но и все промежуточные значения.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Типичные ошибки\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Неправильная инициализация баз: dp[0] для «кол-ва способов» должен быть 1, а не 0.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Ошибочный порядок обхода, из-за чего используете ещё не посчитанные значения или пересчитываете состояния с переиспользованием элементов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Смещения индексов (off-by-one) в 1D/2D массивах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Путаница между минимумами/максимумами и количеством способов — разные базы и операции (+, min, max).\"}]}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:58:09.679Z",
+        "updatedAt": "2025-11-10T11:55:35.922Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего нужно “запоминание промежуточных результатов”?",
+        "id": 1491,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “state” (состояние) в DP?",
+        "id": 1495,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1495,
+        "type": "boolean",
+        "text": "Что такое “state” (состояние) в DP?",
+        "title": "Что такое “state” (состояние) в DP?",
+        "order": 401006,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Состояние (state) в динамическом программировании — это минимальный и достаточный набор параметров, который однозначно описывает подзадачу так, чтобы её решение можно было переиспользовать. Число всех возможных состояний определяет память и во многом время решения.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробный ответ\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Что такое состояние (state) в ДП\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Состояние в ДП — это формальное описание подзадачи через набор индексов/флагов/значений, по которым мы:\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"храним результат (например, минимум, максимум, количество способов, булево можно/нельзя);\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"однозначно различаем подзадачи (никакие две разные подзадачи не должны иметь одно и то же состояние);\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"можем выразить переходы к более простым состояниям (оптимальная структура).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Типичный вид: dp[параметры] = искомая величина для подзадачи, описанной этими параметрами.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Как выбрать корректное состояние\" }]\n    },\n    {\n      \"type\": \"orderedList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Определите, что именно вы хотите хранить в dp (минимум/максимум/счёт/булево/лучший профит и т. п.).\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Выделите параметры, которые различают подзадачи: позиция/индекс, длина префикса/суффикса, текущая вместимость/сумма, остаток по модулю, флаги (взяли/не взяли), маска посещённых, последняя выбранная сущность и т. д.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Проверьте оптимальную структуру: значение dp должно выражаться через значения в «меньших» состояниях.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Оцените размерность: число состояний должно быть приемлемым по памяти и времени.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Сформулируйте переходы и порядок вычисления (top-down с мемоизацией или bottom-up/табуляция).\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Задайте базовые случаи (границы, пустые множества, нулевые длины).\" }]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Чем состояние отличается от переходов и ответа\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Состояние — «координаты» подзадачи (что за подзадача).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Переходы — как получить состояние из других (рекуррентная формула).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Ответ — конкретное состояние, соответствующее исходной задаче (например, dp[n], dp[n][m], dp[mask_all][last]).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Примеры состояний и кода\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"1) Фибоначчи: dp[n] — n-е число\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Состояние: n. Храним: значение F(n). Переход: F(n)=F(n-1)+F(n-2). База: F(0)=0, F(1)=1.\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"// Top-down (мемоизация)\\nconst fibMemo = (function () {\\n  const memo = new Map();\\n  memo.set(0, 0);\\n  memo.set(1, 1);\\n  function f(n) {\\n    if (memo.has(n)) return memo.get(n);\\n    const val = f(n - 1) + f(n - 2);\\n    memo.set(n, val);\\n    return val;\\n  }\\n  return f;\\n})();\\n\\n// Bottom-up (табуляция)\\nfunction fib(n) {\\n  if (n <= 1) return n;\\n  let a = 0, b = 1; // dp[n-2], dp[n-1]\\n  for (let i = 2; i <= n; i++) {\\n    const c = a + b;\\n    a = b;\\n    b = c;\\n  }\\n  return b;\\n}\\n\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"2) Количество путей в сетке с препятствиями: dp[i][j]\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Состояние: клетка (i, j). Храним: число путей до (i, j). Переход: dp[i][j]=dp[i-1][j]+dp[i][j-1], если нет препятствия. База: dp[0][0]=1, если старт без препятствия.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function uniquePathsWithObstacles(grid) {\\n  const m = grid.length, n = grid[0].length;\\n  const dp = Array.from({ length: m }, () => Array(n).fill(0));\\n  if (grid[0][0] === 1) return 0;\\n  dp[0][0] = 1;\\n  for (let i = 0; i < m; i++) {\\n    for (let j = 0; j < n; j++) {\\n      if (grid[i][j] === 1) { dp[i][j] = 0; continue; }\\n      if (i === 0 && j === 0) continue;\\n      const fromTop = i > 0 ? dp[i - 1][j] : 0;\\n      const fromLeft = j > 0 ? dp[i][j - 1] : 0;\\n      dp[i][j] = fromTop + fromLeft;\\n    }\\n  }\\n  return dp[m - 1][n - 1];\\n}\\n\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"3) 0/1 Рюкзак: dp[i][w]\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Состояние: (i, w) — рассматриваем первые i предметов при доступной вместимости w. Храним: максимальную ценность. Переход: dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i]) при w ≥ weight[i]. База: dp[0][*]=0.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function knapSack(capacity, weights, values) {\\n  const n = weights.length;\\n  const dp = Array.from({ length: n + 1 }, () => Array(capacity + 1).fill(0));\\n  for (let i = 1; i <= n; i++) {\\n    for (let w = 0; w <= capacity; w++) {\\n      dp[i][w] = dp[i - 1][w]; // не берём i-й\\n      if (w >= weights[i - 1]) {\\n        dp[i][w] = Math.max(\\n          dp[i][w],\\n          dp[i - 1][w - weights[i - 1]] + values[i - 1]\\n        );\\n      }\\n    }\\n  }\\n  return dp[n][capacity];\\n}\\n\\n// Оптимизация памяти (скользящий массив)\\nfunction knapSack1D(capacity, weights, values) {\\n  const n = weights.length;\\n  const dp = Array(capacity + 1).fill(0);\\n  for (let i = 0; i < n; i++) {\\n    for (let w = capacity; w >= weights[i]; w--) {\\n      dp[w] = Math.max(dp[w], dp[w - weights[i]] + values[i]);\\n    }\\n  }\\n  return dp[capacity];\\n}\\n\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"4) DP по подмножествам (пример TSP): dp[mask][i]\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Состояние: (mask, i) — мы посетили набор вершин mask, находимся в i. Храним: минимальную стоимость пути. Переход: dp[mask][i] = min_j dp[mask \\\\ {i}][j] + cost[j][i]. База: dp[1<<start][start] = 0. Здесь важна компрессия состояния через битовую маску.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function tsp(cost) {\\n  const n = cost.length;\\n  const N = 1 << n;\\n  const INF = 1e15;\\n  const start = 0;\\n  const dp = Array.from({ length: N }, () => Array(n).fill(INF));\\n  dp[1 << start][start] = 0;\\n  for (let mask = 0; mask < N; mask++) {\\n    for (let i = 0; i < n; i++) {\\n      if ((mask & (1 << i)) === 0) continue;\\n      const cur = dp[mask][i];\\n      if (cur >= INF) continue;\\n      for (let j = 0; j < n; j++) {\\n        if (mask & (1 << j)) continue;\\n        const nextMask = mask | (1 << j);\\n        dp[nextMask][j] = Math.min(dp[nextMask][j], cur + cost[i][j]);\\n      }\\n    }\\n  }\\n  let ans = INF;\\n  for (let i = 0; i < n; i++) {\\n    ans = Math.min(ans, dp[N - 1][i] + cost[i][start]);\\n  }\\n  return ans;\\n}\\n\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Оценка сложности через состояние\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Время ≈ (число состояний) × (среднее число переходов на состояние). Память ≈ число состояний (с учётом оптимизаций, например, скользящих массивов или компрессии масками).\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Фибоначчи: O(n) состояний, O(1) переходов → O(n) времени, O(1)/O(n) памяти.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Рюкзак: O(n·W) состояний, O(1) переходов → O(n·W) времени, O(n·W) или O(W) памяти.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"TSP по маскам: O(n·2^n) состояний, O(n) переходов → O(n^2·2^n) времени, O(n·2^n) памяти.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Типичные ошибки при определении состояния\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Недостаточное состояние: не включили параметр, от которого зависит ответ (получаются неверные переиспользования).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Избыточное состояние: добавили лишний параметр → взрыв размерности и ресурсов.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неверный порядок обхода в bottom-up: используете ещё не посчитанные состояния.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Плохая инициализация: забыты базовые случаи, неверные значения по умолчанию (например, −∞/∞ вместо 0).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Дублирование подзадач: неправильное кодирование состояния (например, неупорядоченные пары без нормализации).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Краткий чек-лист по state в ДП\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Что храню в dp? (минимум/максимум/счёт/булево/лучшее)\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Какие параметры однозначно описывают подзадачу? (индексы, флаги, маски…)\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Есть оптимальная структура и корректные переходы?\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Размерность приемлема по времени/памяти? (возможна ли компрессия)\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Правильная инициализация и порядок вычисления выбраны?\" }] }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:58:35.520Z",
+        "updatedAt": "2025-10-20T10:58:35.520Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое табуляция (tabulation) в DP?",
+        "id": 1492,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важно правильно выбрать состояние в динамическом программировании?",
+        "id": 1489,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1489,
+        "type": "boolean",
+        "text": "Почему важно правильно выбрать состояние в динамическом программировании?",
+        "title": "Почему важно правильно выбрать состояние в динамическом программировании?",
+        "order": 401007,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Состояние определяет, какие подзадачи вы решаете и как их результаты переиспользуются.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Правильное состояние обеспечивает корректность (нет пропусков и двойного счёта) и прозрачные переходы.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"От него напрямую зависят асимптотика по времени/памяти и возможность оптимизаций (сжатие измерений, монотонности).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неправильное состояние часто приводит к экспоненте, сложным или некорректным переходам и невозможности восстановить ответ.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Развернутый ответ\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Что такое состояние в ДП\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Состояние — это минимальный набор параметров, который однозначно описывает подзадачу так, чтобы её решение можно было переиспользовать. В таблице/кэше мы храним целевую метрику (минимум, максимум, количество, булево достижимости) для этого набора параметров.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Почему выбор состояния критичен\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Корректность: состояние должно содержать ровно ту информацию, которая влияет на будущие решения. Недостаточное — ведёт к пропуску валидных решений; избыточное — к двойному счёту и лишним измерениям.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Простые переходы: хорошо выбранное состояние даёт локальные и детерминированные переходы. Плохое — вынуждает «оглядываться назад» далеко или перебирать историю.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сложность: размерность и диапазоны параметров состояния определяют размер таблицы ДП и количество переходов (O(число_состояний × переходов_на_состояние)).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Оптимизации: правильная формулировка часто позволяет сократить память (сжатие до 1D), использовать монотонности, бинарный поиск, deque-оптимизации.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Восстановление ответа: если нужно восстанавливать решения, состояние должно позволять хранить «указатели» переходов.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Как выбирать состояние: чек-лист\" }]\n    },\n    {\n      \"type\": \"orderedList\",\n      \"attrs\": { \"order\": 1 },\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сформулируйте решение как последовательность выборов: какой следующий выбор принимает алгоритм?\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Определите минимальный контекст, влияющий на следующий выбор (позиция i, остаточный ресурс, последний элемент/баланс/маска и т. п.).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Проверьте, что переход из этого контекста не требует «истории», не включённой в состояние.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Оцените размерность и диапазоны: можно ли сузить параметры или переформулировать метрику, сохранив оптимальность (инварианты, «минимальный последний» и т. п.).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Определите порядок обхода (итеративный/топологический) и базовые случаи.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Подумайте о восстановлении ответа и сжатии памяти заранее.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Пример 1: 0/1 Рюкзак — правильное состояние\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Задача: максимизировать суммарную ценность при вместимости W. Правильное состояние: dp[i][w] — лучшая ценность, рассматривая первые i предметов при ёмкости w. Переход учитывает два варианта: взять/не взять i-й предмет.\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def knapsack_01(values, weights, W):\\n    n = len(values)\\n    # 1D сжатие по w: порядок w от W к 0, чтобы не переиспользовать предмет многократно\\n    dp = [0] * (W + 1)\\n    for i in range(n):\\n        wi, vi = weights[i], values[i]\\n        for w in range(W, wi - 1, -1):\\n            dp[w] = max(dp[w], dp[w - wi] + vi)\\n    return dp[W]\\n\\n# Состояние (w) достаточно, потому что \\\"i\\\" зашит в направлении обхода; \\n# неправильное состояние без w (например, только сумма ценности) не позволяет проверять ограничения и даёт некорректные переходы.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Пример 2: LIS — неправильное vs правильное состояние\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Наибольшая возрастающая подпоследовательность (LIS). Наивная попытка ошибочного состояния: dp[k] = «существует ли возрастающая подпоследовательность длины k». Это состояние не хранит последний элемент, значит, невозможно корректно решить, можно ли продлить подпоследовательность текущим числом — понадобится перебирать все варианты (экспонента или сложные структуры).\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"# Плохая идея (иллюстрация, не используйте):\\n# dp[k] = True/False, существует ли возрастающая подпоследовательность длины k\\n# Не зная последнего элемента, нельзя проверить a[i] > last, поэтому переход неопределён.\\npass\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Правильный 1: dp[i] — длина LIS, оканчивающейся на i. Переход: dp[i] = 1 + max(dp[j] : j < i и a[j] < a[i]), иначе 1. Это O(n^2).\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def lis_n2(a):\\n    n = len(a)\\n    dp = [1] * n  # dp[i] — LIS, заканчивающаяся на i\\n    for i in range(n):\\n        for j in range(i):\\n            if a[j] < a[i]:\\n                dp[i] = max(dp[i], dp[j] + 1)\\n    return max(dp, default=0)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Правильный 2 (оптимизированное состояние): tails[k] — минимально возможный последний элемент возрастающей подпоследовательности длины k+1. Это уже другая метрика в состоянии, но она достаточна для корректных переходов и даёт O(n log n).\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"import bisect\\n\\ndef lis_nlogn(a):\\n    tails = []  # tails[k] — минимальный последний элемент для длины k+1\\n    for x in a:\\n        i = bisect.bisect_left(tails, x)\\n        if i == len(tails):\\n            tails.append(x)\\n        else:\\n            tails[i] = x\\n    return len(tails)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Замечание: в обоих решениях состояние содержит минимально необходимую информацию для валидного перехода: либо указание «где заканчиваем» (dp[i]), либо «какой минимальный хвост имеем на каждую длину» (tails).\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Типичные ошибки при выборе состояния\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Недостаточное состояние: не хранит ключевой фактор (последний элемент, остаточный ресурс, баланс). Итог — некорректные или экспоненциальные переходы.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Избыточное состояние: добавлены параметры, не влияющие на будущее решение (лишняя история), что раздувает таблицу и время.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Неправильный порядок обхода: состояние выбрано верно, но вычисляется до того, как готовы все зависимости.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Отсутствие инвариантов: метрика в состоянии не поддерживает монотонности/минимальности, что лишает оптимизаций.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткая памятка\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Состояние = минимальный контекст, влияющий на следующий шаг.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Переходы локальны и не требуют дополнительной истории.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Размерность и диапазоны контролируемы; ищите инварианты для сжатия.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Проверьте базовые случаи, порядок вычисления и возможность восстановления ответа.\" }] }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:57:09.557Z",
+        "updatedAt": "2025-10-20T10:57:09.557Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “state” (состояние) в DP?",
+        "id": 1495,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как решается классическая задача 'о рюкзаке' в динамическом программировании?",
+        "id": 1494,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1494,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Как решается классическая задача 'о рюкзаке' в динамическом программировании?",
+        "order": 401008,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Классическая 0/1 «задача о рюкзаке» решается динамическим программированием. Определяем состояние dp[i][w] — максимальная ценность при использовании первых i предметов и ограничении по весу w. Переход: dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i]) при w ≥ weight[i], иначе dp[i][w] = dp[i-1][w]. Базовые случаи: dp[0][w] = 0 и dp[i][0] = 0. Сложность: O(n·W) по времени и O(n·W) по памяти, оптимизируется до O(W) по памяти при однопроходном обновлении w от W к 0.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Подробный разбор\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Постановка\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Дано n предметов, у i-го предмета вес weight[i] и ценность value[i]. Есть рюкзак вместимости W. Нужно максимизировать суммарную ценность, не превышая W. Каждый предмет можно взять не более одного раза (0/1).\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Идея динамического программирования\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Состояние: dp[i][w] — максимальная ценность с использованием первых i предметов при допустимом весе w.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Переход:\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"— Не берем предмет i: dp[i-1][w].\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"— Берем предмет i (если weight[i] ≤ w): dp[i-1][w - weight[i]] + value[i].\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Итого: dp[i][w] = max(dp[i-1][w], dp[i-1][w - weight[i]] + value[i]) при weight[i] ≤ w; иначе dp[i][w] = dp[i-1][w].\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"База: dp[0][w] = 0 для всех w и dp[i][0] = 0 для всех i.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Порядок вычисления: i от 1 до n, w от 0 до W.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сложность: время O(n·W); память O(n·W), оптимизируется до O(W) с одномерным массивом и обратным проходом по w.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"weights = [3, 2, 4, 5], values = [4, 3, 5, 6], W = 8. Оптимально взять предметы с весами 3 и 5 (ценности 4 и 6): суммарная ценность = 10, суммарный вес = 8.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Реализация (двумерный DP + восстановление ответа)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"function knapsack01(weights, values, W) {\\n  const n = weights.length;\\n  const dp = Array.from({ length: n + 1 }, () => Array(W + 1).fill(0));\\n  const take = Array.from({ length: n + 1 }, () => Array(W + 1).fill(false));\\n\\n  for (let i = 1; i <= n; i++) {\\n    const wt = weights[i - 1];\\n    const val = values[i - 1];\\n    for (let w = 0; w <= W; w++) {\\n      // Не берем i-й предмет\\n      dp[i][w] = dp[i - 1][w];\\n\\n      // Пробуем взять i-й предмет, если помещается\\n      if (wt <= w) {\\n        const candidate = dp[i - 1][w - wt] + val;\\n        if (candidate > dp[i][w]) {\\n          dp[i][w] = candidate;\\n          take[i][w] = true;\\n        }\\n      }\\n    }\\n  }\\n\\n  // Восстановление выбранных индексов предметов\\n  const chosenIndices = [];\\n  let w = W;\\n  for (let i = n; i >= 1; i--) {\\n    if (take[i][w]) {\\n      chosenIndices.push(i - 1);\\n      w -= weights[i - 1];\\n    }\\n  }\\n  chosenIndices.reverse();\\n\\n  return { maxValue: dp[n][W], chosenIndices, dp }; // dp возвращаем опционально\\n}\\n\\n// Пример\\nconst weights = [3, 2, 4, 5];\\nconst values = [4, 3, 5, 6];\\nconst W = 8;\\nconst result = knapsack01(weights, values, W);\\nconsole.log(result); // { maxValue: 10, chosenIndices: [0, 3] }\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация по памяти до O(W)\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Чтобы не перетирать значения текущей итерации предмета, идем по w в обратном порядке (от W к wt). В таком виде получить набор предметов сложнее без дополнительных структур, но максимальную ценность вычисляет корректно.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"function knapsack01Optimized(weights, values, W) {\\n  const n = weights.length;\\n  const dp = Array(W + 1).fill(0);\\n\\n  for (let i = 0; i < n; i++) {\\n    const wt = weights[i];\\n    const val = values[i];\\n    for (let w = W; w >= wt; w--) {\\n      dp[w] = Math.max(dp[w], dp[w - wt] + val);\\n    }\\n  }\\n  return dp[W];\\n}\\n\\n// Пример\\nconsole.log(knapsack01Optimized([3, 2, 4, 5], [4, 3, 5, 6], 8)); // 10\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Типичные подводные камни\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Для 1D DP обязательно проходить w от W к 0, иначе получится «неограниченный» рюкзак (каждый предмет можно будет использовать многократно).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Отличайте 0/1 рюкзак от варианта с неограниченным количеством предметов и от «дробного» рюкзака (который решается жадно).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Корректно инициализируйте базу: строки и столбец с нулевыми индексами — нули.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Восстановление ответа удобно хранить через матрицу take[i][w] или родителя; с 1D DP это сложнее без доп. структур.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что важно проговорить на собеседовании\"}]},{\"type\":\"orderedList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Определение состояния dp и почему оно корректно моделирует подзадачи.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Переход и обоснование выбора max из двух вариантов (взять/не брать).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"База, порядок обхода и оценка сложности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация по памяти до O(W) и почему нужен обратный проход по w.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Как восстанавливать набор предметов (через take/parent или хранение дополнительных данных).\"}]}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 130,
+        "createdAt": "2025-10-20T10:58:22.678Z",
+        "updatedAt": "2025-11-10T11:55:40.424Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 130,
+          "title": "Динамическое программирование",
+          "directions": [
+            {
+              "categoryId": 130,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему важно правильно выбрать состояние в динамическом программировании?",
+        "id": 1489,
+        "premium": false,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие основные типы задач решает комбинаторика?",
+        "id": 1502,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1372 @@
+{
+  "category": {
+    "id": 304,
+    "title": "Прикладной уровень",
+    "description": " ",
+    "parentId": 120
+  },
+  "totalQuestions": 16,
+  "downloadedAt": "2026-03-10T09:43:29.954Z",
+  "questions": [
+    {
+      "current": {
+        "id": 7621,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое прикладной уровень модели OSI?\"}]}]}",
+        "title": "Что такое прикладной уровень модели OSI?",
+        "order": 420600,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень (Application Layer)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"7-й, самый верхний уровень модели OSI\"},{\"type\":\"text\",\"text\":\", с которым \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"непосредственно работает пользователь и приложения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если сказать совсем просто:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"это уровень, где “живут” программы, использующие сеть\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен прикладной уровень\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Прикладной уровень отвечает за то, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"приложения могли пользоваться сетью\"},{\"type\":\"text\",\"text\":\", не задумываясь о том:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как передаются биты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как маршрутизируются пакеты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как устанавливаются соединения.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он предоставляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понятные сетевые сервисы\"},{\"type\":\"text\",\"text\":\" для программ.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что именно делает прикладной уровень\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На прикладном уровне происходит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправка и получение данных \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"приложениями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работа с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протоколами высокого уровня\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"взаимодействие пользователя с сетью\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры задач:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"открыть веб-страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправить письмо\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачать файл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получить данные с API\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Примеры протоколов прикладного уровня\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самые часто спрашиваемые на собеседованиях:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP / HTTPS\"},{\"type\":\"text\",\"text\":\" — загрузка веб-страниц и API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP / SFTP\"},{\"type\":\"text\",\"text\":\" — передача файлов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP\"},{\"type\":\"text\",\"text\":\" — отправка электронной почты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3 / IMAP\"},{\"type\":\"text\",\"text\":\" — получение почты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS\"},{\"type\":\"text\",\"text\":\" — преобразование доменного имени в IP-адрес\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"браузер — это не протокол\"},{\"type\":\"text\",\"text\":\", а программа,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP — это протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты вводишь в браузере \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"https://example.com\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень\"},{\"type\":\"text\",\"text\":\" формирует HTTP-запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже лежащие уровни:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"разбивают данные на пакеты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доставляют их по сети\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ответ возвращается обратно\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень\"},{\"type\":\"text\",\"text\":\" передаёт данные браузеру, который показывает страницу\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь видит страницу — и всё.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Как именно данные шли по сети — его не волнует.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:29:53.132Z",
+        "updatedAt": "2025-12-29T11:29:53.132Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое demultiplexing?",
+        "id": 7605,
+        "premium": false,
+        "category": {
+          "id": 303,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие задачи решает прикладной уровень?",
+        "id": 7622,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7622,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие задачи решает прикладной уровень?\"}]}]}",
+        "title": "Какие задачи решает прикладной уровень?",
+        "order": 420601,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень решает задачи, связанные с работой приложений в сети\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Проще говоря, он отвечает за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"то, чтобы программы могли отправлять и получать данные через сеть удобным и понятным способом\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Основные задачи прикладного уровня\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Взаимодействие приложений с сетью\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Прикладной уровень — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точка входа в сеть для программ\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузеров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовых клиентов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мессенджеров\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"API-клиентов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приложение не работает напрямую с пакетами и IP — оно обращается к прикладному уровню.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Реализация сетевых сервисов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Прикладной уровень предоставляет готовые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сетевые сервисы\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"загрузка веб-страниц\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправка и получение почты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передача файлов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запросы к серверным API\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть он отвечает на вопрос:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“Какой именно сетевой сервис нужен приложению?”\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. Определение формата и смысла данных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На этом уровне определяется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что именно передаётся\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в каком формате\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как интерпретировать данные\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML — для веб-страниц\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"JSON / XML — для API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текст писем и вложения — для почты\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нижележащим уровням всё равно, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"text\":\" внутри данных — они просто их доставляют.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. Управление сессиями на уровне приложений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Прикладной уровень может:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"инициировать запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получать ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"завершать логическое взаимодействие\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запрос страницы → ответ сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"авторизация пользователя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работа с токенами и cookies\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. Обработка ошибок на уровне сервиса\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если что-то пошло не так, прикладной уровень:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коды ошибок\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сообщает причину сбоя приложению\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«страница не найдена»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«доступ запрещён»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«неверные данные запроса»\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Чего прикладной уровень \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"НЕ делает\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это тоже часто спрашивают на собеседовании 👇\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Прикладной уровень \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не отвечает\"},{\"type\":\"text\",\"text\":\" за:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"маршрутизацию пакетов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IP-адреса\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"контроль целостности передачи\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"повторную отправку пакетов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Этим занимаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нижние уровни модели OSI\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Кратко для ответа на собеседовании\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запомнить можно так:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень решает задачи взаимодействия приложений с сетью: предоставляет сетевые сервисы, определяет формат и смысл данных и обеспечивает работу пользовательских сетевых приложений.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:30:45.304Z",
+        "updatedAt": "2025-12-29T11:30:45.304Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое прикладной уровень модели OSI?",
+        "id": 7621,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие протоколы относятся к прикладному уровню?",
+        "id": 7623,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7623,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие протоколы относятся к прикладному уровню?\"}]}]}",
+        "title": "Какие протоколы относятся к прикладному уровню?",
+        "order": 420602,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"К \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прикладному уровню\"},{\"type\":\"text\",\"text\":\" относятся протоколы, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"непосредственно используются приложениями\"},{\"type\":\"text\",\"text\":\" для работы в сети: браузерами, почтовыми клиентами, мессенджерами, API и т.д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"если протокол нужен программе, а не сети “под капотом” — это прикладной уровень\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Основные протоколы прикладного уровня\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🌐 Веб и API\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP\"},{\"type\":\"text\",\"text\":\" — передача веб-страниц и запросов к API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTPS\"},{\"type\":\"text\",\"text\":\" — то же самое, но с шифрованием\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket\"},{\"type\":\"text\",\"text\":\" — постоянное двустороннее соединение (чаты, онлайн-игры)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📧 Электронная почта\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP\"},{\"type\":\"text\",\"text\":\" — отправка писем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3\"},{\"type\":\"text\",\"text\":\" — получение почты (скачал → удалил с сервера)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP\"},{\"type\":\"text\",\"text\":\" — получение почты с хранением писем на сервере\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📁 Передача файлов\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP\"},{\"type\":\"text\",\"text\":\" — передача файлов (без шифрования)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTPS\"},{\"type\":\"text\",\"text\":\" — FTP с шифрованием\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SFTP\"},{\"type\":\"text\",\"text\":\" — передача файлов поверх SSH\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"TFTP\"},{\"type\":\"text\",\"text\":\" — упрощённая передача файлов (часто для сетевого оборудования)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🌍 Служебные сетевые сервисы\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS\"},{\"type\":\"text\",\"text\":\" — преобразует доменное имя в IP-адрес\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DHCP\"},{\"type\":\"text\",\"text\":\" — автоматически выдаёт IP-адреса устройствам\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"NTP\"},{\"type\":\"text\",\"text\":\" — синхронизация времени\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔐 Удалённый доступ и управление\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SSH\"},{\"type\":\"text\",\"text\":\" — безопасный удалённый доступ к серверу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Telnet\"},{\"type\":\"text\",\"text\":\" — удалённый доступ без шифрования (устарел)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SNMP\"},{\"type\":\"text\",\"text\":\" — мониторинг и управление сетевыми устройствами\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важный момент для собеседований ⚠️\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Протокол прикладного уровня ≠ программа\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер → использует HTTP / HTTPS\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовый клиент → использует SMTP, IMAP, POP3\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ping\"},{\"type\":\"text\",\"text\":\" → это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"утилита\"},{\"type\":\"text\",\"text\":\", а ICMP — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не прикладной уровень\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:31:29.059Z",
+        "updatedAt": "2025-12-29T11:31:29.059Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие задачи решает прикладной уровень?",
+        "id": 7622,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему прикладной уровень ближе всего к пользователю?",
+        "id": 7624,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7624,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему прикладной уровень ближе всего к пользователю?\"}]}]}",
+        "title": "Почему прикладной уровень ближе всего к пользователю?",
+        "order": 420603,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень ближе всего к пользователю\"},{\"type\":\"text\",\"text\":\", потому что именно на этом уровне \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"работают программы, с которыми пользователь взаимодействует напрямую\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если сказать совсем просто:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пользователь не общается с сетью напрямую — он общается с приложениями\"},{\"type\":\"text\",\"text\":\", а приложения работают на прикладном уровне.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Основные причины\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Пользователь работает не с сетью, а с программами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"открывает сайт в браузере\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправляет письмо\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивает файл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пользуется мессенджером\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не видит пакеты, IP-адреса и маршруты\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он видит кнопки, формы, страницы — всё это относится к прикладному уровню.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Прикладной уровень понимает «смысл» данных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Только прикладной уровень знает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что такое веб-страница\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что такое письмо\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что такое файл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что означает запрос «получить данные пользователя»\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нижние уровни:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не знают, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"text\":\" передаётся\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"просто доставляют набор байт\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. Все действия пользователя начинаются здесь\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любое сетевое действие пользователя:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"начинается на прикладном уровне\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и заканчивается на прикладном уровне\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пользователь нажал «Обновить страницу»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер сформировал HTTP-запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер вернул HTTP-ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер показал результат пользователю\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. Ошибки видит именно пользователь\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сообщения вроде:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«404 — страница не найдена»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Доступ запрещён»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Неверный логин или пароль»\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ошибки прикладного уровня\"},{\"type\":\"text\",\"text\":\", потому что они понятны пользователю и связаны с логикой сервиса.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткая аналогия 🚪\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сеть можно представить как ресторан:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нижние уровни — кухня и доставка еды\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"прикладной уровень — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"официант и меню\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пользователь — гость\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Гостю важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что он заказал\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что ему принесли\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как именно блюдо готовили и доставляли — его не интересует.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запомни эту формулировку:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прикладной уровень ближе всего к пользователю, потому что именно на нём работают сетевые приложения и сервисы, с которыми пользователь взаимодействует напрямую, и именно этот уровень оперирует понятным пользователю смыслом данных.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:32:11.556Z",
+        "updatedAt": "2025-12-29T11:32:11.556Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие протоколы относятся к прикладному уровню?",
+        "id": 7623,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое клиент-серверная архитектура?",
+        "id": 7625,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7625,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое клиент-серверная архитектура?\"}]}]}",
+        "title": "Что такое клиент-серверная архитектура?",
+        "order": 420604,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиент-серверная архитектура\"},{\"type\":\"text\",\"text\":\" — это способ организации работы приложений в сети, при котором\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одни устройства (клиенты) запрашивают данные или услуги, а другие (серверы) их предоставляют\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще всего:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиент просит — сервер отвечает\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Кто такой клиент и кто такой сервер\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🧑‍💻 Клиент\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиент\"},{\"type\":\"text\",\"text\":\" — это программа или устройство, которое:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"инициирует запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хочет получить данные или услугу\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры клиентов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мобильное приложение\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовый клиент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"программа, обращающаяся к API\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🖥️ Сервер\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сервер\"},{\"type\":\"text\",\"text\":\" — это программа или компьютер, который:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"принимает запросы от клиентов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обрабатывает их\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправляет ответы\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры серверов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"веб-сервер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовый сервер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер базы данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"API-сервер\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает клиент-серверная архитектура\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Типичный сценарий:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент отправляет запрос\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например: «дай мне веб-страницу»)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер принимает запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер обрабатывает его\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(ищет данные, проверяет доступ)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер отправляет ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент показывает результат пользователю\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиент не знает, как сервер всё делает внутри\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а серверу не важно, как именно клиент покажет результат.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 🌐\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты заходишь на сайт:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сайт → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сервер\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер отправляет HTTP-запрос\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сервер возвращает HTML, CSS, картинки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Браузер отображает страницу\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему используется клиент-серверная архитектура\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Основные преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"централизация данных\"},{\"type\":\"text\",\"text\":\" (всё хранится на сервере)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удобство обновлений\"},{\"type\":\"text\",\"text\":\" (меняется сервер — клиенты работают дальше)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"безопасность\"},{\"type\":\"text\",\"text\":\" (контроль доступа на сервере)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"масштабируемость\"},{\"type\":\"text\",\"text\":\" (можно обслуживать много клиентов)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что важно для собеседования ⚠️\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент и сервер — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"это роли\"},{\"type\":\"text\",\"text\":\", а не обязательно разные компьютеры\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(одна программа может быть и клиентом, и сервером)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда инициирует запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ожидает запросы и отвечает на них\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобная формулировка:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиент-серверная архитектура — это модель взаимодействия, при которой клиентские приложения отправляют запросы, а серверы обрабатывают эти запросы и возвращают ответы, предоставляя данные или сервисы.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:33:51.511Z",
+        "updatedAt": "2025-12-29T11:33:51.511Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему прикладной уровень ближе всего к пользователю?",
+        "id": 7624,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое запрос (request)?",
+        "id": 7626,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7626,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое запрос (request)?\"}]}]}",
+        "title": "Что такое запрос (request)?",
+        "order": 420605,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запрос (request)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сообщение, которое клиент отправляет серверу\"},{\"type\":\"text\",\"text\":\", чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получить данные или выполнить какое-то действие\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще всего:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запрос — это “просьба” клиента к серверу\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен запрос\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без запроса сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ничего не делает\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Именно запрос:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сообщает серверу, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что нужно клиенту\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запускает обработку на сервере\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"является началом общения между клиентом и сервером\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 В клиент-серверной архитектуре \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда первым говорит клиент\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что может содержать запрос\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В простом виде запрос обычно включает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что сделать\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например: получить данные, отправить данные, удалить ресурс)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"к чему обратиться\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(адрес ресурса на сервере)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дополнительные данные\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(логин, пароль, параметры, тело запроса)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Дай мне страницу /profile для пользователя 123»\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример на практике (HTTP)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самый знакомый пример — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP-запрос\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер запрашивает веб-страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мобильное приложение запрашивает данные у API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"программа отправляет форму на сервер\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если пользователь просто открывает сайт —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри всегда происходит запрос\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит после запроса\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент отправляет запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер получает его\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер обрабатывает запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер формирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ответ (response)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент получает ответ и использует его\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запрос \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда предполагает ответ\"},{\"type\":\"text\",\"text\":\", даже если это ошибка.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Аналогия из жизни 📩\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запрос — это как:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заказ в интернет-магазине\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письмо с просьбой\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вопрос, заданный человеку\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты сначала спрашиваешь —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и только потом получаешь ответ.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запомни эту формулировку:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запрос (request) — это сообщение, отправляемое клиентом серверу для получения данных или выполнения определённого действия. Он инициирует взаимодействие в клиент-серверной архитектуре.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:34:45.100Z",
+        "updatedAt": "2025-12-29T11:34:45.100Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое клиент-серверная архитектура?",
+        "id": 7625,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое ответ (response)?",
+        "id": 7627,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7627,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ответ (response)?\"}]}]}",
+        "title": "Что такое ответ (response)?",
+        "order": 420606,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ответ (response)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сообщение, которое сервер отправляет клиенту в ответ на запрос\"},{\"type\":\"text\",\"text\":\", чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передать результат обработки запроса\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще всего:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ответ — это реакция сервера на запрос клиента\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен ответ\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ответ нужен, чтобы клиент понял:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"успешно ли выполнен запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"какие данные вернул сервер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"произошла ли ошибка и какая именно\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без ответа клиент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не знает, что произошло на сервере\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что может содержать ответ\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно ответ включает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"результат выполнения запроса\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(данные, файл, страницу)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"статус выполнения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(успех, ошибка, отказ)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"служебную информацию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(тип данных, длина, настройки)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример простого смысла ответа:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Запрос выполнен, вот данные»\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"или\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"«Ошибка: доступ запрещён»\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример на практике (HTTP)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самый распространённый пример — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP-ответ\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер возвращает HTML-страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"API возвращает JSON\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер сообщает об ошибке (404, 500 и т.д.)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если данных нет, сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всё равно отправляет ответ\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Связь запроса и ответа\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно помнить:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запрос всегда идёт от клиента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ответ всегда идёт от сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"без запроса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ответа не бывает\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это основа клиент-серверного взаимодействия.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Аналогия из жизни 📬\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запрос — это вопрос:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Скажи, который час?»\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ответ — это реакция:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Сейчас 15:30»\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вопрос без ответа — бесполезен,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ответ без вопроса — невозможен.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Готовая формулировка:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ответ (response) — это сообщение, которое сервер отправляет клиенту в ответ на запрос, содержащее результат обработки запроса, данные или информацию об ошибке.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:35:25.653Z",
+        "updatedAt": "2025-12-29T11:35:25.653Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое запрос (request)?",
+        "id": 7626,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое stateless взаимодействие?",
+        "id": 7628,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7628,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое stateless взаимодействие?\"}]}]}",
+        "title": "Что такое stateless взаимодействие?",
+        "order": 420607,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Stateless-взаимодействие\"},{\"type\":\"text\",\"text\":\" — это способ общения клиента и сервера, при котором\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сервер не хранит информацию о предыдущих запросах клиента\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждый запрос — как первый и единственный\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что значит «stateless» простыми словами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если взаимодействие stateless:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не помнит клиента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не помнит прошлые запросы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вся нужная информация должна быть в каждом запросе\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер обрабатывает запрос → отправляет ответ → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"забывает всё\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как это выглядит на практике\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент отправляет запрос:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Дай данные пользователя 123, вот мой токен»\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверяет токен\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обрабатывает запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправляет ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не сохраняет состояние клиента\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Следующий запрос:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Дай список заказов пользователя 123, вот мой токен»\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для сервера это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"абсолютно новый запрос\"},{\"type\":\"text\",\"text\":\", даже если он пришёл от того же клиента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 🧾\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Stateless — это как очередь в справочном окне:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты подходишь\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задаёшь вопрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получаешь ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отходишь\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если ты подойдёшь снова, сотрудник \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не обязан помнить\"},{\"type\":\"text\",\"text\":\", что ты спрашивал раньше.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снова объяснить всё с нуля\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Где чаще всего встречается stateless\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самый известный пример — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый HTTP-запрос независим\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер не хранит состояние сессии по умолчанию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логин, токены, параметры — всё передаётся в запросе\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Cookies, токены и сессии — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"способы обойти stateless\"},{\"type\":\"text\",\"text\":\", но не отменить его.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему stateless — это хорошо\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"простота\"},{\"type\":\"text\",\"text\":\" серверной логики\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"масштабируемость\"},{\"type\":\"text\",\"text\":\" (любой сервер может обработать запрос)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"надёжность\"},{\"type\":\"text\",\"text\":\" (серверы не зависят от памяти состояния)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удобно для распределённых систем\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:36:01.671Z",
+        "updatedAt": "2025-12-29T11:36:01.671Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ответ (response)?",
+        "id": 7627,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое stateful взаимодействие?",
+        "id": 7629,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7629,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое stateful взаимодействие?\"}]}]}",
+        "title": "Что такое stateful взаимодействие?",
+        "order": 420608,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Stateful-взаимодействие\"},{\"type\":\"text\",\"text\":\" — это способ общения клиента и сервера, при котором\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сервер хранит состояние (контекст) клиента между запросами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сервер “помнит” клиента и предыдущие шаги общения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что значит «stateful» простыми словами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если взаимодействие stateful:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"знает, кто ты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"помнит, что было раньше\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"следующий запрос \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"зависит от предыдущих\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один запрос — это не отдельное событие,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"часть общего диалога\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как это выглядит на практике\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент подключается к серверу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сессию\"},{\"type\":\"text\",\"text\":\" и запоминает состояние клиента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент отправляет запросы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"использует сохранённое состояние\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"понимает контекст\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"продолжает работу с того же места\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиенту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не нужно каждый раз передавать всю информацию\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 🗂️\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Stateful — это как разговор с личным менеджером в банке:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты пришёл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"менеджер открыл твоё дело\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помнит, кто ты и зачем пришёл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый следующий вопрос — в рамках одного разговора\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если ты выйдешь и вернёшься позже —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"разговор можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"продолжить\"},{\"type\":\"text\",\"text\":\", а не начинать сначала.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Где используется stateful-взаимодействие\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Частые примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работа по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сессиям\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"приложения с постоянным подключением\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаты и онлайн-игры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"протоколы, где важно состояние соединения\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Сервер хранит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"данные сессии\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"шаги диалога\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"промежуточные результаты\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы и минусы\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"➕ Плюсы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобнее для сложных сценариев\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"меньше данных в каждом запросе\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проще логика клиента\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"➖ Минусы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложнее масштабировать\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер тратит память на состояние\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при сбое состояние может потеряться\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:36:33.208Z",
+        "updatedAt": "2025-12-29T11:36:33.208Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое stateless взаимодействие?",
+        "id": 7628,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое HTTP?",
+        "id": 7630,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7630,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое HTTP?\"}]}]}",
+        "title": "Что такое HTTP?",
+        "order": 420609,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP (HyperText Transfer Protocol)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обмена данными между клиентом и сервером в интернете\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP — это набор правил, по которым браузер и сервер “разговаривают” друг с другом\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен HTTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP нужен, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер мог \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запросить веб-страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер мог \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправить ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"клиент и сервер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понимали друг друга\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без HTTP браузер не знал бы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как попросить страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как сервер должен ответить\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как понять, успешен запрос или нет\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Где используется HTTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP используется почти везде:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при открытии сайтов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в REST API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в мобильных приложениях\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при обмене данными между сервисами\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый раз, когда ты:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заходишь на сайт\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нажимаешь кнопку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправляешь форму\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"— \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"работает HTTP\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает HTTP (упрощённо)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент (например, браузер) отправляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP-запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер принимает запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер обрабатывает его\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер отправляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP-ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент получает и использует результат\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Модель всегда одна и та же:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"request → response\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Какие данные передаются по HTTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По HTTP можно передавать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML-страницы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"JSON и XML\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изображения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"файлы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"данные форм\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не важно, что именно передаётся\"},{\"type\":\"text\",\"text\":\" —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"он просто доставляет данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важные свойства HTTP\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Прикладной уровень\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP работает на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прикладном уровне модели OSI\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и использует нижние уровни (TCP/IP) для доставки данных.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Stateless\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"stateless-протокол\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер не хранит состояние клиента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый запрос независим\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вся нужная информация передаётся в запросе\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. Текстовый и понятный\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP-запросы и ответы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имеют понятную структуру\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко читаются и отлаживаются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобны для разработки и тестирования\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 🌍\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты вводишь адрес сайта:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер отправляет HTTP-запрос:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"«дай мне страницу»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер отвечает HTTP-ответом:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"«вот страница и статус 200 OK»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузер показывает страницу пользователю\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запомни эту формулировку:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP — это протокол прикладного уровня, который определяет правила обмена данными между клиентом и сервером и используется для передачи веб-страниц и API-запросов в интернете.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:37:33.743Z",
+        "updatedAt": "2025-12-29T11:37:33.743Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое stateful взаимодействие?",
+        "id": 7629,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое FTP?",
+        "id": 7631,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7631,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое FTP?\"}]}]}",
+        "title": "Что такое FTP?",
+        "order": 420610,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP (File Transfer Protocol)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передачи файлов между клиентом и сервером по сети\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP нужен, чтобы загружать файлы на сервер и скачивать их с сервера\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен FTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FTP используется, когда нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"загрузить файлы на сервер (например, сайт)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачать файлы с сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"управлять файлами на удалённом сервере\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(создавать папки, удалять файлы, переименовывать)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Раньше FTP был \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основным способом работы с файлами на серверах\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает FTP (упрощённо)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FTP использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиент-серверную модель\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FTP-клиент подключается к FTP-серверу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент проходит авторизацию (логин/пароль)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запрашивает список файлов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"загружает или скачивает файлы\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервер выполняет команды и отвечает\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Обычно используют специальные программы — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP-клиенты\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Особенность FTP: два соединения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это популярный вопрос на собеседованиях 👇\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FTP использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"два канала связи\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"управляющее соединение\"},{\"type\":\"text\",\"text\":\" — для команд\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"соединение данных\"},{\"type\":\"text\",\"text\":\" — для передачи файлов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Из-за этого FTP бывает сложнее настраивать в сетях с NAT и firewall.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Активный и пассивный режимы FTP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Active mode\"},{\"type\":\"text\",\"text\":\" — сервер сам подключается к клиенту\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Passive mode\"},{\"type\":\"text\",\"text\":\" — клиент подключается ко всем портам сервера\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 На практике почти всегда используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"passive mode\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"потому что он лучше работает через firewall.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главный минус FTP ⚠️\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP не шифрует данные\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логин и пароль передаются открытым текстом\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"файлы передаются без защиты\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому в чистом виде FTP \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"считается небезопасным\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Безопасные альтернативы FTP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTPS\"},{\"type\":\"text\",\"text\":\" — FTP + SSL/TLS\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SFTP\"},{\"type\":\"text\",\"text\":\" — передача файлов поверх SSH\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 На современных системах чаще используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SFTP\"},{\"type\":\"text\",\"text\":\", а не FTP.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 📁\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FTP — это как удалённый файловый менеджер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"твой компьютер — клиент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер — это «удалённый диск»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты копируешь файлы туда и обратно\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Готовая формулировка:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FTP — это протокол прикладного уровня, предназначенный для передачи файлов между клиентом и сервером по сети. Он позволяет загружать, скачивать и управлять файлами на удалённом сервере, но в базовом виде не обеспечивает шифрование данных.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:38:21.303Z",
+        "updatedAt": "2025-12-29T11:38:21.303Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое HTTP?",
+        "id": 7630,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое SMTP?",
+        "id": 7632,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7632,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое SMTP?\"}]}]}",
+        "title": "Что такое SMTP?",
+        "order": 420611,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP (Simple Mail Transfer Protocol)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправки электронной почты\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP отвечает за отправку писем от отправителя к почтовому серверу и между серверами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен SMTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SMTP нужен, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовый клиент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправил письмо\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почтовые серверы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передали письмо друг другу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письмо дошло до сервера получателя\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP — это только про отправку\"},{\"type\":\"text\",\"text\":\", а не про чтение писем.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает SMTP (упрощённо)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Процесс выглядит так:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь нажимает «Отправить письмо»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почтовый клиент отправляет письмо по SMTP на свой почтовый сервер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почтовый сервер отправителя находит сервер получателя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Серверы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передают письмо друг другу по SMTP\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Письмо попадает на сервер получателя\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого получатель уже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"забирает письмо другим протоколом\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"SMTP и получение почты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это частая путаница на собеседованиях ⚠️\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP\"},{\"type\":\"text\",\"text\":\" — отправка писем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3 / IMAP\"},{\"type\":\"text\",\"text\":\" — получение писем\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 Нельзя получить письмо по SMTP — только отправить.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Какие данные передаёт SMTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SMTP передаёт:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адрес отправителя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адрес получателя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тему письма\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текст письма\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вложения (в специальном формате)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для SMTP письмо — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"текстовое сообщение с правилами оформления\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Безопасность SMTP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В классическом виде SMTP:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не шифрует данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передаёт логины и письма открытым текстом\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому на практике используют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SMTP + TLS (STARTTLS)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"защищённые порты\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 📬\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SMTP — это как почтовая служба:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты кладёшь письмо в ящик\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почта доставляет его в нужное отделение\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дальше адресат забирает письмо сам\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:39:03.204Z",
+        "updatedAt": "2025-12-29T11:39:03.204Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое FTP?",
+        "id": 7631,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое POP3?",
+        "id": 7633,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7633,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое POP3?\"}]}]}",
+        "title": "Что такое POP3?",
+        "order": 420612,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3 (Post Office Protocol version 3)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получения (загрузки) электронной почты с почтового сервера на клиент\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3 нужен, чтобы забрать письма с сервера на компьютер или телефон\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен POP3\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"POP3 используется, когда нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получить письма с почтового сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сохранить их локально на устройстве\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать с почтой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"офлайн\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Исторически POP3 создавался для ситуации:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«подключился → скачал почту → отключился».\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает POP3 (упрощённо)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почтовый клиент подключается к почтовому серверу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проходит авторизацию (логин/пароль)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент запрашивает список писем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скачивает письма\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно письма \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удаляются с сервера\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Это ключевая особенность POP3.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главная особенность POP3 ⚠️\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Письма хранятся у клиента, а не на сервере\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Последствия:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если почту скачали на один компьютер —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"на другом устройстве писем уже не будет\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние писем (прочитано / не прочитано)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"не синхронизируется\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"POP3 vs IMAP (коротко)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивает письма\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часто удаляет их с сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобно для одного устройства\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письма хранятся на сервере\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для нескольких устройств\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 На практике сейчас \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"чаще используют IMAP\"},{\"type\":\"text\",\"text\":\", а не POP3.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Безопасность POP3\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Классический POP3:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не шифрует данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передаёт логин и пароль открытым текстом\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому используют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3S (POP3 + SSL/TLS)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 📥\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"POP3 — это как:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"забрать бумажные письма из почтового ящика\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"унести их домой\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в ящике писем больше нет\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:39:38.192Z",
+        "updatedAt": "2025-12-29T11:39:38.192Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое SMTP?",
+        "id": 7632,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое IMAP?",
+        "id": 7634,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7634,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое IMAP?\"}]}]}",
+        "title": "Что такое IMAP?",
+        "order": 420613,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP (Internet Message Access Protocol)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"работы с электронной почтой прямо на почтовом сервере\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP позволяет читать и управлять почтой на сервере, а не скачивать её целиком на устройство\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен IMAP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IMAP используется, когда нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать с почтой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"с нескольких устройств\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"видеть одинаковые письма на телефоне, ноутбуке и веб-почте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранить письма на сервере\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"синхронизировать состояние писем\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Именно поэтому IMAP — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стандарт по умолчанию в современных почтовых сервисах\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает IMAP (упрощённо)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почтовый клиент подключается к серверу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проходит авторизацию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запрашивает список писем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"читает письма\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помечает их как прочитанные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"перемещает по папкам\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Все изменения сохраняются на сервере\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Клиент получает только нужные данные, а не всю почту сразу.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главная особенность IMAP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почта хранится на сервере\"},{\"type\":\"text\",\"text\":\", а клиент — это только «окно» для просмотра.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это означает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одно и то же письмо видно на всех устройствах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"папки и метки синхронизируются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"статус «прочитано / не прочитано» одинаков везде\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"IMAP vs POP3 (коротко и понятно)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письма на сервере\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для нескольких устройств\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"синхронизация состояния\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"POP3\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письма скачиваются на устройство\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаще удаляются с сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"плохо подходит для нескольких устройств\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Если на собеседовании спрашивают «что выбрать?» —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAP почти всегда правильный ответ\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Безопасность IMAP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Классический IMAP:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не шифрует данные\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На практике используют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IMAPS (IMAP + SSL/TLS)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 📬\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IMAP — это как облачное хранилище писем:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"письма лежат «в облаке»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты заходишь с любого устройства\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"видишь одну и ту же почту\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:40:12.217Z",
+        "updatedAt": "2025-12-29T11:40:12.217Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое POP3?",
+        "id": 7633,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое DNS?",
+        "id": 7635,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7635,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое DNS?\"}]}]}",
+        "title": "Что такое DNS?",
+        "order": 420614,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS (Domain Name System)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"служба и протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"преобразует понятные человеку доменные имена в IP-адреса\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS — это “телефонная книга интернета”\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен DNS\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компьютеры в сети \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не понимают имена сайтов\"},{\"type\":\"text\",\"text\":\", они работают только с IP-адресами\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"142.250.184.206\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но людям неудобно это запоминать, поэтому мы используем имена:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"google.com\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yandex.ru\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"example.com\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS связывает имя сайта и его IP-адрес\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает DNS (упрощённо)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты вводишь в браузере адрес сайта:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер спрашивает:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"«Какой IP-адрес у \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"example.com\"},{\"type\":\"text\",\"text\":\"?»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS-сервер ищет соответствие\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS-сервер отвечает:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"«IP-адрес такой-то»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер уже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подключается к серверу по IP\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Без DNS интернет в привычном виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не работал бы\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важный момент для собеседования ⚠️\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не загружает сайты\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не передаёт страницы\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только сообщает IP-адрес\"},{\"type\":\"text\",\"text\":\", куда нужно идти дальше.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Иерархия DNS (кратко)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS устроен как иерархия:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корневые DNS-серверы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"серверы доменных зон (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".com\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".ru\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS-серверы конкретных доменов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это позволяет DNS:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"быть распределённым\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать быстро\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не иметь единой точки отказа\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Какие данные хранит DNS\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS может хранить:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IP-адрес сайта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адреса почтовых серверов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"служебную информацию о домене\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самое главное и часто спрашиваемое:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"домен → IP-адрес\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 📖\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DNS — это как контакты в телефоне:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты ищешь имя человека\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"телефон показывает номер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дальше ты уже звонишь по номеру\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Готовая формулировка:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DNS — это система и протокол прикладного уровня, предназначенный для преобразования доменных имён в IP-адреса, чтобы клиент мог найти нужный сервер в сети.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:40:44.114Z",
+        "updatedAt": "2025-12-29T11:40:44.114Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое IMAP?",
+        "id": 7634,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое WebSocket?",
+        "id": 7636,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7636,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое WebSocket?\"}]}]}",
+        "title": "Что такое WebSocket?",
+        "order": 420615,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"протокол прикладного уровня\"},{\"type\":\"text\",\"text\":\", который обеспечивает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"постоянное двустороннее соединение между клиентом и сервером\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket позволяет клиенту и серверу “разговаривать” в реальном времени\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен WebSocket\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный HTTP работает так:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"клиент отправил запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер ответил\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"соединение закончилось\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это неудобно, если нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мгновенно получать обновления\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"постоянно обмениваться сообщениями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не ждать нового запроса от клиента\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket решает эту проблему\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главная идея WebSocket\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Соединение устанавливается один раз и остаётся открытым\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"клиент может отправлять данные серверу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в любой момент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер может отправлять данные клиенту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без запроса\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Это называется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двустороннее (full-duplex) соединение\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает WebSocket (упрощённо)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент подключается к серверу по HTTP\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Происходит «upgrade» — переход с HTTP на WebSocket\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Устанавливается постоянное соединение\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Клиент и сервер свободно обмениваются сообщениями\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без постоянных запросов и ожиданий.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Где используется WebSocket\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Типичные примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"онлайн-чаты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мессенджеры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"биржевые котировки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"онлайн-игры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уведомления в реальном времени\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"совместные редакторы (Google Docs и аналоги)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Везде, где важна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"минимальная задержка\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"WebSocket vs HTTP (коротко)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запрос → ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет постоянного соединения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер сам не инициирует отправку данных\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"постоянное соединение\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сервер может сам отправлять данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для real-time\"}]}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример из жизни 💬\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTP — это как переписка по email:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"написал → подождал → получил ответ.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"WebSocket — это как телефонный разговор или чат:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"можно говорить в любой момент и сразу получать ответ.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Краткий ответ для собеседования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запомни эту формулировку:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WebSocket — это протокол прикладного уровня, который устанавливает постоянное двустороннее соединение между клиентом и сервером и используется для обмена данными в реальном времени.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 304,
+        "createdAt": "2025-12-29T11:41:29.471Z",
+        "updatedAt": "2025-12-29T11:41:29.471Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 304,
+          "title": "Прикладной уровень",
+          "directions": [
+            {
+              "categoryId": 304,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое DNS?",
+        "id": 7635,
+        "premium": false,
+        "category": {
+          "id": 304,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое HTTP?",
+        "id": 7637,
+        "premium": false,
+        "category": {
+          "id": 305,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

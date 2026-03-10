@@ -1,0 +1,777 @@
+{
+  "category": {
+    "id": 92,
+    "title": "Жизненный цикл Vue",
+    "description": " ",
+    "parentId": 6
+  },
+  "totalQuestions": 9,
+  "downloadedAt": "2026-03-09T08:21:51.314Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2901,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое жизненный цикл компонента Vue?\"}]}]}",
+        "title": "Что такое жизненный цикл компонента Vue?",
+        "order": 60600,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Жизненный цикл компонента Vue\"},{\"type\":\"text\",\"text\":\" — это последовательность этапов, через которые проходит компонент от момента создания до его уничтожения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"На каждом этапе Vue вызывает специальные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуки жизненного цикла\"},{\"type\":\"text\",\"text\":\" (lifecycle hooks), которые позволяют выполнять код в нужный момент.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Жизненный цикл — это “история жизни” компонента: создание → рендер → обновление → удаление.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эта тема — одна из ключевых на собеседованиях по Vue.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Основные фазы жизненного цикла\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый компонент проходит через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4 большие этапа\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание (Creation)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Монтирование в DOM (Mounting)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление (Updating)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размонтирование (Unmounting)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧵 1) Фаза создания компонента\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этот момент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"ещё нет\"},{\"type\":\"text\",\"text\":\" доступа к DOM, но уже доступны:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"props\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реактивные данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"методы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"watchers\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент только начал создаваться.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"},{\"type\":\"text\",\"text\":\" ещё не установлены.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"created\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Реактивность уже есть.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно обращаться к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Но DOM ещё нет!\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запросы к API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"инициализация данных\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧵 2) Фаза монтирования в DOM\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент впервые добавляется в DOM.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeMount\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM ещё \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не обновлён\"},{\"type\":\"text\",\"text\":\" Vue.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент появился в DOM.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно работать с элементами через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\", вызывать сторонние библиотеки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"инициализации плагинов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работы с canvas, charts\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"манипуляций с DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фокуса на инпуте\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧵 3) Фаза обновления\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда меняются реактивные данные → компонент ререндерится.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUpdate\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Старый DOM ещё на месте.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно посмотреть старые значения или отменить какие-то действия.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"updated\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM обновлён.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Лучшее место для реакции на изменения UI.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Не изменяй здесь данные → может вызвать бесконечный цикл!\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧵 4) Фаза размонтирования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда компонент удаляется из DOM (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-if\"},{\"type\":\"text\",\"text\":\" стал false).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUnmount\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент ещё жив, но скоро будет удалён.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно очистить таймеры или обработчики.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонента больше нет в DOM.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё, что было привязано к DOM, лучше освободить.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"остановки setInterval\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отписки от событий\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"закрытия веб-сокетов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очистки сторонних библиотек\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📋 Все хуки Vue 3 (полный список)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Фаза создания:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"created\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Монтирование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeMount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Обновление:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUpdate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"updated\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Размонтирование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUnmount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример в Composition API\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { onMounted, onUpdated, onUnmounted } from 'vue';\\n\\nexport default {\\n  setup() {\\n    onMounted(() => {\\n      console.log('Компонент смонтирован');\\n    });\\n\\n    onUpdated(() => {\\n      console.log('Компонент обновился');\\n    });\\n\\n    onUnmounted(() => {\\n      console.log('Компонент удалён');\\n    });\\n  }\\n}\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:34:31.792Z",
+        "updatedAt": "2025-11-27T09:34:31.792Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое пользовательская директива?",
+        "id": 2900,
+        "premium": false,
+        "category": {
+          "id": 91,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие основные этапы жизненного цикла компонента?",
+        "id": 2902,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2902,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие основные этапы жизненного цикла компонента?\"}]}]}",
+        "title": "Какие основные этапы жизненного цикла компонента?",
+        "order": 60601,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные этапы жизненного цикла компонента Vue — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"четыре ключевые фазы\"},{\"type\":\"text\",\"text\":\", через которые проходит любой компонент:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание (Creation)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Монтирование (Mounting)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление (Updating)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размонтирование (Unmounting)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждая фаза включает свои lifecycle hooks.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Разберём подробно — это классический вопрос на собеседованиях.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔵 1. Фаза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создания\"},{\"type\":\"text\",\"text\":\" (Creation)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент создаётся, запускается реактивность, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DOM ещё не доступен\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Реактивные данные ещё не инициализированы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нельзя обращаться к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"created\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Реактивность уже работает\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Доступны \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\", watch\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM ещё нет\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запросы к API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подготовка данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настройка таймеров\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🟢 2. Фаза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Монтирования\"},{\"type\":\"text\",\"text\":\" (Mounting)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент создаёт виртуальный DOM и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вставляется в реальный DOM\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeMount\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM ещё не обновлён Vue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Начальная разметка на странице\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент полностью в DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"refs\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно интегрировать сторонние библиотеки\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"инициализация графиков\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фокус на input\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работа с canvas\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подключение сторонних скриптов\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🟡 3. Фаза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновления\"},{\"type\":\"text\",\"text\":\" (Updating)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запускается каждый раз, когда изменяются реактивные данные.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUpdate\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM ещё старый\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Данные уже изменились\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"updated\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM обновлён\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно реагировать на то, что UI изменился\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важно: не изменяй \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"text\":\" внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"updated\"},{\"type\":\"text\",\"text\":\", иначе бесконечный цикл.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔴 4. Фаза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размонтирования\"},{\"type\":\"text\",\"text\":\" (Unmounting)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент удаляется из DOM.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUnmount\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент всё ещё в DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Время очистить ресурсы\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонента больше нет\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM-элементы уничтожены\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очистка таймеров (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setInterval\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setTimeout\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отписка от событий (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"window.addEventListener\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"закрытие WebSocket\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удаление слушателей сторонних библиотек\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:35:12.681Z",
+        "updatedAt": "2025-11-27T09:35:12.681Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое жизненный цикл компонента Vue?",
+        "id": 2901,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется хук beforeCreate?",
+        "id": 2903,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2903,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется хук \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Для чего используется хук beforeCreate?",
+        "order": 60602,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"первый хук жизненного цикла\"},{\"type\":\"text\",\"text\":\" компонента Vue.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самым первым\"},{\"type\":\"text\",\"text\":\", ещё до инициализации реактивности, props, computed и методов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это момент, когда компонент только начинает создаваться, но у него ещё нет доступа ни к данным, ни к props.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Что происходит на этапе beforeCreate?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На этом этапе:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ещё не создал реактивные данные (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"props ещё не доступны\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"methods ещё не связаны с экземпляром\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"computed и watch ещё не инициализированы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступен только голый экземпляр компонента\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔍 Что можно и нельзя делать в beforeCreate?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"❌ Что делать НЕЛЬЗЯ:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В хуке нет доступа к:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.dataProperty\\nthis.someMethod()\\nthis.someComputed\\nthis.someProp\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все они будут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"undefined\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Что можно делать:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Настройка глобальных переменных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, привязка DI (dependency injection) в больших приложениях.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подключение плагинов, которые должны выполниться раньше всего\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отладка (debugging)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук полезен для анализа процесса инициализации.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модификация экземпляра до того, как Vue применит реактивность\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример поведения\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  data() {\\n    return { msg: \\\"Hello\\\" };\\n  },\\n\\n  beforeCreate() {\\n    console.log(this.msg);      // undefined\\n    console.log(this.$data);    // undefined\\n    console.log(this.$props);   // undefined\\n  },\\n\\n  created() {\\n    console.log(this.msg);      // \\\"Hello\\\"\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Когда реально можно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В реальном приложении он нужен редко.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Но есть кейсы:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Инициализация ранних зависимостей\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, библиотек, которые должны подключиться до создания реактивности.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Внутренние плагины и миксины\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагинам нужен «ранний вход».\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Dependency Injection (особенно во Vue 2)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Оптимизации при создании большого количества мелких компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:36:51.959Z",
+        "updatedAt": "2025-11-27T09:36:51.959Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие основные этапы жизненного цикла компонента?",
+        "id": 2902,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда вызывается mounted?",
+        "id": 2904,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2904,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Когда вызывается mounted?",
+        "order": 60603,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\" вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после того\"},{\"type\":\"text\",\"text\":\", как компонент:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"был создан,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отрисовал виртуальный DOM,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вставил реальный DOM-элемент в документ\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" вызывается, когда компонент полностью присутствует в DOM и с ним можно работать.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Что доступно в mounted?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этот момент уже есть:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступ к реальному DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступ к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"refs\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реактивные данные и props\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"watchers\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все дочерние компоненты тоже смонтированы\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть можно безопасно делать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DOM-манипуляции\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <input ref=\\\"inputEl\\\">\\n</template>\\n\\n<script>\\nexport default {\\n  mounted() {\\n    this.$refs.inputEl.focus();  // работает!\\n  }\\n}\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔍 Когда именно вызывается mounted?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фазы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выполнились хуки: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeCreate\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"created\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue создал виртуальный DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выполнился \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeMount\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue вставил сгенерированный DOM на страницу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Теперь вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Что обычно делают в mounted?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Работа с DOM напрямую:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$refs.canvas.getContext('2d')\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Инициализация сторонних библиотек:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"charts (Chart.js, ECharts)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"carousels\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"maps (Leaflet, Google Maps)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"tooltips\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"datepickers\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Работа с setInterval / setTimeout\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Подключение WebSocket\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(иногда делают это в created, но mounted — безопаснее для UI)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 5. Запросы API, если данные важны после рендера UI\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(хотя обычно их делают в created)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Когда НЕ стоит использовать mounted?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Не использовать для тяжелых операций\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что mounted — момент, когда UI становится видимым.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если хук тормозит — UI \\\"зависнет\\\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Не мутировать данные бесконечно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изменение данных сразу после mounted может вызвать лишний рендер.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:37:47.235Z",
+        "updatedAt": "2025-11-27T09:37:47.235Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется хук beforeCreate?",
+        "id": 2903,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда вызывается destroyed?",
+        "id": 2905,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2905,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Когда вызывается destroyed?",
+        "order": 60604,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В зависимости от версии Vue хук называется по-разному:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 2:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeDestroy\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 3:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUnmount\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\" в Vue 3 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"больше не существует\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так что отвечу для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 2\"},{\"type\":\"text\",\"text\":\", как в вопросе, и дам эквивалент для Vue 3 — это важно на собеседовании.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Когда вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\" (Vue 2)?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" вызывается тогда, когда компонент полностью уничтожен\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалён из DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалена его реактивность\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"разорвано дерево компонентов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалены наблюдатели (watchers)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонента больше НЕ существует\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" вызывается после окончательного удаления компонента из DOM и очистки всех его ресурсов.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Типичный жизненный цикл Vue 2 при уничтожении\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeDestroy → компонент ещё жив, можно очистить слушатели  \\ndestroyed → компонент полностью удалён\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример (Vue 2):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  destroyed() {\\n    console.log(\\\"Компонент удалён из DOM\\\");\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Срабатывает, например, когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-if\"},{\"type\":\"text\",\"text\":\" стал \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyComponent v-if=\\\"show\\\" />\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"show = false; // → destroyed вызывается\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Что можно делать в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чистить таймеры (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"clearInterval\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"clearTimeout\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отписываться от событий (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"removeEventListener\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"закрывать соединения (WebSocket)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"останавливать сторонние библиотеки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отменять подписки на внешние API\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Это финальная точка жизни компонента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важно: destroyed НЕ вызывается при v-show\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyComponent v-show=\\\"visible\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"visible\"},{\"type\":\"text\",\"text\":\" поменялся — компонент остаётся в DOM, только скрывается.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\" НЕ будет вызван.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔁 Vue 3 аналог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 хуки переименованы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeDestroy\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"beforeUnmount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { onUnmounted } from \\\"vue\\\";\\n\\nonUnmounted(() => {\\n  console.log(\\\"Компонент удалён в Vue 3\\\");\\n});\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:38:30.321Z",
+        "updatedAt": "2025-11-27T09:38:30.321Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда вызывается mounted?",
+        "id": 2904,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие хуки жизненного цикла доступны в Composition API?",
+        "id": 2906,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2906,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие хуки жизненного цикла доступны в Composition API?\"}]}]}",
+        "title": "Какие хуки жизненного цикла доступны в Composition API?",
+        "order": 60605,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Composition API\"},{\"type\":\"text\",\"text\":\" (Vue 3) доступны \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"те же этапы жизненного цикла\"},{\"type\":\"text\",\"text\":\", что и в Options API, но хуки вызываются через функции, импортируемые из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vue\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Все lifecycle-хуки в Composition API — это функции вида \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onXxx(...)\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", которые вызываются внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже — полный список, включая основные, дополнительные и нестандартные хуки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные хуки жизненного цикла (Composition API)\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Options API\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Composition API\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeCreate\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ отсутствует (аналог — код в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"created\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ отсутствует (аналог — код в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeMount\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeMount\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"mounted\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeUpdate\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeUpdate\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"updated\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeUnmount\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeUnmount\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"unmounted\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUnmounted\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeMount()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перед монтированием компонента\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onBeforeMount(() => {\\n  console.log(\\\"Перед монтированием\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"попал в DOM\"},{\"type\":\"text\",\"text\":\", можно работать с DOM, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"refs\"},{\"type\":\"text\",\"text\":\", сторонними библиотеками.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onMounted(() => {\\n  console.log(\\\"Компонент смонтирован\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeUpdate()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до обновления DOM\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onBeforeUpdate(() => {\\n  console.log(\\\"Перед обновлением\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DOM уже обновлён.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onUpdated(() => {\\n  console.log(\\\"Компонент обновлён\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeUnmount()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вот-вот будет удалён\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onBeforeUnmount(() => {\\n  console.log(\\\"Перед удалением\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔵 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUnmounted()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент полностью удалён из DOM.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onUnmounted(() => {\\n  console.log(\\\"Компонент удалён\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🟣 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дополнительные и продвинутые хуки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти хуки используются реже, но собеседующий может спросить.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onActivated()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент стал активным после восстановления из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onActivated(() => {\\n  console.log(\\\"Компонент активирован\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onDeactivated()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент был скрыт, но не уничтожен (тоже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onDeactivated(() => {\\n  console.log(\\\"Компонент деактивирован\\\");\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onErrorCaptured()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перехват ошибок из дочерних компонентов (аналог \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"errorCaptured\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onErrorCaptured((err, instance, info) => {\\n  console.log(err);\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onRenderTracked()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается при отслеживании реактивной зависимости (debug).\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onRenderTracked((event) => {\\n  console.log(\\\"tracked:\\\", event);\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onRenderTriggered()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается, если изменение данных вызвало повторный рендер.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onRenderTriggered((event) => {\\n  console.log(\\\"triggered:\\\", event);\\n});\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onServerPrefetch()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется только в SSR для серверных пререндеров.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onServerPrefetch(async () => {\\n  await fetchData();\\n});\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:45:31.581Z",
+        "updatedAt": "2025-11-27T09:45:31.581Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда вызывается destroyed?",
+        "id": 2905,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое <keep-alive>?",
+        "id": 2907,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2907,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое <keep-alive>?",
+        "order": 60606,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\" — это специальный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"встроенный компонент Vue\"},{\"type\":\"text\",\"text\":\", который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кэшировать состояние и DOM компонентов\"},{\"type\":\"text\",\"text\":\", чтобы при повторном отображении они \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не пересоздавались\"},{\"type\":\"text\",\"text\":\", а восстанавливались из памяти.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" делает компонент “живым”, даже если он временно убран с экрана. Он не уничтожается, а только скрывается.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это один из важнейших инструментов оптимизации.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Зачем нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно, когда компонент скрывается через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-if\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удаляется из DOM\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unmounted\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"теряются данные и состояние.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, переключение вкладок:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"Tab A → Tab B → Tab A\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если компонент не кэшировать — он создаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"с нуля\"},{\"type\":\"text\",\"text\":\" каждый раз.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это плохо, если внутри:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тяжёлые вычисления\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"формы с заполненными данными\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сторонние плагины\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние, которое нужно сохранять\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\" решает это.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример использования\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<keep-alive>\\n  <ComponentA v-if=\\\"showA\\\" />\\n</keep-alive>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонент будет создан один раз\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при скрытии \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не уничтожается\"},{\"type\":\"text\",\"text\":\", а “усыпляется”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при повторном показе \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"восстанавливается мгновенно\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔁 Жизненный цикл с keep-alive\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент получает два специальных хука:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"activated()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент снова заработал (показан).\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"⭐ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"deactivated()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент скрыт, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не уничтожен\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  activated() {\\n    console.log(\\\"Компонент активирован\\\");\\n  },\\n  deactivated() {\\n    console.log(\\\"Компонент скрыт\\\");\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎛 Фильтрация компонентов (include / exclude)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно указать, какие компоненты кэшировать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<keep-alive include=\\\"UserPage,ProfilePage\\\">\\n  <component :is=\\\"currentPage\\\" />\\n</keep-alive>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"include / exclude принимают:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"строку: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"CompA,CompB\\\"\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"массив: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"['CompA', 'CompB']\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"RegExp: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/^Admin/\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🗂 Ограничение размера кэша — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"max\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<keep-alive :max=\\\"5\\\">\\n  <component :is=\\\"currentPage\\\" />\\n</keep-alive>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue хранит только последние 5 компонентов, остальные удаляются.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не стоит\"},{\"type\":\"text\",\"text\":\" использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда компонент зависит от URL (например, страницы в роутере)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда нужно выполнять код при каждом входе в компонент (например, обновление данных)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда компонент слишком тяжёлый, и его кэширование будет занимать много памяти\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Использование с Vue Router\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Классика — кэширование страниц:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<keep-alive>\\n  <router-view />\\n</keep-alive>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Очень ускоряет переходы между роутами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:46:22.522Z",
+        "updatedAt": "2025-11-27T09:46:22.522Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие хуки жизненного цикла доступны в Composition API?",
+        "id": 2906,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда становятся доступными ref элементы?",
+        "id": 2908,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2908,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда становятся доступными \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" элементы?\"}]}]}",
+        "title": "Когда становятся доступными ref элементы?",
+        "order": 60607,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\"-элементы становятся доступными \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только после того, как компонент был смонтирован\"},{\"type\":\"text\",\"text\":\", то есть в хуке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\" (или позже).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$refs\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в Options API и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в Composition API доступны только после рендера DOM — в хуке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Почему не раньше?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До этапа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\" компонента \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нет в DOM\"},{\"type\":\"text\",\"text\":\", поэтому:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"элементы ещё не созданы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$refs\"},{\"type\":\"text\",\"text\":\" пустой\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ссылки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref()\"},{\"type\":\"text\",\"text\":\" не привязаны\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Доступность ref в разных API\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ В created()\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"created() {\\n  console.log(this.$refs.input) // undefined\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ В mounted()\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mounted() {\\n  console.log(this.$refs.input) // <input ...>\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Composition API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"С помощью \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input ref=\\\"inputEl\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const inputEl = ref(null)\\n\\nonMounted(() => {\\n  console.log(inputEl.value) // DOM element\\n})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До mounted:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"console.log(inputEl.value) // null\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Почему ref появляется только в mounted?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что Vue сначала:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выполняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" / lifecycle-хуки создания\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт виртуальный DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Монтирует его в реальный DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Только теперь ref-ы привязываются к DOM-элементам\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И лишь теперь все \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" корректны.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <input ref=\\\"field\\\" />\\n</template>\\n\\n<script>\\nexport default {\\n  mounted() {\\n    // Теперь DOM-элемент доступен\\n    this.$refs.field.focus()\\n  }\\n}\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Особенность: ref на компоненте\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты делаешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyComponent ref=\\\"comp\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$refs.comp\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"экземпляр дочернего компонента\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"И он тоже доступен только в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Исключения?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Teleport\"},{\"type\":\"text\",\"text\":\" может задерживать появление DOM-элемента → ref будет доступен не сразу в mounted.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"v-if\"},{\"type\":\"text\",\"text\":\" может создавать компонент позже → ref обновится позже, при активации.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но правило одно:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ref всегда доступен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после того, как DOM узел физически существует\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:47:05.727Z",
+        "updatedAt": "2025-11-27T09:47:05.727Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое <keep-alive>?",
+        "id": 2907,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли использовать ref внутри композиционных хуков?",
+        "id": 2909,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2909,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли использовать ref внутри композиционных хуков?\"}]}]}",
+        "title": "Можно ли использовать ref внутри композиционных хуков?",
+        "order": 60608,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Да, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" можно использовать внутри композиционных хуков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUnmounted\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" и др.) — это как раз нормальная и официально поддерживаемая практика.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Более того:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Composition API доступ к DOM-элементам через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" почти всегда делается внутри хуков жизненного цикла, чаще всего — в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Почему это работает?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref()\"},{\"type\":\"text\",\"text\":\" объявляется внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"его значение (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref.value\"},{\"type\":\"text\",\"text\":\") привяжется к DOM-элементу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только после монтирования компонента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"композиционные хуки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated\"},{\"type\":\"text\",\"text\":\" и т.д.) могут использовать любые переменные из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup\"},{\"type\":\"text\",\"text\":\", включая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример: использование ref внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted()\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <input ref=\\\"inputEl\\\" />\\n</template>\\n\\n<script setup>\\nimport { ref, onMounted } from 'vue'\\n\\nconst inputEl = ref(null)\\n\\nonMounted(() => {\\n  inputEl.value.focus()  // работает!\\n})\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример: использование ref внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated()\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nimport { ref, onUpdated } from 'vue'\\n\\nconst box = ref(null)\\nconst count = ref(0)\\n\\nonUpdated(() => {\\n  console.log(\\\"Размер после обновления:\\\", box.value.clientWidth)\\n})\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Какие хуки чаще всего используются с ref?\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется с ref\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступ к DOM впервые\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUpdated()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"измерения после обновления\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeUnmount()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отписка от событий, если навешивали на ref-элемент\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onUnmounted()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"финальная очистка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onActivated()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"восстановление ref после keep-alive\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важно помнить\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ещё не содержит DOM-элемент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"console.log(inputEl.value) // null\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это нормально.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Нельзя обращаться к ref в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onBeforeMount()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемента ещё нет в DOM.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"onMounted()\"},{\"type\":\"text\",\"text\":\" ref гарантированно существует\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 92,
+        "createdAt": "2025-11-27T09:47:49.632Z",
+        "updatedAt": "2025-11-27T09:47:49.632Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 92,
+          "title": "Жизненный цикл Vue",
+          "directions": [
+            {
+              "categoryId": 92,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда становятся доступными ref элементы?",
+        "id": 2908,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое двусторонняя привязка данных?",
+        "id": 2910,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

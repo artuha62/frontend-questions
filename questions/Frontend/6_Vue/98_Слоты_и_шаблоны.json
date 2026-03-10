@@ -1,0 +1,607 @@
+{
+  "category": {
+    "id": 98,
+    "title": "Слоты и шаблоны",
+    "description": " ",
+    "parentId": 6
+  },
+  "totalQuestions": 7,
+  "downloadedAt": "2026-03-09T08:22:50.962Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2970,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое слот в Vue?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "title": "Что такое слот в Vue?",
+        "order": 61200,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Слот в Vue\"},{\"type\":\"text\",\"text\":\" — это механизм, который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передавать разметку (HTML/шаблон)\"},{\"type\":\"text\",\"text\":\" от родительского компонента внутрь дочернего компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Слот — это “отверстие” внутри компонента, куда родитель может вставить свой контент.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает компоненты гибкими, переиспользуемыми и настраиваемыми.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Простой пример слота\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент (Card.vue)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"card\\\">\\n    <slot></slot>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Родительский компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <p>Привет, я текст внутри слота!</p>\\n</Card>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В итоге:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"<div class=\\\"card\\\">\\n  <p>Привет, я текст внутри слота!</p>\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент Card просто предоставляет \\\"контейнер\\\", а родитель решает, что туда вставить.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Для чего нужны слоты?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Чтобы компоненты были гибкими\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<Modal>\"},{\"type\":\"text\",\"text\":\" может не знать заранее, какой контент внутри.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Чтобы передавать HTML, а не только данные\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Props передают данные.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Slots передают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"шаблон и структуру\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Чтобы сделать компоненты полностью переиспользуемыми\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, кнопка с иконкой, карточка, layout.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Типы слотов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue поддерживает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"три типа слотов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔷 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обычный (default) слот\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot></slot>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔷 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Именованные слоты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяют иметь несколько зон для вставки контента.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot name=\\\"header\\\"></slot>\\n<slot></slot> <!-- default -->\\n<slot name=\\\"footer\\\"></slot>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <template #header>\\n    <h1>Заголовок</h1>\\n  </template>\\n\\n  Основной текст\\n\\n  <template #footer>\\n    <button>OK</button>\\n  </template>\\n</Card>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔷 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Scoped slots (слоты с данными)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяют передавать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"данные из дочернего в родителя\"},{\"type\":\"text\",\"text\":\" через слот.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot :user=\\\"user\\\"></slot>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Child v-slot=\\\"{ user }\\\">\\n  <p>{{ user.name }}</p>\\n</Child>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Отличие слотов от props\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Props\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Slots\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передают данные\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разметку\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"родитель передаёт значение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"родитель передаёт HTML/компоненты\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"статичная структура\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"гибкая структура\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонент знает, куда помещать данные\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонент не знает, что будет внутри\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Слот в Vue — это специальное место в компоненте, куда можно вставить кастомный контент из родителя.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Слоты делают компонент гибким и позволяют переиспользовать разметку.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бывают обычные, именованные и scoped слоты.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T19:54:29.127Z",
+        "updatedAt": "2025-11-27T19:54:29.127Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему в Pinia нет мутаций?",
+        "id": 2969,
+        "premium": false,
+        "category": {
+          "id": 97,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли использовать несколько слотов в одном компоненте?",
+        "id": 2971,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2971,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли использовать несколько слотов в одном компоненте?\"}]}]}",
+        "title": "Можно ли использовать несколько слотов в одном компоненте?",
+        "order": 61201,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в одном компоненте можно использовать несколько слотов\"},{\"type\":\"text\",\"text\":\" — и это стандартная практика в Vue.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для этого используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"именованные слоты\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Как работает несколько слотов?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В дочернем компоненте вы объявляете несколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<slot>\"},{\"type\":\"text\",\"text\":\" с атрибутом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент (Card.vue)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"card\\\">\\n    <header class=\\\"card-header\\\">\\n      <slot name=\\\"header\\\"></slot>\\n    </header>\\n\\n    <div class=\\\"card-body\\\">\\n      <slot></slot> <!-- default слот -->\\n    </div>\\n\\n    <footer class=\\\"card-footer\\\">\\n      <slot name=\\\"footer\\\"></slot>\\n    </footer>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Родительский компонент может заполнить каждый слот\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Родитель\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <template #header>\\n    <h2>Заголовок</h2>\\n  </template>\\n\\n  <p>Основной текст карточки</p> <!-- Default слот -->\\n\\n  <template #footer>\\n    <button>OK</button>\\n  </template>\\n</Card>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Итоговый результат:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"header\"},{\"type\":\"text\",\"text\":\" попадает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>Заголовок</h2>\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в default слот — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>Основной текст...</p>\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"footer\"},{\"type\":\"text\",\"text\":\" — кнопка\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✔ Да, можно иметь сколько угодно слотов\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"2 слота\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"5 слотов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"10 слотов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue не ограничивает количество, главное — чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый именованный слот имел уникальное имя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"родитель использовал соответствующий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#slotName\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T19:55:15.642Z",
+        "updatedAt": "2025-11-27T19:55:15.642Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое слот в Vue?",
+        "id": 2970,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего нужны именованные слоты?",
+        "id": 2972,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2972,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего нужны именованные слоты?\"}]}]}",
+        "title": "Для чего нужны именованные слоты?",
+        "order": 61202,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Именованные слоты\"},{\"type\":\"text\",\"text\":\" нужны для того, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вставлять разные куски разметки в разные части компонента\"},{\"type\":\"text\",\"text\":\", а не только один общий контент.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Именованные слоты позволяют родителю управлять разными областями дочернего компонента.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они делают компонент гибче и дают возможность “вкладывать” контент в конкретные места.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Проблема, которую решают именованные слоты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный слот (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<slot>\"},{\"type\":\"text\",\"text\":\") позволяет передать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только один блок контента\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но что если компоненту нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"шапка (header)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тело (body)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подвал (footer)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"превью\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кнопки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"описание\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный слот это не позволяет.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Решение — именованные слоты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В дочернем компоненте объявляем несколько слотов с именами:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"card\\\">\\n    <slot name=\\\"header\\\"></slot>\\n\\n    <div class=\\\"body\\\">\\n      <slot></slot> <!-- default -->\\n    </div>\\n\\n    <slot name=\\\"footer\\\"></slot>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель может заполнить каждый из них:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <template #header>\\n    <h1>Заголовок</h1>\\n  </template>\\n\\n  Основной текст карточки\\n\\n  <template #footer>\\n    <button>OK</button>\\n  </template>\\n</Card>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Для чего реально нужны именованные слоты?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Создание сложных UI-компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Card\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Modal\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Layout\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Dropdown\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Tabs\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Именованные слоты позволяют гибко настраивать внутреннюю структуру.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Разделение контента по областям\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент может определить зоны:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"header\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sidebar\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"footer\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И родитель наполняет каждую своими данными.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Повышенная переиспользуемость компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один и тот же компонент может использоваться в разных местах с разным контентом в разных слотах.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, Modal может иметь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кастомный заголовок\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кастомную кнопку закрытия\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кастомное содержание\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 4. Гибкое управление структурой компонента\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Именованные слоты позволяют создавать компоненты, которые можно “конфигурировать” разметкой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 5. Улучшает читаемость в родителе\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Легко видно, что куда идёт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template #header>…</template>\\n<template #footer>…</template>\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T19:56:08.355Z",
+        "updatedAt": "2025-11-27T19:56:08.355Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли использовать несколько слотов в одном компоненте?",
+        "id": 2971,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое scoped slot?",
+        "id": 2973,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2973,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое scoped slot?\"}]}]}",
+        "title": "Что такое scoped slot?",
+        "order": 61203,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Scoped slot\"},{\"type\":\"text\",\"text\":\" — это слот, который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передавать данные из дочернего компонента в родительский\"},{\"type\":\"text\",\"text\":\", вместе с разметкой.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Scoped slot — это слот с доступом к данным ребёнка.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ребёнок “делится” своими данными, а родитель решает, как эти данные отрисовать.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает компонент более гибким и позволяет реализовывать паттерн \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"“render props”\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Классическая проблема, которую решают scoped slots\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный слот передаёт только разметку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от родителя → к ребёнку\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но иногда нужно наоборот:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ребёнок знает данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"но родитель должен решить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как их отображать\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонент списка передаёт каждый элемент списка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"родитель решает, как каждый элемент оформить\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычные слоты это не позволяют.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Как работает scoped slot?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"👉 Дочерний компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передаёт данные в слот\"},{\"type\":\"text\",\"text\":\" через props:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<!-- Child.vue -->\\n<template>\\n  <slot :user=\\\"user\\\"></slot>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"user\"},{\"type\":\"text\",\"text\":\" — это данные в дочернем компоненте.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"👉 Родитель получает данные через v-slot\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<!-- Parent.vue -->\\n<Child v-slot=\\\"{ user }\\\">\\n  <p>{{ user.name }}</p>\\n</Child>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель получает объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{ user }\"},{\"type\":\"text\",\"text\":\", который пришёл от ребёнка.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример: список с scoped slot\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<!-- ItemList.vue -->\\n<template>\\n  <ul>\\n    <li v-for=\\\"item in items\\\" :key=\\\"item.id\\\">\\n      <slot :item=\\\"item\\\"></slot>\\n    </li>\\n  </ul>\\n</template>\\n\\n<script>\\nexport default {\\n  props: ['items']\\n}\\n</script>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Родительский компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<ItemList :items=\\\"products\\\" v-slot=\\\"{ item }\\\">\\n  <strong>{{ item.title }}</strong> – {{ item.price }}₽\\n</ItemList>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Родитель решает, как отображать item\"},{\"type\":\"text\",\"text\":\", хотя данные находятся в дочернем компоненте.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужны scoped slots?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Передача данных из дочернего в родителя\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычные слоты передают только разметку — scoped slots передают ещё и props.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Гибкость отображения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель может полностью контролировать рендеринг данных.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Создание универсальных компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"универсальный список\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"таблица\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"dropdown\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"карусель\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сетка карточек\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент предоставляет данные, родитель — дизайн.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 4. Паттерн “Render Props”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Scoped slots — это Vue-реализация render props из React.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T19:57:39.198Z",
+        "updatedAt": "2025-11-27T19:57:39.198Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего нужны именованные слоты?",
+        "id": 2972,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое default слот?",
+        "id": 2974,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2974,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое default слот?\"}]}]}",
+        "title": "Что такое default слот?",
+        "order": 61204,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Default слот (по умолчанию)\"},{\"type\":\"text\",\"text\":\" — это основной слот компонента, который используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"когда у слота нет имени\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это самый простой и наиболее часто используемый тип слота в Vue.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Default слот — это место в дочернем компоненте, куда родитель может вставить свой основной контент.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как выглядит default слот?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"card\\\">\\n    <slot></slot> <!-- default слот -->\\n  </div>\\n</template>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <p>Текст, который попадёт в default слот</p>\\n</Card>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Результат:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div class=\\\"card\\\">\\n  <p>Текст, который попадёт в default слот</p>\\n</div>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Для чего нужен default слот?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вставлять основной контент в компонент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делать компоненты гибкими\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволять родителю управлять содержимым\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"минимизировать количество props, передавая HTML напрямую\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример: default слот для модалки\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Modal.vue:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"modal\\\">\\n    <slot></slot>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Modal>\\n  <h1>Заголовок</h1>\\n  <p>Описание модалки</p>\\n  <button>Закрыть</button>\\n</Modal>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Особенности default слота\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Нельзя указывать имя\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он всегда:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot></slot>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или короче:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot />\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Можно использовать одновременно с именованными слотами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<slot name=\\\"header\\\"></slot>\\n<slot></slot> <!-- default -->\\n<slot name=\\\"footer\\\"></slot>\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T19:59:30.367Z",
+        "updatedAt": "2025-11-27T19:59:30.367Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое scoped slot?",
+        "id": 2973,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое useSlots()?",
+        "id": 2975,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2975,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое useSlots()?",
+        "order": 61205,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"text\":\" — это функция из Composition API во Vue 3, которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получить доступ ко всем слотам компонента внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это способ работать со слотами в Composition API так же, как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$slots\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в Options API.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как использовать useSlots()\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { useSlots } from 'vue'\\n\\nexport default {\\n  setup() {\\n    const slots = useSlots()\\n\\n    console.log(slots) // объект со всеми слотами\\n\\n    return {}\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Что возвращает useSlots()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"text\":\" возвращает объект вида:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  default: Function | undefined,\\n  header: Function | undefined,\\n  footer: Function | undefined\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждое свойство — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"функция\"},{\"type\":\"text\",\"text\":\", которая рендерит содержимое слота.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример: проверка, передал ли родитель слот\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nimport { useSlots } from 'vue'\\n\\nconst slots = useSlots()\\n\\nconst hasHeader = !!slots.header\\n</script>\\n\\n<template>\\n  <div class=\\\"card\\\">\\n    <div v-if=\\\"hasHeader\\\" class=\\\"header\\\">\\n      <slot name=\\\"header\\\" />\\n    </div>\\n\\n    <div class=\\\"body\\\">\\n      <slot />\\n    </div>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так можно отображать header только если родитель передал содержимое для слота.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример: вывод количества элементов в default слоте\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const slots = useSlots()\\n\\nonMounted(() => {\\n  const vnodes = slots.default?.()\\n  console.log('Default slot contains', vnodes.length, 'elements')\\n})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Когда нужен useSlots()?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Когда нужно проверить наличие слота\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, показывать header, только если он передан.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Когда нужно программно обработать содержимое слота\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, подсчитать элементы, модифицировать их, выбрать нужные.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Когда работаешь с Composition API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В отличие от Options API, нет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$slots\"},{\"type\":\"text\",\"text\":\", поэтому — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 4. Когда делаешь обёртки, layout'ы, UI-библиотеки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Слоты — основной механизм для таких компонентов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useSlots()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это функция Composition API, которая возвращает объект со слотами компонента.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Позволяет проверять наличие слотов, рендерить их программно и работать со слотами внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", аналогично \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.$slots\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в Options API.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T20:00:39.083Z",
+        "updatedAt": "2025-11-27T20:00:39.083Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое default слот?",
+        "id": 2974,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое компонент-обёртка (wrapper component)?",
+        "id": 2976,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2976,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое компонент-обёртка (wrapper component)?\"}]}]}",
+        "title": "Что такое компонент-обёртка (wrapper component)?",
+        "order": 61206,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компонент-обёртка (wrapper component)\"},{\"type\":\"text\",\"text\":\" — это компонент, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не содержит собственной бизнес-логики или функционала\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"служит контейнером, оформлением или структурой\"},{\"type\":\"text\",\"text\":\" для других компонентов/элементов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компонент-обёртка — это компонент, который оборачивает дочерний контент (обычно через слоты), добавляет ему разметку, стиль или поведение, но сам не определяет содержимое.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он больше про \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру\"},{\"type\":\"text\",\"text\":\", чем про собственный контент.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Простой пример компонента-обёртки\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Wrapper.vue\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"wrapper\\\">\\n    <slot></slot> <!-- сюда попадает переданный контент -->\\n  </div>\\n</template>\\n\\n<style>\\n.wrapper {\\n  padding: 20px;\\n  border: 1px solid #ccc;\\n}\\n</style>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Использование\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Wrapper>\\n  <h1>Заголовок</h1>\\n  <p>Какой-то контент</p>\\n</Wrapper>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент просто добавляет стиль/структуру, но не знает, что внутри.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужны компоненты-обёртки?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это важный вопрос для собеседования.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание переиспользуемых Layout-компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Card\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Container\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Modal\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"PageLayout\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SidebarLayout\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они определяют структуру, а контент задаёт родитель.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Визуальное оформление без изменения логики\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно менять внешний вид компонента без изменения его контента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Инкапсуляция повторяющейся разметки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если одна и та же структура повторяется много раз, её оборачивают в компонент.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Card>\\n  <UserInfo />\\n</Card>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HOC-паттерн (“Higher Order Component”) во Vue\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент-обёртка может:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"расширять поведение детей\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передавать им данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавлять обработчики\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"включать логику (например, проверку прав)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обычный способ реализации Layout'ов в Router\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<AdminLayout>\\n  <router-view />\\n</AdminLayout>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Пример сложной обёртки\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Modal.vue\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <div class=\\\"overlay\\\" @click=\\\"close\\\">\\n    <div class=\\\"modal\\\" @click.stop>\\n      <slot name=\\\"header\\\"></slot>\\n      <slot></slot>\\n      <slot name=\\\"footer\\\"></slot>\\n    </div>\\n  </div>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это чистая обёртка, структура + стили.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<Modal>\\n  <template #header>\\n    <h2>Авторизация</h2>\\n  </template>\\n\\n  <LoginForm />\\n\\n  <template #footer>\\n    <button @click=\\\"close\\\">Закрыть</button>\\n  </template>\\n</Modal>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Отличие компонента-обёртки от обычного компонента\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный компонент\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент-обёртка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сам содержит контент\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отображает контент, переданный родителем\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выполняет логику\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логика минимальна или отсутствует\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сам определяет UI\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"определяет только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"структуру\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"контейнер\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не зависит от слотов\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обычно использует слоты\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 98,
+        "createdAt": "2025-11-27T20:01:40.441Z",
+        "updatedAt": "2025-11-27T20:01:40.441Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 98,
+          "title": "Слоты и шаблоны",
+          "directions": [
+            {
+              "categoryId": 98,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое useSlots()?",
+        "id": 2975,
+        "premium": false,
+        "category": {
+          "id": 98,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие метрики производительности вы знаете?",
+        "id": 2977,
+        "premium": false,
+        "category": {
+          "id": 99,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

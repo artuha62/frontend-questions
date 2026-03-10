@@ -1,0 +1,1032 @@
+{
+  "category": {
+    "id": 95,
+    "title": "Options API",
+    "description": " ",
+    "parentId": 6
+  },
+  "totalQuestions": 12,
+  "downloadedAt": "2026-03-09T08:22:27.771Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2940,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Options API?\"}]}]}",
+        "title": "Что такое Options API?",
+        "order": 60900,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API\"},{\"type\":\"text\",\"text\":\" — это традиционный способ написания компонентов во Vue (использовался по умолчанию в Vue 2 и доступен в Vue 3).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В этом подходе вся логика компонента разделена по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"опциям\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"watch\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"created\"},{\"type\":\"text\",\"text\":\" и другие хуки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"components\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"filters\"},{\"type\":\"text\",\"text\":\" (в Vue 2)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и т.д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API — это способ объявлять компонент, где каждый тип логики помещается в свой блок.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример компонента на Options API\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script>\\nexport default {\\n  data() {\\n    return {\\n      counter: 0\\n    }\\n  },\\n\\n  computed: {\\n    double() {\\n      return this.counter * 2\\n    }\\n  },\\n\\n  methods: {\\n    increment() {\\n      this.counter++\\n    }\\n  },\\n\\n  mounted() {\\n    console.log(\\\"Компонент смонтирован\\\")\\n  }\\n}\\n</script>\\n\\n<template>\\n  <button @click=\\\"increment\\\">Count: {{ counter }} (x2: {{ double }})</button>\\n</template>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Основная идея Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Весь код компонента разделён \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по типу\"},{\"type\":\"text\",\"text\":\", а не по функциональности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"text\":\" — только данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"text\":\" — методы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\" — вычисляемые свойства\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"watch\"},{\"type\":\"text\",\"text\":\" — наблюдатели\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted\"},{\"type\":\"text\",\"text\":\" — код при монтировании\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это удобно для простых компонентов, но в больших — логика, относящаяся к одному функциональному блоку, оказывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разбросана по файлу\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Преимущества Options API\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Подходит для новичков\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Логика структурирована “по полочкам”.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Отлично подходит для небольших компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Простой, понятный и читаемый подход.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Легко читать, когда компонент маленький\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что всё находится в ожидаемых местах.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Совместим с Vue 3\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Options API полностью поддерживается в Vue 3.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Недостатки Options API (почему придумали Composition API)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Логика размазывается по разным разделам\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда компонент становится большим, работа с ним усложняется.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Плохо подходит для переиспользования логики\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приходилось использовать миксины → они давали:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конфликты имён\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скрытую магию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"плохую читаемость\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Труднее организовывать сложные компоненты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нужно прыгать по файлу между data/methods/computed/watch/mounted…\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API — это классический способ описывать компоненты во Vue, используя объект с опциями (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"watch\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" и т.д.).\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прост для обучения, удобен в маленьких компонентах, полностью поддерживается в Vue 3, но плохо масштабируется, из-за чего появился более гибкий Composition API.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь, могу дать сравнение Options API vs Composition API или рассказать, когда какой подход лучше использовать.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T12:07:12.735Z",
+        "updatedAt": "2025-11-27T12:07:12.735Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как получить доступ к DOM через ref?",
+        "id": 2939,
+        "premium": false,
+        "category": {
+          "id": 94,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли смешивать Options API и Composition API?",
+        "id": 2941,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2941,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли смешивать Options API и Composition API?\"}]}]}",
+        "title": "Можно ли смешивать Options API и Composition API?",
+        "order": 60901,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Да, смешивать Options API и Composition API можно и это полностью поддерживается Vue 3.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такой подход называют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"hybrid approach\"},{\"type\":\"text\",\"text\":\" — смешанный стиль написания компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue 3 специально сохраняет Options API, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обеспечить плавную миграцию с Vue 2,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дать разработчикам возможность сочетать оба стиля там, где это удобно.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как выглядит смешанный компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script>\\nimport { ref, onMounted } from 'vue'\\n\\nexport default {\\n  data() {\\n    return {\\n      title: 'Options API'\\n    }\\n  },\\n\\n  setup() {\\n    const count = ref(0)\\n\\n    onMounted(() => {\\n      console.log('mounted (Composition API)')\\n    })\\n\\n    return { count }\\n  },\\n\\n  mounted() {\\n    console.log('mounted (Options API)')\\n  }\\n}\\n</script>\\n\\n<template>\\n  <h1>{{ title }}</h1>\\n  <p>Count: {{ count }}</p>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ Работает без проблем.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ Значения из setup доступны в шаблоне.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ Хуки обеих API вызываются.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 ВАЖНЫЕ МОМЕНТЫ\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"1️⃣ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" выполняется раньше, чем хуки Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Порядок вызова:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"setup()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeCreate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"created\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeMount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"mounted\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"2️⃣ Значения из setup НЕ доступны через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ В Options API:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mounted() {\\n  console.log(this.count)  // undefined\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ В шаблоне — доступно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ В setup — доступно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❌ В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"},{\"type\":\"text\",\"text\":\" — нет\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что Composition API \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не использует this\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"3️⃣ Можно смешивать, но лучше делать это осознанно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда смешивать — хорошо:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"миграция с Vue 2 на Vue 3\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"компонент слишком большой, чтобы сразу переписать\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часть логики проще на Options API, часть — на Composition API\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда смешивать — плохо:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"новый компонент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логика становится запутанной\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часть логики в setup, часть — в data/methods → хаос\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue-команда рекомендует:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новые компоненты писать полностью на Composition API\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а смешивать — только при необходимости.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Да, Vue 3 позволяет смешивать Options API и Composition API в одном компоненте.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" вызывается первым, значения из setup не доступны через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", но доступны в шаблоне.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смешивание используется при миграции и постепенном переходе, но в новых компонентах предпочтителен Composition API.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T12:07:53.348Z",
+        "updatedAt": "2025-11-27T12:07:53.348Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Options API?",
+        "id": 2940,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что возвращает функция data?",
+        "id": 2942,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2942,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что возвращает функция data?\"}]}]}",
+        "title": "Что возвращает функция data?",
+        "order": 60902,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Функция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"text\":\" в компоненте Vue \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда должна возвращать объект\"},{\"type\":\"text\",\"text\":\", содержащий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"начальное состояние (данные)\"},{\"type\":\"text\",\"text\":\" компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" возвращает объект с реактивными свойствами, которые становятся доступными в шаблоне (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"template\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") и внутри компонента через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  data() {\\n    return {\\n      count: 0,\\n      username: \\\"Alex\\\",\\n      isActive: true\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Возвращаемый объект → это состояние компонента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✨ Что важно знать\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. В Vue \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"компонент должен возвращать новый объект\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы каждый экземпляр компонента имел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"своё собственное состояние\"},{\"type\":\"text\",\"text\":\", а не делил одно состояние между всеми копиями.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"data() {\\n  return {\\n    counter: 0\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый компонент получит свой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Все поля, возвращённые из data(), становятся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реактивными\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.count++\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автоматически обновит интерфейс.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Доступ к данным\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>{{ count }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В коде:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.count\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Нельзя возвращать не-объект\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обязательно должна вернуть объект\"},{\"type\":\"text\",\"text\":\", иначе Vue выдаст ошибку:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ неправильно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"data() {\\n  return 5\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Функция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" возвращает новый объект начального состояния компонента.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Возвращённые свойства становятся реактивными и доступны в шаблоне и через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В компонентах Vue \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"data()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" должна возвращать объект, чтобы каждый экземпляр имел своё собственное состояние.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T12:08:47.693Z",
+        "updatedAt": "2025-11-27T12:08:47.693Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли смешивать Options API и Composition API?",
+        "id": 2941,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что содержит объект methods?",
+        "id": 2943,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2943,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что содержит объект methods?\"}]}]}",
+        "title": "Что содержит объект methods?",
+        "order": 60903,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В объекте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"text\":\" в Vue (в Options API) содержатся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обычные функции\"},{\"type\":\"text\",\"text\":\", которые становятся методами компонента и доступны:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в шаблоне (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"template\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"},{\"type\":\"text\",\"text\":\" внутри компонента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в обработчиках событий (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"во внутренних вычислениях компонента\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"methods\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" содержит функции, которые можно вызвать из шаблона или кода компонента.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример объекта methods\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  data() {\\n    return {\\n      count: 0\\n    }\\n  },\\n\\n  methods: {\\n    increment() {\\n      this.count++\\n    },\\n    reset() {\\n      this.count = 0\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"increment\\\">+</button>\\n<button @click=\\\"reset\\\">Reset</button>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Что важно знать про methods\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Методы — это обычные функции\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они НЕ кэшируются, как computed.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Выполняются каждый раз, когда вызываются в шаблоне.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Методы имеют доступ к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.count\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.dataProperty\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.someComputed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.someMethod()\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"methods: {\\n  sayHello() {\\n    console.log(\\\"Hello\\\", this.name)\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Методы используются в обработчиках событий\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"logout\\\">Logout</button>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Методы могут принимать аргументы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"add(5)\\\">+5</button>\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"methods: {\\n  add(n) {\\n    this.count += n\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 5. Методы — НЕ альтернатива для вычислений (используйте computed)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если функция вычисляет значение на основе реактивных данных:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ лучше \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ хуже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"method\"},{\"type\":\"text\",\"text\":\" (потому что не кэшируется)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 6. Методы доступны только в Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Composition API вместо них — обычные функции в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T12:09:55.081Z",
+        "updatedAt": "2025-11-27T12:09:55.081Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что возвращает функция data?",
+        "id": 2942,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое вычисляемые свойства?",
+        "id": 2944,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2944,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое вычисляемые свойства?\"}]}]}",
+        "title": "Что такое вычисляемые свойства?",
+        "order": 60904,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вычисляемые свойства (computed properties)\"},{\"type\":\"text\",\"text\":\" — это значения, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически пересчитываются\"},{\"type\":\"text\",\"text\":\", когда меняются их зависимости, и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кэшируются\"},{\"type\":\"text\",\"text\":\" до тех пор, пока эти зависимости не изменятся.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вычисляемое свойство — это значение, которое считается на основе других реактивных данных и обновляется автоматически, причём не пересчитывается лишний раз.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это один из ключевых инструментов реактивности во Vue.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример вычисляемого свойства (Options API)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"computed: {\\n  double() {\\n    return this.count * 2\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"this.count\"},{\"type\":\"text\",\"text\":\" меняется — Vue пересчитает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"double\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нет — вернёт закэшированное значение.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример вычисляемого свойства (Composition API)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { ref, computed } from 'vue'\\n\\nconst count = ref(2)\\n\\nconst double = computed(() => count.value * 2)\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Главное отличие computed от methods\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❗ methods — вызываются каждый раз, при каждом рендере\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ computed — вызываются только при изменении зависимостей (кэшируются)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>{{ heavyCalculation() }}</p> <!-- вызывается каждый раз -->\\n<p>{{ heavyValue }}</p>        <!-- кэшируется -->\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"heavyValue\"},{\"type\":\"text\",\"text\":\" — computed:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const heavyValue = computed(() => heavyCalculation())\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Когда использовать вычисляемые свойства?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Когда значение зависит от других реактивных данных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"итог заказа: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"price * quantity\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фильтрация списка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"форматирование данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"преобразования строк/дат\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Чтобы кэшировать результаты дорогих операций\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например сортировка:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const sorted = computed(() => list.value.sort())\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Когда нужно “виртуальное свойство” объекта\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"fullName = firstName + \\\" \\\" + lastName\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔄 Computed с getter/setter\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вычисляемые свойства могут быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двусторонними\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const fullName = computed({\\n  get() {\\n    return firstName.value + \\\" \\\" + lastName.value\\n  },\\n  set(value) {\\n    [firstName.value, lastName.value] = value.split(\\\" \\\")\\n  }\\n})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"fullName.value = \\\"John Doe\\\"\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Как работает computed под капотом?\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue отслеживает зависимости, которые используются внутри функции.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если любая из зависимостей изменилась → computed пересчитывается.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нет → возвращается кэш.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Когда НЕ использовать computed?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Когда нужно выполнить действие (side-effect)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"watch\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ Когда нужно вызвать функцию с аргументами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Computed не принимает аргументы → используйте метод.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вычисляемые свойства — это реактивные значения, автоматически пересчитывающиеся при изменении зависимостей и кэшируемые до следующего изменения.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Используются для производных значений, оптимизации вычислений и создания виртуальных свойств.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Vue есть computed в Options API и функция computed() в Composition API.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:19:47.759Z",
+        "updatedAt": "2025-11-27T19:19:47.759Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что содержит объект methods?",
+        "id": 2943,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего нужен watch?",
+        "id": 2945,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2945,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего нужен watch?\"}]}]}",
+        "title": "Для чего нужен watch?",
+        "order": 60905,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"watch\"},{\"type\":\"text\",\"text\":\" нужен для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отслеживания изменений реактивных данных\"},{\"type\":\"text\",\"text\":\" и выполнения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"побочных эффектов\"},{\"type\":\"text\",\"text\":\" (side-effects), когда эти данные меняются.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"watch — это реакция на изменение значения.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда что-то изменилось → выполняется ваш код.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это отличает его от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\", который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"только считает и кэширует\"},{\"type\":\"text\",\"text\":\", но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не выполняет действий\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Когда использовать watch? (самое важное для собеседования)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для побочных эффектов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нельзя\"},{\"type\":\"text\",\"text\":\" делать в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\", но нужно делать при изменении значения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запросы к API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запись в localStorage\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логирование\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"взаимодействие с DOM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызов функций сторонних библиотек\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(query, () => {\\n  fetchData(query.value)\\n})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый раз при изменении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"query\"},{\"type\":\"text\",\"text\":\" отправляется запрос.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для отслеживания изменений формы или объекта\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(form, (newVal) => {\\n  saveDraft(newVal)\\n}, { deep: true })\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для реакции на изменение маршрута (route)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(() => route.params.id, (id) => loadUser(id))\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для выполнения логики при изменении пропсов\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(() => props.item, (newVal) => {\\n  console.log(\\\"prop changed:\\\", newVal)\\n})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для запуска логики сразу + при изменении (with immediate)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(userId, loadUser, { immediate: true })\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример простого watch\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const count = ref(0)\\n\\nwatch(count, (newValue, oldValue) => {\\n  console.log(`count: ${oldValue} → ${newValue}`)\\n})\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сработает при каждом изменении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"count\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Опции watch\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"deep: true\"},{\"type\":\"text\",\"text\":\" — отслеживать вложенные свойства\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(settings, handler, { deep: true })\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"immediate: true\"},{\"type\":\"text\",\"text\":\" — запустить эффект сразу\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch(id, load, { immediate: true })\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ отслеживание нескольких значений\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"watch([a, b], ([newA, newB]) => {})\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 watch vs computed (частый вопрос!)\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"watch\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"computed\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выполняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"действия\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращает значение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не кэшируется\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кэшируется\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для API и side-effects\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подходит для производных значений\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"может быть async\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"только sync (getter)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживает и объекты, и функции\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работает только на зависимости в getter\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если надо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что-то сделать\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"watch\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если надо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что-то вычислить\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"computed\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"watch нужен для выполнения побочных эффектов при изменении реактивных данных: запросов, сохранения, логирования, работы с DOM, реакции на props и route.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Используется для того, что computed делать не должен.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:20:46.252Z",
+        "updatedAt": "2025-11-27T19:20:46.252Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое вычисляемые свойства?",
+        "id": 2944,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как объявлять props?",
+        "id": 2946,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2946,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как объявлять props?\"}]}]}",
+        "title": "Как объявлять props?",
+        "order": 60906,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Props можно объявлять \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двумя способами\"},{\"type\":\"text\",\"text\":\", в зависимости от того, какой API ты используешь: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Composition API (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"На собеседовании важно знать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"оба\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Объявление props в Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В компоненте ты указываешь объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"props\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  props: {\\n    title: String,\\n    count: Number,\\n    isActive: Boolean,\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждое свойство — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"prop\"},{\"type\":\"text\",\"text\":\", который может быть передан родителем.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно указать расширенную конфигурацию:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"props: {\\n  title: {\\n    type: String,\\n    required: true\\n  },\\n  count: {\\n    type: Number,\\n    default: 0\\n  },\\n  user: {\\n    type: Object,\\n    default: () => ({}) // важно: объекты через функцию\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Аргументы в Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно задавать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"type\"},{\"type\":\"text\",\"text\":\" — тип данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"required\"},{\"type\":\"text\",\"text\":\" — обязательный проп\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"default\"},{\"type\":\"text\",\"text\":\" — значение по умолчанию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"validator\"},{\"type\":\"text\",\"text\":\" — кастомная проверка\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Объявление props в Composition API: setup()\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если используешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\", props передаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"первым аргументом\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  props: {\\n    title: String,\\n    count: Number\\n  },\\n\\n  setup(props) {\\n    console.log(props.title)\\n    console.log(props.count)\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важно:\"},{\"type\":\"text\",\"text\":\" props — read-only, их нельзя менять.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Деструктуризация в setup() → теряешь реактивность\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нельзя так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const { title } = props // теряется реактивность\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правильно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { toRefs } from 'vue'\\n\\nconst { title, count } = toRefs(props)\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Объявление props в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это самый удобный и современный способ.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется функция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"defineProps()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst props = defineProps({\\n  title: String,\\n  count: Number\\n})\\n</script>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно сразу деструктурировать (реактивность сохраняется!):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst { title, count } = defineProps({\\n  title: String,\\n  count: Number\\n})\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"❗ Почему в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"text\":\" можно деструктурировать?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"defineProps\"},{\"type\":\"text\",\"text\":\" под капотом вызывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"toRefs\"},{\"type\":\"text\",\"text\":\", если ты делаешь деструктуризацию — Vue сам превращает свойства в реактивные refs.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример с типами props (расширенный)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst props = defineProps({\\n  user: {\\n    type: Object,\\n    required: true\\n  },\\n  list: {\\n    type: Array,\\n    default: () => []\\n  },\\n  isActive: Boolean,\\n  count: {\\n    type: Number,\\n    default: 1,\\n  },\\n  validatorProp: {\\n    validator: v => ['small', 'medium', 'large'].includes(v)\\n  }\\n})\\n</script>\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:21:46.837Z",
+        "updatedAt": "2025-11-27T19:21:46.837Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего нужен watch?",
+        "id": 2945,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое $emit?",
+        "id": 2947,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2947,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое $emit?\"}]}]}",
+        "title": "Что такое $emit?",
+        "order": 60907,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" — это механизм Vue (Options API), который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дочернему компоненту отправлять событие родительскому компоненту\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это способ сообщить родителю, что внутри дочернего компонента произошло какое-то действие.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это прямой канал связи \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снизу вверх\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"child → parent\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" (Options API)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Дочерний компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  methods: {\\n    handleClick() {\\n      this.$emit('clicked', 42)\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Родительский компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<Child @clicked=\\\"onChildClick\\\" />\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"methods: {\\n  onChildClick(payload) {\\n    console.log(payload)  // 42\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вызывает пользовательское событие\"},{\"type\":\"text\",\"text\":\" (“clicked”, “save”, “update” и т. д.)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передаёт данные родительскому компоненту\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двустороннее взаимодействие\"},{\"type\":\"text\",\"text\":\" между компонентами\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Где применяется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Для уведомления родителя о событиях\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$emit('submit')\\nthis.$emit('remove', item)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Для кастомного \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 модель основана на событии:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$emit('update:modelValue', newValue)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Для взаимодействия между компонентами в древе\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда нужно отправить данные наверх.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" в Composition API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setup()\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" недоступно напрямую, вместо него используется функция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"emit\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  setup(props, { emit }) {\\n    emit('clicked', 123)\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst emit = defineEmits(['clicked'])\\n\\nfunction onClick() {\\n  emit('clicked', 123)\\n}\\n</script>\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:22:49.662Z",
+        "updatedAt": "2025-11-27T19:22:49.662Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как объявлять props?",
+        "id": 2946,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Перечислите все хуки жизненного цикла.",
+        "id": 2948,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2948,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перечислите все хуки жизненного цикла.\"}]}]}",
+        "title": "Перечислите все хуки жизненного цикла.",
+        "order": 60908,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хуки жизненного цикла — Options API (Vue 2 и Vue 3)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Инициализация\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeCreate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"created\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Монтаж (mounting)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeMount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mounted\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление (updating)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeUpdate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"updated\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размонтирование (unmounting)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":7,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeUnmount\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"(Vue 3)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(в Vue 2 — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeDestroy\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"unmounted\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"(Vue 3)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(в Vue 2 — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"destroyed\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Работа с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":9,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"activated\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"deactivated\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обработка ошибок\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":11,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"errorCaptured\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хуки жизненного цикла — Composition API (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Импортируются из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vue\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import {\\n  onBeforeMount,\\n  onMounted,\\n  onBeforeUpdate,\\n  onUpdated,\\n  onBeforeUnmount,\\n  onUnmounted,\\n  onActivated,\\n  onDeactivated,\\n  onErrorCaptured,\\n  onRenderTracked,\\n  onRenderTriggered,\\n  onServerPrefetch,\\n  onScopeDispose\\n} from 'vue'\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Монтаж\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onBeforeMount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onMounted\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onBeforeUpdate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onUpdated\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размонтирование\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onBeforeUnmount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onUnmounted\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Работа с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<keep-alive>\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":7,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onActivated\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onDeactivated\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ошибки\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":9,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onErrorCaptured\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отладка реактивности\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":10,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onRenderTracked\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onRenderTriggered\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SSR\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":12,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onServerPrefetch\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Очистка в composables\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":13,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"onScopeDispose\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Важное для собеседования\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Options API и Composition API — ЦЕПочки хуков \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 хуки размонтирования имеют новые названия:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeUnmount / unmounted\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeDestroy / destroyed\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Composition API больше хуков, особенно отладочных и SSR.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итоговый список (кратко)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Options API:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"beforeCreate\\ncreated\\nbeforeMount\\nmounted\\nbeforeUpdate\\nupdated\\nbeforeUnmount (beforeDestroy)\\nunmounted (destroyed)\\nactivated\\ndeactivated\\nerrorCaptured\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ Composition API:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"onBeforeMount\\nonMounted\\nonBeforeUpdate\\nonUpdated\\nonBeforeUnmount\\nonUnmounted\\nonActivated\\nonDeactivated\\nonErrorCaptured\\nonRenderTracked\\nonRenderTriggered\\nonServerPrefetch\\nonScopeDispose\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:23:52.749Z",
+        "updatedAt": "2025-11-27T19:23:52.749Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое $emit?",
+        "id": 2947,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как объявлять локальные директивы?",
+        "id": 2949,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2949,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как объявлять локальные директивы?\"}]}]}",
+        "title": "Как объявлять локальные директивы?",
+        "order": 60909,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальные директивы в Vue объявляются прямо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри компонента\"},{\"type\":\"text\",\"text\":\", в его опции \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"directives\"},{\"type\":\"text\",\"text\":\" (Options API) или через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"defineDirective\"},{\"type\":\"text\",\"text\":\"/объект директив в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"text\":\" (Composition API).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они доступны \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только в этом компоненте\"},{\"type\":\"text\",\"text\":\" и не влияют на другие.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже — два способа: Options API и Composition API.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Локальные директивы в Options API\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объявляются в поле \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"directives\"},{\"type\":\"text\",\"text\":\" компонента:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  directives: {\\n    focus: {\\n      mounted(el) {\\n        el.focus()\\n      }\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-focus />\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Доступные хуки директив (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для локальной директивы доступны хуки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"created\"},{\"type\":\"text\",\"text\":\" — когда директива впервые привязана\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeMount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mounted\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeUpdate\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"updated\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"beforeUnmount\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"unmounted\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример с несколькими хуками:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"directives: {\\n  highlight: {\\n    mounted(el) {\\n      el.style.background = 'yellow'\\n    },\\n    updated(el) {\\n      el.style.background = 'lightgreen'\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Локальные директивы в Composition API (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"text\":\" директивы объявляют через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объект\"},{\"type\":\"text\",\"text\":\", экспортированный как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v*\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst vFocus = {\\n  mounted(el) {\\n    el.focus()\\n  }\\n}\\n</script>\\n\\n<template>\\n  <input v-focus />\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Имя директивы = имя переменной (vFocus → v-focus).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример сложной директивы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nconst vColor = {\\n  mounted(el, binding) {\\n    el.style.color = binding.value\\n  },\\n  updated(el, binding) {\\n    el.style.color = binding.value\\n  }\\n}\\n</script>\\n\\n<template>\\n  <p v-color=\\\"'red'\\\">Текст</p>\\n</template>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🚀 Как передавать аргументы и модификаторы?\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div v-my-dir:arg.modifier=\\\"value\\\"></div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В директиве будет:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  mounted(el, binding) {\\n    console.log(binding.value)       // value\\n    console.log(binding.arg)         // 'arg'\\n    console.log(binding.modifiers)   // { modifier: true }\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальные директивы объявляются в объекте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"directives\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" (Options API) или через переменные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vName\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<script setup>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Они доступны только внутри текущего компонента.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Директива может содержать хуки — mounted, updated, unmounted и др., и получать binding (value, arg, modifiers).\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:24:52.023Z",
+        "updatedAt": "2025-11-27T19:24:52.023Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Перечислите все хуки жизненного цикла.",
+        "id": 2948,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое mixins?",
+        "id": 2950,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2950,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое mixins?\"}]}]}",
+        "title": "Что такое mixins?",
+        "order": 60910,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Mixins\"},{\"type\":\"text\",\"text\":\" — это механизм Vue (в основном из Vue 2), который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переиспользовать логику между компонентами\"},{\"type\":\"text\",\"text\":\", добавляя в них общие свойства:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"data\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"methods\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"lifecycle-хуки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и другие опции компонента\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Mixin — это объект с логикой, который \\\"подмешивается\\\" в компонент.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент получает всё, что описано в mixin.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Простой пример mixin\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"👉 mixin.js\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export const myMixin = {\\n  data() {\\n    return {\\n      message: 'Hello from mixin'\\n    }\\n  },\\n  methods: {\\n    sayHello() {\\n      console.log(this.message)\\n    }\\n  },\\n  created() {\\n    console.log('Mixin created hook')\\n  }\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"👉 компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { myMixin } from './mixin'\\n\\nexport default {\\n  mixins: [myMixin],\\n\\n  created() {\\n    console.log('Component created hook')\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚡ Что происходит?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент получит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"data → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"message\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"метод → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sayHello()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"lifecycle hook mixin'а — тоже выполняется\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Порядок хуков:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"created\"},{\"type\":\"text\",\"text\":\" из mixin\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"created\"},{\"type\":\"text\",\"text\":\" из компонента\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужны mixins?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Переиспользование логики между компонентами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логика авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"общие методы работы с API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"общая валидация\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"общие вычисления\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Уменьшение дубликатов кода\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Использовались до появления Composition API\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Недостатки mixins (почему от них ушли)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это важная часть ответа на собеседовании.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 1. Конфликты имён\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если mixin и компонент имеют одинаковый method/data:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"mixin: say() {}\\ncomponent: say() {} // перезапишет\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Трудно понять, что откуда.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 2. “Магическая” логика\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Непонятно, какие свойства откуда появляются.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 3. Плохая читаемость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Логика распределена по разным файлам:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часть — в mixin\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часть — в компоненте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часть — в другом mixin\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Трудно понять, что делает компонент.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"❌ 4. Плохая масштабируемость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На крупных проектах mixins создают хаос.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"💡 Современная альтернатива: Composition API + composables\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 mixins практически заменены \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"composable-функциями\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export function useUser() {\\n  const user = ref(null)\\n\\n  function fetchUser() {}\\n\\n  return { user, fetchUser }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются чётко, без конфликтов, без магии.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Mixins — это способ переиспользования логики между компонентами, при котором объект mixin \\\"подмешивается\\\" в компонент.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Они позволяют делиться data, methods, computed и lifecycle-хуками.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Однако mixins имеют серьёзные минусы: конфликты имён, скрытая логика и плохая масштабируемость.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Vue 3 их практически заменяет Composition API (composable-функции).\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:25:48.257Z",
+        "updatedAt": "2025-11-27T19:25:48.257Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как объявлять локальные директивы?",
+        "id": 2949,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает extends?",
+        "id": 2951,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2951,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает extends?\"}]}]}",
+        "title": "Что делает extends?",
+        "order": 60911,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"extends\"},{\"type\":\"text\",\"text\":\" — это механизм Vue (Options API), который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наследовать настройки одного компонента в другом\"},{\"type\":\"text\",\"text\":\", аналогично \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mixins\"},{\"type\":\"text\",\"text\":\", но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только от одного “родительского” компонента\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"extends\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" подмешивает в компонент все опции другого компонента: data, methods, computed, хуки и т. д.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это похоже на классическое наследование, только для Vue-компонентов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Пример использования extends\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"👉 base.js — базовый компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  data() {\\n    return {\\n      baseMessage: 'Hello from base'\\n    }\\n  },\\n  methods: {\\n    greet() {\\n      console.log(this.baseMessage)\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"👉 child component\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import base from './base.js'\\n\\nexport default {\\n  extends: base,\\n\\n  data() {\\n    return {\\n      childMessage: 'Hello from child'\\n    }\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь компонент имеет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"baseMessage\"},{\"type\":\"text\",\"text\":\" из base-компонента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"greet()\"},{\"type\":\"text\",\"text\":\" метод из base-компонента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"childMessage\"},{\"type\":\"text\",\"text\":\" — своё собственное состояние\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужен extends?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 1. Наследование базовых компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно создать “базовый” компонент:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базовая валидация\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базовые методы API\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базовые computed\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базовые хуки\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и переиспользовать их.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 2. Создание шаблонов поведения компонентов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, общий компонент:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"с одинаковой логикой загрузки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"с одинаковыми методами\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"с одинаковым data()\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔ 3. Это альтернатива mixins (но проще и чище)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если mixins могут быть много, то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"extends\"},{\"type\":\"text\",\"text\":\" — только один.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важные особенности extends\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1️⃣ Компонент наследует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все опции\"},{\"type\":\"text\",\"text\":\" base-компонента\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"data, methods, computed, watch, lifecycle hooks, props и т. д.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2️⃣ При конфликте имён — побеждает дочерний компонент\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"// base.js\\nmethods: { greet() { console.log('base') } }\\n\\n// child\\nmethods: { greet() { console.log('child') } }\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызов:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"child\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3️⃣ Хуки объединяются, но порядок — как у mixins:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хуки родителя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хуки ребёнка\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4️⃣ Можно использовать вместе с mixins (не рекомендуется)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5️⃣ Редко используется в Vue 3\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что Composition API полностью заменяет необходимость наследования.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"extends\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это способ наследовать один компонент от другого в Options API.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дочерний компонент получает все опции родительского (data, methods, computed, хуки).\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При конфликте имён выигрывает дочерний компонент.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В Vue 3 применяется редко, т. к. его заменяет Composition API.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 95,
+        "createdAt": "2025-11-27T19:26:29.375Z",
+        "updatedAt": "2025-11-27T19:26:29.375Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 95,
+          "title": "Options API",
+          "directions": [
+            {
+              "categoryId": 95,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое mixins?",
+        "id": 2950,
+        "premium": false,
+        "category": {
+          "id": 95,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Vue Router?",
+        "id": 2952,
+        "premium": false,
+        "category": {
+          "id": 96,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

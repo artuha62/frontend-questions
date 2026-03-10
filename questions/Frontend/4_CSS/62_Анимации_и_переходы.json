@@ -1,0 +1,607 @@
+{
+  "category": {
+    "id": 62,
+    "title": "Анимации и переходы",
+    "description": " ",
+    "parentId": 4
+  },
+  "totalQuestions": 7,
+  "downloadedAt": "2026-03-09T07:53:25.814Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1322,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое анимация в CSS? Как ее задать?\"}]}]}",
+        "title": "Что такое анимация в CSS? Как ее задать?",
+        "order": 40900,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анимация в CSS — это механизм, который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"плавно изменять значения CSS-свойств во времени\"},{\"type\":\"text\",\"text\":\" (цвет, размер, позицию, прозрачность и т.д.) без JavaScript.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS-анимация задаётся с помощью двух частей:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1) Описание кадров с помощью \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyframes fade {\\n  from { opacity: 0; }\\n  to   { opacity: 1; }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"from\"},{\"type\":\"text\",\"text\":\" → начальное состояние\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"to\"},{\"type\":\"text\",\"text\":\" → конечное состояние (можно и через проценты: 0%, 50%, 100%)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2) Применение анимации к элементу\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".box {\\n  animation: fade 2s ease-in-out forwards;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойство\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что задаёт\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-name\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имя анимации (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fade\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-duration\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"длительность (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"2s\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"500ms\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-timing-function\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кривая (например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ease\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"linear\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ease-in-out\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-iteration-count\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"количество повторов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"infinite\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-delay\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задержка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-direction\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"направление (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"normal\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reverse\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alternate\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation-fill-mode\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поведение до/после анимации (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"forwards\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"backwards\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"both\"},{\"type\":\"text\",\"text\":\")\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анимация в CSS создаётся так:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Описываешь ключевые кадры через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначаешь анимацию элементу через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без JS, только CSS.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:22:41.307Z",
+        "updatedAt": "2025-10-20T08:22:41.307Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое container queries? Чем они отличаются от media queries?",
+        "id": 1321,
+        "premium": false,
+        "category": {
+          "id": 61,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем анимация отличается от перехода (transition)?",
+        "id": 1324,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1324,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем анимация отличается от перехода (transition)?\"}]}]}",
+        "title": "Чем анимация отличается от перехода (transition)?",
+        "order": 40901,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разница по сути:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Transition (переход)\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Animation (анимация)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"между двумя состояниями\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может иметь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"много промежуточных кадров\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запускается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по событию\"},{\"type\":\"text\",\"text\":\" (например, hover, focus)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запускаться сама по себе\"},{\"type\":\"text\",\"text\":\", без события\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляется свойством \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Простая и кратковременная\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сложная, цикличная, многоэтапная\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда использовать transition\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"плавно изменить одно состояние в другое\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"наведение (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hover\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фокус (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"focus\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"открытие/закрытие\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"смена цвета, размера, прозрачности\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".box {\\n  transition: opacity 0.3s;\\n}\\n.box:hover {\\n  opacity: 0.5;\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда использовать animation\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда нужна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полноценная анимация\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"бесконечные эффекты (мигание, вращение)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сложные движения по этапам\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"анимация без взаимодействия с пользователем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"повторяющиеся циклы\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyframes spin {\\n  to { transform: rotate(360deg); }\\n}\\n.box {\\n  animation: spin 2s linear infinite;\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог в одном предложении\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Transition\"},{\"type\":\"text\",\"text\":\" — для простого плавного изменения между двумя состояниями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Animation\"},{\"type\":\"text\",\"text\":\" — для сложных, цикличных и многоступенчатых анимационных эффектов.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:22:57.461Z",
+        "updatedAt": "2025-10-20T08:22:57.461Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое анимация в CSS? Как ее задать?",
+        "id": 1322,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “состояния” в CSS-анимациях?",
+        "id": 1325,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1325,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “состояния” в CSS-анимациях?\"}]}]}",
+        "title": "Что такое “состояния” в CSS-анимациях?",
+        "order": 40902,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В контексте анимаций под \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“состояниями”\"},{\"type\":\"text\",\"text\":\" понимают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"фиксированные наборы CSS-свойств в определённые моменты времени\"},{\"type\":\"text\",\"text\":\", между которыми браузер создаёт плавный переход. Эти состояния задаются в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"},{\"type\":\"text\",\"text\":\" — через ключевые кадры (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"from\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"to\"},{\"type\":\"text\",\"text\":\" или проценты — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0%\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"50%\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"100%\"},{\"type\":\"text\",\"text\":\" и т.д.).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример со состояниями:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyframes move {\\n  0%   { transform: translateX(0); }     /* состояние №1 */\\n  50%  { transform: translateX(100px); } /* состояние №2 */\\n  100% { transform: translateX(0); }     /* состояние №3 */\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь анимация проходит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"три состояния\"},{\"type\":\"text\",\"text\":\", а браузер сам достраивает плавность между ними.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояния = ключевые кадры анимации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждому состоянию соответствует свой набор стилей\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"анимация — это не само свойство, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"движение между состояниями по времени\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коротко:\"},{\"type\":\"text\",\"text\":\" состояние в CSS-анимации — это точка (кадр) с определёнными стилями, между которыми происходит плавная интерполяция.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:23:12.661Z",
+        "updatedAt": "2025-10-20T08:23:12.661Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем анимация отличается от перехода (transition)?",
+        "id": 1324,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает transition?",
+        "id": 1326,
+        "premium": true,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1326,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает transition?",
+        "order": 40903,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition\"},{\"type\":\"text\",\"text\":\" делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"плавный переход между двумя состояниями элемента\"},{\"type\":\"text\",\"text\":\" при изменении его CSS-свойств (например, при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":hover\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":focus\"},{\"type\":\"text\",\"text\":\", добавлении класса через JS и т.д.).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Формат:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".element {\\n  transition: property duration timing-function delay;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".box {\\n  transition: background-color 0.3s ease;\\n}\\n.box:hover {\\n  background-color: red;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда состояние меняется (например, навели мышь), свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"background-color\"},{\"type\":\"text\",\"text\":\" изменится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не резко, а плавно — за 0.3 секунды\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коротко:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition\"},{\"type\":\"text\",\"text\":\" работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"между двумя состояниями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запускается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по событию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"плавность изменения CSS-свойств во времени\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:23:28.104Z",
+        "updatedAt": "2025-11-10T11:23:15.455Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “состояния” в CSS-анимациях?",
+        "id": 1325,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает свойство transition-timing-function?",
+        "id": 1327,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1327,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition-timing-function\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает свойство transition-timing-function?",
+        "order": 40904,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transition-timing-function\"},{\"type\":\"text\",\"text\":\" определяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"характер (кривую ускорения)\"},{\"type\":\"text\",\"text\":\", с которой происходит плавный переход — будет ли он равномерным, замедляться, ускоряться и т.д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные значения:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"ease        — плавное ускорение и замедление (значение по умолчанию)\\nlinear      — равномерная скорость от начала до конца\\nease-in     — медленно в начале, быстрее к концу\\nease-out    — быстро в начале, медленнее к концу\\nease-in-out — медленно в начале и в конце, быстрее в середине\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно использовать и кубические кривые Безье:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"transition-timing-function: cubic-bezier(.25, .1, .25, 1);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" свойство задаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как именно\"},{\"type\":\"text\",\"text\":\" будет меняться скорость анимации во время перехода — равномерно или с ускорениями/замедлениями.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:23:42.360Z",
+        "updatedAt": "2025-10-20T08:23:42.360Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает transition?",
+        "id": 1326,
+        "premium": true,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое @keyframes в анимациях?",
+        "id": 1329,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1329,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes \"},{\"type\":\"text\",\"text\":\"в анимациях?\"}]}]}",
+        "title": "Что такое @keyframes в анимациях?",
+        "order": 40905,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"},{\"type\":\"text\",\"text\":\" — это правило в CSS, которое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"задаёт ключевые кадры анимации\"},{\"type\":\"text\",\"text\":\": набор состояний элемента в разные моменты времени. Анимация затем плавно «проигрывает» переходы между этими кадрами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Формат:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyframes имя-анимации {\\n  0%   { /* начальное состояние */ }\\n  50%  { /* промежуточное состояние */ }\\n  100% { /* конечное состояние */ }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После объявления анимации её подключают к элементу через свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".box {\\n  animation: имя-анимации 2s infinite;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@keyframes\"},{\"type\":\"text\",\"text\":\" определяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"text\":\" происходит на каждом этапе анимации, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"animation\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как и когда\"},{\"type\":\"text\",\"text\":\" это проигрывается.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:24:34.111Z",
+        "updatedAt": "2025-10-20T08:24:34.111Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает свойство transition-timing-function?",
+        "id": 1327,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает transform: perspective()?",
+        "id": 1330,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1330,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transform: perspective()\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает transform: perspective()?",
+        "order": 40906,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transform: perspective()\"},{\"type\":\"text\",\"text\":\" — это функция, которая задаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перспективное искажение для 3D-трансформаций\"},{\"type\":\"text\",\"text\":\", создавая ощущение глубины: удалённые объекты выглядят меньше, ближние — больше.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно: когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"perspective()\"},{\"type\":\"text\",\"text\":\" используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transform\"},{\"type\":\"text\",\"text\":\", она применяется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только к этому элементу\"},{\"type\":\"text\",\"text\":\", а не ко всем дочерним.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".box {\\n  transform: perspective(600px) rotateY(45deg);\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"600px\"},{\"type\":\"text\",\"text\":\" — расстояние от «камеры» до объекта (чем меньше значение, тем сильнее перспектива).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разница с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"perspective\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" как отдельным свойством\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\".container {\\n  perspective: 600px; /* влияет на все 3D-трансформации внутри контейнера */\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"perspective\"},{\"type\":\"text\",\"text\":\" (отдельное свойство) — задаёт перспективу для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всех детей\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"perspective()\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transform\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только для конкретного элемента\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transform: perspective(X)\"},{\"type\":\"text\",\"text\":\" — создаёт 3D-эффект глубины для элемента, влияя на восприятие вращений и других 3D-трансформаций.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 62,
+        "createdAt": "2025-10-20T08:25:01.969Z",
+        "updatedAt": "2025-10-20T08:25:01.969Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 62,
+          "title": "Анимации и переходы",
+          "directions": [
+            {
+              "categoryId": 62,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое @keyframes в анимациях?",
+        "id": 1329,
+        "premium": false,
+        "category": {
+          "id": 62,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Container Queries?",
+        "id": 1331,
+        "premium": false,
+        "category": {
+          "id": 63,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

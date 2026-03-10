@@ -1,0 +1,1071 @@
+{
+  "category": {
+    "id": 238,
+    "title": "end-to-end (e2e)",
+    "description": " ",
+    "parentId": 81
+  },
+  "totalQuestions": 11,
+  "downloadedAt": "2026-03-10T09:56:42.166Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2356,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое E2E-тестирование?\"}]}]}",
+        "title": "Что такое E2E-тестирование?",
+        "order": 80540,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"E2E-тестирование (End-to-End) — это тип тестов, который проверяет работу приложения целиком: от пользовательского интерфейса до базы данных и обратно. В E2E-тесте имитируются реальные действия пользователя (клик, ввод текста, навигация), чтобы убедиться, что все части системы вместе работают правильно, как в реальной жизни.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:37:22.850Z",
+        "updatedAt": "2025-10-23T08:37:22.850Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие типы селекторов предоставляет RTL?",
+        "id": 2354,
+        "premium": false,
+        "category": {
+          "id": 237,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем E2E-тесты отличаются от юнит-тестов?",
+        "id": 2357,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2357,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем E2E-тесты отличаются от юнит-тестов?\"}]}]}",
+        "title": "Чем E2E-тесты отличаются от юнит-тестов?",
+        "order": 80541,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница коротко:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Критерий\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Юнит-тесты\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"E2E-тесты\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что проверяют\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отдельную функцию или компонент в изоляции\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"весь сценарий целиком, как пользователь\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очень быстрые\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"медленные\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зависимости\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нет внешних сервисов (моки)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реальные API, база, UI\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"убедиться, что мелкие части работают корректно по отдельности\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"убедиться, что система работает end-to-end без сбоев\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итого: юнит-тест → про маленькую логику, E2E → про реальное поведение всего приложения.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:37:34.676Z",
+        "updatedAt": "2025-10-23T08:37:34.676Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое E2E-тестирование?",
+        "id": 2356,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какое место занимают e2e тесты в пирамиде тестирования?",
+        "id": 2358,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2358,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какое место занимают e2e тесты в пирамиде тестирования?\"}]}]}",
+        "title": "Какое место занимают e2e тесты в пирамиде тестирования?",
+        "order": 80542,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"E2E-тесты находятся на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самом верхнем уровне пирамиды тестирования\"},{\"type\":\"text\",\"text\":\". Их меньше всего, они самые дорогие и самые медленные, потому что проверяют полный пользовательский сценарий и цепочку всех систем целиком.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:37:44.286Z",
+        "updatedAt": "2025-10-23T08:37:44.286Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем E2E-тесты отличаются от юнит-тестов?",
+        "id": 2357,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какое соотношение между юнит-, интеграционными и E2E-тестами оптимально?",
+        "id": 2359,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2359,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какое соотношение между юнит-, интеграционными и E2E-тестами оптимально?\"}]}]}",
+        "title": "Какое соотношение между юнит-, интеграционными и E2E-тестами оптимально?",
+        "order": 80543,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оптимальное классическое соотношение (по пирамиде тестирования):\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"70%\"},{\"type\":\"text\",\"text\":\" — юнит-тесты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"20%\"},{\"type\":\"text\",\"text\":\" — интеграционные тесты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"10%\"},{\"type\":\"text\",\"text\":\" — E2E-тесты\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:37:54.300Z",
+        "updatedAt": "2025-10-23T08:37:54.300Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Какое место занимают e2e тесты в пирамиде тестирования?",
+        "id": 2358,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему E2E-тесты часто бывают нестабильными?",
+        "id": 2360,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2360,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему E2E-тесты часто бывают нестабильными?\"}]}]}",
+        "title": "Почему E2E-тесты часто бывают нестабильными?",
+        "order": 80544,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Причины нестабильности E2E-тестов:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зависимость от внешних систем\"},{\"type\":\"text\",\"text\":\" — реальное API, база, сеть, сторонние сервисы могут отвечать медленно, с ошибками или вообще не отвечать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Асинхронность интерфейса\"},{\"type\":\"text\",\"text\":\" — элементы появляются с задержкой, а тест кликает “слишком рано”.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хрупкость селекторов\"},{\"type\":\"text\",\"text\":\" — тесты падают из-за мелких изменений в верстке или текстах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Флейки из-за таймингов\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sleep\"},{\"type\":\"text\",\"text\":\", неправильные ожидания, различия окружений (локалка, CI).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Неизолированность данных\"},{\"type\":\"text\",\"text\":\" — мусор в базе, состояние от прошлых тестов, гонки за ресурсы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CI-окружение\"},{\"type\":\"text\",\"text\":\" — медленный контейнер, фоновая нагрузка, нестабильность браузера в headless-режиме.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: E2E-тесты нестабильны, потому что зависят от большого количества переменных, на которые тест почти не контролирует.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:38:08.343Z",
+        "updatedAt": "2025-10-23T08:38:08.343Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Какое соотношение между юнит-, интеграционными и E2E-тестами оптимально?",
+        "id": 2359,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие популярные инструменты используются для E2E-тестирования frontend-приложений?",
+        "id": 2361,
+        "premium": true,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2361,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие популярные инструменты используются для E2E-тестирования frontend-приложений?\"}]}]}",
+        "title": "Какие популярные инструменты используются для E2E-тестирования frontend-приложений?",
+        "order": 80545,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Популярные инструменты для E2E-тестирования фронтенда (развернуто):\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1) Playwright\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: Chromium, Firefox, WebKit из одной коробки (headed/headless).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: авто-ожидания, изолированные контексты, трейсинг (видео, скриншоты, HAR, пошаговый реплей), параллельные воркеры.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локаторы: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"getByRole\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"getByText\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"locator()\"},{\"type\":\"text\",\"text\":\" с фильтрами по видимости и т.п.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: TS/JS, Python, Java, .NET.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: высокая стабильность, хорошая кросс-браузерность, быстрый раннер.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: экосистема моложе Selenium, но уже зрелая.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2) Cypress\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: Chromium-семейство + Firefox (WebKit нет).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: интерактивный Test Runner, снапшоты DOM, тайм-тревел, сетевые стабы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cy.intercept\"},{\"type\":\"text\",\"text\":\", быстрый локальный дебаг.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локаторы: стандартные CSS/XPath, есть плагин \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cypress-testing-library\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: JS/TS.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: быстрый цикл разработки, наглядный дебаг, сильное DX.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: ограниченная кросс-браузерность, архитектурные особенности командной очереди.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3) Selenium (WebDriver)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: все основные (Chrome, Firefox, Safari/WebKit, Edge), мобильные через Appium.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: стандарт де-факто, гриды/фермы, интеграции с облачными провайдерами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локаторы: CSS/XPath, ByRole через вспомогательные либы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: Java, Python, C#, JS, Ruby и др.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: зрелость, совместимость, гибкость инфраструктуры.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: больше «клея», сложнее стабилизировать и дебажить по сравнению с современными раннерами.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4) WebdriverIO\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: через WebDriver и DevTools протокол; можно и мобильные (Appium).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: собственный тестрраннер, ожидания, богатая экосистема плагинов (Allure, Cucumber, компонентные адтеры).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локаторы: стандартные + удобные хелперы, совместим с Testing Library.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: JS/TS.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: универсальность (WebDriver/DevTools), хорошая интеграция с репортерами/BDD.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: требует настройки стека, кривая обучения выше Cypress.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5) Puppeteer\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: главным образом Chromium/Chrome (есть форки для Firefox, но ограниченно).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: низкоуровневый контроль через DevTools, быстрый старт для скрапинга/автоматизации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локаторы: CSS, ручные ожидания или утилиты.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: JS/TS (официально).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: скорость и прямой доступ к протоколу, простой API.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: не про «из коробки» E2E-тестраннер, меньше кросс-браузерности.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6) TestCafe\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: Chrome/Chromium, Firefox, Safari, Edge; без драйверов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: изолированная среда, авто-ожидания, параллельный запуск, простой сетап.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: JS/TS.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: минимум конфигурации, стабильные ожидания.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: меньшая популярность экосистемы по сравнению с Playwright/Cypress.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"7) Nightwatch\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры: через WebDriver и/или DevTools; поддержка мобильных (Appium).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фичи: встроенный раннер, ассершены, репортеры, гибкая конфигурация.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Языки: JS/TS.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: единый фреймворк «всё-в-одном» поверх WebDriver/DevTools.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минусы: реже встречается в новых проектах, чем лидеры.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Краткое сравнение по ключевым осям\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Кросс-браузерность «из коробки»\"},{\"type\":\"text\",\"text\":\": Playwright, Selenium/WebDriver.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Быстрый локальный дебаг и DX\"},{\"type\":\"text\",\"text\":\": Cypress, Playwright.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минимум обвязки\"},{\"type\":\"text\",\"text\":\": Cypress, TestCafe, Playwright.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Широкая языковая поддержка\"},{\"type\":\"text\",\"text\":\": Selenium, Playwright.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Гибкая инфраструктура/гриды/облака\"},{\"type\":\"text\",\"text\":\": Selenium/WebDriver, WebdriverIO.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Низкоуровневый контроль для автоматизации вне тестов\"},{\"type\":\"text\",\"text\":\": Puppeteer.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:39:37.191Z",
+        "updatedAt": "2025-11-10T16:29:29.009Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему E2E-тесты часто бывают нестабильными?",
+        "id": 2360,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что представляет собой E2E-тест на уровне кода?",
+        "id": 2362,
+        "premium": true,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2362,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что представляет собой E2E-тест на уровне кода?\"}]}]}",
+        "title": "Что представляет собой E2E-тест на уровне кода?",
+        "order": 80546,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"E2E-тест на уровне кода — это скрипт, который программно выполняет последовательность действий так, как это сделал бы реальный пользователь в браузере, и затем проверяет, что интерфейс и система в целом выдали ожидаемый результат.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В структуре такого теста обычно есть три части:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подготовка окружения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Запуск браузера, переход на нужный URL, подготовка данных или состояния.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пошаговая имитация действий пользователя\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например: клик по кнопке, ввод текста, выбор элемента, переход по странице.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проверка результата (assertions)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Проверка, что отображён нужный элемент, изменилось состояние, появился нужный текст, открылась новая страница и т.д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мини-пример на Playwright (как это выглядит в коде):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"test('пользователь может залогиниться', async ({ page }) => {\\n  await page.goto('https://site.com/login');\\n  await page.fill('#email', 'test@mail.com');\\n  await page.fill('#password', '123456');\\n  await page.click('button[type=submit]');\\n  await expect(page.getByText('Добро пожаловать')).toBeVisible();\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что видно по примеру:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тест открывает страницу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вводит данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нажимает кнопку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверяет ожидаемый результат\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть E2E-тест кодом проходит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"целый бизнес-сценарий\"},{\"type\":\"text\",\"text\":\", а не отдельную функцию или компонент.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:39:49.536Z",
+        "updatedAt": "2025-11-10T16:29:26.132Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие популярные инструменты используются для E2E-тестирования frontend-приложений?",
+        "id": 2361,
+        "premium": true,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “page object pattern”?",
+        "id": 2363,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2363,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “page object pattern”?\"}]}]}",
+        "title": "Что такое “page object pattern”?",
+        "order": 80547,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Page Object Pattern — это подход в автоматизации UI-тестов, при котором элементы страницы и действия с ними выносятся в отдельный класс (объект страницы). Тест при этом не работает напрямую с селекторами, а вызывает методы этого объекта.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем он нужен:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изолирует селекторы в одном месте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшает дублирование кода\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"упрощает поддержку тестов при изменениях в верстке\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делает тесты более читабельными\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структура:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс страницы (Page Object)\"},{\"type\":\"text\",\"text\":\" — содержит селекторы и методы: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loginPage.login(email, pass)\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loginPage.submit()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тест\"},{\"type\":\"text\",\"text\":\" — вызывает только методы страницы, без знаний о деталях DOM\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Схематично:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Page Object\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"class LoginPage {\\n  constructor(page) {\\n    this.page = page;\\n    this.emailInput = '#email';\\n    this.passwordInput = '#password';\\n    this.submitButton = '#submit';\\n  }\\n\\n  async login(email, password) {\\n    await this.page.fill(this.emailInput, email);\\n    await this.page.fill(this.passwordInput, password);\\n    await this.page.click(this.submitButton);\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Тест\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"test('логин работает', async ({ page }) => {\\n  const loginPage = new LoginPage(page);\\n\\n  await page.goto('/login');\\n  await loginPage.login('user@mail.com', '123456');\\n\\n  await expect(page.getByText('Добро пожаловать')).toBeVisible();\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть в одном предложении:\"},{\"type\":\"text\",\"text\":\" Page Object Pattern — это слой-обёртка над страницей, чтобы тесты оперировали бизнес-действиями, а не DOM-локаторами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:40:08.968Z",
+        "updatedAt": "2025-10-23T08:40:08.968Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что представляет собой E2E-тест на уровне кода?",
+        "id": 2362,
+        "premium": true,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “mocking” в E2E-тестах?",
+        "id": 2364,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2364,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “mocking” в E2E-тестах?\"}]}]}",
+        "title": "Что означает “mocking” в E2E-тестах?",
+        "order": 80548,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Mocking в E2E-тестах — это подмена реальных внешних запросов и ответов (обычно сетевых) на заранее подготовленные фейковые данные, чтобы тест выполнялся предсказуемо и стабильно.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем используется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"исключить зависимость от реального backend, сети и задержек\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"воспроизводить одинаковое поведение при каждом прогоне\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверять сценарии, которые сложно или долго получать от настоящего API (ошибки, особые состояния и т.д.)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это выглядит по сути:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тест отправляет запрос → вместо настоящего сервера подставляется фейковый ответ\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI получает данные и ведёт себя так, как будто взаимодействует с реальной системой\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что мокаются чаще всего:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"XHR\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ответы API (JSON)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ошибки сервера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задержки и статусы (200, 400, 500, timeout)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевая идея:\"},{\"type\":\"text\",\"text\":\" мок не проверяет реальный backend — он фиксирует поведение фронтенда в контролируемых условиях.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:40:26.186Z",
+        "updatedAt": "2025-10-23T08:40:26.186Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “page object pattern”?",
+        "id": 2363,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему е2е тестов не должно быть много?",
+        "id": 2366,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2365,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда стоит мокать API, а когда нет?\"}]}]}",
+        "title": "Когда стоит мокать API, а когда нет?",
+        "order": 80549,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда мокать API:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда бекенд нестабилен, недоступен или ещё не готов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда нужно гарантированное и повторяемое поведение данных\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда важно проверить редкие кейсы (ошибки 500, пустые ответы, таймауты)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда тесты должны быть быстрыми и не зависеть от сети\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда речь о локальной разработке или CI, где важна предсказуемость\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда НЕ мокать API:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда нужно убедиться, что реальная связка фронт → бэкенд работает end-to-end\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда тест проверяет настоящий пользовательский сценарий, а не только UI\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда важно протестировать интеграцию, а не изолированный интерфейс\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда нужно поймать регресс в работе настоящего сервиса, а не фейковых данных\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сводка в одну строку:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Мокаем — для стабильности и скорости. Не мокаем — когда проверяем реальность, а не имитацию.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:41:37.296Z",
+        "updatedAt": "2025-10-23T08:45:18.049Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “mocking” в E2E-тестах?",
+        "id": 2364,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важна скорость загрузки сайта?",
+        "id": 2367,
+        "premium": false,
+        "category": {
+          "id": 82,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2366,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему е2е тестов не должно быть много?\"}]}]}",
+        "title": "Почему е2е тестов не должно быть много?",
+        "order": 80549,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что E2E-тесты самые дорогие, медленные и хрупкие среди всех типов тестов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Причины:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Медленные прогоны\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждый тест поднимает браузер, переходит по страницам, ждёт рендера, делает реальные действия. Один тест может занимать секунды или десятки секунд — это в десятки раз медленнее юнитов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокая стоимость поддержки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Малейшие изменения в интерфейсе, текстах, верстке или сетевых сценариях могут ломать тест. Чем их больше, тем больше времени уходит на починку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зависимость от окружения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"E2E зависят от сети, базы, API, инфраструктуры. Любая нестабильность делает их flaky. Массовые E2E = массовые ложные падения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Перекрывают одни и те же сценарии\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"E2E часто проверяют схожие пользовательские флоу. Если их много, появляется дублирование, которое не даёт дополнительной ценности, а только замедляет процесс.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Убивают скорость команды\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Длинные прогоны → долгий feedback loop → медленное принятие решений → замедление разработки.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"E2E должны покрывать только ключевые пользовательские сценарии. Остальную проверку (логика, интеграции, состояния) выгоднее закрывать юнит- и интеграционными тестами, потому что они быстрее, стабильнее и дешевле.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 238,
+        "createdAt": "2025-10-23T08:41:51.273Z",
+        "updatedAt": "2025-10-23T08:44:59.901Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 238,
+          "title": "end-to-end (e2e)",
+          "directions": [
+            {
+              "categoryId": 238,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “mocking” в E2E-тестах?",
+        "id": 2364,
+        "premium": false,
+        "category": {
+          "id": 238,
+          "parent": {
+            "title": "Тестирование",
+            "id": 81,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важна скорость загрузки сайта?",
+        "id": 2367,
+        "premium": false,
+        "category": {
+          "id": 82,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

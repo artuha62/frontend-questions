@@ -1,0 +1,777 @@
+{
+  "category": {
+    "id": 222,
+    "title": "off-Page SEO (внешняя оптимизация)",
+    "description": " ",
+    "parentId": 9
+  },
+  "totalQuestions": 9,
+  "downloadedAt": "2026-03-09T08:46:41.247Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2481,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое off-page SEO?\"}]}]}",
+        "title": "Что такое off-page SEO?",
+        "order": 90300,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Указание языка страницы в HTML (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<html lang=\\\"ru\\\">\"},{\"type\":\"text\",\"text\":\") важно по следующим причинам:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поисковики точнее определяют целевую аудиторию\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lang\"},{\"type\":\"text\",\"text\":\" помогает показывать страницу людям, говорящим на нужном языке. Это влияет на релевантность в поисковой выдаче и может улучшать позиции.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Экранные читалки читают текст правильно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без указания языка скринридеры могут озвучивать текст с неправильным произношением. Это критично для доступности.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Браузеры корректно предлагают перевод\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если язык указан, Chrome, Safari и другие корректно реагируют: предлагают или не предлагают перевод в зависимости от языка пользователя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Многоязычные сайты работают стабильнее\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если на сайте есть страницы на разных языках, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lang\"},{\"type\":\"text\",\"text\":\" помогает избежать путаницы: поисковики не смешивают контент в выдаче, а пользователи получают текст на нужном языке.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это элемент, который почти не виден, но напрямую влияет на SEO, доступность и восприятие страницы.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T09:57:05.051Z",
+        "updatedAt": "2025-10-23T09:57:05.051Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему важно указывать язык страницы в HTML?",
+        "id": 2479,
+        "premium": true,
+        "category": {
+          "id": 151,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем off-page SEO отличается от on-page SEO?",
+        "id": 2482,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2482,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем off-page SEO отличается от on-page SEO?\"}]}]}",
+        "title": "Чем off-page SEO отличается от on-page SEO?",
+        "order": 90301,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"On-page SEO\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"off-page SEO\"},{\"type\":\"text\",\"text\":\" — это два разных подхода к улучшению позиций сайта в поисковиках.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"On-page SEO (внутренняя оптимизация)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Всё, что находится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на самой странице\"},{\"type\":\"text\",\"text\":\" и под твоим контролем:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Заголовки и подзаголовки (H1–H6);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые слова в тексте;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Мета-теги (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"title\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"description\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ALT-тексты изображений;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ЧПУ (человекопонятные URL);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутренние ссылки;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Core Web Vitals и скорость загрузки;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Мобильная адаптация и структура кода.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель:\"},{\"type\":\"text\",\"text\":\" сделать страницу понятной, релевантной и удобной для пользователя и поисковика.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🌐 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Off-page SEO (внешняя оптимизация)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Всё, что влияет на сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снаружи\"},{\"type\":\"text\",\"text\":\", и чаще всего — не напрямую под твоим контролем:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обратные ссылки (backlinks);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упоминания бренда;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"PR и охваты в СМИ;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Репутация сайта;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы из соцсетей (ограниченно);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поведенческие сигналы (время на сайте, возвраты, переходы по ссылкам).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель:\"},{\"type\":\"text\",\"text\":\" повысить авторитет и доверие к сайту в глазах поисковиков.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разница в одном предложении:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"On-page — ты оптимизируешь контент и структуру, off-page — работаешь над тем, как на тебя ссылаются и говорят вне сайта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T09:58:06.218Z",
+        "updatedAt": "2025-10-23T09:58:06.218Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое off-page SEO?",
+        "id": 2481,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему off-page SEO важно для ранжирования?",
+        "id": 2483,
+        "premium": true,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2483,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему off-page SEO важно для ранжирования?\"}]}]}",
+        "title": "Почему off-page SEO важно для ранжирования?",
+        "order": 90302,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Off-page SEO\"},{\"type\":\"text\",\"text\":\" важно для ранжирования, потому что оно показывает поисковику \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не то, что ты сам говоришь о себе, а что говорят о тебе другие\"},{\"type\":\"text\",\"text\":\". Алгоритмы вроде Google PageRank изначально и были построены на этой идее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылки = доверие\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда на страницу ссылаются с других сайтов, это сигнал:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"«Этому ресурсу можно верить»\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чем авторитетнее источник — тем выше ценность ссылки. Это один из самых сильных факторов ранжирования.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формируется репутация\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внешние сигналы (ссылки, упоминания, обсуждения) формируют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"общее восприятие бренда или сайта\"},{\"type\":\"text\",\"text\":\". Если о тебе много говорят, Google считает: ты важен.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Влияет на конкурентоспособность\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Две страницы с одинаковым качеством контента будут ранжироваться по-разному, если у одной из них \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сильный ссылочный профиль\"},{\"type\":\"text\",\"text\":\", а у другой — нет.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Даёт трафик вне поисковика\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорошие внешние ссылки = потенциальный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реальный трафик\"},{\"type\":\"text\",\"text\":\" с других сайтов, форумов, соцсетей. Это поведенческие сигналы, которые тоже учитываются.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подтверждает авторитет в теме\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если твои материалы цитируют СМИ, блоги или отраслевые ресурсы, это говорит о \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тематической релевантности\"},{\"type\":\"text\",\"text\":\" и глубине. Google это замечает.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если коротко: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"off-page SEO — это социальное доказательство\"},{\"type\":\"text\",\"text\":\". Без него сайт может быть качественным, но остаться «в вакууме».\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T09:58:54.331Z",
+        "updatedAt": "2025-11-10T11:30:46.260Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем off-page SEO отличается от on-page SEO?",
+        "id": 2482,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему поисковые системы учитывают внешние сигналы?",
+        "id": 2484,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2484,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему поисковые системы учитывают внешние сигналы?\"}]}]}",
+        "title": "Почему поисковые системы учитывают внешние сигналы?",
+        "order": 90303,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковые системы учитывают внешние сигналы, потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"это способ понять, как сайт оценивают другие\"},{\"type\":\"text\",\"text\":\" — не только он сам. Вот почему это критично:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылки — как рекомендации\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если на страницу ссылаются другие сайты, особенно авторитетные, это воспринимается как «голос доверия». По сути:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Если другие считают этот контент ценным — возможно, он действительно заслуживает внимания».\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сигналы популярности\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упоминания в СМИ, блогах, форумах, соцсетях — это маркеры того, что сайт вызывает интерес. Алгоритмы видят: контент живёт вне самой страницы, значит, релевантен и активен.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложнее подделать\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутреннюю оптимизацию можно «нарисовать». А вот внешние сигналы — сложнее контролировать. Поэтому они считаются более «честным» индикатором ценности сайта в глазах других.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разграничение качества\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Миллионы сайтов пишут одно и то же. Но у одних — 5 ссылок, у других — 500. Это помогает поисковику \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ранжировать страницы по авторитету\"},{\"type\":\"text\",\"text\":\", а не просто по содержанию.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря, внешние сигналы — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"социальный рейтинг\"},{\"type\":\"text\",\"text\":\" сайта. И поисковик ему доверяет больше, чем твоей самооценке.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T09:59:26.417Z",
+        "updatedAt": "2025-10-23T09:59:26.417Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему off-page SEO важно для ранжирования?",
+        "id": 2483,
+        "premium": true,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие метрики указывают на успешное off-page продвижение?",
+        "id": 2485,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2485,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие метрики указывают на успешное off-page продвижение?\"}]}]}",
+        "title": "Какие метрики указывают на успешное off-page продвижение?",
+        "order": 90304,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метрики, которые указывают на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"успешное off-page SEO\"},{\"type\":\"text\",\"text\":\", не берутся «внутри сайта» — они отражают влияние и репутацию ресурса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вне его самого\"},{\"type\":\"text\",\"text\":\". Вот ключевые показатели:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Количество и качество обратных ссылок (backlinks)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Много ссылок\"},{\"type\":\"text\",\"text\":\" с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разных доменов\"},{\"type\":\"text\",\"text\":\" — сигнал авторитетности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенно ценятся ссылки с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тематически близких\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"надежных\"},{\"type\":\"text\",\"text\":\" сайтов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не просто «много», а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"естественно выглядящее распределение\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Domain Rating / Domain Authority (DR/DA)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метрики от Ahrefs, Moz и др., оценивающие общий «вес» сайта по ссылочному профилю.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Рост DR/DA указывает, что сайт становится авторитетнее.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Рост упоминаний бренда (brand mentions)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже без ссылок, когда сайт или бренд всё чаще упоминается на форумах, в СМИ, блогах — это усиливает узнаваемость и влияет на репутационные сигналы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Рост социального резонанса (engagement)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Репосты, обсуждения, цитаты, шейры в соцсетях.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не прямой фактор ранжирования, но Google замечает тренды и интерес вокруг страницы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Referral traffic (трафик с внешних источников)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Переходы с других сайтов показывают, что ссылки действительно работают, а не просто висят.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это влияет на поведенческие метрики: время на сайте, глубину просмотров, возвраты.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Anchor-тексты ссылок\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в анкорах (тексте ссылок) присутствуют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"релевантные ключевые слова\"},{\"type\":\"text\",\"text\":\", это усиливает SEO-сигналы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но важно избегать спама и переоптимизации.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если всё это растёт — значит, off-page SEO не просто «прокачано», а реально работает. Это как хорошая репутация: её не видно напрямую, но она влияет на всё.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T09:59:55.149Z",
+        "updatedAt": "2025-10-23T09:59:55.149Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему поисковые системы учитывают внешние сигналы?",
+        "id": 2484,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое link building?",
+        "id": 2486,
+        "premium": true,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2486,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое link building?\"}]}]}",
+        "title": "Что такое link building?",
+        "order": 90305,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Link building\"},{\"type\":\"text\",\"text\":\" — это процесс \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получения внешних ссылок\"},{\"type\":\"text\",\"text\":\" на сайт с других ресурсов. Цель — увеличить авторитет сайта в глазах поисковиков и улучшить его позиции в выдаче.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем это нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поисковики считают ссылки сигналом доверия.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чем больше качественных ссылок — тем выше шансы на топ.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылки передают PageRank (вес)\"},{\"type\":\"text\",\"text\":\" — усиливают страницы, на которые ведут.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Основные методы link building:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Гостевые посты\"},{\"type\":\"text\",\"text\":\" (написание статей для других сайтов с упоминанием своего);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Аутрич\"},{\"type\":\"text\",\"text\":\" (обращения к редакторам/блогерам с просьбой разместить ссылку);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каталоги и справочники\"},{\"type\":\"text\",\"text\":\" (если релевантны);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размещение в СМИ и интервью\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание вирусного или полезного контента\"},{\"type\":\"text\",\"text\":\", на который ссылаются сами.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Качество > количество.\"},{\"type\":\"text\",\"text\":\" Ссылки с авторитетных сайтов важнее, чем десятки с неизвестных;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Натуральность профиля.\"},{\"type\":\"text\",\"text\":\" Переспамленные или купленные ссылки могут вызвать санкции.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Link building — это не просто «добыть ссылку», а выстроить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешнюю репутацию сайта\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T10:00:03.632Z",
+        "updatedAt": "2025-11-10T11:30:40.894Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие метрики указывают на успешное off-page продвижение?",
+        "id": 2485,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему ссылки важны для SEO?",
+        "id": 2487,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2487,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему ссылки важны для SEO?\"}]}]}",
+        "title": "Почему ссылки важны для SEO?",
+        "order": 90306,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ссылки важны для SEO, потому что они выполняют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несколько ключевых функций одновременно\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передают авторитет (PageRank)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждая ссылка с внешнего сайта — это как голос доверия. Чем выше авторитет донора, тем больше веса передаётся. Это один из старейших и до сих пор сильнейших сигналов для ранжирования в Google.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подтверждают релевантность темы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда на тебя ссылаются тематически близкие ресурсы (например, сайт про медицину на другой медсайт) — это сигнал поисковику, что ты встроен в экспертное инфополе. Это усиливает тематическую значимость страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Расширяют охват и индексирование\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем больше ссылок на страницу — тем выше шанс, что поисковые боты её найдут и проиндексируют. Особенно актуально для новых или слабо связанных страниц.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формируют внешнюю репутацию\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ссылки — это не ты сам себе ставишь галочку. Это другие ставят. Именно поэтому внешние ссылки — менее манипулируемый и более надёжный фактор оценки качества.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Влияют на поведенческие сигналы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорошие ссылки = реальный трафик. Если посетители переходят, читают, сохраняют — это усиливает поведенческие сигналы (время на сайте, отказоустойчивость и т.п.), что дополнительно влияет на SEO.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" ссылки — это не просто «добавка». Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ядро алгоритма ранжирования\"},{\"type\":\"text\",\"text\":\", потому что они показывают: кто, зачем и насколько серьёзно относится к твоему контенту.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T10:00:49.873Z",
+        "updatedAt": "2025-10-23T10:00:49.873Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое link building?",
+        "id": 2486,
+        "premium": true,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “входящая ссылка” (backlink)?",
+        "id": 2488,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2488,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “входящая ссылка” (backlink)?\"}]}]}",
+        "title": "Что такое “входящая ссылка” (backlink)?",
+        "order": 90307,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Входящая ссылка (backlink)\"},{\"type\":\"text\",\"text\":\" — это ссылка, которая ведёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"с чужого сайта на твой\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На сайте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"news.com\"},{\"type\":\"text\",\"text\":\" размещена статья, и в ней — ссылка на твою страницу:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"https://твойдомен.ru/statya\\\">Полезный материал</a>\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вот это и есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"входящая ссылка\"},{\"type\":\"text\",\"text\":\" для тебя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Почему она важна:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сигнал доверия\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если на тебя ссылаются — значит, считают ресурс полезным или авторитетным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передаёт ссылочный вес (PageRank)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хороший сайт = сильная ссылка = больше шансов подняться в поисковой выдаче.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Влияет на SEO напрямую\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это один из главных факторов ранжирования в Google.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Может приносить живой трафик\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Люди кликают по ссылке → переходят на твой сайт.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если коротко: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"входящая ссылка — это внешняя рекомендация, которую учитывает и человек, и поисковик\"},{\"type\":\"text\",\"text\":\". Чем больше качественных — тем лучше.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T10:01:07.162Z",
+        "updatedAt": "2025-10-23T10:01:07.162Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему ссылки важны для SEO?",
+        "id": 2487,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое крауд-маркетинг?",
+        "id": 2489,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2489,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое крауд-маркетинг?\"}]}]}",
+        "title": "Что такое крауд-маркетинг?",
+        "order": 90308,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Крауд-маркетинг\"},{\"type\":\"text\",\"text\":\" — это способ продвижения сайта, при котором ссылки и упоминания размещаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на форумах, в комментариях, отзывах и обсуждениях\"},{\"type\":\"text\",\"text\":\", якобы от «обычных пользователей». Главная цель — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"естественно встраивать ссылку в живое общение\"},{\"type\":\"text\",\"text\":\" и при этом передавать SEO-сигнал.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что делает крауд-маркетинг:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"естественные обратные ссылки\"},{\"type\":\"text\",\"text\":\" (backlinks);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повышает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доверие через рекомендации от \\\"реальных людей\\\"\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"трафик\"},{\"type\":\"text\",\"text\":\" с площадок, где есть целевая аудитория;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Укрепляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"бренд-присутствие\"},{\"type\":\"text\",\"text\":\" в обсуждениях.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Где размещают:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Форумы (например, Reddit, тематические площадки);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Комментарии под статьями и видео;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отзывы о товарах и услугах;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Q&A-сайты (типа Quora или Яндекс Кью).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Тоже долго выбирал, остановился на этой компании — сделали быстро и чётко: [ссылка]»\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно: крауд-маркетинг работает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"если он выглядит естественно\"},{\"type\":\"text\",\"text\":\". Открытая реклама или спам-ссылки быстро удаляются и могут навредить репутации.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 222,
+        "createdAt": "2025-10-23T10:01:25.251Z",
+        "updatedAt": "2025-10-23T10:01:25.251Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 222,
+          "title": "off-Page SEO (внешняя оптимизация)",
+          "directions": [
+            {
+              "categoryId": 222,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “входящая ссылка” (backlink)?",
+        "id": 2488,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Technical SEO?",
+        "id": 2490,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

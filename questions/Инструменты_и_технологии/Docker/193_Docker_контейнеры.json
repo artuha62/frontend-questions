@@ -1,0 +1,777 @@
+{
+  "category": {
+    "id": 193,
+    "title": "Docker контейнеры",
+    "description": " ",
+    "parentId": 164
+  },
+  "totalQuestions": 9,
+  "downloadedAt": "2026-03-10T10:06:54.850Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1867,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое контейнер в Docker?\"}]}]}",
+        "title": "Что такое контейнер в Docker? ",
+        "order": 500200,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер в Docker — это запущенный экземпляр Docker-образа, работающий как изолированный процесс на хостовой системе. У контейнера есть своё файловое окружение, сеть, переменные среды и ресурсы, но он использует общее ядро операционной системы с хостом.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевые свойства контейнера\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изоляция\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Процессы контейнера не видят процессы и файловую систему других контейнеров (namespaces).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Собственная файловая система\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Контейнер получает файловую систему на основе образа, плюс верхний writable-слой для своих изменений.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лёгкость и скорость\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Контейнеры запускаются за доли секунды и потребляют меньше ресурсов, чем виртуальные машины.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Эфемерность\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Контейнер живёт пока работает его основной процесс. После остановки — его состояние обычно не сохраняется (если не использовать volume).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главная мысль\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер — это изолированный процесс, запущенный из образа, который выглядит как отдельное окружение, но разделяет ядро ОС с хостом.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно — могу ещё коротко сравнить контейнер и виртуальную машину в одну таблицу.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:05:32.850Z",
+        "updatedAt": "2025-10-22T08:05:32.850Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как Docker объединяет слои в образе?",
+        "id": 1866,
+        "premium": true,
+        "category": {
+          "id": 192,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему контейнеры называют “легковесной виртуализацией”?",
+        "id": 1868,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1868,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему контейнеры называют “легковесной виртуализацией”?\"}]}]}",
+        "title": "Почему контейнеры называют “легковесной виртуализацией”?",
+        "order": 500201,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры называют “легковесной виртуализацией”, потому что они дают изоляцию, похожую на виртуальные машины, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без запуска отдельной операционной системы для каждого окружения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главная разница понятным языком\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ВМ (тяжёлая виртуализация)\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер (легковесная)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждая виртуалка со своей ОС\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все контейнеры используют ядро хоста\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"много ресурсов, долгий запуск\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мало ресурсов, быстрый старт\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тяжёлая эмуляция\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изоляция на уровне ядра\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему “легковесная”\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нет отдельного ядра ОС в каждом окружении\"},{\"type\":\"text\",\"text\":\" — контейнер делит его с хостом.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше накладных расходов\"},{\"type\":\"text\",\"text\":\" — нет гипервизора и эмуляции железа.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Старт за секунды\"},{\"type\":\"text\",\"text\":\", а не за минуты.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше RAM/CPU на каждый экземпляр\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Если сказать в одну фразу\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры дают изоляцию, похожую на виртуальную машину, но работают гораздо легче и быстрее, потому что используют общее ядро ОС.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нужна следующая тема — могу разобрать, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"почему контейнер ≠ полноценная защита, как VM\"},{\"type\":\"text\",\"text\":\", или перейти к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сетям Docker, volume или Compose\"},{\"type\":\"text\",\"text\":\". Что дальше?\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:12:39.214Z",
+        "updatedAt": "2025-10-22T08:12:39.214Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое контейнер в Docker? ",
+        "id": 1867,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что происходит при запуске контейнера?",
+        "id": 1869,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1869,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит при запуске контейнера?\"}]}]}",
+        "title": "Что происходит при запуске контейнера?",
+        "order": 500202,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При запуске контейнера Docker берёт образ и создаёт из него изолированный процесс. Последовательность шагов на уровне \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"junior\"},{\"type\":\"text\",\"text\":\" выглядит так:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Docker берёт образ\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Образ — это шаблон (слои с файловой системой и конфигурацией). Он — основа будущего контейнера.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Создаётся writable-слой\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поверх слоёв образа Docker добавляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменяемый слой\"},{\"type\":\"text\",\"text\":\", куда будут попадать все изменения контейнера (логи, временные файлы и т.д.).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Контейнер получает изолированные ресурсы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker настраивает namespaces и cgroups, чтобы контейнер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"видел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только свои процессы\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"свою файловую систему\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"своё сетевое окружение\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мог использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ограниченные ресурсы\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Запускается основной процесс\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker выполняет команду, указанную в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CMD\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ENTRYPOINT\"},{\"type\":\"text\",\"text\":\" в образе.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Этот процесс = “жизнь контейнера”.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Контейнер работает, пока живёт процесс\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если процесс завершается — контейнер автоматически останавливается.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог в одной фразе\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При запуске Docker-контейнера создаётся изолированная среда на основе образа, накладывается writable-слой и запускается основной процесс, от которого зависит жизнь контейнера.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь, могу разобрать ту же цепочку на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"middle-уровне\"},{\"type\":\"text\",\"text\":\" (с деталями про OverlayFS, PID namespace, network namespace и т.д.).\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:12:56.881Z",
+        "updatedAt": "2025-10-22T08:12:56.881Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему контейнеры называют “легковесной виртуализацией”?",
+        "id": 1868,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как запустить docker контейнер?",
+        "id": 1870,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1870,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как запустить docker контейнер?\"}]}]}",
+        "title": "Как запустить docker контейнер?",
+        "order": 500203,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер запускают командой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker run\"},{\"type\":\"text\",\"text\":\", указав образ, из которого он должен быть создан.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Базовый пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run IMAGE_NAME\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если образ не скачан локально, Docker сам загрузит его из registry (например, с Docker Hub).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запустить контейнер в интерактивном режиме (с терминалом)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -it IMAGE_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запустить контейнер в фоне (detached mode)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -d IMAGE_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запуск с маппингом порта (для веб-приложений)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -d -p 8080:80 IMAGE_NAME\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"8080\"},{\"type\":\"text\",\"text\":\" — порт на хосте, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"80\"},{\"type\":\"text\",\"text\":\" — порт внутри контейнера.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Запуск с именем\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run --name my_container IMAGE_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что важно помнить\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"run\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создаёт\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запускает\"},{\"type\":\"text\",\"text\":\" контейнер.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда основной процесс внутри контейнера завершится — контейнер остановится.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь — могу показать, как запускать с volume, с переменными окружения или как смотреть логи и состояние контейнера.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:13:09.749Z",
+        "updatedAt": "2025-11-10T13:17:21.106Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что происходит при запуске контейнера?",
+        "id": 1869,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как остановить работу docker контейнера?",
+        "id": 1871,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1871,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как остановить работу docker контейнера?\"}]}]}",
+        "title": "Как остановить работу docker контейнера?",
+        "order": 500204,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работу контейнера останавливают командой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker stop\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Посмотреть запущенные контейнеры\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker ps\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Остановить контейнер\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По имени:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker stop CONTAINER_NAME\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или по ID:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker stop CONTAINER_ID\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Принудительная остановка (если контейнер не реагирует)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker kill CONTAINER_NAME\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"stop\"},{\"type\":\"text\",\"text\":\" посылает сигнал \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"SIGTERM\"},{\"type\":\"text\",\"text\":\" (мягкая остановка), а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"kill\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"SIGKILL\"},{\"type\":\"text\",\"text\":\" (моментально завершает процесс).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важный момент\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер после остановки остаётся в списке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker ps -a\"},{\"type\":\"text\",\"text\":\" и его можно снова запустить командой:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker start CONTAINER_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:13:27.611Z",
+        "updatedAt": "2025-10-22T08:13:27.611Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как запустить docker контейнер?",
+        "id": 1870,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему лучше не хранить данные внутри контейнера?",
+        "id": 1872,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1872,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему лучше не хранить данные внутри контейнера?\"}]}]}",
+        "title": "Почему лучше не хранить данные внутри контейнера?",
+        "order": 500205,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что контейнер — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"временный и легко заменяемый\"},{\"type\":\"text\",\"text\":\". Если хранить данные внутри него, они исчезнут при пересоздании или обновлении контейнера.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3 причины по-junior’ски\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Контейнеры не вечные\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Контейнер можно остановить, удалить или пересоздать при деплое. Его файловая система — временная, поэтому данные легко потерять.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Невозможно масштабировать\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если приложение запущено в нескольких контейнерах, данные внутри каждого будут разными. Нужна общая точка хранения (volume, база данных, облако).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нет нормального бэкапа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"С контейнером неудобно делать резервные копии, переносить и восстанавливать данные.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как правильно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Данные выносят в:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"volume\"},{\"type\":\"text\",\"text\":\" (docker volume)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"bind-mount (папка хоста)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"БД вне контейнера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"облачное хранилище\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" контейнер легко заменить, а данные должны жить дольше контейнера — поэтому их хранят снаружи, а не внутри.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:13:44.999Z",
+        "updatedAt": "2025-10-22T08:13:44.999Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как остановить работу docker контейнера?",
+        "id": 1871,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как сохранить данные между запусками контейнеров? (junior)",
+        "id": 1873,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1873,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как сохранить данные между запусками контейнеров?\"}]}]}",
+        "title": "Как сохранить данные между запусками контейнеров? (junior)",
+        "order": 500206,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы данные не пропадали при пересоздании контейнера, их выносят за пределы контейнера с помощью \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"томов\"},{\"type\":\"text\",\"text\":\" (volumes) или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"маунтов\"},{\"type\":\"text\",\"text\":\" (bind-mount).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Два основных способа (junior)\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Docker volume (лучший вариант для продакшена)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker volume create mydata\\ndocker run -v mydata:/app/data IMAGE\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Данные хранятся вне контейнера, но управляются Docker.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Bind-mount (подключение папки хоста)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -v /path/on/host:/app/data IMAGE\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Данные лежат прямо на хосте, а контейнер просто их использует.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что это даёт\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"данные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не исчезают\"},{\"type\":\"text\",\"text\":\" при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker stop\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker rm\"},{\"type\":\"text\",\"text\":\" и пересборке образа;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"к ним можно подключать другие контейнеры;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобно делать бэкапы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы сохранить данные между запусками контейнера, используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"volume или bind-mount\"},{\"type\":\"text\",\"text\":\" — они выносят данные за пределы контейнера и не дают им потеряться.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно — могу нарисовать простую схему или показать, как проверить volume через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker volume ls\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:14:11.928Z",
+        "updatedAt": "2025-11-10T13:17:25.165Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему лучше не хранить данные внутри контейнера?",
+        "id": 1872,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как контейнеры обмениваются данными между собой?",
+        "id": 1874,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1874,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как контейнеры обмениваются данными между собой?\"}]}]}",
+        "title": "Как контейнеры обмениваются данными между собой?",
+        "order": 500207,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры обмениваются данными в основном через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сеть\"},{\"type\":\"text\",\"text\":\", которую Docker создаёт между ними. Обычно это делается в одной виртуальной docker-сети, где контейнеры видят друг друга по имени, как по доменному адресу.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Обмен через Docker-сеть (основной способ)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаём сеть:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker network create mynet\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запускаем контейнеры в ней:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -d --name app --network=mynet myapp\\ndocker run -d --name db  --network=mynet mydb\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь контейнер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"app\"},{\"type\":\"text\",\"text\":\" может обратиться к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"db\"},{\"type\":\"text\",\"text\":\" по имени \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"db\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mysql://db:3306\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" безопасное сетевое взаимодействие внутри одной сети.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Обмен через общий volume\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно передавать файлы (логи, данные, кеш):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -v shared:/data app1\\ndocker run -v shared:/data app2\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба контейнера используют одну точку хранения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" общий доступ к файлам.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Обмен через внешние сервисы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры могут взаимодействовать через:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базу данных,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очередь сообщений (Kafka, RabbitMQ),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"API-запросы HTTP/REST.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" масштабируемый способ, часто в микросервисах.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итого для junior\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры обмениваются данными через сеть (чаще всего), общий том (для файлов) или внешние сервисы. Самый распространённый путь — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"docker-сеть, где контейнеры видят друг друга по имени\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно, могу следующим сообщением объяснить то же самое и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"показать, как это выглядит в docker-compose\"},{\"type\":\"text\",\"text\":\", где связь между контейнерами вообще автоматическая.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:14:33.885Z",
+        "updatedAt": "2025-11-10T13:17:29.956Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как сохранить данные между запусками контейнеров? (junior)",
+        "id": 1873,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как посмотреть логи контейнера? ",
+        "id": 1875,
+        "premium": false,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1875,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как посмотреть логи контейнера?\"}]}]}",
+        "title": "Как посмотреть логи контейнера? ",
+        "order": 500208,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Логи контейнера выводятся командой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker logs\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Посмотреть логи контейнера\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker logs CONTAINER_NAME\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или по ID:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker logs CONTAINER_ID\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Смотреть логи в реальном времени (как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"tail -f\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker logs -f CONTAINER_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Указать количество последних строк\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker logs --tail 50 CONTAINER_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Посмотреть логи с таймштампами\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker logs -t CONTAINER_NAME\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итого\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задача\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Команда\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разовый просмотр логов\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker logs NAME\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стрим логов\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker logs -f NAME\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Последние X строк\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker logs --tail X NAME\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker показывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"stdout и stderr\"},{\"type\":\"text\",\"text\":\" контейнера — то, что приложение выводит в консоль.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 193,
+        "createdAt": "2025-10-22T08:14:46.244Z",
+        "updatedAt": "2025-10-22T08:14:46.244Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 193,
+          "title": "Docker контейнеры",
+          "directions": [
+            {
+              "categoryId": 193,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как контейнеры обмениваются данными между собой?",
+        "id": 1874,
+        "premium": true,
+        "category": {
+          "id": 193,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Dockerfile?",
+        "id": 1877,
+        "premium": false,
+        "category": {
+          "id": 194,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

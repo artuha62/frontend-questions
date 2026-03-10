@@ -1,0 +1,777 @@
+{
+  "category": {
+    "id": 132,
+    "title": "Основы структур данных",
+    "description": " ",
+    "parentId": 11
+  },
+  "totalQuestions": 9,
+  "downloadedAt": "2026-03-10T09:39:22.824Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1506,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое структура данных?\"}]}]}",
+        "title": "Что такое структура данных?",
+        "order": 410100,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура данных — это способ организации и хранения данных в памяти компьютера так, чтобы к ним было удобно и эффективно обращаться, изменять и обрабатывать.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разные структуры данных решают разные задачи:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"массив удобен для быстрого доступа по индексу;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"список — для частых вставок и удалений;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"словарь (хеш-таблица) — для быстрой выборки по ключу;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дерево — для иерархий и быстрых поисков;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очередь и стек — для упорядоченной обработки элементов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть структура данных определяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как именно\"},{\"type\":\"text\",\"text\":\" данные хранятся и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что можно с ними делать быстро\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:53:43.628Z",
+        "updatedAt": "2025-10-21T07:53:43.628Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает алгоритм Евклида?",
+        "id": 1497,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему структуры данных важны в алгоритмах?",
+        "id": 1507,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1507,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему структуры данных важны в алгоритмах?\"}]}]}",
+        "title": "Почему структуры данных важны в алгоритмах?",
+        "order": 410101,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структуры данных важны в алгоритмах, потому что именно они определяют, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько быстро и эффективно алгоритм сможет работать с информацией\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые причины:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость доступа и операций\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Один и тот же алгоритм может работать в разы быстрее или медленнее в зависимости от того, как хранятся данные. Например, поиск в массиве — O(n), а в хеш-таблице — O(1).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оптимальное использование памяти\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Одни структуры требуют много памяти, другие — экономят её. Это важно, когда данных много или ресурсы ограничены.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощение логики алгоритма\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Правильно выбранная структура делает алгоритм проще. Например, очередь естественно подходит для обхода в ширину, а стек — для обхода в глубину.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Решение конкретных задач\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Задачи сильно различаются: где-то важен быстрый поиск, где-то — частые вставки, где-то — упорядоченные данные. Нет “универсальной структуры на все случаи”, и алгоритм выбирает ту, что подходит под нужную задачу.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"алгоритм определяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"},{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" делать, структура данных — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"},{\"type\":\"italic\"}],\"text\":\"как это делать эффективно\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:54:07.567Z",
+        "updatedAt": "2025-10-21T07:54:07.567Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое структура данных?",
+        "id": 1506,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие бывают основные типы структур данных?",
+        "id": 1508,
+        "premium": true,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1508,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие бывают основные типы структур данных?\"}]}]}",
+        "title": "Какие бывают основные типы структур данных?",
+        "order": 410102,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные типы структур данных обычно делят на несколько групп:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Линейные структуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элементы идут последовательно, один за другим.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Массив (Array)\"},{\"type\":\"text\",\"text\":\" — фиксированный размер, быстрый доступ по индексу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Список (Linked List)\"},{\"type\":\"text\",\"text\":\" — быстрые вставки и удаления, но медленный доступ по индексу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стек (Stack)\"},{\"type\":\"text\",\"text\":\" — принцип LIFO: последний вошёл — первый вышел.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Очередь (Queue)\"},{\"type\":\"text\",\"text\":\" — принцип FIFO: первый вошёл — первый вышел.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дек (Deque)\"},{\"type\":\"text\",\"text\":\" — вставка и удаление с обеих сторон.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Хеш-структуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хранят пары \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"ключ–значение\"},{\"type\":\"text\",\"text\":\" и дают быстрый доступ по ключу.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-таблица / словарь (Hash Table / Hash Map)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Деревья и иерархические структуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подходят для данных с вложенностью и быстрым поиском.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево поиска (BST)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сбалансированные деревья\"},{\"type\":\"text\",\"text\":\" (AVL, Red-Black Tree)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Кучи (Heap)\"},{\"type\":\"text\",\"text\":\" — для приоритетов и очередей с приоритетами\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Trie\"},{\"type\":\"text\",\"text\":\" — для слов и префиксов\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Графы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для моделирования сетей: города, соцсети, маршруты, связи между объектами.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ориентированные и неориентированные графы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Взвешенные и невзвешенные\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Множества\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хранят уникальные элементы, удобны для проверки “принадлежит/не принадлежит”.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Set / HashSet / TreeSet\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6. Дополнительные структуры\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются для ускорения поиска и доступа.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Очередь с приоритетом\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Skip List\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Bloom Filter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Segment Tree, Fenwick Tree\"},{\"type\":\"text\",\"text\":\" — для работы с диапазонами\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:54:35.703Z",
+        "updatedAt": "2025-11-28T20:14:42.187Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему структуры данных важны в алгоритмах?",
+        "id": 1507,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему выбор структуры данных влияет на сложность алгоритма O(n)?",
+        "id": 1509,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1509,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему выбор структуры данных влияет на сложность алгоритма O(n)?\"}]}]}",
+        "title": "Почему выбор структуры данных влияет на сложность алгоритма O(n)?",
+        "order": 410103,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выбор структуры данных влияет на асимптотическую сложность алгоритма, потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные структуры дают разную скорость выполнения базовых операций\"},{\"type\":\"text\",\"text\":\": поиска, вставки, удаления, доступа по индексу и т.д. Алгоритм почти всегда состоит из комбинации этих операций, поэтому их скорость напрямую определяет итоговую сложность.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые моменты:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Разные структуры — разное время выполнения операций\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, поиск элемента:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Массив (несортированный)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(n) — приходится просматривать всё\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Бинарное дерево поиска (сбалансированное)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(log n)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1) в среднем\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Алгоритм, который использует поиск 1000 раз, в массиве даст 1000×O(n), а в хеш-таблице — 1000×O(1). Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные порядки скорости\"},{\"type\":\"text\",\"text\":\", хотя сама логика алгоритма может быть одинаковой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Структура данных определяет способ доступа\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы получить элемент по индексу в массиве: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы получить элемент в связном списке по индексу: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\" (нужно идти по цепочке)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один и тот же алгоритм “получить элемент №k” меняет сложность только из-за структуры.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Структуры оптимизируются под разные задачи\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет универсальной структуры, поэтому:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если нужны частые вставки в середину — список даст O(1), массив — O(n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если важен быстрый поиск — дерево или хеш-таблица лучше списка\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Алгоритм, работающий на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"неподходящей структуре\"},{\"type\":\"text\",\"text\":\", автоматически становится медленнее на асимптотическом уровне.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Итоговое правило\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O-нотация алгоритма = сумма или комбинация O-нотаций операций структуры данных.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поэтому структура данных — фундамент эффективности.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь, дальше могу разобрать на конкретном примере (например, почему BFS использует очередь, а Dijkstra — кучу), чтобы увидеть, как структура прямо “формирует” сложность. С примерами продолжить?\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:55:04.226Z",
+        "updatedAt": "2025-10-21T07:55:04.226Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие бывают основные типы структур данных?",
+        "id": 1508,
+        "premium": true,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как оценивать эффективность структуры данных?",
+        "id": 1510,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1510,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как оценивать эффективность структуры данных?\"}]}]}",
+        "title": "Как оценивать эффективность структуры данных?",
+        "order": 410104,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эффективность структуры данных оценивают по тому, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как быстро и с какими ресурсами она позволяет выполнять ключевые операции\"},{\"type\":\"text\",\"text\":\". Обычно анализ строится по трём группам критериев:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Время выполнения операций (Time Complexity)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Смотрят, сколько времени в среднем и в худшем случае занимает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступ к элементу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поиск\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вставка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удаление\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"перебор\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оценка ведётся в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Big-O нотации\"},{\"type\":\"text\",\"text\":\". Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"массив: доступ O(1), поиск O(n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хеш-таблица: поиск O(1) в среднем, но O(n) в худшем\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дерево: поиск O(log n), если сбалансировано\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главный вопрос:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"насколько будет медленнее алгоритм, если данных станет в 100 или 1 000 000 раз больше?\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Память (Space Complexity)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Смотрят, сколько дополнительной памяти требует структура.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Массив минимален (только данные)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Список тратит память на ссылки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица хранит “пустые корзины”\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Деревья хранят ссылки на детей и родителей\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Баланс часто такой:\"},{\"type\":\"text\",\"text\":\" меньше памяти → медленнее операции, больше памяти → быстрее операции.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Удобство под конкретный тип задач\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура считается эффективной только тогда, когда соответствует сценарию. Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если критичен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск\"},{\"type\":\"text\",\"text\":\" → дерево, хеш-таблица\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если критичны \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вставки/удаления в середине\"},{\"type\":\"text\",\"text\":\" → связный список\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строгий порядок\"},{\"type\":\"text\",\"text\":\" → дерево или куча\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FIFO/LIFO\"},{\"type\":\"text\",\"text\":\" → очередь или стек\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть оценивают и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логическую эффективность\"},{\"type\":\"text\",\"text\":\" — насколько структура “ложится” на задачу.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итого\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эффективность определяется по формуле:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Эффективность = скорость (O по времени) + память (O по пространству) + применимость к задаче\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь, могу собрать таблицу сравнений (массив vs список vs хеш vs дерево) или разобрать эффективность на примерах задач, чтобы можно было “на автомате” выбирать структуру. Что выберем?\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:55:29.201Z",
+        "updatedAt": "2025-10-21T07:55:29.201Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему выбор структуры данных влияет на сложность алгоритма O(n)?",
+        "id": 1509,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": " Что такое временная сложность?",
+        "id": 1511,
+        "premium": true,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1511,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" Что такое временная сложность?\"}]}]}",
+        "title": " Что такое временная сложность?",
+        "order": 410105,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Временная сложность — это способ оценить, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как изменяется время работы алгоритма в зависимости от размера входных данных (n)\"},{\"type\":\"text\",\"text\":\". Она показывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"скорость роста\"},{\"type\":\"text\",\"text\":\" количества операций, а не реальное время в секундах.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем она нужна\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она позволяет сравнивать алгоритмы независимо от компьютера, языка и реализации. То есть отвечает на вопрос:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Что будет, если данных станет в 10, 100 или 1 000 000 раз больше?\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как выражается\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Big-O нотацию\"},{\"type\":\"text\",\"text\":\" — (O(1), O(\\\\log n), O(n), O(n \\\\log n), O(n^2)) и т.д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(O(1)) — время не зависит от размера данных (константа)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(O(n)) — время растёт линейно\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(O(n^2)) — квадратичный рост (становится очень медленно на больших данных)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что именно измеряют\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Считают количество \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"базовых операций\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сравнений\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обращений к памяти\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"арифметических действий\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"итераций\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно не точное число, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как оно растёт с увеличением n\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Временная сложность отвечает на ключевой вопрос:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько алгоритм замедляется при росте объёма данных?\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По ней можно понять, будет ли алгоритм масштабироваться или “умрёт” на больших входных данных.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:55:58.436Z",
+        "updatedAt": "2025-11-10T13:11:17.085Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как оценивать эффективность структуры данных?",
+        "id": 1510,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое пространственная сложность?",
+        "id": 1512,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1512,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое пространственная сложность?\"}]}]}",
+        "title": "Что такое пространственная сложность?",
+        "order": 410106,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пространственная сложность — это характеристика, показывающая, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько памяти требует алгоритм для своей работы в зависимости от размера входных данных (n)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что включает в себя\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Общий объём памяти складывается из трёх компонентов:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Память под сами входные данные.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, массив из n элементов уже занимает O(n).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дополнительная память (временные переменные, буферы, стеки вызовов).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То, что алгоритм создаёт “поверх” исходных данных.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Память под рекурсию.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждый рекурсивный вызов занимает место в стеке — например, рекурсивный обход дерева может потреблять O(h), где h — глубина дерева.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как выражается\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется та же Big-O нотация:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\" — алгоритм использует константное количество памяти (например, обмен двух чисел).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\" — память растёт пропорционально объёму данных (копирование массива).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n²)\"},{\"type\":\"text\",\"text\":\" — память растёт квадратично (например, таблица всех пар элементов).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему это важно\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На больших данных “быстрая” программа может падать из-за нехватки памяти.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иногда выгодно пожертвовать временем ради меньшего расхода памяти (и наоборот).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В системах с ограниченными ресурсами (встраиваемые устройства, телефоны) это критически важно.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пространственная сложность показывает, насколько алгоритм “жаден” к памяти.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она помогает выбрать реализацию, которая не только быстро работает, но и не перегружает систему.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:56:30.256Z",
+        "updatedAt": "2025-10-21T07:56:30.256Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": " Что такое временная сложность?",
+        "id": 1511,
+        "premium": true,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “время доступа” в структуре данных?",
+        "id": 1513,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1513,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “время доступа” в структуре данных?\"}]}]}",
+        "title": "Что означает “время доступа” в структуре данных?",
+        "order": 410107,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Время доступа” — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"время (или количество операций), необходимое, чтобы получить нужный элемент из структуры данных\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря, это показатель того, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько быстро можно “добраться” до конкретных данных\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Что именно означает\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты обращаешься к элементу (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"array[i]\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dict[\\\"key\\\"]\"},{\"type\":\"text\",\"text\":\"), структура данных должна:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"найти его в памяти,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"извлечь,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вернуть значение.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Время доступа” описывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько шагов нужно сделать, чтобы это произошло\"},{\"type\":\"text\",\"text\":\" — в среднем или в худшем случае.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Примеры\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура данных\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Время доступа\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Массив (Array)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый элемент имеет фиксированный адрес, можно обратиться напрямую.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Связный список (Linked List)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(n)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы найти элемент, нужно пройти все предыдущие.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-таблица (Hash Table)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1) в среднем\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключ преобразуется в индекс (через хеш-функцию), и элемент находится сразу.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево поиска (BST)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(log n)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый шаг делит набор на две части, уменьшая поиск вдвое.\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Почему важно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Время доступа определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как быстро алгоритм может “читать” данные\"},{\"type\":\"text\",\"text\":\", а значит — напрямую влияет на общую скорость работы программы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Интуитивно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Представь библиотеку:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если книги стоят по номерам (массив) — берёшь нужную сразу;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если книги связаны цепочкой (список) — придётся перелистать все;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если книги распределены по разделам и поддеревьям (дерево) — идёшь по структуре;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если библиотекарь знает хеш-таблицу — сразу называет полку.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“Время доступа” — это мера того, насколько быстро можно найти нужный элемент в памяти без лишних обходов.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:56:56.864Z",
+        "updatedAt": "2025-10-21T07:56:56.864Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое пространственная сложность?",
+        "id": 1512,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “время вставки”?",
+        "id": 1514,
+        "premium": true,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1514,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “время вставки”?\"}]}]}",
+        "title": "Что означает “время вставки”?",
+        "order": 410108,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Время вставки\"},{\"type\":\"text\",\"text\":\" — это показатель того, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько операций (или времени) требуется, чтобы добавить новый элемент в структуру данных\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оно показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько быстро структура способна “расти”\"},{\"type\":\"text\",\"text\":\" при добавлении новых данных.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Что происходит при вставке\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты добавляешь элемент, структура должна:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"найти подходящее место (по индексу, ключу или правилу порядка);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возможно, переместить или связать другие элементы;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"записать новый элемент в память.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Количество этих шагов определяет временную сложность вставки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Примеры\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура данных\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Время вставки\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Комментарий\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Массив (Array)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(n)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если массив фиксированный, может потребоваться копирование или сдвиг элементов.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Связный список (Linked List)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1), если известна позиция\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Просто меняются ссылки между узлами.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-таблица (Hash Table)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1) в среднем\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент добавляется сразу в корзину по хешу ключа.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево поиска (BST)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(log n)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый шаг делит диапазон пополам, пока не найдётся место.\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Очередь / стек\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(1)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Добавление идёт в конец или начало, без обхода.\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Почему это важно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Алгоритмы, которые часто добавляют элементы (например, сортировки, динамические структуры, потоки данных), напрямую зависят от скорости вставки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если вставка дорогая, вся программа замедляется при увеличении количества элементов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Интуитивно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Представь очередь в магазин:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если просто становишься в конец — O(1);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если нужно влезть по алфавиту — O(n);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если охранник знает, где твоё место по карте (хеш) — O(1) в среднем.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Время вставки — это мера того, насколько быстро структура данных может принять новый элемент без перестроения или долгого поиска места.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 132,
+        "createdAt": "2025-10-21T07:57:21.443Z",
+        "updatedAt": "2025-11-10T13:11:23.120Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 132,
+          "title": "Основы структур данных",
+          "directions": [
+            {
+              "categoryId": 132,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “время доступа” в структуре данных?",
+        "id": 1513,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое массив как структура данных?",
+        "id": 1515,
+        "premium": false,
+        "category": {
+          "id": 133,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

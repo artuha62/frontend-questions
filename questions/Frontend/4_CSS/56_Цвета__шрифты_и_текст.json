@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 56,
+    "title": "Цвета, шрифты и текст",
+    "description": " ",
+    "parentId": 4
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-09T07:52:25.065Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1250,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие способы задания цвета поддерживает CSS?\"}]}]}",
+        "title": "Какие способы задания цвета поддерживает CSS?",
+        "order": 40300,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS поддерживает несколько способов задания цвета. Основные группы — цвет по имени, числовые модели, функции, а также прозрачность. Вот полный перечень:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. По имени (named colors)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS позволяет использовать предопределённые названия цветов:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: red;\\nbackground: royalblue;\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поддерживается около \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"140 стандартных имён\"},{\"type\":\"text\",\"text\":\" (white, black, green, tomato и др.).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. HEX-формат\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шестнадцатеричное представление:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: #FF0000;   /* Красный */\\ncolor: #F00;      /* Короткая запись */\\ncolor: #FF000080; /* С альфа-каналом (прозрачность) */\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Форматы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#RRGGBB\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#RGB\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#RRGGBBAA\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#RGBA\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. RGB / RGBA\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Функциональная запись цвета в модели RGB:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: rgb(255, 0, 0);\\ncolor: rgba(255, 0, 0, 0.5);  /* 0.5 — прозрачность */\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Возможна запись с процентами:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: rgb(100%, 0%, 0%);\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. HSL / HSLA\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оттенок, насыщенность и светлота:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: hsl(0, 100%, 50%);\\ncolor: hsla(0, 100%, 50%, 0.3);\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Функции уровня CSS Color 4\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Формат\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hwb()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: hwb(0 0% 0% / 0.5);\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lab()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: lab(54% 80 67);\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lch()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: lch(54% 106 40);\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"oklab()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: oklab(40% 0.1 0.1);\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"oklch()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: oklch(40% 0.15 45);\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: color(display-p3 1 0 0 / 0.6);\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти модели дают точную цветопередачу, особенно на современных дисплеях (например, P3).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6. Система \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"currentColor\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Наследует текущий цвет текста:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"border-color: currentColor;\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"7. Прозрачный цвет\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: transparent;\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итого\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS поддерживает такие способы задания цвета:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Способ\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Имена цветов\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"red\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HEX\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#ff0000\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#f00\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#ff000080\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"RGB/RGBA\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgba()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HSL/HSLA\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hsl()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hsla()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HWB\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hwb()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Lab / Lch\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lab()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lch()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Oklab / Oklch\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"oklab()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"oklch()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"color()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color(display-p3 …)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"currentColor\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"currentColor\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"transparent\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transparent\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T07:58:38.742Z",
+        "updatedAt": "2025-10-20T07:58:38.742Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как !important влияет на специфичность?",
+        "id": 1249,
+        "premium": false,
+        "category": {
+          "id": 55,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как задать цвет текста элемента?",
+        "id": 1251,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1251,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как задать цвет текста элемента?\"}]}]}",
+        "title": "Как задать цвет текста элемента?",
+        "order": 40301,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойством \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"selector {\\n  color: red;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Цвет может быть задан в любом поддерживаемом формате — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"red\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#ff0000\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hsl()\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T07:58:59.023Z",
+        "updatedAt": "2025-10-20T07:58:59.023Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие способы задания цвета поддерживает CSS?",
+        "id": 1250,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем отличается rgb() от rgba()? Что делает альфа канал?",
+        "id": 1252,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1252,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем отличается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\" от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgba()\"},{\"type\":\"text\",\"text\":\"? Что делает альфа канал?\"}]}]}",
+        "title": "Чем отличается rgb() от rgba()? Что делает альфа канал?",
+        "order": 40302,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\" задаёт цвет через три компонента: красный, зелёный и синий. Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: rgb(255, 0, 0);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgba()\"},{\"type\":\"text\",\"text\":\" добавляет четвёртый параметр — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"альфа-канал\"},{\"type\":\"text\",\"text\":\", отвечающий за прозрачность:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: rgba(255, 0, 0, 0.5);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Альфа-канал принимает значение от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\" до \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\" — полностью непрозрачный цвет\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\" — полностью прозрачный\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0.5\"},{\"type\":\"text\",\"text\":\" — полупрозрачный\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\" — без прозрачности, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgba()\"},{\"type\":\"text\",\"text\":\" — с возможностью её указать.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T07:59:20.458Z",
+        "updatedAt": "2025-10-20T07:59:20.458Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как задать цвет текста элемента?",
+        "id": 1251,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает значение transparent?",
+        "id": 1253,
+        "premium": true,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1253,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает значение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transparent\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает значение transparent?",
+        "order": 40303,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"transparent\"},{\"type\":\"text\",\"text\":\" делает цвет полностью прозрачным. Элемент сохраняет место в потоке и может иметь фон или границы, но сам цвет (например, текста или фона) становится невидимым:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"color: transparent;\\nbackground: transparent;\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это аналог цвета с альфа-каналом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgba(0,0,0,0)\"},{\"type\":\"text\",\"text\":\" — видимости нет, но элемент остаётся.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T07:59:37.805Z",
+        "updatedAt": "2025-11-10T11:22:40.277Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем отличается rgb() от rgba()? Что делает альфа канал?",
+        "id": 1252,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как задать цвет заднего фона у элемента?",
+        "id": 1254,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1254,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как задать цвет заднего фона у элемента?\"}]}]}",
+        "title": "Как задать цвет заднего фона у элемента?",
+        "order": 40304,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойством \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"background-color\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"selector {\\n  background-color: red;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно использовать любой формат цвета — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"red\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#000\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rgb()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hsl()\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:00:00.216Z",
+        "updatedAt": "2025-10-20T08:00:00.216Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает значение transparent?",
+        "id": 1253,
+        "premium": true,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как указать шрифт для текста? ",
+        "id": 1255,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1255,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как указать шрифт для текста?\"}]}]}",
+        "title": "Как указать шрифт для текста? ",
+        "order": 40305,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойством \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-family\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"selector {\\n  font-family: \\\"Arial\\\", sans-serif;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно указывать одно или несколько названий шрифтов. Если первый недоступен, применяется следующий.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:00:16.091Z",
+        "updatedAt": "2025-10-20T08:00:16.091Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как задать цвет заднего фона у элемента?",
+        "id": 1254,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое fallback шрифт?",
+        "id": 1256,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1256,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое fallback шрифт?\"}]}]}",
+        "title": "Что такое fallback шрифт?",
+        "order": 40306,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Fallback-шрифт — это запасной шрифт, который будет использован, если основной недоступен. В CSS он указывается вторым и далее в списке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-family\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"font-family: \\\"Roboto\\\", \\\"Arial\\\", sans-serif;\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер подставит Arial, если Roboto не загрузится, а если и его нет — возьмёт системный шрифт из семейства \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sans-serif\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:00:28.829Z",
+        "updatedAt": "2025-10-20T08:00:28.829Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как указать шрифт для текста? ",
+        "id": 1255,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает правило @font-face?",
+        "id": 1257,
+        "premium": true,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1257,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает правило \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@font-face\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает правило @font-face?",
+        "order": 40307,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@font-face\"},{\"type\":\"text\",\"text\":\" позволяет подключать собственный шрифт (локальный файл) и использовать его через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-family\"},{\"type\":\"text\",\"text\":\". Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"@font-face {\\n  font-family: \\\"MyFont\\\";\\n  src: url(\\\"fonts/MyFont.woff2\\\") format(\\\"woff2\\\");\\n}\\n\\np {\\n  font-family: \\\"MyFont\\\", sans-serif;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"С помощью \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@font-face\"},{\"type\":\"text\",\"text\":\" браузер загрузит указанный файл и применит его, как обычный шрифт.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:00:42.144Z",
+        "updatedAt": "2025-11-10T11:22:42.728Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое fallback шрифт?",
+        "id": 1256,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие единицы измерения можно использовать для размера шрифта?",
+        "id": 1258,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1258,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие единицы измерения можно использовать для размера шрифта?\"}]}]}",
+        "title": "Какие единицы измерения можно использовать для размера шрифта?",
+        "order": 40308,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-size\"},{\"type\":\"text\",\"text\":\" можно использовать относительные и абсолютные единицы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Относительные:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"text\":\" — относительно размера шрифта родителя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"},{\"type\":\"text\",\"text\":\" — относительно размера шрифта корневого элемента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"html\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"text\":\" — процент от размера шрифта родителя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vw\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vh\"},{\"type\":\"text\",\"text\":\" — доля от ширины или высоты окна браузера\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmin\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmax\"},{\"type\":\"text\",\"text\":\" — доля от меньшей/большей стороны окна\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Абсолютные:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"px\"},{\"type\":\"text\",\"text\":\" — пиксели\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pt\"},{\"type\":\"text\",\"text\":\" — типографские пункты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pc\"},{\"type\":\"text\",\"text\":\" — пика\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"in\"},{\"type\":\"text\",\"text\":\" — дюймы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cm\"},{\"type\":\"text\",\"text\":\" — сантиметры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mm\"},{\"type\":\"text\",\"text\":\" — миллиметры\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На практике чаще всего используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"px\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:00:53.777Z",
+        "updatedAt": "2025-10-20T08:00:53.777Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает правило @font-face?",
+        "id": 1257,
+        "premium": true,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает свойство line-height?",
+        "id": 1259,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1259,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"line-height\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает свойство line-height?",
+        "order": 40309,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"line-height\"},{\"type\":\"text\",\"text\":\" задаёт высоту строки — расстояние между базовыми линиями соседних строк текста. От него зависит плотность или «воздушность» текста.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  line-height: 1.5;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если указать число (например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1.5\"},{\"type\":\"text\",\"text\":\"), оно умножается на текущий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-size\"},{\"type\":\"text\",\"text\":\". Можно также задавать в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"px\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"normal\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 56,
+        "createdAt": "2025-10-20T08:01:06.035Z",
+        "updatedAt": "2025-10-20T08:01:06.035Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 56,
+          "title": "Цвета, шрифты и текст",
+          "directions": [
+            {
+              "categoryId": 56,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие единицы измерения можно использовать для размера шрифта?",
+        "id": 1258,
+        "premium": false,
+        "category": {
+          "id": 56,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Box Model в CSS? Из каких частей состоит Box Model?",
+        "id": 1260,
+        "premium": false,
+        "category": {
+          "id": 57,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 163,
+    "title": "Dependency Inversion Principle",
+    "description": " ",
+    "parentId": 147
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-10T09:46:39.032Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2839,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает принцип Dependency Inversion?\"}]}]}",
+        "title": "Что означает принцип Dependency Inversion?",
+        "order": 440400,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип инверсии зависимостей (Dependency Inversion Principle, DIP) означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модули высокого уровня не должны зависеть от модулей низкого уровня — оба должны зависеть от абстракций. А абстракции не должны зависеть от деталей, детали должны зависеть от абстракций.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модули высокого уровня не должны зависеть от деталей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Логика приложения (высокий уровень) не должна напрямую зависеть от конкретных реализаций, например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретной БД,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретного HTTP-клиента,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретного способа логирования.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Иначе изменение инфраструктуры ломает бизнес-логику.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детали должны зависеть от абстракций\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо того чтобы бизнес-код зависел от класса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"MySqlRepository\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"он должен зависеть от интерфейса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IRepository\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"А уже конкретные реализации (MySQL, Postgres, FileStorage) зависят от этой абстракции.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Абстракции стабильны, реализации изменчивы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP говорит:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Бизнес должен опираться на стабильные контракты, а изменяемые детали должны подключаться к этим контрактам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель принципа\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшить связанность,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"повысить гибкость архитектуры,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"упростить замену реализации,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволить тестировать модули в изоляции.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формулировка в одной фразе\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Не бизнес-логика должна знать о технических деталях, а технические детали должны подстраиваться под бизнес-логику через абстракции.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP требует, чтобы код зависел от абстракций, а не от конкретных реализаций. Это делает систему гибкой, заменяемой и устойчивой к изменениям инфраструктуры.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:14:22.484Z",
+        "updatedAt": "2025-11-13T08:14:22.484Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "id": 2838,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему DIP — основа IoC и DI?",
+        "id": 2840,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2840,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему DIP — основа IoC и DI?\"}]}]}",
+        "title": "Почему DIP — основа IoC и DI?",
+        "order": 440401,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP — основа IoC и DI, потому что сам принцип формулирует ключевую идею: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"зависеть нужно от абстракций, а не от конкретных реализаций\"},{\"type\":\"text\",\"text\":\", а именно это и делают механизмы Inversion of Control и Dependency Injection.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IoC (Inversion of Control) — это практическое применение DIP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP говорит: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"модуль высокого уровня не должен сам создавать зависимости\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"IoC реализует это так:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не контролирует\"},{\"type\":\"text\",\"text\":\", какой конкретный класс он использует;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"контроль «переворачивается» и передаётся внешней системе (контейнеру, фабрике, конфигурации).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть IoC буквально воплощает идею DIP — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"детали не диктуют правила высокоуровневой логике\"},{\"type\":\"text\",\"text\":\".\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DI (Dependency Injection) — механизм, который выполняет DIP автоматически\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP требует, чтобы модуль зависел от абстракций.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DI делает это технически возможным:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"объект получает зависимости «снаружи»,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"зависимости передаются через конструктор, сеттер или параметры метода,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"объект не знает о конкретных классах — только об интерфейсе.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DI способен автоматически подставлять нужные реализации — это практическая реализация DIP.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Без DIP ни IoC, ни DI не имели бы смысла\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если бы модули зависели от конкретных реализаций, то:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IoC-контейнеру нечего было бы подменять — зависимость была бы жёстко зашита,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DI не смог бы внедрять новую реализацию без переписывания старой,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тестирование через моки стало бы невозможным.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP — теоретическая база, IoC/DI — её практическая реализация.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP формулирует архитектурную цель, IoC/DI предоставляют технику достижения цели\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP: «Высокоуровневый код должен зависеть от интерфейсов».\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"IoC/DI: «Мы подставим реализацию этих интерфейсов автоматически, без изменения высокоуровневого кода».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DI-контейнеры построены именно вокруг DIP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Любой DI-контейнер (Spring, NestJS, Angular, .NET DI, Guice) работает по схеме:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"регистрируется интерфейс,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"регистрируется его реализация,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"контейнер инжектирует зависимости в модуль высокого уровня.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это и есть DIP в действии.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IoC и DI делают DIP возможным в реальных приложениях\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP задаёт архитектурное правило.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"IoC/DI автоматизируют процесс, устраняя ручное создание зависимостей и делая систему гибкой.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP — это фундаментальная идея. IoC — это её архитектурное проявление. DI — это технический механизм, который делает DIP удобным и безопасным в применении.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Все три понятия взаимосвязаны: IoC и DI существуют именно благодаря DIP.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:14:45.671Z",
+        "updatedAt": "2025-11-13T08:14:45.671Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает принцип Dependency Inversion?",
+        "id": 2839,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “модули верхнего уровня не должны зависеть от нижнего”?",
+        "id": 2841,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2841,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “модули верхнего уровня не должны зависеть от нижнего”?\"}]}]}",
+        "title": "Что означает “модули верхнего уровня не должны зависеть от нижнего”?",
+        "order": 440402,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фраза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"«модули верхнего уровня не должны зависеть от модулей нижнего уровня»\"},{\"type\":\"text\",\"text\":\" означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"бизнес-логика (верхний уровень) не должна напрямую зависеть от технических деталей (нижний уровень)\"},{\"type\":\"text\",\"text\":\" — таких как БД, файловая система, логирование, сетевые клиенты, конкретные API и т.п.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Верхний уровень — это бизнес-правила\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это классы и модули, которые определяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"text\":\" приложение делает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"расчёт стоимости,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обработка заказов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"валидация,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"принятие решений.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти модули должны быть стабильными и редко меняться.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нижний уровень — это инфраструктура и детали реализации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это классы, которые отвечают за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретная база данных (MySQL, Postgres),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретная библиотека HTTP,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретный логгер,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конкретный кеш,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"формат хранения данных.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они меняются чаще, чем бизнес-код.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблема прямой зависимости\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если бизнес-логика зависит от, например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"MySqlOrderRepository\"},{\"type\":\"text\",\"text\":\", то:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"перейти на Postgres — нужно переписывать бизнес-код;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заменить библиотеку HTTP — нужно переписывать бизнес-код;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"написать unit-тест — трудно, потому что внутри — конкретные детали.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Бизнес-логика становится хрупкой и нелегко обслуживаемой.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP говорит: зависеть нужно от абстракций\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderService:\\n    def __init__(self):\\n        self.repo = MySqlOrderRepository()\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Должно быть:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderService:\\n    def __init__(self, repo: OrderRepositoryInterface):\\n        self.repo = repo\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь OrderService зависит только от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контракта\"},{\"type\":\"text\",\"text\":\", а не от конкретной реализации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детали должны зависеть от абстракций, а не наоборот\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"MySqlOrderRepository должен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"реализовывать\"},{\"type\":\"text\",\"text\":\" интерфейс:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class MySqlOrderRepository(OrderRepositoryInterface):\\n    ...\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И уже внешняя система (DI-контейнер, конфигурация) решает, какую реализацию подставить.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущество\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Верхний уровень становится:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"независимым,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко тестируемым,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переносимым,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"устойчивым к изменениям инфраструктуры.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"«Модули верхнего уровня не должны зависеть от нижнего» означает, что бизнес-логика должна зависеть только от абстракций и контрактов, а не от конкретных технических деталей. Детали подключаются извне, а сама бизнес-логика остаётся стабильной и гибкой.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:15:07.642Z",
+        "updatedAt": "2025-11-13T08:15:07.642Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему DIP — основа IoC и DI?",
+        "id": 2840,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Пример нарушения DIP.",
+        "id": 2842,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2842,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример нарушения DIP.\"}]}]}",
+        "title": "Пример нарушения DIP.",
+        "order": 440403,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нарушение DIP возникает тогда, когда модуль высокого уровня напрямую зависит от конкретной реализации модуля нижнего уровня. Это делает систему жёсткой, плохо тестируемой и трудно изменяемой.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вот типичный пример нарушения:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример нарушения DIP\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class MySqlOrderRepository:\\n    def save(self, order):\\n        print(\\\"Сохранение заказа в MySQL\\\")\\n\\n\\nclass OrderService:\\n    def __init__(self):\\n        self.repo = MySqlOrderRepository()  # нарушение DIP\\n\\n    def create_order(self, order):\\n        self.repo.save(order)\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему это нарушение DIP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокоуровневый модуль зависит от низкоуровневого\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OrderService\"},{\"type\":\"text\",\"text\":\" — бизнес-логика.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"MySqlOrderRepository\"},{\"type\":\"text\",\"text\":\" — инфраструктура.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Бизнес-логика знает о технических деталях, что нарушает DIP.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нельзя заменить реализацию без переписывания OrderService\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хотим перейти на Postgres?\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Нужно менять конструктор:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"self.repo = PostgresRepository()\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это ломает принцип открытости/закрытости и делает код хрупким.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложно тестировать OrderService\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Нельзя подставить фейковый репозиторий или мок — он жёстко зашит.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тесты невозможны без реальной БД.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бизнес-код зависит от деталей, которые часто меняются\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Репозиторий, драйверы, библиотека соединений — меняются.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Бизнес-логика — должна быть стабильной.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Прямая связь ломает архитектуру.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OrderService\"},{\"type\":\"text\",\"text\":\" должен зависеть от абстракции, а не от конкретного класса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В данном примере бизнес-логика жёстко привязана к MySQL — это прямое нарушение принципа инверсии зависимостей.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:15:26.637Z",
+        "updatedAt": "2025-11-13T08:15:26.637Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “модули верхнего уровня не должны зависеть от нижнего”?",
+        "id": 2841,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Пример соблюдения DIP.",
+        "id": 2843,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2843,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример соблюдения DIP.\"}]}]}",
+        "title": "Пример соблюдения DIP.",
+        "order": 440404,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Корректное соблюдение DIP достигается тогда, когда модуль высокого уровня зависит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не от конкретного класса\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от абстракции\"},{\"type\":\"text\",\"text\":\", а конкретная реализация подставляется извне.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже — правильный пример.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Абстракция (контракт)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderRepository:\\n    def save(self, order):\\n        raise NotImplementedError\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Реализации нижнего уровня\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class MySqlOrderRepository(OrderRepository):\\n    def save(self, order):\\n        print(\\\"Сохранение в MySQL\\\")\\n\\n\\nclass PostgresOrderRepository(OrderRepository):\\n    def save(self, order):\\n        print(\\\"Сохранение в Postgres\\\")\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модуль высокого уровня (не зависит от деталей)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderService:\\n    def __init__(self, repo: OrderRepository):\\n        self.repo = repo  # зависит от абстракции\\n\\n    def create_order(self, order):\\n        self.repo.save(order)\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование (внедрение зависимости)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"repo = MySqlOrderRepository()\\nservice = OrderService(repo)\\nservice.create_order(\\\"order-1\\\")\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При необходимости:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"service = OrderService(PostgresOrderRepository())\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И никаких изменений в OrderService.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему это соблюдение DIP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OrderService зависит от абстракции, а не от конкретного репозитория.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это означает, что бизнес-логика не привязана к MySQL, Postgres или чему-либо ещё.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конкретные реализации зависят от абстракции, а не наоборот.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"MySqlOrderRepository\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"PostgresOrderRepository\"},{\"type\":\"text\",\"text\":\" реализуют один контракт.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Можно менять инфраструктуру без изменения бизнес-кода.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хотим перейти на другую БД? Просто создаём новую реализацию.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тестирование становится простым.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно подставить мок:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class FakeRepo(OrderRepository):\\n    def save(self, order):\\n        print(\\\"Фейковое сохранение\\\")\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Архитектура становится гибкой и расширяемой.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этом примере DIP соблюдён: модуль высокого уровня (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OrderService\"},{\"type\":\"text\",\"text\":\") зависит только от интерфейса (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OrderRepository\"},{\"type\":\"text\",\"text\":\"), а конкретные детали реализуются отдельно и подставляются извне.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:16:25.142Z",
+        "updatedAt": "2025-11-13T08:16:25.142Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Пример нарушения DIP.",
+        "id": 2842,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему DIP повышает гибкость системы?",
+        "id": 2844,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2844,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему DIP повышает гибкость системы?\"}]}]}",
+        "title": "Почему DIP повышает гибкость системы?",
+        "order": 440405,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP повышает гибкость системы потому, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изолирует высокоуровневую логику от конкретных технических деталей\"},{\"type\":\"text\",\"text\":\", позволяя свободно заменять инфраструктуру, расширять поведение и тестировать систему без изменений в основном коде.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокоуровневый код становится независимым от технических деталей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если бизнес-логика зависит только от абстракций, её не нужно переписывать при смене:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"базы данных,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"способа логирования,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"API-клиента,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кеша или файлового хранилища.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это делает архитектуру гибкой: можно менять детали без риска сломать бизнес.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Легко заменять одну реализацию на другую\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Появилась необходимость перейти с MySQL на Postgres, Redis, S3?\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Просто создаётся новая реализация интерфейса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Весь высокоуровневый код продолжает работать без изменений.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это ключевая форма гибкости, которую обеспечивает DIP.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поддержка разных реализаций одновременно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно иметь несколько реализаций одного интерфейса и выбирать их динамически:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для тестов — фейковый репозиторий,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для продакшена — реальный,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для разработки — временный in-memory.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Архитектура становится адаптивной.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощение тестирования и изоляции модулей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP позволяет подставлять моки и стабы без сложных настроек.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тесты становятся независимыми от внешней инфраструктуры.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это повышает гибкость в процессе разработки и CI/CD.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уменьшение связанности между частями системы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP заставляет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"бизнес зависеть от интерфейсов;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"детали зависеть от этих же интерфейсов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это разрушает прямые связи «верх → низ», заменяя их гибкой моделью «оба → абстракция».\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Архитектура становится расширяемой, а не ломающейся\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Новое поведение добавляется созданием новых классов, а не переписыванием существующих.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает количество ошибок и ускоряет развитие системы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP повышает гибкость системы, потому что отделяет бизнес-логику от инфраструктуры, снимает жёсткие зависимости, упрощает замену компонент и делает архитектуру модульной и легко расширяемой.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:16:47.703Z",
+        "updatedAt": "2025-11-13T08:16:47.703Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Пример соблюдения DIP.",
+        "id": 2843,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как DIP помогает при тестировании?",
+        "id": 2845,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2845,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как DIP помогает при тестировании?\"}]}]}",
+        "title": "Как DIP помогает при тестировании?",
+        "order": 440406,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP помогает при тестировании потому, что позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подменять реальные зависимости на моки, стабы или фейковые реализации\"},{\"type\":\"text\",\"text\":\", не изменяя тестируемый код. Это упрощает изоляцию модулей, ускоряет тесты и делает их более надёжными.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тестируемый код зависит от интерфейсов, а не от конкретных классов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если класс работает через абстракцию, тесту не нужно настраивать реальные инфраструктурные зависимости:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"настоящую БД,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"файловую систему,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сеть,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"очередь сообщений.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо этого можно подставить лёгкий тестовый объект.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Можно подменять зависимость фейковой реализацией\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Благодаря DIP тест просто передаёт свою реализацию интерфейса:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class FakeRepo(OrderRepository):\\n    def save(self, order):\\n        self.saved = order\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь тест не зависит от реальных условий.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тесты работают быстрее и стабильнее\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Реальные инфраструктурные зависимости:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"медленные,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нестабильные,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"требуют настройки окружения,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"могут падать из-за внешних факторов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Моки и фейки — быстрые и полностью контролируемые.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще писать unit-тесты, а не интеграционные\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP делает модуль изолируемым:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"тест проверяет только бизнес-логику, а не весь “провалившийся стек” из подряд зависимостей.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Можно легко проверять вызовы и поведение\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Подменённая зависимость может хранить данные о вызовах:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"fake_repo.calls += 1\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это позволяет тестировать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правильность параметров,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"количество вызовов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"порядок вызовов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В реальной базе такое невозможно без сложной инструментировки.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тесты становятся независимыми от среды\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP позволяет запускать тесты на любом компьютере, без настроенных сервисов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это критично для CI/CD.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP облегчает тестирование, потому что делает код зависимым от абстракций, позволяя легко подменять реальные технические компоненты на моки и фейки. Это даёт быстрые, надёжные и полностью изолированные тесты.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:17:04.651Z",
+        "updatedAt": "2025-11-13T08:17:04.651Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему DIP повышает гибкость системы?",
+        "id": 2844,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как DIP реализуется через интерфейсы?",
+        "id": 2846,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2846,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как DIP реализуется через интерфейсы?\"}]}]}",
+        "title": "Как DIP реализуется через интерфейсы?",
+        "order": 440407,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP реализуется через интерфейсы тем, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиентский код начинает зависеть не от конкретных классов, а от абстрактного контракта\"},{\"type\":\"text\",\"text\":\", а конкретная реализация подставляется извне. Интерфейс становится “точкой соединения” высокого и низкого уровней, разрывая прямую зависимость между ними.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейс определяет контракт поведения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейс содержит список методов, которые должен поддерживать любой компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderRepository:\\n    def save(self, order):\\n        raise NotImplementedError\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он описывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что\"},{\"type\":\"text\",\"text\":\" должно быть сделано, но не \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокоуровневый модуль зависит от интерфейса, а не от реализации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"self.repo = MySqlRepo()\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"self.repo: OrderRepository\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь бизнес-логика знает только о контракте и не привязана к MySQL, Postgres, файлам, API и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Низкоуровневые модули реализуют интерфейс\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class MySqlRepo(OrderRepository):\\n    def save(self, order):\\n        ...\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Детали реализуют интерфейс, подстраиваясь под потребности бизнес-логики.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейс — слой между “верхом” и “низом”\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо связи:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"высокий уровень → нижний уровень\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"появляется:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"высокий уровень → интерфейс ← низкий уровень\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это и есть “инверсия зависимостей”.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конкретная реализация подставляется через DI\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейс позволяет передавать зависимость извне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"service = OrderService(MySqlRepo())\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или через DI-контейнер.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокий уровень не меняется при смене реализации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хотите перейти на Postgres?\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Просто создайте новый класс:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class PostgresRepo(OrderRepository):\\n    ...\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И подставьте его в конструктор.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"OrderService остаётся неизменным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейсы стабилизируют архитектуру\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"интерфейсы редко меняются,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реализации меняются часто,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP требует зависеть от того, что стабильно.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP реализуется через интерфейсы, потому что интерфейсы обеспечивают стабильный контракт, от которого зависит высокоуровневый код, а детали реализации привязываются к этому контракту, полностью устраняя зависимость бизнес-логики от технических деталей.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:17:22.921Z",
+        "updatedAt": "2025-11-13T08:17:22.921Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как DIP помогает при тестировании?",
+        "id": 2845,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “зависимость от абстракции, а не от реализации”?",
+        "id": 2847,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2847,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “зависимость от абстракции, а не от реализации”?\"}]}]}",
+        "title": "Что означает “зависимость от абстракции, а не от реализации”?",
+        "order": 440408,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фраза \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"«зависимость от абстракции, а не от реализации»\"},{\"type\":\"text\",\"text\":\" означает, что модуль должен работать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"через интерфейс или абстрактный контракт\"},{\"type\":\"text\",\"text\":\", а не через конкретный класс, который выполняет работу.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Другими словами: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"клиент должен знать, что делает зависимость, но не должен знать, как она это делает\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Абстракция — это контракт (интерфейс / базовый класс)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Абстракция определяет набор методов, гарантируемых любой реализацией.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она описывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"поведение\"},{\"type\":\"text\",\"text\":\", а не конкретный способ выполнения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример абстракции:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class NotificationChannel:\\n    def send(self, msg):\\n        raise NotImplementedError\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Реализация — это конкретный класс, выполняющий работу\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он знает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как\"},{\"type\":\"text\",\"text\":\" делать отправку:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class EmailChannel(NotificationChannel):\\n    def send(self, msg):\\n        print(\\\"Email:\\\", msg)\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиент должен зависеть только от абстракции\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Неправильно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"def notify_user():\\n    channel = EmailChannel()     # зависит от реализации\\n    channel.send(\\\"hello\\\")\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правильно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"def notify_user(channel: NotificationChannel):\\n    channel.send(\\\"hello\\\")        # зависит от абстракции\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем это нужно\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяeт подставлять любую реализацию без изменения клиентского кода;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"упрощает тестирование (можно подставить мок или фейковую реализацию);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"снижает связанность и делает архитектуру гибче;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет менять инфраструктуру без переписывания бизнеса.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Признак правильной архитектуры\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Весь высокоуровневый код зависит только от интерфейсов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Низкоуровневые детали реализуют эти интерфейсы и могут свободно заменяться.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зависеть от абстракции — значит опираться на контракт.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Не зависеть от реализации — значит не привязываться к конкретным способам выполнения этого контракта.\"},{\"type\":\"text\",\"text\":\" Это фундамент DIP и один из главных принципов гибкой архитектуры.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:17:40.059Z",
+        "updatedAt": "2025-11-13T08:17:40.059Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как DIP реализуется через интерфейсы?",
+        "id": 2846,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему DIP улучшает масштабируемость?",
+        "id": 2848,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2848,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему DIP улучшает масштабируемость?\"}]}]}",
+        "title": "Почему DIP улучшает масштабируемость?",
+        "order": 440409,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"DIP улучшает масштабируемость потому, что разделяет систему на независимые слои и позволяет развивать каждый слой отдельно, без переписывания остального кода. Масштабируемость — это не только про производительность, но и про возможность \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расширять систему без взрывного роста сложности\"},{\"type\":\"text\",\"text\":\". DIP как раз об этом.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высокоуровневая логика не блокирует развитие инфраструктуры\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если бизнес-код зависит только от интерфейсов, то вы можете:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переходить на новые базы данных,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вводить кэш,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавлять очереди сообщений,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"менять способы логирования\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— всё это без изменения основного приложения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это позволяет масштабировать инфраструктуру, не трогая бизнес-логику.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Легко подключать новые реализации под нужную нагрузку\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда нагрузки растут, часто требуется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заменить файловое хранилище на объектное,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вынести обработку в микросервисы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"использовать распределённые хранилища.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP делает это простым: достаточно написать новую реализацию интерфейса без переписывания ядра системы.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Возможность параллельной разработки команд\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Разные команды могут реализовывать разные модули независимо:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одна команда — бизнес-логика (интерфейсы),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"другая — инфраструктура (реализации),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"третья — интеграции (адаптеры).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Не требуется лезть в чужой код, что ускоряет рост проекта.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Гибкость архитектуры при переходе к микросервисам\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP естественно склоняет систему к разделению на модули и слои.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такой код проще дробить:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"если бизнес слой уже зависит от интерфейсов,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"перенести реализацию в отдельный сервис — почти безболезненно.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Добавление новых функций без ломки старых\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Масштабируемость — это способность безболезненно добавлять новые фичи.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP обеспечивает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не нужно менять старые классы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"просто пишется новая реализация интерфейса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это резко снижает регрессии и ускоряет развитие.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уменьшение связанности → увеличение пропускной способности команды\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сильная связанность замедляет разработку:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"одно изменение затрагивает 20 файлов — проект растёт плохо.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DIP снижает связанность: изменения локализуются, затрагивая только один модуль.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DIP улучшает масштабируемость, потому что позволяет развивать инфраструктуру, добавлять новые компоненты, увеличивать нагрузку, вводить новые технологии и масштабировать команды — всё это без переписывания бизнес-логики и без ломки существующего кода.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 163,
+        "createdAt": "2025-11-13T08:18:06.690Z",
+        "updatedAt": "2025-11-13T08:18:06.690Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 163,
+          "title": "Dependency Inversion Principle",
+          "directions": [
+            {
+              "categoryId": 163,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “зависимость от абстракции, а не от реализации”?",
+        "id": 2847,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker?",
+        "id": 1845,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

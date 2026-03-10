@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 191,
+    "title": "Основы Docker",
+    "description": " ",
+    "parentId": 164
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-10T10:06:35.976Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1845,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker?\"}]}]}",
+        "title": "Что такое Docker?",
+        "order": 500000,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — это платформа, которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запускать приложения в изолированных контейнерах\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер — это как «мини-компьютер» внутри твоей системы: в нём есть всё необходимое для работы программы — код, зависимости, библиотеки и настройки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как это работает\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вместо установки всего вручную (PostgreSQL, Python, Nginx и т.д.) на компьютер, ты создаёшь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контейнер\"},{\"type\":\"text\",\"text\":\" — упакованную среду, где всё уже настроено.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеры работают поверх одной операционной системы, но изолированы друг от друга.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Их можно легко \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запускать, останавливать, копировать и переносить\"},{\"type\":\"text\",\"text\":\" на другие машины без изменения кода.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты хочешь запустить PostgreSQL:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"вместо установки —\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"docker run -d -p 5432:5432 postgres\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и через секунды у тебя готова работающая БД в контейнере.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Зачем нужен Docker\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изоляция\"},{\"type\":\"text\",\"text\":\" — каждый проект работает в своей среде, не конфликтует с другими.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Переносимость\"},{\"type\":\"text\",\"text\":\" — контейнер можно запустить на любом сервере, где есть Docker.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Быстрое развертывание\"},{\"type\":\"text\",\"text\":\" — легко развернуть копию приложения или базы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Согласованность среды\"},{\"type\":\"text\",\"text\":\" — “работает у меня” = “работает везде”.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Docker — это инструмент для упаковки и запуска приложений в контейнерах, который делает разработку, тестирование и деплой быстрее, проще и безопаснее.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:58:19.579Z",
+        "updatedAt": "2025-10-22T07:58:19.579Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему DIP улучшает масштабируемость?",
+        "id": 2848,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется Docker?",
+        "id": 1846,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1846,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется Docker?\"}]}]}",
+        "title": "Для чего используется Docker?",
+        "order": 500001,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker используется для изоляции и запуска приложений в контейнерах. Контейнер содержит в себе всё необходимое для работы программы: среду, зависимости, пакеты, конфиги. Основные задачи:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изолировать приложения\"},{\"type\":\"text\",\"text\":\" – чтобы они не конфликтовали друг с другом и работали одинаково на любой машине.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упростить деплой\"},{\"type\":\"text\",\"text\":\" – приложение запускается в любом окружении одной командой, без ручной настройки серверов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стандартизировать окружения\"},{\"type\":\"text\",\"text\":\" – разработка, тест и прод выглядят одинаково.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Экономить ресурсы\"},{\"type\":\"text\",\"text\":\" – контейнеры легче и быстрее виртуальных машин.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип: собрал образ → запустил контейнер → получил предсказуемую среду.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:58:53.384Z",
+        "updatedAt": "2025-10-22T07:58:53.384Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker?",
+        "id": 1845,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чём разница между Docker и виртуальной машиной?",
+        "id": 1847,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1847,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В чём разница между Docker и виртуальной машиной?\"}]}]}",
+        "title": "В чём разница между Docker и виртуальной машиной?",
+        "order": 500002,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коротко и по сути:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Уровень изоляции\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Виртуальная машина (VM)\"},{\"type\":\"text\",\"text\":\" — эмулирует целую ОС (ядро, драйверы, сервисы).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — изолирует только приложение и его окружение, использует ядро хост-системы.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Скорость\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"VM\"},{\"type\":\"text\",\"text\":\" — долгий запуск (секунды/минуты), тяжёлая.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — старт за доли секунды, лёгкий контейнер.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Использование ресурсов\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"VM\"},{\"type\":\"text\",\"text\":\" — занимает много RAM/CPU, каждая виртуалка содержит целую ОС.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — контейнеры «тонкие», делят ресурсы хоста, расход минимальный.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Гибкость\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"VM\"},{\"type\":\"text\",\"text\":\" — подходит, когда нужна отдельная полноценная система.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — когда нужно много изолированных сервисов, которые легко разворачивать и обновлять.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Ключевая метафора\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"VM\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"отдельный дом\"},{\"type\":\"text\",\"text\":\" (со своей крышей, фундаментом и коммуникациями).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"комнаты внутри одного дома\"},{\"type\":\"text\",\"text\":\": изолированы, но используют общие стены и инфраструктуру.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" Docker — лёгкая изоляция и быстрый деплой. Виртуальная машина — тяжёлая, но полностью самостоятельная среда.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:59:07.615Z",
+        "updatedAt": "2025-11-10T13:16:56.683Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется Docker?",
+        "id": 1846,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое контейнер?",
+        "id": 1848,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1848,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое контейнер?\"}]}]}",
+        "title": "Что такое контейнер?",
+        "order": 500003,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер — это изолированная среда, в которой запускается приложение со всеми необходимыми зависимостями (библиотеки, пакеты, конфиги), но без своей отдельной операционной системы. Он использует общее ядро ОС хоста, но работает как будто в отдельном пространстве.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главные свойства контейнера:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изоляция\"},{\"type\":\"text\",\"text\":\" — контейнер не мешает другим процессам и не конфликтует с чужими версиями библиотек.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Предсказуемость\"},{\"type\":\"text\",\"text\":\" — приложение ведёт себя одинаково на любом компьютере или сервере.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лёгкость и скорость\"},{\"type\":\"text\",\"text\":\" — контейнеры занимают мало ресурсов и запускаются за доли секунды.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повторяемость\"},{\"type\":\"text\",\"text\":\" — контейнер можно пересобрать и запустить снова в точности таким же.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если кратко: контейнер — это «упакованное приложение с его средой», которое можно переносить и запускать где угодно, без ручной настройки системы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:59:19.421Z",
+        "updatedAt": "2025-10-22T07:59:19.421Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чём разница между Docker и виртуальной машиной?",
+        "id": 1847,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое образ (image)?",
+        "id": 1849,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1849,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое образ (image)?\"}]}]}",
+        "title": "Что такое образ (image)?",
+        "order": 500004,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Образ (image) — это шаблон, «слепок» будущего контейнера. В нём хранится всё, что нужно для запуска приложения: файлы, зависимости, конфигурации, версии библиотек, инструкции по сборке.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Характеристики образа:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Неподвижен (immutable)\"},{\"type\":\"text\",\"text\":\" — образ нельзя изменить «на лету», его только пересобирают.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Слойный (layered)\"},{\"type\":\"text\",\"text\":\" — состоит из слоёв, что делает сборку и хранение быстрыми и экономичными.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаблон контейнера\"},{\"type\":\"text\",\"text\":\" — из одного образа можно запустить сколько угодно контейнеров.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Переносим\"},{\"type\":\"text\",\"text\":\" — работает одинаково на любой машине, где есть Docker.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в одну строку: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"image — это шаблон, по которому Docker создаёт контейнер.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:59:33.653Z",
+        "updatedAt": "2025-10-22T07:59:33.653Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое контейнер?",
+        "id": 1848,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker Engine?",
+        "id": 1850,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1850,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker Engine?\"}]}]}",
+        "title": "Что такое Docker Engine?",
+        "order": 500005,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker Engine — это основной механизм Docker, который запускает и управляет контейнерами. Он отвечает за создание, запуск, остановку, изоляцию, сетевые настройки и хранение контейнеров и их образов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Состоит из трёх ключевых частей:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"dockerd (демон)\"},{\"type\":\"text\",\"text\":\" — фоновый процесс, который выполняет основную работу: управляет образами, контейнерами, сетями и томами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker CLI\"},{\"type\":\"text\",\"text\":\" — консольный интерфейс (команда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"docker\"},{\"type\":\"text\",\"text\":\"), которым пользуется человек. Он отправляет запросы демону.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"REST API\"},{\"type\":\"text\",\"text\":\" — интерфейс, через который CLI и другие программы общаются с демоном.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как это работает в одном предложении:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CLI → (запрос) → Docker Engine → (результат) → запущенный контейнер.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть Docker Engine — это «сердце» Docker, которое исполняет все контейнерные операции.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T07:59:45.476Z",
+        "updatedAt": "2025-11-10T13:17:00.025Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое образ (image)?",
+        "id": 1849,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие преимущества даёт Docker разработчикам?",
+        "id": 1851,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1851,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие преимущества даёт Docker разработчикам?\"}]}]}",
+        "title": "Какие преимущества даёт Docker разработчикам?",
+        "order": 500006,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker даёт разработчикам практические преимущества, которые ускоряют работу и снижают количество ошибок.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Одно и то же окружение у всех\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проект запускается одинаково у каждого: на Windows, Linux, Mac и на сервере. Исключается проблема \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«у меня работает, у него нет»\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Быстрое развёртывание\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер поднимается за секунды. Не нужно вручную ставить зависимости, настраивать сервисы и править конфиги.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Лёгкость и изоляция\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Несколько приложений могут жить на одной машине, не конфликтуя версиями библиотек и портов.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Удобная масштабируемость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Легко поднять несколько копий сервиса, собрать микросервисы или масштабировать отдельные части системы.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5. Простая переносимость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнер можно перенести на другую машину, в облако или на сервер в один шаг — всё будет работать идентично.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6. Контроль версий окружения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Image — это версионируемый шаблон. Можно откатить окружение так же, как код в Git.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"7. Быстрая разработка и тесты\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно создавать тестовые стенды, запускать сторонние сервисы (БД, кэши и т.п.) в один клик и так же легко удалять.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если коротко: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker позволяет быстро разворачивать предсказуемое окружение, изолировать сервисы, ускорять разработку и упростить деплой.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T08:00:00.222Z",
+        "updatedAt": "2026-01-16T06:33:15.637Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker Engine?",
+        "id": 1850,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое контейнеризация?",
+        "id": 1852,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1852,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое контейнеризация?\"}]}]}",
+        "title": "Что такое контейнеризация?",
+        "order": 500007,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контейнеризация — это способ упаковать приложение вместе со всеми его зависимостями в изолированный контейнер, который можно запустить на любой системе без ручной настройки окружения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Смысл в том, что приложение живёт в своём собственном «микропространстве», не конфликтует с другими программами и работает одинаково везде: у разработчика, на тестовом стенде и в продакшене.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые признаки контейнеризации:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изоляция среды\"},{\"type\":\"text\",\"text\":\" — каждый сервис имеет свои библиотеки, пакеты и конфиги.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повторяемость\"},{\"type\":\"text\",\"text\":\" — один и тот же контейнер можно запустить на любой машине.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лёгкость\"},{\"type\":\"text\",\"text\":\" — контейнеры используют ядро хостовой ОС, поэтому они легче и быстрее виртуальных машин.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удобный перенос и масштабирование\"},{\"type\":\"text\",\"text\":\" — контейнер можно быстро развернуть, копировать, клонировать и запускать в количестве от 1 до сотен.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В одной фразе: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контейнеризация — это технология, которая позволяет запускать приложения в стандартизированных, изолированных контейнерах и гарантировать одинаковое поведение в любом окружении.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T08:00:13.599Z",
+        "updatedAt": "2025-10-22T08:00:13.599Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие преимущества даёт Docker разработчикам?",
+        "id": 1851,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker registry?",
+        "id": 1853,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1853,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Docker registry?\"}]}]}",
+        "title": "Что такое Docker registry?",
+        "order": 500008,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker registry — это хранилище для Docker-образов. Туда образы можно загружать (push) и оттуда скачивать (pull), чтобы затем запускать контейнеры.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Факты по сути:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Registry = репозиторий образов\"},{\"type\":\"text\",\"text\":\" (аналог Git-хранилища, только для Docker-image’ов).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"делиться образами внутри команды\"},{\"type\":\"text\",\"text\":\" или распространять публично.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"источник для деплоя\"},{\"type\":\"text\",\"text\":\" — сервер или CI/CD скачивает образ прямо из registry.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поддерживает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"версии (tags)\"},{\"type\":\"text\",\"text\":\" — можно хранить image \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v1\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v2\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"latest\"},{\"type\":\"text\",\"text\":\" и откатываться при необходимости.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры registry:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Docker Hub\"},{\"type\":\"text\",\"text\":\" — публичный по умолчанию.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"GitHub Container Registry / GitLab Registry\"},{\"type\":\"text\",\"text\":\" — для команд и CI.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Private registry\"},{\"type\":\"text\",\"text\":\" — собственный закрытый реестр внутри компании.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если образ — это «шаблон контейнера», то registry — «удалённая полка, где эти шаблоны лежат и откуда их забирают».\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T08:00:27.290Z",
+        "updatedAt": "2025-11-10T13:17:03.882Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое контейнеризация?",
+        "id": 1852,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как Docker обеспечивает изоляцию процессов?",
+        "id": 1854,
+        "premium": false,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1854,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как Docker обеспечивает изоляцию процессов? (middle)\"}]}]}",
+        "title": "Как Docker обеспечивает изоляцию процессов?",
+        "order": 500009,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker обеспечивает изоляцию на уровне ядра Linux с помощью двух ключевых механизмов: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"namespaces\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"cgroups\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Namespaces — изолируют “видимость” мира для процесса\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Namespaces дают каждому контейнеру собственное пространство имён. То есть процесс внутри контейнера \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не видит\"},{\"type\":\"text\",\"text\":\" ресурсы других процессов или системы целиком.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются такие типы namespaces:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Namespace\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что изолирует\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"PID\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таблицу процессов — контейнер видит только свои процессы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"NET\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сетевые интерфейсы, маршруты, iptables\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"IPC\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Очереди сообщений, shared memory\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"UTS\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Hostname, domain name\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"MNT\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Точки монтирования и файловую систему\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"USER\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователей и UID’ы\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Эффект:\"},{\"type\":\"text\",\"text\":\" у каждого контейнера — свой мини-мир.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Cgroups — ограничивают ресурсы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Control Groups управляют, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько ресурсов может потреблять контейнер\"},{\"type\":\"text\",\"text\":\", чтобы он не “съел” всё.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Cgroups позволяют задавать лимиты на:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CPU\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"RAM\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"I/O\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Network (косвенно, через tc)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кол-во процессов и т.д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Эффект:\"},{\"type\":\"text\",\"text\":\" даже если приложение в контейнере упало в бесконечный цикл, оно не вывалит весь сервер.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Rootfs + OverlayFS — файловая изоляция\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"копирование на запись (CoW)\"},{\"type\":\"text\",\"text\":\" и слои overlay FS, чтобы каждый контейнер имел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"логически отдельную\"},{\"type\":\"text\",\"text\":\" root-файловую систему, даже если физически слои общие.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Seccomp, AppArmor, SELinux — безопасность\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дополнительно Docker может ограничивать системные вызовы и права:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Seccomp\"},{\"type\":\"text\",\"text\":\" — запрещает опасные syscalls\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AppArmor/SELinux\"},{\"type\":\"text\",\"text\":\" — ограничения доступа к системным ресурсам\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог для middle-уровня:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Docker обеспечивает изоляцию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"процессов, сети, пользователей и файловой системы через namespaces\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ограничение ресурсов через cgroups\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"безопасность — через seccomp, AppArmor/SELinux\"},{\"type\":\"text\",\"text\":\". Благодаря этому контейнер работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как отдельная среда\"},{\"type\":\"text\",\"text\":\", оставаясь при этом лёгким, потому что ядро ОС общее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь, могу так же кратко разобрать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“чем отличается pid namespace от chroot”\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“почему контейнер ≠ безопасность как VM”\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "middle",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 191,
+        "createdAt": "2025-10-22T08:00:49.827Z",
+        "updatedAt": "2025-10-22T08:04:55.203Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 191,
+          "title": "Основы Docker",
+          "directions": [
+            {
+              "categoryId": 191,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Docker registry?",
+        "id": 1853,
+        "premium": true,
+        "category": {
+          "id": 191,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Docker образ?",
+        "id": 1855,
+        "premium": false,
+        "category": {
+          "id": 192,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1967 @@
+{
+  "category": {
+    "id": 208,
+    "title": "Архитектура и жизненный цикл",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 23,
+  "downloadedAt": "2026-03-09T08:38:29.606Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2068,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Из каких основных частей состоит Angular-приложение?\"}]}]}",
+        "title": "Из каких основных частей состоит Angular-приложение?",
+        "order": 70400,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular-приложение состоит из нескольких основных частей:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модули (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModule\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Группируют компоненты, директивы, пайпы и сервисы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый Angular-приложение имеет корневой модуль (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обеспечивают организацию, загрузку зависимостей и модульность.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компоненты (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Component\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные строительные блоки интерфейса.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Состоят из класса (логика), шаблона (HTML) и стилей (CSS).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Связывают данные с представлением через привязки и события.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Директивы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Directive\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Меняют поведение или внешний вид элементов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибутные\"},{\"type\":\"text\",\"text\":\" — изменяют существующий элемент (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgClass\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgStyle\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурные\"},{\"type\":\"text\",\"text\":\" — изменяют структуру DOM (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сервисы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Service\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") и внедрение зависимостей (DI)\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержат бизнес-логику, работу с данными, API-запросы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внедряются в компоненты через конструктор с помощью Dependency Injection.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пайпы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Pipe\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Преобразуют данные для отображения в шаблоне.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"DatePipe\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CurrencyPipe\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UpperCasePipe\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":6,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Маршрутизация (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Router\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляет переходами между страницами (компонентами) приложения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterModule\"},{\"type\":\"text\",\"text\":\" с настройкой маршрутов.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":7,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаблоны и привязки (Templates & Bindings)\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML-код компонентов с привязкой данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{{ }}\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[property]\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"(event)\"},{\"type\":\"text\",\"text\":\"), директивами и структурой.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итого, Angular-приложение строится как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модули компонентов и сервисов\"},{\"type\":\"text\",\"text\":\", которые обрабатывают данные, управляют интерфейсом и взаимодействием с пользователем через шаблоны и привязки.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:54:29.991Z",
+        "updatedAt": "2025-10-22T10:54:29.991Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое контекст шаблона?",
+        "id": 2067,
+        "premium": false,
+        "category": {
+          "id": 213,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое модульная структура в Angular?",
+        "id": 2069,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2069,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое модульная структура в Angular?\"}]}]}",
+        "title": "Что такое модульная структура в Angular?",
+        "order": 70401,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модульная структура\"},{\"type\":\"text\",\"text\":\" — это организация приложения в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отдельных, логически связанных блоков (модулей)\"},{\"type\":\"text\",\"text\":\", каждый из которых управляет своим набором компонентов, директив, пайпов и сервисов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModule\"},{\"type\":\"text\",\"text\":\" — базовый строительный блок модульной структуры.\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Определяется с помощью декоратора \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@NgModule\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"},{\"type\":\"text\",\"text\":\" — компоненты, директивы, пайпы, которые принадлежат модулю.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"imports\"},{\"type\":\"text\",\"text\":\" — другие модули, которые нужны для работы текущего модуля.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providers\"},{\"type\":\"text\",\"text\":\" — сервисы, доступные через DI.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"exports\"},{\"type\":\"text\",\"text\":\" — элементы, которые можно использовать в других модулях.\"}]}]}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корневой модуль (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стартовая точка приложения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Импортирует все необходимые функциональные модули.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Функциональные/фичевые модули\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разделяют приложение на логические части: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UserModule\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AdminModule\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"SharedModule\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обеспечивают переиспользуемость, читаемость и управляемость кода.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества модульной структуры\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Улучшает организацию кода и поддержку проекта.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет лениво загружать модули (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Lazy Loading\"},{\"type\":\"text\",\"text\":\") для оптимизации производительности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Облегчает тестирование и масштабирование приложения.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, модульная структура — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логическая сегментация приложения на независимые блоки\"},{\"type\":\"text\",\"text\":\", каждый из которых инкапсулирует свою функциональность и зависимости.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:54:42.404Z",
+        "updatedAt": "2025-10-22T10:54:42.404Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Из каких основных частей состоит Angular-приложение?",
+        "id": 2068,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает CommonModule?",
+        "id": 2070,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2070,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CommonModule\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает CommonModule?",
+        "order": 70402,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CommonModule\"},{\"type\":\"text\",\"text\":\" — это модуль, который предоставляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"базовые директивы и пайпы, используемые в шаблонах\"},{\"type\":\"text\",\"text\":\", кроме тех, что доступны в корневом модуле (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"BrowserModule\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Директивы\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgIf\"},{\"type\":\"text\",\"text\":\" — условное отображение элементов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgForOf\"},{\"type\":\"text\",\"text\":\" — повторение элементов коллекции (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitch\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitchCase\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitchDefault\"},{\"type\":\"text\",\"text\":\" — управление отображением по значению.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пайпы\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"DatePipe\"},{\"type\":\"text\",\"text\":\" — форматирование дат.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CurrencyPipe\"},{\"type\":\"text\",\"text\":\" — форматирование валют.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UpperCasePipe\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"LowerCasePipe\"},{\"type\":\"text\",\"text\":\" — изменение регистра текста.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"JsonPipe\"},{\"type\":\"text\",\"text\":\" — преобразование объектов в JSON-строку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Другие стандартные пайпы для работы с числами, датами и строками.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подключается в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"фичевых/пользовательских модулях\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"BrowserModule\"},{\"type\":\"text\",\"text\":\", который импортируется только в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { CommonModule } from '@angular/common';\\n\\n@NgModule({\\n  imports: [CommonModule],\\n  declarations: [MyComponent],\\n})\\nexport class MyFeatureModule {}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CommonModule\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" предоставляет стандартный набор директив и пайпов для работы с шаблонами\"},{\"type\":\"text\",\"text\":\" в любом модуле, кроме корневого.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:55:06.486Z",
+        "updatedAt": "2025-10-22T10:55:06.486Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое модульная структура в Angular?",
+        "id": 2069,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое жизненный цикл компонента в Angular?",
+        "id": 2071,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2071,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое жизненный цикл компонента в Angular?\"}]}]}",
+        "title": "Что такое жизненный цикл компонента в Angular?",
+        "order": 70403,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жизненный цикл компонента\"},{\"type\":\"text\",\"text\":\" — это последовательность этапов от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания компонента до его уничтожения\"},{\"type\":\"text\",\"text\":\", во время которых Angular вызывает специальные методы‑хуки для управления состоянием и ресурсами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание компонента\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular создает экземпляр класса компонента и внедряет зависимости через конструктор (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"constructor\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На этом этапе ещё нет доступа к DOM-элементам шаблона.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Инициализация (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\" вызывается после привязки входных данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\") и подготовки шаблона.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для инициализации логики, загрузки данных и настройки начального состояния.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnChanges\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"DoCheck\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AfterViewInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges(changes)\"},{\"type\":\"text\",\"text\":\" — вызывается при изменении входных данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\" — кастомная проверка изменений, если нужна более точная реакция на изменения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\" — вызывается после инициализации дочерних компонентов и элементов DOM.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обновление представления\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\" — вызывается после каждой проверки изменений в компоненте и его дочерних компонентах.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уничтожение (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnDestroy\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хук \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" вызывается перед удалением компонента из DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для очистки ресурсов, отписки от подписок, таймеров, событий.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, жизненный цикл компонента — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контролируемый Angular процесс создания, обновления и уничтожения компонента\"},{\"type\":\"text\",\"text\":\", который позволяет управлять логикой и ресурсами на каждом этапе.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:55:20.548Z",
+        "updatedAt": "2025-11-10T11:42:03.838Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает CommonModule?",
+        "id": 2070,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие существуют хуки жизненного цикла в Angular?",
+        "id": 2072,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2072,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие существуют хуки жизненного цикла в Angular?\"}]}]}",
+        "title": "Какие существуют хуки жизненного цикла в Angular?",
+        "order": 70404,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular есть несколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуков жизненного цикла (lifecycle hooks)\"},{\"type\":\"text\",\"text\":\", которые позволяют реагировать на создание, обновление и уничтожение компонента:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges(changes: SimpleChanges)\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается при изменении входных данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Получает объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"changes\"},{\"type\":\"text\",\"text\":\" с предыдущими и текущими значениями.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается один раз после первой инициализации входных свойств.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для начальной настройки компонента, загрузки данных.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается при каждой проверке изменений Angular.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реализовать кастомную логику отслеживания изменений.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается после проекции внешнего контента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подходит для работы с контентом, вставленным из родительского компонента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается после каждой проверки проецированного контента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":6,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается после инициализации представления компонента и его дочерних компонентов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно безопасно работать с элементами DOM через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ViewChild\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":7,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается после каждой проверки представления компонента и дочерних компонентов.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":8,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается перед уничтожением компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для очистки ресурсов: отписка от подписок, таймеров, событий.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти хуки позволяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точно контролировать поведение компонента на всех этапах его жизни\"},{\"type\":\"text\",\"text\":\" и управлять ресурсами и данными.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:55:51.285Z",
+        "updatedAt": "2025-10-22T10:55:51.285Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое жизненный цикл компонента в Angular?",
+        "id": 2071,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В каком порядке вызываются хуки жизненного цикла?",
+        "id": 2073,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2073,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В каком порядке вызываются хуки жизненного цикла?\"}]}]}",
+        "title": "В каком порядке вызываются хуки жизненного цикла?",
+        "order": 70405,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Порядок вызова хуков жизненного цикла Angular для компонента:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges(changes)\"},{\"type\":\"text\",\"text\":\" — вызывается при изменении входных данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\") \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до инициализации\"},{\"type\":\"text\",\"text\":\" компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\" — один раз после первой инициализации входных свойств.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\" — после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit\"},{\"type\":\"text\",\"text\":\", при каждой проверке изменений Angular.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" — после проекции внешнего контента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\"), один раз.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\" — после каждой проверки проецированного контента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\" — после инициализации представления компонента и его дочерних компонентов, один раз.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\" — после каждой проверки представления компонента и дочерних компонентов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" — перед уничтожением компонента.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть последовательность:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges → ngOnInit → ngDoCheck → ngAfterContentInit → ngAfterContentChecked → ngAfterViewInit → ngAfterViewChecked → ngOnDestroy\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если входные данные меняются после инициализации, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" могут вызываться многократно\"},{\"type\":\"text\",\"text\":\", остальные хуки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"After*\"},{\"type\":\"text\",\"text\":\") — после каждой проверки контента или представления.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:56:03.812Z",
+        "updatedAt": "2025-10-22T10:56:03.812Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие существуют хуки жизненного цикла в Angular?",
+        "id": 2072,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngOnChanges()? Когда он вызывается?",
+        "id": 2074,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2074,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngOnChanges()? Когда он вызывается?",
+        "order": 70406,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вызывается при изменении входных свойств компонента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реагировать на изменения данных, переданных от родительского компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Получает объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"changes: SimpleChanges\"},{\"type\":\"text\",\"text\":\", в котором можно увидеть старое и новое значение каждого изменённого свойства.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"До \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\" — при первой передаче значений входных свойств.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждый раз\"},{\"type\":\"text\",\"text\":\", когда меняются значения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\" после инициализации компонента.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class ChildComponent implements OnChanges {\\n  @Input() name: string;\\n\\n  ngOnChanges(changes: SimpleChanges) {\\n    console.log('Изменились входные данные:', changes);\\n  }\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\" изменится в родителе, Angular вызовет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"text\":\" и покажет старое и новое значение.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это способ отследить и обработать изменения входных данных компонента\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:56:19.467Z",
+        "updatedAt": "2025-10-22T10:56:19.467Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В каком порядке вызываются хуки жизненного цикла?",
+        "id": 2073,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngOnInit()? Когда он вызывается?",
+        "id": 2075,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2075,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngOnInit()? Когда он вызывается?",
+        "order": 70407,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вызывается один раз после инициализации входных свойств компонента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"инициализации логики компонента\"},{\"type\":\"text\",\"text\":\" после того, как все входные данные уже доступны.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подходит для загрузки данных, настройки начального состояния, вызова сервисов.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Один раз\"},{\"type\":\"text\",\"text\":\" после первой передачи значений входных свойств и перед первым рендером компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges()\"},{\"type\":\"text\",\"text\":\", если есть входные свойства.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class ChildComponent implements OnInit {\\n  @Input() name: string;\\n\\n  ngOnInit() {\\n    console.log('Компонент инициализирован, имя:', this.name);\\n  }\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этот момент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\" уже содержит значение, переданное родителем.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это место для начальной настройки компонента, когда все данные уже доступны\"},{\"type\":\"text\",\"text\":\", и он выполняется только один раз.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:56:45.499Z",
+        "updatedAt": "2025-11-10T11:42:07.906Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngOnChanges()? Когда он вызывается?",
+        "id": 2074,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngDoCheck()? Когда он вызывается?",
+        "id": 2076,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2076,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngDoCheck()? Когда он вызывается?",
+        "order": 70408,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реагировать на изменения данных вручную\"},{\"type\":\"text\",\"text\":\", если стандартная проверка изменений (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"text\":\") не покрывает нужный случай.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вызывается при каждой проверке изменений Angular.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реализовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кастомную логику отслеживания изменений\"},{\"type\":\"text\",\"text\":\", например, проверку сложных объектов или массивов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется, когда изменения не трекаются стандартной системой изменений (change detection).\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Многократно\"},{\"type\":\"text\",\"text\":\": каждый раз, когда Angular выполняет проверку изменений компонента и его дочерних компонентов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class MyComponent implements DoCheck {\\n  items: string[] = [];\\n\\n  ngDoCheck() {\\n    console.log('Произошла проверка изменений, количество элементов:', this.items.length);\\n  }\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если массив изменился не через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck\"},{\"type\":\"text\",\"text\":\" сработает при проверке изменений.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это инструмент для отслеживания изменений вручную при каждом цикле проверки изменений Angular\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:57:07.554Z",
+        "updatedAt": "2025-10-22T10:57:07.554Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngOnInit()? Когда он вызывается?",
+        "id": 2075,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngAfterContentInit()? Когда он вызывается?",
+        "id": 2077,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2077,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngAfterContentInit()? Когда он вызывается?",
+        "order": 70409,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один раз после того, как Angular вставил (проецировал) внешний контент в компонент через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет работать с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контентом, вставленным из родительского компонента\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно получать доступ к проецированным элементам через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@ContentChild\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@ContentChildren\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Один раз\"},{\"type\":\"text\",\"text\":\" после первой проекции контента в компонент.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перед любыми проверками вида (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AfterViewInit\"},{\"type\":\"text\",\"text\":\") и после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class ChildComponent implements AfterContentInit {\\n  @ContentChild('projectedContent') content: ElementRef;\\n\\n  ngAfterContentInit() {\\n    console.log('Проецированный контент доступен:', this.content.nativeElement);\\n  }\\n}\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<child-component>\\n  <p #projectedContent>Привет из родителя!</p>\\n</child-component>\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit\"},{\"type\":\"text\",\"text\":\" уже можно безопасно работать с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>\"},{\"type\":\"text\",\"text\":\", вставленным родителем.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук для работы с контентом, проецированным в компонент, после его вставки в DOM\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:57:22.941Z",
+        "updatedAt": "2025-10-22T10:57:22.941Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngDoCheck()? Когда он вызывается?",
+        "id": 2076,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "id": 2078,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2078,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "order": 70410,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после каждой проверки проецированного контента\"},{\"type\":\"text\",\"text\":\" в компоненте.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реагировать на изменения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контента, вставленного через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для выполнения логики, которая зависит от состояния проецированного контента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" — первый вызов происходит после первой проекции контента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Многократно\"},{\"type\":\"text\",\"text\":\", каждый раз, когда Angular выполняет проверку изменений компонента и его проецированного контента.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class ChildComponent implements AfterContentChecked {\\n  ngAfterContentChecked() {\\n    console.log('Проецированный контент был проверен');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук, который позволяет отслеживать и реагировать на изменения проецированного контента каждый цикл проверки изменений Angular\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:58:42.382Z",
+        "updatedAt": "2025-11-10T11:42:11.813Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngAfterContentInit()? Когда он вызывается?",
+        "id": 2077,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "id": 2079,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2079,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "order": 70411,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после каждой проверки проецированного контента\"},{\"type\":\"text\",\"text\":\" в компоненте.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реагировать на изменения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контента, вставленного через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для выполнения логики, которая зависит от состояния проецированного контента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" — первый вызов происходит после первой проекции контента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Многократно\"},{\"type\":\"text\",\"text\":\", каждый раз, когда Angular выполняет проверку изменений компонента и его проецированного контента.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class ChildComponent implements AfterContentChecked {\\n  ngAfterContentChecked() {\\n    console.log('Проецированный контент был проверен');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук, который позволяет отслеживать и реагировать на изменения проецированного контента каждый цикл проверки изменений Angular\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:59:15.831Z",
+        "updatedAt": "2025-10-22T10:59:15.831Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "id": 2078,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngAfterViewInit()? Когда он вызывается?",
+        "id": 2080,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2080,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngAfterViewInit()? Когда он вызывается?",
+        "order": 70412,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один раз после инициализации представления компонента и всех его дочерних компонентов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет безопасно работать с элементами DOM и дочерними компонентами через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@ViewChild\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@ViewChildren\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для выполнения логики, которая зависит от полного рендера компонента и его дочерних элементов.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Один раз\"},{\"type\":\"text\",\"text\":\" после первой инициализации представления.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" и до первой проверки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class MyComponent implements AfterViewInit {\\n  @ViewChild('myInput') input: ElementRef;\\n\\n  ngAfterViewInit() {\\n    this.input.nativeElement.focus(); // безопасно получить доступ к DOM\\n    console.log('Представление компонента и дочерние компоненты инициализированы');\\n  }\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этот момент все элементы шаблона и дочерние компоненты уже созданы и доступны.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук для работы с DOM и дочерними компонентами после их полной инициализации\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:59:30.642Z",
+        "updatedAt": "2025-10-22T10:59:30.642Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngAfterContentChecked()? Когда он вызывается?",
+        "id": 2079,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngAfterViewChecked()? Когда он вызывается?",
+        "id": 2081,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2081,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngAfterViewChecked()? Когда он вызывается?",
+        "order": 70413,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после каждой проверки представления компонента и его дочерних компонентов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет реагировать на изменения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DOM и дочерних компонентов\"},{\"type\":\"text\",\"text\":\" после их рендера.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для выполнения логики, которая зависит от актуального состояния представления после каждой проверки изменений.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\" — первый вызов происходит сразу после инициализации представления.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Многократно\"},{\"type\":\"text\",\"text\":\", при каждой проверке изменений Angular, например, при изменении данных или событий.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class MyComponent implements AfterViewChecked {\\n  ngAfterViewChecked() {\\n    console.log('Представление компонента и дочерние компоненты были проверены');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук для отслеживания и реагирования на изменения представления компонента и его дочерних элементов на каждом цикле проверки изменений Angular\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T10:59:48.292Z",
+        "updatedAt": "2025-11-10T11:42:15.980Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngAfterViewInit()? Когда он вызывается?",
+        "id": 2080,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngOnDestroy()? Когда он вызывается?",
+        "id": 2082,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2082,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\"? Когда он вызывается?\"}]}]}",
+        "title": "Что делает ngOnDestroy()? Когда он вызывается?",
+        "order": 70414,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" — это хук жизненного цикла, который вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перед уничтожением компонента или директивы\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очистить ресурсы\"},{\"type\":\"text\",\"text\":\", которые были созданы компонентом: таймеры, подписки на события (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable\"},{\"type\":\"text\",\"text\":\"), обработчики DOM, внешние библиотеки.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Предотвращает утечки памяти и неожиданные ошибки после удаления компонента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда вызывается\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Один раз\"},{\"type\":\"text\",\"text\":\" перед удалением компонента из DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После завершения всех проверок и обновлений представления (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AfterViewChecked\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"export class MyComponent implements OnDestroy {\\n  subscription: Subscription;\\n\\n  ngOnInit() {\\n    this.subscription = this.dataService.getData().subscribe();\\n  }\\n\\n  ngOnDestroy() {\\n    this.subscription.unsubscribe(); // очистка подписки\\n    console.log('Компонент уничтожен');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это хук для завершения работы компонента и освобождения всех ресурсов перед его удалением из DOM\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:00:01.264Z",
+        "updatedAt": "2025-10-22T11:00:01.264Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngAfterViewChecked()? Когда он вызывается?",
+        "id": 2081,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что произойдет, если не отписаться от подписок?",
+        "id": 2083,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2083,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что произойдет, если не отписаться от подписок?\"}]}]}",
+        "title": "Что произойдет, если не отписаться от подписок?",
+        "order": 70415,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не отписаться от подписок\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable.subscribe\"},{\"type\":\"text\",\"text\":\") в Angular:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Утечки памяти\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подписки продолжают существовать даже после уничтожения компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это удерживает объекты в памяти, увеличивая её потребление со временем.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ненужные вызовы и события\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Код, привязанный к подписке, продолжит выполняться, хотя компонент уже удалён.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может вызывать ошибки, если пытается обращаться к несуществующему DOM или переменным компонента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нестабильное поведение приложения\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Множество активных подписок могут вызывать дублирование действий, неожиданные рендеры и замедление работы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" всегда нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отписываться в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" или использовать конструкции вроде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"takeUntil\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AsyncPipe\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Subscription.add/unsubscribe\"},{\"type\":\"text\",\"text\":\", чтобы избежать утечек и багов.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:00:14.699Z",
+        "updatedAt": "2025-11-10T11:42:19.145Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngOnDestroy()? Когда он вызывается?",
+        "id": 2082,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как влияет ChangeDetectionStrategy на хуки?",
+        "id": 2084,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2084,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как влияет ChangeDetectionStrategy на хуки?\"}]}]}",
+        "title": "Как влияет ChangeDetectionStrategy на хуки?",
+        "order": 70416,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectionStrategy\"},{\"type\":\"text\",\"text\":\" определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"когда Angular проверяет компонент на изменения\"},{\"type\":\"text\",\"text\":\", и это влияет на вызов хуков жизненного цикла, связанных с проверкой изменений:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стратегии\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Default\"},{\"type\":\"text\",\"text\":\" — стандартная стратегия. Angular проверяет компонент и все его дочерние компоненты при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"любом событии, таймере или изменении данных\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnPush\"},{\"type\":\"text\",\"text\":\" — оптимизированная стратегия. Angular проверяет компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только при изменении входных свойств (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") или событиях внутри компонента\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Влияние на хуки\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges()\"},{\"type\":\"text\",\"text\":\" — вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только при изменении входных свойств\"},{\"type\":\"text\",\"text\":\", как обычно.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked()\"},{\"type\":\"text\",\"text\":\" — в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OnPush\"},{\"type\":\"text\",\"text\":\" могут срабатывать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реже\"},{\"type\":\"text\",\"text\":\", потому что Angular не выполняет проверку изменений компонента без явного изменения входных данных или события.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Остальные хуки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\") — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда вызываются в обычном порядке\"},{\"type\":\"text\",\"text\":\", не зависят от стратегии.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnPush\"},{\"type\":\"text\",\"text\":\" некоторые хуки проверки изменений \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"могут срабатывать реже\"},{\"type\":\"text\",\"text\":\", что повышает производительность, но требует внимательности при работе с данными, которые не приходят через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ChangeDetectionStrategy влияет на частоту вызова хуков, связанных с проверкой изменений, но не на хуки инициализации и уничтожения\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:00:27.159Z",
+        "updatedAt": "2025-10-22T11:00:27.159Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что произойдет, если не отписаться от подписок?",
+        "id": 2083,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как реализовать собственную стратегию обнаружения изменений?",
+        "id": 2085,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2085,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как реализовать собственную стратегию обнаружения изменений? (juni\"}]}]}",
+        "title": "Как реализовать собственную стратегию обнаружения изменений?",
+        "order": 70417,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создать собственную стратегию обнаружения изменений\"},{\"type\":\"text\",\"text\":\", но это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"редко требуется\"},{\"type\":\"text\",\"text\":\", так как стандартные стратегии (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Default\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnPush\"},{\"type\":\"text\",\"text\":\") покрывают большинство случаев. Основная идея — реализовать интерфейс \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectorRef\"},{\"type\":\"text\",\"text\":\" и управлять, когда Angular проверяет компонент.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные подходы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectorRef\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" внутри компонента\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно вручную \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"триггерить проверку изменений\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Component, ChangeDetectorRef } from '@angular/core';\\n\\n@Component({\\n  selector: 'app-my',\\n  template: '{{ counter }}'\\n})\\nexport class MyComponent {\\n  counter = 0;\\n\\n  constructor(private cd: ChangeDetectorRef) {}\\n\\n  increment() {\\n    this.counter++;\\n    this.cd.detectChanges(); // вручную запускает проверку изменений\\n  }\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь вы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контролируете момент проверки\"},{\"type\":\"text\",\"text\":\", вместо автоматического срабатывания Angular.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"detach()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reattach()\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отключить проверку изменений\"},{\"type\":\"text\",\"text\":\" компонента полностью и включать её только по событию.\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"ngOnInit() {\\n  this.cd.detach(); // компонент больше не проверяется автоматически\\n}\\n\\nupdate() {\\n  this.counter++;\\n  this.cd.reattach();\\n  this.cd.detectChanges();\\n  this.cd.detach();\\n}\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реализовать «свою стратегию»\"},{\"type\":\"text\",\"text\":\", когда проверка выполняется только по вашим правилам.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Расширение встроенного механизма\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular не предоставляет прямого способа зарегистрировать полностью новую стратегию (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectionStrategy\"},{\"type\":\"text\",\"text\":\" — enum), но через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectorRef\"},{\"type\":\"text\",\"text\":\" и ручное управление можно имитировать любую логику.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"собственная стратегия реализуется через ручное управление проверкой изменений через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ChangeDetectorRef\"},{\"type\":\"text\",\"text\":\", отключая автоматическое отслеживание и вызывая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"detectChanges()\"},{\"type\":\"text\",\"text\":\" только тогда, когда нужно.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:00:40.180Z",
+        "updatedAt": "2025-10-22T11:00:40.180Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как влияет ChangeDetectionStrategy на хуки?",
+        "id": 2084,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как хуки работают для динамически созданных компонентов?",
+        "id": 2086,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2086,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как хуки работают для динамически созданных компонентов?\"}]}]}",
+        "title": "Как хуки работают для динамически созданных компонентов?",
+        "order": 70418,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуки жизненного цикла для динамически созданных компонентов\"},{\"type\":\"text\",\"text\":\" работают точно так же, как для обычных компонентов, но с особенностью, что компонент создаётся программно через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ComponentFactory\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ViewContainerRef\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание динамического компонента\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const factory = this.resolver.resolveComponentFactory(MyComponent);\\nconst componentRef = this.container.createComponent(factory);\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"componentRef.instance\"},{\"type\":\"text\",\"text\":\" — это экземпляр компонента.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вызов хуков\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges()\"},{\"type\":\"text\",\"text\":\" — вызывается, если переданы значения через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\" после создания компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit()\"},{\"type\":\"text\",\"text\":\" и другие хуки — вызываются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически Angular после создания компонента\"},{\"type\":\"text\",\"text\":\" в правильном порядке.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" — вызывается, когда вы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удаляете компонент вручную\"},{\"type\":\"text\",\"text\":\" через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"componentRef.destroy()\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если вы создаёте компонент динамически, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуки срабатывают только после вставки его в контейнер (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ViewContainerRef\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для управления входными данными (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\") их нужно присвоить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до или сразу после создания\"},{\"type\":\"text\",\"text\":\", иначе \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"text\":\" может не сработать.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"для динамически созданных компонентов жизненный цикл полностью соблюдается\"},{\"type\":\"text\",\"text\":\", просто вы сами контролируете момент создания и удаления, а Angular вызывает хуки в том же порядке, что и для статически объявленных компонентов.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:00:53.648Z",
+        "updatedAt": "2025-11-10T11:42:25.039Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как реализовать собственную стратегию обнаружения изменений?",
+        "id": 2085,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое жизненный цикл Angular-приложения?",
+        "id": 2087,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2087,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое жизненный цикл Angular-приложения?\"}]}]}",
+        "title": "Что такое жизненный цикл Angular-приложения?",
+        "order": 70419,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жизненный цикл приложения\"},{\"type\":\"text\",\"text\":\" — это последовательность этапов от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"загрузки приложения в браузере до его уничтожения\"},{\"type\":\"text\",\"text\":\", во время которых Angular создаёт модули, компоненты, связывает данные и отслеживает изменения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бутстрап (Bootstrap)\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular инициализирует корневой модуль (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"text\":\") и корневой компонент (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppComponent\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаётся дерево компонентов и внедряются сервисы через DI.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создание компонентов и модулей\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для каждого компонента вызываются хуки жизненного цикла: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular строит структуру DOM на основе шаблонов и директив.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обнаружение изменений (Change Detection)\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular отслеживает изменения данных и обновляет DOM автоматически.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При событии пользователя, асинхронной операции или таймере Angular проверяет компоненты и обновляет представление.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Взаимодействие с пользователем\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обработчики событий вызываются через привязки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"(event)\"},{\"type\":\"text\",\"text\":\", данные обновляются через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Change Detection гарантирует, что изменения отразятся в шаблонах.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":5,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Завершение / уничтожение\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда приложение или компонент удаляются, вызываются хуки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular освобождает ресурсы и отписывает подписки.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жизненный цикл Angular-приложения — это полный процесс создания, рендеринга, обновления и завершения работы всех модулей и компонентов в приложении\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:01:06.168Z",
+        "updatedAt": "2025-10-22T11:01:06.168Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как хуки работают для динамически созданных компонентов?",
+        "id": 2086,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает функция bootstrapApplication()? ",
+        "id": 2088,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2088,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает функция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"bootstrapApplication()?\"}]}]}",
+        "title": "Что делает функция bootstrapApplication()? ",
+        "order": 70420,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"bootstrapApplication()\"},{\"type\":\"text\",\"text\":\" — это новая функция (в Angular 14+), которая используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"старта standalone‑компонента без корневого модуля (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт корневой компонент приложения и запускает Angular runtime.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инициализирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"инъекцию зависимостей\"},{\"type\":\"text\",\"text\":\", рендеринг шаблона и Change Detection для корневого компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет строить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"легковесные приложения без NgModule\"},{\"type\":\"text\",\"text\":\", используя standalone‑компоненты.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Синтаксис\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { bootstrapApplication } from '@angular/platform-browser';\\nimport { AppComponent } from './app/app.component';\\n\\nbootstrapApplication(AppComponent, {\\n  providers: [] // можно передавать глобальные сервисы\\n})\\n  .catch(err => console.error(err));\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упрощает структуру приложения (не нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppModule\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Легче писать маленькие или экспериментальные приложения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно сразу подключать сервисы через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providers\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"bootstrapApplication()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" заменяет классический \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"platformBrowserDynamic().bootstrapModule(AppModule)\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" для standalone‑подхода\"},{\"type\":\"text\",\"text\":\", инициализируя Angular-приложение напрямую с корневым компонентом.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:01:23.594Z",
+        "updatedAt": "2025-10-22T11:01:23.594Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое жизненный цикл Angular-приложения?",
+        "id": 2087,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает zone.js при старте приложения?",
+        "id": 2089,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2089,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"zone.js\"},{\"type\":\"text\",\"text\":\" при старте приложения?\"}]}]}",
+        "title": "Что делает zone.js при старте приложения?",
+        "order": 70421,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"zone.js\"},{\"type\":\"text\",\"text\":\" — это библиотека, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отслеживает асинхронные операции в приложении\"},{\"type\":\"text\",\"text\":\" и помогает Angular автоматически запускать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Change Detection\"},{\"type\":\"text\",\"text\":\" после их завершения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Перехват асинхронных событий\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"zone.js\"},{\"type\":\"text\",\"text\":\" «оборачивает» таймеры (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setTimeout\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setInterval\"},{\"type\":\"text\",\"text\":\"), промисы, HTTP-запросы и события DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда такие операции завершаются, Angular знает, что нужно обновить интерфейс.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Автоматический запуск Change Detection\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После каждого асинхронного события Angular автоматически проверяет компоненты и обновляет DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это избавляет разработчика от ручного вызова \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"detectChanges()\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При старте приложения\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"zone.js\"},{\"type\":\"text\",\"text\":\" подхватывается в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main.ts\"},{\"type\":\"text\",\"text\":\" через импорт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"import 'zone.js'\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все асинхронные задачи приложения попадают в «зону», и Angular отслеживает их завершение.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"zone.js\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" обеспечивает автоматическое обнаружение изменений после асинхронных операций\"},{\"type\":\"text\",\"text\":\", что позволяет интерфейсу всегда оставаться актуальным без ручного вмешательства.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:01:36.546Z",
+        "updatedAt": "2025-11-10T11:42:29.799Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает функция bootstrapApplication()? ",
+        "id": 2088,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как происходит загрузка lazy-loaded модулей? ",
+        "id": 2090,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2090,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как происходит загрузка lazy-loaded модулей?\"}]}]}",
+        "title": "Как происходит загрузка lazy-loaded модулей? ",
+        "order": 70422,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"lazy-loaded модули\"},{\"type\":\"text\",\"text\":\" (лениво загружаемые) подгружаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только тогда, когда пользователь переходит на определённый маршрут\"},{\"type\":\"text\",\"text\":\", а не при старте приложения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные моменты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Настройка маршрута для ленивой загрузки\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const routes: Routes = [\\n  {\\n    path: 'admin',\\n    loadChildren: () =>\\n      import('./admin/admin.module').then(m => m.AdminModule)\\n  }\\n];\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loadChildren\"},{\"type\":\"text\",\"text\":\" указывает функцию, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамически импортирует модуль\"},{\"type\":\"text\",\"text\":\" через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"import()\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что происходит при переходе на маршрут\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular вызывает функцию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loadChildren\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер загружает JS-файл модуля по сети.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаётся экземпляр модуля и его компонентов, регистрируются маршруты и сервисы.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Снижается размер основного бандла приложения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Улучшается время старта приложения, так как не нужно загружать все модули сразу.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Влияние на жизненный цикл\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хуки компонентов модуля (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit\"},{\"type\":\"text\",\"text\":\" и др.) вызываются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только после загрузки и рендеринга ленивого модуля\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Lazy-loaded модуль создаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамически\"},{\"type\":\"text\",\"text\":\", как будто он был создан отдельно.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"lazy-loaded модуль подгружается по требованию, через динамический импорт, и его компоненты и сервисы инициализируются только при переходе на соответствующий маршрут\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 208,
+        "createdAt": "2025-10-22T11:01:50.537Z",
+        "updatedAt": "2025-10-22T11:01:50.537Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 208,
+          "title": "Архитектура и жизненный цикл",
+          "directions": [
+            {
+              "categoryId": 208,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает zone.js при старте приложения?",
+        "id": 2089,
+        "premium": true,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое signal в Angular?",
+        "id": 2091,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "category": {
+    "id": 152,
+    "title": "Performance и скорость",
+    "description": "  ",
+    "parentId": 9
+  },
+  "totalQuestions": 12,
+  "downloadedAt": "2026-03-09T08:47:05.672Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2506,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое performance в контексте SEO?\"}]}]}",
+        "title": "Что такое performance в контексте SEO?",
+        "order": 90500,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Performance в контексте SEO\"},{\"type\":\"text\",\"text\":\" — это группа технических показателей, которые отражают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорость загрузки и общую производительность сайта для пользователя\"},{\"type\":\"text\",\"text\":\". Поисковые системы (особенно Google) оценивают performance как один из факторов ранжирования, потому что быстрые сайты дают лучший пользовательский опыт.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что включает performance:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость загрузки страницы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Как быстро пользователь видит первый контент и может начать взаимодействовать. Чем дольше ожидание, тем выше вероятность ухода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Core Web Vitals (ключевые метрики Google)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Три основных показателя:\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"LCP (Largest Contentful Paint)\"},{\"type\":\"text\",\"text\":\" — скорость загрузки главного блока;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FID / INP\"},{\"type\":\"text\",\"text\":\" — отзывчивость и задержка при первом взаимодействии;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CLS (Cumulative Layout Shift)\"},{\"type\":\"text\",\"text\":\" — стабильность верстки (ничего не должно прыгать при загрузке).\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оптимизация ресурсов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Как загружаются файлы сайта: изображения, шрифты, CSS, JS. Их размер и количество напрямую влияют на скорость.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Время ответа сервера\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если сервер медленный — страница тоже будет медленной, даже с оптимизированным фронтендом.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем это нужно для SEO:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поисковики повышают позиции у быстрых сайтов;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пользователи реже уходят и дольше взаимодействуют со страницей;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"улучшение performance напрямую снижает показатель отказов (bounce rate).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"performance — это техническая скорость и удобство загрузки сайта, влияющие и на ранжирование, и на поведение пользователей.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:36:41.212Z",
+        "updatedAt": "2025-10-23T12:36:41.212Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему важна иерархия страниц?",
+        "id": 2505,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему скорость сайта влияет на SEO?",
+        "id": 2507,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2507,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему скорость сайта влияет на SEO?\"}]}]}",
+        "title": "Почему скорость сайта влияет на SEO?",
+        "order": 90501,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Скорость сайта влияет на SEO потому, что она напрямую отражает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качество пользовательского опыта\"},{\"type\":\"text\",\"text\":\", а поисковые системы сегодня ранжируют сайты, исходя в первую очередь из удобства для людей. Быстрая страница удерживает внимание, медленная — теряет трафик ещё до показа контента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему это важно для поисковиков:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пользовательский фактор\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если сайт грузится 3–5 секунд и дольше, растёт процент мгновенных отказов. Поисковик видит: человек не дождался, значит страница — не лучший результат по запросу. Это сигнал понижать её в выдаче.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Показатель удовлетворённости результатом поиска\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Быстрая загрузка = выше вероятность, что пользователь прочитает, кликнет, перейдёт дальше. А поисковым системам важен не трафик, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качественный трафик\"},{\"type\":\"text\",\"text\":\", который остался доволен.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Core Web Vitals как официальный фактор ранжирования\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Google прямо включает скорость и стабильность загрузки (LCP, INP, CLS) в алгоритм. Плохие метрики = минусы в ранжировании, особенно на мобильных.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конкурентная среда\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поисковик всегда выберет в топ быстрее загружающийся сайт при прочих равных — потому что он гарантирует меньшее количество “потерянных” пользователей.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорость — это SEO-сигнал через поведение аудитории.\"},{\"type\":\"text\",\"text\":\" Медленный сайт не просто раздражает людей — он даёт поисковику основание считать его худшим ответом, поэтому теряет позиции и трафик.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:36:56.079Z",
+        "updatedAt": "2025-10-23T12:36:56.079Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое performance в контексте SEO?",
+        "id": 2506,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда Google официально сделал скорость фактором ранжирования?",
+        "id": 2508,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2508,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда Google официально сделал скорость фактором ранжирования?\"}]}]}",
+        "title": "Когда Google официально сделал скорость фактором ранжирования?",
+        "order": 90502,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Google официально сделал скорость загрузки фактором ранжирования:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в 2010 году\"},{\"type\":\"text\",\"text\":\" — для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"десктопных поисков\"},{\"type\":\"text\",\"text\":\". Тогда компания объявила, что учитывает время загрузки страниц в общем алгоритме ранжирования.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в июле 2018 года\"},{\"type\":\"text\",\"text\":\" — для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"мобильного поиска\"},{\"type\":\"text\",\"text\":\", в рамках обновления под названием \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Speed Update\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"С 2021 года значение скорости стало ещё выше: Google ввёл метрики \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Core Web Vitals\"},{\"type\":\"text\",\"text\":\" (LCP, FID/INP, CLS) и включил их в так называемый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Page Experience Update\"},{\"type\":\"text\",\"text\":\" — обновление, где оценивается общий “опыт взаимодействия” с сайтом.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть на сегодня скорость — не просто технический параметр, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"часть официального алгоритма оценки качества страницы\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:37:31.317Z",
+        "updatedAt": "2025-10-23T12:37:31.317Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему скорость сайта влияет на SEO?",
+        "id": 2507,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как медленный сайт влияет на пользовательский опыт?",
+        "id": 2509,
+        "premium": true,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2509,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как медленный сайт влияет на пользовательский опыт?\"}]}]}",
+        "title": "Как медленный сайт влияет на пользовательский опыт?",
+        "order": 90503,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Медленный сайт ухудшает пользовательский опыт на нескольких уровнях — от восприятия качества бренда до поведения на странице. Основные эффекты:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Рост раздражения и потери внимания\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Человек ожидает, что сайт откроется за 1–2 секунды. Когда загрузка длится 4–6 и больше, уровень фрустрации резко растёт. Пользователь не видит ценности — он видит ожидание.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Больше отказов и меньше вовлечённости\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чем дольше загрузка, тем выше вероятность, что человек закроет вкладку. Даже если он останется, он реже скроллит, кликает и читает контент — просто потому, что первичное впечатление уже испорчено.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Потеря доверия к бренду\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Мозг автоматически связывает “медленно” с “непрофессионально” и “ненадёжно”. Пользовательская психология проста: если сайт тормозит, значит и сервис внутри будет таким же.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Низкие конверсии и меньше продаж\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"На коммерческих сайтах скорость бьёт по деньгам: чем медленнее загрузка, тем меньше заказов, заявок и подписок. Пользователь уходит к конкуренту, у которого всё “открывается легко”.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: медленный сайт — это не техническая проблема, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"психологическая и бизнес-проблема\"},{\"type\":\"text\",\"text\":\". Он ворует внимание, доверие и конверсии ещё до того, как человек увидел предложение.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:37:40.807Z",
+        "updatedAt": "2025-11-10T11:31:27.024Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда Google официально сделал скорость фактором ранжирования?",
+        "id": 2508,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему производительность важна для конверсии?",
+        "id": 2510,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2510,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему производительность важна для конверсии?\"}]}]}",
+        "title": "Почему производительность важна для конверсии?",
+        "order": 90504,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Производительность напрямую влияет на конверсию, потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорость — это первый опыт взаимодействия с продуктом\"},{\"type\":\"text\",\"text\":\", и от неё зависит, дойдёт ли человек до нужного действия вообще. Если сайт тормозит, пользователь не успевает погрузиться в ценностное предложение, а значит — не покупает, не подписывается и «не доходит до кнопки».\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные причины:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость формирует первое впечатление\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Психика оценивает сайт за доли секунды. Если он “думает”, человек делает вывод: «здесь будет долго и сложно». Конверсионные действия требуют вовлечения, а медленная загрузка убивает его в самом начале.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждая лишняя секунда снижает мотивацию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда страница открывается 4–6 секунд, мозг выбирает путь меньшего сопротивления — закрыть вкладку. Цель пользователя и так требует усилия (купить, сравнить, оплатить), а тормоза добавляют сопротивление.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чем медленнее — тем ниже доверие\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Недоверие = отказ от действия. Если сайт работает плохо на элементар-ком этапе (загрузка), пользователь боится, что и оплата, и доставка, и сервис будут такими же.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Производительность напрямую связана с отказами и длиной сессии\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Медленно → меньше скролла, меньше кликов, меньше просмотренных блоков → предложение не успевает продать само себя. Быстрая страница, наоборот, позволяет довести пользователя по воронке до конца — и это увеличивает конверсию.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хорошая производительность — это снижение трения на пути пользователя. Меньше трения = выше вовлечённость, доверие и готовность совершить целевое действие.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:38:01.055Z",
+        "updatedAt": "2025-10-23T12:38:01.055Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как медленный сайт влияет на пользовательский опыт?",
+        "id": 2509,
+        "premium": true,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “Core Web Vitals”?",
+        "id": 2511,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2511,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “Core Web Vitals”?\"}]}]}",
+        "title": "Что такое “Core Web Vitals”?",
+        "order": 90505,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Core Web Vitals\"},{\"type\":\"text\",\"text\":\" — это набор ключевых метрик Google, которые измеряют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качество пользовательского опыта на сайте\"},{\"type\":\"text\",\"text\":\": насколько быстро загружается основной контент, насколько отзывчива страница и насколько стабильно ведёт себя верстка во время загрузки. Эти показатели являются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"официальным фактором ранжирования\"},{\"type\":\"text\",\"text\":\", поэтому напрямую влияют на SEO.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В набор входят три метрики:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"LCP (Largest Contentful Paint)\"},{\"type\":\"text\",\"text\":\" — скорость появления самого крупного и значимого элемента на экране (картинка, баннер, заголовок). Отвечает за ощущение “как быстро загрузилась страница визуально”.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"INP (Interaction to Next Paint)\"},{\"type\":\"text\",\"text\":\" — обобщённая метрика отзывчивости страницы (пришла на смену FID). Показывает, как быстро сайт реагирует на первое взаимодействие: клик, тап, ввод. Важна для чувства “сайт живой и не тормозит”.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CLS (Cumulative Layout Shift)\"},{\"type\":\"text\",\"text\":\" — стабильность верстки. Оценивает, “прыгают” ли элементы при загрузке (например, когда кнопка смещается, а пользователь случайно жмёт не туда).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задача Core Web Vitals — дать поисковикам единый универсальный стандарт, по которому можно измерить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реальное удобство сайта глазами пользователя\"},{\"type\":\"text\",\"text\":\", а не только технические параметры.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:38:44.976Z",
+        "updatedAt": "2025-10-23T12:38:44.976Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему производительность важна для конверсии?",
+        "id": 2510,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие метрики входят в Core Web Vitals?",
+        "id": 2512,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2512,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие метрики входят в Core Web Vitals?\"}]}]}",
+        "title": "Какие метрики входят в Core Web Vitals?",
+        "order": 90506,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Core Web Vitals входят три метрики, каждая отвечает за свой аспект пользовательского опыта:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"LCP (Largest Contentful Paint)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как быстро появляется на экране основной, самый крупный элемент\"},{\"type\":\"text\",\"text\":\" — например, баннер, заголовок или изображение. Отвечает за визуальную скорость загрузки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Норма: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"≤ 2.5 секунды\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"INP (Interaction to Next Paint)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Измеряет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"время отклика страницы на действия пользователя\"},{\"type\":\"text\",\"text\":\" — клик, касание, ввод. Это метрика отзывчивости, которая показывает, чувствуется ли сайт “живым” или “тормозным”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Норма: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"≤ 200 мс\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CLS (Cumulative Layout Shift)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Оценивает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стабильность макета во время загрузки\"},{\"type\":\"text\",\"text\":\" — не прыгают ли картинки, тексты и кнопки, из-за чего пользователь может нажать не туда.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Норма: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"≤ 0.1\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти три показателя Google считает ключевыми, потому что они отражают реальный пользовательский опыт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как быстро видно контент, как быстро сайт реагирует и насколько стабильно всё отображается при загрузке.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:39:01.023Z",
+        "updatedAt": "2025-10-23T12:39:01.023Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “Core Web Vitals”?",
+        "id": 2511,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое LCP (Largest Contentful Paint)?",
+        "id": 2513,
+        "premium": true,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2513,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое LCP (Largest Contentful Paint)?\"}]}]}",
+        "title": "Что такое LCP (Largest Contentful Paint)?",
+        "order": 90507,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"LCP (Largest Contentful Paint)\"},{\"type\":\"text\",\"text\":\" — это метрика из Core Web Vitals, которая измеряет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"за сколько секунд на экране появляется самый крупный и визуально значимый элемент страницы\"},{\"type\":\"text\",\"text\":\", видимый пользователю без прокрутки (в области \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"above the fold\"},{\"type\":\"text\",\"text\":\"). Обычно таким элементом бывает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"крупное изображение или баннер,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"блок hero-секции,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"большой заголовок,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фоновая картинка, если она является ключевым визуальным элементом.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысл метрики:\"},{\"type\":\"text\",\"text\":\" LCP показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"как быстро пользователь видит основной контент\"},{\"type\":\"text\",\"text\":\", а не просто “первый пиксель”. Даже если страница технически начала загружаться, для человека важно, когда появляется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"главный смысловой блок\"},{\"type\":\"text\",\"text\":\", по которому он понимает, что сайт работает и загрузка идёт.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Норма от Google:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отлично: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"≤ 2.5 сек\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нормально: 2.6–4.0 сек\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плохо: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"> 4.0 сек\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что влияет на LCP чаще всего:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тяжёлые или неоптимизированные изображения,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"медленный сервер и долгий TTFB,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"блокирующие ресурсы (CSS, JS),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"слишком много визуальных элементов в первом экране.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" LCP показывает ощущение “скорости глазами пользователя”. Чем быстрее главный блок появляется на странице, тем выше доверие, ниже вероятность отказа и лучше поведенческие сигналы для SEO.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:39:15.753Z",
+        "updatedAt": "2025-11-10T11:31:32.291Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие метрики входят в Core Web Vitals?",
+        "id": 2512,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое FID (First Input Delay)?",
+        "id": 2514,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2514,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое FID (First Input Delay)?\"}]}]}",
+        "title": "Что такое FID (First Input Delay)?",
+        "order": 90508,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FID (First Input Delay)\"},{\"type\":\"text\",\"text\":\" — это метрика из Core Web Vitals, которая измеряет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"задержку между первым действием пользователя на странице (клик, тап, нажатие клавиши) и моментом, когда браузер реально начинает на него реагировать\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще: FID показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"чувствует ли пользователь “тормоза” при первом взаимодействии\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если человек кликает кнопку, а страница “зависает” на долю секунды, — это и есть плохой FID.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что именно измеряет FID\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не общую скорость страницы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не скорость загрузки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"первую реакцию интерфейса на действие пользователя\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нормы Google\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорошо: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"< 100 ms\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удовлетворительно: 100–300 ms\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плохо: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"> 300 ms\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему возникает плохой FID\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главный виновник — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тяжёлый JavaScript\"},{\"type\":\"text\",\"text\":\", который:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выполняется слишком долго,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"блокирует главный поток браузера,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не даёт странице быстро отреагировать на клик.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем эта метрика важна\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"FID отражает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ощущение “живости” сайта\"},{\"type\":\"text\",\"text\":\". Даже если страница загрузилась быстро, но кнопка не реагирует — пользователь испытывает раздражение, и это ухудшает поведение, конверсии и SEO.\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сейчас FID постепенно заменяется на более точную метрику \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"INP (Interaction to Next Paint)\"},{\"type\":\"text\",\"text\":\", которая измеряет отзывчивость не только первого, но и последующих взаимодействий.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:39:30.477Z",
+        "updatedAt": "2025-10-23T12:39:30.477Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое LCP (Largest Contentful Paint)?",
+        "id": 2513,
+        "premium": true,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое CLS (Cumulative Layout Shift)?",
+        "id": 2515,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2515,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое CLS (Cumulative Layout Shift)?\"}]}]}",
+        "title": "Что такое CLS (Cumulative Layout Shift)?",
+        "order": 90509,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CLS (Cumulative Layout Shift)\"},{\"type\":\"text\",\"text\":\" — это метрика из Core Web Vitals, которая измеряет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько сильно и неожиданно смещаются элементы на странице во время её загрузки\"},{\"type\":\"text\",\"text\":\". Она показывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"визуальную стабильность интерфейса\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если при загрузке вдруг “прыгают” картинки, тексты, кнопки или баннеры — это и есть плохой CLS. Пользователь может:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"промахнуться по кнопке,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"потерять место, где читал текст,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"случайно кликнуть не туда.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что отражает CLS\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CLS не про скорость. Это метрика про \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качество отображения и удобство\"},{\"type\":\"text\",\"text\":\". Она фиксирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"неожиданные смещения\"},{\"type\":\"text\",\"text\":\" элементов, происходящие без действия пользователя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нормы Google\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорошо: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"≤ 0.1\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удовлетворительно: 0.11–0.25\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плохо: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"> 0.25\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичные причины плохого CLS\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изображения без заданных ширины/высоты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"рекламные баннеры, которые подгружаются позже и двигают контент вниз,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"динамические элементы (плашки, pop-up’ы) без заранее зарезервированного места,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"шрифты, изменяющие размер текста после загрузки.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем важно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CLS влияет на ощущение контроля и комфорта. Даже быстрая страница кажется “кривой” и раздражающей, если интерфейс скачет. А значит — растёт число отказов, снижается вовлечённость и конверсия.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" CLS — про стабильный, предсказуемый интерфейс. Чем меньше визуальных скачков, тем лучше пользовательский опыт и сигналы для SEO.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:39:48.239Z",
+        "updatedAt": "2025-10-23T12:39:48.239Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое FID (First Input Delay)?",
+        "id": 2514,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое INP (Interaction to Next Paint)?",
+        "id": 2516,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2516,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое INP (Interaction to Next Paint)?\"}]}]}",
+        "title": "Что такое INP (Interaction to Next Paint)?",
+        "order": 90510,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"INP (Interaction to Next Paint)\"},{\"type\":\"text\",\"text\":\" — это метрика Core Web Vitals, которая измеряет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько быстро сайт реагирует на пользовательские действия на протяжении всей сессии\"},{\"type\":\"text\",\"text\":\": клики, тапы, ввод текста и другие события. В отличие от старой метрики \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"FID\"},{\"type\":\"text\",\"text\":\", которая учитывала только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"первое\"},{\"type\":\"text\",\"text\":\" взаимодействие, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"INP оценивает общую отзывчивость интерфейса\"},{\"type\":\"text\",\"text\":\", поэтому считается более точным показателем.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что измеряет INP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"INP фиксирует, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько времени проходит между действием пользователя и моментом, когда страница визуально начинает реагировать на это действие\"},{\"type\":\"text\",\"text\":\" (то есть когда браузер делает следующий “отрисовочный шаг” — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"next paint\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нормы Google\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хорошо:\"},{\"type\":\"text\",\"text\":\" ≤ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"200 ms\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Допустимо:\"},{\"type\":\"text\",\"text\":\" 200–500 ms\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плохо:\"},{\"type\":\"text\",\"text\":\" > \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"500 ms\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда INP страдает\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чаще всего из-за:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тяжёлого JavaScript, который блокирует основной поток,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"долгих обработчиков событий (например, на кликах),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"большого количества сторонних скриптов (чаты, виджеты, аналитика),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"медленных рендер-циклoв (много перерисовок, тяжелые DOM-изменения).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем важна INP\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"INP отражает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реальное ощущение “живости” сайта\"},{\"type\":\"text\",\"text\":\". Даже если страница загружается быстро, медленная реакция на клики делает интерфейс “ватным”, а это:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"снижает вовлечённость,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"портит пользовательский опыт,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшает конверсии,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ухудшает SEO-сигналы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть в одном предложении:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"INP показывает, насколько отзывчив и “живой” сайт в момент взаимодействия пользователя, и Google прямо учитывает эту метрику при ранжировании.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:40:02.092Z",
+        "updatedAt": "2025-10-23T12:40:02.092Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое CLS (Cumulative Layout Shift)?",
+        "id": 2515,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как Core Web Vitals влияют на ранжирование?",
+        "id": 2517,
+        "premium": true,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2517,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как Core Web Vitals влияют на ранжирование?\"}]}]}",
+        "title": "Как Core Web Vitals влияют на ранжирование?",
+        "order": 90511,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Core Web Vitals влияют на ранжирование как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"часть официального алгоритма Google, оценивающего качество пользовательского опыта (Page Experience)\"},{\"type\":\"text\",\"text\":\". Если у страницы хорошие показатели LCP, INP и CLS, Google считает, что пользователю на ней будет удобно — и повышает её конкурентоспособность в выдаче. Если показатели плохие — страница ранжируется слабее при прочих равных.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как именно это работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сигнал качества для алгоритма\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Core Web Vitals — не главный фактор ранжирования, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"усиливающий\"},{\"type\":\"text\",\"text\":\". Контент и ссылки по-прежнему важнее, но среди двух одинаково релевантных страниц выше окажется та, которая быстрее, стабильнее и отзывчивее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поведенческие эффекты через UX\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хорошие CWV означают:\"}]}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"меньше отказов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"больше дочитываний,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"глубже взаимодействие со страницей.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Google интерпретирует это как “пользователь доволен результатом поиска” → растёт рейтинг страницы.\"}]}]}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мобильная значимость\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"На мобильной выдаче влияние сильнее: медленный или “прыгающий” сайт портит опыт на слабых устройствах, и Google это учитывает в ранжировании особенно жёстко.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Фильтр среди конкурентов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"CWV помогают алгоритму быстро определить, какие страницы “удобны”, а какие создают трение. Если у конкурентов всё плохо — улучшенные метрики дают серьёзное преимущество.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" Core Web Vitals \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не вытащат плохой контент в топ\"},{\"type\":\"text\",\"text\":\", но способны дать ощутимый рост позиций и трафика в конкурентной нише, потому что усиливают релевантность за счёт удобства и лучшего пользовательского опыта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 152,
+        "createdAt": "2025-10-23T12:41:13.954Z",
+        "updatedAt": "2025-11-10T11:31:38.585Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 152,
+          "title": "Performance и скорость",
+          "directions": [
+            {
+              "categoryId": 152,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое INP (Interaction to Next Paint)?",
+        "id": 2516,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Next.js и какую проблему он решает?",
+        "id": 11151,
+        "premium": false,
+        "category": {
+          "id": 101,
+          "parent": {
+            "title": "Next JS",
+            "id": 42,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

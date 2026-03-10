@@ -1,0 +1,1117 @@
+{
+  "category": {
+    "id": 93,
+    "title": "Формы и события",
+    "description": " ",
+    "parentId": 6
+  },
+  "totalQuestions": 13,
+  "downloadedAt": "2026-03-09T08:22:02.722Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2910,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое двусторонняя привязка данных?\"}]}]}",
+        "title": "Что такое двусторонняя привязка данных?",
+        "order": 60700,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Двусторонняя привязка данных (two-way data binding)\"},{\"type\":\"text\",\"text\":\" — это механизм, при котором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"данные в модели и отображение в интерфейсе автоматически синхронизируются между собой.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Если пользователь меняет значение в UI → изменяются данные в компоненте.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Если данные в компоненте меняются → UI обновляется автоматически.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue этот механизм реализован через директиву \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Простой пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"name\\\">\\n<p>{{ name }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если пользователь вводит текст:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"name = \\\"Alex\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если ты меняешь переменную в коде:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.name = \\\"John\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"— значение в input тоже обновится.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это и есть двусторонняя привязка.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Как работает под капотом\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue превращает:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"name\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в два механизма:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Односторонняя привязка (model → view):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\":value=\\\"name\\\"\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обратная привязка (view → model):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@input=\\\"name = $event.target.value\\\"\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue автоматически объединяет это в удобный синтаксис.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Что даёт двусторонняя привязка?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Экономит код\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тебе не нужно писать вручную обработчики \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keyup\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Упрощает формы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенно многопользывательные, как валидации.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Синхронный UI\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI всегда отображает актуальные данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Двусторонняя привязка в компонентах (Vue 3)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyInput v-model=\\\"value\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает через:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проп: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"событие: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:modelValue\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script>\\nexport default {\\n  props: ['modelValue'],\\n  emits: ['update:modelValue']\\n}\\n</script>\\n\\n<template>\\n  <input :value=\\\"modelValue\\\" @input=\\\"$emit('update:modelValue', $event.target.value)\\\">\\n</template>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Отличие от односторонней привязки\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вид привязки\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"односторонняя (one-way)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновляет только UI при изменении данных\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"двусторонняя (two-way)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI и данные обновляют друг друга\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример односторонней:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input :value=\\\"name\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI нельзя использовать для изменения модели.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:12:32.083Z",
+        "updatedAt": "2025-11-27T10:12:32.083Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли использовать ref внутри композиционных хуков?",
+        "id": 2909,
+        "premium": false,
+        "category": {
+          "id": 92,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как работает директива v-model?",
+        "id": 2911,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2911,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как работает директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Как работает директива v-model?",
+        "order": 60701,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" — это механизм \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двусторонней привязки данных\"},{\"type\":\"text\",\"text\":\", который связывает значение элемента ввода (input, textarea, select, компонент) с переменной в состоянии Vue.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" связывает данные и UI так, что изменение одного автоматически обновляет другое.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" под капотом?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты пишешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"message\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue превращает это в два действия:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Привязка значения (model → view)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\":value=\\\"message\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI всегда показывает актуальные данные.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обработчик события (view → model)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@input=\\\"message = $event.target.value\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь вводит текст → переменная \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"message\"},{\"type\":\"text\",\"text\":\" обновляется.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Именно объединение этих двух направлений даёт двустороннюю привязку.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <input v-model=\\\"name\\\" />\\n  <p>{{ name }}</p>\\n</template>\\n\\n<script>\\nexport default {\\n  data() {\\n    return { name: '' }\\n  }\\n}\\n</script>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь вводит текст → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\" меняется.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\" меняется в коде → input обновляется.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" работает в разных элементах формы?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ text input\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"text\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ checkbox\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input type=\\\"checkbox\\\" v-model=\\\"checked\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ radio\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input type=\\\"radio\\\" value=\\\"A\\\" v-model=\\\"choice\\\">\\n<input type=\\\"radio\\\" value=\\\"B\\\" v-model=\\\"choice\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ select\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<select v-model=\\\"selected\\\">\\n  <option value=\\\"1\\\">One</option>\\n</select>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ checkbox с массивами\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input type=\\\"checkbox\\\" value=\\\"A\\\" v-model=\\\"items\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если выбрано → добавится в массив.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если снято → удалится.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Модификаторы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" (Vue 3)\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Модификатор\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновляет модель при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\", а не \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удаляет пробелы по краям\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"приводит значение к числу\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.trim.number=\\\"age\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" в компонентах (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты пишешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyInput v-model=\\\"value\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue заменяет это на:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передать проп \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"слушать событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:modelValue\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент должен выглядеть так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script>\\nexport default {\\n  props: ['modelValue'],\\n  emits: ['update:modelValue']\\n}\\n</script>\\n\\n<template>\\n  <input\\n    :value=\\\"modelValue\\\"\\n    @input=\\\"$emit('update:modelValue', $event.target.value)\\\"\\n  />\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это и есть внутренний механизм \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Именованные модели (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно иметь несколько v-model:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<DateRange\\n  v-model:start=\\\"startDate\\\"\\n  v-model:end=\\\"endDate\\\"\\n/>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент должен поддерживать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проп: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"start\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"событие: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:start\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проп: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"end\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"событие: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:end\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:13:22.963Z",
+        "updatedAt": "2025-11-27T10:13:22.963Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое двусторонняя привязка данных?",
+        "id": 2910,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда следует использовать модификаторы v-model?",
+        "id": 2912,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2912,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда следует использовать модификаторы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Когда следует использовать модификаторы v-model?",
+        "order": 60702,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Модификаторы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" следует использовать тогда, когда нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменить стандартное поведение двусторонней привязки\"},{\"type\":\"text\",\"text\":\" — валидация, контроль форм, оптимизация, приведение типов и т. д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это три встроенных модификатора:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\" — удалить пробелы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\" — преобразовать к числу\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\" — обновлять только на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\", а не на каждый ввод\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разберём подробно, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"когда и зачем использовать каждый\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. Когда использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для автоматического удаления пробелов по краям:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.trim=\\\"username\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Когда полезно?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логин / email / пароли\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имена / теги\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текстовые поля, где лишние пробелы → ошибка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"форма регистрации или авторизации\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"валидация данных\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"   Alex   \\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"username\"},{\"type\":\"text\",\"text\":\" попадёт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"Alex\\\"\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. Когда использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приводит строку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"42\\\"\"},{\"type\":\"text\",\"text\":\" → число \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"42\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.number=\\\"age\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Когда полезно?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"числовые формы: возраст, количество, цена, рейтинг\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"валидация типа\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"избежание ошибок при сравнении (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"'10' > '2'\"},{\"type\":\"text\",\"text\":\" → true 😬)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда API ожидает число, а не строку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы не делать вручную: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Number(value)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"age = \\\"10\\\"   // без .number\\nage = 10     // с .number\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. Когда использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Меняет событие, на которое обновляется модель:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Стандартное поведение:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" обновляется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на каждый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"С \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновляется только на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\" (после потери фокуса или Enter):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.lazy=\\\"searchQuery\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Когда полезно?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автокомплит или поиск, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не выполнять запрос при каждом символе\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"формы с тяжёлыми вычислениями\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшение нагрузки на компонент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда ввод промежуточных значений не нужен (например, \\\"1.2.3\\\" при вводе даты)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:14:22.502Z",
+        "updatedAt": "2025-11-27T10:14:22.502Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как работает директива v-model?",
+        "id": 2911,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает модификатор .lazy?",
+        "id": 2913,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2913,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает модификатор .lazy?",
+        "order": 60703,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\" изменяет стандартное поведение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\", переключая обновление значения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"с события \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" на событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" заставляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" обновлять переменную только тогда, когда пользователь закончил ввод и поле потеряло фокус (или нажал Enter), а не на каждый символ.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По умолчанию:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"text\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"text\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждый раз\"},{\"type\":\"text\",\"text\":\", когда пользователь вводит новый символ (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"},{\"type\":\"text\",\"text\":\" event).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model.lazy\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.lazy=\\\"text\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновление значения произойдёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только при событии \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после потери фокуса\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или при нажатии Enter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или при выборе значения в select\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.lazy=\\\"search\\\">\\n<p>{{ search }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"h → he → hel → hell → hello\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"search\"},{\"type\":\"text\",\"text\":\" меняется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только один раз\"},{\"type\":\"text\",\"text\":\", когда пользователь закончит ввод и уйдёт из поля.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Когда полезно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Чтобы не обновлять модель на каждом символе\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, поле поиска, которое вызывает запрос в API:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.lazy=\\\"query\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Для форм, где промежуточные значения не важны\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ввод даты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ввод сложного числового формата\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ввод значения через маску\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Для улучшения производительности\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если обработка данных тяжёлая, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"text\":\" снижает количество лишних обновлений.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Чтобы избежать “грязных значений”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, если валидировать поле только после ввода.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"📌 Итог (идеально для собеседования)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".lazy\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", который заставляет обновлять переменную только по событию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"change\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", а не при каждом вводе символа.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Полезен для оптимизации ввода, поиска, форм и случаев, где промежуточные значения не нужны.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:15:15.222Z",
+        "updatedAt": "2025-11-27T10:15:15.222Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда следует использовать модификаторы v-model?",
+        "id": 2912,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает модификатор .trim?",
+        "id": 2914,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2914,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает модификатор .trim?",
+        "order": 60704,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\" в директиве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" автоматически \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удаляет пробелы по краям строки\"},{\"type\":\"text\",\"text\":\" перед тем, как записать значение в модель.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" приводит ввод пользователя к “чистому” значению без ведущих и конечных пробелов.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.trim=\\\"username\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"   Alex   \\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То в переменную \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"username\"},{\"type\":\"text\",\"text\":\" попадёт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"Alex\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue делает это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически\"},{\"type\":\"text\",\"text\":\", без дополнительного кода.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.trim=\\\"inputText\\\">\\n<p>{{ inputText }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"  hello   \\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Результат после ввода:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"hello\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Когда полезно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. При вводе логинов, имён, email\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы убрать случайные пробелы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\" user@mail.com \\\"\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. При валидации форм\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы предотвратить ситуации, когда пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\" \\\"  → пустая строка → ошибка\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\" такая строка может считаться непустой.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Для текстов без значимых отступов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заголовки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"комментарии\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поисковые запросы\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Чтобы избежать багов при сравнении строк\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"if (username === \\\"admin\\\")\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim\"},{\"type\":\"text\",\"text\":\" сравнение может быть неверным из-за пробелов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔧 Как работает под капотом?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue автоматически обрабатывает:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"v-model.trim=\\\"value\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.target.value\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызвать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".trim()\"},{\"type\":\"text\",\"text\":\" на строке\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"записать результат в модель\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"value = event.target.value.trim();\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:15:53.774Z",
+        "updatedAt": "2025-11-27T10:15:53.774Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает модификатор .lazy?",
+        "id": 2913,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает модификатор .number?",
+        "id": 2915,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2915,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает модификатор .number?",
+        "order": 60705,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Модификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\" в директиве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" автоматически \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"преобразует введённое пользователем значение в число\"},{\"type\":\"text\",\"text\":\" перед записью в модель.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" делает так, чтобы значение, вводимое в input, превращалось из строки в тип Number.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.number=\\\"age\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"25\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В переменную \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"age\"},{\"type\":\"text\",\"text\":\" попадёт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"25  // число, а не строка\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue автоматически вызовет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Number(value)\"},{\"type\":\"text\",\"text\":\" или аналогичное преобразование.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.number=\\\"price\\\" />\\n<p>Тип: {{ typeof price }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь вводит:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"\\\"100\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отобразится:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тип: number\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Когда полезно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. Для числовых полей форм\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возраст\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"цена\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"размер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"количество\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"рейтинг\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. Чтобы избежать ошибок при сравнении\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"\\\"10\\\" > \\\"2\\\"   // true 😬 (лексическое сравнение)\\n10 > 2       // true ✔️\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. Чтобы API получал правильный тип\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, backend ожидает число:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"json\"},\"content\":[{\"type\":\"text\",\"text\":\"{ \\\"limit\\\": 50 }\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".number\"},{\"type\":\"text\",\"text\":\" вы бы отправили строку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"50\\\"\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. Чтобы избежать кастомного приведения типа в коде\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вместо:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"age = Number(e.target.value)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно просто:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model.number=\\\"age\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важные особенности\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🟡 1. Если значение нельзя преобразовать в число\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"abc\\\"\"},{\"type\":\"text\",\"text\":\" или пустая строка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"\\\"\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"Number(\\\"abc\\\") // NaN\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В модель попадёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"NaN\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🟡 2. Работает только для input-type=\\\"text\\\" и подобных\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input type=\\\"number\\\"\"},{\"type\":\"text\",\"text\":\" это обычно тоже полезно, но нужно учитывать HTML5-валидацию.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🟡 3. Не влияет на вывод — только на сохранение в переменную\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:17:46.400Z",
+        "updatedAt": "2025-11-27T10:17:46.400Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает модификатор .trim?",
+        "id": 2914,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какая разница между value и modelValue?",
+        "id": 2916,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2916,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какая разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Какая разница между value и modelValue?",
+        "order": 60706,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"},{\"type\":\"text\",\"text\":\" напрямую связана с тем, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в Vue 2 и Vue 3\"},{\"type\":\"text\",\"text\":\", особенно внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кастомных компонентов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это очень частый вопрос на собеседованиях.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ Короткий ответ\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\" — использовалось для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 2\"},{\"type\":\"text\",\"text\":\", как проп по умолчанию.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"},{\"type\":\"text\",\"text\":\" — используется в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 3\"},{\"type\":\"text\",\"text\":\" как стандартный проп для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 2:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" работает через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 3:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" работает через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:modelValue\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Vue 2: v-model → value + input\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в Vue 2 компонент использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyInput v-model=\\\"text\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То внутри компонента:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проп должен называться \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"событие должно называться \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"props: ['value'],\\n\\nmethods: {\\n  update(e) {\\n    this.$emit('input', e.target.value)\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И input будет выглядеть так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input :value=\\\"value\\\" @input=\\\"update\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Vue 3: v-model → modelValue + update:modelValue\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 был введён новый, более логичный и гибкий стандарт.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyInput v-model=\\\"text\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"транслируется в:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проп \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:modelValue\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"props: {\\n  modelValue: String\\n},\\nemits: ['update:modelValue']\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шаблон:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input \\n  :value=\\\"modelValue\\\"\\n  @input=\\\"$emit('update:modelValue', $event.target.value)\\\"\\n>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Почему это изменение появилось в Vue 3?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Чтобы поддержать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" в одном компоненте\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 можно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<DatePicker \\n  v-model:start=\\\"startDate\\\"\\n  v-model:end=\\\"endDate\\\"\\n/>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает через:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"prop \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"start\"},{\"type\":\"text\",\"text\":\", событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:start\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"prop \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"end\"},{\"type\":\"text\",\"text\":\", событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:end\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Такую систему невозможно гибко реализовать с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Главная разница\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue 2\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue 3\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проп по умолчанию\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"modelValue\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Событие обновления\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"input\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update:modelValue\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Несколько v-model\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ невозможно\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔️ возможно\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стандартизация\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"слабая\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"строгая, предсказуемая\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример сравнения «до / после»\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Vue 2 компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<input :value=\\\"value\\\" @input=\\\"$emit('input', $event.target.value)\\\">\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Vue 3 компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<input :value=\\\"modelValue\\\" @input=\\\"$emit('update:modelValue', $event.target.value)\\\">\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:18:40.882Z",
+        "updatedAt": "2025-11-27T10:18:40.882Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает модификатор .number?",
+        "id": 2915,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива v-on?",
+        "id": 2917,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2917,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает директива v-on?",
+        "order": 60707,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прослушивания событий\"},{\"type\":\"text\",\"text\":\" и вызова методов в ответ на действия пользователя или события браузера.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" связывает событие (click, input, change, keyup и т.д.) с обработчиком в компоненте.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это основной механизм обработки событий во Vue.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Базовое использование\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button v-on:click=\\\"handleClick\\\">Клик</button>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сокращение (используется почти всегда):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"handleClick\\\">Клик</button>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔁 Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\" под капотом?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оно:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"находит DOM-элемент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подписывается на событие (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"addEventListener\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызывает метод компонента, когда событие срабатывает\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <input @input=\\\"onInput\\\">\\n</template>\\n\\n<script>\\nexport default {\\n  methods: {\\n    onInput(e) {\\n      console.log(\\\"Введено:\\\", e.target.value)\\n    }\\n  }\\n}\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Что можно передавать в обработчик?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Вызов метода\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"increase\\\">+</button>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Inline-выражение\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"count++\\\">+</button>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Аргументы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"sayHello('Vue')\\\">Привет</button>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Объект события\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"handle($event)\\\">Click</button>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Модификаторы v-on\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue поддерживает множество модификаторов для работы с событиями:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Управление всплытием:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.stop     <!-- event.stopPropagation() -->\\n@click.prevent  <!-- event.preventDefault() -->\\n@click.stop.prevent\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Однократное выполнение:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.once\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Триггер только при клике по самому элементу:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.self\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Рабочая фаза (capturing):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.capture\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Passive-слушатели:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@scroll.passive\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Модификаторы клавиш (key modifiers):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.enter\\n@keyup.esc\\n@keyup.ctrl.enter\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Использование с компонентами\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно слушать события, которые компонент сам \\\"эмитит\\\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyButton @click=\\\"submit\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если компонент внутри вызывает:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$emit('click')\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\" сработает.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ Динамическое имя события\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно подписываться на событие, название которого вычисляется:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button v-on:[dynamicEvent]=\\\"onEvent\\\">\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"dynamicEvent = \\\"dblclick\\\"\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:19:21.742Z",
+        "updatedAt": "2025-11-27T10:19:21.742Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какая разница между value и modelValue?",
+        "id": 2916,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое модификаторы событий?",
+        "id": 2918,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2918,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое модификаторы событий?\"}]}]}",
+        "title": "Что такое модификаторы событий?",
+        "order": 60708,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модификаторы событий\"},{\"type\":\"text\",\"text\":\" — это специальные суффиксы (например: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".stop\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".prevent\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".once\"},{\"type\":\"text\",\"text\":\"), которые добавляются к директиве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\" и позволяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"изменять поведение события\"},{\"type\":\"text\",\"text\":\" без написания дополнительного JavaScript-кода.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модификаторы событий — это способ указать Vue, как именно нужно обрабатывать событие, выполняя часто используемые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.*\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" действия автоматически.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они делаются для удобства, чистоты шаблона и уменьшения количества шаблонного кода.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Как выглядят модификаторы событий?\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click.stop=\\\"doSomething\\\"></button>\\n<button @submit.prevent=\\\"onSubmit\\\"></button>\\n<input @keyup.enter=\\\"search\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужны модификаторы?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они позволяют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"остановить всплытие (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"stopPropagation\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отменить стандартное поведение (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"preventDefault\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сделать обработчик однократным\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"слушать события только на самом элементе\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать с клавишами\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"улучшить производительность (passive)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И всё это без написания лишнего кода:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"event.stopPropagation(); event.preventDefault(); doStuff()\\\">...</button>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"становится:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click.stop.prevent=\\\"doStuff\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Основные модификаторы событий\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".stop\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Останавливает всплытие события.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.stop\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эквивалент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"event.stopPropagation()\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".prevent\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отменяет стандартное поведение браузера.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@submit.prevent\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эквивалент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"event.preventDefault()\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".once\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обработчик срабатывает только один раз.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.once\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После первого вызова Vue сам удалит слушатель.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".self\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Срабатывает только если событие пришло \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от самого элемента\"},{\"type\":\"text\",\"text\":\", а не от дочерних.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.self\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".capture\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Слушает событие на фазе \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"capture\"},{\"type\":\"text\",\"text\":\" (перед всплытием).\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.capture\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".passive\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт passive-listener, полезно для scroll-обработчиков.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@scroll.passive\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повышает производительность.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎹 Модификаторы клавиш (key modifiers)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Применяются для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keyup\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keydown\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.enter\\n@keyup.esc\\n@keyup.space\\n@keyup.up\\n@keyup.ctrl.enter\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это тоже считается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модификаторами событий\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔁 Комбинации модификаторов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно комбинировать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@click.stop.prevent.once=\\\"save\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Порядок имеет значение:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Vue генерирует обработчик в том порядке, в котором написаны модификаторы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Где нельзя использовать модификаторы?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутри компонентов для произвольных custom events\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(они работают только с DOM-событиями и системными событиями)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:20:11.308Z",
+        "updatedAt": "2025-11-27T10:20:11.308Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива v-on?",
+        "id": 2917,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое key modifiers?",
+        "id": 2919,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2919,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое key modifiers?\"}]}]}",
+        "title": "Что такое key modifiers?",
+        "order": 60709,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Key modifiers (модификаторы клавиш)\"},{\"type\":\"text\",\"text\":\" — это специальные модификаторы для директивы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"text\":\", которые позволяют выполнять обработчик \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только при нажатии конкретной клавиши или их комбинации\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они используются с событиями \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keyup\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keydown\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Key modifiers позволяют реагировать только на нужные клавиши (например Enter, Escape, стрелки, Tab), без ручной проверки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.key\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в коде.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Простейший пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input @keyup.enter=\\\"sendMessage\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обработчик вызовется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только\"},{\"type\":\"text\",\"text\":\", если пользователь нажмёт Enter.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без модификаторов пришлось бы писать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"onKeyPress(e) {\\n  if (e.key === 'Enter') {\\n    this.sendMessage()\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎹 Основные key modifiers\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Часто используемые:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.enter\\n@keyup.esc\\n@keyup.tab\\n@keyup.space\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Стрелки:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.up\\n@keyup.down\\n@keyup.left\\n@keyup.right\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Удаление:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.delete  <!-- работает как Backspace и Delete -->\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔐 Комбинации с модификаторами контролов\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup.ctrl.enter=\\\"submit\\\"\\n@keyup.shift.tab=\\\"backward\\\"\\n@keyup.alt.s=\\\"save\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает благодаря тому, что Vue проверяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.ctrlKey\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.shiftKey\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.altKey\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"event.metaKey\"},{\"type\":\"text\",\"text\":\" (Cmd на Mac)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ Полезный кейс: отправка формы по Enter\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input @keyup.enter=\\\"submitForm\\\">\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 Динамический модификатор клавиши\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно использовать вычисляемое имя события:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-on:[eventName]=\\\"doSomething\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Но key modifiers работают только с прямым указанием клавиши, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@keyup[eventName] ❌ Нельзя\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важное (Vue 2 vs Vue 3)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 2 были \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keyCodes\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"keyCode: 13\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 они \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удалены\"},{\"type\":\"text\",\"text\":\", и модификаторы работают только через названия клавиш (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"enter\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"esc\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:21:05.917Z",
+        "updatedAt": "2025-11-27T10:21:05.917Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое модификаторы событий?",
+        "id": 2918,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое $emit?",
+        "id": 2920,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2920,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое $emit?",
+        "order": 60710,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" — это метод экземпляра компонента Vue, который используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправки (испускания) пользовательских событий из дочернего компонента родителю\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" позволяет компоненту \\\"сказать\\\" родителю, что что-то произошло.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Родитель может слушать это событие через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-on\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это ключевой механизм коммуникации \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"снизу вверх\"},{\"type\":\"text\",\"text\":\" в компонентной архитектуре Vue.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Базовый пример: дочерний → родитель\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button @click=\\\"$emit('increment')\\\">+</button>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он “эмитит” событие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"increment\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<Counter @increment=\\\"count++\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь родитель знает, что дочерний компонент отправил сигнал.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🎯 Зачем нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обмен данными \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вверх по дереву\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"информирование родителя об изменении состояния\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реализация custom events\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" в кастомных компонентах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"декомпозиция логики: \\\"умный родитель — dumb child\\\"\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" + данные (передача аргументов)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно отправлять вместе с событием данные:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Дочерний компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"this.$emit('select', item)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Родитель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<ItemList @select=\\\"onItemSelect\\\" />\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"methods: {\\n  onItemSelect(item) {\\n    console.log(\\\"Выбрано:\\\", item)\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"text\":\" (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для работы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<MyInput v-model=\\\"value\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент должен:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1) получать проп \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"modelValue\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2) эмитить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"update:modelValue\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input \\n  :value=\\\"modelValue\\\" \\n  @input=\\\"$emit('update:modelValue', $event.target.value)\\\"\\n>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ Декларация событий (Vue 3)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Vue 3 необходимо явно указывать, какие события компонент может эмитить:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"emits: ['save', 'update:modelValue']\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue выдаст предупреждение, если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" вызван с неизвестным событием — полезно для контроля API компонента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧩 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" vs $on / $off (Vue 2)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" — отправить событие\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$on\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$off\"},{\"type\":\"text\",\"text\":\" — подписаться/отписаться (В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Vue 3 эти методы удалены\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Важные моменты\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" работает только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"в направлении родитель ← ребёнок\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Компонент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не может вызвать метод родителя напрямую.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$emit\"},{\"type\":\"text\",\"text\":\" не работает из родителя в ребёнка — только события вверх.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. Имя события желательно писать в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"kebab-case\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"@user-selected=\\\"handle\\\"\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:22:24.818Z",
+        "updatedAt": "2025-11-27T10:22:24.818Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое key modifiers?",
+        "id": 2919,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как использовать ref для формы?",
+        "id": 2921,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2921,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" для формы?\"}]}]}",
+        "title": "Как использовать ref для формы?",
+        "order": 60711,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" для формы в Vue — значит получить прямой доступ к DOM-элементу формы или её полям, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"читать значения напрямую,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"валидировать форму,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сбрасывать поля,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызывать методы нативной формы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reset()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"submit()\"},{\"type\":\"text\",\"text\":\"),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать со сторонними UI-библиотеками.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делается по-разному в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Options API\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Composition API\"},{\"type\":\"text\",\"text\":\", но логика одна.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование ref с формой в Composition API\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Шаблон:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<form ref=\\\"formRef\\\" @submit.prevent=\\\"handleSubmit\\\">\\n  <input v-model=\\\"name\\\" />\\n  <input v-model=\\\"email\\\" />\\n</form>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Script setup:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nimport { ref, onMounted } from 'vue'\\n\\nconst formRef = ref(null)\\nconst name = ref('')\\nconst email = ref('')\\n\\nonMounted(() => {\\n  console.log(formRef.value)      // элемент <form>\\n})\\n  \\nfunction handleSubmit() {\\n  console.log(\\\"Отправка формы\\\")\\n  console.log(formRef.value)      // можно работать с DOM directly\\n}\\n</script>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔥 Что можно делать, имея ref на форму?\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сброс формы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"formRef.value.reset()\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Программная отправка\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"formRef.value.submit()  // запускает нативный submit\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Получить значения полей (как в обычном JS)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const data = Object.fromEntries(new FormData(formRef.value))\\nconsole.log(data)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Фокус на поле формы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"formRef.value.querySelector('input').focus()\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Валидация\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"if (!formRef.value.checkValidity()) {\\n  console.log(\\\"Форма невалидна\\\")\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"✅ 2. Использование ref в Options API\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<form ref=\\\"myForm\\\" @submit.prevent=\\\"submitForm\\\">\\n  <input v-model=\\\"name\\\">\\n</form>\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"export default {\\n  data() {\\n    return { name: '' }\\n  },\\n  methods: {\\n    submitForm() {\\n      console.log(this.$refs.myForm) // DOM-форма\\n    }\\n  },\\n  mounted() {\\n    console.log(this.$refs.myForm)   // доступно здесь\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Важные правила\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" доступен только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после mounted\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mounted()\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"null\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" — это прямой доступ к DOM\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Vue не препятствует нативным действиям над формой.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✔️ Можно использовать ref как на форме, так и на её поле\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input ref=\\\"emailInput\\\">\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"emailInput.value.focus()\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🧪 Пример полной обработки формы через ref\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<template>\\n  <form ref=\\\"formRef\\\" @submit.prevent=\\\"onSubmit\\\">\\n    <input name=\\\"email\\\" v-model=\\\"email\\\">\\n    <input name=\\\"password\\\" v-model=\\\"password\\\">\\n    <button type=\\\"submit\\\">Login</button>\\n  </form>\\n</template>\\n\\n<script setup>\\nimport { ref } from 'vue'\\n\\nconst email = ref('')\\nconst password = ref('')\\nconst formRef = ref(null)\\n\\nfunction onSubmit() {\\n  const formData = new FormData(formRef.value)\\n  console.log(Object.fromEntries(formData))\\n}\\n</script>\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:23:29.219Z",
+        "updatedAt": "2025-11-27T10:23:29.219Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое $emit?",
+        "id": 2920,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как использовать reactive для формы?",
+        "id": 2922,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2922,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\" для формы?\"}]}]}",
+        "title": "Как использовать reactive для формы?",
+        "order": 60712,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\" удобно использовать для формы, когда у тебя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"много полей\"},{\"type\":\"text\",\"text\":\", и ты хочешь хранить их в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одном объекте\"},{\"type\":\"text\",\"text\":\", а не десятке отдельных \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще всего так:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Делаем один \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"-объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"form\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", привязываем его поля через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" и работаем с ним как с обычным JS-объектом.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Базовый пример формы с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"vue\"},\"content\":[{\"type\":\"text\",\"text\":\"<script setup>\\nimport { reactive } from 'vue'\\n\\nconst form = reactive({\\n  name: '',\\n  email: '',\\n  age: null,\\n  agree: false,\\n})\\n  \\nfunction submit() {\\n  console.log('Отправка формы:', { ...form })\\n}\\n</script>\\n\\n<template>\\n  <form @submit.prevent=\\\"submit\\\">\\n    <input v-model=\\\"form.name\\\"  placeholder=\\\"Имя\\\" />\\n    <input v-model=\\\"form.email\\\" placeholder=\\\"Email\\\" />\\n    <input v-model.number=\\\"form.age\\\" type=\\\"number\\\" placeholder=\\\"Возраст\\\" />\\n    <label>\\n      <input type=\\\"checkbox\\\" v-model=\\\"form.agree\\\" />\\n      Согласен с условиями\\n    </label>\\n\\n    <button type=\\\"submit\\\">Отправить</button>\\n  </form>\\n</template>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"form\"},{\"type\":\"text\",\"text\":\" — один реактивный объект.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В шаблоне просто пишем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"v-model=\\\"form.field\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Никаких \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".value\"},{\"type\":\"text\",\"text\":\" — с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\" работаем как с обычным объектом.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Сброс формы с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно делают так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const initialForm = {\\n  name: '',\\n  email: '',\\n  age: null,\\n  agree: false,\\n}\\n\\nconst form = reactive({ ...initialForm })\\n\\nfunction reset() {\\n  Object.assign(form, initialForm)\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button type=\\\"button\\\" @click=\\\"reset\\\">Сбросить</button>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"form\"},{\"type\":\"text\",\"text\":\" остаётся тем же реактивным объектом, но его поля возвращаются в исходное состояние.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Валидация с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно сделать объект ошибок:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const form = reactive({\\n  email: '',\\n  password: '',\\n})\\n\\nconst errors = reactive({\\n  email: '',\\n  password: '',\\n})\\n\\nfunction validate() {\\n  errors.email = ''\\n  errors.password = ''\\n\\n  if (!form.email.includes('@')) {\\n    errors.email = 'Неверный email'\\n  }\\n\\n  if (form.password.length < 6) {\\n    errors.password = 'Минимум 6 символов'\\n  }\\n\\n  return !errors.email && !errors.password\\n}\\n\\nfunction submit() {\\n  if (!validate()) return\\n  // отправка\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шаблон:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"form.email\\\" />\\n<p v-if=\\\"errors.email\\\" class=\\\"error\\\">{{ errors.email }}</p>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\" vs \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" для формы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда лучше \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"много полей формы → удобно держать в одном объекте;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нужно передать всю форму куда-то целиком (в функцию / API);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"есть вложенные структуры (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"address.city\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"profile.contacts.phone\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ref\"},{\"type\":\"text\",\"text\":\" тоже ок:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одно-два поля;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"простые компоненты, где объект избыточен.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Нюанс: не деструктурировать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reactive\"},{\"type\":\"text\",\"text\":\" в шаблоне\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если сделать так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const form = reactive({ name: '', email: '' })\\nconst { name, email } = form // ❌ так теряется реактивность\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То в шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"name\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реактивность уже не будет работать корректно.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правильно либо:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input v-model=\\\"form.name\\\" />\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"либо использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"toRefs(form)\"},{\"type\":\"text\",\"text\":\", если очень хочется деструктурировать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { reactive, toRefs } from 'vue'\\n\\nconst form = reactive({ name: '', email: '' })\\nconst { name, email } = toRefs(form) // ✅\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Наблюдение за формой (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"watch\"},{\"type\":\"text\",\"text\":\")\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, автосохранение черновика:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"import { reactive, watch } from 'vue'\\n\\nconst form = reactive({\\n  title: '',\\n  content: '',\\n})\\n\\nwatch(\\n  () => ({ ...form }), // создаём новый объект, чтобы watch видел изменения\\n  (val) => {\\n    console.log('Сохраняем черновик', val)\\n  },\\n  { deep: true }\\n)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 93,
+        "createdAt": "2025-11-27T10:25:05.091Z",
+        "updatedAt": "2025-11-27T10:25:05.091Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 93,
+          "title": "Формы и события",
+          "directions": [
+            {
+              "categoryId": 93,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как использовать ref для формы?",
+        "id": 2921,
+        "premium": false,
+        "category": {
+          "id": 93,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Composition API?",
+        "id": 2923,
+        "premium": false,
+        "category": {
+          "id": 94,
+          "parent": {
+            "title": "Vue",
+            "id": 6,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

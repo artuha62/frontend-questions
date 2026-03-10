@@ -1,0 +1,607 @@
+{
+  "category": {
+    "id": 162,
+    "title": "Interface Segregation Principle",
+    "description": " ",
+    "parentId": 147
+  },
+  "totalQuestions": 7,
+  "downloadedAt": "2026-03-10T09:46:30.006Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2832,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает принцип разделения интерфейсов?\"}]}]}",
+        "title": "Что означает принцип разделения интерфейсов?",
+        "order": 440300,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип разделения интерфейсов (Interface Segregation Principle, ISP) означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"клиенты не должны зависеть от интерфейсов, которые они не используют\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть принципа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейс должен быть небольшим и специализированным.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс заставляет реализовывать методы, которые клиенту не нужны, — он слишком “толстый” и нарушает ISP.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблема “жирных” интерфейсов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейс содержит много несвязанных методов, реализация вынуждена поддерживать функциональность, которая ей не нужна.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это приводит к:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ненужным зависимостям,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ложной связности,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хрупкости кода,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"частым изменениям из-за клиентов, которые используют другие методы.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что требует ISP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Разбивать большие интерфейсы на набор мелких, логически завершённых интерфейсов, каждый из которых отвечает за одну роль.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Клиент подключает только тот интерфейс, который ему нужен.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мотивация принципа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейсы слишком большие, любое изменение в одной части интерфейса приводит к изменению всех реализаций — даже тех, которые этот метод не используют.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это нарушает стабильность и увеличивает связанность.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевая идея\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Лучше иметь несколько маленьких интерфейсов (IPrinter, IScanner), чем один большой (IMachine с пятью методами), который обязателен для всех.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP требует создавать небольшие, целевые интерфейсы, чтобы клиенты зависели только от тех методов, которые действительно используют, что уменьшает связанность и повышает гибкость системы.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T07:52:53.323Z",
+        "updatedAt": "2025-11-13T07:52:53.323Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Приведите Пример соблюдения LSP",
+        "id": 2831,
+        "premium": false,
+        "category": {
+          "id": 161,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему “толстые” интерфейсы вредны?",
+        "id": 2833,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2833,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему “толстые” интерфейсы вредны?\"}]}]}",
+        "title": "Почему “толстые” интерфейсы вредны?",
+        "order": 440301,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Толстые” интерфейсы вредны потому, что они создают ненужные зависимости и делают систему хрупкой, сложно расширяемой и плохо тестируемой.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиенты зависят от методов, которые им не нужны\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс содержит 10 методов, а клиент использует только 1–2, он вынужден зависеть от всей десятки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Любое изменение в этих методах затронет клиента, хотя функционально он к ним не относится.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это повышает связанность и нарушает устойчивость системы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Реализации вынуждены поддерживать лишнее поведение\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Класс, который реализует “толстый” интерфейс, должен реализовывать методы, которые ему не нужны.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Часто эти методы либо пустые, либо заглушки — это прямой признак нарушения ISP.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такой код трудно поддерживать и тестировать, потому что часть поведения бессмысленна.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменения в интерфейсе приводят к массовым изменениям в коде\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в большой интерфейс добавляется новый метод, все реализации обязаны его реализовать.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Даже те, которым он совсем не нужен.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это создаёт каскад изменений по всей системе.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уменьшается переиспользуемость\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Толстый интерфейс трудно использовать повторно — он привязан к слишком большому набору методов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такое API становится негибким и перегруженным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложнее тестировать отдельные модули\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейс содержит десяток методов, тестируемый объект либо:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"требует множество моков,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"либо тесты вынуждены учитывать методы, которые не относятся к сценарию тестирования.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это усложняет и перегружает тестовую среду.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нарушается принцип единственной ответственности (SRP)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Толстый интерфейс почти всегда содержит методы, относящиеся к разным зонам ответственности.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это ведёт к путанице и непредсказуемому поведению.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Толстые интерфейсы вредны, потому что увеличивают связанность, усложняют поддержку, требуют лишнего кода, создают каскад изменений и делают систему хрупкой. Принцип ISP предотвращает эти проблемы, заставляя интерфейсы быть маленькими и конкретными.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T07:53:09.873Z",
+        "updatedAt": "2025-11-13T07:53:09.873Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает принцип разделения интерфейсов?",
+        "id": 2832,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Приведите пример нарушения ISP",
+        "id": 2834,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2834,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приведите пример нарушения ISP\"}]}]}",
+        "title": "Приведите пример нарушения ISP",
+        "order": 440302,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример нарушения ISP возникает тогда, когда один интерфейс заставляет разные классы реализовывать методы, которые им не нужны. Классический пример — устройство «многофункционального принтера».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"“Толстый” интерфейс — нарушение ISP\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class IMultiFunctionDevice:\\n    def print(self, document):\\n        pass\\n\\n    def scan(self, document):\\n        pass\\n\\n    def fax(self, document):\\n        pass\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Проблема\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любой класс, реализующий этот интерфейс, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обязан\"},{\"type\":\"text\",\"text\":\" поддерживать все три метода, даже если ему нужны только один или два.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Реализация, которая нарушает ISP\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class SimplePrinter(IMultiFunctionDevice):\\n    def print(self, document):\\n        print(\\\"Печать документа\\\")\\n\\n    def scan(self, document):\\n        raise NotImplementedError(\\\"Этот принтер не умеет сканировать\\\")\\n\\n    def fax(self, document):\\n        raise NotImplementedError(\\\"Этот принтер не умеет отправлять факсы\\\")\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Почему это нарушение ISP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс вынужден реализовывать методы, которые ему не нужны\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SimplePrinter не умеет ни сканировать, ни отправлять факсы — но интерфейс заставляет его иметь эти методы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лишние зависимости\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Клиент, которому нужна только печать, теперь зависит от интерфейса, содержащего методы сканирования и факса.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменение интерфейса ломает систему\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если добавить новый метод, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"copy()\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— придётся менять все реализации, даже те, которым копирование не нужно.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пустые и “вредные” методы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Методы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"scan()\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fax()\"},{\"type\":\"text\",\"text\":\" в классе являются по сути бесполезными заглушками и ведут к ошибкам при вызове.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"IMultiFunctionDevice — типичный «толстый» интерфейс.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SimplePrinter нарушает ISP, потому что вынужден поддерживать функциональность, которая ему не нужна, что приводит к хрупкому и негибкому дизайну.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T07:53:31.614Z",
+        "updatedAt": "2025-11-13T07:53:31.614Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему “толстые” интерфейсы вредны?",
+        "id": 2833,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как ISP связан с SRP?",
+        "id": 2835,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2835,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как ISP связан с SRP?\"}]}]}",
+        "title": "Как ISP связан с SRP?",
+        "order": 440303,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP связан с SRP потому, что оба принципа требуют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разделять обязанности\"},{\"type\":\"text\",\"text\":\", только делают это на разных уровнях — SRP внутри классов, а ISP внутри интерфейсов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SRP делит ответственность внутри класса\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Принцип единственной ответственности говорит:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Класс должен иметь одну обязанность и одну причину для изменения.»\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть он запрещает помещать в один класс разные роли.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP делит ответственность внутри интерфейса\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Принцип разделения интерфейсов говорит:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Клиенты не должны зависеть от методов, которые они не используют.»\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть он запрещает помещать в один интерфейс разные роли.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оба принципа борются с “слипанием” функциональности\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP предотвращает появление “толстых классов”.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP предотвращает появление “толстых интерфейсов”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В обоих случаях речь о чрезмерной концентрации несвязанных обязанностей в одном месте.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нарушение ISP почти всегда ведёт к нарушению SRP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если класс реализует “толстый” интерфейс, он вынужден иметь методы, которые ему не нужны.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Значит, у него появляются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лишние обязанности\"},{\"type\":\"text\",\"text\":\" → прямое нарушение SRP.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оба принципа уменьшают связанность и повышают гибкость\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP делает классы маленькими и предсказуемыми.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP делает интерфейсы маленькими и предсказуемыми.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Результат одинаковый: легко менять одно без затрагивания другого.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оба принципа требуют тематической фокусировки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SRP — фокус внутри класса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ISP — фокус внутри интерфейса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В идеале каждый интерфейс отражает одну “роль”, а каждый класс — одну “ответственность”.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP — это SRP, применённый к интерфейсам.\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оба принципа направлены на разделение обязанностей, уменьшение связанности и повышение устойчивости системы.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T08:11:25.924Z",
+        "updatedAt": "2025-11-13T08:11:25.924Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Приведите пример нарушения ISP",
+        "id": 2834,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему ISP упрощает рефакторинг?",
+        "id": 2836,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2836,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему ISP упрощает рефакторинг?\"}]}]}",
+        "title": "Почему ISP упрощает рефакторинг?",
+        "order": 440304,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP упрощает рефакторинг потому, что разделённые, маленькие интерфейсы создают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"локальные зоны изменений\"},{\"type\":\"text\",\"text\":\" и устраняют каскадные модификации, которые обычно возникают при работе с “толстыми” интерфейсами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше мест, куда нужно вносить изменения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейс маленький и специализированный, его изменение затрагивает только те реализации, которые действительно используют этот контракт.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"“Толстый” интерфейс → десятки зависимых классов → один модифицированный метод ломает весь проект.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Более прозрачная архитектура\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Маленькие интерфейсы отражают чёткие роли (“печатает”, “сканирует”, “логирует”).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При рефакторинге легко определить, какой участок системы за что отвечает.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"С “толстыми” интерфейсами приходится разбираться, какая часть относится к какой ответственности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще переиспользовать и подменять реализации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс небольшой, можно легко заменить одну реализацию на другую, не ломая клиентский код.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это особенно важно при рефакторинге архитектуры или выносе функциональности в отдельные сервисы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Избегание ненужной функциональности в классах\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда класс реализует только нужные интерфейсы, внутри него нет “лишнего” кода.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это уменьшает вероятность ошибок при его переписывании.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локализация изменений\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Маленькие интерфейсы означает, что изменение в одной функциональной зоне не затрагивает другую.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, изменение логирования не должно менять интерфейс и классы, отвечающие за сетевое API.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стабильные контракты\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс слишком крупный, его изменение происходит часто — каждая команда или функциональность влияет на него.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейсы маленькие, они стабильнее, а стабильные контракты — основа безопасного рефакторинга.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощает декомпозицию при переносе в микросервисы или модули\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Разделённые интерфейсы легче выделять в отдельные модули — каждый отвечает за свою “микро-функцию”.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP упрощает рефакторинг, потому что сокращает масштаб изменений, делает архитектуру более ясной, уменьшает связанные зависимости и позволяет менять части системы изолированно, не касаясь всего проекта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T08:11:42.534Z",
+        "updatedAt": "2025-11-13T08:11:42.534Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как ISP связан с SRP?",
+        "id": 2835,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "id": 2837,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2837,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как ISP повышает гибкость архитектуры?\"}]}]}",
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "order": 440305,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP повышает гибкость архитектуры потому, что заставляет систему зависеть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от небольших, чётких и изолированных интерфейсов\"},{\"type\":\"text\",\"text\":\", а не от перегруженных, взаимозависимых контрактов. Это делает компоненты более свободными, заменяемыми и легко комбинируемыми.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компоненты могут использовать только то, что им действительно нужно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда класс зависит только от одного маленького интерфейса, он не привязан к лишним методам или дополнительному поведению.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это позволяет подменять реализацию без риска сломать клиентский код и без необходимости тянуть за собой “балласт” других методов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Легко комбинировать разные роли\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Система может построить объект из нескольких интерфейсов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IPrinter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IScanner\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IFax\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такой объект может реализовать только те роли, которые ему нужны.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это обеспечивает модульную архитектуру, где функциональность складывается как «конструктор».\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уменьшается связанность между модулями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс маленький, клиенты видят только небольшой фрагмент поведения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает coupling: изменение в одном интерфейсе не тянет изменения в десятки связанных классов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощается расширение функциональности без модификаций существующего кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Добавление нового поведения — это создание нового маленького интерфейса или новой реализации старого.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Остальная система остаётся нетронутой.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это делает архитектуру гибкой для развития.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждый компонент можно развивать независимо\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейсы разделены по ролям, можно улучшить, переписать или заменить реализацию одной части системы, не затрагивая другие.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это особенно важно в больших проектах и микросервисах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиенты не страдают от ненужных изменений\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в маленький интерфейс добавляется метод, он затронет минимум клиентов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Толстый интерфейс затрагивает всех.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ISP уменьшает эту зависимость и делает изменения безопаснее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Позволяет использовать разные стратегии поведения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейсы по ролям облегчают применение паттернов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Strategy\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Adapter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Decorator\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Proxy\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это увеличивает гибкость за счёт лёгкой подмены поведения в рантайме.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP повышает гибкость архитектуры тем, что дробит большие интерфейсы на маленькие, роль-ориентированные контракты. Это снижает связанность, повышает заменяемость компонентов, облегчает расширение и делает систему модульной и устойчивой к изменениям.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T08:11:59.795Z",
+        "updatedAt": "2025-11-13T08:11:59.795Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему ISP упрощает рефакторинг?",
+        "id": 2836,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "id": 2838,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2838,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как ISP повышает гибкость архитектуры?\"}]}]}",
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "order": 440306,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ISP повышает гибкость архитектуры потому, что заставляет систему зависеть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от небольших, чётких и изолированных интерфейсов\"},{\"type\":\"text\",\"text\":\", а не от перегруженных, взаимозависимых контрактов. Это делает компоненты более свободными, заменяемыми и легко комбинируемыми.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компоненты могут использовать только то, что им действительно нужно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда класс зависит только от одного маленького интерфейса, он не привязан к лишним методам или дополнительному поведению.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это позволяет подменять реализацию без риска сломать клиентский код и без необходимости тянуть за собой “балласт” других методов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Легко комбинировать разные роли\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Система может построить объект из нескольких интерфейсов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IPrinter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IScanner\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"IFax\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такой объект может реализовать только те роли, которые ему нужны.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это обеспечивает модульную архитектуру, где функциональность складывается как «конструктор».\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уменьшается связанность между модулями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если интерфейс маленький, клиенты видят только небольшой фрагмент поведения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает coupling: изменение в одном интерфейсе не тянет изменения в десятки связанных классов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощается расширение функциональности без модификаций существующего кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Добавление нового поведения — это создание нового маленького интерфейса или новой реализации старого.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Остальная система остаётся нетронутой.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это делает архитектуру гибкой для развития.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждый компонент можно развивать независимо\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда интерфейсы разделены по ролям, можно улучшить, переписать или заменить реализацию одной части системы, не затрагивая другие.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это особенно важно в больших проектах и микросервисах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиенты не страдают от ненужных изменений\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в маленький интерфейс добавляется метод, он затронет минимум клиентов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Толстый интерфейс затрагивает всех.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ISP уменьшает эту зависимость и делает изменения безопаснее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Позволяет использовать разные стратегии поведения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейсы по ролям облегчают применение паттернов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Strategy\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Adapter\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Decorator\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Proxy\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это увеличивает гибкость за счёт лёгкой подмены поведения в рантайме.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ISP повышает гибкость архитектуры тем, что дробит большие интерфейсы на маленькие, роль-ориентированные контракты. Это снижает связанность, повышает заменяемость компонентов, облегчает расширение и делает систему модульной и устойчивой к изменениям.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 162,
+        "createdAt": "2025-11-13T08:13:33.914Z",
+        "updatedAt": "2025-11-13T08:13:33.914Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 162,
+          "title": "Interface Segregation Principle",
+          "directions": [
+            {
+              "categoryId": 162,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как ISP повышает гибкость архитектуры?",
+        "id": 2837,
+        "premium": false,
+        "category": {
+          "id": 162,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает принцип Dependency Inversion?",
+        "id": 2839,
+        "premium": false,
+        "category": {
+          "id": 163,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

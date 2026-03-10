@@ -1,0 +1,607 @@
+{
+  "category": {
+    "id": 159,
+    "title": "Single Responsibility Principle",
+    "description": " ",
+    "parentId": 147
+  },
+  "totalQuestions": 7,
+  "downloadedAt": "2026-03-10T09:46:10.126Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2812,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает принцип единственной ответственности?\"}]}]}",
+        "title": "Что означает принцип единственной ответственности?",
+        "order": 440000,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип единственной ответственности (Single Responsibility Principle, SRP) означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"класс, модуль или функция должны иметь только одну причину для изменения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть SRP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждый компонент системы должен отвечать за одну логически цельную задачу. Если у класса появляется больше одной ответственности — он становится сложнее, менее предсказуемым и труднее тестируемым.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Причина изменения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Под «единственной причиной для изменения» понимают то, что если два разных аспекта логики заставляют переписывать один и тот же класс, значит, у него две ответственности. Например: изменение бизнес-логики и изменение формата логов — разные причины.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем это нужно\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упрощает поддержку кода, потому что изменение в одной части не ломает другую.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Делает код легче тестируемым — компонент фокусируется на одном поведении.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Уменьшает связность — изменения в бизнес-правилах не требуют переписывать инфраструктурный код.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример нарушения SRP\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Класс \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UserService\"},{\"type\":\"text\",\"text\":\", который одновременно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаёт пользователя,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отправляет email-уведомление,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пишет запись в лог.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Такие обязанности относятся к разным доменам: бизнес-логика, коммуникация, логирование.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как выглядит корректно\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо одного \\\"большого\\\" класса:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UserCreator\"},{\"type\":\"text\",\"text\":\" — отвечает только за создание пользователя,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"EmailNotifier\"},{\"type\":\"text\",\"text\":\" — только за отправку писем,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Logger\"},{\"type\":\"text\",\"text\":\" — только за логирование.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тогда изменение email-шаблона, например, никак не затронет создание пользователя.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:46:22.066Z",
+        "updatedAt": "2025-11-13T07:46:22.066Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое rate limiting?",
+        "id": 7760,
+        "premium": false,
+        "category": {
+          "id": 307,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как определить, что класс или модуль нарушает SRP?",
+        "id": 2813,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2813,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как определить, что класс или модуль нарушает SRP?\"}]}]}",
+        "title": "Как определить, что класс или модуль нарушает SRP?",
+        "order": 440001,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нарушение SRP определяется через анализ того, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сколько разных причин может привести к изменению одного и того же класса или модуля\"},{\"type\":\"text\",\"text\":\". Основные признаки следующие:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс выполняет логически разные задачи\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если внутри одного класса сочетаются операции, относящиеся к разным доменам — например, бизнес-логика, работа с сетью и логирование — это показатель, что у него несколько ответственностей.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменения в разных областях системы затрагивают один и тот же класс\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если класс приходится менять при:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменении бизнес-правил,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменении требований к отчётности,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменении формата ввода/вывода,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— значит, у него несколько “причин для изменения”.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Методы не связаны единой концепцией\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда методы класса не объединяет одна цель. Например, в одном классе есть и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"calculatePrice()\"},{\"type\":\"text\",\"text\":\", и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"saveToDatabase()\"},{\"type\":\"text\",\"text\":\". Это разные зоны ответственности: расчёт и хранение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс начинает разрастаться, появляются условности\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Частые признаки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"много \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if/else\"},{\"type\":\"text\",\"text\":\" для разных вариантов поведения,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"множество полей для «разных задач»,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"необходимость “размышлять” над тем, что этот класс вообще делает.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это значит, класс пытается решать больше, чем одну проблему.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложно написать изолированные тесты\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если тестирование класса требует мокать множество несвязанных зависимостей (БД, почта, логгер), значит, он отвечает за слишком многое.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Название класса становится слишком широким\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда название типа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Manager\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Processor\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Helper\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Utils\"},{\"type\":\"text\",\"text\":\", «сервисы на все случаи жизни» — это почти всегда нарушение SRP, потому что класс не описывает одну роль.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти признаки позволяют точно определить, что один компонент берёт на себя больше, чем одну ответственность.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:46:38.098Z",
+        "updatedAt": "2025-11-13T07:46:38.098Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает принцип единственной ответственности?",
+        "id": 2812,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему SRP упрощает поддержку кода?",
+        "id": 2814,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2814,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему SRP упрощает поддержку кода?\"}]}]}",
+        "title": "Почему SRP упрощает поддержку кода?",
+        "order": 440002,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP упрощает поддержку кода, потому что устраняет пересечение разных логик внутри одного места, и это снижает вероятность ошибок при изменениях.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменение одной части не ломает другую\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда в классе одна ответственность, модификация относится только к одному аспекту поведения. Не возникает ситуации, что правка бизнес-логики случайно ломает работу с файлами, сетью или логированием.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Код проще предсказать и анализировать\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Класс, который делает одно, имеет более узкое и чёткое поведение. Разработчику легче понять, что происходит, потому что нет смешивания несвязанных задач. Это снижает когнитивную нагрузку — проще читать, проще вносить изменения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Снижается объём кода, который нужно держать в голове\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо одного «комбайна» на сотни строк появляется несколько небольших и чётко разделённых модулей. Работа ведётся локально: правка в одном модуле не требует изучать весь остальной код.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тестирование становится легче\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Модуль с одной обязанностью имеет меньше зависимостей. Его можно тестировать изолированно, без сложной подготовки окружения. Чем проще тест, тем быстрее выявляются ошибки и тем менее хрупкой становится система.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модули легче переиспользовать\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чистые компоненты с одной задачей проще применять в других частях проекта. Это уменьшает дублирование и делает архитектуру гибче.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменения распределяются по отдельным зонам\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда в системе появляются новые требования, их проще внедрить, потому что функциональность разбита на независимые блоки. Изменения точечные, а не глобальные.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти факторы вместе делают код более стабильным, прозрачным и предсказуемым при любых модификациях.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:47:02.846Z",
+        "updatedAt": "2025-11-13T07:47:02.846Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как определить, что класс или модуль нарушает SRP?",
+        "id": 2813,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как SRP связан с понятиями “cohesion” и “coupling”?",
+        "id": 2815,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2815,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как SRP связан с понятиями “cohesion” и “coupling”?\"}]}]}",
+        "title": "Как SRP связан с понятиями “cohesion” и “coupling”?",
+        "order": 440003,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP напрямую связан с понятиями \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связности (cohesion)\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связанности (coupling)\"},{\"type\":\"text\",\"text\":\", потому что он усиливает первое и уменьшает второе.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Cohesion — внутренняя связность модуля\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Высокая связность означает, что все элементы класса логически относятся к одной задаче.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SRP стремится именно к этому: один модуль — одна ответственность.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если ответственность одна, методы, поля и логика естественно группируются вокруг общей цели — связность растёт.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Coupling — зависимость между модулями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Низкая связанность означает, что изменяя один модуль, мы не вынуждены менять другие.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда класс имеет несколько обязанностей, он тянет к себе множество разнородных зависимостей: БД, API, логи, файл-систему. Это повышает coupling.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Применение SRP разделяет такие обязанности по отдельным компонентам и уменьшает количество зависимостей каждого — значит, уменьшает coupling.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Связь понятий\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP → повышает cohesion, потому что модуль становится тематически цельным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP → уменьшает coupling, потому что каждый модуль зависит только от того, что относится к его конкретной задаче.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Результат для архитектуры\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Более высокая связность и более низкая связанность ведут к улучшению поддерживаемости, модульности и тестируемости системы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таким образом, SRP — это практический механизм достижения высокой cohesion и низкого coupling в архитектуре.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:47:22.409Z",
+        "updatedAt": "2025-11-13T07:47:22.409Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему SRP упрощает поддержку кода?",
+        "id": 2814,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Приведи пример нарушения SRP",
+        "id": 2816,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2816,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приведи пример нарушения SRP\"}]}]}",
+        "title": "Приведи пример нарушения SRP",
+        "order": 440004,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нарушение SRP возникает, когда один класс берёт на себя разные обязанности, которые относятся к разным слоям или аспектам системы. Пример:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример класса, нарушающего SRP:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderService:\\n    def create_order(self, order_data):\\n        # бизнес-логика создания заказа\\n        self._validate(order_data)\\n        self._save_to_db(order_data)\\n\\n        # отправка уведомления клиенту\\n        self._send_email(order_data[\\\"email\\\"])\\n\\n        # запись в лог-файл\\n        with open(\\\"orders.log\\\", \\\"a\\\") as f:\\n            f.write(f\\\"Order created: {order_data}\\\\n\\\")\\n\\n    def _validate(self, data):\\n        ...\\n\\n    def _save_to_db(self, data):\\n        ...\\n\\n    def _send_email(self, email):\\n        ...\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разбор нарушения:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бизнес-логика\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Методы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"create_order\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_validate\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_save_to_db\"},{\"type\":\"text\",\"text\":\" относятся к домену «заказы».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уведомления\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Метод \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_send_email\"},{\"type\":\"text\",\"text\":\" относится к коммуникациям — это другая ответственность.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Логирование\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Запись в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"orders.log\"},{\"type\":\"text\",\"text\":\" относится к инфраструктуре — третья ответственность.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В результате у класса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"три причины для изменения\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменился процесс создания заказа → нужно менять класс;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменился формат email-уведомлений → нужно менять тот же класс;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменились требования к логированию → нужно менять опять тот же класс.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это прямое нарушение SRP.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:47:46.225Z",
+        "updatedAt": "2025-11-13T07:47:46.225Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как SRP связан с понятиями “cohesion” и “coupling”?",
+        "id": 2815,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Приведи пример класса, соблюдающего SRP",
+        "id": 2817,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2817,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Приведи пример класса, соблюдающего SRP\"}]}]}",
+        "title": "Приведи пример класса, соблюдающего SRP",
+        "order": 440005,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Класс, соблюдающий SRP, решает только одну задачу и имеет только одну причину для изменения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже пример, где ответственность создания заказа выделена в отдельный класс, без логирования и уведомлений:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class OrderCreator:\\n    def __init__(self, repository):\\n        self.repository = repository\\n\\n    def create(self, order_data):\\n        self._validate(order_data)\\n        return self.repository.save(order_data)\\n\\n    def _validate(self, data):\\n        # проверка корректности данных заказа\\n        if \\\"email\\\" not in data or \\\"items\\\" not in data:\\n            raise ValueError(\\\"Некорректные данные заказа\\\")\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему этот класс соблюдает SRP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Единственная ответственность — создание заказа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он занимается только проверкой данных и сохранением заказа через переданный репозиторий.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Одна причина для изменения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Менять этот класс нужно только если изменяются правила создания или валидации заказа.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нет инфраструктурных обязанностей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он не отправляет письма, не пишет логи, не работает с внешними системами — всё это вне его зоны ответственности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Логика сфокусирована и легко тестируется\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Достаточно подменить репозиторий — и класс тестируется полностью изолированно.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Такой класс отражает суть SRP: одна задача → один модуль → одна причина для изменения.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:47:58.816Z",
+        "updatedAt": "2025-11-13T07:47:58.816Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Приведи пример нарушения SRP",
+        "id": 2816,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как SRP повышает модульность приложения?",
+        "id": 2818,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2818,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как SRP повышает модульность приложения?\"}]}]}",
+        "title": "Как SRP повышает модульность приложения?",
+        "order": 440006,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SRP повышает модульность приложения потому, что разделяет систему на небольшие самостоятельные компоненты, каждый из которых отвечает за один аспект поведения. Это делает архитектуру более гибкой и управляемой.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждый модуль становится автономным\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда класс отвечает только за одну задачу, он не зависит от множества несвязанных механизмов (логирование, UI, сеть, хранение).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Автономный модуль проще заменить, обновить или переработать — это прямое проявление модульности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компоненты легко комбинировать\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если каждый модуль представляет собой законченный строительный блок, их можно свободно соединять в разных комбинациях.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Приложение становится набором независимых элементов, а не монолитом, где всё переплетено.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Устраняется скрытая связанность между логически разными частями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда логика перемешана внутри одного класса, модули фактически “слипаются” — их нельзя изменить по отдельности.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SRP разрывает такие связи, создавая чёткие границы между функциональными зонами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Облегчается рефакторинг и расширение\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Модульность проявляется в том, что новую функциональность можно добавлять через новые классы, а не менять старые.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чем меньше причин модифицировать существующие модули, тем стабильнее система.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Функциональность можно переносить без переписывания\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"SRP-модули легко использовать в других частях проекта или даже в других проектах.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Повышенная переиспользуемость — ключевой признак хорошей модульности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чёткие контракты между частями системы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда модуль делает одно, его интерфейс становится простым и предсказуемым.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это уменьшает вероятность неправильного использования и снижает необходимость в сложной координации.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SRP повышает модульность, потому что превращает систему в набор маленьких, независимых, понятных и легко комбинируемых компонентов, из которых можно строить и изменять архитектуру без риска сломать всё остальное.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 159,
+        "createdAt": "2025-11-13T07:48:16.176Z",
+        "updatedAt": "2025-11-13T07:48:16.176Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 159,
+          "title": "Single Responsibility Principle",
+          "directions": [
+            {
+              "categoryId": 159,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Приведи пример класса, соблюдающего SRP",
+        "id": 2817,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает принцип открытости/закрытости?",
+        "id": 2819,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

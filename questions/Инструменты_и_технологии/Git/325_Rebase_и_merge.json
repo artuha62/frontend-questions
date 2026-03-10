@@ -1,0 +1,1032 @@
+{
+  "category": {
+    "id": 325,
+    "title": "Rebase и merge",
+    "description": " ",
+    "parentId": 317
+  },
+  "totalQuestions": 12,
+  "downloadedAt": "2026-03-10T10:10:43.881Z",
+  "questions": [
+    {
+      "current": {
+        "id": 11146,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое git merge?",
+        "order": 510600,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\" — это команда, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объединяет изменения из одной ветки в другую\"},{\"type\":\"text\",\"text\":\", сохраняя историю обеих веток.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Говоря просто:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Возьми всё, что было сделано в другой ветке, и добавь это в текущую».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Git обычно работают с ветками:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"master\"},{\"type\":\"text\",\"text\":\" — основная ветка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature/*\"},{\"type\":\"text\",\"text\":\" — ветки для новых фич\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"bugfix/*\"},{\"type\":\"text\",\"text\":\" — ветки для исправлений\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты работаешь в отдельной ветке, а когда всё готово — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сливаешь её обратно\"},{\"type\":\"text\",\"text\":\" в основную. Именно для этого и нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты находишься в ветке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хочешь влить изменения из ветки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature-login\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git checkout main\\ngit merge feature-login\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Результат:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все коммиты из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature-login\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"появляются в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"История веток \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохраняется\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит «под капотом»\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Находит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"общий коммит-предок\"},{\"type\":\"text\",\"text\":\" двух веток\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сравнивает изменения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет их\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммит\"},{\"type\":\"text\",\"text\":\" (если нужно)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Виды merge\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Fast-forward merge (быстрый merge)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не было новых коммитов\"},{\"type\":\"text\",\"text\":\", Git просто передвигает указатель:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n         \\\\\\n          D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После merge:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D---E (main)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ Без лишних коммитов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ Чистая история\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Merge commit (обычный merge)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если обе ветки развивались параллельно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---F (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отдельный merge-коммит\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---F---M (main)\\n     \\\\         /\\n      D---E---\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✔ Видно, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что была отдельная ветка\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✔ История максимально честная\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Конфликты при merge\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если изменения затрагивают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одни и те же строки\"},{\"type\":\"text\",\"text\":\", Git не знает, что выбрать.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git сообщает о конфликте\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты вручную выбираешь правильный вариант\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого делаешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git commit\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❗ Конфликты — это нормально, на собеседованиях это подчёркивают.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ Прост в использовании\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Безопасен\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Не переписывает историю\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Хорош для командной работы\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Минусы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ История может стать «шумной» (много merge-коммитов)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это команда для объединения веток, которая сохраняет историю и при необходимости создаёт merge-коммит. Она не переписывает коммиты и считается безопасной для общей работы.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:44:40.825Z",
+        "updatedAt": "2026-02-01T10:44:40.825Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как восстановить изменения из stash спустя время?",
+        "id": 10743,
+        "premium": false,
+        "category": {
+          "id": 323,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое git rebase?",
+        "id": 11147,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11147,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое git rebase?",
+        "order": 510601,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\" — это команда, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переносит коммиты одной ветки поверх другой\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"переписывая историю коммитов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Возьми мои коммиты и как будто я делал их не здесь, а поверх другой ветки».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" используют, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сделать историю \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"линейной и аккуратной\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"убрать лишние merge-коммиты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновить свою ветку последними изменениями из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Часто используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перед merge\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перед pull request\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Допустим:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"есть ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"есть ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature-login\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git checkout feature-login\\ngit rebase main\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git берёт коммиты из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature-login\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Временно их убирает\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перемещает ветку на последний коммит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применяет коммиты заново\"},{\"type\":\"text\",\"text\":\", один за другим\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Визуально\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До rebase:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После rebase:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D'---E' (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D'\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E'\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новые коммиты\"},{\"type\":\"text\",\"text\":\", а не те же самые!\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главное отличие от merge\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"добавляет\"},{\"type\":\"text\",\"text\":\" новый коммит и сохраняет историю\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переписывает\"},{\"type\":\"text\",\"text\":\" историю и делает её линейной\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Конфликты при rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликты возможны, и это нормально.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенность:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конфликты решаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по одному коммиту\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после решения:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase --continue\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если всё пошло плохо:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase --abort\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда rebase использовать нельзя\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нельзя делать rebase публичных веток\"},{\"type\":\"text\",\"text\":\", которые уже:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запушены\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используются другими людьми\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему?\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"rebase \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"меняет хэши коммитов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у других разработчиков история «сломается»\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 Золотое правило:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Rebase — только для своих локальных веток\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ Чистая линейная история\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Проще читать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git log\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Удобно обновлять feature-ветку\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Минусы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ Переписывает историю\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❌ Опасен при неправильном использовании\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❌ Требует понимания происходящего\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — это команда, которая переносит коммиты одной ветки поверх другой, переписывая историю, чтобы сделать её линейной и аккуратной. Используется только для локальных веток.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:45:20.897Z",
+        "updatedAt": "2026-02-01T10:45:20.897Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое git merge?",
+        "id": 11146,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чём основная разница между merge и rebase?",
+        "id": 11148,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11148,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В чём основная разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\"?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "title": "В чём основная разница между merge и rebase?",
+        "order": 510602,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основная разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в том, как они работают с историей коммитов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" сохраняет историю\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" переписывает историю\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Ключевая идея (очень важно для собеседования)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«объединяю ветки, как есть»\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«переписываю свои коммиты так, будто они были сделаны позже»\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Визуальное сравнение\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---F---M (main)\\n     \\\\         /\\n      D---E---\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммит\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"видно, что была отдельная ветка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история ветвится\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D'---E' (feature)\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммита нет\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история линейная\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"коммиты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\" стали \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новыми\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Главное отличие в одном абзаце\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Параметр\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"git merge\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"git rebase\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"История\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сохраняется\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Переписывается\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Merge-коммит\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да (обычно)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Безопасность\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Безопасен для общих веток\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Опасен для общих веток\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"История\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ветвистая\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Линейная\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликты\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один раз\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Возможны несколько раз\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Командная работа\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальная работа\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда что использовать\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Используй \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\", если:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"общая\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"код уже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запушен\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"важна полная история\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работаешь в команде\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\" — безопасный вариант по умолчанию\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Используй \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\", если:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только твоя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хочешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"аккуратную историю\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"готовишь код к merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновляешь feature-ветку из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" — для наведения порядка\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Популярная формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" объединяет ветки, сохраняя историю и создавая merge-коммит,\"},{\"type\":\"hardBreak\",\"marks\":[{\"type\":\"bold\"}]},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" переносит коммиты одной ветки поверх другой, переписывая историю и делая её линейной.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Золотое правило (часто спрашивают)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❗ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Никогда не делай rebase публичных веток\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❗ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Merge можно делать всегда\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:45:57.189Z",
+        "updatedAt": "2026-02-01T10:45:57.189Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое git rebase?",
+        "id": 11147,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что происходит с историей коммитов при merge?",
+        "id": 11149,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11149,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит с историей коммитов при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что происходит с историей коммитов при merge?",
+        "order": 510603,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\" история коммитов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не переписывается\"},{\"type\":\"text\",\"text\":\" — она \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохраняется такой, какой была\"},{\"type\":\"text\",\"text\":\", со всеми ветвлениями и коммитами.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 Это ключевой момент, который почти всегда хотят услышать на собеседовании.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что значит «история сохраняется»\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не изменяет существующие коммиты\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не меняет их хэши\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не меняет порядок внутри веток\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не удаляет старые коммиты\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"добавляет новые коммиты\"},{\"type\":\"text\",\"text\":\", если это нужно.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит история после merge\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ситуация 1: Fast-forward merge\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если основная ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не менялась\"},{\"type\":\"text\",\"text\":\", Git просто «передвигает указатель»:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n         \\\\\\n          D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После merge:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D---E (main)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"История линейная\"},{\"type\":\"text\",\"text\":\", никаких новых коммитов не появилось.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ситуация 2: Обычный merge (merge commit)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если обе ветки развивались параллельно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---F (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После merge Git создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммит\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---F---M (main)\\n     \\\\         /\\n      D---E---\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Коммит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"M\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"два родителя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"фиксирует факт объединения веток\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не меняет\"},{\"type\":\"text\",\"text\":\" старые коммиты\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что важно подчеркнуть на собеседовании\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не переписывает историю\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все коммиты остаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"оригинальными\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"merge-коммит показывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контекст разработки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история может быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нелинейной\"},{\"type\":\"text\",\"text\":\", но честной\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему это считается безопасным\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у других разработчиков \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ничего не ломается\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не возникает конфликтов хэшей\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"можно спокойно делать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" можно использовать для публичных веток\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ (если мало времени)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" история коммитов сохраняется: старые коммиты не изменяются, а при необходимости добавляется новый merge-коммит, который связывает ветки.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:46:37.895Z",
+        "updatedAt": "2026-02-01T10:46:37.895Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чём основная разница между merge и rebase?",
+        "id": 11148,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что происходит с историей коммитов при rebase?",
+        "id": 11150,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11150,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит с историей коммитов при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что происходит с историей коммитов при rebase?",
+        "order": 510604,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\" история коммитов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переписывается\"},{\"type\":\"text\",\"text\":\" — старые коммиты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заменяются новыми\"},{\"type\":\"text\",\"text\":\", даже если изменения в коде такие же.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самое главное\"},{\"type\":\"text\",\"text\":\", что нужно понимать про rebase.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что значит «переписывается история»\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты делаешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\", Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Берёт коммиты твоей ветки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Временно «убирает» их\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перемещает ветку на другой базовый коммит\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создаёт новые коммиты\"},{\"type\":\"text\",\"text\":\", применяя изменения заново\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Старые коммиты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перестают быть частью истории ветки\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Визуально\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D'---E' (feature)\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D'\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E'\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новые коммиты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хэши изменились\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"оригинальные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\" больше не используются\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что именно меняется\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Было\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стало\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммит D\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммит D'\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммит E\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммит E'\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Старые хэши\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Новые хэши\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ветвистая история\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Линейная история\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❗ Даже если код идентичен, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Git считает их разными коммитами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему это опасно для общих веток\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если ветка уже:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запушена\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется другими разработчиками\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у тебя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"другая история\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у коллег старая\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git не может автоматически их совместить\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Результат — конфликты и «сломанная» история.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как это формулируют на собеседовании\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" история переписывается: коммиты пересоздаются с новыми хэшами, из-за чего меняется последовательность истории.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И часто добавляют:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поэтому rebase нельзя делать для публичных веток.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы такого подхода\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"аккуратная, линейная история\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко читать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git log\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобно перед merge\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ (если совсем кратко)\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" переписывает историю коммитов: старые коммиты заменяются новыми с другими хэшами.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:47:15.275Z",
+        "updatedAt": "2026-02-01T10:47:15.275Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что происходит с историей коммитов при merge?",
+        "id": 11149,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое конфликт при merge?",
+        "id": 11152,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11152,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое конфликт при merge?\"}]}]}",
+        "title": "Что такое конфликт при merge?",
+        "order": 510605,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конфликт при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"text\":\" — это ситуация, когда Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не может автоматически объединить изменения\"},{\"type\":\"text\",\"text\":\", потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в двух ветках изменены одни и те же части кода\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Говоря просто:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Git не понимает, какую версию выбрать — и просит человека решить это вручную.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда возникает конфликт\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликт появляется, если:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двух ветках\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"были изменены \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одни и те же строки файла\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"после общего коммита-предка\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в ветке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\" строка изменена на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в ветке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"feature\"},{\"type\":\"text\",\"text\":\" эта же строка изменена на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git не может догадаться, что правильно.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит при конфликте\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты делаешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git merge feature\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"останавливает merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помечает файлы как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"conflicted\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"показывает сообщение о конфликте\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит конфликт в файле\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В конфликтующем файле ты увидишь что-то вроде:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"text\"},\"content\":[{\"type\":\"text\",\"text\":\"<<<<<<< HEAD\\nconsole.log(\\\"Hello from main\\\");\\n=======\\nconsole.log(\\\"Hello from feature\\\");\\n>>>>>>> feature\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"HEAD\"},{\"type\":\"text\",\"text\":\" — текущая ветка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ниже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"=======\"},{\"type\":\"text\",\"text\":\" — изменения из другой ветки\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что нужно сделать\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открыть файл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выбрать правильный вариант или объединить оба\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалить конфликтные маркеры (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<<<<<<<\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"=======\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\">>>>>>>\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сохранить файл\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Добавить файл в индекс:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git add file.js\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Завершить merge:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git commit\\n\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важно понимать\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конфликт — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"это не ошибка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git специально \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"останавливается\"},{\"type\":\"text\",\"text\":\", чтобы ты не потерял данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"без ручного решения merge не завершится\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Частый вопрос на собеседовании\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Можно ли избежать конфликтов?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Полностью — нет. Но можно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаще подтягивать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делать маленькие коммиты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не работать долго в отрыве от основной ветки\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конфликт при merge возникает, когда Git не может автоматически объединить изменения из разных веток, потому что они затрагивают одни и те же части кода, и требует ручного вмешательства.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:47:53.040Z",
+        "updatedAt": "2026-02-01T10:47:53.040Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что происходит с историей коммитов при rebase?",
+        "id": 11150,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое конфликт при rebase?",
+        "id": 11153,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11153,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое конфликт при rebase?\"}]}]}",
+        "title": "Что такое конфликт при rebase?",
+        "order": 510606,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конфликт при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"text\":\" — это ситуация, когда Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не может применить очередной коммит поверх новой базы\"},{\"type\":\"text\",\"text\":\", потому что изменения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конфликтуют с уже существующим кодом\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Git пытается «переиграть» твои коммиты один за другим, и на каком-то шаге они не сходятся с текущим состоянием ветки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда возникает конфликт при rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликт появляется, если:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты делаешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" на ветку, где код \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уже сильно изменился\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"твой коммит меняет те же строки, что и коммиты в новой базе\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 В отличие от merge, конфликт возникает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не сразу для всей ветки\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на конкретном коммите\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит во время rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты выполняешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase main\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"берёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"первый коммит\"},{\"type\":\"text\",\"text\":\" твоей ветки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пытается применить его поверх \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если не получается — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"останавливается на этом коммите\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ждёт, пока ты решишь конфликт\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит конфликт\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Файл выглядит так же, как и при merge:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"text\"},\"content\":[{\"type\":\"text\",\"text\":\"<<<<<<< HEAD\\nconsole.log(\\\"from main\\\");\\n=======\\nconsole.log(\\\"from feature commit\\\");\\n>>>>>>> commit_hash\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница — в контексте:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"HEAD\"},{\"type\":\"text\",\"text\":\" — новая база (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нижняя часть — изменения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конкретного коммита\"},{\"type\":\"text\",\"text\":\", который сейчас применяется\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как решается конфликт при rebase\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открываешь конфликтные файлы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Исправляешь код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Убираешь конфликтные маркеры\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Добавляешь файлы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git add file.js\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Продолжаешь rebase:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase --continue\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно отменить:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase --abort\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Ключевое отличие от конфликта при merge\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Merge\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Rebase\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликт решается один раз\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Конфликты могут быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на каждом коммите\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Решение → один \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git commit\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Решение → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --continue\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вся ветка сразу\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммиты по очереди\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему rebase кажется сложнее\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конфликтов может быть больше\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нужно понимать, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на каком коммите ты находишься\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко запутаться без опыта\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зато:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый конфликт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"локальный и логичный\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"итоговая история чище\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Конфликт при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" возникает, когда Git не может применить очередной коммит поверх новой базы, и требует вручную разрешить конфликт и продолжить rebase.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:48:46.551Z",
+        "updatedAt": "2026-02-01T10:48:46.551Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое конфликт при merge?",
+        "id": 11152,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что проще откатить: merge или rebase?",
+        "id": 11155,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11155,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что проще откатить: merge или rebase?\"}]}]}",
+        "title": "Что проще откатить: merge или rebase?",
+        "order": 510607,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"проще откатить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\", потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не переписывает историю\"},{\"type\":\"text\",\"text\":\" и (часто) добавляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один отдельный merge-коммит\"},{\"type\":\"text\",\"text\":\", который легко “ревертнуть”.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" же \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переписывает историю\"},{\"type\":\"text\",\"text\":\", и “откат” чаще означает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"возврат ветки на старое состояние/коммит\"},{\"type\":\"text\",\"text\":\", что требует аккуратности (особенно если уже был push).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему merge проще откатить\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Если merge уже закоммичен\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В истории появился отдельный merge-коммит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"M\"},{\"type\":\"text\",\"text\":\". Его можно безопасно отменить командой:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git revert -m 1 <hash_merge_commit>\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git создаст \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новый коммит\"},{\"type\":\"text\",\"text\":\", который отменит изменения, внесённые merge’ем.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"История останется целой.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это безопасно для веток, которые уже в общем репозитории.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Это любимый ответ на собеседовании: “merge откатывается через revert”.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему rebase сложнее откатить\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пока rebase идёт\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если rebase остановился на конфликте или ты передумал — легко:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git rebase --abort\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это действительно просто.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Но если rebase уже завершён\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"У тебя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новые коммиты с новыми хэшами\"},{\"type\":\"text\",\"text\":\". “Откатить” обычно значит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"найти, где ветка была до rebase (часто через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reflog\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вернуть ветку назад (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reset\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"И тут важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локально это ок\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"если ты уже запушил rebase\"},{\"type\":\"text\",\"text\":\", придётся делать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"force push\"},{\"type\":\"text\",\"text\":\", а это риск для команды\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Итог по ситуации\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще откатить merge\"},{\"type\":\"text\",\"text\":\", особенно в shared-ветках: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"revert\"},{\"type\":\"text\",\"text\":\" безопасен и понятен.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще “отменить” rebase, если он ещё не закончился\"},{\"type\":\"text\",\"text\":\": \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase --abort\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложнее всего\"},{\"type\":\"text\",\"text\":\" — откатить rebase \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"после push\"},{\"type\":\"text\",\"text\":\", потому что история уже переписана и надо действовать аккуратно.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткая формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Merge откатить проще: он сохраняет историю и обычно отменяется через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git revert\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" (в т.ч. merge-коммит). Rebase переписывает историю, поэтому откат после завершения (и особенно после push) сложнее и может потребовать reset/reflog и force push.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:50:00.464Z",
+        "updatedAt": "2026-02-01T10:50:00.464Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое конфликт при rebase?",
+        "id": 11153,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает git rebase --abort?",
+        "id": 11158,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11158,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает git rebase --abort?",
+        "order": 510608,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"},{\"type\":\"text\",\"text\":\" — это команда, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полностью отменяет текущий rebase\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"возвращает репозиторий в состояние, в котором он был до начала rebase\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Забудь, что я вообще начинал rebase, верни всё назад».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Команда работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только пока rebase ещё идёт\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возник конфликт\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты понял, что выбрал не ту ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"rebase пошёл не по плану\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если rebase уже \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"завершился\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--abort\"},{\"type\":\"text\",\"text\":\" не поможет.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что именно происходит при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--abort\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"прекращает процесс rebase\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отменяет все применённые в ходе rebase изменения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"HEAD\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущую ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"рабочую директорию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в состояние \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до команды \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Все новые «переигранные» коммиты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"исчезают\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Визуально\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До rebase:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Rebase начался, применился \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D'\"},{\"type\":\"text\",\"text\":\", но возник конфликт на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C---D' (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как будто rebase и не было.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что НЕ делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ не отменяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уже завершённый\"},{\"type\":\"text\",\"text\":\" rebase\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❌ не откатывает изменения, если ты уже вышел из rebase\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"❌ не влияет на другие ветки\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему это безопасно\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"локально\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не требует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не переписывает историю других веток\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"можно использовать без страха, пока rebase не завершён\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" отменяет текущий rebase и возвращает репозиторий в состояние до его начала. Используется, если во время rebase что-то пошло не так.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткая памятка\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"начать rebase → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase main\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"конфликт → правим код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"продолжить → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --continue\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передумал → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:50:42.213Z",
+        "updatedAt": "2026-02-01T10:50:42.213Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что проще откатить: merge или rebase?",
+        "id": 11155,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает git merge --abort?",
+        "id": 11159,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11159,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает git merge --abort?",
+        "order": 510609,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"},{\"type\":\"text\",\"text\":\" — это команда, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отменяет текущий merge\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"возвращает репозиторий в состояние до начала merge\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«Я начал merge, но передумал — откати всё, как будто merge не запускали».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Когда работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Команда работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только если merge не завершён\"},{\"type\":\"text\",\"text\":\", то есть:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"merge остановился из-за конфликтов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"merge-коммит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ещё не был создан\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если merge уже закоммичен — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--abort\"},{\"type\":\"text\",\"text\":\" не поможет.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge --abort\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отменяет процесс merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"убирает все изменения, появившиеся из-за merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"HEAD\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текущую ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"рабочую директорию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в состояние \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до команды \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Все конфликтные изменения пропадают.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Визуально\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До merge:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Merge начался, возник конфликт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n      ⚠ конфликт\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":null},\"content\":[{\"type\":\"text\",\"text\":\"A---B---C (main)\\n     \\\\\\n      D---E (feature)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как будто merge и не было.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Чем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge --abort\"},{\"type\":\"text\",\"text\":\" отличается от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase --abort\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Команда\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что отменяет\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Незавершённый merge\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase --abort\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Незавершённый rebase\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обе:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только во время процесса\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращают репозиторий в исходное состояние\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важные нюансы (любят спрашивать)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"},{\"type\":\"text\",\"text\":\" эквивалентен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git reset --merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не откатывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"завершённый\"},{\"type\":\"text\",\"text\":\" merge\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"безопасен для общих веток\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge --abort\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" отменяет текущий незавершённый merge и возвращает репозиторий в состояние до его начала. Используется при возникновении конфликтов, если нужно полностью отменить merge.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:51:17.887Z",
+        "updatedAt": "2026-02-01T10:51:17.887Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает git rebase --abort?",
+        "id": 11158,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что происходит по умолчанию при git pull?",
+        "id": 11161,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11161,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит по умолчанию при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что происходит по умолчанию при git pull?",
+        "order": 510610,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По умолчанию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"две операции подряд\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть Git:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"забирает изменения\"},{\"type\":\"text\",\"text\":\" из удалённого репозитория\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сливает их\"},{\"type\":\"text\",\"text\":\" в текущую локальную ветку через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Разберём по шагам\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты выполняешь:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git pull\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git делает следующее:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1️⃣ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивает новые коммиты с удалённого репозитория\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не трогает\"},{\"type\":\"text\",\"text\":\" твой рабочий код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновляет удалённые ссылки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin/main\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin/dev\"},{\"type\":\"text\",\"text\":\" и т.д.)\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2️⃣ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"берёт соответствующую удалённую ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сливает её в текущую локальную ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при необходимости создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммит\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Именно merge используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по умолчанию\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты находишься в ветке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git pull\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это эквивалентно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git fetch origin\\ngit merge origin/main\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит с историей\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не переписывается\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возможен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"merge-коммит\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если есть конфликты — Git остановится и попросит их решить\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важный момент (часто спрашивают)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" НЕ делает rebase по умолчанию\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если хочешь rebase, нужно явно указать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git pull --rebase\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или настроить это в конфиге.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"По умолчанию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" выполняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", а затем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git merge\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", сливая изменения из удалённой ветки в текущую локальную без переписывания истории.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:51:57.326Z",
+        "updatedAt": "2026-02-01T10:51:57.326Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает git merge --abort?",
+        "id": 11159,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли настроить git pull на rebase?",
+        "id": 11164,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 11164,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли настроить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" на rebase?\"}]}]}",
+        "title": "Можно ли настроить git pull на rebase?",
+        "order": 510611,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да, можно. Git умеет настроить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" так, чтобы он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по умолчанию делал rebase вместо merge\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Вариант 1: Включить rebase для всех репозиториев (глобально)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config --global pull.rebase true\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" будет эквивалентен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull --rebase\"},{\"type\":\"text\",\"text\":\" (в большинстве обычных случаев).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы проверить:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config --global --get pull.rebase\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Вариант 2: Включить rebase только в текущем репозитории\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config pull.rebase true\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это влияет только на текущий проект.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Вариант 3: Настроить rebase только для конкретной ветки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например, только для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config branch.main.rebase true\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь, когда ты находишься в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\" и делаешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\", будет rebase.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Полезная настройка: автопрятать локальные изменения во время rebase\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если у тебя часто есть незакоммиченные изменения, удобно:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config --global rebase.autoStash true\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда Git сам сделает stash перед rebase и вернёт изменения после.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как отключить (вернуть merge)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глобально:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config --global pull.rebase false\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Или удалить настройку:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git config --global --unset pull.rebase\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Формулировка для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Да, можно: настройкой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull.rebase=true\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" Git заставляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" делать rebase вместо merge. Это можно включить глобально, для репозитория или для конкретной ветки.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 325,
+        "createdAt": "2026-02-01T10:52:42.317Z",
+        "updatedAt": "2026-02-01T10:52:42.317Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 325,
+          "title": "Rebase и merge",
+          "directions": [
+            {
+              "categoryId": 325,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что происходит по умолчанию при git pull?",
+        "id": 11161,
+        "premium": false,
+        "category": {
+          "id": 325,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Git workflow?",
+        "id": 11170,
+        "premium": false,
+        "category": {
+          "id": 326,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

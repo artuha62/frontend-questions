@@ -1,0 +1,437 @@
+{
+  "category": {
+    "id": 318,
+    "title": "Основы Git",
+    "description": " ",
+    "parentId": 317
+  },
+  "totalQuestions": 5,
+  "downloadedAt": "2026-03-10T10:09:38.465Z",
+  "questions": [
+    {
+      "current": {
+        "id": 7516,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Git?\"}]}]}",
+        "title": "Что такое Git?",
+        "order": 510000,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Git\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"распределённая система контроля версий\"},{\"type\":\"text\",\"text\":\", которая используется для отслеживания изменений в коде, совместной работы над проектами и управления историей разработки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевая идея Git:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохраняет все изменения\"},{\"type\":\"text\",\"text\":\" файлов во времени;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"откатываться к любому состоянию проекта\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"даёт возможность \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нескольким разработчикам работать параллельно\"},{\"type\":\"text\",\"text\":\", не мешая друг другу.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Основные возможности Git:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📦 хранение истории изменений (коммиты);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🌿 работа с ветками (branching и merging);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔄 синхронизация локального репозитория с удалённым;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🛡️ безопасная разработка без риска потерять код.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"работает локально\"},{\"type\":\"text\",\"text\":\", а удалённые репозитории (например, GitHub, GitLab, Gitea) — это лишь надстройки для совместной работы.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 318,
+        "createdAt": "2025-12-28T16:14:21.339Z",
+        "updatedAt": "2025-12-28T16:14:21.339Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 318,
+          "title": "Основы Git",
+          "directions": [
+            {
+              "categoryId": 318,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какую роль играет registry в ci/cd?",
+        "id": 1914,
+        "premium": false,
+        "category": {
+          "id": 196,
+          "parent": {
+            "title": "Docker",
+            "id": 164,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какую проблему решает Git?",
+        "id": 7520,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7520,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какую проблему решает Git?\"}]}]}",
+        "title": "Какую проблему решает Git?",
+        "order": 510001,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Какие проблемы были \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"до Git\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ код хранился в файлах вида \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"final.js\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"final_v2.js\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"final_last.js\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ невозможно понять, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кто и зачем внёс изменение\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ сложно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"откатиться\"},{\"type\":\"text\",\"text\":\" к рабочей версии;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ одновременная работа нескольких разработчиков приводила к конфликтам;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"❌ высокая вероятность \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"потери кода\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Какие проблемы решает Git:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"1. История изменений\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git сохраняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждое состояние проекта\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"кто внёс изменения;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие именно файлы изменились;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"почему (commit message).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"2. Совместная работа\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Несколько разработчиков могут:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"параллельно\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создавать свои ветки;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"безопасно объединять изменения.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"3. Контроль и безопасность\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"легко \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"откатиться\"},{\"type\":\"text\",\"text\":\" к стабильной версии;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ошибки можно исправить без потери данных;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история изменений не стирается.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"4. Эксперименты без риска\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тестировать новые фичи в отдельных ветках;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не ломать основную версию проекта;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалять неудачные решения без последствий.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Git решает проблему контроля версий и командной разработки, позволяя безопасно отслеживать изменения, работать параллельно и управлять историей проекта.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 318,
+        "createdAt": "2025-12-28T16:16:10.858Z",
+        "updatedAt": "2025-12-28T16:16:10.858Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 318,
+          "title": "Основы Git",
+          "directions": [
+            {
+              "categoryId": 318,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Git?",
+        "id": 7516,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое репозиторий в Git?",
+        "id": 7523,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7523,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое репозиторий в Git?\"}]}]}",
+        "title": "Что такое репозиторий в Git?",
+        "order": 510002,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Репозиторий в Git\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хранилище проекта\"},{\"type\":\"text\",\"text\":\", в котором Git сохраняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"исходный код, историю изменений, ветки и служебные данные\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще говоря, репозиторий — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"папка с проектом, за которой следит Git\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что находится в репозитории:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📁 файлы проекта (код, конфиги, ресурсы);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🕒 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"история всех изменений\"},{\"type\":\"text\",\"text\":\" (коммиты);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🌿 ветки (branches);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🏷️ теги (tags);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ служебная директория \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".git\"},{\"type\":\"text\",\"text\":\" (сердце репозитория).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Виды репозиториев:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальный репозиторий\"},{\"type\":\"text\",\"text\":\" — хранится на вашем компьютере.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удалённый репозиторий\"},{\"type\":\"text\",\"text\":\" — находится на сервере (для совместной работы).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен репозиторий:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживать изменения кода;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работать в команде;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращаться к предыдущим версиям;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"безопасно экспериментировать с кодом.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Репозиторий — это место, где Git хранит проект и всю историю его изменений.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 318,
+        "createdAt": "2025-12-28T16:17:01.528Z",
+        "updatedAt": "2025-12-28T16:17:01.528Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 318,
+          "title": "Основы Git",
+          "directions": [
+            {
+              "categoryId": 318,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какую проблему решает Git?",
+        "id": 7520,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как Git хранит данные?",
+        "id": 7527,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7527,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как Git хранит данные?\"}]}]}",
+        "title": "Как Git хранит данные?",
+        "order": 510003,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git хранит данные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не как набор различий (diff’ов)\"},{\"type\":\"text\",\"text\":\", а как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снимки (snapshots) состояния проекта\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Ключевая идея\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый коммит — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полный снимок всех файлов проекта\"},{\"type\":\"text\",\"text\":\" на момент коммита.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если файл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не изменился\"},{\"type\":\"text\",\"text\":\", Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не дублирует его\"},{\"type\":\"text\",\"text\":\", а просто \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ссылается\"},{\"type\":\"text\",\"text\":\" на уже сохранённую версию.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Из чего состоят данные в Git\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git хранит всё в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объектов\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Blob\"},{\"type\":\"text\",\"text\":\" — содержимое файла\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хранит только данные файла, без имени и пути.\"}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Tree\"},{\"type\":\"text\",\"text\":\" — структура каталогов\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Связывает имена файлов и папок с blob’ами и другими tree.\"}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Commit\"},{\"type\":\"text\",\"text\":\" — снимок проекта\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит:\"}]}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ссылку на tree (состояние файлов),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ссылку(и) на родительские коммиты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автора, дату, сообщение.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Tag\"},{\"type\":\"text\",\"text\":\" — именованная ссылка\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно указывает на конкретный коммит (например, релиз).\"}]}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как Git экономит место\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неизменённые файлы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не копируются\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеширование (SHA-1 / SHA-256)\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одинаковое содержимое → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один и тот же объект\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему это важно\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚡ быстрые операции (commit, checkout, branch);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🛡️ целостность данных (любое изменение меняет хеш);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🌿 ветки — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"просто указатели на коммиты\"},{\"type\":\"text\",\"text\":\", а не копии кода.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Git хранит данные как набор снимков проекта, используя объекты (blob, tree, commit), а не как diff’ы между версиями.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 318,
+        "createdAt": "2025-12-28T16:18:32.844Z",
+        "updatedAt": "2025-12-28T16:18:32.844Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 318,
+          "title": "Основы Git",
+          "directions": [
+            {
+              "categoryId": 318,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое репозиторий в Git?",
+        "id": 7523,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое коммит с точки зрения Git?",
+        "id": 7531,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7531,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое коммит с точки зрения Git?\"}]}]}",
+        "title": "Что такое коммит с точки зрения Git?",
+        "order": 510004,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммит — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объект Git\"},{\"type\":\"text\",\"text\":\", который содержит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📦 ссылку на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"tree\"},{\"type\":\"text\",\"text\":\" (структуру файлов проекта);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔗 ссылку(и) на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"родительский коммит\"},{\"type\":\"text\",\"text\":\" (один или несколько);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👤 автора и коммитера;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🕒 дату и время;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📝 сообщение коммита;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔐 криптографический \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш\"},{\"type\":\"text\",\"text\":\" (SHA-1 / SHA-256).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что означает «снимок»\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый коммит фиксирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полное состояние проекта\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неизменённые файлы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переиспользуются по ссылке\"},{\"type\":\"text\",\"text\":\", а не копируются;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"коммиты образуют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"направленный ациклический граф (DAG)\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему коммит нельзя изменить\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хеш коммита вычисляется из его содержимого;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"любое изменение → новый хеш → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новый коммит\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"это гарантирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"целостность истории\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как Git использует коммиты\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ветка — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"указатель на последний коммит\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"HEAD\"},{\"type\":\"text\",\"text\":\" указывает на текущий коммит;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"merge — коммит с несколькими родителями.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Коротко для собеседования\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коммит — это неизменяемый объект Git, содержащий снимок проекта и ссылки на предыдущие коммиты.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 318,
+        "createdAt": "2025-12-28T16:19:46.134Z",
+        "updatedAt": "2025-12-28T16:19:46.134Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 318,
+          "title": "Основы Git",
+          "directions": [
+            {
+              "categoryId": 318,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как Git хранит данные?",
+        "id": 7527,
+        "premium": false,
+        "category": {
+          "id": 318,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как инициализировать git?",
+        "id": 7518,
+        "premium": false,
+        "category": {
+          "id": 319,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

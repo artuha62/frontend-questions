@@ -1,0 +1,607 @@
+{
+  "category": {
+    "id": 51,
+    "title": "Таблицы и списки",
+    "description": " ",
+    "parentId": 3
+  },
+  "totalQuestions": 7,
+  "downloadedAt": "2026-03-09T07:47:29.523Z",
+  "questions": [
+    {
+      "current": {
+        "id": 939,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие основные элементы составляют структуру таблицы?\"}]}]}",
+        "title": "Какие основные элементы составляют структуру таблицы?",
+        "order": 30900,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Структура таблицы в HTML состоит из нескольких основных элементов, каждый из которых отвечает за определённую часть таблицы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" — контейнер таблицы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основной тег\"},{\"type\":\"text\",\"text\":\", внутри которого располагаются все остальные элементы таблицы.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table> ... </table>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" — строка таблицы (table row)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждая строка таблицы заключается в тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Внутри неё находятся ячейки данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\") или заголовков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<tr>\\n  <td>Ячейка 1</td>\\n  <td>Ячейка 2</td>\\n</tr>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" — ячейка данных (table data)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обычных ячеек\"},{\"type\":\"text\",\"text\":\", содержащих текст, числа, изображения и т.д.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<td>Пример данных</td>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" — ячейка заголовка (table header)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заголовков столбцов или строк\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Текст в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" обычно выделяется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жирным\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"центрируется\"},{\"type\":\"text\",\"text\":\" по умолчанию.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<th>Название</th>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<thead>\"},{\"type\":\"text\",\"text\":\" — заголовок таблицы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит одну или несколько строк \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" с заголовками (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Помогает логически отделить “шапку” таблицы.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<thead>\\n  <tr>\\n    <th>Имя</th>\\n    <th>Возраст</th>\\n  </tr>\\n</thead>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"},{\"type\":\"text\",\"text\":\" — тело таблицы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит основные данные таблицы (строки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" с ячейками \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<tbody>\\n  <tr>\\n    <td>Анна</td>\\n    <td>25</td>\\n  </tr>\\n</tbody>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tfoot>\"},{\"type\":\"text\",\"text\":\" — нижняя часть таблицы (итоги)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для строк с итогами или примечаниями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Обычно располагается внизу, но браузеры могут визуально помещать его после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<tfoot>\\n  <tr>\\n    <td>Итого</td>\\n    <td>100</td>\\n  </tr>\\n</tfoot>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Итоговая структура:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table>\\n  <thead>\\n    <tr>\\n      <th>Товар</th>\\n      <th>Цена</th>\\n    </tr>\\n  </thead>\\n  <tbody>\\n    <tr>\\n      <td>Хлеб</td>\\n      <td>40 ₽</td>\\n    </tr>\\n    <tr>\\n      <td>Молоко</td>\\n      <td>70 ₽</td>\\n    </tr>\\n  </tbody>\\n  <tfoot>\\n    <tr>\\n      <td>Итого</td>\\n      <td>110 ₽</td>\\n    </tr>\\n  </tfoot>\\n</table>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Кратко:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вся таблица\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Строка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ячейка заголовка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычная ячейка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<thead>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Верхняя часть (заголовки)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные данные\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tfoot>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итоги/низ таблицы\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Основная структура таблицы в HTML состоит из:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<thead>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tfoot>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>/<td>\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Эти элементы формируют логически правильную и семантически понятную таблицу.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:46:49.754Z",
+        "updatedAt": "2025-10-18T10:46:49.754Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “sitemap” и как он связан с навигацией?",
+        "id": 935,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает тег <table>?",
+        "id": 940,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 940,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает тег <table>?\"}]}]}",
+        "title": "Что делает тег <table>?",
+        "order": 30901,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" в HTML используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания таблицы\"},{\"type\":\"text\",\"text\":\" — структуры, состоящей из строк и столбцов, в которых хранятся данные.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он является \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контейнером\"},{\"type\":\"text\",\"text\":\" для всех элементов таблицы: строк (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\"), ячеек (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\"), заголовков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\"), а также логических частей (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<thead>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tfoot>\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основная функция\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" группирует и отображает данные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в табличной форме\"},{\"type\":\"text\",\"text\":\" — как сетку, где строки и столбцы пересекаются в ячейках.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table>\\n  <tr>\\n    <th>Имя</th>\\n    <th>Возраст</th>\\n  </tr>\\n  <tr>\\n    <td>Анна</td>\\n    <td>25</td>\\n  </tr>\\n  <tr>\\n    <td>Иван</td>\\n    <td>30</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что происходит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" — создаёт таблицу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" — добавляет строку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" — делает ячейку заголовком (жирный шрифт, центрирование).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" — добавляет обычную ячейку с данными.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Атрибуты тега \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" (устаревшие, но встречаются)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"border\"},{\"type\":\"text\",\"text\":\" — добавляет рамку вокруг таблицы.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">...</table>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cellpadding\"},{\"type\":\"text\",\"text\":\" — задаёт внутренние отступы внутри ячеек.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cellspacing\"},{\"type\":\"text\",\"text\":\" — расстояние между ячейками.\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"⚠️ Сейчас для оформления таблиц используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CSS\"},{\"type\":\"text\",\"text\":\", а не эти атрибуты.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример с CSS:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table>\\n  <tr>\\n    <th>Товар</th>\\n    <th>Цена</th>\\n  </tr>\\n  <tr>\\n    <td>Хлеб</td>\\n    <td>40 ₽</td>\\n  </tr>\\n</table>\\n\\n<style>\\n  table {\\n    border-collapse: collapse;\\n    width: 300px;\\n  }\\n  th, td {\\n    border: 1px solid #333;\\n    padding: 8px;\\n    text-align: left;\\n  }\\n</style>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<table>\"},{\"type\":\"text\",\"text\":\" создаёт таблицу и служит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основным контейнером\"},{\"type\":\"text\",\"text\":\" для всех её элементов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он не отображает данные сам по себе, но организует их в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строки и столбцы\"},{\"type\":\"text\",\"text\":\", обеспечивая структурированное и визуально понятное представление информации.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:47:21.297Z",
+        "updatedAt": "2025-10-18T10:47:21.297Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие основные элементы составляют структуру таблицы?",
+        "id": 939,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает тег <tr>?",
+        "id": 943,
+        "premium": true,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 943,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает тег <tr>?\"}]}]}",
+        "title": "Что делает тег <tr>?",
+        "order": 30902,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" (от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"table row\"},{\"type\":\"text\",\"text\":\") используется в HTML для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания строки в таблице\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждая строка таблицы заключена в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\", а внутри неё располагаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ячейки\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" (обычные данные) или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" (заголовки).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основное назначение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" группирует ячейки в одну горизонтальную линию — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строку таблицы\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без этого тега невозможно задать структуру таблицы: каждая новая строка данных должна быть внутри своего \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Имя</th>\\n    <th>Возраст</th>\\n  </tr>\\n  <tr>\\n    <td>Анна</td>\\n    <td>25</td>\\n  </tr>\\n  <tr>\\n    <td>Иван</td>\\n    <td>30</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что происходит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Первый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" — создаёт строку заголовков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Следующие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" — создают строки с данными (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Можно использовать внутри:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<thead>\"},{\"type\":\"text\",\"text\":\" — для заголовочной строки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tbody>\"},{\"type\":\"text\",\"text\":\" — для строк с основными данными,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tfoot>\"},{\"type\":\"text\",\"text\":\" — для строк с итогами.\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table>\\n  <thead>\\n    <tr><th>Месяц</th><th>Доход</th></tr>\\n  </thead>\\n  <tbody>\\n    <tr><td>Январь</td><td>10000</td></tr>\\n    <tr><td>Февраль</td><td>12000</td></tr>\\n  </tbody>\\n  <tfoot>\\n    <tr><td>Итого</td><td>22000</td></tr>\\n  </tfoot>\\n</table>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одну строку таблицы\"},{\"type\":\"text\",\"text\":\", в которой располагаются ячейки данных (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\") или заголовков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждая таблица состоит из последовательности таких строк, формируя структуру “по горизонтали”.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:48:36.604Z",
+        "updatedAt": "2025-11-10T11:19:18.753Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает тег <table>?",
+        "id": 940,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает тег <td>?",
+        "id": 944,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 944,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает тег <td>?\"}]}]}",
+        "title": "Что делает тег <td>?",
+        "order": 30903,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" (от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"table data\"},{\"type\":\"text\",\"text\":\") используется в HTML для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания одной ячейки таблицы\"},{\"type\":\"text\",\"text\":\", содержащей данные.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он всегда размещается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри строки\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\") и формирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один столбец этой строки\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основное назначение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" хранит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"содержимое таблицы\"},{\"type\":\"text\",\"text\":\" — текст, числа, ссылки, изображения или другие элементы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основные ячейки\"},{\"type\":\"text\",\"text\":\", которые представляют обычные данные (в отличие от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\", который создаёт заголовки).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Имя</th>\\n    <th>Возраст</th>\\n  </tr>\\n  <tr>\\n    <td>Анна</td>\\n    <td>25</td>\\n  </tr>\\n  <tr>\\n    <td>Иван</td>\\n    <td>30</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 Здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" — создаёт строку,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" — создаёт ячейки с данными внутри строки.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Что можно помещать внутрь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любой HTML-контент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<td>\\n  <a href=\\\"#\\\">Ссылка</a><br>\\n  <img src=\\\"photo.jpg\\\" alt=\\\"Фото\\\"><br>\\n  <strong>Жирный текст</strong>\\n</td>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Полезные атрибуты:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет несколько столбцов в одну ячейку\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td colspan=\\\"2\\\">Итого</td>\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет несколько строк\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td rowspan=\\\"3\\\">Общее значение</td>\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример с объединением ячеек:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <td rowspan=\\\"2\\\">A</td>\\n    <td>B1</td>\\n  </tr>\\n  <tr>\\n    <td>B2</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ячейку таблицы с данными\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он используется внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<tr>\"},{\"type\":\"text\",\"text\":\" и может содержать любой HTML-контент — текст, изображения, ссылки и т. д.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждая таблица строится из множества \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\", которые образуют столбцы и строки.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:49:13.349Z",
+        "updatedAt": "2025-10-18T10:49:13.349Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает тег <tr>?",
+        "id": 943,
+        "premium": true,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает тег <th>?",
+        "id": 946,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 946,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает тег <th>?\"}]}]}",
+        "title": "Что делает тег <th>?",
+        "order": 30904,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" (от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"table header\"},{\"type\":\"text\",\"text\":\") используется в HTML для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания ячеек-заголовков таблицы\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он похож на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\", но имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"семантическое и визуальное отличие\"},{\"type\":\"text\",\"text\":\" — указывает, что ячейка содержит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заголовок столбца или строки\"},{\"type\":\"text\",\"text\":\", а не обычные данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основное назначение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" используется, чтобы обозначить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заголовки таблицы\"},{\"type\":\"text\",\"text\":\", которые помогают понять, что означает каждая колонка или строка.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Браузер по умолчанию:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делает текст \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жирным\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выравнивает по центру\"},{\"type\":\"text\",\"text\":\" содержимое ячейки.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Имя</th>\\n    <th>Возраст</th>\\n    <th>Город</th>\\n  </tr>\\n  <tr>\\n    <td>Анна</td>\\n    <td>25</td>\\n    <td>Москва</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 Здесь строка с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" задаёт заголовки столбцов, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" содержит данные.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"scope\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для улучшения доступности (например, экранных читалок) можно указать, к чему относится заголовок:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"scope=\\\"col\\\"\"},{\"type\":\"text\",\"text\":\" — заголовок столбца;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"scope=\\\"row\\\"\"},{\"type\":\"text\",\"text\":\" — заголовок строки.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<tr>\\n  <th scope=\\\"row\\\">Январь</th>\\n  <td>1200 ₽</td>\\n</tr>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Можно использовать и в боковых заголовках:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Месяц</th>\\n    <th>Продажи</th>\\n  </tr>\\n  <tr>\\n    <th scope=\\\"row\\\">Январь</th>\\n    <td>1200</td>\\n  </tr>\\n  <tr>\\n    <th scope=\\\"row\\\">Февраль</th>\\n    <td>1500</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оформление по умолчанию\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычные данные таблицы\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный текст, выравнивание по левому краю\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Заголовок строки или столбца\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Жирный текст, выравнивание по центру\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ячейку-заголовок\"},{\"type\":\"text\",\"text\":\" в таблице, которая помогает пользователю и поисковым системам понять структуру данных.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он делает таблицу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понятной, структурированной и семантически правильной\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:49:49.941Z",
+        "updatedAt": "2025-10-18T10:49:49.941Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает тег <td>?",
+        "id": 944,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает атрибут colspan?",
+        "id": 947,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 947,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает атрибут colspan?\"}]}]}",
+        "title": "Что делает атрибут colspan?",
+        "order": 30905,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"},{\"type\":\"text\",\"text\":\" в HTML используется в тегах \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объединения нескольких столбцов таблицы в одну ячейку\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть он определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на сколько столбцов должна растягиваться данная ячейка\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основное назначение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в таблице нужно сделать одну ячейку, которая охватывает несколько соседних колонок — используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Товар</th>\\n    <th>Количество</th>\\n    <th>Цена</th>\\n  </tr>\\n  <tr>\\n    <td colspan=\\\"2\\\">Хлеб (2 буханки)</td>\\n    <td>80 ₽</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 Здесь ячейка с текстом «Хлеб (2 буханки)» объединяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"два столбца\"},{\"type\":\"text\",\"text\":\": «Товар» и «Количество».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример с числовым значением:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<td colspan=\\\"3\\\">Итого: 1500 ₽</td>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эта ячейка объединит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"три столбца\"},{\"type\":\"text\",\"text\":\" в одну широкую.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Можно использовать и в заголовках:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<th colspan=\\\"2\\\">Контактная информация</th>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"целое число\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan=\\\"2\\\"\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По умолчанию значение равно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\" (ячейка занимает только один столбец).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если указать неверное значение, таблица может «съехать» — нарушится выравнивание столбцов.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Разница с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Направление\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет столбцы\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Горизонтально\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет строки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вертикально\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"},{\"type\":\"text\",\"text\":\" объединяет несколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"столбцов\"},{\"type\":\"text\",\"text\":\" в таблице, позволяя сделать одну широкую ячейку.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он нужен для оформления итоговых строк, заголовков или любых случаев, где данные занимают несколько колонок.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:50:20.946Z",
+        "updatedAt": "2025-10-18T10:50:20.946Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает тег <th>?",
+        "id": 946,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает атрибут rowspan?",
+        "id": 948,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 948,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает атрибут rowspan?\"}]}]}",
+        "title": "Что делает атрибут rowspan?",
+        "order": 30906,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\" в HTML используется в тегах \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<td>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<th>\"},{\"type\":\"text\",\"text\":\" для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объединения ячеек по вертикали\"},{\"type\":\"text\",\"text\":\", то есть он позволяет одной ячейке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"занимать сразу несколько строк таблицы\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основное назначение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\" определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на сколько строк вниз\"},{\"type\":\"text\",\"text\":\" будет растягиваться ячейка.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если обычная ячейка занимает одну строку, то с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\" она может объединять две, три и больше.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th>Имя</th>\\n    <th>Город</th>\\n  </tr>\\n  <tr>\\n    <td rowspan=\\\"2\\\">Анна</td>\\n    <td>Москва</td>\\n  </tr>\\n  <tr>\\n    <td>Санкт-Петербург</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"💡 Здесь ячейка с именем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"«Анна»\"},{\"type\":\"text\",\"text\":\" объединяет две строки и располагается слева от двух разных городов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Объяснение:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan=\\\"2\\\"\"},{\"type\":\"text\",\"text\":\" говорит браузеру: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"эта ячейка должна занимать две строки подряд\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Аналогично \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan=\\\"3\\\"\"},{\"type\":\"text\",\"text\":\" — на три строки, и т.д.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример в итоговой таблице:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<table border=\\\"1\\\">\\n  <tr>\\n    <th rowspan=\\\"2\\\">Категория</th>\\n    <th colspan=\\\"2\\\">Показатели</th>\\n  </tr>\\n  <tr>\\n    <th>2024</th>\\n    <th>2025</th>\\n  </tr>\\n  <tr>\\n    <td>Доход</td>\\n    <td>1.2M</td>\\n    <td>1.5M</td>\\n  </tr>\\n</table>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan=\\\"2\\\"\"},{\"type\":\"text\",\"text\":\" объединяет ячейку «Категория» по вертикали, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan=\\\"2\\\"\"},{\"type\":\"text\",\"text\":\" — объединяет заголовки по горизонтали.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"целое положительное число\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan=\\\"3\\\"\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По умолчанию — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\" (ячейка не объединяется).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если задать слишком большое значение, может нарушиться структура таблицы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Объединяет\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Направление\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"colspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Столбцы\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Горизонтально\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Строки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вертикально\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rowspan\"},{\"type\":\"text\",\"text\":\" объединяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ячейки по вертикали\"},{\"type\":\"text\",\"text\":\", позволяя одной ячейке занимать несколько строк.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Используется для создания более сложных таблиц с иерархией данных, итогами и группировками.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 51,
+        "createdAt": "2025-10-18T10:50:55.691Z",
+        "updatedAt": "2025-10-18T10:50:55.691Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 51,
+          "title": "Таблицы и списки",
+          "directions": [
+            {
+              "categoryId": 51,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает атрибут colspan?",
+        "id": 947,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает термин “a11y”?",
+        "id": 949,
+        "premium": false,
+        "category": {
+          "id": 52,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

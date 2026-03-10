@@ -1,0 +1,1967 @@
+{
+  "category": {
+    "id": 214,
+    "title": "Signals (v17+)",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 23,
+  "downloadedAt": "2026-03-09T08:38:48.575Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2091,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое signal в Angular?\"}]}]}",
+        "title": "Что такое signal в Angular?",
+        "order": 70500,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\" в Angular — это новый реактивный примитив (начиная с Angular 16), который хранит значение и позволяет автоматически отслеживать, кто это значение читает, и кто должен быть обновлён при его изменении. Это альтернатива потокам (RxJS) в простых сценариях и замена \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Output()\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"BehaviorSubject\"},{\"type\":\"text\",\"text\":\" и части zone-based механики.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal } from '@angular/core';\\n\\nconst counter = signal(0);\\nconsole.log(counter()); // чтение значения\\n\\ncounter.set(1);      // установить новое значение\\ncounter.update(v => v + 1); // изменить на основе предыдущего\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как работает по сути\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хранилище значения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтение — это вызов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запись — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update()\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"следит, какие выражения читают сигнал\"},{\"type\":\"text\",\"text\":\", и при изменении запускает обновление связанных шаблонов, эффектов или вычисляемых сигналов\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Связанные сущности\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" — вычисляемое значение на основе других сигналов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" — реакция на изменение сигналов (например логирование или вызов метода)\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Где обычно применяют\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"состояние компонента без RxJS\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранение UI-состояний (фильтры, флаги, счетчики)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"простая реактивность в шаблоне без подписок и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"async\"},{\"type\":\"text\",\"text\":\" pipe\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Главное отличие от RxJS\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Signals\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"RxJS\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pull-модель\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Push-модель\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Состояние — одно значение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потоки событий\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минимум подписок\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подписки обязательны\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Просто для локального стейта\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сложные асинхронные сценарии, обработка событий\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\" — это новый механизм реактивного состояния в Angular, который упрощает и делает декларативной реактивность внутри компонентов. RxJS при этом остаётся для сложных потоков и асинхронной логики.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:03:20.062Z",
+        "updatedAt": "2025-10-22T11:03:20.062Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как происходит загрузка lazy-loaded модулей? ",
+        "id": 2090,
+        "premium": false,
+        "category": {
+          "id": 208,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда сигналы появились в Angular?",
+        "id": 2092,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2092,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда сигналы появились в Angular?\"}]}]}",
+        "title": "Когда сигналы появились в Angular?",
+        "order": 70501,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы появились в Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в версии 16 (май 2023)\"},{\"type\":\"text\",\"text\":\" как developer-preview, а в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Angular 17\"},{\"type\":\"text\",\"text\":\" они стали полноценной частью новой реактивной модели и базой для шаблонной реактивности без Zone.js.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Краткая хронология:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Версия\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что произошло\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Angular 16\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Появились \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect\"},{\"type\":\"text\",\"text\":\" — превью-реализация\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Angular 17\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы стали основой обновлённого рендера и шаблонной реактивности\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Angular 18 (план/roadmap)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Движение к полному отказу от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Zone.js\"},{\"type\":\"text\",\"text\":\" и RxJS в шаблонах\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть сигналы — это официальное направление Angular-команды на замену части функциональности RxJS в локальном состоянии и реактивности компонентов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно — могу рассказать, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"почему Google вообще ввёл сигналы и какие проблемы Angular они закрыли\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:03:34.188Z",
+        "updatedAt": "2025-10-22T11:03:34.188Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое signal в Angular?",
+        "id": 2091,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какова главная цель внедрения signals в Angular?",
+        "id": 2093,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2093,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какова главная цель внедрения signals в Angular?\"}]}]}",
+        "title": "Какова главная цель внедрения signals в Angular?",
+        "order": 70502,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главная цель — упростить реактивность в Angular и сделать её «прозрачной» для разработчика. Signals дают понятную модель работы с состоянием без подписок, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"async\"},{\"type\":\"text\",\"text\":\"-пайпов, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"OnPush\"},{\"type\":\"text\",\"text\":\" и лишней магии вокруг Zone.js.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если по-простому, для junior:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Signals ввели, чтобы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще управлять состоянием\"},{\"type\":\"text\",\"text\":\" — вместо потоков и подписок есть обычная переменная со значением.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Предсказуемо обновлять UI\"},{\"type\":\"text\",\"text\":\" — при изменении сигнала Angular точно знает, что надо перерендерить.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Избавиться от лишних подписок и утечек памяти\"},{\"type\":\"text\",\"text\":\" — ничего не нужно вручную отписывать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ускорить работу приложения\"},{\"type\":\"text\",\"text\":\" — рендерится только то, что реально изменилось.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть Signals — это более удобный и наглядный способ делать реактивность, где изменения в данных и изменения в шаблоне связаны автоматически и без лишнего кода.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:03:49.491Z",
+        "updatedAt": "2025-11-10T11:39:13.125Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда сигналы появились в Angular?",
+        "id": 2092,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как создать signal в Angular?",
+        "id": 2094,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2094,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как создать signal в Angular?\"}]}]}",
+        "title": "Как создать signal в Angular?",
+        "order": 70503,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\" создаётся с помощью функции \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@angular/core\"},{\"type\":\"text\",\"text\":\". В неё передаётся начальное значение. Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal } from '@angular/core';\\n\\nconst counter = signal(0);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\" используется для чтения значения, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update()\"},{\"type\":\"text\",\"text\":\" — для изменения:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"counter();          // получить значение\\ncounter.set(5);     // установить новое значение\\ncounter.update(v => v + 1); // изменить на основе предыдущего\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:04:00.147Z",
+        "updatedAt": "2025-10-22T11:04:00.147Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какова главная цель внедрения signals в Angular?",
+        "id": 2093,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое WritableSignal?",
+        "id": 2095,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2095,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"WritableSignal\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что такое WritableSignal?",
+        "order": 70504,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"WritableSignal\"},{\"type\":\"text\",\"text\":\" — это запись сигнала, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"можно изменять\"},{\"type\":\"text\",\"text\":\". Он позволяет не только читать значение, но и менять его через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update()\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если по-простому для junior:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" → создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WritableSignal\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"такой сигнал можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"читать\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"записывать\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter.set(...)\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter.update(...)\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, WritableSignal } from '@angular/core';\\n\\nconst counter: WritableSignal<number> = signal(0);\\n\\ncounter();         // чтение\\ncounter.set(10);   // установка нового значения\\ncounter.update(v => v + 1); // изменение на основе старого\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"WritableSignal\"},{\"type\":\"text\",\"text\":\" — это обычный сигнал, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"держит значение и позволяет его менять\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:04:16.156Z",
+        "updatedAt": "2025-10-22T11:04:16.156Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как создать signal в Angular?",
+        "id": 2094,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как получить текущее значение сигнала?",
+        "id": 2096,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2096,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как получить текущее значение сигнала?\"}]}]}",
+        "title": "Как получить текущее значение сигнала?",
+        "order": 70505,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Текущее значение сигнала получают, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вызвав его как функцию\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const value = counter();\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter = signal(0)\"},{\"type\":\"text\",\"text\":\", то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\" вернёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:04:48.566Z",
+        "updatedAt": "2025-10-22T11:04:48.566Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое WritableSignal?",
+        "id": 2095,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как сигнал сообщает об изменениях?",
+        "id": 2097,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2097,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как сигнал сообщает об изменениях?\"}]}]}",
+        "title": "Как сигнал сообщает об изменениях?",
+        "order": 70506,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигнал сам отслеживает, кто его читает. Когда значение меняется, он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уведомляет все места, которые его использовали\"},{\"type\":\"text\",\"text\":\", и Angular повторно обновляет только эти участки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для junior-формулировки:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шаблон или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" читают сигнал через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигнал «запоминает», что эти части зависят от него.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update()\"},{\"type\":\"text\",\"text\":\", сигнал сообщает зависимым участкам: «значение изменилось».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular обновляет только их, а не весь компонент или приложение.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигнал сам триггерит обновления — никаких ручных подписок.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:05:00.989Z",
+        "updatedAt": "2025-11-10T11:42:32.815Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как получить текущее значение сигнала?",
+        "id": 2096,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое вычисляемый сигнал (reactive primitive)? ",
+        "id": 2098,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2098,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое вычисляемый сигнал (reactive primitive)? \"}]}]}",
+        "title": "Что такое вычисляемый сигнал (reactive primitive)? ",
+        "order": 70507,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вычисляемый сигнал — это сигнал, значение которого \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не хранится напрямую\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически вычисляется\"},{\"type\":\"text\",\"text\":\" на основе других сигналов. В Angular он создаётся с помощью \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для junior-понимания:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"есть обычные сигналы — они \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"хранят значение\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"есть вычисляемые сигналы — они \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"считают значение сами\"},{\"type\":\"text\",\"text\":\" и обновляются, когда меняются зависимости.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, computed } from '@angular/core';\\n\\nconst a = signal(2);\\nconst b = signal(3);\\n\\nconst sum = computed(() => a() + b());\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sum()\"},{\"type\":\"text\",\"text\":\" всегда будет актуальным значением \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"a + b\"},{\"type\":\"text\",\"text\":\", и если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"a\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"b\"},{\"type\":\"text\",\"text\":\" поменяются — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"sum()\"},{\"type\":\"text\",\"text\":\" обновится автоматически.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коротко:\"},{\"type\":\"text\",\"text\":\" вычисляемый сигнал — это реактивное значение, которое само пересчитывается при изменении других сигналов.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:05:18.535Z",
+        "updatedAt": "2025-10-22T11:05:18.535Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как сигнал сообщает об изменениях?",
+        "id": 2097,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как сигнал хранит состояние?",
+        "id": 2099,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2099,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как сигнал хранит состояние?\"}]}]}",
+        "title": "Как сигнал хранит состояние?",
+        "order": 70508,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигнал хранит состояние \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внутри себя\"},{\"type\":\"text\",\"text\":\", как обычная переменная, но с реактивным «наблюдением» за изменениями.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если по шагам:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда создаёшь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal(0)\"},{\"type\":\"text\",\"text\":\", Angular делает внутреннее хранилище со значением \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вызываешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\", ты читаешь это значение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда делаешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter.set(5)\"},{\"type\":\"text\",\"text\":\", Angular обновляет внутреннее хранилище и сообщает всем зависимым частям, что данные поменялись.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть сигнал — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переменная с памятью и встроенной реактивностью\"},{\"type\":\"text\",\"text\":\": он помнит своё состояние и сам знает, кому нужно сообщить об изменениях.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:05:46.296Z",
+        "updatedAt": "2025-10-22T11:05:46.296Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое вычисляемый сигнал (reactive primitive)? ",
+        "id": 2098,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое computed() сигнал?",
+        "id": 2100,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2100,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" сигнал?\"}]}]}",
+        "title": "Что такое computed() сигнал?",
+        "order": 70509,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" — это способ создать сигнал, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ничего сам не хранит\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда пересчитывает своё значение\"},{\"type\":\"text\",\"text\":\" из других сигналов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если просто:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" — хранит данные\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" — считает данные из других сигналов\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, computed } from '@angular/core';\\n\\nconst price = signal(100);\\nconst count = signal(2);\\n\\nconst total = computed(() => price() * count());\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"total()\"},{\"type\":\"text\",\"text\":\" всегда покажет правильную сумму. Если поменяется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"price\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"count\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"total\"},{\"type\":\"text\",\"text\":\" пересчитается сам.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Главное:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" ничего не меняет вручную\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Только считает на основе других сигналов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает как формула в Excel: поменялось что-то в ячейке — пересчиталось всё, что от неё зависит\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это удобно, когда нужно автоматически получать новое значение без лишнего кода.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:06:06.487Z",
+        "updatedAt": "2025-10-22T11:06:06.487Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как сигнал хранит состояние?",
+        "id": 2099,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как сделать цепочку computed-сигналов? (junior)",
+        "id": 2101,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2101,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как сделать цепочку computed-сигналов?\"}]}]}",
+        "title": "Как сделать цепочку computed-сигналов? (junior)",
+        "order": 70510,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Цепочка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\"‑сигналов — это когда один \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" использует другой внутри себя. Всё работает автоматически: Angular сам отслеживает зависимости.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, computed } from '@angular/core';\\n\\nconst price = signal(100);\\nconst count = signal(2);\\n\\nconst total = computed(() => price() * count());\\nconst withTax = computed(() => total() * 1.2);\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это работает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"total()\"},{\"type\":\"text\",\"text\":\" считает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"price * count\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"withTax()\"},{\"type\":\"text\",\"text\":\" считает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"total * 1.2\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если меняется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"price\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"count\"},{\"type\":\"text\",\"text\":\", обновляется и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"total\"},{\"type\":\"text\",\"text\":\", и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"withTax\"},{\"type\":\"text\",\"text\":\" — в правильном порядке\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важно:\"},{\"type\":\"text\",\"text\":\" тебе не нужно говорить Angular, что пересчитывать — он сам строит цепочку и обновляет всё нужное.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так можно строить любые уровни логики: от простых значений до сложных вычислений с зависимостями.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:06:21.390Z",
+        "updatedAt": "2025-10-22T11:06:21.390Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое computed() сигнал?",
+        "id": 2100,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли использовать async-операции в computed()?",
+        "id": 2102,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2102,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли использовать async-операции в computed()?\"}]}]}",
+        "title": "Можно ли использовать async-операции в computed()?",
+        "order": 70511,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нельзя\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" должен быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"синхронным\"},{\"type\":\"text\",\"text\":\". Он сразу возвращает значение, а не промис.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"async\"},{\"type\":\"text\",\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"await\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch()\"},{\"type\":\"text\",\"text\":\" — Angular выдаст ошибку или проигнорирует изменения.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Почему?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" нужен для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"мгновенных\"},{\"type\":\"text\",\"text\":\" вычислений. Он работает как формула: вводишь числа — сразу видишь результат. Если внутри будет задержка, сигнал не сможет отслеживать зависимости правильно.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что делать с async?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно работать с асинхронными данными (например, HTTP-запросы), используют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" — для побочных async-операций\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RxJS\"},{\"type\":\"text\",\"text\":\" (временно)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или загрузку данных в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\" вручную:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const user = signal<User | null>(null);\\n\\nasync function loadUser() {\\n  const res = await fetch('/api/user');\\n  const data = await res.json();\\n  user.set(data);\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed()\"},{\"type\":\"text\",\"text\":\" — только для синхронных зависимостей. Всё async — через эффекты или вручную.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:06:37.100Z",
+        "updatedAt": "2025-11-10T11:42:36.102Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как сделать цепочку computed-сигналов? (junior)",
+        "id": 2101,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое effect() в Angular?",
+        "id": 2103,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2103,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" в Angular?\"}]}]}",
+        "title": "Что такое effect() в Angular?",
+        "order": 70512,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" — это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реагировать на изменения сигналов\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда сигнал меняется, код внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" запускается автоматически.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, effect } from '@angular/core';\\n\\nconst counter = signal(0);\\n\\neffect(() => {\\n  console.log('Новое значение:', counter());\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если вызвать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter.set(5)\"},{\"type\":\"text\",\"text\":\", в консоли появится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Новое значение: 5\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужно\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" используют для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"побочных действий\"},{\"type\":\"text\",\"text\":\", которые не связаны напрямую с шаблоном:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"логирование,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запросы на сервер,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запись данных в localStorage,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновление DOM вне Angular.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Главное:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" сам отслеживает, какие сигналы он читает;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при их изменении выполняет код заново;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ничего не возвращает — просто \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"реагирует\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:07:46.239Z",
+        "updatedAt": "2025-10-22T11:07:46.239Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли использовать async-операции в computed()?",
+        "id": 2102,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Когда вызывается effect впервые?",
+        "id": 2104,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2104,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вызывается effect впервые?\"}]}]}",
+        "title": "Когда вызывается effect впервые?",
+        "order": 70513,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сразу при создании\"},{\"type\":\"text\",\"text\":\" — один раз, чтобы получить начальное состояние.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть порядок такой:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ты создаёшь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect(() => console.log(counter()))\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular сразу выполняет этот код — выводит текущее значение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потом он будет вызываться \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждый раз\"},{\"type\":\"text\",\"text\":\", когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter\"},{\"type\":\"text\",\"text\":\" изменится.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const counter = signal(0);\\n\\neffect(() => {\\n  console.log('counter:', counter());\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод в консоль:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"counter: 0   ← первый вызов при создании\\ncounter: 1   ← после counter.set(1)\\ncounter: 2   ← после counter.set(2)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так что первый запуск — это просто инициализация, чтобы эффект сразу «знал» текущее состояние.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:08:02.945Z",
+        "updatedAt": "2025-10-22T11:08:02.945Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое effect() в Angular?",
+        "id": 2103,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает функция очистки внутри effect()?",
+        "id": 2105,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2105,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает функция очистки внутри effect()?\"}]}]}",
+        "title": "Что делает функция очистки внутри effect()?",
+        "order": 70514,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Функция очистки внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" — это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"убрать или остановить\"},{\"type\":\"text\",\"text\":\" что-то перед следующим запуском эффекта.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular вызывает её автоматически \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перед повторным срабатыванием\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"при уничтожении эффекта\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, effect } from '@angular/core';\\n\\nconst id = signal(1);\\n\\neffect(onCleanup => {\\n  const timer = setInterval(() => {\\n    console.log('ID:', id());\\n  }, 1000);\\n\\n  onCleanup(() => clearInterval(timer)); // очистка перед новым запуском\\n});\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что происходит:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эффект запускается и создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"setInterval\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\" меняется, Angular вызывает функцию очистки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"clearInterval\"},{\"type\":\"text\",\"text\":\"), чтобы не запустить два таймера.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потом запускает эффект заново.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" очистка нужна, чтобы не копились старые подписки, таймеры и другие побочные действия при повторных вызовах эффекта.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:08:19.059Z",
+        "updatedAt": "2025-10-22T11:08:19.059Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Когда вызывается effect впервые?",
+        "id": 2104,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как effect обрабатывает ошибки?",
+        "id": 2106,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2106,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как effect обрабатывает ошибки?\"}]}]}",
+        "title": "Как effect обрабатывает ошибки?",
+        "order": 70515,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect()\"},{\"type\":\"text\",\"text\":\" происходит ошибка, Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перехватывает её\"},{\"type\":\"text\",\"text\":\", чтобы приложение не «упало». Ошибка просто \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выбрасывается в консоль\"},{\"type\":\"text\",\"text\":\", но не ломает работу других сигналов и эффектов.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { signal, effect } from '@angular/core';\\n\\nconst value = signal(0);\\n\\neffect(() => {\\n  if (value() > 3) {\\n    throw new Error('Слишком большое значение!');\\n  }\\n  console.log('Value:', value());\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"value\"},{\"type\":\"text\",\"text\":\" станет больше 3, Angular выведет ошибку в консоль, но остальные части приложения продолжат работать.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главное:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ошибки не останавливают реактивную систему;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ты можешь сам обернуть код в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"try...catch\"},{\"type\":\"text\",\"text\":\", если хочешь обработать их по-своему:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"effect(() => {\\n  try {\\n    riskyOperation();\\n  } catch (e) {\\n    console.error('Ошибка в эффекте:', e);\\n  }\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так ты сам контролируешь, что происходит при сбое.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:08:35.702Z",
+        "updatedAt": "2025-11-10T11:42:41.047Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает функция очистки внутри effect()?",
+        "id": 2105,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как использовать сигнал в шаблоне компонента?",
+        "id": 2107,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2107,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как использовать сигнал в шаблоне компонента?\"}]}]}",
+        "title": "Как использовать сигнал в шаблоне компонента?",
+        "order": 70516,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В шаблоне сигнал используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как функцию\"},{\"type\":\"text\",\"text\":\" — просто вызывают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"()\"},{\"type\":\"text\",\"text\":\" после имени.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Component, signal } from '@angular/core';\\n\\n@Component({\\n  selector: 'app-counter',\\n  template: `\\n    <p>Счётчик: {{ counter() }}</p>\\n    <button (click)=\\\"counter.update(v => v + 1)\\\">+</button>\\n  `\\n})\\nexport class CounterComponent {\\n  counter = signal(0);\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это работает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"counter()\"},{\"type\":\"text\",\"text\":\" — чтение сигнала прямо в шаблоне;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular сам следит за ним и обновляет только этот участок, когда значение меняется;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ничего подписывать или отписывать не нужно — всё реактивно.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важно:\"},{\"type\":\"text\",\"text\":\" круглые скобки обязательны — без них Angular не узнает, что это вызов сигнала.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:08:49.954Z",
+        "updatedAt": "2025-10-22T11:08:49.954Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как effect обрабатывает ошибки?",
+        "id": 2106,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как объявить сигнал в компоненте?",
+        "id": 2108,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2108,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как объявить сигнал в компоненте?\"}]}]}",
+        "title": "Как объявить сигнал в компоненте?",
+        "order": 70517,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигнал объявляется прямо как свойство класса компонента с помощью функции \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@angular/core\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Component, signal } from '@angular/core';\\n\\n@Component({\\n  selector: 'app-example',\\n  template: `\\n    <p>{{ message() }}</p>\\n  `\\n})\\nexport class ExampleComponent {\\n  message = signal('Привет, Angular!');\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что тут происходит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" создаёт хранилище со значением \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"'Привет, Angular!'\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"message\"},{\"type\":\"text\",\"text\":\" — это сам сигнал, который можно читать (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"message()\"},{\"type\":\"text\",\"text\":\") и менять (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"message.set(...)\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular отслеживает, где он используется, и обновляет шаблон при каждом изменении.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:09:23.731Z",
+        "updatedAt": "2025-10-22T11:09:23.731Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как использовать сигнал в шаблоне компонента?",
+        "id": 2107,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем signal отличается от observable по принципу реактивности?",
+        "id": 2109,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2109,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем signal отличается от observable по принципу реактивности?\"}]}]}",
+        "title": "Чем signal отличается от observable по принципу реактивности?",
+        "order": 70518,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главное отличие — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в том, как они реагируют и откуда берут данные\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"observable\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тип реактивности\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Pull-модель\"},{\"type\":\"text\",\"text\":\" (тянет данные, когда читаешь)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"Push-модель\"},{\"type\":\"text\",\"text\":\" (передаёт данные, когда они приходят)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хранит текущее значение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да, всегда одно\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет, только поток событий\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как обновляется\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изменение через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"update()\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Новый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"next()\"},{\"type\":\"text\",\"text\":\" из источника\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как подписаться\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Просто вызвать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal()\"},{\"type\":\"text\",\"text\":\" в шаблоне или коде\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"subscribe()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда использовать\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальное состояние компонента\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Асинхронные данные, запросы, стримы\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если коротко:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Signal\"},{\"type\":\"text\",\"text\":\" — это как «живая переменная» в Angular.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Observable\"},{\"type\":\"text\",\"text\":\" — это «поток событий» откуда-то извне.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:09:44.665Z",
+        "updatedAt": "2025-11-10T11:42:46.678Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как объявить сигнал в компоненте?",
+        "id": 2108,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как преобразовать observable в signal?",
+        "id": 2110,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2110,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как преобразовать observable в signal?\"}]}]}",
+        "title": "Как преобразовать observable в signal?",
+        "order": 70519,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы преобразовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\", используют функцию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"toSignal()\"},{\"type\":\"text\",\"text\":\" из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@angular/core/rxjs-interop\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Component } from '@angular/core';\\nimport { toSignal } from '@angular/core/rxjs-interop';\\nimport { interval } from 'rxjs';\\n\\n@Component({\\n  selector: 'app-timer',\\n  template: `\\n    <p>Счётчик: {{ time() }}</p>\\n  `\\n})\\nexport class TimerComponent {\\n  // Observable — каждую секунду выдаёт новое число\\n  source$ = interval(1000);\\n\\n  // Преобразуем Observable → Signal\\n  time = toSignal(this.source$, { initialValue: 0 });\\n}\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"toSignal()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаёт сигнал, который автоматически обновляется при каждом новом значении из Observable;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"initialValue\"},{\"type\":\"text\",\"text\":\" — обязательный параметр, пока поток ещё не выдал первое значение;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular сам управляет подпиской и отпиской — вручную ничего делать не нужно.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"toSignal()\"},{\"type\":\"text\",\"text\":\" превращает поток RxJS в обычный сигнал, который можно использовать в шаблоне без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"async\"},{\"type\":\"text\",\"text\":\"-пайпа.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:09:59.742Z",
+        "updatedAt": "2025-10-22T11:09:59.742Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем signal отличается от observable по принципу реактивности?",
+        "id": 2109,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли полностью отключить Zone.js при использовании signals?",
+        "id": 2111,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2111,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли полностью отключить Zone.js при использовании signals?\"}]}]}",
+        "title": "Можно ли полностью отключить Zone.js при использовании signals?",
+        "order": 70520,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да, можно.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы сами отслеживают изменения и обновляют шаблон \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без Zone.js\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Angular теперь умеет работать полностью реактивно — без “зоны”, которая раньше перехватывала все события и вызывала обновление вручную.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это делается:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main.ts\"},{\"type\":\"text\",\"text\":\" при запуске приложения указывают:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"import { bootstrapApplication } from '@angular/platform-browser';\\nimport { AppComponent } from './app/app.component';\\n\\nbootstrapApplication(AppComponent, {\\n  zone: 'noop', // отключает Zone.js\\n});\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что дальше:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"всё, что основано на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"signal\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect\"},{\"type\":\"text\",\"text\":\", продолжит работать;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular будет обновлять только те части шаблона, которые зависят от сигналов;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"никакие “зоны” больше не нужны.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" да, сигналы позволяют полностью отключить Zone.js — и при этом приложение остаётся реактивным и обновляется само.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:10:13.717Z",
+        "updatedAt": "2025-10-22T11:10:13.717Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как преобразовать observable в signal?",
+        "id": 2110,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как signals упрощают Change Detection?",
+        "id": 2112,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2112,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как signals упрощают Change Detection?\"}]}]}",
+        "title": "Как signals упрощают Change Detection?",
+        "order": 70521,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы упрощают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Change Detection\"},{\"type\":\"text\",\"text\":\" (обнаружение изменений), потому что Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точно знает\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"что именно\"},{\"type\":\"text\",\"text\":\" поменялось и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"где нужно обновить шаблон\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Раньше:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Zone.js следил за всеми событиями (клики, таймеры, HTTP и т.д.);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после любого события Angular проверял \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"весь компонент и всё дерево\"},{\"type\":\"text\",\"text\":\", чтобы узнать, не изменились ли данные.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"С сигналами:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"каждый сигнал знает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кто его читает\"},{\"type\":\"text\",\"text\":\" (шаблон, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"computed\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"effect\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда значение сигнала меняется, Angular обновляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только связанные участки\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"никаких лишних проверок и подписок.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Если просто:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Раньше Angular «угадывал», что изменилось.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Теперь сигналы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точно сообщают\"},{\"type\":\"text\",\"text\":\", что изменилось.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает обновления быстрее и код проще.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:10:32.765Z",
+        "updatedAt": "2025-10-22T11:10:32.765Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли полностью отключить Zone.js при использовании signals?",
+        "id": 2111,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему signals считаются более производительными, чем RxJS?",
+        "id": 2113,
+        "premium": true,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2113,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему signals считаются более производительными, чем RxJS?\"}]}]}",
+        "title": "Почему signals считаются более производительными, чем RxJS?",
+        "order": 70522,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сигналы быстрее, потому что работают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точечно и синхронно\"},{\"type\":\"text\",\"text\":\", без лишних подписок и пересылок данных через поток.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Основные причины:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нет подписок.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сигнал — это просто значение в памяти. При изменении Angular знает, кого обновить, без механизма \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"subscribe()\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unsubscribe()\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Синхронная работа.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда ты вызываешь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set()\"},{\"type\":\"text\",\"text\":\", обновление происходит сразу. RxJS часто обрабатывает события асинхронно, через очередь задач.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Точное обновление шаблона.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Angular с сигналами обновляет только те элементы, где сигнал реально используется, а не весь компонент.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше накладных расходов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"У RxJS сложный механизм потоков, операторов и подписок. У сигналов — простая модель хранения и реакции.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" Signals — это “прямая реактивность без посредников”. Они делают меньше лишней работы, поэтому работают быстрее.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 214,
+        "createdAt": "2025-10-22T11:10:51.559Z",
+        "updatedAt": "2025-11-10T11:42:50.822Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 214,
+          "title": "Signals (v17+)",
+          "directions": [
+            {
+              "categoryId": 214,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как signals упрощают Change Detection?",
+        "id": 2112,
+        "premium": false,
+        "category": {
+          "id": 214,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Dependency Injection (DI) в Angular? Зачем нужен механизм DI?",
+        "id": 2114,
+        "premium": false,
+        "category": {
+          "id": 215,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

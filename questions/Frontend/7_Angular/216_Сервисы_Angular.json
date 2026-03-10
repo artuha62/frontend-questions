@@ -1,0 +1,522 @@
+{
+  "category": {
+    "id": 216,
+    "title": "Сервисы Angular",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 6,
+  "downloadedAt": "2026-03-09T08:39:09.878Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2133,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое сервис в Angular? Зачем нужны сервисы в Angular?\"}]}]}",
+        "title": "Что такое сервис в Angular? Зачем нужны сервисы в Angular?",
+        "order": 70700,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервис в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"класс с бизнес-логикой\"},{\"type\":\"text\",\"text\":\", который не связан с отображением и может использоваться в разных компонентах.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужны:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вынести повторяющийся код\"},{\"type\":\"text\",\"text\":\" из компонентов (запросы, расчёты, обработка данных).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"организовать общие данные\"},{\"type\":\"text\",\"text\":\" — например, хранить состояние, кэш или текущего пользователя.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"общаться с сервером\"},{\"type\":\"text\",\"text\":\" (HTTP-запросы, API).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разделить ответственность\"},{\"type\":\"text\",\"text\":\": компонент отвечает за UI, сервис — за логику.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервисы регистрируются в системе DI, и Angular сам создаёт и подставляет экземпляры туда, где они нужны.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:17:54.470Z",
+        "updatedAt": "2025-10-22T11:17:54.470Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как избежать циклических зависимостей? ",
+        "id": 2132,
+        "premium": true,
+        "category": {
+          "id": 215,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какую роль играет аннотация @Injectable()?",
+        "id": 2134,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2134,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какую роль играет аннотация \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Injectable()\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Какую роль играет аннотация @Injectable()?",
+        "order": 70701,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Injectable()\"},{\"type\":\"text\",\"text\":\" говорит Angular, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в этот класс можно внедрять зависимости\"},{\"type\":\"text\",\"text\":\" и что сам он может быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внедрён через DI\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Injectable()\"},{\"type\":\"text\",\"text\":\" Angular не сможет создать экземпляр, если внутри класса есть зависимости.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Через параметр \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providedIn\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"'root'\"},{\"type\":\"text\",\"text\":\") можно указать, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"где именно\"},{\"type\":\"text\",\"text\":\" этот сервис будет доступен — в корне приложения, модуле или компоненте.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Injectable()\"},{\"type\":\"text\",\"text\":\" делает класс частью системы Dependency Injection.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:18:08.019Z",
+        "updatedAt": "2025-10-22T11:18:08.019Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое сервис в Angular? Зачем нужны сервисы в Angular?",
+        "id": 2133,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “singleton-сервис”?",
+        "id": 2135,
+        "premium": true,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2135,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “singleton-сервис”?\"}]}]}",
+        "title": "Что означает “singleton-сервис”?",
+        "order": 70702,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Singleton-сервис — это сервис, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"у которого существует только один экземпляр во всём приложении\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если он зарегистрирован с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providedIn: 'root'\"},{\"type\":\"text\",\"text\":\", Angular создаёт его \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один раз\"},{\"type\":\"text\",\"text\":\" и использует тот же объект во всех местах, где он внедряется.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюс: удобно для хранения общих данных (например, токена или состояния авторизации).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Минус: живёт, пока живёт приложение, поэтому может накапливать состояние или память, если с ним неаккуратно обращаться.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:18:28.614Z",
+        "updatedAt": "2025-11-10T11:43:20.796Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какую роль играет аннотация @Injectable()?",
+        "id": 2134,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как внедрить сервис в компонент?",
+        "id": 2136,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2136,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как внедрить сервис в компонент?\"}]}]}",
+        "title": "Как внедрить сервис в компонент?",
+        "order": 70703,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы внедрить сервис в компонент, нужно:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Убедиться, что сервис доступен для DI — например, он отмечен\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"@Injectable({ providedIn: 'root' })\\nexport class MyService {}\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Добавить его в конструктор компонента:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"@Component({...})\\nexport class MyComponent {\\n  constructor(private myService: MyService) {}\\n}\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular сам найдёт нужный сервис в иерархии injector’ов и передаст его экземпляр при создании компонента.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если сервис указан в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providedIn: 'root'\"},{\"type\":\"text\",\"text\":\", его не нужно вручную добавлять в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"providers\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:18:42.343Z",
+        "updatedAt": "2025-10-22T11:18:42.343Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “singleton-сервис”?",
+        "id": 2135,
+        "premium": true,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое фабричные сервисы?",
+        "id": 2137,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2137,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое фабричные сервисы?\"}]}]}",
+        "title": "Что такое фабричные сервисы?",
+        "order": 70704,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фабричные сервисы — это сервисы, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создаваемые не напрямую через класс, а с помощью фабричной функции\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть вместо обычного \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useClass\"},{\"type\":\"text\",\"text\":\" используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"useFactory\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"providers: [\\n  {\\n    provide: MyService,\\n    useFactory: (dep: OtherService) => new MyService(dep.config),\\n    deps: [OtherService]\\n  }\\n]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так можно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"контролировать, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как именно создаётся объект\"},{\"type\":\"text\",\"text\":\" (например, в зависимости от окружения или настроек);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возвращать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные экземпляры\"},{\"type\":\"text\",\"text\":\" одного типа при разных условиях;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"внедрять зависимости вручную через параметр \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"deps\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По сути, фабричный сервис — это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"гибко управлять созданием\"},{\"type\":\"text\",\"text\":\" зависимостей в DI.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:18:56.524Z",
+        "updatedAt": "2025-10-22T11:18:56.524Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как внедрить сервис в компонент?",
+        "id": 2136,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое сервис-адаптер?",
+        "id": 2138,
+        "premium": true,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2138,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое сервис-адаптер?\"}]}]}",
+        "title": "Что такое сервис-адаптер?",
+        "order": 70705,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сервис-адаптер — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прослойка между разными частями системы\"},{\"type\":\"text\",\"text\":\", которая делает их совместимыми.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular (и вообще в архитектуре) адаптер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скрывает детали реализации стороннего API или библиотеки;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"преобразует данные или интерфейсы под формат, удобный приложению;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изолирует бизнес-логику от конкретной технологии.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ты работаешь с двумя API — одно возвращает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"snake_case\"},{\"type\":\"text\",\"text\":\", другое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"camelCase\"},{\"type\":\"text\",\"text\":\". Адаптер-сервис переводит данные в единый формат, чтобы остальной код не зависел от различий.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Суть — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разделить “как это работает” и “что нужно сделать”\"},{\"type\":\"text\",\"text\":\", сохранив чистоту кода и гибкость для будущих изменений.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 216,
+        "createdAt": "2025-10-22T11:19:17.052Z",
+        "updatedAt": "2025-11-10T11:43:24.673Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 216,
+          "title": "Сервисы Angular",
+          "directions": [
+            {
+              "categoryId": 216,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое фабричные сервисы?",
+        "id": 2137,
+        "premium": false,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие типы форм существуют в Angular?",
+        "id": 2139,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

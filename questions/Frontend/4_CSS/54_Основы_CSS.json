@@ -1,0 +1,1287 @@
+{
+  "category": {
+    "id": 54,
+    "title": "Основы CSS",
+    "description": " ",
+    "parentId": 4
+  },
+  "totalQuestions": 15,
+  "downloadedAt": "2026-03-09T07:52:01.994Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1218,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое CSS и для чего он используется?\"}]}]}",
+        "title": "Что такое CSS и для чего он используется?",
+        "order": 40100,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS (Cascading Style Sheets — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каскадные таблицы стилей\"},{\"type\":\"text\",\"text\":\") — это язык, который отвечает за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешний вид и оформление веб-страниц\"},{\"type\":\"text\",\"text\":\". Если HTML — это «скелет» и структура страницы (заголовки, текст, изображения, кнопки), то CSS — это «одежда и макияж», который делает сайт красивым и удобным.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для чего используется CSS\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS позволяет:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Настраивать внешний вид элементов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— цвета, размеры, шрифты, отступы, тени, рамки и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Управлять расположением блоков на странице\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— выравнивать элементы, делать колонки, сетки, адаптивную верстку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создавать адаптивный дизайн\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— чтобы сайт хорошо выглядел на телефоне, планшете и компьютере.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создавать анимации и визуальные эффекты\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— плавные появления, hover-эффекты, анимации кнопок и переходов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отделять логику от оформления\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— HTML отвечает за содержание, CSS — за стиль, поэтому код понятнее и поддерживать его легче.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Короткая аналогия\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Технология\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"За что отвечает\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTML\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"структура и содержание\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CSS\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"внешний вид, стиль, оформление\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"JavaScript\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поведение и интерактивность\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Простой пример\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTML:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Привет, мир!</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CSS:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  color: red;\\n  font-size: 20px;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Этот CSS сделает текст красным и крупнее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:38:56.487Z",
+        "updatedAt": "2025-10-20T07:38:56.487Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие инструменты помогают тестировать доступность?",
+        "id": 961,
+        "premium": true,
+        "category": {
+          "id": 52,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое свойство и значение в CSS?",
+        "id": 1219,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1219,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое свойство и значение в CSS?\"}]}]}",
+        "title": "Что такое свойство и значение в CSS?",
+        "order": 40101,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В CSS \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"свойство\"},{\"type\":\"text\",\"text\":\" — это характеристика, которую ты хочешь изменить у элемента, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"значение\"},{\"type\":\"text\",\"text\":\" — это конкретный параметр, который ты присваиваешь этому свойству.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  color: red;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разбор:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Часть\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что это\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"свойство (определяет, что именно изменяем)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"red\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"значение (устанавливает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"каким\"},{\"type\":\"text\",\"text\":\" будет цвет)\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Другой пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  font-size: 18px;\\n  background-color: yellow;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойство\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-size\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"18px\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"background-color\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yellow\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: свойство — это «что меняем», значение — «на что меняем».\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:42:54.687Z",
+        "updatedAt": "2025-10-20T07:42:54.687Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое CSS и для чего он используется?",
+        "id": 1218,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какими способами можно подключить CSS к HTML?",
+        "id": 1220,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1220,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какими способами можно подключить CSS к HTML?\"}]}]}",
+        "title": "Какими способами можно подключить CSS к HTML?",
+        "order": 40102,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS можно подключить к HTML тремя основными способами:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Внешний файл (рекомендуемый способ)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стили находятся в отдельном \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".css\"},{\"type\":\"text\",\"text\":\"-файле, который подключается в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<head>\"},{\"type\":\"text\",\"text\":\" с помощью тега \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<link>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTML:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<link rel=\\\"stylesheet\\\" href=\\\"style.css\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"style.css:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  color: blue;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: порядок в коде, удобно поддерживать, много страниц могут использовать один файл.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Минусы: нужен отдельный файл.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Внутренние стили (внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<style>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<head>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<head>\\n  <style>\\n    p {\\n      color: green;\\n    }\\n  </style>\\n</head>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: удобно для небольших страниц или быстрого теста.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Минусы: если стилей много, код становится громоздким.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Встроенные (inline-стили)\"},{\"type\":\"text\",\"text\":\" — через атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\" в самом теге\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p style=\\\"color: red;\\\">Текст</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плюсы: быстро изменить один элемент.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Минусы: плохая читаемость, нельзя переиспользовать, не подходит для больших проектов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Способ\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где пишутся стили\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда использовать\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внешний CSS\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отдельный .css файл\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"нормальная разработка\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутренний \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<style>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<head>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мелкие проекты, тесты\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Встроенный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style=\\\"\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"прямо в теге\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"точечные изменения\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно, могу дальше разобрать: приоритеты стилей, каскадность и порядок их применения.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:43:18.854Z",
+        "updatedAt": "2025-10-20T07:43:18.854Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое свойство и значение в CSS?",
+        "id": 1219,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает атрибут style внутри HTML-тега?",
+        "id": 1221,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1221,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\" внутри HTML-тега?\"}]}]}",
+        "title": "Что делает атрибут style внутри HTML-тега?",
+        "order": 40103,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\" внутри HTML-тега добавляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"встроенные (inline) CSS-стили\"},{\"type\":\"text\",\"text\":\" и влияет на внешний вид конкретного элемента. Он применяется сразу к тому тегу, внутри которого находится.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p style=\\\"color: red; font-size: 20px;\\\">Текст</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\" задаёт для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color: red;\"},{\"type\":\"text\",\"text\":\" — красный цвет текста\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-size: 20px;\"},{\"type\":\"text\",\"text\":\" — размер шрифта\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенности атрибута \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"действует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только на один конкретный элемент\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очень высокий приоритет\"},{\"type\":\"text\",\"text\":\" среди обычных CSS-правил\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется для точечных, разовых изменений, но не подходит для больших проектов (код становится нечитаемым)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style=\\\"\\\"\"},{\"type\":\"text\",\"text\":\" — это способ прописать CSS-настройки прямо внутри HTML-тега и мгновенно изменить внешний вид конкретного элемента.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:43:35.837Z",
+        "updatedAt": "2025-11-10T11:22:22.640Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какими способами можно подключить CSS к HTML?",
+        "id": 1220,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему inline-стили считаются плохой практикой?",
+        "id": 1222,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1222,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему inline-стили считаются плохой практикой?\"}]}]}",
+        "title": "Почему inline-стили считаются плохой практикой?",
+        "order": 40104,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Inline-стили считаются плохой практикой по нескольким причинам:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плохая читаемость и поддержка кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда CSS смешан с HTML, структура и оформление перемешиваются. Страница становится труднее для чтения и сопровождения, особенно если элементов много.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нельзя переиспользовать стили\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если один и тот же стиль нужен в 10 местах, его придётся копировать 10 раз. Любое изменение потом нужно будет править вручную в каждом месте, что увеличивает риск ошибок.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложнее менять дизайн проекта\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда стили собраны в одном файле — ты меняешь правило один раз, и оно применяется ко всему сайту. С inline-стилями это невозможно.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Нарушение принципа разделения ответственности\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"HTML должен описывать структуру и содержание, а CSS — внешний вид. Inline ломает этот принцип и смешивает роли.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблемы с каскадом и приоритетами\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Inline имеет высокий приоритет, поэтому в будущем переопределять такие стили будет сложнее. Иногда приходится использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\", что ещё больше запутывает код.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: inline-стили подходят только для редких точечных случаев, но для нормальной разработки они мешают масштабируемости, переиспользованию и читаемости кода.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:43:55.575Z",
+        "updatedAt": "2025-10-20T07:43:55.575Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает атрибут style внутри HTML-тега?",
+        "id": 1221,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “каскад” в поведении CSS-правил?",
+        "id": 1223,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1223,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “каскад” в поведении CSS-правил?\"}]}]}",
+        "title": "Что означает “каскад” в поведении CSS-правил?",
+        "order": 40105,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каскад в CSS — это механизм, по которому браузер выбирает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"какое из нескольких конфликтующих правил применить к элементу\"},{\"type\":\"text\",\"text\":\". Если к одному и тому же элементу подходят разные стили, CSS «стекает» их по приоритетности и выбирает итоговое значение — словно вода, которая течёт сверху вниз по каскаду.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каскад учитывает три главных критерия:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Источник правила\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Более приоритетные источники перекрывают менее приоритетные. Условная иерархия:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"inline-стили (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style=\\\"\\\"\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стили в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<style>\"},{\"type\":\"text\",\"text\":\" или подключённом CSS-файле\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стили браузера по умолчанию\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Специфичность (точность селектора)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если два правила из одного источника конфликтуют, побеждает то, чья «точность» выше. По значимости:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\" — самый точный\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"классы, псевдоклассы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"теги, псевдоэлементы\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p { color: blue; }        /* низкая специфичность */\\n.text { color: green; }   /* выше */\\n#main { color: red; }     /* самая высокая */\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итогом будет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"red\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Порядок в коде\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если специфичность одинаковая, побеждает то правило, которое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"написано позже\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p { color: blue; }\\np { color: black; } /* применяется это */\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" каскад — это система приоритетов, которая решает, какое CSS-правило применить, если их несколько. Он учитывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"источник → специфичность → порядок правил\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:44:19.829Z",
+        "updatedAt": "2025-10-20T07:44:19.829Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему inline-стили считаются плохой практикой?",
+        "id": 1222,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В каком порядке применяются CSS-правила?",
+        "id": 1224,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1224,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В каком порядке применяются CSS-правила?\"}]}]}",
+        "title": "В каком порядке применяются CSS-правила?",
+        "order": 40106,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS-правила применяются по строго определённой очередности, и браузер выбирает итоговый стиль по трём уровням приоритета — сверху вниз:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1) Источник стиля (самый крупный уровень приоритета)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"От более сильного к более слабому:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\" (вручную повышенный приоритет)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"inline-стили\"},{\"type\":\"text\",\"text\":\" (атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style=\\\"\\\"\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешние и внутренние стили\"},{\"type\":\"text\",\"text\":\" (файлы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".css\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<style>\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стили браузера по умолчанию\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2) Специфичность (точность селектора)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если правила принадлежат одному источнику, смотрят на селектор. От более точного к менее точному:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ID\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#header\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Классы, атрибуты, псевдоклассы\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".item\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[type=\\\"text\\\"]\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":hover\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Теги и псевдоэлементы\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"p\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"h1\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"::after\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3) Порядок следования в коде (последнее слово за нижним селектором)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если источник и специфичность одинаковые, выигрывает правило, которое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"написано позже\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p { color: blue; }\\np { color: black; } /* применится это */\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итоговая формула каскада\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер решает так:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"важность → специфичность → порядок в коде\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть сначала сравниваются источники, потом точность селекторов, и только если они равны — берётся последнее по порядку правило.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:44:45.068Z",
+        "updatedAt": "2025-10-20T07:44:45.068Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “каскад” в поведении CSS-правил?",
+        "id": 1223,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “наследование” в CSS? Какие свойства по умолчанию наследуются?",
+        "id": 1225,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1225,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “наследование” в CSS? Какие свойства по умолчанию наследуются?\"}]}]}",
+        "title": "Что такое “наследование” в CSS? Какие свойства по умолчанию наследуются?",
+        "order": 40107,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Наследование в CSS\"},{\"type\":\"text\",\"text\":\" — это механизм, при котором некоторые свойства автоматически \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"передаются потомкам от родительских элементов\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если родитель задаёт, например, цвет текста, то дочерние элементы унаследуют этот цвет, если не указано иное.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это работает\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div style=\\\"color: blue;\\\">\\n  <p>Текст внутри абзаца</p>\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>\"},{\"type\":\"text\",\"text\":\" сам не имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color\"},{\"type\":\"text\",\"text\":\", но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"унаследует\"},{\"type\":\"text\",\"text\":\" его от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\", и текст будет синим.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Наследуемые свойства по умолчанию\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Наследуются свойства, связанные в основном с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"текстом и шрифтами\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color\"},{\"type\":\"text\",\"text\":\" — цвет текста\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-family\"},{\"type\":\"text\",\"text\":\" — шрифт\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-size\"},{\"type\":\"text\",\"text\":\" — размер шрифта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-style\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"font-weight\"},{\"type\":\"text\",\"text\":\" — начертание и жирность\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"line-height\"},{\"type\":\"text\",\"text\":\" — межстрочный интервал\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"text-align\"},{\"type\":\"text\",\"text\":\" — выравнивание текста\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"visibility\"},{\"type\":\"text\",\"text\":\" — видимость\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cursor\"},{\"type\":\"text\",\"text\":\" — стиль курсора\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"list-style\"},{\"type\":\"text\",\"text\":\" — оформление списков\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"letter-spacing\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"word-spacing\"},{\"type\":\"text\",\"text\":\" — расстояние между буквами и словами\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ненаследуемые свойства\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Большинство свойств, связанных с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"размерами, отступами, рамками, позиционированием и фоном\"},{\"type\":\"text\",\"text\":\", не наследуются:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"margin\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"padding\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"border\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"width\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"height\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"background\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как управлять наследованием\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS позволяет управлять этим явно с помощью значений:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"inherit\"},{\"type\":\"text\",\"text\":\" — принудительно наследовать\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"initial\"},{\"type\":\"text\",\"text\":\" — сбросить до значения по умолчанию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"unset\"},{\"type\":\"text\",\"text\":\" — наследовать, если свойство обычно наследуется; иначе сбросить\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  background-color: inherit;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наследование\"},{\"type\":\"text\",\"text\":\" делает оформление предсказуемым и экономит код — дочерние элементы автоматически принимают часть визуальных свойств родителей, особенно текстовых.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:45:11.932Z",
+        "updatedAt": "2025-11-10T11:22:24.684Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В каком порядке применяются CSS-правила?",
+        "id": 1224,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие бывают абсолютные единицы измерения в CSS?",
+        "id": 1226,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1226,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие бывают абсолютные единицы измерения в CSS?\"}]}]}",
+        "title": "Какие бывают абсолютные единицы измерения в CSS?",
+        "order": 40108,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Абсолютные единицы в CSS — это единицы измерения, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не зависят от экрана, масштаба или настроек шрифта браузера\"},{\"type\":\"text\",\"text\":\". Они всегда имеют фиксированный физический размер.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные абсолютные единицы:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Единица\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расшифровка\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Размер\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"px\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пиксель\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"минимальная точка на экране (условная, но фиксированная для CSS)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cm\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сантиметр\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1 см\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"mm\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"миллиметр\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1 мм\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"in\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дюйм\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1in = 2.54 см\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pt\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пункт\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1pt = 1/72 дюйма\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pc\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"пика\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1pc = 12pt\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ключевой момент\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хотя формально есть много абсолютных единиц, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в реальной вёрстке используют почти всегда только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"px\"},{\"type\":\"text\",\"text\":\". Остальные (cm, mm, in, pt, pc) больше подходят для печати или PDF, а не для интерфейсов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: абсолютные единицы дают фиксированный размер, но подходят в основном там, где адаптивность не важна. В вебе их применяют ограниченно, чаще отдавая предпочтение относительным единицам (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vw\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vh\"},{\"type\":\"text\",\"text\":\").\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:45:52.083Z",
+        "updatedAt": "2025-10-20T07:45:52.083Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “наследование” в CSS? Какие свойства по умолчанию наследуются?",
+        "id": 1225,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие бывают относительные единицы измерения в CSS?",
+        "id": 1227,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1227,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие бывают относительные единицы измерения в CSS?\"}]}]}",
+        "title": "Какие бывают относительные единицы измерения в CSS?",
+        "order": 40109,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Относительные единицы в CSS — это единицы, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"зависят от размеров шрифта, размеров окна браузера или других параметров элемента/окна\"},{\"type\":\"text\",\"text\":\". Они гибкие и помогают создавать адаптивную вёрстку.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Группы относительных единиц\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Относительно шрифта\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Единица\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Относительно чего\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"размер шрифта родителя\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"размер шрифта корневого элемента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"html\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ex\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"высота буквы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"x\"},{\"type\":\"text\",\"text\":\" у текущего шрифта\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ch\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ширина символа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\" у текущего шрифта\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p { font-size: 2em; } /* в 2 раза больше родителя */\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Относительно размеров окна (viewport)\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Единица\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что значит\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vw\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1vw = 1% ширины окна\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vh\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1vh = 1% высоты окна\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmin\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1% меньшей стороны (ширина или высота)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmax\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"1% большей стороны\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используют для адаптивных блоков и шрифтов, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"h1 { font-size: 5vw; } /* шрифт зависит от ширины окна */\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Процентные\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Единица\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Описание\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"зависит от родительского элемента (для ширины, высоты, отступов и т. д.)\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Группа\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Единицы\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда использовать\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шрифтовые\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ex\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ch\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для текста, отступов, адаптивных интерфейсов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Окна браузера\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vw\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vh\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmin\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vmax\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адаптивные блоки/заголовки\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проценты\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"размеры, зависящие от контейнера\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самые востребованные на практике: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rem\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"em\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vw\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"vh\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:46:14.372Z",
+        "updatedAt": "2025-10-20T07:46:14.372Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие бывают абсолютные единицы измерения в CSS?",
+        "id": 1226,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое CSS-переменные? Как объявить переменную в CSS?",
+        "id": 1228,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1228,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое CSS-переменные? Как объявить переменную в CSS?\"}]}]}",
+        "title": "Что такое CSS-переменные? Как объявить переменную в CSS?",
+        "order": 40110,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS-переменные (или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"custom properties\"},{\"type\":\"text\",\"text\":\") — это пользовательские значения, которые можно объявить один раз и переиспользовать в стилях. Они помогают не дублировать одни и те же цифры и цвета, ускоряют поддержку и изменение дизайна.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как объявить переменную\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Переменные объявляются внутри селектора и начинаются с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно их размещают в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":root\"},{\"type\":\"text\",\"text\":\", чтобы они были доступны везде:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\":root {\\n  --main-color: #3498db;\\n  --font-size: 18px;\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как использовать переменную\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы применить, используют функцию \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"var()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  color: var(--main-color);\\n  font-size: var(--font-size);\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что важно знать\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"область видимости переменной = область видимости селектора, где она объявлена;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переменные можно переопределять на любом уровне;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в отличие от препроцессоров (Sass/LESS), CSS-переменные работают динамически — их можно менять даже в JavaScript или по состояниям (например, для тёмной темы).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" CSS-переменные позволяют хранить повторяющиеся значения (например, цвета, размеры) в одном месте и многократно использовать, объявляя их с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--имя\"},{\"type\":\"text\",\"text\":\" и применяя через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"var()\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:46:41.605Z",
+        "updatedAt": "2025-10-20T07:46:41.605Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие бывают относительные единицы измерения в CSS?",
+        "id": 1227,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает !important? Почему !important считается антипаттерном?",
+        "id": 1229,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1229,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\"? Почему \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\" считается антипаттерном?\"}]}]}",
+        "title": "Что делает !important? Почему !important считается антипаттерном?",
+        "order": 40111,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\" усиливает приоритет CSS-правила и заставляет браузер применить именно это свойство, игнорируя каскад, специфичность и большинство других правил.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"p {\\n  color: red !important;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если есть более точный селектор, этот стиль «перебьёт» его.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" считается антипаттерном\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ломает нормальную модель каскада\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каскад построен на логике: источник → специфичность → порядок. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\" перепрыгивает всё и создаёт хаос в приоритетах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Усложняет поддержку кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда в проекте много \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\", чтобы переопределить стиль, приходится ставить ещё больше \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\", что превращает CSS в гонку приоритетов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ухудшает читаемость и предсказуемость\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сложнее понять, откуда реально берётся итоговое свойство и почему более логичные правила не работают.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мешает переиспользованию и масштабируемости\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если стиль нужно изменить, приходится искать и ломать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\", а не править каскад должным образом.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" можно применять\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Допустимые случаи существуют, но они исключения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"временный хотфикс в legacy-коде\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стили для сторонних библиотек, которые нельзя переписать иначе\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS для user styles (например, в браузерных расширениях)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"!important\"},{\"type\":\"text\",\"text\":\" — это «ядерная кнопка» CSS, которая перебивает остальные стили. Она удобна в редких точечных случаях, но её регулярное использование приводит к запутанному, плохо поддерживаемому коду.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:46:55.418Z",
+        "updatedAt": "2025-10-20T07:46:55.418Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое CSS-переменные? Как объявить переменную в CSS?",
+        "id": 1228,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “reset CSS”?",
+        "id": 1230,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1230,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “reset CSS”?\"}]}]}",
+        "title": "Что такое “reset CSS”?",
+        "order": 40112,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Reset CSS\"},{\"type\":\"text\",\"text\":\" — это набор стилей, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обнуляет (сбрасывает) дефолтные стили браузера\"},{\"type\":\"text\",\"text\":\": отступы, размеры заголовков, оформление списков и другие свойства, которые разные браузеры по умолчанию применяют по-разному.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Цель reset-файла — сделать так, чтобы страница выглядела \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одинаково во всех браузерах\"},{\"type\":\"text\",\"text\":\", без неожиданных встроенных отступов и стилей.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему он нужен\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"браузеры имеют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"разные стандартные стили\"},{\"type\":\"text\",\"text\":\" для одних и тех же элементов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"без reset’а верстка может “плыть” в разных браузерах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"он позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"начать оформление “с нуля”\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это выглядит\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Классический \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reset.css\"},{\"type\":\"text\",\"text\":\" может содержать, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"А знаменитый reset от Eric Meyer включает сброс для десятков тегов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Альтернатива reset’у: Normalize.css\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Есть более современный вариант — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"normalize.css\"},{\"type\":\"text\",\"text\":\", который не обнуляет, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выравнивает стили браузеров\"},{\"type\":\"text\",\"text\":\", сохраняя полезные дефолты (например, удобные line-height и оформление форм).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Reset CSS — это файл, который убирает базовые стили браузера, чтобы разработчик сам контролировал внешний вид элементов с нуля. Используется почти в каждом проекте, хотя всё чаще его заменяют на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"normalize.css\"},{\"type\":\"text\",\"text\":\" для более мягкой и аккуратной базы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:47:18.102Z",
+        "updatedAt": "2025-11-10T11:22:27.528Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает !important? Почему !important считается антипаттерном?",
+        "id": 1229,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает normalize.css?",
+        "id": 1231,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1231,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает normalize.css?\"}]}]}",
+        "title": "Что делает normalize.css?",
+        "order": 40113,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"normalize.css\"},{\"type\":\"text\",\"text\":\" — это файл базовых стилей, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не обнуляет полностью стандартные стили браузера, как reset.css\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выравнивает их и приводит к единообразию во всех браузерах\"},{\"type\":\"text\",\"text\":\", сохраняя полезные дефолтные значения.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает normalize.css по сути\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"устраняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кроссбраузерные несоответствия\"},{\"type\":\"text\",\"text\":\" в отображении HTML-элементов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохраняет полезные стандартные стили\"},{\"type\":\"text\",\"text\":\" (например, корректный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"line-height\"},{\"type\":\"text\",\"text\":\" для текста)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"улучшает предсказуемость верстки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подправляет мелкие баги в визуализации элементов в разных браузерах (формы, заголовки, списки)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чем отличается от Reset CSS\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"reset.css\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"normalize.css\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"полностью убирает стили браузера\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сохраняет полезные стили\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"начинает всё с «голого нуля»\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делает аккуратную унификацию\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"более «жёсткий» подход\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"более «умный» подход\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример эффекта\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"reset.css\"},{\"type\":\"text\",\"text\":\" уберёт все отступы у заголовков и списков.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"normalize.css\"},{\"type\":\"text\",\"text\":\" — оставит отступы, но сделает их одинаковыми в Chrome, Firefox, Safari и т.д.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда предпочитают normalize.css\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда важен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"более естественный внешний вид по умолчанию\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"когда нужен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"чистый и аккуратный старт\"},{\"type\":\"text\",\"text\":\", а не полная «стерильность»\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" normalize.css — это мягкая альтернатива reset.css, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не обнуляет, а нормализует стили\"},{\"type\":\"text\",\"text\":\", создавая единый и предсказуемый базовый слой для дальнейшей вёрстки.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:47:36.357Z",
+        "updatedAt": "2025-10-20T07:47:36.357Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “reset CSS”?",
+        "id": 1230,
+        "premium": true,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое CSS-препроцессор?",
+        "id": 1232,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1232,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое CSS-препроцессор?\"}]}]}",
+        "title": "Что такое CSS-препроцессор?",
+        "order": 40114,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CSS-препроцессор — это инструмент, который расширяет возможности обычного CSS, добавляя в него переменные, функции, вычисления, вложенность селекторов и другие «программные» возможности. Затем препроцессор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"компилирует свой код в обычный CSS\"},{\"type\":\"text\",\"text\":\", который понимают браузеры.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем он нужен\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"упрощает поддержку больших CSS-файлов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет переиспользовать код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помогает писать стили быстрее и структурированнее\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что появляется сверх обычного CSS\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Возможность\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переменные\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@color: #333;\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вложенность\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"селекторы внутри селекторов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"миксины\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переиспользуемые блоки кода\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"функции\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вычисления (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"100% - 20px\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"импорты\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"разбиение стилей на модули\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Популярные препроцессоры\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Sass (SCSS)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"LESS\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Stylus\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чаще всего используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Sass/SCSS\"},{\"type\":\"text\",\"text\":\" — это стандарт де-факто.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример (SCSS → CSS)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SCSS:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"scss\"},\"content\":[{\"type\":\"text\",\"text\":\"$main: #3498db;\\n\\nbutton {\\n  color: $main;\\n  &:hover {\\n    color: darken($main, 10%);\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скомпилированный CSS:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"button {\\n  color: #3498db;\\n}\\nbutton:hover {\\n  color: #2b7cad;\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" препроцессор — это надстройка над CSS, делающая код удобнее и мощнее, но в итоге всё равно превращающаяся в стандартный CSS, который исполняет браузер.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 54,
+        "createdAt": "2025-10-20T07:47:53.986Z",
+        "updatedAt": "2025-10-20T07:47:53.986Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 54,
+          "title": "Основы CSS",
+          "directions": [
+            {
+              "categoryId": 54,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает normalize.css?",
+        "id": 1231,
+        "premium": false,
+        "category": {
+          "id": 54,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое селектор в CSS? Для чего используются селекторы?",
+        "id": 1233,
+        "premium": false,
+        "category": {
+          "id": 55,
+          "parent": {
+            "title": "CSS",
+            "id": 4,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

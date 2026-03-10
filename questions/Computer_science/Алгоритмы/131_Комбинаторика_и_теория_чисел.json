@@ -1,0 +1,992 @@
+{
+  "category": {
+    "id": 131,
+    "title": "Комбинаторика и теория чисел",
+    "description": " ",
+    "order": 4011,
+    "isNew": false,
+    "parentId": 10,
+    "roadmapId": null,
+    "_count": {
+      "questions": 10
+    },
+    "parent": {
+      "id": 10
+    },
+    "questions": [
+      {
+        "id": 1502,
+        "title": "Какие основные типы задач решает комбинаторика?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1499,
+        "title": "Что означает “размещение” в комбинаторике?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1500,
+        "title": "Что такое перестановка в комбинаторике?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "middle",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1501,
+        "title": "Что такое комбинация (сочетание) в комбинаторике?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1496,
+        "title": "Как вычислить количество перестановок n элементов?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1505,
+        "title": "Как вычислить количество сочетаний из n по k?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1504,
+        "title": "Что такое треугольник Паскаля?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1503,
+        "title": "Что изучает теория чисел?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1498,
+        "title": "Как посчитать сумму делителей числа?",
+        "premium": false,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      },
+      {
+        "id": 1497,
+        "title": "Что делает алгоритм Евклида?",
+        "premium": true,
+        "isPopular": true,
+        "grade": "trainee",
+        "category": {
+          "id": 131
+        },
+        "userProgress": [],
+        "favoriteByUsers": []
+      }
+    ],
+    "children": []
+  },
+  "questions": [
+    {
+      "current": {
+        "id": 1502,
+        "type": "boolean",
+        "text": "Какие основные типы задач решает комбинаторика?",
+        "title": "Какие основные типы задач решает комбинаторика?",
+        "order": 401100,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Перечислительная комбинаторика: подсчёт количества объектов по правилам (перестановки, размещения, сочетания, принципы суммы и произведения, включения–исключения, производящие функции).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Разбиения и распределения: «шары и ящики», разбиения множеств и чисел, распределения с ограничениями.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Вероятностные задачи на конечных пространствах: вычисление вероятностей через подсчёт исходов (биномиальное и гипергеометрическое распределения, схема Бернулли).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Экстремальная комбинаторика: нахождение максимума/минимума дискретных структур при ограничениях (принцип Дирихле, границы и конструкции).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Конструктивные и существенческие задачи: построить объект с заданными свойствами или доказать (не)существование (часто с вероятностным методом).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Комбинаторная оптимизация: выбор оптимальной дискретной структуры (матчинги, покрытия, маршрутизация), часто на графах.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробный ответ\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"1) Перечислительная комбинаторика (подсчёт)\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Задачи: «Сколько существует…?» Приёмы: принципы суммы и произведения, перестановки (n!), размещения A(n, k) = n!/(n−k)!, сочетания C(n, k) = n!/(k!(n−k)!), варианты с повторениями, включение–исключение, рекуррентности и производящие функции.\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Пример: сколькими способами рассадить 5 из 10 сотрудников на 5 разных мест? Ответ: A(10, 5) = 10!/5!.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Пример: сколькими способами выбрать 3 ревьюера из 10? Ответ: C(10, 3) = 120.\" }]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"2) Разбиения и распределения\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Задачи распределения предметов по категориям/«ящикам» с ограничениями (предметы различимы/неразличимы, ящики различимы/нет, пустые ящики разрешены/запрещены), разбиения множеств и чисел.\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Метод «звёзды и полосы»: число решений x1 + … + xk = n при xi ≥ 0 равно C(n + k − 1, k − 1).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Числа Стирлинга S(n, k) — разбиения множества на k непустых подмножеств; числа Белла — все разбиения множества.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Пример: раздать 7 одинаковых конфет 3 детям (пустые доли допустимы): C(7 + 3 − 1, 3 − 1) = C(9, 2) = 36.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"3) Вероятностные задачи на конечных исходах\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"В равновероятных пространствах вероятность события — отношение числа благоприятных исходов к общему. Часто используются сочетания и гипергеометрическое распределение; в независимых испытаниях — схема Бернулли и биномиальное распределение.\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"Пример: вероятность из 52 карт в 5-карточной руке получить ровно 2 туза: \" },\n                { \"type\": \"text\", \"text\": \"C(4, 2) · C(48, 3) / C(52, 5).\" }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"4) Экстремальная комбинаторика\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Ищутся наибольшие/наименьшие возможные значения параметров дискретных структур при ограничениях. Используются принцип Дирихле, лемма о рукопожатиях, методы двусторонних оценок, вероятностный метод.\" }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Пример: среди 13 людей найдутся двое, рождённые в один месяц (13 > 12 по принципу Дирихле).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"5) Конструктивные и существенческие задачи\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Нужно построить объект с заданными свойствами (раскраски графов, коды, блок-дизайны) или доказать невозможность/существование. Часто применяются инварианты, паритет, метод вероятностей (доказательство существования без явной конструкции).\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"6) Комбинаторная оптимизация\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Оптимизационные задачи на дискретных структурах: минимальные покрытия/вершины, максимальные матчинги, назначение, маршрутизация, раскладки. Связь с графами, линейным программированием и алгоритмами. В прикладном программировании встречаются при планировании, распределении ресурсов, оптимизации тестов и конфигураций.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Основные принципы и формулы (памятка)\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Принцип суммы: если объекты выбираются из взаимоисключающих вариантов A и B, то всего |A| + |B|.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Принцип произведения: последовательный выбор — перемножение числа вариантов.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Перестановки: n!; с повторениями: n! / (r1! r2! …).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Размещения: A(n, k) = n! / (n − k)!.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сочетания: C(n, k) = n! / (k!(n − k)!).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сочетания с повторениями: C(n + k − 1, k).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Включение–исключение: |A ∪ B| = |A| + |B| − |A ∩ B|; обобщается на большее число множеств.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Пример: мини-утилита для типовых расчётов (JavaScript)\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"js\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"/* Базовые функции подсчёта: перестановки, размещения, сочетания, звёзды-и-полосы и гипергеометрическая вероятность */\\nfunction factorial(n) {\\n  if (n < 0 || !Number.isInteger(n)) throw new Error('n must be a non-negative integer');\\n  let r = 1;\\n  for (let i = 2; i <= n; i++) r *= i;\\n  return r;\\n}\\n\\nfunction nPr(n, k) {\\n  if (k < 0 || k > n) return 0;\\n  let r = 1;\\n  for (let i = 0; i < k; i++) r *= (n - i);\\n  return r; // равно n! / (n-k)!\\n}\\n\\nfunction nCr(n, k) {\\n  if (k < 0 || k > n) return 0;\\n  k = Math.min(k, n - k);\\n  let res = 1;\\n  for (let i = 1; i <= k; i++) {\\n    res = (res * (n - k + i)) / i; // мультипликативная формула устойчива\\n  }\\n  return Math.round(res);\\n}\\n\\n// «Звёзды и полосы»: число решений x1+...+xk = n, xi >= 0\\nfunction starsAndBars(n, k) {\\n  if (n < 0 || k <= 0) return 0;\\n  return nCr(n + k - 1, k - 1);\\n}\\n\\n// Гипергеометрическая вероятность: из N объектов, K «успехов», выбираем n без возвращения, вероятность ровно k успехов\\nfunction hypergeom(N, K, n, k) {\\n  if (k < 0 || k > K || k > n || n > N) return 0;\\n  const favorable = nCr(K, k) * nCr(N - K, n - k);\\n  const total = nCr(N, n);\\n  return favorable / total;\\n}\\n\\n// Примеры использования\\nconsole.log('A(10,5) размещений:', nPr(10, 5)); // 30240\\nconsole.log('C(10,3) сочетаний:', nCr(10, 3));   // 120\\nconsole.log('Перестановки 8 элементов:', factorial(8)); // 40320\\nconsole.log('Раздать 7 одинаковых конфет 3 детям:', starsAndBars(7, 3)); // 36\\nconsole.log('P(ровно 2 туза в 5 картах):', hypergeom(52, 4, 5, 2)); // ≈ 0.0399\\n\"\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:03:14.675Z",
+        "updatedAt": "2025-10-20T11:03:14.675Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как решается классическая задача 'о рюкзаке' в динамическом программировании?",
+        "id": 1494,
+        "premium": true,
+        "category": {
+          "id": 130,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает “размещение” в комбинаторике?",
+        "id": 1499,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1499,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает “размещение” в комбинаторике?\"}]}]}",
+        "title": "Что означает “размещение” в комбинаторике?",
+        "order": 401101,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размещение\"},{\"type\":\"text\",\"text\":\" в комбинаторике — это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выбрать и упорядочить\"},{\"type\":\"text\",\"text\":\" элементы из множества.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Формальное определение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размещение из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"},{\"type\":\"italic\"}],\"text\":\"n\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"},{\"type\":\"italic\"}],\"text\":\"k\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"упорядоченная выборка\"},{\"type\":\"text\",\"text\":\" из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"k\"},{\"type\":\"text\",\"text\":\" различных элементов, взятых из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"n\"},{\"type\":\"text\",\"text\":\" различных элементов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые слова:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"элементы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не повторяются\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"порядок важен\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пусть есть 3 элемента: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{A, B, C}\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Размещения по 2:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"AB\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"BA\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"AC\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CA\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"BC\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CB\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Всего:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"A32=3!(3−2)!=6A_3^2 = \\\\frac{3!}{(3 - 2)!} = 6A32​=(3−2)!3!​=6\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Отличие от других понятий\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Понятие\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что важно\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сочетание\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"порядок \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не важен\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размещение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"порядок \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"важен\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Перестановка\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все элементы\"}]}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"В контексте алгоритмов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Размещения возникают в задачах:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"генерации всех вариантов длины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"k\"},{\"type\":\"text\",\"text\":\" без повторений;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"перебора состояний с учётом порядка;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"brute-force решений с фиксированной длиной последовательности.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коротко для собеседования:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Размещение — это упорядоченный выбор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"k\"},{\"type\":\"text\",\"text\":\" различных элементов из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"n\"},{\"type\":\"text\",\"text\":\", порядок важен, повторений нет.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:02:58.002Z",
+        "updatedAt": "2026-01-13T10:18:10.358Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие основные типы задач решает комбинаторика?",
+        "id": 1502,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое перестановка в комбинаторике?",
+        "id": 1500,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1500,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое перестановка в комбинаторике?\"}]}]}",
+        "title": "Что такое перестановка в комбинаторике?",
+        "order": 401102,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Перестановка\"},{\"type\":\"text\",\"text\":\" в комбинаторике — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"упорядоченное расположение всех элементов множества\"},{\"type\":\"text\",\"text\":\", при котором используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все элементы без повторений\"},{\"type\":\"text\",\"text\":\", и важен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"порядок\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если у тебя есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"n\"},{\"type\":\"text\",\"text\":\" различных объектов, то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перестановка — это любой возможный порядок этих n объектов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пусть есть множество из трёх элементов:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"{A, B, C}\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все перестановки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ABC\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ACB\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"BAC\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"BCA\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CAB\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CBA\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Всего: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"6 перестановок\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Формула количества перестановок\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для n различных элементов количество перестановок равно:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"P(n)=n!P(n) = n!P(n)=n!\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"n!=n⋅(n−1)⋅(n−2)⋯1n! = n \\\\cdot (n-1) \\\\cdot (n-2) \\\\cdots 1n!=n⋅(n−1)⋅(n−2)⋯1\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"P(3)=3!=3⋅2⋅1=6P(3) = 3! = 3 \\\\cdot 2 \\\\cdot 1 = 6P(3)=3!=3⋅2⋅1=6\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Ключевые свойства перестановок\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все элементы множества\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Порядок важен\"},{\"type\":\"text\",\"text\":\": ABC ≠ ACB.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет повторений.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Где используется\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Алгоритмы (например, генерация всех вариантов порядка).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шифрование (подстановки).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перебор возможных состояний.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Очереди, маршруты, комбинации паролей.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "middle",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:03:04.989Z",
+        "updatedAt": "2025-11-30T16:13:34.536Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает “размещение” в комбинаторике?",
+        "id": 1499,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое комбинация (сочетание) в комбинаторике?",
+        "id": 1501,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1501,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Что такое комбинация (сочетание) в комбинаторике?",
+        "order": 401103,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сочетание (комбинация) — это выбор k элементов из n различных без учёта порядка и без повторений. Число таких выборов обозначается C(n, k) и вычисляется по формуле: C(n, k) = n! / (k! (n − k)!), где 0 ≤ k ≤ n.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Пример: из 5 разных книг выбрать 2 для поездки можно 10 способами: C(5, 2) = 10.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Подробное объяснение\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Определение и обозначения\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сочетание — это любое подмножество размера k множества из n попарно различных элементов. Обозначают C(n, k), также используют выражение «n по k» (биномиальный коэффициент).\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Порядок не важен.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Повторений нет (каждый элемент можно выбрать не более одного раза).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Диапазон параметров: 0 ≤ k ≤ n; C(n, 0) = C(n, n) = 1.\"}]}]}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Формула: C(n, k) = n! / (k! (n − k)!). Удобный эквивалент без больших факториалов: C(n, k) = ∏_{i=1}^{k} (n − k + i) / i, часто берут k = min(k, n − k) для уменьшения числа итераций.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Когда использовать сочетания\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Выбор подкоманды/комитета из сотрудников (кто входит — важно, порядок — нет).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Задачи вида «сколько подмножеств размера k».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Число способов выбрать позиции успехов в серии независимых испытаний.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Отличия от других моделей\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Перестановки: порядок важен, используются все n элементов; число n!.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Размещения без повторений: порядок важен, берём k из n; число A(n, k) = n! / (n − k)!.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сочетания: порядок не важен, берём k из n; число C(n, k).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Примеры расчётов\"}]},{\"type\":\"orderedList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"C(5, 2) = 5! / (2!·3!) = 120 / (2·6) = 10.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"C(10, 3) = 10! / (3!·7!) = (8·9·10) / (2·3) = 120.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Симметрия: C(10, 7) = C(10, 3) = 120.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Свойства\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Симметрия: C(n, k) = C(n, n − k).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Краевые значения: C(n, 0) = C(n, n) = 1.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Рекурсия Паскаля: C(n, k) = C(n − 1, k) + C(n − 1, k − 1).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сумма по k: ∑_{k=0}^{n} C(n, k) = 2^n (число всех подмножеств множества из n элементов).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Практический расчёт без больших факториалов\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Используйте мультипликативную формулу с сокращением на каждом шаге: последовательно умножайте на (n − k + i) и делите на i, выбирая k = min(k, n − k). Это устойчиво и для больших n, k.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Код: вычисление C(n, k) и генерация k-сочетаний (JavaScript)\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"function binom(n, k) {\\n  if (k < 0 || k > n) return 0n;\\n  // BigInt для точности на больших n\\n  let K = BigInt(k);\\n  let N = BigInt(n);\\n  if (K > N - K) K = N - K; // симметрия\\n  let num = 1n;\\n  let den = 1n;\\n  for (let i = 1n; i <= K; i++) {\\n    num *= (N - K + i);\\n    den *= i;\\n    // сократим дробь по НОД, чтобы числа не росли слишком быстро\\n    const g = gcd(num, den);\\n    num /= g;\\n    den /= g;\\n  }\\n  return num / den;\\n}\\n\\nfunction gcd(a, b) {\\n  while (b !== 0n) [a, b] = [b, a % b];\\n  return a;\\n}\\n\\n// Генерация всех k-сочетаний элементов массива arr в лексикографическом порядке\\nfunction combinations(arr, k) {\\n  const n = arr.length;\\n  if (k < 0 || k > n) return [];\\n  const idx = Array.from({ length: k }, (_, i) => i);\\n  const res = [];\\n  while (true) {\\n    res.push(idx.map(i => arr[i]));\\n    // Найти позицию для увеличения\\n    let t = k - 1;\\n    while (t >= 0 && idx[t] === n - k + t) t--;\\n    if (t < 0) break;\\n    idx[t]++;\\n    for (let i = t + 1; i < k; i++) idx[i] = idx[i - 1] + 1;\\n  }\\n  return res;\\n}\\n\\n// Примеры\\nconsole.log(String(binom(5, 2))); // \\\"10\\\"\\nconsole.log(combinations([\\\"A\\\", \\\"B\\\", \\\"C\\\", \\\"D\\\", \\\"E\\\"], 2));\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Связь с биномиальной формулой\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Биномиальные коэффициенты C(n, k) — это коэффициенты при a^{n−k} b^{k} в разложении (a + b)^n. Поэтому сумма по фиксированному k при разных n образует треугольник Паскаля.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Советы для собеседования\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Всегда проговорите критерии: порядок не важен, повторений нет — значит сочетания.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Быстро отличайте модели: порядок важен → перестановки/размещения; порядок не важен → сочетания.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Используйте формулу с произведением вместо факториалов, чтобы избежать переполнений и упростить вычисления на доске.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Проверяйте граничные случаи: k = 0, k = n, а также симметрию C(n, k) = C(n, n − k).\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Итог: сочетание — это способ посчитать число подмножеств фиксированного размера, когда порядок неважен и элементы не повторяются.\"}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:03:10.377Z",
+        "updatedAt": "2025-11-10T11:55:46.062Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое перестановка в комбинаторике?",
+        "id": 1500,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как вычислить количество перестановок n элементов?",
+        "id": 1496,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1496,
+        "type": "boolean",
+        "text": "Как вычислить количество перестановок n элементов?",
+        "title": "Как вычислить количество перестановок n элементов?",
+        "order": 401104,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Количество перестановок n различных элементов равно n! (факториал n). По определению n! = 1 · 2 · 3 · … · n, а 0! = 1.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробное объяснение\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Что такое факториал\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Определение: n! = 1 · 2 · 3 · … · n для n ≥ 1; по соглашению 0! = 1.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Рекуррентно: n! = n · (n − 1)!, где 0! = 1.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Пример: 5! = 1 · 2 · 3 · 4 · 5 = 120.\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Откуда берётся формула\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Перестановка — это упорядочение всех n различных элементов. На первое место можно поставить любой из n элементов, на второе — любой из оставшихся (n − 1), на третье — (n − 2) и т. д., пока не исчерпаем элементы. Перемножая количество вариантов на каждом шаге, получаем n · (n − 1) · (n − 2) · … · 2 · 1 = n!.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Примеры\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"n = 3: 3! = 6. Перестановки элементов {A, B, C}: ABC, ACB, BAC, BCA, CAB, CBA.\" }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"n = 5: 5! = 120.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"n = 0: 0! = 1 (одна «пустая» перестановка).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Частые вариации на собеседованиях\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"Размещения без повторений (упорядоченные выборки из n по k): A(n, k) = n! / (n − k)!. Пример: A(5, 2) = 5 · 4 = 20.\" }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"Перестановки с повторениями: если среди n элементов есть повторяющиеся группы размеров m1, m2, …, mr (m1 + … + mr = n), то число различных перестановок равно n! / (m1! · m2! · … · mr!). Пример: перестановки слова «АННА» (буквы: А×2, Н×2) — 4! / (2! · 2!) = 6.\" }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"Круговые перестановки (расположения по кругу, где повороты считаются одинаковыми): (n − 1)!.\" }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                { \"type\": \"text\", \"text\": \"Упорядоченные последовательности длины k с возвращением (выбор с повторениями): n^k.\" }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Практические замечания\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Факториал растёт очень быстро: уже 20! ≈ 2.43e18, поэтому используйте типы больших чисел (BigInt, arbitrary precision).\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Остерегайтесь переполнения стандартных целых типов.\" }] }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            { \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Во многих задачах факториал не считают напрямую — используют сокращения в дробях (например, в A(n, k) сокращают произведение).\" }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Код: как посчитать n! на практике\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [{ \"type\": \"text\", \"text\": \"JavaScript (BigInt):\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function factorial(n) {\\n  if (!Number.isInteger(n)) throw new TypeError('n must be an integer');\\n  if (n < 0) throw new RangeError('n must be >= 0');\\n  let result = 1n;\\n  const N = BigInt(n);\\n  for (let i = 2n; i <= N; i++) {\\n    result *= i;\\n  }\\n  return result; // BigInt\\n}\\n\\n// Примеры\\nconsole.log(factorial(0).toString());  // \\\"1\\\"\\nconsole.log(factorial(5).toString());  // \\\"120\\\"\\nconsole.log(factorial(25).toString()); // \\\"15511210043330985984000000\\\"\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [{ \"type\": \"text\", \"text\": \"Python:\" }]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"def factorial(n: int) -> int:\\n    if not isinstance(n, int):\\n        raise TypeError(\\\"n must be an integer\\\")\\n    if n < 0:\\n        raise ValueError(\\\"n must be >= 0\\\")\\n    result = 1\\n    for i in range(2, n + 1):\\n        result *= i\\n    return result\\n\\n# Примеры\\nprint(factorial(0))   # 1\\nprint(factorial(5))   # 120\\nprint(factorial(25))  # 15511210043330985984000000\\n\\n# Примечание: в стандартной библиотеке есть готовая функция math.factorial(n).\"\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:02:40.046Z",
+        "updatedAt": "2025-10-20T11:02:40.046Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое комбинация (сочетание) в комбинаторике?",
+        "id": 1501,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как вычислить количество сочетаний из n по k?",
+        "id": 1505,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1505,
+        "type": "boolean",
+        "text": "Как вычислить количество сочетаний из n по k?",
+        "title": "Как вычислить количество сочетаний из n по k?",
+        "order": 401105,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Короткий ответ\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Количество сочетаний из n по k (обозначается C(n, k)) вычисляется по формуле: C(n, k) = n! / (k! · (n − k)!). Также удобны эквиваленты: C(n, k) = C(n, n−k), C(n, k) = C(n−1, k) + C(n−1, k−1), C(n, k) = ∏_{i=1..k} (n−k+i)/i.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Подробное объяснение\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Определение и формулы\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Факториальная формула: C(n, k) = n! / (k! · (n − k)!), где n и k — неотрицательные целые, k ≤ n.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Симметрия: C(n, k) = C(n, n−k). Всегда выгодно брать k = min(k, n−k), чтобы сократить количество операций.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Рекуррентная формула (треугольник Паскаля): C(n, k) = C(n−1, k) + C(n−1, k−1), с базами C(n, 0) = C(n, n) = 1.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Итеративная «умножить-и-разделить» формула (устойчива к переполнениям при использовании больших целых): C(n, k) = ∏_{i=1..k} (n−k+i)/i. Деление на каждом шаге целочисленное.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Разбор на примере\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Пример: C(5, 2). По определению: 5! / (2! · 3!) = 120 / (2 · 6) = 120 / 12 = 10.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Через произведение: k = 2, значит C(5, 2) = ((5−2+1)/1) · ((5−2+2)/2) = (4/1) · (5/2) = 4 · 2.5 = 10 (последовательное целочисленное деление на шаге даёт целое значение).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Алгоритмы вычисления на практике\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Через факториалы напрямую. Просто, но быстро переполняется в стандартных числах и требует длинной арифметики. Подходит только для очень малых n.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Итеративный метод (предпочтительно): последовательно умножаем на (n−k+i) и делим на i при i = 1..k. Используйте BigInt (JS) или bigint-типы, чтобы избежать переполнения.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"ДП по треугольнику Паскаля: O(n·k) по времени. Полезно, когда нужно много значений сразу, а n не слишком большое; можно хранить только одну строку (O(k) памяти).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"По модулю простого p. Если p > n, можно умножать по шагам и делить через обратные элементы по модулю p (теорема Ферма). Если p ≤ n, требуются специальные методы (например, теорема Лукаса).\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Код: над целыми числами (BigInt, JavaScript)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": {\n        \"language\": \"js\"\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function comb(n, k) {\\n  if (!Number.isInteger(n) || !Number.isInteger(k)) {\\n    throw new TypeError(\\\"n и k должны быть целыми числами\\\");\\n  }\\n  if (n < 0 || k < 0 || k > n) return 0n;\\n  // Симметрия: C(n, k) = C(n, n-k)\\n  k = Math.min(k, n - k);\\n  let N = BigInt(n);\\n  let K = BigInt(k);\\n  let res = 1n;\\n  for (let i = 1n; i <= K; i++) {\\n    res = (res * (N - K + i)) / i; // Деление всегда целое\\n  }\\n  return res; // BigInt\\n}\\n\\n// Примеры:\\nconsole.log(comb(5, 2).toString());    // \\\"10\\\"\\nconsole.log(comb(52, 5).toString());   // \\\"2598960\\\"\\nconsole.log(comb(100, 50).toString()); // \\\"100891344545564193334812497256\\\"\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Код: по модулю простого p (корректно, когда p > n)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": {\n        \"language\": \"js\"\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"// Комбинации по модулю простого p, корректно, когда p > n\\nfunction modPow(a, e, p) {\\n  a = BigInt(a) % BigInt(p);\\n  e = BigInt(e);\\n  p = BigInt(p);\\n  let r = 1n;\\n  while (e > 0n) {\\n    if (e & 1n) r = (r * a) % p;\\n    a = (a * a) % p;\\n    e >>= 1n;\\n  }\\n  return r;\\n}\\n\\nfunction modInv(a, p) {\\n  // p — простое; обратный по малой теореме Ферма\\n  return modPow(a, BigInt(p) - 2n, p);\\n}\\n\\nfunction combModPrime(n, k, p) {\\n  if (!Number.isInteger(n) || !Number.isInteger(k)) {\\n    throw new TypeError(\\\"n и k должны быть целыми числами\\\");\\n  }\\n  if (n < 0 || k < 0 || k > n) return 0n;\\n  if (p <= n) {\\n    throw new Error(\\\"Этот метод корректен только если p > n. Для общего случая используйте, например, теорему Лукаса.\\\");\\n  }\\n  k = Math.min(k, n - k);\\n  let N = BigInt(n);\\n  let K = BigInt(k);\\n  let P = BigInt(p);\\n  let res = 1n;\\n  for (let i = 1n; i <= K; i++) {\\n    res = (res * (N - K + i)) % P;\\n    res = (res * modInv(i, P)) % P;\\n  }\\n  return res;\\n}\\n\\n// Пример:\\nconsole.log(combModPrime(5, 2, 1000000007n).toString()); // \\\"10\\\"\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Подводные камни и рекомендации\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Переполнение: почти все C(n, k) быстро выходят за пределы 64-битных чисел; в JS используйте BigInt.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Не используйте плавающую арифметику для деления — получите ошибки округления. Деление должно быть целочисленным на каждом шаге.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Сокращайте k до min(k, n−k) — это снижает число операций примерно вдвое.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Границы: если k < 0 или k > n — результат 0; если k = 0 или k = n — результат 1.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Проверочные значения\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"C(0, 0) = 1; C(1, 0) = 1; C(1, 1) = 1.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"C(5, 2) = 10; C(10, 1) = 10; C(10, 9) = 10.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"C(52, 5) = 2,598,960.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:04:27.820Z",
+        "updatedAt": "2025-10-20T11:04:27.820Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как вычислить количество перестановок n элементов?",
+        "id": 1496,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое треугольник Паскаля?",
+        "id": 1504,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1504,
+        "type": "boolean",
+        "text": "Что такое треугольник Паскаля?",
+        "title": "Что такое треугольник Паскаля?",
+        "order": 401106,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Короткий ответ\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Треугольник Паскаля — это бесконечная таблица биномиальных коэффициентов C(n, k), где каждая строка n начинается и заканчивается единицей, а каждое внутреннее число равно сумме двух чисел над ним: C(n, k) = C(n−1, k−1) + C(n−1, k). Он используется для вычисления сочетаний и коэффициентов в разложении (a + b)^n.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 2 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Подробное объяснение\" }]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Определение\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Треугольник Паскаля — это способ организовать числа C(n, k) (сочетания «n по k»). Границы треугольника заполнены единицами: C(n, 0) = C(n, n) = 1. Внутренние элементы вычисляются по рекуррентной формуле: C(n, k) = C(n−1, k−1) + C(n−1, k). Индексация обычно начинается с n = 0 в верхней строке (где единственный элемент равен 1).\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Первые строки\" }]\n    },\n    {\n      \"type\": \"table\",\n      \"content\": [\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            {\n              \"type\": \"tableHeader\",\n              \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"n\" }] }]\n            },\n            {\n              \"type\": \"tableHeader\",\n              \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Значения C(n, k) слева направо\" }] }]\n            }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"0\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1\" }] }] }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1 1\" }] }] }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"2\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1 2 1\" }] }] }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"3\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1 3 3 1\" }] }] }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"4\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1 4 6 4 1\" }] }] }\n          ]\n        },\n        {\n          \"type\": \"tableRow\",\n          \"content\": [\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"5\" }] }] },\n            { \"type\": \"tableCell\", \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"1 5 10 10 5 1\" }] }] }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Ключевые свойства\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Рекуррентное соотношение: C(n, k) = C(n−1, k−1) + C(n−1, k); базовые случаи: C(n, 0) = C(n, n) = 1.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Биномиальная теорема: (a + b)^n = Σ C(n, k) a^(n−k) b^k.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Симметрия: C(n, k) = C(n, n − k).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Сумма строки: Σ_{k=0..n} C(n, k) = 2^n.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [{ \"type\": \"text\", \"text\": \"Диагонали: край — все единицы; следующая диагональ — натуральные числа; далее — треугольные числа и т. д. Неглубокие диагонали дают последовательность Фибоначчи.\" }]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Комбинаторный смысл: C(n, k) — число способов выбрать k элементов из n без учёта порядка.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Чётность: по модулю 2 рисунок треугольника образует фрактал Серпинского.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Алгоритмы и код (JavaScript)\" }]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Ниже — практичная реализация для получения n-й строки и первых R строк. Используется BigInt, чтобы избежать переполнения для больших n. Формула для соседних коэффициентов: C(n, k+1) = C(n, k) × (n − k) / (k + 1).\" }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"attrs\": { \"language\": \"javascript\" },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function pascalRow(n) {\\n  const row = Array(n + 1);\\n  row[0] = 1n;\\n  for (let k = 1; k <= n; k++) {\\n    row[k] = (row[k - 1] * BigInt(n - (k - 1))) / BigInt(k);\\n  }\\n  return row;\\n}\\n\\nfunction pascalTriangle(rows) {\\n  const tri = [];\\n  for (let n = 0; n < rows; n++) {\\n    tri.push(pascalRow(n));\\n  }\\n  return tri;\\n}\\n\\n// Примеры использования\\nconsole.log(pascalRow(5).map(Number));       // [1, 5, 10, 10, 5, 1]\\nconsole.log(pascalTriangle(6).map(r => r.map(Number)));\\n// [\\n//   [1],\\n//   [1, 1],\\n//   [1, 2, 1],\\n//   [1, 3, 3, 1],\\n//   [1, 4, 6, 4, 1],\\n//   [1, 5, 10, 10, 5, 1]\\n// ]\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        { \"type\": \"text\", \"text\": \"Эта реализация не использует факториалы, работает за O(n) для одной строки и устойчива к переполнению благодаря BigInt.\" }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Типичные задачи на собеседовании\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Вывести первые R строк треугольника Паскаля (итеративно, без рекурсии).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Получить n-ю строку за O(n) памяти (инкрементально или in-place справа налево).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Вычислить C(n, k) без факториалов (умножая и деля по ходу; использовать симметрию k = min(k, n − k)).\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Сложность\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Построение до строки n целиком: O(n^2) по времени и памяти.\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Одна строка n: O(n) по времени и O(n) по памяти (или O(1) доп. памяти при выводе по одному числу).\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Частые ошибки\" }]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Использование факториалов (переполнение и лишняя сложность).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Деление в числах с плавающей точкой вместо целочисленной арифметики (теряется точность).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Игнорирование симметрии C(n, k) = C(n, n − k), из-за чего цикл делает вдвое больше работы.\" }] }]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": { \"level\": 3 },\n      \"content\": [{ \"type\": \"text\", \"text\": \"Краткие формулы\" }]\n    },\n    {\n      \"type\": \"orderedList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Закрытая форма (факториальная): C(n, k) = n! / (k! (n − k)!).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Рекуррентная формула: C(n, k) = C(n − 1, k − 1) + C(n − 1, k).\" }] }]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [{ \"type\": \"paragraph\", \"content\": [{ \"type\": \"text\", \"text\": \"Соседние коэффициенты: C(n, k + 1) = C(n, k) × (n − k) / (k + 1).\" }] }]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:03:54.489Z",
+        "updatedAt": "2025-10-20T11:03:54.489Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как вычислить количество сочетаний из n по k?",
+        "id": 1505,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что изучает теория чисел?",
+        "id": 1503,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1503,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Что изучает теория чисел?",
+        "order": 401107,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Что изучает теория чисел?\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Теория чисел — раздел математики о свойствах целых чисел и близких к ним структур: делимости, простых чисел и их распределения, арифметики по модулю (конгруэнций), решений диофантовых уравнений, а также алгоритмов, построенных на этих идеях (например, для криптографии).\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Развернутый ответ\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Определение и предмет области\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Теория чисел изучает натуральные и целые числа, их разложение на простые множители, делимость, сравнения по модулю, а также уравнения, в которых решения ищутся в целых или рациональных числах (диофантовы уравнения). Современная теория чисел опирается на инструменты анализа, алгебры и вычислительной математики.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые разделы и идеи\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Делимость и алгоритмы.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"НОД, алгоритм Евклида, лемма Безу: для целых a, b существуют x, y, такие что ax + by = gcd(a, b).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Фундаментальная теорема арифметики: любое n > 1 единственным образом представляется в виде произведения простых степеней.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Простые числа и факторизация.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Тесты простоты (Миллер—Рабин), методы факторизации (ρ-метод Полларда, квадратичное решето).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Распределение простых: сколько простых не превосходит x.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Конгруэнции и арифметика по модулю.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"a ≡ b (mod m) означает, что m делит a − b; можно складывать, умножать и возводить в степень «по модулю».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Теорема Ферма: a^(p−1) ≡ 1 (mod p) при простом p и gcd(a, p)=1. Теорема Эйлера: a^φ(m) ≡ 1 (mod m), если gcd(a, m)=1.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Китайская теорема об остатках: система сравнений по взаимно простым модулям сводится к одному сравнению по произведению модулей.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Диофантовы уравнения.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Линейные: ax + by = c имеют решения в целых тогда и только тогда, когда gcd(a, b) делит c.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Классические нелинейные: уравнение Пелля x^2 − Dy^2 = 1, пифагоровы тройки, уравнения Морделла и эллиптические кривые.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Аналитическая теория чисел.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Теорема о распределении простых: π(x) ~ x / ln x.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Дзета-функция Римана и L-функции как инструменты исследования распределения простых.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Алгебраическая теория чисел.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Кольца алгебраических целых, разложение простых в расширениях числовых полей, идеалы и классовые группы.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Вычислительная теория чисел и криптография.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Практические алгоритмы: быстрые тесты простоты, возведение в степень по модулю, расширенный алгоритм Евклида, китайская теорема в алгоритмическом виде.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Применения: RSA, Diffie–Hellman, эллиптические кривые, подписи и протоколы.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Аддитивная и комбинаторная теория чисел.\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Суммы множеств, теоремы типа Шнайреля–Рота, гипотезы Гольдбаха и Виринга.\"}]}]}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Типичные примеры задач и утверждений\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Проверить, является ли число простым; найти разложение на простые множители для умеренно больших чисел.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Решить сравнение a·x ≡ b (mod m) или систему сравнений с взаимно простыми модулями (КТО).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Найти НОД(a, b) и коэффициенты Безу x, y, такие что ax + by = gcd(a, b).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оценить количество простых до N и понять, почему алгоритмы криптографии на больших числах работают.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Практические примеры в коде (Python)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"# Базовые инструменты теории чисел для практики\\n\\ndef gcd(a: int, b: int) -> int:\\n    \\\"\\\"\\\"Наибольший общий делитель (алгоритм Евклида).\\\"\\\"\\\"\\n    while b:\\n        a, b = b, a % b\\n    return abs(a)\\n\\n\\ndef extended_gcd(a: int, b: int):\\n    \\\"\\\"\\\"Расширенный алгоритм Евклида: возвращает (g, x, y), где ax + by = g = gcd(a, b).\\\"\\\"\\\"\\n    if b == 0:\\n        return (abs(a), 1 if a > 0 else -1, 0)\\n    g, x1, y1 = extended_gcd(b, a % b)\\n    return (g, y1, x1 - (a // b) * y1)\\n\\n\\ndef mod_inverse(a: int, m: int) -> int:\\n    \\\"\\\"\\\"Обратный по модулю: находит x такое, что a*x ≡ 1 (mod m), если gcd(a, m) = 1.\\\"\\\"\\\"\\n    g, x, _ = extended_gcd(a, m)\\n    if g != 1:\\n        raise ValueError(\\\"Обратного по модулю не существует\\\")\\n    return x % m\\n\\n\\ndef is_probable_prime(n: int) -> bool:\\n    \\\"\\\"\\\"Вероятностный тест Миллера—Рабина для n > 3 (достаточен для практики).\\n    Для малых n обрабатываем тривиально.\\n    \\\"\\\"\\\"\\n    if n < 2:\\n        return False\\n    small_primes = [2, 3, 5, 7, 11]\\n    if n in small_primes:\\n        return True\\n    for p in small_primes:\\n        if n % p == 0:\\n            return False\\n    # представляем n-1 = 2^r * d, где d нечётное\\n    d = n - 1\\n    r = 0\\n    while d % 2 == 0:\\n        d //= 2\\n        r += 1\\n    # фиксированный набор оснований, достаточный для умеренных n\\n    bases = [2, 3, 5, 7, 11]\\n    for a in bases:\\n        if a % n == 0:\\n            continue\\n        x = pow(a, d, n)\\n        if x == 1 or x == n - 1:\\n            continue\\n        for _ in range(r - 1):\\n            x = pow(x, 2, n)\\n            if x == n - 1:\\n                break\\n        else:\\n            return False\\n    return True\\n\\n\\ndef crt(remainders, moduli):\\n    \\\"\\\"\\\"Китайская теорема об остатках: решает систему x ≡ r_i (mod m_i) при попарно взаимно простых m_i.\\n    Возвращает (x, M), где M = prod(m_i) и x — наименьшее неотрицательное решение.\\n    \\\"\\\"\\\"\\n    M = 1\\n    for m in moduli:\\n        M *= m\\n    x = 0\\n    for r, m in zip(remainders, moduli):\\n        Mi = M // m\\n        inv = mod_inverse(Mi % m, m)\\n        x = (x + r * Mi * inv) % M\\n    return x, M\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    # НОД и коэффициенты Безу\\n    a, b = 252, 198\\n    g, x, y = extended_gcd(a, b)\\n    print(\\\"gcd:\\\", g, \\\"Проверка Безу:\\\", a * x + b * y)\\n\\n    # Обратный по модулю и решение линейного сравнения a*x ≡ b (mod m)\\n    a, b, m = 7, 5, 26\\n    g = gcd(a, m)\\n    if b % g == 0:\\n        a_, b_, m_ = a // g, b // g, m // g\\n        inv = mod_inverse(a_, m_)\\n        x0 = (inv * b_) % m_\\n        print(f\\\"Решение a*x ≡ b (mod m): x ≡ {x0} (mod {m_})\\\")\\n\\n    # Китайская теорема об остатках: x ≡ 2 (mod 5), x ≡ 3 (mod 7)\\n    x, M = crt([2, 3], [5, 7])\\n    print(\\\"CRT:\\\", x, \\\"mod\\\", M)  # 17 mod 35\\n\\n    # Вероятностная проверка простоты\\n    for n in [97, 221, 10**9 + 7]:\\n        print(n, \\\"простое?\\\", is_probable_prime(n))\\n\\n    # Мини-демо RSA (только для учебных целей!)\\n    p, q = 61, 53\\n    n = p * q\\n    phi = (p - 1) * (q - 1)\\n    e = 17\\n    d = mod_inverse(e, phi)\\n    m = 42\\n    c = pow(m, e, n)\\n    m2 = pow(c, d, n)\\n    print(\\\"RSA:\\\", \\\"n=\\\", n, \\\"e=\\\", e, \\\"d=\\\", d, \\\"cipher=\\\", c, \\\"decrypted=\\\", m2)\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Практические применения (в ИТ и на собеседованиях)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Криптография и безопасность: RSA, ECDSA, протоколы обмена ключами — все опирается на простые числа, модулярную арифметику и трудность факторизации/логарифмирования.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Хеширование, шардирование и распределенные системы: работа по модулю, выбор хороших модулей (обычно простых), оценка коллизий и равномерности.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация алгоритмов: быстрое возведение в степень, вычисление НОД, обратных по модулю — часто встречается в задачах на алгоритмы и структуры данных.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Контрольные суммы, кодирование, вероятностные структуры (Bloom-фильтры): выбор параметров с учетом свойств чисел.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые факты, которые стоит помнить\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Любое натуральное число > 1 единственным образом раскладывается на простые множители.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"gcd(a, b) можно быстро находить алгоритмом Евклида; расширенный вариант дает коэффициенты для решения линейных сравнений.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Если gcd(a, m) = 1, то существует обратный элемент a^{-1} по модулю m и он единственен по модулю m.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Малые теоремы (Ферма, Эйлера) дают основу для быстрых алгоритмов возведения в степень и тестов простоты.\"}]}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:03:15.532Z",
+        "updatedAt": "2025-11-10T11:55:50.257Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое треугольник Паскаля?",
+        "id": 1504,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как посчитать сумму делителей числа?",
+        "id": 1498,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1498,
+        "type": "boolean",
+        "text": "Как посчитать сумму делителей числа?",
+        "title": "Как посчитать сумму делителей числа?",
+        "order": 401108,
+        "premium": false,
+        "isPopular": true,
+        "explanation": "{\n  \"type\": \"doc\",\n  \"content\": [\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Короткий ответ\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Чтобы посчитать сумму делителей числа n (обычно для n ≥ 1):\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Быстро для одного числа: перебрать i от 1 до ⌊√n⌋, если i делит n — добавить i и n/i (если это разные числа). Сложность O(√n).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Идеально для многих запросов или очень больших n: разложить n на простые множители n = p1^a1 ⋯ pk^ak и использовать формулу суммы делителей: σ(n) = ∏ (p_i^(a_i+1) − 1) / (p_i − 1).\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Подробный разбор\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Определения и оговорки\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Сумма делителей σ(n) — сумма всех положительных делителей числа n, включая 1 и n.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Сумма собственных делителей — это σ(n) − n (все делители, кроме самого n).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Обычно определяем σ(n) только для n ≥ 1. Для n ≤ 0 — либо ошибка ввода, либо берём σ(|n|). Для n = 0 делителей бесконечно много — задача некорректна.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Подходы\"\n        }\n      ]\n    },\n    {\n      \"type\": \"orderedList\",\n      \"attrs\": {\n        \"start\": 1\n      },\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Наивный перебор O(n): пройти по всем i от 1 до n и суммировать те, что делят n. Просто, но медленно.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Перебор до √n O(√n): если i | n, то n/i — тоже делитель. Перебираем i = 1..⌊√n⌋ и добавляем пару делителей сразу. Если i² = n, добавляем i один раз.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Через простые множители и формулу: если n = ∏ p_i^{a_i}, то σ(n) = ∏ ((p_i^{a_i+1} − 1) / (p_i − 1)). Для факторизации можно использовать деление пробой до √n, решето для множества запросов, или более продвинутые методы для очень больших n.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Примеры (n = 36)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Делители: 1, 2, 3, 4, 6, 9, 12, 18, 36. Сумма = 91. Разложение: 36 = 2^2 ⋅ 3^2, тогда σ(36) = (1+2+4) ⋅ (1+3+9) = 7 ⋅ 13 = 91.\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Код (JavaScript)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"O(√n) перебор делителей\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function sumDivisorsSqrt(n) {\\n  if (!Number.isInteger(n)) throw new Error(\\\"n must be integer\\\");\\n  if (n === 0) throw new Error(\\\"sigma(0) is undefined (infinitely many divisors)\\\");\\n  n = Math.abs(n);\\n  if (n === 1) return 1;\\n\\n  let sum = 0;\\n  const limit = Math.floor(Math.sqrt(n));\\n\\n  for (let i = 1; i <= limit; i++) {\\n    if (n % i === 0) {\\n      const j = n / i;\\n      sum += i;\\n      if (j !== i) sum += j; // добавляем пару, если это не корень\\n    }\\n  }\\n  return sum;\\n}\\n\\nfunction sumProperDivisorsSqrt(n) {\\n  if (n === 1) return 0; // собственные делители 1 — пусто\\n  return sumDivisorsSqrt(n) - Math.abs(n);\\n}\\n\\n// Примеры\\nconsole.log(sumDivisorsSqrt(36)); // 91\\nconsole.log(sumDivisorsSqrt(13)); // 14 (1 + 13)\\nconsole.log(sumProperDivisorsSqrt(28)); // 28 (совершенное число)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Через разложение на простые множители + формула\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function factorizeTrialDivision(n) {\\n  const factors = [];\\n  let x = n;\\n\\n  let count = 0;\\n  while (x % 2 === 0) {\\n    x /= 2;\\n    count++;\\n  }\\n  if (count > 0) factors.push([2, count]);\\n\\n  let p = 3;\\n  while (p * p <= x) {\\n    count = 0;\\n    while (x % p === 0) {\\n      x /= p;\\n      count++;\\n    }\\n    if (count > 0) factors.push([p, count]);\\n    p += 2;\\n  }\\n\\n  if (x > 1) factors.push([x, 1]);\\n  return factors; // массив пар [простое, степень]\\n}\\n\\nfunction sumDivisorsByFactorization(n) {\\n  if (!Number.isInteger(n)) throw new Error(\\\"n must be integer\\\");\\n  if (n === 0) throw new Error(\\\"sigma(0) is undefined\\\");\\n  n = Math.abs(n);\\n  if (n === 1) return 1;\\n\\n  const factors = factorizeTrialDivision(n);\\n  let result = 1;\\n  for (const [p, a] of factors) {\\n    // Геометрическая прогрессия: 1 + p + p^2 + ... + p^a = (p^(a+1) - 1)/(p - 1)\\n    let termNum = 1; // p^(a+1)\\n    for (let i = 0; i < a + 1; i++) termNum *= p; // безопасно для умеренных n\\n    const term = (termNum - 1) / (p - 1);\\n    result *= term;\\n  }\\n  return result;\\n}\\n\\nconsole.log(sumDivisorsByFactorization(36)); // 91\\nconsole.log(sumDivisorsByFactorization(1));  // 1\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 3\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Версия для больших чисел с BigInt (когда результат не помещается в Number)\"\n        }\n      ]\n    },\n    {\n      \"type\": \"codeBlock\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"function sumDivisorsBigInt(n) {\\n  if (typeof n !== 'bigint') n = BigInt(n);\\n  if (n === 0n) throw new Error(\\\"sigma(0) is undefined\\\");\\n  n = n < 0n ? -n : n;\\n  if (n === 1n) return 1n;\\n\\n  // Факторизация пробным делением (BigInt)\\n  const factors = [];\\n  let x = n;\\n  let count = 0n;\\n  while (x % 2n === 0n) { x /= 2n; count++; }\\n  if (count > 0n) factors.push([2n, count]);\\n\\n  let p = 3n;\\n  while (p * p <= x) {\\n    count = 0n;\\n    while (x % p === 0n) { x /= p; count++; }\\n    if (count > 0n) factors.push([p, count]);\\n    p += 2n;\\n  }\\n  if (x > 1n) factors.push([x, 1n]);\\n\\n  let result = 1n;\\n  for (const [pBig, aBig] of factors) {\\n    // p^(a+1)\\n    let pow = 1n;\\n    for (let i = 0n; i < aBig + 1n; i++) pow *= pBig;\\n    const term = (pow - 1n) / (pBig - 1n);\\n    result *= term;\\n  }\\n  return result;\\n}\\n\\nconsole.log(String(sumDivisorsBigInt(999983n * 999983n))); // пример большого результата\"\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Какой метод выбрать\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Один запрос, средние n (до ~1e12 в JS с осторожностью): O(√n) перебор — просто и быстро.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Много запросов на ограниченном диапазоне: предварительно посчитать простые (решето), затем факторизовать быстрее и использовать формулу.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Очень большие числа или потенциально не помещающиеся суммы: BigInt-реализация.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Подводные камни и проверки\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Не забывайте добавлять пару делителя n/i и не удваивать корень, если i² = n.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"n = 1: σ(1) = 1, сумма собственных делителей = 0.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"n ≤ 0: обычно берём |n|, но формально задача ставится для n ≥ 1. n = 0 — некорректно.\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Переполнение Number в JS: для больших n используйте BigInt.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"type\": \"heading\",\n      \"attrs\": {\n        \"level\": 2\n      },\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"Сложность\"\n        }\n      ]\n    },\n    {\n      \"type\": \"bulletList\",\n      \"content\": [\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Перебор до √n: время O(√n), память O(1).\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"type\": \"listItem\",\n          \"content\": [\n            {\n              \"type\": \"paragraph\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"Факторизация пробным делением: в худшем O(√n), но средний случай быстрее, затем формула считается за O(k), где k — число различных простых множителей.\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:02:56.192Z",
+        "updatedAt": "2025-10-20T11:02:56.192Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что изучает теория чисел?",
+        "id": 1503,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает алгоритм Евклида?",
+        "id": 1497,
+        "premium": true,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1497,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[],\"attrs\":{}}",
+        "title": "Что делает алгоритм Евклида?",
+        "order": 401109,
+        "premium": true,
+        "isPopular": true,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Короткий ответ\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Алгоритм Евклида находит наибольший общий делитель (НОД) двух чисел, последовательно заменяя пару (a, b) на (b, a mod b), пока остаток не станет нулём. Последнее ненулевое значение и есть НОД.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":1},\"content\":[{\"type\":\"text\",\"text\":\"Развернутый ответ\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что делает и зачем нужен\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Алгоритм Евклида вычисляет наибольший общий делитель (НОД) двух целых чисел. Это базовая операция в:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"сокращении дробей и вычислении НОК (через НОК(a, b) = |a · b| / НОД(a, b));\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"криптографии (RSA), модульной арифметике и поиске обратного по модулю;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"проверке взаимной простоты чисел и решении линейных диофантовых уравнений.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Идея алгоритма\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Ключевое свойство: НОД(a, b) = НОД(b, a mod b). Повторяя замену (a, b) → (b, a mod b), мы уменьшаем второе число. Когда остаток становится 0, последнее ненулевое значение и есть НОД.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Пошаговый пример\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"Пример: a = 252, b = 198\\n252 = 198 · 1 + 54     → заменяем на (198, 54)\\n198 = 54 · 3 + 36      → (54, 36)\\n54 = 36 · 1 + 18       → (36, 18)\\n36 = 18 · 2 + 0        → НОД = 18\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Варианты реализации\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Через вычитание: пока a ≠ b, вычитать меньшее из большего. Медленнее, но наглядно.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Через деление с остатком (классический вариант): заменять (a, b) на (b, a mod b). Быстро и просто.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Рекурсивно или итеративно — эквивалентно по сути.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Код: классический и расширенный алгоритм (JavaScript)\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"// НОД: классический алгоритм Евклида (итеративно)\\nfunction gcd(a, b) {\\n  a = Math.abs(a);\\n  b = Math.abs(b);\\n  if (a === 0 && b === 0) return 0; // по договорённости\\n  while (b !== 0) {\\n    const t = a % b;\\n    a = b;\\n    b = t;\\n  }\\n  return a;\\n}\\n\\n// НОК через НОД (с защитой от переполнения в JS для целых до Number.MAX_SAFE_INTEGER)\\nfunction lcm(a, b) {\\n  if (a === 0 || b === 0) return 0;\\n  return Math.abs((a / gcd(a, b)) * b);\\n}\\n\\n// Расширенный алгоритм Евклида: возвращает (g, x, y) такие, что a*x + b*y = g = gcd(a,b)\\nfunction extendedGCD(a, b) {\\n  let old_r = Math.abs(a), r = Math.abs(b);\\n  let old_s = 1, s = 0;\\n  let old_t = 0, t = 1;\\n\\n  while (r !== 0) {\\n    const q = Math.floor(old_r / r);\\n    [old_r, r] = [r, old_r - q * r];\\n    [old_s, s] = [s, old_s - q * s];\\n    [old_t, t] = [t, old_t - q * t];\\n  }\\n  // old_r = gcd, коэффициенты Безу: old_s, old_t\\n  // Восстановим знак в зависимости от исходных a, b\\n  if (a < 0) old_s = -old_s;\\n  if (b < 0) old_t = -old_t;\\n  return { g: old_r, x: old_s, y: old_t };\\n}\\n\\n// Обратный по модулю m (предполагается m > 1). Если не существует — возвращаем null.\\nfunction modInverse(a, m) {\\n  const { g, x } = extendedGCD(a, m);\\n  if (g !== 1) return null; // обратного нет, a и m не взаимно просты\\n  // нормализуем в [0, m)\\n  return ((x % m) + m) % m;\\n}\\n\\n// Примеры\\nconsole.log(gcd(252, 198)); // 18\\nconsole.log(lcm(12, 18));   // 36\\nconsole.log(modInverse(3, 11)); // 4, потому что 3*4 ≡ 1 (mod 11)\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Код: классический и расширенный алгоритм (Python)\"}]},{\"type\":\"codeBlock\",\"content\":[{\"type\":\"text\",\"text\":\"def gcd(a: int, b: int) -> int:\\n    a, b = abs(a), abs(b)\\n    if a == 0 and b == 0:\\n        return 0  # по договорённости\\n    while b:\\n        a, b = b, a % b\\n    return a\\n\\ndef lcm(a: int, b: int) -> int:\\n    if a == 0 or b == 0:\\n        return 0\\n    return abs(a // gcd(a, b) * b)\\n\\n# Расширенный алгоритм Евклида\\nfrom typing import Tuple\\n\\ndef extended_gcd(a: int, b: int) -> Tuple[int, int, int]:\\n    old_r, r = abs(a), abs(b)\\n    old_s, s = 1, 0\\n    old_t, t = 0, 1\\n    while r:\\n        q = old_r // r\\n        old_r, r = r, old_r - q * r\\n        old_s, s = s, old_s - q * s\\n        old_t, t = t, old_t - q * t\\n    # Корректируем знаки\\n    if a < 0:\\n        old_s = -old_s\\n    if b < 0:\\n        old_t = -old_t\\n    return old_r, old_s, old_t  # gcd, x, y\\n\\n# Обратный по модулю\\ndef mod_inverse(a: int, m: int):\\n    g, x, _ = extended_gcd(a, m)\\n    if g != 1:\\n        return None\\n    return (x % m + m) % m\\n\\nprint(gcd(252, 198))  # 18\\nprint(lcm(12, 18))    # 36\\nprint(mod_inverse(3, 11))  # 4\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Почему это работает (корректность и завершение)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Инвариант: НОД(a, b) = НОД(b, a mod b). Любой общий делитель a и b делит и остаток a mod b, и наоборот.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Завершение: последовательность остатков строго убывает и достигает 0 за O(log min(a, b)) шагов деления.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Сложность\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"В классической модели — O(log min(a, b)) операций деления. Важна и практическая скорость: вариант с остатком значительно быстрее варианта с вычитанием.\"}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Граничные случаи и практические советы\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"НОД(a, 0) = |a|; НОД(0, 0) можно определить как 0 по договорённости, но математически не определён.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Используйте |a| и |b|: знак на НОД не влияет, НОД всегда неотрицателен.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Следите за переполнением при НОК: вычисляйте (a / НОД(a, b)) * b вместо a * b.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Для очень больших чисел используйте BigInt/библиотеки больших чисел.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"При вычислении обратного по модулю убедитесь, что НОД(a, m) = 1; иначе обратного нет.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Типичные вопросы на собеседовании\"}]},{\"type\":\"orderedList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Доказать равенство НОД(a, b) = НОД(b, a mod b).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Сравнить версии: вычитание vs деление с остатком (асимптотика и практика).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Объяснить расширенный алгоритм и применение к поиску обратного по модулю.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Связь НОД и НОК, обработка крайних случаев и возможное переполнение.\"}]}]}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 131,
+        "createdAt": "2025-10-20T11:02:48.604Z",
+        "updatedAt": "2025-11-10T11:55:55.995Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 131,
+          "title": "Комбинаторика и теория чисел",
+          "directions": [
+            {
+              "categoryId": 131,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как посчитать сумму делителей числа?",
+        "id": 1498,
+        "premium": false,
+        "category": {
+          "id": 131,
+          "parent": {
+            "title": "Алгоритмы",
+            "id": 10,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое структура данных?",
+        "id": 1506,
+        "premium": false,
+        "category": {
+          "id": 132,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

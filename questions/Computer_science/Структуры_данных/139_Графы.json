@@ -1,0 +1,1542 @@
+{
+  "category": {
+    "id": 139,
+    "title": "Графы",
+    "description": " ",
+    "parentId": 11
+  },
+  "totalQuestions": 18,
+  "downloadedAt": "2026-03-10T09:40:53.272Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1600,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое граф?\"}]}]}",
+        "title": "Что такое граф?",
+        "order": 410800,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Граф\"},{\"type\":\"text\",\"text\":\" — это структура данных, состоящая из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вершин (nodes)\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рёбер (edges)\"},{\"type\":\"text\",\"text\":\", которые соединяют эти вершины.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Определение:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Граф — это множество вершин \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"V\"},{\"type\":\"text\",\"text\":\" и множество рёбер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\", где каждое ребро соединяет две вершины:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типы графов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Неориентированный граф\"},{\"type\":\"text\",\"text\":\" — рёбра не имеют направления (связь взаимная).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пример: дружба в соцсети.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ориентированный граф (digraph)\"},{\"type\":\"text\",\"text\":\" — рёбра имеют направление (стрелки).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пример: подписки в Instagram.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Виды связей:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Взвешенный граф\"},{\"type\":\"text\",\"text\":\" — у рёбер есть вес (стоимость, расстояние, время).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Невзвешенный граф\"},{\"type\":\"text\",\"text\":\" — все рёбра равнозначны.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Способы представления:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Матрица смежности\"},{\"type\":\"text\",\"text\":\" — таблица, где ячейка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[i][j]\"},{\"type\":\"text\",\"text\":\" показывает наличие (и вес) ребра между вершинами \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"i\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"j\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Список смежности\"},{\"type\":\"text\",\"text\":\" — у каждой вершины хранится список соседних вершин.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Соцсети (связи между людьми)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация (пути между точками)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Рекомендательные системы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анализ связей и маршрутов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" граф — это универсальная модель любых взаимосвязей между объектами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:33:02.354Z",
+        "updatedAt": "2025-10-21T08:33:02.354Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое trie (префиксное дерево)?",
+        "id": 1599,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое вершина (vertex) в графе?",
+        "id": 1601,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1601,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое вершина (vertex) в графе?\"}]}]}",
+        "title": "Что такое вершина (vertex) в графе?",
+        "order": 410801,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вершина (vertex)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основной элемент графа\"},{\"type\":\"text\",\"text\":\", который представляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объект, точку или сущность\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вершины — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"узлы\"},{\"type\":\"text\",\"text\":\", которые соединяются между собой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рёбрами (edges)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В графе дорог вершины — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"города\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В соцсети вершины — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пользователи\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В компьютерной сети — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"устройства\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"серверы\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Свойства вершины:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может иметь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"идентификатор\"},{\"type\":\"text\",\"text\":\" (номер, имя).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может содержать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"данные\"},{\"type\":\"text\",\"text\":\" (например, вес, метку, координаты).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может быть связана с другими вершинами через рёбра.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типы вершин:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изолированная\"},{\"type\":\"text\",\"text\":\" — не соединена ни с одной другой.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смежная\"},{\"type\":\"text\",\"text\":\" — имеет хотя бы одно ребро, ведущее к другой вершине.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" вершина — это \\\"точка\\\", а рёбра — \\\"линии\\\", которые соединяют эти точки, формируя структуру графа.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:33:34.314Z",
+        "updatedAt": "2025-10-21T08:33:34.314Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое граф?",
+        "id": 1600,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое ребро (edge) в графе?",
+        "id": 1602,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1602,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ребро (edge) в графе?\"}]}]}",
+        "title": "Что такое ребро (edge) в графе?",
+        "order": 410802,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ребро (edge)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связь между двумя вершинами\"},{\"type\":\"text\",\"text\":\" в графе. Оно показывает, что между этими вершинами существует отношение, путь или взаимодействие.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В соцсети ребро — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подписка или дружба\"},{\"type\":\"text\",\"text\":\" между пользователями.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В карте дорог — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дорога\"},{\"type\":\"text\",\"text\":\" между городами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В компьютерной сети — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"канал связи\"},{\"type\":\"text\",\"text\":\" между устройствами.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типы рёбер:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В неориентированном графе\"},{\"type\":\"text\",\"text\":\" — связь двусторонняя: если есть ребро между A и B, то A ↔ B.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В ориентированном графе\"},{\"type\":\"text\",\"text\":\" — связь направленная: A → B (есть направление, как стрелка).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Взвешенные рёбра:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Рёбра могут иметь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вес (weight)\"},{\"type\":\"text\",\"text\":\" — числовое значение, показывающее расстояние, стоимость или силу связи.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" ребро — это “мост” между двумя вершинами, который может быть направленным или двусторонним, с весом или без, и именно через рёбра вершины в графе взаимодействуют.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:33:53.789Z",
+        "updatedAt": "2025-10-21T08:33:53.789Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое вершина (vertex) в графе?",
+        "id": 1601,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает \"смежность\" вершин в графе?",
+        "id": 1603,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1603,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает \\\"смежность\\\" вершин в графе?\"}]}]}",
+        "title": "Что означает \"смежность\" вершин в графе?",
+        "order": 410803,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смежность вершин\"},{\"type\":\"text\",\"text\":\" означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"две вершины соединены ребром\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Если между вершинами \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" существует ребро, то:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В неориентированном графе — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A и B смежны\"},{\"type\":\"text\",\"text\":\" (A ↔ B).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В ориентированном графе —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"• если есть ребро \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → B\"},{\"type\":\"text\",\"text\":\", то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B смежна с A по направлению из A в B\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"• но не обязательно наоборот.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В соцсети: если два пользователя “друзья”, их вершины смежны.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В маршруте: если между городами есть дорога, города смежны.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смежные вершины\"},{\"type\":\"text\",\"text\":\" часто хранятся в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"списке смежности\"},{\"type\":\"text\",\"text\":\" — у каждой вершины записаны все вершины, с которыми она соединена.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" смежность — это признак непосредственной связи: вершины считаются смежными, если между ними есть ребро.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:34:09.166Z",
+        "updatedAt": "2025-11-10T13:13:32.532Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ребро (edge) в графе?",
+        "id": 1602,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое порядок графа?",
+        "id": 1604,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1604,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое порядок графа?\"}]}]}",
+        "title": "Что такое порядок графа?",
+        "order": 410804,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Порядок графа\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"количество вершин\"},{\"type\":\"text\",\"text\":\" в графе.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Если граф обозначен как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"порядок графа = |V|\"},{\"type\":\"text\",\"text\":\", где |V| — число вершин множества \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"V\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Граф имеет вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A, B, C, D\"},{\"type\":\"text\",\"text\":\" и рёбра между ними.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тогда порядок графа — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4\"},{\"type\":\"text\",\"text\":\", потому что в нём 4 вершины.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интуитивно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Порядок показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько “большой” граф по числу точек\"},{\"type\":\"text\",\"text\":\" (не по связям).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" порядок графа — это просто количество его вершин.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:34:25.502Z",
+        "updatedAt": "2025-10-21T08:34:25.502Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает \"смежность\" вершин в графе?",
+        "id": 1603,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое размер графа?",
+        "id": 1605,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1605,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое размер графа?\"}]}]}",
+        "title": "Что такое размер графа?",
+        "order": 410805,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размер графа\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"количество рёбер\"},{\"type\":\"text\",\"text\":\" в графе.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Если граф обозначен как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"размер графа = |E|\"},{\"type\":\"text\",\"text\":\", где |E| — число рёбер множества \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если у графа есть вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A, B, C\"},{\"type\":\"text\",\"text\":\" и рёбра \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–B\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B–C\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–C\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то размер графа = \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3\"},{\"type\":\"text\",\"text\":\", потому что есть три связи.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интуитивно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Порядок графа\"},{\"type\":\"text\",\"text\":\" → сколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вершин\"},{\"type\":\"text\",\"text\":\" (точек).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Размер графа\"},{\"type\":\"text\",\"text\":\" → сколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рёбер\"},{\"type\":\"text\",\"text\":\" (связей) между ними.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" размер графа — это число рёбер, то есть количество связей между вершинами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:34:38.553Z",
+        "updatedAt": "2025-10-21T08:34:38.553Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое порядок графа?",
+        "id": 1604,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое ориентированный граф?",
+        "id": 1606,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1606,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ориентированный граф?\"}]}]}",
+        "title": "Что такое ориентированный граф?",
+        "order": 410806,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ориентированный граф (directed graph, digraph)\"},{\"type\":\"text\",\"text\":\" — это граф, в котором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждое ребро имеет направление\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ориентированный граф — это множество вершин \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"V\"},{\"type\":\"text\",\"text\":\" и множество \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"упорядоченных пар вершин\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\", то есть\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E)\"},{\"type\":\"text\",\"text\":\", где каждое ребро — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"(u, v)\"},{\"type\":\"text\",\"text\":\", а не просто {u, v}.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главная идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ребро \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"(u → v)\"},{\"type\":\"text\",\"text\":\" означает связь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только из u в v\"},{\"type\":\"text\",\"text\":\", но не наоборот.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если есть вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\", и рёбра:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → B\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B → C\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то можно дойти из A в C, но не наоборот, если нет обратных рёбер.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичные применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подписки в соцсетях (А подписан на В ≠ В подписан на А).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потоки данных или процессов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зависимости между задачами (например, граф зависимостей при компиляции).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" в ориентированном графе рёбра ведут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в определённом направлении\"},{\"type\":\"text\",\"text\":\", что делает связи \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"односторонними\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:34:56.150Z",
+        "updatedAt": "2025-11-10T13:13:36.557Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое размер графа?",
+        "id": 1605,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое неориентированный граф?",
+        "id": 1607,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1607,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое неориентированный граф?\"}]}]}",
+        "title": "Что такое неориентированный граф?",
+        "order": 410807,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Неориентированный граф\"},{\"type\":\"text\",\"text\":\" — это граф, в котором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рёбра не имеют направления\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Граф \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E)\"},{\"type\":\"text\",\"text\":\", где каждое ребро — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"неупорядоченная пара вершин\"},{\"type\":\"text\",\"text\":\" {u, v}.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это значит, что связь между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"u\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"v\"},{\"type\":\"text\",\"text\":\" взаимная: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"u ↔ v\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главная идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если вершины соединены, то переход возможен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в обе стороны\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть ребро {A, B} означает связь как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → B\"},{\"type\":\"text\",\"text\":\", так и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B → A\"},{\"type\":\"text\",\"text\":\" одновременно.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если есть вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\", и рёбра:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–B\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B–C\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то можно пройти из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A в C\"},{\"type\":\"text\",\"text\":\" и обратно — через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичные применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дружба в соцсетях (оба добавили друг друга).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дороги между городами, если движение двустороннее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сети взаимодействия, где связь взаимная.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" в неориентированном графе все связи \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двусторонние\"},{\"type\":\"text\",\"text\":\" — направление не имеет значения.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:35:12.225Z",
+        "updatedAt": "2025-10-21T08:35:12.225Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ориентированный граф?",
+        "id": 1606,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое взвешенный граф?",
+        "id": 1608,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1608,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое взвешенный граф?\"}]}]}",
+        "title": "Что такое взвешенный граф?",
+        "order": 410808,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Взвешенный граф\"},{\"type\":\"text\",\"text\":\" — это граф, в котором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждому ребру присвоен вес (числовое значение)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вес ребра\"},{\"type\":\"text\",\"text\":\" — это характеристика связи между вершинами: расстояние, стоимость, время, сила связи и т.п.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Взвешенный граф — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"G = (V, E, w)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"w(u, v)\"},{\"type\":\"text\",\"text\":\" — функция, которая задаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вес ребра (u, v)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пусть есть вершины — города: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и рёбра с расстояниями:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–B (5 км)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B–C (3 км)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–C (8 км)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда веса рёбер — 5, 3 и 8.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Карты и навигация (вес = расстояние или время).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация затрат (вес = цена).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Алгоритмы поиска кратчайшего пути (Дейкстра, Беллман–Форд).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" взвешенный граф — это граф, где каждое ребро имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вес\"},{\"type\":\"text\",\"text\":\", отражающий “цену” связи между вершинами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:35:30.800Z",
+        "updatedAt": "2025-10-21T08:35:30.800Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое неориентированный граф?",
+        "id": 1607,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает вес ребра?",
+        "id": 1609,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1609,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает вес ребра?\"}]}]}",
+        "title": "Что означает вес ребра?",
+        "order": 410809,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вес ребра\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"числовое значение\"},{\"type\":\"text\",\"text\":\", которое описывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"характеристику связи между двумя вершинами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вес показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько “дорого”, “долго” или “трудно” перейти\"},{\"type\":\"text\",\"text\":\" от одной вершины к другой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры смысла веса:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В карте дорог — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расстояние\"},{\"type\":\"text\",\"text\":\" между городами (км).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В транспортной сети — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"время в пути\"},{\"type\":\"text\",\"text\":\" (минуты).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В экономике — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стоимость перевозки\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тариф\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В соцсети — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сила связи\"},{\"type\":\"text\",\"text\":\" между пользователями (частота общения).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вес рёбер применяется в алгоритмах, где нужно найти \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"оптимальный путь\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"минимальный вес\"},{\"type\":\"text\",\"text\":\" → самый короткий, дешёвый или быстрый путь;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"максимальный вес\"},{\"type\":\"text\",\"text\":\" → самая сильная или приоритетная связь.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" вес ребра — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"числовая “цена” связи\"},{\"type\":\"text\",\"text\":\" между вершинами, значение которой зависит от контекста задачи.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:35:45.480Z",
+        "updatedAt": "2025-10-21T08:35:45.480Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое взвешенный граф?",
+        "id": 1608,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое петля (loop) в графе?",
+        "id": 1610,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1610,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое петля (loop) в графе?\"}]}]}",
+        "title": "Что такое петля (loop) в графе?",
+        "order": 410810,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Петля (loop)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ребро, которое соединяет вершину саму с собой\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если ребро соединяет вершину \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"v\"},{\"type\":\"text\",\"text\":\" с ней же самой, то это петля: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"(v, v)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в графе есть вершина \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", и ребро ведёт из \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → A\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то это петля — вершина “ссылается” сама на себя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Петля встречается и в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ориентированных\"},{\"type\":\"text\",\"text\":\", и в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"неориентированных\"},{\"type\":\"text\",\"text\":\" графах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"увеличивает степень вершины\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в неориентированном графе петля добавляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2\"},{\"type\":\"text\",\"text\":\" к степени,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в ориентированном — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1 к входящей\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1 к исходящей\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерпретация:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В соцсети — пользователь взаимодействует сам с собой.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В автоматах — состояние, из которого можно остаться в том же состоянии.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" петля — это ребро, начинающееся и заканчивающееся в одной и той же вершине.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:36:09.516Z",
+        "updatedAt": "2025-11-10T13:13:40.633Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает вес ребра?",
+        "id": 1609,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие способы хранения графов существуют?",
+        "id": 1611,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1611,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие способы хранения графов существуют?\"}]}]}",
+        "title": "Какие способы хранения графов существуют?",
+        "order": 410811,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Существует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"три основных способа хранения графов\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Список смежности (Adjacency List)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждая вершина хранит список всех вершин, с которыми она соединена.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для графа с рёбрами A–B, A–C, B–C\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"A: B, C  \\nB: A, C  \\nC: A, B\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плюсы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эффективно по памяти при разреженных графах (мало рёбер).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобно обходить соседей вершины.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минусы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск конкретного ребра может быть медленнее, чем в матрице.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Матрица смежности (Adjacency Matrix)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется квадратная матрица \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"n×n\"},{\"type\":\"text\",\"text\":\", где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"n\"},{\"type\":\"text\",\"text\":\" — число вершин.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ячейка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[i][j]\"},{\"type\":\"text\",\"text\":\" = 1 (или вес), если есть ребро между i и j, иначе 0.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"    A B C  \\nA [ 0 1 1 ]  \\nB [ 1 0 1 ]  \\nC [ 1 1 0 ]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плюсы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрая проверка наличия ребра (O(1)).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобно для плотных графов (много рёбер).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минусы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Занимает O(n²) памяти, даже если связей мало.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Список рёбер (Edge List)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хранится просто список всех рёбер в виде пар (или троек, если есть вес):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"[(A, B), (A, C), (B, C)]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"[(A, B, 5), (B, C, 3), (A, C, 8)]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плюсы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Простая структура.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобно для алгоритмов, работающих напрямую с рёбрами (например, Крускала).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минусы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Неудобно искать соседей вершины.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метод\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Память\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобно для\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример применения\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Список смежности\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(V + E)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обходов и поиска путей\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"алгоритмы Дейкстры, BFS, DFS\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Матрица смежности\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(V²)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"быстрых проверок связей\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"плотные графы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Список рёбер\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(E)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работы с рёбрами напрямую\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"алгоритм Крускала\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:36:39.139Z",
+        "updatedAt": "2025-10-21T08:36:39.139Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое петля (loop) в графе?",
+        "id": 1610,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое матрица смежности?",
+        "id": 1612,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1612,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое матрица смежности?\"}]}]}",
+        "title": "Что такое матрица смежности?",
+        "order": 410812,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Матрица смежности\"},{\"type\":\"text\",\"text\":\" — это способ представления графа в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"квадратной таблицы (матрицы)\"},{\"type\":\"text\",\"text\":\", где строки и столбцы соответствуют вершинам, а значения в ячейках показывают, есть ли между ними ребро.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Определение:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для графа с вершинами ( V = {v_1, v_2, ..., v_n} ):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"матрица смежности — это матрица ( A[n][n] ), где\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"A[i][j] =\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"\\\\begin{cases}\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"1, & \\\\text{если есть ребро из } v_i \\\\text{ в } v_j, \\\\\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"0, & \\\\text{если ребра нет.}\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"\\\\end{cases}\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если граф \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"взвешенный\"},{\"type\":\"text\",\"text\":\", то вместо 1 и 0 в ячейке хранится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вес ребра\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример (неориентированный граф):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Рёбра: A–B, A–C, B–C\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"    A B C\\nA [ 0 1 1 ]\\nB [ 1 0 1 ]\\nC [ 1 1 0 ]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Матрица симметрична относительно диагонали (A–B = B–A).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример (ориентированный граф):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Рёбра: A→B, B→C\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"    A B C\\nA [ 0 1 0 ]\\nB [ 0 0 1 ]\\nC [ 0 0 0 ]\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Размер матрицы всегда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"n × n\"},{\"type\":\"text\",\"text\":\", где n — число вершин.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A[i][j] = 1\"},{\"type\":\"text\",\"text\":\" — есть связь, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A[i][j] = 0\"},{\"type\":\"text\",\"text\":\" — нет связи.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В ориентированных графах матрица \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несимметрична\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Петля (ребро из вершины в саму себя) отображается на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"диагонали\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"матрица смежности — это таблица, где по координатам двух вершин можно мгновенно узнать, есть ли между ними ребро (и какой у него вес).\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:37:05.461Z",
+        "updatedAt": "2025-10-21T08:37:05.461Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие способы хранения графов существуют?",
+        "id": 1611,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает обход в ширину (BFS)?",
+        "id": 1613,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1613,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает обход в ширину (BFS)?\"}]}]}",
+        "title": "Что делает обход в ширину (BFS)?",
+        "order": 410813,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обход в ширину (BFS — Breadth-First Search)\"},{\"type\":\"text\",\"text\":\" — это алгоритм, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"постепенно исследует граф “по слоям”\"},{\"type\":\"text\",\"text\":\", начиная с заданной вершины и двигаясь сначала ко всем её соседям, затем к соседям этих соседей и так далее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"BFS ищет все вершины, находящиеся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на минимальном расстоянии\"},{\"type\":\"text\",\"text\":\" от начальной, прежде чем идти дальше.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очередь (FIFO)\"},{\"type\":\"text\",\"text\":\", чтобы обрабатывать вершины в порядке их открытия.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пошагово:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поместить стартовую вершину в очередь и пометить как посещённую.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пока очередь не пуста:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Извлечь вершину из очереди.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Добавить в очередь всех её непосещённых соседей и пометить их.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повторять, пока не обойдём все достижимые вершины.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для графа:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"A — B — C\\n|   |\\nD — E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если начать с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", порядок обхода будет:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → B → D → C → E\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кратчайшего пути\"},{\"type\":\"text\",\"text\":\" в невзвешенных графах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проверка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связности\"},{\"type\":\"text\",\"text\":\" графа.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Определение уровней (глубины) вершин.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск “волноподобных” связей — например, в задачах про распространение сигналов.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"BFS — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поуровневый обход графа с использованием очереди\"},{\"type\":\"text\",\"text\":\", который находит все вершины в порядке их “близости” к стартовой.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:37:28.991Z",
+        "updatedAt": "2025-10-21T08:37:28.991Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое матрица смежности?",
+        "id": 1612,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает обход в глубину (DFS)?",
+        "id": 1614,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1614,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает обход в глубину (DFS)?\"}]}]}",
+        "title": "Что делает обход в глубину (DFS)?",
+        "order": 410814,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обход в глубину (DFS — Depth-First Search)\"},{\"type\":\"text\",\"text\":\" — это алгоритм, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"исследует граф максимально глубоко по каждому пути\"},{\"type\":\"text\",\"text\":\", прежде чем вернуться назад.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DFS идёт “вглубь” — от стартовой вершины к первому соседу, потом к соседу соседа и так далее, пока не достигнет вершины, у которой больше нет непосещённых соседей.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Затем он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"возвращается (backtrack)\"},{\"type\":\"text\",\"text\":\" и продолжает с других вершин.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пошагово (рекурсивная версия):\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Начать с стартовой вершины и пометить её как посещённую.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для каждого соседа этой вершины:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если сосед не посещён — запустить DFS для него.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Продолжать, пока не обойдём все достижимые вершины.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для графа\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"A — B — C  \\n|   |\\nD — E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если начать с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", возможный порядок обхода:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A → B → C → E → D\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(Точный порядок зависит от порядка соседей в структуре данных.)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Реализация:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стек (Stack)\"},{\"type\":\"text\",\"text\":\" — неявно через рекурсию или явно через структуру данных.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проверка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связности\"},{\"type\":\"text\",\"text\":\" графа.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"циклов\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Топологическая сортировка\"},{\"type\":\"text\",\"text\":\" (в ориентированных графах).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поиск путей, компонент связности, “островов” и т.д.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"DFS — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск “в глубину” с возвратом назад\"},{\"type\":\"text\",\"text\":\", который обходит граф, уходя по пути до конца, прежде чем перейти к другим ветвям.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:37:50.461Z",
+        "updatedAt": "2025-11-10T13:13:44.758Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает обход в ширину (BFS)?",
+        "id": 1613,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое топологическая сортировка? Для каких графов она возможна?",
+        "id": 1615,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1615,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое топологическая сортировка? Для каких графов она возможна?\"}]}]}",
+        "title": "Что такое топологическая сортировка? Для каких графов она возможна?",
+        "order": 410815,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Топологическая сортировка\"},{\"type\":\"text\",\"text\":\" — это упорядочивание вершин \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ориентированного графа\"},{\"type\":\"text\",\"text\":\", при котором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждое ребро идёт только от более ранней вершины к более поздней\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Иными словами:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если есть ребро \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"u → v\"},{\"type\":\"text\",\"text\":\", то в порядке топологической сортировки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"u стоит раньше v\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда возможна:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Топологическая сортировка возможна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только для ациклических ориентированных графов (DAG — Directed Acyclic Graph)\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в графе есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цикл\"},{\"type\":\"text\",\"text\":\", упорядочить вершины так, чтобы не нарушить направление рёбер, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"невозможно\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пусть граф показывает зависимости между задачами:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"A → B → C  \\nA → D\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один из возможных порядков: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A, D, B, C\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(Сначала A, потому что от неё зависят остальные.)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как работает (идея):\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Найти вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без входящих рёбер\"},{\"type\":\"text\",\"text\":\" — они могут идти первыми.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалить их из графа вместе с исходящими рёбрами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повторять, пока не удалены все вершины.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"(Так работает, например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"алгоритм Кана\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DFS-сортировка\"},{\"type\":\"text\",\"text\":\".)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Планирование задач с зависимостями (например, компиляция кода).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Определение порядка выполнения шагов (строительство, проекты).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анализ зависимостей модулей, курсов, событий.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Топологическая сортировка — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"линейный порядок вершин DAG-графа\"},{\"type\":\"text\",\"text\":\", отражающий зависимость:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"“если A ведёт к B, то A должно стоять перед B”.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:38:13.379Z",
+        "updatedAt": "2025-10-21T08:38:13.379Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает обход в глубину (DFS)?",
+        "id": 1614,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает алгоритм Дейкстры?",
+        "id": 1616,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1616,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает алгоритм Дейкстры?\"}]}]}",
+        "title": "Что делает алгоритм Дейкстры?",
+        "order": 410816,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Алгоритм Дейкстры\"},{\"type\":\"text\",\"text\":\" находит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кратчайшие пути от одной стартовой вершины до всех остальных\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"взвешенном графе без отрицательных весов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Алгоритм постепенно “расширяет” множество вершин с известным кратчайшим расстоянием,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"каждый раз выбирая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вершину с минимальной текущей дистанцией\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обновляя\"},{\"type\":\"text\",\"text\":\" расстояния до её соседей.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как работает пошагово:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задать расстояние до всех вершин = ∞, кроме стартовой (0).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выбрать вершину с минимальным расстоянием, которая ещё не обработана.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для каждого её соседа:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вычислить новое расстояние через текущую вершину;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если оно меньше старого — обновить.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отметить текущую вершину как обработанную.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повторять, пока не обработаны все достижимые вершины.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Граф (веса — расстояния):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"A —(1)— B —(2)— C  \\n|         ↘(4)  \\n(3)         D\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Начинаем с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До B: 1\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"До D: 3\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Через B до C: 1 + 2 = 3\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"→ Кратчайшие пути: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–B (1)\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–D (3)\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"A–B–C (3)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структура данных:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Обычно используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"приоритетная очередь (min-heap)\"},{\"type\":\"text\",\"text\":\", чтобы быстро выбирать вершину с минимальной дистанцией.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложность:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O(V²) — простая реализация;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"O((V + E) log V) — с приоритетной очередью.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Применения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация (Google Maps, GPS).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сетевые маршрутизаторы (нахождение оптимальных путей).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оптимизация затрат или времени в логистике.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Алгоритм Дейкстры находит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самые короткие пути от одной вершины до всех других\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"взвешенном графе с неотрицательными весами\"},{\"type\":\"text\",\"text\":\", расширяя область “известных” путей шаг за шагом.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:38:48.406Z",
+        "updatedAt": "2025-10-21T08:38:48.406Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое топологическая сортировка? Для каких графов она возможна?",
+        "id": 1615,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает алгоритм Беллмана–Форда?",
+        "id": 1617,
+        "premium": true,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1617,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает алгоритм Беллмана–Форда?\"}]}]}",
+        "title": "Что делает алгоритм Беллмана–Форда?",
+        "order": 410817,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Алгоритм Беллмана–Форда\"},{\"type\":\"text\",\"text\":\" — это алгоритм поиска \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кратчайших путей от одной вершины до всех остальных\"},{\"type\":\"text\",\"text\":\", который, в отличие от Дейкстры, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"работает даже с отрицательными весами рёбер\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идея:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он многократно “расслабляет” (обновляет) все рёбра графа, пока расстояния до всех вершин не стабилизируются.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Расслабить ребро” (u → v) с весом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"w\"},{\"type\":\"text\",\"text\":\" означает:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"если через u можно попасть в v \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дешевле\"},{\"type\":\"text\",\"text\":\", чем раньше,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то обновляем:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"dist[v] = dist[u] + w\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задать расстояние до всех вершин = ∞, кроме стартовой (0).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повторить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"|V| − 1 раз\"},{\"type\":\"text\",\"text\":\" (где |V| — число вершин):\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для каждого ребра (u, v, w):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"dist[u] + w < dist[v]\"},{\"type\":\"text\",\"text\":\", обновить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"dist[v]\"},{\"type\":\"text\",\"text\":\".\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого сделать ещё один проход:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если на каком-то ребре расстояние всё ещё можно уменьшить —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"значит, есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отрицательный цикл\"},{\"type\":\"text\",\"text\":\" (путь, уменьшающий расстояние бесконечно).\"}]}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пусть рёбра:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"A → B (4), A → C (5), B → C (-3)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Старт: dist[A]=0, dist[B]=∞, dist[C]=∞\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После 1-й итерации:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"dist[B] = 4\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"dist[C] = 5\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расслабляем B→C: dist[C] = 4 + (-3) = 1\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"→ кратчайший путь A → B → C = 1\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сложность:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Время: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(V × E)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Память: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(V)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает с отрицательными весами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обнаружить отрицательные циклы\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Недостатки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Медленнее, чем алгоритм Дейкстры.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Алгоритм Беллмана–Форда — это универсальный способ найти кратчайшие пути,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"даже если в графе есть отрицательные веса,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и единственный базовый алгоритм, который может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выявить отрицательные циклы\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 139,
+        "createdAt": "2025-10-21T08:39:27.928Z",
+        "updatedAt": "2025-11-10T13:13:48.167Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 139,
+          "title": "Графы",
+          "directions": [
+            {
+              "categoryId": 139,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает алгоритм Дейкстры?",
+        "id": 1616,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое компьютерная сеть?",
+        "id": 2995,
+        "premium": false,
+        "category": {
+          "id": 298,
+          "parent": {
+            "title": "Сети и интернет",
+            "id": 120,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+{
+  "category": {
+    "id": 321,
+    "title": "Работа с удалёнными репозиториями",
+    "description": " ",
+    "parentId": 317
+  },
+  "totalQuestions": 8,
+  "downloadedAt": "2026-03-10T10:09:59.541Z",
+  "questions": [
+    {
+      "current": {
+        "id": 7551,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое удалённый репозиторий в Git?\"}]}]}",
+        "title": "Что такое удалённый репозиторий в Git?",
+        "order": 510300,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий (remote repository) в Git — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"копия Git-репозитория, которая находится не на вашем компьютере, а на другом месте\"},{\"type\":\"text\",\"text\":\": на сервере в сети, в корпоративной инфраструктуре или на хостинге вроде GitHub/GitLab/Bitbucket. Он нужен не “для работы Git” как такового (Git отлично работает локально), а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"для обмена изменениями и совместной работы\"},{\"type\":\"text\",\"text\":\", а также как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"центральное хранилище/резервная копия\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что именно хранится в удалённом репозитории\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий хранит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коммиты\"},{\"type\":\"text\",\"text\":\" (историю изменений),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ветки\"},{\"type\":\"text\",\"text\":\" (ссылки на коммиты),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"теги\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"служебные данные Git (объекты, ссылки).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно: удалённый репозиторий — это не “папка с файлами”, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Git-база данных объектов\"},{\"type\":\"text\",\"text\":\", как и локальный репозиторий.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чаще всего удалённый репозиторий на сервере сделан в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"bare-репозитория\"},{\"type\":\"text\",\"text\":\" (без рабочей директории с распакованными файлами). Это нормально: на сервере обычно не редактируют файлы напрямую, а только принимают/отдают коммиты.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Чем отличается локальный репозиторий от удалённого\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Локальный репозиторий (у вас на ПК)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"содержит вашу локальную историю и ветки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имеет рабочую директорию (файлы проекта),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вы делаете коммиты локально, даже без интернета.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий (на сервере)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"служит точкой синхронизации между участниками,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет публиковать изменения и забирать изменения других,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"часто используется как “истина” проекта.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git по природе \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"распределённый\"},{\"type\":\"text\",\"text\":\": у каждого разработчика полноценный репозиторий. Удалённый — это просто удобная общая точка обмена.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен удалённый репозиторий\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Совместная работа\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"один разработчик отправляет изменения, другой забирает и продолжает работу.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обмен и синхронизация\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"публикация своих веток/коммитов для команды.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Резервное хранение\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если у вас сломался ноутбук, история остаётся на сервере.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Процессы разработки\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pull/Merge Requests, code review, CI/CD, проверки, релизы — всё это обычно завязано на удалённый репозиторий.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разделение ответственности\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локально вы можете экспериментировать, а в удалённый отправляете только готовое.\"}]}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как Git “видит” удалённый репозиторий: remotes\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Git удалённые репозитории настраиваются как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"remote\"},{\"type\":\"text\",\"text\":\" — это запись вида:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имя (часто \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"URL (адрес, куда подключаться)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример: когда вы делаете \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\", Git автоматически создаёт remote с именем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\", указывающий на источник клонирования.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"просто стандартное имя\"},{\"type\":\"text\",\"text\":\", а не “особый сервер”. Можно назвать remote как угодно (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"upstream\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"company\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"backup\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как подключаются к удалённому репозиторию (протоколы)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно используются:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTPS\"},{\"type\":\"text\",\"text\":\" (удобно, токены/пароли)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SSH\"},{\"type\":\"text\",\"text\":\" (удобно для разработчиков: ключи, меньше возни с токенами)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реже: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git://\"},{\"type\":\"text\",\"text\":\" и другие варианты\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выбор протокола влияет на способ аутентификации, но суть удалённого репозитория не меняется.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Типичный рабочий цикл с удалённым репозиторием\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Забрать актуальные изменения команды: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создать/обновить свою ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Коммитить локально\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отправить ветку на сервер: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открыть Merge/Pull Request\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После ревью — слить в основную ветку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все остальные забирают изменения (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"},{\"type\":\"text\",\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Важные моменты и частые ошибки\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не обновляется сам\"},{\"type\":\"text\",\"text\":\": изменения появляются на сервере только после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"},{\"type\":\"text\",\"text\":\" может привести к конфликтам, потому что он пытается сразу применить изменения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\" безопаснее, когда вы хотите сначала посмотреть, что изменилось, и только потом решать, как интегрировать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Удалить файл локально” ≠ “удалить на сервере”: на сервер это попадёт только после коммита и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нельзя “пушить” то, чего нет в коммитах: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"text\":\" отправляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коммиты\"},{\"type\":\"text\",\"text\":\", а не “состояние папки”.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Короткое итоговое определение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий в Git — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расположенный на сервере Git-репозиторий\"},{\"type\":\"text\",\"text\":\", который служит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точкой обмена и синхронизации\"},{\"type\":\"text\",\"text\":\": вы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправляете\"},{\"type\":\"text\",\"text\":\" в него свои коммиты (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"text\":\") и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получаете\"},{\"type\":\"text\",\"text\":\" коммиты других (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"},{\"type\":\"text\",\"text\":\"), обеспечивая совместную работу и резервное хранение истории проекта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:28:28.490Z",
+        "updatedAt": "2025-12-28T16:28:28.490Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как удалить ветку?",
+        "id": 7556,
+        "premium": false,
+        "category": {
+          "id": 320,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем локальный репозиторий отличается от удалённого?",
+        "id": 7553,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7553,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем локальный репозиторий отличается от удалённого?\"}]}]}",
+        "title": "Чем локальный репозиторий отличается от удалённого?",
+        "order": 510301,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Локальный и удалённый репозитории в Git отличаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"местом хранения, назначением и способом работы с ними\"},{\"type\":\"text\",\"text\":\", хотя с точки зрения Git оба содержат одну и ту же структуру данных (коммиты, ветки, объекты).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Локальный репозиторий\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальный репозиторий\"},{\"type\":\"text\",\"text\":\" — это Git-репозиторий, находящийся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на компьютере разработчика\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Характерные особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"находится в директории проекта и папке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".git\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"содержит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полную историю коммитов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рабочую директорию\"},{\"type\":\"text\",\"text\":\" с файлами проекта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет работать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без интернета\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"редактирования файлов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создания коммитов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"экспериментов с ветками\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локального отката изменений\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все изменения сначала попадают именно в локальный репозиторий.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Удалённый репозиторий\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удалённый репозиторий\"},{\"type\":\"text\",\"text\":\" — это Git-репозиторий, расположенный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на сервере\"},{\"type\":\"text\",\"text\":\" (GitHub, GitLab, Bitbucket, корпоративный сервер).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Характерные особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"доступен по сети\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаще всего является \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"bare-репозиторием\"},{\"type\":\"text\",\"text\":\" (без рабочей директории)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"используется как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точка обмена\"},{\"type\":\"text\",\"text\":\" между разработчиками\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"служит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"резервной копией\"},{\"type\":\"text\",\"text\":\" проекта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"не редактируется напрямую — изменения попадают в него только через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые отличия\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. Место хранения\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальный — на компьютере разработчика\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый — на сервере\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. Назначение\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальный — работа с кодом и история изменений\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый — синхронизация и совместная работа\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. Рабочая директория\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальный — есть файлы проекта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый — обычно отсутствует\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. Зависимость от интернета\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальный — не требуется\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый — требуется для доступа\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. Создание коммитов\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальный — коммиты создаются\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый — коммиты только принимаются\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Как они взаимодействуют\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменения создаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"локально\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\" отправляет коммиты в удалённый репозиторий\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" забирает коммиты из удалённого в локальный\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальный репозиторий\"},{\"type\":\"text\",\"text\":\" — это рабочее пространство разработчика с полной историей и файлами проекта.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удалённый репозиторий\"},{\"type\":\"text\",\"text\":\" — это серверная копия репозитория, используемая для обмена изменениями, совместной работы и хранения истории проекта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:29:38.375Z",
+        "updatedAt": "2025-12-28T16:29:38.375Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое удалённый репозиторий в Git?",
+        "id": 7551,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое remote в Git?",
+        "id": 7555,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7555,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"remote\"},{\"type\":\"text\",\"text\":\" в Git?\"}]}]}",
+        "title": "Что такое remote в Git?",
+        "order": 510302,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Remote (удалённый репозиторий) в Git\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохранённая в настройках Git ссылка на внешний Git-репозиторий\"},{\"type\":\"text\",\"text\":\", с которым ваш локальный репозиторий может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обмениваться коммитами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"remote — это имя + URL удалённого репозитория\"},{\"type\":\"text\",\"text\":\", по которому Git знает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"куда отправлять (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"push\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") и откуда забирать (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pull\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") изменения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Что такое remote с точки зрения Git\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Remote — это не сам репозиторий, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запись в конфигурации Git\"},{\"type\":\"text\",\"text\":\", которая содержит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"имя\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"URL\"},{\"type\":\"text\",\"text\":\" (HTTPS или SSH-адрес репозитория)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git может иметь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несколько remote\"},{\"type\":\"text\",\"text\":\", каждый из которых указывает на свой репозиторий.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен remote\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Remote используется для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"синхронизации локального репозитория с сервером\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"совместной работы нескольких разработчиков\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"публикации своих изменений\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"получения изменений от других\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"хранения резервной копии проекта\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без remote Git остаётся полностью локальным.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\" — это не особое слово\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стандартное имя remote по умолчанию\"},{\"type\":\"text\",\"text\":\", которое Git создаёт при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"},{\"type\":\"text\",\"text\":\" — это просто имя\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"его можно удалить, переименовать или добавить другие remote\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не требует\"},{\"type\":\"text\",\"text\":\", чтобы remote назывался именно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Основные команды, связанные с remote\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Просмотр remote\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git remote\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git remote -v\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Показывает имена remote и их URL.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Добавление remote\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git remote add origin https://github.com/user/repo.git\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Удаление remote\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git remote remove origin\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Переименование remote\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git remote rename origin upstream\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:32:20.882Z",
+        "updatedAt": "2025-12-28T16:32:20.882Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем локальный репозиторий отличается от удалённого?",
+        "id": 7553,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется git clone?",
+        "id": 7557,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7557,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Для чего используется git clone?",
+        "order": 510303,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создания локальной копии существующего репозитория\"},{\"type\":\"text\",\"text\":\" из удалённого источника.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При выполнении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачивается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полная история коммитов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"локальный репозиторий\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"копируются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все ветки и теги\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автоматически настраивается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"remote \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рабочая директория\"},{\"type\":\"text\",\"text\":\" с файлами проекта\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таким образом, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git clone\"},{\"type\":\"text\",\"text\":\" позволяет начать работу с уже существующим проектом, имея у себя на компьютере полноценный Git-репозиторий, связанный с удалённым.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:33:20.371Z",
+        "updatedAt": "2025-12-28T16:33:20.371Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое remote в Git?",
+        "id": 7555,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется git fetch?",
+        "id": 7558,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7558,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Для чего используется git fetch?",
+        "order": 510304,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"загрузки новых данных из удалённого репозитория в локальный\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без изменения текущей рабочей ветки и файлов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При выполнении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скачиваются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новые коммиты, ветки и теги\"},{\"type\":\"text\",\"text\":\" с удалённого репозитория\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновляются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удалённые ветки\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin/main\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"origin/dev\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не выполняется слияние\"},{\"type\":\"text\",\"text\":\" и не меняется рабочая директория\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\" позволяет безопасно узнать о новых изменениях на сервере и проанализировать их перед тем, как применять их к своей локальной ветке.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:33:39.476Z",
+        "updatedAt": "2025-12-28T16:33:39.476Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется git clone?",
+        "id": 7557,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется git pull?",
+        "id": 7559,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7559,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Для чего используется git pull?",
+        "order": 510305,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"получения изменений из удалённого репозитория и их применения к текущей локальной ветке\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При выполнении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"сначала выполняется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git fetch\"},{\"type\":\"text\",\"text\":\" (загрузка новых коммитов с сервера)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"затем выполняется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"интеграция изменений\"},{\"type\":\"text\",\"text\":\" в текущую ветку\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(обычно через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"merge\"},{\"type\":\"text\",\"text\":\", реже через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rebase\"},{\"type\":\"text\",\"text\":\" — в зависимости от настроек)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В результате:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальная ветка обновляется\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"рабочая директория изменяется\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"история проекта дополняется новыми коммитами\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git pull\"},{\"type\":\"text\",\"text\":\" используется, когда нужно синхронизировать локальную ветку с удалённой и продолжить работу с актуальной версией проекта.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:34:09.171Z",
+        "updatedAt": "2025-12-28T16:34:09.171Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется git fetch?",
+        "id": 7558,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется git push?",
+        "id": 7560,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7560,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Для чего используется git push?",
+        "order": 510306,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отправки локальных коммитов в удалённый репозиторий\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При выполнении \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"локальные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коммиты передаются на сервер\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновляется соответствующая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ветка в удалённом репозитории\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"изменения становятся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступны другим разработчикам\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённый репозиторий синхронизируется с локальным\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\" отправляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только коммиты\"},{\"type\":\"text\",\"text\":\", а не просто файлы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если коммиты не созданы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git commit\"},{\"type\":\"text\",\"text\":\"), отправлять нечего\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"push возможен только если локальная история совместима с удалённой\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(иначе Git потребует сначала выполнить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch/pull\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\" используется для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"публикации своей работы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"передачи изменений в команду\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обновления удалённых веток\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"запуска CI/CD и code review процессов\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Кратко: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" публикует локальные изменения в удалённом репозитории\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:34:33.240Z",
+        "updatedAt": "2025-12-28T16:34:33.240Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется git pull?",
+        "id": 7559,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое git push --force?",
+        "id": 7561,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 7561,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"text\":\"? Почему \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"--force\"},{\"type\":\"text\",\"text\":\" опасен?\"}]}]}",
+        "title": "Что такое git push --force?",
+        "order": 510307,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"text\":\" — это команда, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"принудительно перезаписывает историю ветки в удалённом репозитории\"},{\"type\":\"text\",\"text\":\" историей из локальной ветки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При использовании \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Git \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"игнорирует расхождения истории\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удалённая ветка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заменяется локальной версией\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"коммиты, которые были в удалённой ветке, но отсутствуют локально, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"будут потеряны\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Зачем используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"text\":\" применяют, когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"история локальной ветки была изменена\"},{\"type\":\"text\",\"text\":\" и больше не совпадает с удалённой, например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git commit --amend\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git rebase\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"после переписывания или удаления коммитов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при очистке истории перед публикацией\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push\"},{\"type\":\"text\",\"text\":\" в таких случаях будет отклонён, так как история ветки стала несовместимой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Чем опасен \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удалить чужие коммиты\"},{\"type\":\"text\",\"text\":\" в удалённой ветке\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ломает историю для других разработчиков\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"требует повторной синхронизации (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"},{\"type\":\"text\",\"text\":\" + reset/rebase) у команды\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поэтому \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не рекомендуется использовать для общих веток\"},{\"type\":\"text\",\"text\":\" (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"main\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"develop\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Более безопасный вариант\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"bash\"},\"content\":[{\"type\":\"text\",\"text\":\"git push --force-with-lease\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Этот вариант:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверяет, что удалённая ветка не изменилась с момента последнего \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fetch\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"снижает риск перезаписи чужих изменений\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Итоговое определение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"git push --force\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" используется для принудительной отправки локальной ветки в удалённый репозиторий с полным перезаписыванием истории удалённой ветки.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 321,
+        "createdAt": "2025-12-28T16:35:03.691Z",
+        "updatedAt": "2025-12-28T16:35:03.691Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 321,
+          "title": "Работа с удалёнными репозиториями",
+          "directions": [
+            {
+              "categoryId": 321,
+              "directionId": 5,
+              "direction": {
+                "id": 5,
+                "title": "Инструменты и технологии",
+                "order": 5,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:35.439Z",
+                "updatedAt": "2025-11-26T11:09:24.423Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется git push?",
+        "id": 7560,
+        "premium": false,
+        "category": {
+          "id": 321,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое история коммитов в Git?",
+        "id": 10719,
+        "premium": false,
+        "category": {
+          "id": 322,
+          "parent": {
+            "title": "Git",
+            "id": 317,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1457 @@
+{
+  "category": {
+    "id": 217,
+    "title": "Формы (Forms)",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 17,
+  "downloadedAt": "2026-03-09T08:39:24.041Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2139,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие типы форм существуют в Angular?\"}]}]}",
+        "title": "Какие типы форм существуют в Angular?",
+        "order": 70800,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular есть два типа форм:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Template-driven (шаблонные)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Опираются на HTML-разметку и директивы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngForm\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Минимум кода в TypeScript, вся логика — в шаблоне.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Подходят для простых форм и быстрых прототипов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Reactive (реактивные)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Управляются полностью из TypeScript через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormBuilder\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Даёт больше контроля: валидация, отслеживание состояния, реакция на изменения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Лучше для сложных или динамических форм.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница в том, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"где хранится и обрабатывается состояние\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в template-driven — в шаблоне,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в reactive — в коде компонента.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:19:47.641Z",
+        "updatedAt": "2025-10-22T11:19:47.641Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое сервис-адаптер?",
+        "id": 2138,
+        "premium": true,
+        "category": {
+          "id": 216,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чем разница между Template-driven и Reactive формами?",
+        "id": 2140,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2140,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В чем разница между Template-driven и Reactive формами?\"}]}]}",
+        "title": "В чем разница между Template-driven и Reactive формами?",
+        "order": 70801,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главная разница — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в том, где управляется состояние формы и как с ней работать.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Template-driven формы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляются через HTML-разметку и директивы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngForm\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular сам создаёт структуру формы под капотом.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Меньше кода в TypeScript, но сложнее масштабировать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подходят для простых случаев (регистрация, обратная связь).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Reactive формы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Полностью контролируются из TypeScript (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormBuilder\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дают точный контроль над каждым полем и валидатором.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Легче тестировать, динамически изменять и отслеживать изменения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются в сложных, динамических формах (настройки, фильтры, админки).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В двух словах: template-driven — декларативно и просто, reactive — программно и точно.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:20:12.531Z",
+        "updatedAt": "2025-10-22T11:20:12.531Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие типы форм существуют в Angular?",
+        "id": 2139,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как Angular связывает данные формы с моделью компонента?",
+        "id": 2141,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2141,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как Angular связывает данные формы с моделью компонента?\"}]}]}",
+        "title": "Как Angular связывает данные формы с моделью компонента?",
+        "order": 70802,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular связывает данные формы с моделью компонента через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двустороннее связывание данных (two-way data binding)\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"систему FormControl\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Механизм зависит от типа формы:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Template-driven формы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используют директиву \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[(ngModel)]\"},{\"type\":\"text\",\"text\":\", которая связывает поле ввода и свойство компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь меняет значение в поле — обновляется свойство в компоненте, и наоборот.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input [(ngModel)]=\\\"user.name\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"user.name\"},{\"type\":\"text\",\"text\":\" всегда отражает текущее состояние поля.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Reactive формы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждое поле связано с объектом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", который хранит текущее значение и состояние.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular автоматически синхронизирует изменения между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\" и DOM.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"name = new FormControl('');\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input [formControl]=\\\"name\\\">\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть Angular сам поддерживает синхронизацию между моделью (объектом данных) и представлением (формой).\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:20:28.619Z",
+        "updatedAt": "2025-11-10T11:43:30.358Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чем разница между Template-driven и Reactive формами?",
+        "id": 2140,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое директивы управления формами (form directives)?",
+        "id": 2142,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2142,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое директивы управления формами (form directives)?\"}]}]}",
+        "title": "Что такое директивы управления формами (form directives)?",
+        "order": 70803,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директивы управления формами — это специальные директивы Angular, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывают элементы формы с системой FormControl и FormGroup\"},{\"type\":\"text\",\"text\":\", позволяя отслеживать и управлять состоянием формы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Есть две основные группы:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Для template-driven форм:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" — связывает поле с переменной компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngForm\"},{\"type\":\"text\",\"text\":\" — создаёт объект формы и управляет ею.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModelGroup\"},{\"type\":\"text\",\"text\":\" — группирует поля внутри формы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Для reactive форм:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formControl\"},{\"type\":\"text\",\"text\":\" — связывает элемент с конкретным \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formGroup\"},{\"type\":\"text\",\"text\":\" — связывает контейнер (обычно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<form>\"},{\"type\":\"text\",\"text\":\") с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formArrayName\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formGroupName\"},{\"type\":\"text\",\"text\":\" — связывают вложенные структуры.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Их задача — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"соединить HTML-элементы с моделью формы\"},{\"type\":\"text\",\"text\":\", чтобы Angular мог отслеживать значения, валидацию и статус каждого поля.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:20:43.713Z",
+        "updatedAt": "2025-10-22T11:20:43.713Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как Angular связывает данные формы с моделью компонента?",
+        "id": 2141,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива ngForm?",
+        "id": 2143,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2143,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива ngForm?\"}]}]}",
+        "title": "Что делает директива ngForm?",
+        "order": 70804,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngForm\"},{\"type\":\"text\",\"text\":\" — это директива, которую Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически добавляет к любому тегу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<form>\"},{\"type\":\"text\",\"text\":\", если форма используется в template-driven подходе.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создаёт объект типа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgForm\"},{\"type\":\"text\",\"text\":\", который содержит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживает состояние всей формы — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\" и т. д.;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"собирает все поля с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" и связывает их в единую структуру;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет обращаться к форме из шаблона (например, через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#form=\\\"ngForm\\\"\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<form #f=\\\"ngForm\\\" (ngSubmit)=\\\"onSubmit(f)\\\">\\n  <input name=\\\"email\\\" ngModel required>\\n</form>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"f\"},{\"type\":\"text\",\"text\":\" — это объект \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgForm\"},{\"type\":\"text\",\"text\":\", у которого есть доступ к значениям (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"f.value\"},{\"type\":\"text\",\"text\":\") и статусу (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"f.valid\"},{\"type\":\"text\",\"text\":\") всей формы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:21:03.675Z",
+        "updatedAt": "2025-10-22T11:21:03.675Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое директивы управления формами (form directives)?",
+        "id": 2142,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива ngModel?",
+        "id": 2144,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2144,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива ngModel?\"}]}]}",
+        "title": "Что делает директива ngModel?",
+        "order": 70805,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" — директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывает поле формы с переменной в компоненте\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она обеспечивает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двустороннее связывание данных\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если пользователь вводит новое значение в поле, оно автоматически обновляет свойство компонента;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"если свойство компонента меняется, значение поля в форме тоже обновляется.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input [(ngModel)]=\\\"user.name\\\">\\n<p>{{ user.name }}</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Также \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" отслеживает состояние поля — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\" и т. д.,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и может работать в составе \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngForm\"},{\"type\":\"text\",\"text\":\", формируя общую модель формы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:21:27.008Z",
+        "updatedAt": "2025-10-22T11:21:27.008Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива ngForm?",
+        "id": 2143,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива formControl?",
+        "id": 2145,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2145,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива formControl?\"}]}]}",
+        "title": "Что делает директива formControl?",
+        "order": 70806,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formControl\"},{\"type\":\"text\",\"text\":\" — директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывает элемент формы с экземпляром \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\" в реактивных формах.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"подключает HTML-элемент к объекту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", где хранятся текущее значение, валидаторы и состояние;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автоматически синхронизирует данные между DOM и моделью;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживает статусы вроде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"name = new FormControl('');\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input [formControl]=\\\"name\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если пользователь изменяет значение поля, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\" сразу обновляется, и наоборот — любое изменение в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\" отражается в поле.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:21:48.827Z",
+        "updatedAt": "2025-11-10T11:43:33.456Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива ngModel?",
+        "id": 2144,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива formGroup?",
+        "id": 2146,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2146,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива formGroup?\"}]}]}",
+        "title": "Что делает директива formGroup?",
+        "order": 70807,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formGroup\"},{\"type\":\"text\",\"text\":\" — директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывает HTML-форму или контейнер с объектом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\" в реактивных формах.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"объединяет несколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\" в одну логическую группу;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"позволяет Angular отслеживать состояние и валидацию всей формы сразу;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делает возможной передачу всей формы в компонент (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"form.value\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"form.valid\"},{\"type\":\"text\",\"text\":\" и т. д.).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"form = new FormGroup({\\n  name: new FormControl(''),\\n  email: new FormControl('')\\n});\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<form [formGroup]=\\\"form\\\" (ngSubmit)=\\\"onSubmit()\\\">\\n  <input formControlName=\\\"name\\\">\\n  <input formControlName=\\\"email\\\">\\n</form>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formGroup\"},{\"type\":\"text\",\"text\":\" соединяет шаблон и модель формы, чтобы Angular мог управлять их синхронизацией и состоянием.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:22:06.552Z",
+        "updatedAt": "2025-10-22T11:22:06.552Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива formControl?",
+        "id": 2145,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива formArrayName?",
+        "id": 2147,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2147,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива formArrayName?\"}]}]}",
+        "title": "Что делает директива formArrayName?",
+        "order": 70808,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formArrayName\"},{\"type\":\"text\",\"text\":\" — директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывает часть шаблона с объектом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormArray\"},{\"type\":\"text\",\"text\":\" внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она нужна, когда форма содержит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамический список однотипных полей\"},{\"type\":\"text\",\"text\":\" — например, телефоны, адреса, варианты ответов и т.д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"form = new FormGroup({\\n  phones: new FormArray([\\n    new FormControl(''),\\n    new FormControl('')\\n  ])\\n});\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<form [formGroup]=\\\"form\\\">\\n  <div formArrayName=\\\"phones\\\">\\n    <div *ngFor=\\\"let phone of form.get('phones')['controls']; let i = index\\\">\\n      <input [formControlName]=\\\"i\\\">\\n    </div>\\n  </div>\\n</form>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"formArrayName\"},{\"type\":\"text\",\"text\":\" указывает Angular, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что внутри этого блока элементы принадлежат FormArray\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"чтобы он корректно связывал поля по индексу и отслеживал их состояние.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:22:21.982Z",
+        "updatedAt": "2025-10-22T11:22:21.982Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива formGroup?",
+        "id": 2146,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое состояние touched и untouched?",
+        "id": 2148,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2148,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое состояние touched и untouched?\"}]}]}",
+        "title": "Что такое состояние touched и untouched?",
+        "order": 70809,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"untouched\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"состояния поля формы\"},{\"type\":\"text\",\"text\":\", которые показывают, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"взаимодействовал ли пользователь с элементом\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\" — поле стало “потроганным”: пользователь кликнул или фокусировался на нём и потом ушёл (потерял фокус).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"untouched\"},{\"type\":\"text\",\"text\":\" — поле ещё ни разу не было тронуто.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь открыл форму — все поля \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"untouched\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Кликнул в поле “email”, потом переключился на другое — теперь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"email\"},{\"type\":\"text\",\"text\":\" становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"touched\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти статусы полезны для валидации:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"можно, например, показывать ошибку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только после того\"},{\"type\":\"text\",\"text\":\", как пользователь взаимодействовал с полем.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:22:38.010Z",
+        "updatedAt": "2025-11-10T11:43:37.165Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива formArrayName?",
+        "id": 2147,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое состояние dirty и pristine?",
+        "id": 2149,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2149,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое состояние dirty и pristine?\"}]}]}",
+        "title": "Что такое состояние dirty и pristine?",
+        "order": 70810,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pristine\"},{\"type\":\"text\",\"text\":\" — это состояния поля формы, которые показывают, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"менял ли пользователь значение\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\" — пользователь изменил значение поля хотя бы один раз.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"pristine\"},{\"type\":\"text\",\"text\":\" — значение поля остаётся таким же, каким было при инициализации.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поле “email” изначально пустое → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"pristine\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь ввёл что-то и потом даже удалил → всё равно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dirty\"},{\"type\":\"text\",\"text\":\", потому что изменение уже произошло.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти состояния помогают определять, нужно ли, например, сохранять форму или предупреждать о несохранённых изменениях.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:22:53.742Z",
+        "updatedAt": "2025-10-22T11:22:53.742Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое состояние touched и untouched?",
+        "id": 2148,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое состояние valid и invalid?",
+        "id": 2150,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2150,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое состояние valid и invalid?\"}]}]}",
+        "title": "Что такое состояние valid и invalid?",
+        "order": 70811,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\" — это состояния, которые показывают, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прошло ли поле (или вся форма) проверку валидаторов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\" — все применённые валидаторы успешно пройдены, ошибок нет.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\" — хотя бы один валидатор вернул ошибку.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"email = new FormControl('', [Validators.required, Validators.email]);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если поле пустое — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"если введён корректный адрес — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти состояния нужны, чтобы управлять логикой интерфейса:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"например, блокировать кнопку “Отправить”, пока форма \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:23:22.208Z",
+        "updatedAt": "2025-10-22T11:23:22.208Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое состояние dirty и pristine?",
+        "id": 2149,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает свойство status у формы?",
+        "id": 2151,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2151,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает свойство status у формы?\"}]}]}",
+        "title": "Что делает свойство status у формы?",
+        "order": 70812,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"status\"},{\"type\":\"text\",\"text\":\" у формы (или у любого контрола — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormArray\"},{\"type\":\"text\",\"text\":\") показывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"текущее состояние её валидности\"},{\"type\":\"text\",\"text\":\" в виде строки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оно может принимать одно из четырёх значений:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"VALID\"},{\"type\":\"text\",\"text\":\" — все проверки пройдены;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"INVALID\"},{\"type\":\"text\",\"text\":\" — хотя бы один валидатор не прошёл;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"PENDING\"},{\"type\":\"text\",\"text\":\" — идёт асинхронная проверка (например, запрос к серверу);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"DISABLED\"},{\"type\":\"text\",\"text\":\" — форма или поле отключено и не участвует в проверке.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"console.log(this.form.status); // 'VALID' или 'INVALID'\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это свойство удобно для реакций на изменение состояния — например, чтобы включить кнопку только при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"VALID\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:23:34.220Z",
+        "updatedAt": "2025-11-10T11:43:42.277Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое состояние valid и invalid?",
+        "id": 2150,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает pending статус формы?",
+        "id": 2152,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2152,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает pending статус формы?\"}]}]}",
+        "title": "Что означает pending статус формы?",
+        "order": 70813,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"PENDING\"},{\"type\":\"text\",\"text\":\" означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"форма (или отдельное поле) сейчас проходит асинхронную валидацию\"},{\"type\":\"text\",\"text\":\" — проверку, результат которой ещё не получен.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если для поля задан \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AsyncValidator\"},{\"type\":\"text\",\"text\":\", например, проверка логина на уникальность через сервер:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"username = new FormControl('', [], [this.checkUsernameAvailability]);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь вводит значение, Angular запускает асинхронный валидатор, и пока запрос не завершён, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"username.status === 'PENDING'\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"PENDING\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"промежуточное состояние\"},{\"type\":\"text\",\"text\":\", показывающее, что форма временно “ждёт ответа”, и итоговая валидность (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"VALID\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"INVALID\"},{\"type\":\"text\",\"text\":\") ещё не определена.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:23:50.220Z",
+        "updatedAt": "2025-10-22T11:23:50.220Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает свойство status у формы?",
+        "id": 2151,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое валидатор в Angular?",
+        "id": 2153,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2153,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое валидатор в Angular?\"}]}]}",
+        "title": "Что такое валидатор в Angular?",
+        "order": 70814,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Валидатор в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"функция, которая проверяет значение поля формы и возвращает результат проверки\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если значение корректно → возвращается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"null\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если есть ошибка → возвращается объект с описанием, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"{ required: true } или { minlength: { requiredLength: 5, actualLength: 3 } }\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Бывают два типа:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Синхронные валидаторы\"},{\"type\":\"text\",\"text\":\" — выполняются сразу (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.required\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.email\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.minLength\"},{\"type\":\"text\",\"text\":\" и т. д.).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Асинхронные валидаторы\"},{\"type\":\"text\",\"text\":\" — выполняются с задержкой (например, запрос к серверу для проверки логина).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"email = new FormControl('', [Validators.required, Validators.email]);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Валидаторы помогают Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматически определять состояние \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"valid\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"invalid\"},{\"type\":\"text\",\"text\":\" и показывать ошибки пользователю.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:24:13.915Z",
+        "updatedAt": "2025-10-22T11:24:13.915Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает pending статус формы?",
+        "id": 2152,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие бывают типы валидаторов?",
+        "id": 2154,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2154,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие бывают типы валидаторов?\"}]}]}",
+        "title": "Какие бывают типы валидаторов?",
+        "order": 70815,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular есть два типа валидаторов:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Синхронные (synchronous validators)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Проверяются сразу, без ожидания.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Используются чаще всего.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Примеры встроенных:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.required\"},{\"type\":\"text\",\"text\":\" — поле не должно быть пустым;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.email\"},{\"type\":\"text\",\"text\":\" — проверяет корректность e-mail;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.minLength(n)\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.maxLength(n)\"},{\"type\":\"text\",\"text\":\" — ограничивают длину;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Validators.pattern(regex)\"},{\"type\":\"text\",\"text\":\" — проверяет по регулярному выражению.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Можно писать свои, возвращающие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"null\"},{\"type\":\"text\",\"text\":\" (если всё ок) или объект ошибки.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Асинхронные (asynchronous validators)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Используются, когда проверка требует времени, например, запрос к серверу.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Возвращают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Promise\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Пример: проверка, занят ли логин:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"checkUsername(control: FormControl) {\\n  return this.api.checkUser(control.value).pipe(\\n    map(isTaken => (isTaken ? { usernameTaken: true } : null))\\n  );\\n}\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба типа могут применяться как к отдельным \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\", так и к целым \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormGroup\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:24:34.063Z",
+        "updatedAt": "2025-11-10T11:43:45.601Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое валидатор в Angular?",
+        "id": 2153,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как проверить, есть ли у контрола ошибка?",
+        "id": 2155,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2155,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как проверить, есть ли у контрола ошибка?\"}]}]}",
+        "title": "Как проверить, есть ли у контрола ошибка?",
+        "order": 70816,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проверить, есть ли у контрола ошибка, можно с помощью метода \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hasError()\"},{\"type\":\"text\",\"text\":\" или свойства \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"errors\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hasError()\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"this.form.get('email')?.hasError('required'); // true, если ошибка required есть\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Через свойство \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"errors\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"this.form.get('email')?.errors; \\n// вернёт объект вроде { required: true, email: true } или null\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. В шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input formControlName=\\\"email\\\">\\n<div *ngIf=\\\"form.get('email')?.hasError('required') && form.get('email')?.touched\\\">\\n  Поле обязательно\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"errors\"},{\"type\":\"text\",\"text\":\" равно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"null\"},{\"type\":\"text\",\"text\":\" — ошибок нет.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если есть объект — значит, валидация не пройдена.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 217,
+        "createdAt": "2025-10-22T11:25:09.023Z",
+        "updatedAt": "2025-10-22T11:25:09.023Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 217,
+          "title": "Формы (Forms)",
+          "directions": [
+            {
+              "categoryId": 217,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие бывают типы валидаторов?",
+        "id": 2154,
+        "premium": true,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое роутинг (routing) в Angular?",
+        "id": 2156,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

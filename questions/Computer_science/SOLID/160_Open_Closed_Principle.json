@@ -1,0 +1,692 @@
+{
+  "category": {
+    "id": 160,
+    "title": "Open/Closed Principle",
+    "description": " ",
+    "parentId": 147
+  },
+  "totalQuestions": 8,
+  "downloadedAt": "2026-03-10T09:46:17.664Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2819,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает принцип открытости/закрытости?\"}]}]}",
+        "title": "Что означает принцип открытости/закрытости?",
+        "order": 440100,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип открытости/закрытости (Open/Closed Principle, OCP) означает, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модуль должен быть открыт для расширения, но закрыт для модификации\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысл “открыт для расширения”\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поведение класса должно изменять или дополнять — но не через изменение его внутреннего кода, а через добавление новых компонентов: новых классов, стратегий, обработчиков, адаптеров.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть расширение функциональности должно происходить снаружи.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысл “закрыт для модификации”\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Уже написанный и протестированный код не должен изменяться при появлении новых требований.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Любая модификация существующей логики создаёт риск появления ошибок, поэтому OCP требует, чтобы базовый код оставался стабильным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мотивировка принципа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда требования меняются (а они всегда меняются), архитектура должна позволять адаптацию без переписывания старой логики.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает риск регрессий, повышает предсказуемость поведения и ускоряет разработку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что считается нарушением OCP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда для добавления нового варианта поведения требуется менять тело существующего метода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда приход новых требований вынуждает переписывать уже работающий класс.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда основной код приходится адаптировать под новые условия вместо того, чтобы подключить новые реализации.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что соответствует OCP\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование интерфейсов и абстракций, позволяющих подставлять новые реализации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Применение шаблонов вроде Strategy, Decorator, Factory Method, полиморфизма.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Архитектура, в которой добавление нового поведения не затрагивает существующий код.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP — это принцип, который делает код устойчивым к изменениям требований: старый код остаётся неизменным, новое поведение добавляется через расширение, а не модификацию.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:48:35.818Z",
+        "updatedAt": "2026-01-29T10:31:48.266Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как SRP повышает модульность приложения?",
+        "id": 2818,
+        "premium": false,
+        "category": {
+          "id": 159,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Пример нарушения OCP",
+        "id": 2820,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2820,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример нарушения OCP\"}]}]}",
+        "title": "Пример нарушения OCP",
+        "order": 440101,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример нарушения OCP возникает там, где при добавлении нового варианта поведения приходится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"менять существующий код\"},{\"type\":\"text\",\"text\":\", а не добавлять новый.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ниже типичный пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class PaymentProcessor:\\n    def process(self, payment_type, amount):\\n        if payment_type == \\\"card\\\":\\n            self._process_card(amount)\\n        elif payment_type == \\\"paypal\\\":\\n            self._process_paypal(amount)\\n        elif payment_type == \\\"crypto\\\":\\n            self._process_crypto(amount)\\n        else:\\n            raise ValueError(\\\"Unknown payment type\\\")\\n\\n    def _process_card(self, amount):\\n        ...\\n\\n    def _process_paypal(self, amount):\\n        ...\\n\\n    def _process_crypto(self, amount):\\n        ...\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему это нарушение:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Добавление нового способа оплаты требует изменения существующего класса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, если нужно поддержать оплату через «Apple Pay», придётся снова открывать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"PaymentProcessor\"},{\"type\":\"text\",\"text\":\" и дописывать ещё одно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"elif\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс не закрыт для модификации.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Любое новое требование — новый код внутри уже протестированного метода \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"process\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это нарушает стабильность и создаёт риск регрессий.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отсутствует механизм расширения через новые модули.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вся логика жёстко зашита в один класс, поэтому расширение возможно только путём модификации.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Такой подход чётко показывает нарушение OCP: каждый новый тип поведения вынуждает изменять существующий модуль.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:49:00.542Z",
+        "updatedAt": "2025-11-13T07:49:00.542Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает принцип открытости/закрытости?",
+        "id": 2819,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как OCP помогает избежать багов при изменениях?",
+        "id": 2821,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2821,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как OCP помогает избежать багов при изменениях?\"}]}]}",
+        "title": "Как OCP помогает избежать багов при изменениях?",
+        "order": 440102,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP помогает избежать багов при изменениях за счёт того, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новое поведение добавляется через расширение, а не через изменение уже работающего кода\"},{\"type\":\"text\",\"text\":\". Это снижает вероятность непреднамеренно сломать существующую логику.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стабильный код не трогается\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Баги чаще всего появляются тогда, когда разработчик изменяет уже протестированную часть системы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если модуль закрыт для модификации, его внутренняя логика остаётся неизменной, значит, риск внести ошибку туда отсутствует.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новые требования реализуются в изолированных модулях\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда расширение происходит через новые классы или реализации, изменения сосредоточены только в новом участке кода.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Старое поведение не затрагивается и не подвергается риску.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше точек входа, в которых может возникнуть ошибка\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При нарушении OCP добавление нового поведения требует правок в нескольких местах, включая центральный код (например, длинные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if/else\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При соблюдении OCP меняется только одна зона — новая реализация интерфейса или стратегия.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощается тестирование\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Новый функциональный блок можно протестировать отдельно, не перетестировав всю систему.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Стабильный код остаётся в прошлых тестах, а новый покрывается отдельно, что снижает вероятность пропустить ошибку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Устраняется каскадный эффект\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если расширение вынуждает модифицировать существующий код, ошибки могут распространиться дальше через цепочку зависимостей.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При соблюдении OCP зависимости остаются прежними, а каскадный эффект отсутствует.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP снижает количество багов, потому что новое поведение внедряется без изменения старого кода — а ошибки появляются в основном там, где старый код переписывается.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:49:19.456Z",
+        "updatedAt": "2025-11-13T07:49:19.456Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Пример нарушения OCP",
+        "id": 2820,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как реализовать OCP через наследование?",
+        "id": 2822,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2822,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как реализовать OCP через наследование?\"}]}]}",
+        "title": "Как реализовать OCP через наследование?",
+        "order": 440103,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP через наследование реализуется так, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"базовый класс остаётся неизменным\"},{\"type\":\"text\",\"text\":\", а новое поведение добавляется в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подклассов\"},{\"type\":\"text\",\"text\":\", которые переопределяют нужные методы. Таким образом, расширение происходит за счёт новых классов, а не изменения старых.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Базовый класс задаёт общий интерфейс\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В нём определяются методы, которые дочерние классы должны реализовать.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Этот класс остаётся «закрытым для модификации»: его код не меняется при появлении новых вариантов поведения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новые типы поведения создаются через новые наследники\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда требуется новый функционал, создаётся новый подкласс, который реализует или переопределяет нужные методы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это обеспечивают “открытость для расширения”: поведение системы растёт, не меняя существующие файлы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиентский код работает через базовый тип\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вне зависимости от того, сколько подклассов существует, внешний код использует только базовый интерфейс.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это означает, что добавление новых реализаций не требует изменений в логике, которая вызывает эти объекты.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class PaymentMethod:\\n    def pay(self, amount):\\n        raise NotImplementedError\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дочерние классы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class CardPayment(PaymentMethod):\\n    def pay(self, amount):\\n        print(\\\"Оплата картой:\\\", amount)\\n\\nclass PayPalPayment(PaymentMethod):\\n    def pay(self, amount):\\n        print(\\\"Оплата через PayPal:\\\", amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расширение:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class CryptoPayment(PaymentMethod):\\n    def pay(self, amount):\\n        print(\\\"Оплата криптовалютой:\\\", amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему это соблюдает OCP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Базовый класс не менялся\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он остался закрыт для модификации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новое поведение добавлено через новый наследник\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"CryptoPayment — новый вариант, который не требует переписывания старых классов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиентский код использует единый интерфейс\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"def checkout(payment: PaymentMethod, amount):\\n    payment.pay(amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Этот код не нуждается в изменениях при добавлении новых способов оплаты.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Наследование реализует OCP, когда базовый класс задаёт контракт, а новое поведение добавляется исключительно путём создания новых подклассов, не меняя существующие.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:49:37.399Z",
+        "updatedAt": "2025-11-13T07:49:37.399Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как OCP помогает избежать багов при изменениях?",
+        "id": 2821,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как реализовать OCP через композицию?",
+        "id": 2823,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2823,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как реализовать OCP через композицию?\"}]}]}",
+        "title": "Как реализовать OCP через композицию?",
+        "order": 440104,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP через композицию реализуется так, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"класс не переопределяют через наследование, а передают внутрь него объект, определяющий поведение\"},{\"type\":\"text\",\"text\":\". Новое поведение добавляется созданием новых стратегий/компонентов, а не изменением существующего кода.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Класс получает зависимость через интерфейс или абстракцию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вместо того чтобы переопределять методы в наследниках, класс принимает объект, который реализует определённый контракт.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Этот объект определяет изменяемое поведение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Код закрыт для модификации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Класс, использующий зависимость, не меняется.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он просто вызывает методы переданной стратегии.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новое поведение добавляется созданием нового компонента\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чтобы реализовать новый вариант поведения, создаётся новый класс, реализующий тот же интерфейс.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Существующие классы остаются неизменными — это и есть соблюдение OCP.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример (стратегия оплаты):\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Интерфейс поведения:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class PaymentStrategy:\\n    def pay(self, amount):\\n        raise NotImplementedError\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Реализации:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class CardPayment(PaymentStrategy):\\n    def pay(self, amount):\\n        print(\\\"Оплата картой:\\\", amount)\\n\\nclass PayPalPayment(PaymentStrategy):\\n    def pay(self, amount):\\n        print(\\\"Оплата через PayPal:\\\", amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Класс, использующий стратегию:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class CheckoutService:\\n    def __init__(self, payment_strategy: PaymentStrategy):\\n        self.payment_strategy = payment_strategy\\n\\n    def process(self, amount):\\n        self.payment_strategy.pay(amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расширение:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"class CryptoPayment(PaymentStrategy):\\n    def pay(self, amount):\\n        print(\\\"Оплата криптовалютой:\\\", amount)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему это OCP:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CheckoutService не изменяется никогда.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он полностью закрыт для модификации.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новое поведение добавляется новыми стратегиями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"CryptoPayment — новый класс, который не требует менять существующую систему.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиентский код просто подставляет новый компонент.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"python\"},\"content\":[{\"type\":\"text\",\"text\":\"checkout = CheckoutService(CryptoPayment())\\ncheckout.process(100)\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":4,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Композиция гибче наследования.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поведение можно подменять в рантайме, комбинировать или менять без создания новых иерархий классов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP через композицию реализуется с помощью стратегий, делегирования и инъекции зависимостей: базовый код остаётся неизменным, а новое поведение добавляется созданием новых компонент, передаваемых в класс извне.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:49:54.570Z",
+        "updatedAt": "2025-11-13T07:49:54.570Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как реализовать OCP через наследование?",
+        "id": 2822,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему OCP тесно связан с интерфейсами?",
+        "id": 2824,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2824,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему OCP тесно связан с интерфейсами?\"}]}]}",
+        "title": "Почему OCP тесно связан с интерфейсами?",
+        "order": 440105,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP тесно связан с интерфейсами, потому что именно интерфейсы позволяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расширять поведение без изменения существующего кода\"},{\"type\":\"text\",\"text\":\", что является сутью принципа открытости/закрытости.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейс задаёт контракт, который не нужно менять\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейс определяет набор методов, но не определяет реализацию.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Этот контракт остаётся стабильным — он “закрыт для модификации”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пока интерфейс не меняется, весь код, который зависит от него, остаётся неизменным.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Новые реализации интерфейса — это путь расширения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда появляется новая потребность, создаётся новая реализация интерфейса.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это “открытость для расширения”: система получает новое поведение без изменения существующих классов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Клиентский код работает не с конкретными классами, а с абстракциями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Код, который использует интерфейс, не знает и не должен знать, какая именно реализация внедрена.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это позволяет добавлять новые варианты поведения, не затрагивая вызывающий код.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейсы устраняют необходимость модифицировать центральную логику\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без интерфейсов расширение обычно требует:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавлять новые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if/else\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дописывать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"switch\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавлять новые ветки условия.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё это является нарушением OCP.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Интерфейс избавляет от такой конструкции: выбор поведения переносится на объект, а не на условный оператор.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейсы обеспечивают полиморфизм\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Полиморфизм — ключевой механизм реализации OCP.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Благодаря интерфейсу разные реализации могут быть подставлены незаметно для остальной системы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерфейс делает систему гибкой к изменениям требований\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Требования всегда меняются, но интерфейс фиксирует границу:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"стабильный контракт → изменяемые реализации.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это именно то, что требует OCP.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP связан с интерфейсами потому, что интерфейсы фиксируют стабильный контракт, а расширение происходит через новые реализации этого контракта, без изменения существующего кода. Это делает систему устойчивой к изменениям и безопасной для развития.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:50:11.115Z",
+        "updatedAt": "2025-11-13T07:50:11.115Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как реализовать OCP через композицию?",
+        "id": 2823,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему OCP снижает количество регрессий?",
+        "id": 2825,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2825,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему OCP снижает количество регрессий?\"}]}]}",
+        "title": "Почему OCP снижает количество регрессий?",
+        "order": 440106,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP снижает количество регрессий потому, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уменьшает количество изменений в уже работающем, проверенном коде\"},{\"type\":\"text\",\"text\":\", а именно в таких местах регрессии чаще всего и возникают.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изолирование нового кода от старого\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Новое поведение добавляется в виде новых классов или стратегий, а не через переписывание существующих методов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если старый код не трогается, в нём не могут появиться ошибки, вызванные правками.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Стабильность контрактов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда система опирается на интерфейсы или абстракции, эти контракты остаются неизменными.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Регрессии возникают, когда изменения ломают взаимодействия между компонентами.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"OCP предотвращает такие поломки: контракт стабилен → компоненты остаются совместимыми.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минимизация модификаций в центральной логике\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В сценариях, нарушающих OCP, любое новое требование заставляет менять ключевые участки кода (например, добавлять новые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if/else\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это высокорискованные точки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При соблюдении OCP центральная логика остаётся неизменной.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Локальность изменений\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Модификации находятся в новых модулях, которые не пересекаются со старой логикой.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Локальные изменения проще контролировать, тестировать и отслеживать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чёткое разделение ответственности между модулями\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда модуль делает только одно и расширяется через интерфейс, вероятность случайно изменить поведение других функций уменьшается.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это напрямую снижает риск непреднамеренных последствий.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проще автоматизировать тестирование\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Новый функциональный блок можно протестировать отдельно, не затрагивая существующую систему.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает вероятность пропустить регрессию, потому что тестирование становится прозрачнее и более предсказуемым.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP снижает регрессии, потому что уменьшает количество изменений в стабильной части системы и переносит процесс расширения в новые, изолированные модули. Чем меньше правок в старом коде, тем меньше вероятность, что что-то сломается.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:50:28.614Z",
+        "updatedAt": "2025-11-13T07:50:28.614Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему OCP тесно связан с интерфейсами?",
+        "id": 2824,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему OCP снижает coupling?",
+        "id": 2826,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2826,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему OCP снижает coupling?\"}]}]}",
+        "title": "Почему OCP снижает coupling?",
+        "order": 440107,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"OCP снижает coupling (связанность) потому, что заставляет систему зависеть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"от абстракций, а не от конкретных реализаций\"},{\"type\":\"text\",\"text\":\", и переносит изменяемую логику в отдельные расширяемые модули.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Развёрнуто:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Убирает зависимость от конкретных классов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда поведение расширяется через интерфейсы или абстракции, модули перестают зависеть друг от друга напрямую.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Клиентский код знает только контракт (интерфейс), а не конкретный класс.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это снижает степень связанности между компонентами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изменяемые части выносятся за пределы базового кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без OCP базовый модуль должен знать обо всех вариантах поведения (например, через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if\"},{\"type\":\"text\",\"text\":\" для каждого типа).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это создаёт жёсткие зависимости: один модуль зависит от множества других.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При OCP новый функционал выносится в отдельный класс, и базовый код о нём не знает.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Связанность уменьшается.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Модули перестают влиять друг на друга при изменениях\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если реализацию можно менять, не трогая потребителей этой реализации, то потребители от неё “слабо связаны”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Новые требования больше не требуют менять клиентский код — это ключевое снижение coupling.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование полиморфизма вместо условных операторов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если добавить новый вариант поведения через новую реализацию интерфейса, клиентский код остаётся неизменным.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если бы OCP не соблюдался, пришлось бы встраивать новый вариант через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if/else\"},{\"type\":\"text\",\"text\":\", создавая связь между модулями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Полиморфизм разрывает эти связи.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Меньше точек, через которые модули соприкасаются\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда абстракция задаёт единую точку взаимодействия, зависимость становится одна и предсказуемая.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без OCP один модуль знает слишком много о структуре другого — сильная связанность.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Гибкость подмены зависимостей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Слабое coupling проявляется в том, что можно подставить другую реализацию без изменения клиентского кода.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это напрямую достигается через то, что OCP заставляет расширять поведение вне существующего кода.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"OCP снижает связанность, потому что модули взаимодействуют через стабильные абстракции, а изменяемая логика вынесена в отдельные расширяемые компоненты. Это разрывает жёсткие зависимости и делает систему гибче.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 160,
+        "createdAt": "2025-11-13T07:50:48.304Z",
+        "updatedAt": "2025-11-13T07:50:48.304Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 160,
+          "title": "Open/Closed Principle",
+          "directions": [
+            {
+              "categoryId": 160,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему OCP снижает количество регрессий?",
+        "id": 2825,
+        "premium": false,
+        "category": {
+          "id": 160,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает принцип подстановки Лисков?",
+        "id": 2827,
+        "premium": false,
+        "category": {
+          "id": 161,
+          "parent": {
+            "title": "S.O.L.I.D",
+            "id": 147,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

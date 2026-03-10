@@ -1,0 +1,1372 @@
+{
+  "category": {
+    "id": 153,
+    "title": "Technical SEO",
+    "description": " ",
+    "parentId": 9
+  },
+  "totalQuestions": 16,
+  "downloadedAt": "2026-03-09T08:46:55.124Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2490,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Technical SEO?\"}]}]}",
+        "title": "Что такое Technical SEO?",
+        "order": 90400,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Technical SEO\"},{\"type\":\"text\",\"text\":\" — это оптимизация \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"технической стороны сайта\"},{\"type\":\"text\",\"text\":\", чтобы поисковые системы могли его правильно сканировать, индексировать и ранжировать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что в него входит:\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структура сайта и URL\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ЧПУ (человекопонятные ссылки);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"иерархия страниц;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отсутствие дублей.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Файл robots.txt и sitemap.xml\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управление доступом для ботов;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Указание страниц, которые нужно индексировать.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корректные коды ответа сервера\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"200 — ок;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"301 — постоянный редирект;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"404 — не найдено;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"500 — ошибка сервера.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оптимизация скорости загрузки\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сжатие изображений;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"минимизация JS и CSS;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"использование кэша и CDN.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мобильная адаптация\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Адаптивный дизайн;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корректное отображение на разных устройствах.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Core Web Vitals\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрота рендера (LCP);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отклик на действия (FID/INP);\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стабильность макета (CLS).\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разметка и микроформаты\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"http://Schema.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"Schema.org\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Open Graph;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правильные мета-теги.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"8. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Безопасность\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTPS;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отсутствие вредоносного кода.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если коротко: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"technical SEO — это фундамент\"},{\"type\":\"text\",\"text\":\", на котором строятся контент и ссылки. Без него сайт может быть крутым, но \\\"невидимым\\\" для поисковиков.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T10:01:43.885Z",
+        "updatedAt": "2025-10-23T10:01:43.885Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое крауд-маркетинг?",
+        "id": 2489,
+        "premium": false,
+        "category": {
+          "id": 222,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем техническое SEO отличается от on-page и off-page SEO?",
+        "id": 2491,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2491,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем техническое SEO отличается от on-page и off-page SEO?\"}]}]}",
+        "title": "Чем техническое SEO отличается от on-page и off-page SEO?",
+        "order": 90401,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Техническое SEO\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"on-page SEO\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"off-page SEO\"},{\"type\":\"text\",\"text\":\" — это три разных слоя одной системы, каждый отвечает за свой «контур» видимости сайта в поисковиках:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔧 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Technical SEO\"},{\"type\":\"text\",\"text\":\" — основа\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что это:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Оптимизация «подкапотных» вещей, чтобы сайт был \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступен, сканируем и понятен поисковым ботам\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"sitemap.xml, robots.txt\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скорость загрузки\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTTPS и безопасность\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адаптивность\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правильные редиректы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"структура кода и URL\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Core Web Vitals\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если сайт плохо технически устроен, его вообще могут не увидеть — ни бот, ни пользователь.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🧩 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"On-page SEO\"},{\"type\":\"text\",\"text\":\" — то, что на странице\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что это:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё, что связано с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контентом и структурой\"},{\"type\":\"text\",\"text\":\" страницы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ключевые слова\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"заголовки (H1–H6)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"мета-теги (title, description)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ALT-атрибуты\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"внутренняя перелинковка\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"читаемый текст, микроразметка\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поисковик должен понять, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"о чём\"},{\"type\":\"text\",\"text\":\" страница и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"насколько она релевантна\"},{\"type\":\"text\",\"text\":\" запросу.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🌐 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Off-page SEO\"},{\"type\":\"text\",\"text\":\" — что происходит вне сайта\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что это:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Репутация сайта в интернете.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"внешние ссылки (backlinks)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"упоминания бренда\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"крауд-маркетинг\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"активность в соцсетях\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"PR, СМИ, гостевые статьи\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Google доверяет не только тому, что ты говоришь о себе, но и тому, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что говорят другие\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 В чём отличие:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тип SEO\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где работает\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На что влияет\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Technical SEO\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В коде\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Индексация, доступность, скорость\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"On-page SEO\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В контенте\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Релевантность, структура, UX\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Off-page SEO\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вне сайта\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Авторитет, доверие, внешние сигналы\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все три — как фундамент, стены и крыша. Без одного — конструкция не стоит.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T10:02:06.752Z",
+        "updatedAt": "2025-10-23T10:02:06.752Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Technical SEO?",
+        "id": 2490,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как технические ошибки могут мешать продвижению?",
+        "id": 2492,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2492,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как технические ошибки могут мешать продвижению?\"}]}]}",
+        "title": "Как технические ошибки могут мешать продвижению?",
+        "order": 90402,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Технические ошибки мешают продвижению\"},{\"type\":\"text\",\"text\":\", потому что они напрямую \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"блокируют доступ поисковикам\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"портят восприятие сайта\"},{\"type\":\"text\",\"text\":\". Даже идеальный контент и сильные ссылки не спасут, если сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"технически \\\"не работает\\\" в глазах Google\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вот как это происходит:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поисковики не видят страницу\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ошибка в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noindex\"},{\"type\":\"text\",\"text\":\" — и нужные страницы просто \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не попадают в индекс\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Неправильные редиректы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"302\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"301\"},{\"type\":\"text\",\"text\":\", петли, битые цепочки) — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поисковый бот теряется\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дублирующий контент\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Одинаковый контент доступен по разным URL (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/page\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/page/\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"page?ref=ads\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без канонического URL (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel=\\\"canonical\\\"\"},{\"type\":\"text\",\"text\":\") — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вес размывается\"},{\"type\":\"text\",\"text\":\", Google не знает, что ранжировать.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Медленная загрузка\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Большие изображения, ненужный JS, отсутствие кэширования — и LCP/INP/CLS проваливаются.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Результат: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"плохой пользовательский опыт → понижение в выдаче\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мобильная неадаптивность\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Страница выглядит нормально на ПК, но на телефоне — кривая или нечитаемая.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Google ориентируется на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"mobile-first\"},{\"type\":\"text\",\"text\":\", такие страницы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не будут продвигаться\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ошибки в структуре сайта\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отсутствие sitemap.xml — боты не находят все страницы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет внутренних ссылок — страницы остаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изолированными\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Битые ссылки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"404\"},{\"type\":\"text\",\"text\":\") — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"снижают доверие и краулинговый бюджет\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблемы с безопасностью\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет HTTPS → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"предупреждение в браузере\"},{\"type\":\"text\",\"text\":\", отказ пользователей, падение доверия.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вредоносный код → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"санкции и полное исключение из выдачи\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Технические ошибки — это не просто баги. Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"немой отказ от продвижения\"},{\"type\":\"text\",\"text\":\". Поисковик не станет разбираться, если ты сам перекрыл ему путь.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T10:02:32.796Z",
+        "updatedAt": "2025-10-23T10:02:32.796Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем техническое SEO отличается от on-page и off-page SEO?",
+        "id": 2491,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как поисковые роботы сканируют сайт?",
+        "id": 2493,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2493,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как поисковые роботы сканируют сайт?\"}]}]}",
+        "title": "Как поисковые роботы сканируют сайт?",
+        "order": 90403,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковые роботы (краулеры) сканируют сайт поэтапно — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как умные, но ограниченные гости\"},{\"type\":\"text\",\"text\":\", у которых мало времени и чёткий план.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вот как это работает:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Выбор стартовых URL\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Робот начинает с:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уже известных страниц;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ссылок из sitemap.xml;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"внешних ссылок на сайт;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ранее посещённых URL.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проверка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перед тем как заходить внутрь, бот обращается к файлу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"site.com/robots.txt\"},{\"type\":\"text\",\"text\":\" — смотрит, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"какие разделы ему запрещено сканировать\"},{\"type\":\"text\",\"text\":\". Если ты закрыл раздел — туда он не пойдёт.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Загрузка страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Робот загружает HTML, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не всегда дожидаясь полного рендера JS\"},{\"type\":\"text\",\"text\":\". Поэтому контент, который появляется динамически, может быть просто не замечен.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Извлечение ссылок\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Из HTML он вытаскивает все внутренние и внешние ссылки и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"добавляет их в очередь на обход\"},{\"type\":\"text\",\"text\":\", если они разрешены.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повтор и обновление\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сайт не сканируется один раз и навсегда. Бот возвращается регулярно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чаще на активные и популярные страницы;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"реже на статичные или слабосвязанные.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ограничения (краулинговый бюджет)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"У каждого сайта — свой лимит: сколько страниц, как часто и с какой глубиной сканировать.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Чем больше ошибок, дублей и мусора — тем быстрее робот «уходит».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передача данных в индекс\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После сканирования начинается анализ:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие страницы включать в индекс,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какой контент важен,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какой дубль,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"что удалить.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Робот сканирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строго по правилам, быстро и не бесконечно\"},{\"type\":\"text\",\"text\":\". Если ты хочешь, чтобы сайт продвигался — нужно сделать так, чтобы ему было удобно: чистая структура, sitemap, никаких преград.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:25:20.835Z",
+        "updatedAt": "2025-11-10T11:30:51.604Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как технические ошибки могут мешать продвижению?",
+        "id": 2492,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает термин \"crawlability\"?",
+        "id": 2494,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2494,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает термин \\\"crawlability\\\"?\"}]}]}",
+        "title": "Что означает термин \"crawlability\"?",
+        "order": 90404,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Crawlability\"},{\"type\":\"text\",\"text\":\" (от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"crawl\"},{\"type\":\"text\",\"text\":\" — «сканировать») — это показатель того, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько легко поисковый робот может получить доступ ко всем нужным страницам сайта\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔍 Проще говоря:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“проходимость” сайта для бота\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если структура, ссылки и настройки позволяют без препятствий двигаться по сайту — crawlability высокая.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если путь закрыт (ошибки, редиректы, запреты) — низкая.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🚧 Что влияет на crawlability:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" — блокирует или разрешает доступ к разделам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внутренняя перелинковка\"},{\"type\":\"text\",\"text\":\" — помогает роботу находить страницы без тупиков.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Sitemap.xml\"},{\"type\":\"text\",\"text\":\" — даёт карту сайта, чтобы не искать вручную.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Редиректы и 404\"},{\"type\":\"text\",\"text\":\" — ломают путь, уменьшая охват сканирования.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость сервера\"},{\"type\":\"text\",\"text\":\" — если страницы грузятся медленно, бот уходит раньше.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"JavaScript и динамический контент\"},{\"type\":\"text\",\"text\":\" — иногда робот не видит то, что видит человек.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🧭 Почему важно:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если у сайта плохая crawlability, поисковик \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"просто не узнает\"},{\"type\":\"text\",\"text\":\", что у тебя есть нужные страницы — даже если они идеальны для пользователей.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"text\",\"text\":\" хорошая crawlability = робот быстро, без путаницы и ограничений доходит до всего важного контента.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:29:53.290Z",
+        "updatedAt": "2025-10-23T12:29:53.290Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как поисковые роботы сканируют сайт?",
+        "id": 2493,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое \"indexability\"?",
+        "id": 2495,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2495,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое \\\"indexability\\\"?\"}]}]}",
+        "title": "Что такое \"indexability\"?",
+        "order": 90405,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Indexability\"},{\"type\":\"text\",\"text\":\" (индексируемость) — это способность страницы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"попасть в поисковый индекс\"},{\"type\":\"text\",\"text\":\" после того, как робот её просканировал.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📍 Проще говоря:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если страница доступна для краулинга, это ещё не значит, что она появится в поиске.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Crawlability\"},{\"type\":\"text\",\"text\":\" — робот может зайти.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Indexability\"},{\"type\":\"text\",\"text\":\" — робот решил: «эту страницу стоит добавить в индекс».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ Что влияет на индексируемость:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Мета-теги\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<meta name=\\\"robots\\\" content=\\\"noindex\\\">\"},{\"type\":\"text\",\"text\":\" — запрещает индексацию.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<meta name=\\\"robots\\\" content=\\\"index\\\">\"},{\"type\":\"text\",\"text\":\" — разрешает.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTTP-заголовки\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Код 200 — всё ок;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"301/302 — редирект, не индексируется;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"404/500 — ошибка, тоже не попадёт в индекс.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Канонические URL (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel=\\\"canonical\\\"\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если страница помечена как дубль, индексируется только оригинал.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дубли и тонкий контент\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если много одинаковых или пустых страниц, поисковик может проигнорировать часть из них.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Блокировка в robots.txt\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если бот не смог прочитать страницу — нечего индексировать.\"}]}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🧠 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Crawlability\"},{\"type\":\"text\",\"text\":\" отвечает за то, дойдёт ли робот.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Indexability\"},{\"type\":\"text\",\"text\":\" — за то, попадёт ли страница в поиск.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно иметь отличный сайт, но без indexability он останется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"невидимым в выдаче\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:30:18.802Z",
+        "updatedAt": "2025-10-23T12:30:18.802Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает термин \"crawlability\"?",
+        "id": 2494,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое robots.txt?",
+        "id": 2496,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2496,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое robots.txt?\"}]}]}",
+        "title": "Что такое robots.txt?",
+        "order": 90406,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Файл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" — это текстовый файл в корне сайта, в котором указывают, какие страницы и разделы можно или нельзя сканировать поисковым роботам. Он не скрывает данные, а лишь даёт рекомендацию ботам о доступе к контенту.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:30:45.805Z",
+        "updatedAt": "2025-10-23T12:30:45.805Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое \"indexability\"?",
+        "id": 2495,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Где должен располагаться файл robots.txt?",
+        "id": 2497,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2497,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где должен располагаться файл robots.txt?\"}]}]}",
+        "title": "Где должен располагаться файл robots.txt?",
+        "order": 90407,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Файл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" должен находиться в корневой директории сайта и быть доступен по адресу:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"https://site.ru/robots.txt\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковые системы ищут его именно в корне домена, другие расположения (например, в папках или поддоменах) не учитываются.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:31:04.462Z",
+        "updatedAt": "2025-11-10T11:30:55.667Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое robots.txt?",
+        "id": 2496,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива Disallow в robots.txt?",
+        "id": 2498,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2498,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива Disallow в robots.txt?\"}]}]}",
+        "title": "Что делает директива Disallow в robots.txt?",
+        "order": 90408,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Disallow\"},{\"type\":\"text\",\"text\":\" в файле \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" указывает поисковым роботам, какие страницы или каталоги \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нельзя сканировать и индексировать\"},{\"type\":\"text\",\"text\":\". Она запрещает доступ к указанным путям, чтобы поисковик не заходил в определённые разделы сайта — например, на служебные страницы, административные панели или дубли контента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"User-agent: *\\nDisallow: /admin/\\nDisallow: /cart\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этом случае роботы не будут сканировать раздел \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/admin/\"},{\"type\":\"text\",\"text\":\" и страницу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/cart\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно понимать: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Disallow не скрывает страницу от поисковика полностью\"},{\"type\":\"text\",\"text\":\". Если на запретную страницу ведут внешние ссылки, она всё равно может появиться в выдаче, но без содержимого. Для полного скрытия используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noindex\"},{\"type\":\"text\",\"text\":\" (в метатеге) или запрет через HTTP-заголовки.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:31:29.665Z",
+        "updatedAt": "2025-11-10T11:31:12.598Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Где должен располагаться файл robots.txt?",
+        "id": 2497,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива Allow?",
+        "id": 2499,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2499,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива Allow?\"}]}]}",
+        "title": "Что делает директива Allow?",
+        "order": 90409,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Allow\"},{\"type\":\"text\",\"text\":\" в файле \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" разрешает поисковому роботу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сканировать конкретные страницы или файлы внутри директории, которая в целом запрещена правилом Disallow\"},{\"type\":\"text\",\"text\":\". Она используется как исключение из запрета.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"User-agent: *\\nDisallow: /private/\\nAllow: /private/info.html\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь робот \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не может\"},{\"type\":\"text\",\"text\":\" обходить папку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/private/\"},{\"type\":\"text\",\"text\":\", но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"может\"},{\"type\":\"text\",\"text\":\" индексировать страницу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/private/info.html\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые моменты:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Allow\"},{\"type\":\"text\",\"text\":\" применяется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только в сочетании с Disallow\"},{\"type\":\"text\",\"text\":\", чтобы уточнять доступ.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковики при конфликте правил выбирают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наиболее конкретное\"},{\"type\":\"text\",\"text\":\" (более точный путь).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Allow\"},{\"type\":\"text\",\"text\":\" помогает оставлять доступ к важным страницам, не открывая весь раздел.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:31:49.973Z",
+        "updatedAt": "2025-10-23T12:31:49.973Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива Disallow в robots.txt?",
+        "id": 2498,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива User-agent?",
+        "id": 2500,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2500,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива User-agent?\"}]}]}",
+        "title": "Что делает директива User-agent?",
+        "order": 90410,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"User-agent\"},{\"type\":\"text\",\"text\":\" в файле \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"к какому поисковому роботу относится набор правил, указанных ниже\"},{\"type\":\"text\",\"text\":\". Проще говоря, она задаёт адресата: кому именно применяются Allow, Disallow и другие директивы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задавать правила для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всех роботов\"},{\"type\":\"text\",\"text\":\", используя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: *\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задавать правила \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конкретному роботу\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: Googlebot\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: YandexBot\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"User-agent: *\\nDisallow: /tmp/\\n\\nUser-agent: Googlebot\\nAllow: /\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этом примере:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все роботы не могут сканировать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/tmp/\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Googlebot может сканировать весь сайт без ограничений\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"User-agent — это указатель на того робота, для которого написаны последующие правила в блоке.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:32:52.640Z",
+        "updatedAt": "2025-10-23T12:32:52.640Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива Allow?",
+        "id": 2499,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива User-agent?",
+        "id": 2501,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2501,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива User-agent?\"}]}]}",
+        "title": "Что делает директива User-agent?",
+        "order": 90411,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"User-agent\"},{\"type\":\"text\",\"text\":\" в файле \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" определяет, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"к какому поисковому роботу относится набор правил, указанных ниже\"},{\"type\":\"text\",\"text\":\". Проще говоря, она задаёт адресата: кому именно применяются Allow, Disallow и другие директивы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задавать правила для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всех роботов\"},{\"type\":\"text\",\"text\":\", используя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: *\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"задавать правила \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конкретному роботу\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: Googlebot\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"User-agent: YandexBot\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"User-agent: *\\nDisallow: /tmp/\\n\\nUser-agent: Googlebot\\nAllow: /\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этом примере:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все роботы не могут сканировать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/tmp/\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Googlebot может сканировать весь сайт без ограничений\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"User-agent — это указатель на того робота, для которого написаны последующие правила в блоке.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:34:10.822Z",
+        "updatedAt": "2025-11-10T11:31:18.192Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива User-agent?",
+        "id": 2500,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает метатег <meta name=\"robots\" content=\"noindex\">?",
+        "id": 2502,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2502,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает метатег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<meta name=\\\"robots\\\" content=\\\"noindex\\\">\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает метатег <meta name=\"robots\" content=\"noindex\">?",
+        "order": 90412,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метатег\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<meta name=\\\"robots\\\" content=\\\"noindex\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"указывает поисковым системам \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не индексировать содержимое страницы и не включать её в результаты поиска\"},{\"type\":\"text\",\"text\":\". Это значит, что страница может быть доступна пользователям по прямой ссылке, но в выдаче поисковиков она появляться не должна.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ключевые особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метатег действует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на уровне самой страницы\"},{\"type\":\"text\",\"text\":\", в отличие от \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\", который регулирует только обход.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Страница \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"может быть просканирована\"},{\"type\":\"text\",\"text\":\", но её содержимое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не будет помещено в индекс\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метатег можно задавать как для всех роботов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots\"},{\"type\":\"text\",\"text\":\"), так и для конкретных, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<meta name=\\\"googlebot\\\" content=\\\"noindex\\\">\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно: чтобы поисковик увидел этот метатег, он должен иметь возможность зайти на страницу. Если в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" она закрыта через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Disallow\"},{\"type\":\"text\",\"text\":\", робот может просто не прочитать метатег и страница всё равно может попасть в выдачу по внешним ссылкам, но без текста.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:35:04.056Z",
+        "updatedAt": "2025-10-23T12:35:04.056Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива User-agent?",
+        "id": 2501,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “канонизация URL”?",
+        "id": 2503,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2503,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “канонизация URL”?\"}]}]}",
+        "title": "Что такое “канонизация URL”?",
+        "order": 90413,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Канонизация URL\"},{\"type\":\"text\",\"text\":\" — это процесс выбора \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основной (канонической) версии страницы\"},{\"type\":\"text\",\"text\":\", когда у одного и того же контента существует несколько разных адресов. Цель — показать поисковым системам, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"какой URL считать главным\"},{\"type\":\"text\",\"text\":\", чтобы не возникало дублей и размытия веса страницы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему вообще нужно:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Один и тот же контент может быть доступен по разным адресам, например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"site.ru/page\\nsite.ru/page?utm=123\\nsite.ru/page/\\nwww.site.ru/page\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для поисковика это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные URL\"},{\"type\":\"text\",\"text\":\", а значит — дубли. В итоге:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ухудшается позиция в поиске;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“расплывается” ссылочный вес;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возможны проблемы с уникальностью.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Решение — указать канонический адрес через тег:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<link rel=\\\"canonical\\\" href=\\\"https://site.ru/page\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда поисковая система понимает: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"главная версия — та, что в canonical\"},{\"type\":\"text\",\"text\":\", а остальные считать второстепенными.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:35:32.019Z",
+        "updatedAt": "2025-10-23T12:35:32.019Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает метатег <meta name=\"robots\" content=\"noindex\">?",
+        "id": 2502,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое sitemap.xml?",
+        "id": 2504,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2504,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое sitemap.xml?\"}]}]}",
+        "title": "Что такое sitemap.xml?",
+        "order": 90414,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"sitemap.xml\"},{\"type\":\"text\",\"text\":\" — это XML-файл на сайте, в котором содержится структурированный список его страниц, доступных для индексации. Этот файл помогает поисковым системам:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"быстрее находить страницы, даже если на них мало внутренних ссылок;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"понимать структуру сайта;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"учитывать обновления и новые URL.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно sitemap содержит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"адреса страниц;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"дату последнего обновления (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<lastmod>\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"приоритет (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<priority>\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"частоту изменения (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<changefreq>\"},{\"type\":\"text\",\"text\":\" — сегодня почти не используется).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример фрагмента:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"xml\"},\"content\":[{\"type\":\"text\",\"text\":\"<urlset xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\\n  <url>\\n    <loc>https://site.ru/</loc>\\n    <lastmod>2025-01-01</lastmod>\\n  </url>\\n  <url>\\n    <loc>https://site.ru/blog/</loc>\\n  </url>\\n</urlset>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Файл размещается по стандартному пути:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"https://site.ru/sitemap.xml\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Sitemap не гарантирует индексацию, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"значительно повышает шансы\"},{\"type\":\"text\",\"text\":\", особенно для крупных и сложных сайтов.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:35:45.539Z",
+        "updatedAt": "2025-10-23T12:35:45.539Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “канонизация URL”?",
+        "id": 2503,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важна иерархия страниц?",
+        "id": 2505,
+        "premium": true,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2505,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему важна иерархия страниц?\"}]}]}",
+        "title": "Почему важна иерархия страниц?",
+        "order": 90415,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иерархия страниц важна потому, что она задаёт понятную \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру и логику сайта\"},{\"type\":\"text\",\"text\":\" — для людей и для поисковых систем. От того, как выстроены уровни (главная → раздел → подкатегория → страница), зависит навигация, индексация и передача веса внутри сайта.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные причины, почему это критично:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Улучшение навигации для пользователей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Людям проще ориентироваться, когда сайт устроен логично: от общего к частному. Чем понятнее структура, тем ниже процент отказов и выше глубина просмотра — а это поведенческие сигналы, влияющие на SEO.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Понятность для поисковых роботов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поисковики читают сайт как дерево. Чёткая иерархия позволяет им быстрее находить важные страницы, понимать, как они связаны, и корректно распределять приоритет при сканировании.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передача ссылочного веса (внутренняя перелинковка)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Страницы верхнего уровня получают больше веса, а далее он передаётся вниз. Если структура хаотична, вес распыляется, и важные URL могут ранжироваться хуже.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Избежание дублей и путаницы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Правильная иерархия помогает не плодить конфликтующие URL, не создавать одинаковые страницы в разных ветках и не терять позиции из-за каннибализации запросов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: грамотная иерархия — это фундамент SEO. Без неё даже хороший контент и ссылки не дают нужного результата, потому что поисковик не понимает, что на сайте главное, а что второстепенное.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 153,
+        "createdAt": "2025-10-23T12:36:05.186Z",
+        "updatedAt": "2025-11-10T11:31:22.334Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 153,
+          "title": "Technical SEO",
+          "directions": [
+            {
+              "categoryId": 153,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое sitemap.xml?",
+        "id": 2504,
+        "premium": false,
+        "category": {
+          "id": 153,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое performance в контексте SEO?",
+        "id": 2506,
+        "premium": false,
+        "category": {
+          "id": 152,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

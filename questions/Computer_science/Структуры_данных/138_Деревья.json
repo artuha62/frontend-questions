@@ -1,0 +1,1712 @@
+{
+  "category": {
+    "id": 138,
+    "title": "Деревья",
+    "description": " ",
+    "parentId": 11
+  },
+  "totalQuestions": 20,
+  "downloadedAt": "2026-03-10T09:40:37.482Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1580,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое дерево как структура данных?\"}]}]}",
+        "title": "Что такое дерево как структура данных?",
+        "order": 410700,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дерево\"},{\"type\":\"text\",\"text\":\" — это иерархическая структура данных, в которой каждый элемент (называемый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"узлом\"},{\"type\":\"text\",\"text\":\") может иметь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дочерние узлы\"},{\"type\":\"text\",\"text\":\", но только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одного родителя\"},{\"type\":\"text\",\"text\":\" (кроме корня).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные понятия:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корень (root)\"},{\"type\":\"text\",\"text\":\" — верхний узел, у которого нет родителя.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Потомки (children)\"},{\"type\":\"text\",\"text\":\" — узлы, которые исходят из родителя.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Листья (leaves)\"},{\"type\":\"text\",\"text\":\" — узлы без потомков.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ребро (edge)\"},{\"type\":\"text\",\"text\":\" — связь между родителем и ребёнком.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота дерева\"},{\"type\":\"text\",\"text\":\" — длина самого длинного пути от корня до листа.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть идеи:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Дерево хранит данные в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"иерархии\"},{\"type\":\"text\",\"text\":\", а не в линейном порядке (как список или очередь).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A        ← корень\\n       / \\\\\\n      B   C      ← потомки A\\n     / \\\\\\n    D   E        ← листья\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичные виды деревьев:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево\"},{\"type\":\"text\",\"text\":\" — у каждого узла не более двух потомков.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дерево поиска (BST)\"},{\"type\":\"text\",\"text\":\" — левый потомок < родителя < правого потомка.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Префиксное (Trie)\"},{\"type\":\"text\",\"text\":\" — используется для хранения строк и автодополнения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AVL, красно-чёрное дерево\"},{\"type\":\"text\",\"text\":\" — сбалансированные варианты для ускорения поиска.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Дерево — это структура, где данные организованы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по уровням\"},{\"type\":\"text\",\"text\":\", что делает эффективным \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск, сортировку, иерархическое хранение и обход\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:25:33.221Z",
+        "updatedAt": "2025-10-21T08:25:33.221Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В каких задачах хеш таблицы наиболее эффективны?",
+        "id": 1579,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое вершина (node) в дереве?",
+        "id": 1581,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1581,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое вершина (node) в дереве?\"}]}]}",
+        "title": "Что такое вершина (node) в дереве?",
+        "order": 410701,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вершина (node)\"},{\"type\":\"text\",\"text\":\" — это основной элемент дерева, который хранит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"данные\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ссылки на другие вершины\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждая вершина содержит:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Значение (value)\"},{\"type\":\"text\",\"text\":\" — сами данные (например, число, строку, объект).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылку на родителя\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"(кроме корня)\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылки на дочерние вершины\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"(одну или несколько)\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типы вершин:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корень (root)\"},{\"type\":\"text\",\"text\":\" — вершина без родителя, с неё начинается дерево.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внутренние вершины (internal nodes)\"},{\"type\":\"text\",\"text\":\" — имеют хотя бы одного потомка.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Листья (leaves)\"},{\"type\":\"text\",\"text\":\" — не имеют потомков.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     /\\n    D\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" — вершины,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" — корень,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" — лист,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" — внутренняя вершина.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вершина — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строительный блок дерева\"},{\"type\":\"text\",\"text\":\", хранящий данные и связи, определяющие его структуру.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:25:49.921Z",
+        "updatedAt": "2025-10-21T08:25:49.921Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое дерево как структура данных?",
+        "id": 1580,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое ребро (edge) в дереве?",
+        "id": 1582,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1582,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ребро (edge) в дереве?\"}]}]}",
+        "title": "Что такое ребро (edge) в дереве?",
+        "order": 410702,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ребро (edge)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связь между двумя вершинами\"},{\"type\":\"text\",\"text\":\" в дереве: между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"родителем\"},{\"type\":\"text\",\"text\":\" и его \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"потомком\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ребро — это направленное соединение вида\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"родитель → потомок\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оно показывает, как вершины связаны между собой и определяет структуру дерева.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"    A\\n   / \\\\\\n  B   C\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь есть два ребра:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A → B\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A → C\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Свойства:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если в дереве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"n\"},{\"type\":\"text\",\"text\":\" вершин, то всегда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ровно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"n−1\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" рёбер\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Через рёбра можно описать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пути\"},{\"type\":\"text\",\"text\":\" — последовательности переходов от одной вершины к другой.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ребро — это “связь” или “ветвь”, которая соединяет вершины и делает дерево иерархической структурой, а не просто набором данных.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:26:04.795Z",
+        "updatedAt": "2025-11-10T13:13:01.121Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое вершина (node) в дереве?",
+        "id": 1581,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое корень дерева (root)?",
+        "id": 1583,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1583,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое корень дерева (root)?\"}]}]}",
+        "title": "Что такое корень дерева (root)?",
+        "order": 410703,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корень (root)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"верхняя вершина дерева\"},{\"type\":\"text\",\"text\":\", с которой начинается вся структура.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Характеристики:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"У корня \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нет родителя\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"От него отходят все остальные ветви дерева.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Из корня можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"достичь любую другую вершину\"},{\"type\":\"text\",\"text\":\", двигаясь по рёбрам вниз.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A         ← корень\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" — корень дерева.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В дереве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда один корень\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если корень удалить, дерево распадается на отдельные поддеревья.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В рекурсивных структурах (например, в поиске) работа почти всегда начинается с корня.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Корень — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"точка входа\"},{\"type\":\"text\",\"text\":\" в дерево, главный узел, из которого вырастают все остальные элементы структуры.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:26:19.971Z",
+        "updatedAt": "2025-10-21T08:26:19.971Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ребро (edge) в дереве?",
+        "id": 1582,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое лист (leaf)?",
+        "id": 1584,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1584,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое лист (leaf)?\"}]}]}",
+        "title": "Что такое лист (leaf)?",
+        "order": 410704,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лист (leaf)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вершина дерева, у которой нет потомков\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Характеристики:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Лист — это “конечная точка” дерева.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"У него \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нет исходящих рёбер\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все пути по дереву \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заканчиваются\"},{\"type\":\"text\",\"text\":\" на листьях.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\" — листья, потому что под ними нет других вершин.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Свойства:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В каждом дереве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"минимум один лист\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Количество листьев показывает, насколько “разветвлённым” является дерево.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лист\"},{\"type\":\"text\",\"text\":\" — это узел, из которого путь вниз больше не продолжается — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"финальная вершина дерева\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:26:35.670Z",
+        "updatedAt": "2025-10-21T08:26:35.670Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое корень дерева (root)?",
+        "id": 1583,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое родитель и потомок (parent / child)?",
+        "id": 1585,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1585,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое родитель и потомок (parent / child)?\"}]}]}",
+        "title": "Что такое родитель и потомок (parent / child)?",
+        "order": 410705,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В дереве понятия \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"родитель (parent)\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"потомок (child)\"},{\"type\":\"text\",\"text\":\" описывают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"иерархические связи между вершинами\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Родитель (parent):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— это вершина, из которой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"исходит ребро\"},{\"type\":\"text\",\"text\":\" к другой вершине.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— у каждой вершины (кроме корня) есть ровно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один родитель\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Потомок (child):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— это вершина, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"соединена с родителем\"},{\"type\":\"text\",\"text\":\" через ребро и находится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на уровне ниже\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— у вершины может быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несколько потомков\"},{\"type\":\"text\",\"text\":\" (0, 1, 2, …).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" — родитель \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" — родитель \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\" — потомки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\" — потомки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Родитель\"},{\"type\":\"text\",\"text\":\" — вершина выше по иерархии,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"потомок\"},{\"type\":\"text\",\"text\":\" — вершина ниже, связанная с ним через ребро.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:26:49.675Z",
+        "updatedAt": "2025-11-10T13:13:05.110Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое лист (leaf)?",
+        "id": 1584,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое уровень вершины (level)?",
+        "id": 1586,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1586,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое уровень вершины (level)?\"}]}]}",
+        "title": "Что такое уровень вершины (level)?",
+        "order": 410706,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уровень вершины (level)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"номер \\\"глубины\\\" узла\"},{\"type\":\"text\",\"text\":\" в дереве, показывающий, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"на каком расстоянии от корня\"},{\"type\":\"text\",\"text\":\" он находится.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Правило определения:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корень\"},{\"type\":\"text\",\"text\":\" всегда имеет уровень \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\" (иногда 1 — в зависимости от соглашения).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"потомок\"},{\"type\":\"text\",\"text\":\" находится на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один уровень ниже\"},{\"type\":\"text\",\"text\":\" своего родителя.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример (уровень от 0):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A            ← уровень 0\\n       / \\\\\\n      B   C          ← уровень 1\\n     / \\\\\\n    D   E            ← уровень 2\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысл:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— уровень отражает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубину узла\"},{\"type\":\"text\",\"text\":\" в иерархии;\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— чем больше уровень, тем “дальше” вершина от корня.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уровень вершины\"},{\"type\":\"text\",\"text\":\" — это число шагов (рёбер) от корня до этой вершины,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"то есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубина её расположения\"},{\"type\":\"text\",\"text\":\" в дереве.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:27:05.782Z",
+        "updatedAt": "2025-11-10T13:13:11.032Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое родитель и потомок (parent / child)?",
+        "id": 1585,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое высота дерева (height)?",
+        "id": 1587,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1587,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое высота дерева (height)?\"}]}]}",
+        "title": "Что такое высота дерева (height)?",
+        "order": 410707,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота дерева (height)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"длина самого длинного пути от корня до любого листа\"},{\"type\":\"text\",\"text\":\", то есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"максимальное количество рёбер\"},{\"type\":\"text\",\"text\":\" между корнем и самой глубокой вершиной.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Определение:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Высота дерева с одним узлом (только корень) равна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"0\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если считать уровни с 1, то высота равна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"количеству уровней минус 1\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Корень \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" — уровень 0\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B, C\"},{\"type\":\"text\",\"text\":\" — уровень 1\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D, E\"},{\"type\":\"text\",\"text\":\" — уровень 2\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 Высота дерева = 2\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысл:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Высота показывает, насколько \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубоким\"},{\"type\":\"text\",\"text\":\" является дерево —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"насколько “далеко” нужно спуститься от корня до самого нижнего узла.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота дерева\"},{\"type\":\"text\",\"text\":\" = длина самого длинного пути от корня до листа\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"= показатель \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубины и сложности структуры\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:27:22.533Z",
+        "updatedAt": "2025-10-21T08:27:22.533Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое уровень вершины (level)?",
+        "id": 1586,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое глубина вершины (depth)?",
+        "id": 1588,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1588,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое глубина вершины (depth)?\"}]}]}",
+        "title": "Что такое глубина вершины (depth)?",
+        "order": 410708,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина вершины (depth)\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расстояние от корня до данной вершины\"},{\"type\":\"text\",\"text\":\", измеряемое в количестве \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рёбер\"},{\"type\":\"text\",\"text\":\" между ними.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формально:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина корня\"},{\"type\":\"text\",\"text\":\" = 0 (так как от него до самого себя 0 рёбер).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глубина любой другой вершины = глубина её родителя + 1.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" → глубина 0\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B, C\"},{\"type\":\"text\",\"text\":\" → глубина 1\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D, E\"},{\"type\":\"text\",\"text\":\" → глубина 2\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отличие от высоты:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина\"},{\"type\":\"text\",\"text\":\" — сколько нужно шагов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вниз\"},{\"type\":\"text\",\"text\":\" от корня до вершины.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота\"},{\"type\":\"text\",\"text\":\" — сколько шагов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вверх\"},{\"type\":\"text\",\"text\":\" от вершины до самого глубокого листа.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина вершины\"},{\"type\":\"text\",\"text\":\" показывает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько глубоко она находится\"},{\"type\":\"text\",\"text\":\" в дереве относительно корня.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:27:39.349Z",
+        "updatedAt": "2025-10-21T08:27:39.349Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое высота дерева (height)?",
+        "id": 1587,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как связаны высота и глубина дерева?",
+        "id": 1589,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1589,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как связаны высота и глубина дерева?\"}]}]}",
+        "title": "Как связаны высота и глубина дерева?",
+        "order": 410709,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубина\"},{\"type\":\"text\",\"text\":\" дерева — это взаимосвязанные, но противоположно направленные характеристики.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина (depth)\"},{\"type\":\"text\",\"text\":\" — измеряется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вниз от корня\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Показывает, насколько далеко конкретная вершина находится от корня.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"глубина(вершины) = количество рёбер от корня до этой вершины\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Высота (height)\"},{\"type\":\"text\",\"text\":\" — измеряется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вверх от листа\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Показывает, сколько рёбер от вершины до самого глубокого листа.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"высота(вершины) = длина самого длинного пути от этой вершины до листа\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Связь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина корня = 0\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"высота дерева = высота корня\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина самой глубокой вершины = высота дерева.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Глубина \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" = 0, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" = 1, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" = 2\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Высота дерева = 2\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"👉 Максимальная глубина дерева = его высота.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубина\"},{\"type\":\"text\",\"text\":\" — путь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вниз к вершине\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"высота\"},{\"type\":\"text\",\"text\":\" — путь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"вверх от вершины\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Максимальная глубина = высота всего дерева.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:28:01.138Z",
+        "updatedAt": "2025-10-21T08:28:01.138Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое глубина вершины (depth)?",
+        "id": 1588,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое двоичное дерево?",
+        "id": 1590,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1590,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое двоичное дерево?\"}]}]}",
+        "title": "Что такое двоичное дерево?",
+        "order": 410710,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Двоичное дерево (binary tree)\"},{\"type\":\"text\",\"text\":\" — это структура данных, в которой \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждая вершина может иметь не более двух потомков\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"левого (left child)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правого (right child)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структура:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\" — корень,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\" — потомки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"B\"},{\"type\":\"text\",\"text\":\" два потомка (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"D\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"E\"},{\"type\":\"text\",\"text\":\"),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"C\"},{\"type\":\"text\",\"text\":\" — лист (нет потомков).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый узел имеет до 2 рёбер (в отличие от общего дерева, где их может быть больше).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упрощает реализацию поиска, сортировки и обходов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные разновидности:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Полное (complete)\"},{\"type\":\"text\",\"text\":\" — все уровни заполнены, кроме, возможно, последнего, и элементы на нём выстроены слева направо.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Совершенное (perfect)\"},{\"type\":\"text\",\"text\":\" — все уровни полностью заполнены.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сбалансированное (balanced)\"},{\"type\":\"text\",\"text\":\" — высота левого и правого поддеревьев отличается не более чем на 1.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Двоичное дерево поиска (BST)\"},{\"type\":\"text\",\"text\":\" — левое поддерево содержит элементы меньше родителя, правое — больше.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Двоичное дерево\"},{\"type\":\"text\",\"text\":\" — это иерархическая структура, где каждый узел связан максимум с двумя потомками, что делает её базой для множества алгоритмов поиска, сортировки и хранения данных.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:28:23.968Z",
+        "updatedAt": "2025-11-10T13:13:15.489Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как связаны высота и глубина дерева?",
+        "id": 1589,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое бинарное дерево поиска?",
+        "id": 1591,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1591,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое бинарное дерево поиска?\"}]}]}",
+        "title": "Что такое бинарное дерево поиска?",
+        "order": 410711,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево поиска (Binary Search Tree, BST)\"},{\"type\":\"text\",\"text\":\" — это особый вид двоичного дерева, в котором элементы расположены по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"закону упорядоченности\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Правило:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для любого узла дерева выполняется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все значения в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"левом поддереве\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"меньше\"},{\"type\":\"text\",\"text\":\" значения узла,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"все значения в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правом поддереве\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"больше\"},{\"type\":\"text\",\"text\":\" значения узла.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        8\\n       / \\\\\\n      3   10\\n     / \\\\    \\\\\\n    1   6    14\\n       / \\\\   /\\n      4   7 13\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"у \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"8\"},{\"type\":\"text\",\"text\":\" левое поддерево \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{1,3,4,6,7}\"},{\"type\":\"text\",\"text\":\" < 8,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правое поддерево \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{10,13,14}\"},{\"type\":\"text\",\"text\":\" > 8.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные операции:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поиск\"},{\"type\":\"text\",\"text\":\" — O(h), где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"h\"},{\"type\":\"text\",\"text\":\" — высота дерева (в среднем O(log n));\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вставка\"},{\"type\":\"text\",\"text\":\" — находит правильное место по тому же принципу и вставляет узел;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удаление\"},{\"type\":\"text\",\"text\":\" — требует аккуратной перестройки поддеревьев.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эффективен при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сбалансированном дереве\"},{\"type\":\"text\",\"text\":\" (поиск за O(log n)).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При несбалансированности (например, если данные идут по возрастанию) превращается в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"список\"},{\"type\":\"text\",\"text\":\" — сложность O(n).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бинарное дерево поиска\"},{\"type\":\"text\",\"text\":\" — это структура, где данные хранятся в виде дерева с чётким порядком,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"что позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"быстро искать, добавлять и удалять элементы\"},{\"type\":\"text\",\"text\":\" по сравнению с линейными структурами.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:28:56.743Z",
+        "updatedAt": "2025-10-21T08:28:56.743Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое двоичное дерево?",
+        "id": 1590,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое балансировка дерева?",
+        "id": 1592,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1592,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое балансировка дерева?\"}]}]}",
+        "title": "Что такое балансировка дерева?",
+        "order": 410712,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Балансировка дерева\"},{\"type\":\"text\",\"text\":\" — это процесс, при котором структура дерева перестраивается так, чтобы его \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"высота оставалась минимальной\"},{\"type\":\"text\",\"text\":\", а элементы были \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"распределены равномерно\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем это нужно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В несбалансированном дереве (например, когда все элементы добавлены по возрастанию) структура становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"похожей на список\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и операции поиска, вставки и удаления замедляются с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(log n)\"},{\"type\":\"text\",\"text\":\" до \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель балансировки:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сделать так, чтобы для каждой вершины\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"разница высот левого и правого поддерева была \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"небольшой\"},{\"type\":\"text\",\"text\":\" (обычно ≤ 1).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тогда дерево остаётся «плотным», и поиск снова работает быстро.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Несбалансированное дерево (все вправо):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"1\\n \\\\\\n  2\\n   \\\\\\n    3\\n     \\\\\\n      4\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"→ После балансировки:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"     3\\n    / \\\\\\n   2   4\\n  /\\n 1\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типы сбалансированных деревьев:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AVL-дерево\"},{\"type\":\"text\",\"text\":\" — строгое равновесие по высоте (разница ≤ 1).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Красно-чёрное дерево\"},{\"type\":\"text\",\"text\":\" — более гибкое равновесие по правилам окраски узлов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"B-дерево, B+ дерево\"},{\"type\":\"text\",\"text\":\" — балансировка для хранения данных на дисках (например, в базах данных).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Балансировка дерева\"},{\"type\":\"text\",\"text\":\" — это поддержание такой формы дерева, при которой операции поиска, вставки и удаления выполняются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"максимально быстро (≈ O(log n))\"},{\"type\":\"text\",\"text\":\", независимо от порядка добавления элементов.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:29:31.813Z",
+        "updatedAt": "2025-10-21T08:29:31.813Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое бинарное дерево поиска?",
+        "id": 1591,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какая сложность поиска узла в бинарном дереве?",
+        "id": 1593,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1593,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какая сложность поиска узла в бинарном дереве?\"}]}]}",
+        "title": "Какая сложность поиска узла в бинарном дереве?",
+        "order": 410713,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сложность \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиска узла\"},{\"type\":\"text\",\"text\":\" в бинарном дереве зависит от его структуры — сбалансированное оно или нет.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. В сбалансированном бинарном дереве поиска (BST):\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждое сравнение исключает половину оставшихся элементов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"→ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Средняя и лучшая сложность:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(log n)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. В несбалансированном дереве:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если элементы вставлены, например, по возрастанию, дерево превращается в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цепочку (список)\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"→ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Худшая сложность:\"},{\"type\":\"text\",\"text\":\" \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Пример работы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        8\\n       / \\\\\\n      3   10\\n         /  \\\\\\n        9   14\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы найти \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"9\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"8 → 10 → 9\"},{\"type\":\"text\",\"text\":\" — три шага (≈ log₂7 ≈ 3).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Средний случай (сбалансированное дерево):\"},{\"type\":\"text\",\"text\":\" O(log n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Худший случай (вырожденное дерево):\"},{\"type\":\"text\",\"text\":\" O(n)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:29:52.709Z",
+        "updatedAt": "2025-11-10T13:13:19.926Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое балансировка дерева?",
+        "id": 1592,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое красно-чёрное дерево?",
+        "id": 1594,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1594,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое красно-чёрное дерево?\"}]}]}",
+        "title": "Что такое красно-чёрное дерево?",
+        "order": 410714,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Красно-чёрное дерево\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самобалансирующееся бинарное дерево поиска\"},{\"type\":\"text\",\"text\":\", в котором каждый узел имеет дополнительный атрибут — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цвет (красный или чёрный)\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Эти цвета помогают автоматически поддерживать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"равновесие высоты\"},{\"type\":\"text\",\"text\":\" при вставке и удалении элементов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные свойства красно-чёрного дерева:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый узел — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"красный или чёрный\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Корень всегда чёрный.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"листья (пустые узлы)\"},{\"type\":\"text\",\"text\":\" считаются чёрными.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если узел красный — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"его дети всегда чёрные\"},{\"type\":\"text\",\"text\":\" (никаких двух подряд красных).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для любого узла — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"число чёрных узлов\"},{\"type\":\"text\",\"text\":\" на пути от него до листа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одинаково\"},{\"type\":\"text\",\"text\":\" во всех направлениях.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем нужны эти правила:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они гарантируют, что дерево остаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"почти сбалансированным\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"разница в высотах между поддеревьями не превышает 2×.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"→ Это обеспечивает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск, вставку и удаление за O(log n)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример (упрощённо):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        10(B)\\n       /    \\\\\\n    5(R)    15(B)\\n   /   \\\\\\n  3(B)  7(B)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"(B — чёрный, R — красный)\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Где используется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутри структур данных, таких как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"std::map\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"std::set\"},{\"type\":\"text\",\"text\":\" (C++),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"TreeMap\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"TreeSet\"},{\"type\":\"text\",\"text\":\" (Java),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В индексах баз данных и файловых систем.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Красно-чёрное дерево\"},{\"type\":\"text\",\"text\":\" — это бинарное дерево поиска, которое автоматически сохраняет баланс,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"используя правила окраски узлов,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"чтобы операции \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиска, вставки и удаления\"},{\"type\":\"text\",\"text\":\" оставались \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(log n)\"},{\"type\":\"text\",\"text\":\" независимо от порядка данных.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:30:19.463Z",
+        "updatedAt": "2025-10-21T08:30:19.463Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какая сложность поиска узла в бинарном дереве?",
+        "id": 1593,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое обход дерева в ширину (BFS)?",
+        "id": 1595,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1595,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое обход дерева в ширину (BFS)?\"}]}]}",
+        "title": "Что такое обход дерева в ширину (BFS)?",
+        "order": 410715,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обход дерева в ширину (BFS, Breadth-First Search)\"},{\"type\":\"text\",\"text\":\" — это способ обхода дерева, при котором вершины посещаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по уровням\"},{\"type\":\"text\",\"text\":\", начиная от корня и двигаясь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"слева направо\"},{\"type\":\"text\",\"text\":\" на каждом уровне.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Начинаем с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"корня\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Посещаем все \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"узлы первого уровня\"},{\"type\":\"text\",\"text\":\" (дети корня).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Затем — все узлы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"второго уровня\"},{\"type\":\"text\",\"text\":\", потом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"третьего\"},{\"type\":\"text\",\"text\":\" и так далее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для хранения порядка обхода используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очередь (FIFO)\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пошаговый пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\   \\\\\\n    D   E   F\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ Порядок обхода:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"A → B → C → D → E → F\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📦 Очередь во время обхода:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"1. [A]\\n2. [B, C]\\n3. [C, D, E]\\n4. [D, E, F]\\n5. [E, F]\\n6. [F]\\n7. []\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности BFS:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основан на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очереди\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорош для поиска \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кратчайшего пути\"},{\"type\":\"text\",\"text\":\" в невзвешенных графах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Посещает вершины \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по слоям\"},{\"type\":\"text\",\"text\":\", а не по глубине.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"BFS\"},{\"type\":\"text\",\"text\":\" — это обход дерева \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по уровням сверху вниз\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"использующий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"очередь\"},{\"type\":\"text\",\"text\":\" для запоминания порядка вершин,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"чтобы сначала обрабатывать близкие к корню узлы, а потом — более глубокие.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:30:39.860Z",
+        "updatedAt": "2025-10-21T08:30:39.860Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое красно-чёрное дерево?",
+        "id": 1594,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое обход дерева в глубину (DFS)?",
+        "id": 1596,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1596,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое обход дерева в глубину (DFS)?\"}]}]}",
+        "title": "Что такое обход дерева в глубину (DFS)?",
+        "order": 410716,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обход дерева в глубину (DFS, Depth-First Search)\"},{\"type\":\"text\",\"text\":\" — это способ обхода дерева, при котором алгоритм идёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вглубь по ветви\"},{\"type\":\"text\",\"text\":\", пока не достигнет конца (листа), и только потом возвращается назад, чтобы пройти другие ветви.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Принцип:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Начинаем с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"корня\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Идём по первому доступному потомку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вниз до самого конца\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда дальше идти нельзя — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"возвращаемся\"},{\"type\":\"text\",\"text\":\" к предыдущему узлу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Продолжаем, пока не будут посещены все вершины.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для реализации обычно используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стек (LIFO)\"},{\"type\":\"text\",\"text\":\" — явно или через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"рекурсию\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"        A\\n       / \\\\\\n      B   C\\n     / \\\\\\n    D   E\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ Возможные типы обхода (DFS-варианты):\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pre-order (прямой):\"},{\"type\":\"text\",\"text\":\" A, B, D, E, C\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"In-order (симметричный):\"},{\"type\":\"text\",\"text\":\" D, B, E, A, C\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Post-order (обратный):\"},{\"type\":\"text\",\"text\":\" D, E, B, C, A\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности DFS:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стек или рекурсию\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хорош для задач, где нужно исследовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всю структуру\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"найти путь до глубины\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может работать быстрее BFS, если нужный элемент находится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"глубоко\"},{\"type\":\"text\",\"text\":\" в дереве.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"DFS\"},{\"type\":\"text\",\"text\":\" — это обход дерева \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вглубь ветвей\"},{\"type\":\"text\",\"text\":\", при котором каждая ветвь исследуется полностью,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"прежде чем переходить к следующей.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Реализуется через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стек или рекурсию\"},{\"type\":\"text\",\"text\":\" и имеет три основных порядка обхода — pre-, in-, post-order.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:31:04.760Z",
+        "updatedAt": "2025-10-21T08:31:04.760Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое обход дерева в ширину (BFS)?",
+        "id": 1595,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое плотность дерева?",
+        "id": 1597,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1597,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое плотность дерева?\"}]}]}",
+        "title": "Что такое плотность дерева?",
+        "order": 410717,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плотность дерева\"},{\"type\":\"text\",\"text\":\" — это характеристика, показывающая, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"насколько дерево \\\"заполнено\\\" узлами\"},{\"type\":\"text\",\"text\":\" относительно возможного максимума для его высоты.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Формально:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если у дерева высота = \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"h\"},{\"type\":\"text\",\"text\":\", то \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"максимальное\"},{\"type\":\"text\",\"text\":\" количество узлов (в идеальном полном дереве) равно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"N_{max} = 2^{h+1} - 1\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плотность (D)\"},{\"type\":\"text\",\"text\":\" определяется как:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"D = \\\\frac{N_{actual}}{N_{max}}\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"где\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"( N_{actual} ) — реальное число узлов в дереве,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"( N_{max} ) — максимально возможное при данной высоте.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Дерево имеет высоту 3 и содержит 10 узлов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Максимум при h = 3 → ( 2^{4} - 1 = 15 ).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"D = 10 / 15 = 0.67\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть дерево заполнено на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"67%\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интерпретация:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выше плотность\"},{\"type\":\"text\",\"text\":\", тем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лучше сбалансировано\"},{\"type\":\"text\",\"text\":\" дерево и ближе к полному.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Низкая плотность указывает на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разреженность\"},{\"type\":\"text\",\"text\":\" — много “пустого пространства”, длинные ветви, меньшую эффективность.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Плотность дерева\"},{\"type\":\"text\",\"text\":\" показывает, насколько эффективно оно заполнено узлами при своей высоте.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это мера “компактности” структуры: чем ближе к 1, тем дерево более сбалансировано и эффективно.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:31:32.765Z",
+        "updatedAt": "2025-11-10T13:13:28.417Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое обход дерева в глубину (DFS)?",
+        "id": 1596,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое AVL дерево и что делает его сбалансированным?",
+        "id": 1598,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1598,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое AVL дерево и что делает его сбалансированным?\"}]}]}",
+        "title": "Что такое AVL дерево и что делает его сбалансированным?",
+        "order": 410718,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AVL-дерево\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самобалансирующееся бинарное дерево поиска (BST)\"},{\"type\":\"text\",\"text\":\", в котором для каждой вершины контролируется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"баланс высот поддеревьев\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Оно названо в честь изобретателей — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Адельсона-Вельского и Ландиса (AVL)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главное свойство балансировки:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"каждой вершины\"},{\"type\":\"text\",\"text\":\" разница высот её левого и правого поддерева не больше \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"[\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"|height(left) - height(right)| \\\\leq 1\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"]\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если после вставки или удаления этот баланс нарушается, дерево автоматически \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выполняет поворот (rotation)\"},{\"type\":\"text\",\"text\":\", чтобы восстановить равновесие.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему это важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Благодаря этому условию высота AVL-дерева всегда остаётся примерно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(log n)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"поэтому все операции — поиск, вставка, удаление — работают быстро.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"До вставки:\\n      30\\n     /\\n   20\\n  /\\n10\\n\\nПосле балансировки:\\n      20\\n     /  \\\\\\n   10    30\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дерево выполняет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правый поворот\"},{\"type\":\"text\",\"text\":\", чтобы восстановить баланс.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные типы поворотов:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Правый (Right Rotation)\"},{\"type\":\"text\",\"text\":\" — если дисбаланс в левом поддереве.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Левый (Left Rotation)\"},{\"type\":\"text\",\"text\":\" — если дисбаланс в правом поддереве.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Лево-правый\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"право-левый\"},{\"type\":\"text\",\"text\":\" — для сложных случаев.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AVL-дерево\"},{\"type\":\"text\",\"text\":\" — это бинарное дерево поиска,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в котором после каждой операции поддерживается почти идеальный баланс высоты.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это гарантирует, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск, вставка и удаление выполняются за O(log n)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а структура дерева остаётся “плотной” и эффективной.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:32:03.096Z",
+        "updatedAt": "2025-10-21T08:32:03.096Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое плотность дерева?",
+        "id": 1597,
+        "premium": true,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое trie (префиксное дерево)?",
+        "id": 1599,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1599,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое trie (префиксное дерево)?\"}]}]}",
+        "title": "Что такое trie (префиксное дерево)?",
+        "order": 410719,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Trie (префиксное дерево)\"},{\"type\":\"text\",\"text\":\" — это структура данных, которая хранит строки посимвольно, позволяя эффективно искать по префиксам.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"узел дерева\"},{\"type\":\"text\",\"text\":\" представляет один символ, а путь от корня до узла — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"префикс\"},{\"type\":\"text\",\"text\":\" какой-то строки. Полное слово заканчивается в узле, помеченном как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"конец слова\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для слов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cat\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"car\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dog\"},{\"type\":\"text\",\"text\":\" дерево будет таким:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Корень → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"c\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"a\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"t\"},{\"type\":\"text\",\"text\":\" (конец слова)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"         ↳ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"r\"},{\"type\":\"text\",\"text\":\" (конец слова)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Корень → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"d\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"o\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"g\"},{\"type\":\"text\",\"text\":\" (конец слова)\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📊 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные операции:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вставка:\"},{\"type\":\"text\",\"text\":\" O(L), где L — длина слова.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поиск:\"},{\"type\":\"text\",\"text\":\" O(L).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поиск по префиксу:\"},{\"type\":\"text\",\"text\":\" O(P), где P — длина префикса.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрый поиск слов и автодополнение по префиксам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно хранить большие словари без дублирования общих префиксов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Недостатки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Занимает больше памяти, чем хеш-таблица (много указателей на детей).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 138,
+        "createdAt": "2025-10-21T08:32:35.776Z",
+        "updatedAt": "2025-10-21T08:32:35.776Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 138,
+          "title": "Деревья",
+          "directions": [
+            {
+              "categoryId": 138,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое AVL дерево и что делает его сбалансированным?",
+        "id": 1598,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое граф?",
+        "id": 1600,
+        "premium": false,
+        "category": {
+          "id": 139,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

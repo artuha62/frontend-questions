@@ -1,0 +1,1202 @@
+{
+  "category": {
+    "id": 218,
+    "title": "Роутинг (Routing)",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 14,
+  "downloadedAt": "2026-03-09T08:39:36.369Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2156,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое роутинг (routing) в Angular?\"}]}]}",
+        "title": "Что такое роутинг (routing) в Angular?",
+        "order": 70900,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Роутинг в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"система навигации внутри одностраничного приложения (SPA)\"},{\"type\":\"text\",\"text\":\", которая позволяет переключать компоненты без перезагрузки страницы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он работает так:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь переходит по URL (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/profile\"},{\"type\":\"text\",\"text\":\"),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular анализирует путь и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отображает нужный компонент\"},{\"type\":\"text\",\"text\":\", а не загружает новую страницу с сервера.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для этого:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Настраивается массив маршрутов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Routes[]\"},{\"type\":\"text\",\"text\":\") в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AppRoutingModule\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"const routes: Routes = [\\n  { path: 'home', component: HomeComponent },\\n  { path: 'about', component: AboutComponent }\\n];\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\" — в этом месте появляется нужный компонент.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация осуществляется через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"routerLink\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"navigate()\"},{\"type\":\"text\",\"text\":\" или вручную.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По сути, роутинг — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"карта\"},{\"type\":\"text\",\"text\":\": URL → компонент.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он позволяет сделать структуру приложения логичной, модульной и интерактивной.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:25:30.649Z",
+        "updatedAt": "2025-10-22T11:25:30.649Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как проверить, есть ли у контрола ошибка?",
+        "id": 2155,
+        "premium": false,
+        "category": {
+          "id": 217,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Зачем нужен роутинг в SPA-приложениях?",
+        "id": 2157,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2157,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем нужен роутинг в SPA-приложениях?\"}]}]}",
+        "title": "Зачем нужен роутинг в SPA-приложениях?",
+        "order": 70901,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Роутинг в SPA-приложениях нужен, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"эмулировать поведение многостраничного сайта\"},{\"type\":\"text\",\"text\":\", но без полной перезагрузки страницы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Зачем именно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Разделение приложения на логические разделы\"},{\"type\":\"text\",\"text\":\": \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/home\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/profile\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/settings\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удобная навигация для пользователя\"},{\"type\":\"text\",\"text\":\" — привычный способ перемещения по ссылкам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сохранение истории переходов\"},{\"type\":\"text\",\"text\":\" — работает кнопка \\\"Назад\\\", можно делиться ссылками.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Загрузка только нужных компонентов\"},{\"type\":\"text\",\"text\":\" — быстрее и экономнее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Глубокая интеграция с URL\"},{\"type\":\"text\",\"text\":\" — можно подставлять параметры, делать ленивую загрузку и охрану маршрутов (guards).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без роутинга всё приложение было бы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одним большим компонентом\"},{\"type\":\"text\",\"text\":\" — неудобным, нечитаемым и неуправляемым.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:25:45.047Z",
+        "updatedAt": "2025-10-22T11:25:45.047Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое роутинг (routing) в Angular?",
+        "id": 2156,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает RouterModule?",
+        "id": 2158,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2158,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает RouterModule?\"}]}]}",
+        "title": "Что делает RouterModule?",
+        "order": 70902,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterModule\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Angular-модуль, который включает в себя всё, что нужно для работы роутинга\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он делает несколько ключевых вещей:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Регистрирует маршруты\"},{\"type\":\"text\",\"text\":\", переданные в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterModule.forRoot()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterModule.forChild()\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"RouterModule.forRoot(routes)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это подключает список маршрутов к системе маршрутизации Angular.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Добавляет директивы роутинга\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\" — место в шаблоне, куда вставляется компонент по текущему маршруту;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"routerLink\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"routerLinkActive\"},{\"type\":\"text\",\"text\":\" и другие — для навигации по ссылкам.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подключает сервис \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Router\"},{\"type\":\"text\",\"text\":\" — для программной навигации (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"router.navigate()\"},{\"type\":\"text\",\"text\":\"), доступа к текущему маршруту, параметрам, и т. д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterModule\"},{\"type\":\"text\",\"text\":\" роутинг просто не работает — Angular не знает, какие компоненты показывать при переходе по URL.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:25:58.553Z",
+        "updatedAt": "2025-10-22T11:25:58.553Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Зачем нужен роутинг в SPA-приложениях?",
+        "id": 2157,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает RouterLink?",
+        "id": 2159,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2159,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает RouterLink?\"}]}]}",
+        "title": "Что делает RouterLink?",
+        "order": 70903,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterLink\"},{\"type\":\"text\",\"text\":\" — это директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создаёт ссылку для навигации внутри Angular-приложения\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Она:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не перезагружает страницу\"},{\"type\":\"text\",\"text\":\", а вызывает внутреннюю навигацию через Angular Router;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автоматически обновляет URL и отображает нужный компонент в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\";\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"работает аналогично атрибуту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\", но внутри SPA.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a [routerLink]=\\\"['/profile']\\\">Профиль</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Также можно передавать параметры маршрута:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a [routerLink]=\\\"['/user', userId]\\\">Профиль пользователя</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterLink\"},{\"type\":\"text\",\"text\":\" — это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двигаться по приложению без перезагрузки\"},{\"type\":\"text\",\"text\":\", используя систему роутинга Angular.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:26:18.320Z",
+        "updatedAt": "2025-11-10T11:43:50.952Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает RouterModule?",
+        "id": 2158,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем RouterLink отличается от обычного <a href>?",
+        "id": 2160,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2160,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем RouterLink отличается от обычного <a href>?\"}]}]}",
+        "title": "Чем RouterLink отличается от обычного <a href>?",
+        "order": 70904,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"RouterLink\"},{\"type\":\"text\",\"text\":\" и обычным \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"\\\">\"},{\"type\":\"text\",\"text\":\" — в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"механике навигации\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"\\\">\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновляет весь документ — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полная перезагрузка страницы\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запрос уходит на сервер, даже если страница уже есть в приложении.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает независимо от Angular.\"}]}]}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[routerLink]\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использует Angular Router — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навигация без перезагрузки\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обновляется только часть страницы (через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрее, контролируемо и можно вставлять параметры, guards, lazy loading и т. д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примерно так:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" — это \\\"уйди и загрузи заново\\\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"routerLink\"},{\"type\":\"text\",\"text\":\" — это \\\"оставайся и просто покажи другое\\\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:26:33.758Z",
+        "updatedAt": "2025-11-10T11:44:12.913Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает RouterLink?",
+        "id": 2159,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое wildcard-маршрут (**)?",
+        "id": 2161,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2161,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое wildcard-маршрут (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"**\"},{\"type\":\"text\",\"text\":\")?\"}]}]}",
+        "title": "Что такое wildcard-маршрут (**)?",
+        "order": 70905,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Wildcard-маршрут (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"**\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\" — это маршрут-подстановка, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перехватывает все пути, не совпавшие ни с одним из заданных маршрутов\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он обычно используется:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"страниц 404\"},{\"type\":\"text\",\"text\":\" — когда путь не существует;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перенаправить пользователя\"},{\"type\":\"text\",\"text\":\" на дефолтный компонент или маршрут.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"const routes: Routes = [\\n  { path: 'home', component: HomeComponent },\\n  { path: '**', component: NotFoundComponent }\\n];\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В этом примере любой нераспознанный URL (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/abrakadabra\"},{\"type\":\"text\",\"text\":\") приведёт к отображению \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NotFoundComponent\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно: wildcard всегда ставится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в конце списка\"},{\"type\":\"text\",\"text\":\", потому что Angular проверяет маршруты сверху вниз.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:26:47.815Z",
+        "updatedAt": "2025-10-22T11:26:47.815Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем RouterLink отличается от обычного <a href>?",
+        "id": 2160,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как перейти на маршрут программно?",
+        "id": 2162,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2162,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как перейти на маршрут программно?\"}]}]}",
+        "title": "Как перейти на маршрут программно?",
+        "order": 70906,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Программно на маршрут переходят с помощью сервиса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Router\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для этого:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внедри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Router\"},{\"type\":\"text\",\"text\":\" в компонент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"constructor(private router: Router) {}\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используй метод \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"navigate()\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"navigateByUrl()\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"this.router.navigate(['/profile']);\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или с параметрами:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"this.router.navigate(['/user', userId]);\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"navigate()\"},{\"type\":\"text\",\"text\":\" — принимает массив сегментов пути и опции;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"navigateByUrl()\"},{\"type\":\"text\",\"text\":\" — принимает строку маршрута.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба способа не перезагружают страницу и просто обновляют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"router-outlet\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:27:09.317Z",
+        "updatedAt": "2025-10-22T11:27:09.317Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое wildcard-маршрут (**)?",
+        "id": 2161,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как объявить параметр в маршруте?",
+        "id": 2163,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2163,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как объявить параметр в маршруте?\"}]}]}",
+        "title": "Как объявить параметр в маршруте?",
+        "order": 70907,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Параметр в маршруте объявляется через двоеточие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":\"},{\"type\":\"text\",\"text\":\" в конфигурации \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Routes\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const routes: Routes = [\\n  { path: 'user/:id', component: UserComponent }\\n];\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\":id\"},{\"type\":\"text\",\"text\":\" — это параметр маршрута.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"По такому пути, как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/user/10\"},{\"type\":\"text\",\"text\":\", Angular загрузит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UserComponent\"},{\"type\":\"text\",\"text\":\", а значение \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"10\"},{\"type\":\"text\",\"text\":\" станет параметром \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы получить этот параметр в компоненте, используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ActivatedRoute\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"constructor(private route: ActivatedRoute) {}\\n\\nngOnInit() {\\n  const id = this.route.snapshot.paramMap.get('id');\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итого:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В маршруте параметр объявляется через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"path: 'route/:param'\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В URL он подставляется динамически.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В компоненте читается через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ActivatedRoute\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:27:31.715Z",
+        "updatedAt": "2025-11-10T11:44:07.070Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как перейти на маршрут программно?",
+        "id": 2162,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как получить query-параметры?",
+        "id": 2164,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2164,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как получить query-параметры?\"}]}]}",
+        "title": "Как получить query-параметры?",
+        "order": 70908,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Query-параметры (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"?page=2&sort=asc\"},{\"type\":\"text\",\"text\":\") получают с помощью сервиса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ActivatedRoute\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Два варианта — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разовое получение\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подписка на изменения\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Разовое получение (snapshot)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"constructor(private route: ActivatedRoute) {}\\n\\nngOnInit() {\\n  const page = this.route.snapshot.queryParamMap.get('page');\\n  const sort = this.route.snapshot.queryParamMap.get('sort');\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это просто — берёт значения на момент входа в компонент.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Подписка (реакция на изменения)\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"this.route.queryParams.subscribe(params => {\\n  const page = params['page'];\\n  const sort = params['sort'];\\n});\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нужно, если параметры могут меняться, пока компонент активен (например, при фильтрации без перезагрузки).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Откуда берутся query-параметры?\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Из URL вроде:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"/products?page=2&sort=asc\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular не перезагружает компонент, но параметры отслеживает.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:27:49.520Z",
+        "updatedAt": "2025-10-22T11:27:49.520Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как объявить параметр в маршруте?",
+        "id": 2163,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое вложенные (дочерние) маршруты?",
+        "id": 2165,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2165,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое вложенные (дочерние) маршруты?\"}]}]}",
+        "title": "Что такое вложенные (дочерние) маршруты?",
+        "order": 70909,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вложенные (дочерние) маршруты — это маршруты, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"встраиваются внутрь родительского компонента\"},{\"type\":\"text\",\"text\":\" через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\", находящийся в шаблоне этого компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они позволяют:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создавать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"иерархию навигации\"},{\"type\":\"text\",\"text\":\" (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"user/profile\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"user/settings\"},{\"type\":\"text\",\"text\":\");\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отображать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вложенные компоненты\"},{\"type\":\"text\",\"text\":\" внутри родительского;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делать маршруты чище и более модульными.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как объявляются:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const routes: Routes = [\\n  {\\n    path: 'user',\\n    component: UserComponent,\\n    children: [\\n      { path: 'profile', component: ProfileComponent },\\n      { path: 'settings', component: SettingsComponent }\\n    ]\\n  }\\n];\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как работают:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При переходе на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/user/profile\"},{\"type\":\"text\",\"text\":\" Angular загружает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UserComponent\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а внутри него — через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<router-outlet>\"},{\"type\":\"text\",\"text\":\" — вставляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ProfileComponent\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Путь становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сложным, но логичным\"},{\"type\":\"text\",\"text\":\": \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/user/profile\"},{\"type\":\"text\",\"text\":\" вместо двух несвязанных маршрутов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это как вкладки внутри личного кабинета — родитель всегда на месте, а содержимое меняется.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:28:30.347Z",
+        "updatedAt": "2025-11-10T11:44:01.677Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как получить query-параметры?",
+        "id": 2164,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое route guards? ",
+        "id": 2166,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2166,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое route guards?\"}]}]}",
+        "title": "Что такое route guards? ",
+        "order": 70910,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Route guards\"},{\"type\":\"text\",\"text\":\" — это механизмы, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контролируют доступ к маршрутам\"},{\"type\":\"text\",\"text\":\" в Angular.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Они решают:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— можно ли открыть маршрут,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— можно ли уйти с него,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— стоит ли загружать модуль и т. д.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Основные типы guard'ов:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivate\"},{\"type\":\"text\",\"text\":\" — можно ли зайти на маршрут;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanDeactivate\"},{\"type\":\"text\",\"text\":\" — можно ли уйти с текущего компонента;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivateChild\"},{\"type\":\"text\",\"text\":\" — можно ли зайти на дочерние маршруты;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanLoad\"},{\"type\":\"text\",\"text\":\" — можно ли загрузить ленивый модуль;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanMatch\"},{\"type\":\"text\",\"text\":\" — новый гибкий guard для проверки совпадения маршрута.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как работает:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Guard — это просто класс с методом, который возвращает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"true\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable/Promise<boolean>\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\", Angular не пускает пользователя на маршрут.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"@Injectable({ providedIn: 'root' })\\nexport class AuthGuard implements CanActivate {\\n  canActivate(): boolean {\\n    return isUserLoggedIn(); // true или false\\n  }\\n}\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"{ path: 'admin', component: AdminComponent, canActivate: [AuthGuard] }\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Guard — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"фильтр перед маршрутом\"},{\"type\":\"text\",\"text\":\", чтобы не показывать то, что нельзя.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:28:47.882Z",
+        "updatedAt": "2025-10-22T11:28:47.882Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое вложенные (дочерние) маршруты?",
+        "id": 2165,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает CanActivate?",
+        "id": 2167,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2167,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivate\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает CanActivate?",
+        "order": 70911,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivate\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"route guard\"},{\"type\":\"text\",\"text\":\", который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"решает, можно ли перейти на маршрут\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если возвращает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"true\"},{\"type\":\"text\",\"text\":\" — маршрут открывается.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\" — переход блокируется (Angular остаётся на текущей странице).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"@Injectable({ providedIn: 'root' })\\nexport class AuthGuard implements CanActivate {\\n  canActivate(): boolean {\\n    return isUserLoggedIn(); // или логика проверки токена\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Применение:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"{ path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] }\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Что можно возвращать:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"true\"},{\"type\":\"text\",\"text\":\" / \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\" — синхронное решение\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Observable<boolean>\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Promise<boolean>\"},{\"type\":\"text\",\"text\":\" — если проверка асинхронная (например, запрос на сервер)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivate\"},{\"type\":\"text\",\"text\":\" — это фильтр на вход.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Проверяет: \\\"Имеет ли пользователь право попасть на этот маршрут?\\\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если нет — просто не пускает.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:29:06.298Z",
+        "updatedAt": "2025-10-22T11:29:06.298Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое route guards? ",
+        "id": 2166,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое lazy loading маршрутов?",
+        "id": 2168,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2168,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое lazy loading маршрутов?\"}]}]}",
+        "title": "Что такое lazy loading маршрутов?",
+        "order": 70912,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Lazy loading маршрутов\"},{\"type\":\"text\",\"text\":\" — это способ загружать части приложения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только тогда, когда они реально нужны\"},{\"type\":\"text\",\"text\":\", а не сразу при старте.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Зачем это нужно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Уменьшает начальный вес приложения\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ускоряет первую загрузку\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Делает большие проекты более гибкими и масштабируемыми\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"У тебя есть модуль \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"AdminModule\"},{\"type\":\"text\",\"text\":\", который не нужен всем пользователям сразу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вместо прямого импорта ты указываешь путь к нему в роутинге:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  path: 'admin',\\n  loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)\\n}\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":3,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь переходит по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"/admin\"},{\"type\":\"text\",\"text\":\", Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лениво загружает модуль и его компоненты.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Lazy loading — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отложенная загрузка по требованию\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"которая помогает не тянуть за собой весь проект при старте.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:29:24.886Z",
+        "updatedAt": "2025-10-22T11:29:24.886Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает CanActivate?",
+        "id": 2167,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает UrlTree?",
+        "id": 2169,
+        "premium": true,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2169,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UrlTree\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает UrlTree?",
+        "order": 70913,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UrlTree\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"объект-представление URL в Angular\"},{\"type\":\"text\",\"text\":\", а не просто строка.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он нужен для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"построения маршрутов программно\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"проверки доступа через guards\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навигации без строковых путей\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Где используется:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В guard'ах (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanActivate\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CanLoad\"},{\"type\":\"text\",\"text\":\") — можно вернуть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UrlTree\"},{\"type\":\"text\",\"text\":\", чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перенаправить пользователя\"},{\"type\":\"text\",\"text\":\":\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"canActivate(): UrlTree {\\n  return this.router.parseUrl('/login');\\n}\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При программной навигации:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"ts\"},\"content\":[{\"type\":\"text\",\"text\":\"const tree = this.router.createUrlTree(['/user', 42]);\\nthis.router.navigateByUrl(tree);\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"UrlTree\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурированный способ описать маршрут\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"который Angular может прочитать, сравнить или применить — как карту навигации, но в виде объекта.\"}]}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 218,
+        "createdAt": "2025-10-22T11:29:41.613Z",
+        "updatedAt": "2025-11-10T11:43:55.552Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 218,
+          "title": "Роутинг (Routing)",
+          "directions": [
+            {
+              "categoryId": 218,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое lazy loading маршрутов?",
+        "id": 2168,
+        "premium": false,
+        "category": {
+          "id": 218,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое управление состоянием (state management) в Angular?",
+        "id": 2170,
+        "premium": false,
+        "category": {
+          "id": 219,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

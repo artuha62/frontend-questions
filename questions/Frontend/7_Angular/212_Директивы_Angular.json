@@ -1,0 +1,1967 @@
+{
+  "category": {
+    "id": 212,
+    "title": "Директивы Angular",
+    "description": " ",
+    "parentId": 7
+  },
+  "totalQuestions": 23,
+  "downloadedAt": "2026-03-09T08:38:00.430Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2033,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое директива в Angular?\"}]}]}",
+        "title": "Что такое директива в Angular?",
+        "order": 70200,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Директива\"},{\"type\":\"text\",\"text\":\" в Angular — это класс, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменяет поведение или внешний вид элементов DOM\"},{\"type\":\"text\",\"text\":\". Она позволяет добавлять функциональность без создания нового компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Типы директив:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибутные (Attribute directives)\"},{\"type\":\"text\",\"text\":\" – изменяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешний вид или поведение\"},{\"type\":\"text\",\"text\":\" существующих элементов.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Примеры: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngClass\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngStyle\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурные (Structural directives)\"},{\"type\":\"text\",\"text\":\" – изменяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру DOM\"},{\"type\":\"text\",\"text\":\", добавляя или удаляя элементы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Примеры: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitch\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компонентные (Component)\"},{\"type\":\"text\",\"text\":\" – технически тоже директива с шаблоном, так как компонент — это директива с UI.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример атрибутной директивы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, ElementRef, Renderer2 } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appHighlight]'\\n})\\nexport class HighlightDirective {\\n  constructor(el: ElementRef, renderer: Renderer2) {\\n    renderer.setStyle(el.nativeElement, 'background-color', 'yellow');\\n  }\\n}\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: директивы позволяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"добавлять поведение и управлять DOM\"},{\"type\":\"text\",\"text\":\" без создания отдельного компонента.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:45:20.244Z",
+        "updatedAt": "2025-10-22T10:45:20.244Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем standalone-компонент отличается от обычного?\t",
+        "id": 2032,
+        "premium": true,
+        "category": {
+          "id": 210,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие типы директив существуют в Angular?",
+        "id": 2034,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2034,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие типы директив существуют в Angular?\"}]}]}",
+        "title": "Какие типы директив существуют в Angular?",
+        "order": 70201,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular существуют три типа директив:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компоненты (Components)\"},{\"type\":\"text\",\"text\":\" – особый вид директив с шаблоном (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"template\"},{\"type\":\"text\",\"text\":\"). По сути, компонент — это директива с UI.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибутные директивы (Attribute Directives)\"},{\"type\":\"text\",\"text\":\" – изменяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешний вид или поведение\"},{\"type\":\"text\",\"text\":\" существующих элементов без изменения структуры DOM.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Примеры: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngClass\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngStyle\"},{\"type\":\"text\",\"text\":\", пользовательские директивы типа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"appHighlight\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурные директивы (Structural Directives)\"},{\"type\":\"text\",\"text\":\" – изменяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру DOM\"},{\"type\":\"text\",\"text\":\", добавляя, удаляя или повторяя элементы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Примеры: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitch\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: компоненты управляют UI, атрибутные директивы изменяют свойства элементов, а структурные директивы меняют состав DOM.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:45:32.774Z",
+        "updatedAt": "2025-10-22T10:45:32.774Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое директива в Angular?",
+        "id": 2033,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое структурная директива?",
+        "id": 2035,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2035,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое структурная директива?\"}]}]}",
+        "title": "Что такое структурная директива?",
+        "order": 70202,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурная директива\"},{\"type\":\"text\",\"text\":\" в Angular — это директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменяет структуру DOM\"},{\"type\":\"text\",\"text\":\", добавляя, удаляя или повторяя элементы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенности:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно применяется с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"звёздочкой (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\" в шаблоне, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наличием или количеством элементов\"},{\"type\":\"text\",\"text\":\" в DOM, а не просто их стилями или поведением.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для условного отображения, циклов или переключения шаблонов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p *ngIf=\\\"isVisible\\\">Этот текст отображается только если isVisible = true</p>\\n\\n<ul>\\n  <li *ngFor=\\\"let item of items\\\">{{ item }}</li>\\n</ul>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: структурные директивы управляют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"самой структурой HTML\"},{\"type\":\"text\",\"text\":\", решая, какие элементы должны быть добавлены или удалены из DOM.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:45:46.531Z",
+        "updatedAt": "2025-10-22T10:45:46.531Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие типы директив существуют в Angular?",
+        "id": 2034,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое атрибутная директива?",
+        "id": 2036,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2036,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое атрибутная директива?\"}]}]}",
+        "title": "Что такое атрибутная директива?",
+        "order": 70203,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибутная директива\"},{\"type\":\"text\",\"text\":\" в Angular — это директива, которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменяет внешний вид или поведение существующего элемента\"},{\"type\":\"text\",\"text\":\", не создавая или не удаляя его в DOM.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Особенности:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Применяется как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"атрибут HTML-тега\"},{\"type\":\"text\",\"text\":\", например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngClass]\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngStyle]\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Управляет стилями, классами, событиями или другими свойствами элемента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не влияет на структуру DOM — элемент остаётся на месте.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример пользовательской атрибутной директивы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, ElementRef, Renderer2 } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appHighlight]'\\n})\\nexport class HighlightDirective {\\n  constructor(el: ElementRef, renderer: Renderer2) {\\n    renderer.setStyle(el.nativeElement, 'background-color', 'yellow');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование в шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p appHighlight>Текст с жёлтым фоном</p>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: атрибутные директивы позволяют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменять свойства и поведение элементов\"},{\"type\":\"text\",\"text\":\" без их удаления или создания.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:46:04.007Z",
+        "updatedAt": "2025-11-10T11:36:16.671Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое структурная директива?",
+        "id": 2035,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива ngIf?",
+        "id": 2037,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2037,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива ngIf?\"}]}]}",
+        "title": "Что делает директива ngIf?",
+        "order": 70204,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\" в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурная директива\"},{\"type\":\"text\",\"text\":\", которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"условно добавляет или удаляет элемент из DOM\"},{\"type\":\"text\",\"text\":\" в зависимости от логического выражения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если условие истинно (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"true\"},{\"type\":\"text\",\"text\":\"), Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вставляет элемент\"},{\"type\":\"text\",\"text\":\" в DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если условие ложно (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"false\"},{\"type\":\"text\",\"text\":\"), элемент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удаляется из DOM\"},{\"type\":\"text\",\"text\":\" полностью.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поддерживает дополнительное ветвление через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"else\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p *ngIf=\\\"isVisible\\\">Этот текст отображается только если isVisible = true</p>\\n\\n<ng-template #elseBlock>\\n  <p>Текст при false</p>\\n</ng-template>\\n\\n<p *ngIf=\\\"isVisible; else elseBlock\\\">Условный текст</p>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\" управляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наличием элементов в DOM\"},{\"type\":\"text\",\"text\":\", а не просто их видимостью через CSS.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:46:14.799Z",
+        "updatedAt": "2025-10-22T10:46:14.799Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое атрибутная директива?",
+        "id": 2036,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива ngFor?",
+        "id": 2038,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2038,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива ngFor?\"}]}]}",
+        "title": "Что делает директива ngFor?",
+        "order": 70205,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\" в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурная директива\"},{\"type\":\"text\",\"text\":\", которая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"повторяет элемент шаблона для каждого элемента массива или коллекции\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принимает коллекцию и создаёт для каждого элемента отдельный экземпляр DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет использовать локальные переменные, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"index\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"first\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"last\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Полезна для динамического рендеринга списков.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<ul>\\n  <li *ngFor=\\\"let item of items; let i = index\\\">\\n    {{ i + 1 }}. {{ item }}\\n  </li>\\n</ul>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"items = ['Яблоко', 'Банан', 'Апельсин']\"},{\"type\":\"text\",\"text\":\", Angular создаст три \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<li>\"},{\"type\":\"text\",\"text\":\" с соответствующими значениями.\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\" управляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"повторением структуры DOM\"},{\"type\":\"text\",\"text\":\" для каждого элемента коллекции.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:46:26.010Z",
+        "updatedAt": "2025-10-22T10:46:26.010Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива ngIf?",
+        "id": 2037,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает директива ngSwitch?",
+        "id": 2039,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2039,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает директива ngSwitch?\"}]}]}",
+        "title": "Что делает директива ngSwitch?",
+        "order": 70206,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngSwitch\"},{\"type\":\"text\",\"text\":\" в Angular — это структурная директива, которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"отображать один из нескольких вариантов элементов\"},{\"type\":\"text\",\"text\":\" в зависимости от значения выражения.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На родительском элементе используется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngSwitch]=\\\"выражение\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутри располагаются дочерние элементы с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchCase=\\\"значение\\\"\"},{\"type\":\"text\",\"text\":\" для конкретных вариантов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно указать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchDefault\"},{\"type\":\"text\",\"text\":\" для случая, когда ни один case не совпадает.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div [ngSwitch]=\\\"color\\\">\\n  <p *ngSwitchCase=\\\"'red'\\\">Красный выбран</p>\\n  <p *ngSwitchCase=\\\"'blue'\\\">Синий выбран</p>\\n  <p *ngSwitchDefault>Цвет не выбран</p>\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"color = 'blue'\"},{\"type\":\"text\",\"text\":\", Angular отрендерит только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>Синий выбран</p>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngSwitch\"},{\"type\":\"text\",\"text\":\" управляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выбором одного из нескольких элементов\"},{\"type\":\"text\",\"text\":\" в DOM на основе значения выражения.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:46:37.793Z",
+        "updatedAt": "2025-11-10T11:36:22.234Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива ngFor?",
+        "id": 2038,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Можно ли создать собственную директиву в Angular?",
+        "id": 2040,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2040,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно ли создать собственную директиву в Angular?\"}]}]}",
+        "title": "Можно ли создать собственную директиву в Angular?",
+        "order": 70207,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Да, в Angular можно создать собственную директиву.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаётся класс с декоратором \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Directive\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Указывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"селектор\"},{\"type\":\"text\",\"text\":\", через который директива будет применяться к элементу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Внутри класса можно управлять элементом через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ElementRef\"},{\"type\":\"text\",\"text\":\", добавлять стили через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Renderer2\"},{\"type\":\"text\",\"text\":\", слушать события и т.д.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример простой атрибутной директивы:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, ElementRef, Renderer2 } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appHighlight]'\\n})\\nexport class HighlightDirective {\\n  constructor(el: ElementRef, renderer: Renderer2) {\\n    renderer.setStyle(el.nativeElement, 'background-color', 'yellow');\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использование в шаблоне:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p appHighlight>Текст с жёлтым фоном</p>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: собственная директива позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расширять функционал элементов\"},{\"type\":\"text\",\"text\":\" и создавать повторно используемые поведения.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:46:49.647Z",
+        "updatedAt": "2025-10-22T10:46:49.647Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает директива ngSwitch?",
+        "id": 2039,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как связаны директивы и DOM-элементы?",
+        "id": 2041,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2041,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как связаны директивы и DOM-элементы?\"}]}]}",
+        "title": "Как связаны директивы и DOM-элементы?",
+        "order": 70208,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular директивы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"привязаны к DOM-элементам\"},{\"type\":\"text\",\"text\":\" через селектор:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда Angular рендерит шаблон, он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ищет элементы, соответствующие селекторам директив\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого Angular \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"создаёт экземпляр директивы\"},{\"type\":\"text\",\"text\":\" и связывает его с этим элементом.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменять свойства, стили, классы, атрибуты элемента\"},{\"type\":\"text\",\"text\":\", слушать события или управлять его структурой (для структурных директив).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для взаимодействия с элементом часто используют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ElementRef\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Renderer2\"},{\"type\":\"text\",\"text\":\", чтобы безопасно изменять DOM.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p appHighlight>Текст</p>\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"appHighlight\"},{\"type\":\"text\",\"text\":\" привязывается к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В её конструкторе через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ElementRef\"},{\"type\":\"text\",\"text\":\" можно изменить фон, цвет, класс и т.д.\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: директивы — это «обёртки» вокруг DOM-элементов, которые позволяют Angular управлять их поведением и внешним видом.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:47:01.314Z",
+        "updatedAt": "2025-10-22T10:47:01.314Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Можно ли создать собственную директиву в Angular?",
+        "id": 2040,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает декоратор @Directive()?",
+        "id": 2042,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2042,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает декоратор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Directive()\"},{\"type\":\"text\",\"text\":\"?\"}]}]}",
+        "title": "Что делает декоратор @Directive()?",
+        "order": 70209,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Декоратор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Directive()\"},{\"type\":\"text\",\"text\":\" в Angular указывает, что класс является \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"директивой\"},{\"type\":\"text\",\"text\":\", и задаёт её метаданные.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные возможности:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"selector\"},{\"type\":\"text\",\"text\":\" – имя атрибута, элемента или класса, через которое директива применяется к DOM-элементу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Определяет поведение директивы: её взаимодействие с элементом, слушатели событий, стили и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет внедрять зависимости через конструктор (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ElementRef\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Renderer2\"},{\"type\":\"text\",\"text\":\", сервисы).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, ElementRef, Renderer2 } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appHighlight]'\\n})\\nexport class HighlightDirective {\\n  constructor(el: ElementRef, renderer: Renderer2) {\\n    renderer.setStyle(el.nativeElement, 'background-color', 'yellow');\\n  }\\n}\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Directive()\"},{\"type\":\"text\",\"text\":\" сообщает Angular, что класс будет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"расширять или изменять поведение элементов DOM\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:47:12.156Z",
+        "updatedAt": "2025-10-22T10:47:12.156Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как связаны директивы и DOM-элементы?",
+        "id": 2041,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как зарегистрировать директиву в модуле?",
+        "id": 2043,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2043,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как зарегистрировать директиву в модуле?\"}]}]}",
+        "title": "Как зарегистрировать директиву в модуле?",
+        "order": 70210,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы зарегистрировать директиву в Angular, её нужно добавить в массив \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"},{\"type\":\"text\",\"text\":\" модуля (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModule\"},{\"type\":\"text\",\"text\":\").\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { NgModule } from '@angular/core';\\nimport { BrowserModule } from '@angular/platform-browser';\\nimport { AppComponent } from './app.component';\\nimport { HighlightDirective } from './highlight.directive';\\n\\n@NgModule({\\n  declarations: [\\n    AppComponent,\\n    HighlightDirective   // регистрируем директиву здесь\\n  ],\\n  imports: [\\n    BrowserModule\\n  ],\\n  bootstrap: [AppComponent]\\n})\\nexport class AppModule { }\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После этого директива становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступной во всех компонентах данного модуля\"},{\"type\":\"text\",\"text\":\" и может применяться к элементам через селектор.\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"},{\"type\":\"text\",\"text\":\" модуля — это место для регистрации всех компонентов, директив и пайпов, чтобы Angular их распознал.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:47:25.079Z",
+        "updatedAt": "2025-11-10T11:36:27.168Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает декоратор @Directive()?",
+        "id": 2042,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как ограничить область действия директивы?",
+        "id": 2044,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2044,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как ограничить область действия директивы?\"}]}]}",
+        "title": "Как ограничить область действия директивы?",
+        "order": 70211,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular область действия директивы можно ограничить несколькими способами:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Селектор\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Выбирайте тип селектора, чтобы директива применялась только к определённым элементам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[appHighlight]\"},{\"type\":\"text\",\"text\":\" — только элементы с этим атрибутом.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"app-highlight\"},{\"type\":\"text\",\"text\":\" — только такой тег.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Класс: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".app-highlight\"},{\"type\":\"text\",\"text\":\" — только элементы с этим классом.\"}]}]}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Регистрация в модуле\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива действует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только в пределах модуля\"},{\"type\":\"text\",\"text\":\", где она объявлена в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"},{\"type\":\"text\",\"text\":\", если не экспортировать её через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"exports\"},{\"type\":\"text\",\"text\":\".\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Использование standalone-директив\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если директива объявлена как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"standalone: true\"},{\"type\":\"text\",\"text\":\", её можно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"импортировать только в нужные компоненты или модули\"},{\"type\":\"text\",\"text\":\", ограничивая область действия.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Условия внутри директивы\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно проверять \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ElementRef\"},{\"type\":\"text\",\"text\":\" или входные параметры и применять поведение только к нужным элементам.\"}]}]}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: область действия директивы контролируется через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"селектор, модульную регистрацию и параметры поведения внутри директивы\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:47:37.567Z",
+        "updatedAt": "2025-10-22T10:47:37.567Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как зарегистрировать директиву в модуле?",
+        "id": 2043,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как сделать директиву общедоступной (shared)?",
+        "id": 2045,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2045,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как сделать директиву общедоступной (shared)?\"}]}]}",
+        "title": "Как сделать директиву общедоступной (shared)?",
+        "order": 70212,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы сделать директиву общедоступной (shared) в Angular, нужно выполнить следующие шаги:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Создать SharedModule\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создайте модуль, который будет хранить общие компоненты, директивы и пайпы.\"}]}]}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { NgModule } from '@angular/core';\\nimport { CommonModule } from '@angular/common';\\nimport { HighlightDirective } from './highlight.directive';\\n\\n@NgModule({\\n  declarations: [HighlightDirective],\\n  imports: [CommonModule],\\n  exports: [HighlightDirective]  // делаем директиву доступной для других модулей\\n})\\nexport class SharedModule {}\\n\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":2,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Добавить директиву в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все директивы, которые вы хотите использовать, должны быть объявлены в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"declarations\"},{\"type\":\"text\",\"text\":\" модуля.\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Экспортировать директиву через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"exports\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это делает её доступной для других модулей, которые импортируют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"SharedModule\"},{\"type\":\"text\",\"text\":\".\"}]}]}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Импортировать SharedModule в нужные модули\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { SharedModule } from './shared/shared.module';\\n\\n@NgModule({\\n  imports: [SharedModule]\\n})\\nexport class FeatureModule {}\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: общедоступная директива хранится в модуле, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"экспортирует её\"},{\"type\":\"text\",\"text\":\", и становится доступной для всех модулей, которые импортируют этот shared-модуль.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:47:48.946Z",
+        "updatedAt": "2025-10-22T10:47:48.946Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как ограничить область действия директивы?",
+        "id": 2044,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngClass?",
+        "id": 2046,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2046,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает ngClass?\"}]}]}",
+        "title": "Что делает ngClass?",
+        "order": 70213,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngClass]\"},{\"type\":\"text\",\"text\":\" в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"атрибутная директива\"},{\"type\":\"text\",\"text\":\", которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамически добавлять или удалять CSS-классы\"},{\"type\":\"text\",\"text\":\" на элементе в зависимости от выражений или условий.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngClass]\"},{\"type\":\"text\",\"text\":\" принимает строку, массив или объект:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Строка\"},{\"type\":\"text\",\"text\":\": одно или несколько имён классов, разделённых пробелами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Массив\"},{\"type\":\"text\",\"text\":\": список классов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Объект\"},{\"type\":\"text\",\"text\":\": ключ — имя класса, значение — логическое выражение.\"}]}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Примеры:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<!-- Строка -->\\n<div [ngClass]=\\\"'class1 class2'\\\">Текст</div>\\n\\n<!-- Массив -->\\n<div [ngClass]=\\\"['class1', 'class2']\\\">Текст</div>\\n\\n<!-- Объект -->\\n<div [ngClass]=\\\"{'active': isActive, 'highlight': isHighlighted}\\\">\\n  Текст\\n</div>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngClass\"},{\"type\":\"text\",\"text\":\" позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контролировать стили через классы динамически\"},{\"type\":\"text\",\"text\":\", без прямого изменения DOM или стилей через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Renderer2\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:48:00.485Z",
+        "updatedAt": "2025-11-10T11:36:31.021Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как сделать директиву общедоступной (shared)?",
+        "id": 2045,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngStyle?",
+        "id": 2047,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2047,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает ngStyle?\"}]}]}",
+        "title": "Что делает ngStyle?",
+        "order": 70214,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngStyle]\"},{\"type\":\"text\",\"text\":\" в Angular — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"атрибутная директива\"},{\"type\":\"text\",\"text\":\", которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамически изменять CSS-стили элемента\"},{\"type\":\"text\",\"text\":\" через объект с ключами и значениями.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngStyle]\"},{\"type\":\"text\",\"text\":\" принимает объект, где ключ — имя CSS-свойства, значение — его значение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Стили применяются динамически и обновляются при изменении данных.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div [ngStyle]=\\\"{'color': textColor, 'font-size.px': fontSize}\\\">\\n  Динамический стиль\\n</div>\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"textColor = 'red';\\nfontSize = 20;\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngStyle\"},{\"type\":\"text\",\"text\":\" позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"изменять отдельные CSS-свойства элемента в зависимости от состояния компонента\"},{\"type\":\"text\",\"text\":\", без использования классов.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:48:12.207Z",
+        "updatedAt": "2025-10-22T10:48:12.207Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngClass?",
+        "id": 2046,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает ngModel?",
+        "id": 2048,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2048,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает ngModel?\"}]}]}",
+        "title": "Что делает ngModel?",
+        "order": 70215,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" в Angular обеспечивает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"двустороннюю привязку данных\"},{\"type\":\"text\",\"text\":\" между свойством компонента и элементом формы (input, select, textarea).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение свойства компонента отображается в элементе формы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Любое изменение в элементе формы автоматически обновляет свойство компонента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется вместе с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormsModule\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<input [(ngModel)]=\\\"username\\\" placeholder=\\\"Введите имя\\\">\\n<p>Привет, {{ username }}!</p>\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"username = '';\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngModel\"},{\"type\":\"text\",\"text\":\" синхронизирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"состояние модели и view\"},{\"type\":\"text\",\"text\":\", позволяя легко работать с формами и вводом пользователя.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:48:22.709Z",
+        "updatedAt": "2025-10-22T10:48:22.709Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngStyle?",
+        "id": 2047,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает @HostListener()?",
+        "id": 2049,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2049,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает @HostListener()?\"}]}]}",
+        "title": "Что делает @HostListener()?",
+        "order": 70216,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Декоратор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@HostListener()\"},{\"type\":\"text\",\"text\":\" в Angular позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подписаться на события DOM элемента\"},{\"type\":\"text\",\"text\":\", к которому привязана директива или компонент, без необходимости писать прямые обработчики в шаблоне.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В параметрах указывается имя события, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"'click'\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"'mouseover'\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Метод внутри класса будет вызван, когда событие произойдёт на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"host-элементе\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно передавать параметры события через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"$event\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, HostListener } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appClickTracker]'\\n})\\nexport class ClickTrackerDirective {\\n  @HostListener('click', ['$event'])\\n  onClick(event: MouseEvent) {\\n    console.log('Элемент был кликнут', event);\\n  }\\n}\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button appClickTracker>Нажми меня</button>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@HostListener()\"},{\"type\":\"text\",\"text\":\" позволяет директиве или компоненту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реагировать на события своего host-элемента\"},{\"type\":\"text\",\"text\":\" без изменения шаблона.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:48:41.998Z",
+        "updatedAt": "2025-10-22T10:48:41.998Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает ngModel?",
+        "id": 2048,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает @HostBinding()?",
+        "id": 2050,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2050,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает @HostBinding()?\"}]}]}",
+        "title": "Что делает @HostBinding()?",
+        "order": 70217,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Декоратор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@HostBinding()\"},{\"type\":\"text\",\"text\":\" в Angular позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"связывать свойства host-элемента\"},{\"type\":\"text\",\"text\":\" (DOM-элемента, к которому применена директива или компонент) с полями класса.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Указывает, какое свойство элемента будет привязано к значению поля класса (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"class\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"style\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"attr\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение автоматически обновляется при изменении свойства класса.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"typescript\"},\"content\":[{\"type\":\"text\",\"text\":\"import { Directive, HostBinding } from '@angular/core';\\n\\n@Directive({\\n  selector: '[appHighlight]'\\n})\\nexport class HighlightDirective {\\n  @HostBinding('style.backgroundColor') background = 'yellow';\\n}\\n\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p appHighlight>Текст с жёлтым фоном</p>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@HostBinding()\"},{\"type\":\"text\",\"text\":\" позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"динамически управлять свойствами, стилями или классами host-элемента\"},{\"type\":\"text\",\"text\":\" из кода директивы или компонента.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "junior",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:48:56.171Z",
+        "updatedAt": "2025-10-22T10:48:56.171Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает @HostListener()?",
+        "id": 2049,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем структурная директива отличается от атрибутной?",
+        "id": 2051,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2051,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем структурная директива отличается от атрибутной?\"}]}]}",
+        "title": "Чем структурная директива отличается от атрибутной?",
+        "order": 70218,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурная\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"атрибутная\"},{\"type\":\"text\",\"text\":\" директива в Angular отличаются тем, что именно они управляют в DOM:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурная директива\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изменяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру DOM\"},{\"type\":\"text\",\"text\":\": добавляет, удаляет или повторяет элементы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно используется с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*\"},{\"type\":\"text\",\"text\":\", например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitch\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p *ngIf=\\\"isVisible\\\">Отображается только если isVisible = true</p>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибутная директива\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изменяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"внешний вид или поведение элемента\"},{\"type\":\"text\",\"text\":\", но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не меняет структуру DOM\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Применяется как атрибут элемента, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngClass]\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[ngStyle]\"},{\"type\":\"text\",\"text\":\" или пользовательская директива \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"appHighlight\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p [ngStyle]=\\\"{'color': textColor}\\\">Текст с динамическим цветом</p>\\n\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: структурные директивы управляют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"наличием и количеством элементов\"},{\"type\":\"text\",\"text\":\", атрибутные — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"стилем и поведением существующих элементов\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:49:10.884Z",
+        "updatedAt": "2025-11-10T11:36:51.371Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает @HostBinding()?",
+        "id": 2050,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает звёздочка (*) перед директивой?",
+        "id": 2052,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2052,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает звёздочка (*) перед директивой?\"}]}]}",
+        "title": "Что делает звёздочка (*) перед директивой?",
+        "order": 70219,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Звёздочка \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*\"},{\"type\":\"text\",\"text\":\" перед директивой в Angular обозначает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурную директиву\"},{\"type\":\"text\",\"text\":\" и служит синтаксическим сахаром для создания \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-template>\"},{\"type\":\"text\",\"text\":\" вокруг элемента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Принцип работы:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Angular интерпретирует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*directive\"},{\"type\":\"text\",\"text\":\" как обёртку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-template>\"},{\"type\":\"text\",\"text\":\" и вставляет элемент внутрь.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это позволяет директиве управлять \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурой DOM\"},{\"type\":\"text\",\"text\":\": добавлять, удалять или повторять элементы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p *ngIf=\\\"isVisible\\\">Текст отображается только если isVisible = true</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эквивалент без звёздочки:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<ng-template [ngIf]=\\\"isVisible\\\">\\n  <p>Текст отображается только если isVisible = true</p>\\n</ng-template>\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*\"},{\"type\":\"text\",\"text\":\" упрощает запись структурных директив и автоматически создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-template>\"},{\"type\":\"text\",\"text\":\" для управления DOM.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:49:27.577Z",
+        "updatedAt": "2025-10-22T10:49:27.577Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем структурная директива отличается от атрибутной?",
+        "id": 2051,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие хуки жизненного цикла поддерживают директивы?",
+        "id": 2053,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2053,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие хуки жизненного цикла поддерживают директивы?\"}]}]}",
+        "title": "Какие хуки жизненного цикла поддерживают директивы?",
+        "order": 70220,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Директивы в Angular поддерживают почти те же \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуки жизненного цикла\"},{\"type\":\"text\",\"text\":\", что и компоненты, за исключением некоторых, связанных с view-шаблоном (так как у директивы нет собственного шаблона).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные хуки для директив:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnChanges(changes)\"},{\"type\":\"text\",\"text\":\" – вызывается при изменении входных свойств (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@Input\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnInit()\"},{\"type\":\"text\",\"text\":\" – один раз после первой инициализации входных свойств.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngDoCheck()\"},{\"type\":\"text\",\"text\":\" – вызывается при каждом цикле обнаружения изменений.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentInit()\"},{\"type\":\"text\",\"text\":\" – после вставки содержимого (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-content>\"},{\"type\":\"text\",\"text\":\"), если директива используется на компоненте с проекцией контента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterContentChecked()\"},{\"type\":\"text\",\"text\":\" – после каждой проверки вставленного контента.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngOnDestroy()\"},{\"type\":\"text\",\"text\":\" – перед удалением директивы с элемента, для очистки ресурсов и отписки от событий.\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: директивы имеют почти полный набор lifecycle hooks компонентов, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуки, связанные с view (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewInit\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ngAfterViewChecked\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\" применяются только к компонентам, так как директива не имеет собственного шаблона.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:49:37.568Z",
+        "updatedAt": "2025-10-22T10:49:37.568Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает звёздочка (*) перед директивой?",
+        "id": 2052,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Перечислите все встроенные структурные директивы.",
+        "id": 2054,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2054,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перечислите все встроенные структурные директивы.\"}]}]}",
+        "title": "Перечислите все встроенные структурные директивы.",
+        "order": 70221,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular основные \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"встроенные структурные директивы\"},{\"type\":\"text\",\"text\":\" следующие:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngIf\"},{\"type\":\"text\",\"text\":\" – условное отображение элемента в DOM.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngFor\"},{\"type\":\"text\",\"text\":\" – повторение элемента для каждого элемента коллекции.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitch\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchCase\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchDefault\"},{\"type\":\"text\",\"text\":\" – отображение одного из нескольких вариантов в зависимости от значения выражения.\"}]}]}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вывод: эти директивы управляют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурой DOM\"},{\"type\":\"text\",\"text\":\", добавляя, удаляя или выбирая элементы для рендеринга.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:49:52.449Z",
+        "updatedAt": "2025-10-22T10:49:52.449Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие хуки жизненного цикла поддерживают директивы?",
+        "id": 2053,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Перечислите все встроенные атрибутные директивы.",
+        "id": 2055,
+        "premium": true,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2055,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Перечислите все встроенные атрибутные директивы.\"}]}]}",
+        "title": "Перечислите все встроенные атрибутные директивы.",
+        "order": 70222,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Angular встроенные атрибутные директивы — это директивы, которые изменяют поведение или внешний вид существующих элементов. Основные:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgClass\"},{\"type\":\"text\",\"text\":\" — динамическое добавление/удаление CSS‑классов на элементе. Можно передавать строку, массив или объект с ключами‑классами и булевыми значениями.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgStyle\"},{\"type\":\"text\",\"text\":\" — динамическое изменение стилей элемента через объект «свойство: значение».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModel\"},{\"type\":\"text\",\"text\":\" — двусторонняя привязка значения элемента формы к переменной компонента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[(ngModel)]\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModelGroup\"},{\"type\":\"text\",\"text\":\" — логическая группировка нескольких \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgModel\"},{\"type\":\"text\",\"text\":\" внутри формы для валидации и структуры.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgForm\"},{\"type\":\"text\",\"text\":\" — директива для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<form>\"},{\"type\":\"text\",\"text\":\", отслеживает состояние формы: валидность, ошибки, изменения.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgFormControl\"},{\"type\":\"text\",\"text\":\" — устаревшая директива для управления отдельными контролами формы (современный подход — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FormControl\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgControl\"},{\"type\":\"text\",\"text\":\" — базовый класс для всех директив управления формами.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgControlStatus\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgControlStatusGroup\"},{\"type\":\"text\",\"text\":\" — автоматически добавляют CSS‑классы (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-valid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-invalid\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-dirty\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-pristine\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-touched\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ng-untouched\"},{\"type\":\"text\",\"text\":\") в зависимости от состояния контрола или группы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitch\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitchCase\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgSwitchDefault\"},{\"type\":\"text\",\"text\":\" — управляют отображением элементов по значению выражения (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitch\"},{\"type\":\"text\",\"text\":\" на контейнере, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchCase\"},{\"type\":\"text\",\"text\":\"/\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"*ngSwitchDefault\"},{\"type\":\"text\",\"text\":\" на дочерних).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"NgTemplateOutlet\"},{\"type\":\"text\",\"text\":\" — позволяет динамически рендерить содержимое \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ng-template>\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 212,
+        "createdAt": "2025-10-22T10:50:59.675Z",
+        "updatedAt": "2025-11-10T11:36:36.518Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 212,
+          "title": "Директивы Angular",
+          "directions": [
+            {
+              "categoryId": 212,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Перечислите все встроенные структурные директивы.",
+        "id": 2054,
+        "premium": false,
+        "category": {
+          "id": 212,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое шаблон (template) в Angular?",
+        "id": 2056,
+        "premium": false,
+        "category": {
+          "id": 213,
+          "parent": {
+            "title": "Angular",
+            "id": 7,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

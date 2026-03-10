@@ -1,0 +1,788 @@
+{
+  "category": {
+    "id": 233,
+    "title": "EsLint",
+    "description": " ",
+    "parentId": 80
+  },
+  "totalQuestions": 8,
+  "downloadedAt": "2026-03-10T09:56:00.401Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2317,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ESLint? Для чего нужен ESLint?\"}]}]}",
+        "title": "Что такое ESLint? Для чего нужен ESLint?",
+        "order": 80410,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ESLint\"},{\"type\":\"text\",\"text\":\" — это статический анализатор кода для JavaScript и TypeScript, который проверяет файлы на наличие ошибок, потенциальных багов и несоответствия стилю кодирования. Он не исполняет код, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"анализирует его структуру\"},{\"type\":\"text\",\"text\":\", чтобы заранее выявлять проблемы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для чего нужен ESLint\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1) Поиск ошибок и багов ещё до запуска кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ESLint помогает обнаружить опечатки, неправильные конструкции, неиспользуемые переменные, лишние импорты и другие ошибки, которые могут привести к поломкам в рантайме.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2) Поддержка единого стиля кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ESLint позволяет задать правила (например, одинарные кавычки, отсутствие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"var\"},{\"type\":\"text\",\"text\":\", обязательные точки с запятой и т.д.) и заставляет весь проект придерживаться единого стиля. Это особенно важно в команде.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3) Улучшение читаемости и качества кода\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Благодаря единообразию кода его проще читать, сопровождать и рефакторить.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4) Предотвращение анти-паттернов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"ESLint может запрещать потенциально опасные практики (например, использование \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eval\"},{\"type\":\"text\",\"text\":\", неявные сравнения и пр.).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5) Интеграция с редакторами и CI\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он подсвечивает ошибки прямо в IDE и может остановить сборку на CI, если код не соответствует правилам.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint нужен, чтобы:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"повышать качество кода,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"предотвращать баги на раннем этапе,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"держать единый стиль в проекте,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"делать код чище и понятнее.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он — инструмент контроля и дисциплины для фронтенда, который экономит время и нервы при поддержке проекта.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:18:42.571Z",
+        "updatedAt": "2025-10-23T08:18:42.571Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое utility-класс?",
+        "id": 2316,
+        "premium": false,
+        "category": {
+          "id": 232,
+          "parent": {
+            "title": "(Пре|пост)процессоры CSS",
+            "id": 79,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем ESLint отличается от Prettier?",
+        "id": 2318,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2318,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем ESLint отличается от Prettier?\"}]}]}",
+        "title": "Чем ESLint отличается от Prettier?",
+        "order": 80411,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint и Prettier часто используются вместе, но они решают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные задачи\"},{\"type\":\"text\",\"text\":\", поэтому путать их нельзя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основное различие\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструмент\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"За что отвечает\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ESLint\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анализирует код на ошибки, анти-паттерны и нарушения правил JavaScript/TypeScript\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Prettier\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Форматирует код (оформление, пробелы, переносы, кавычки и т.д.)\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает ESLint\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint отвечает за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качество кода и логику\"},{\"type\":\"text\",\"text\":\". Он проверяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неиспользуемые переменные,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неверные конструкции,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"опасные практики,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"соответствие код-стайлу (если правила заданы),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"потенциальные баги.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример: ESLint найдет ошибку:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const x = 10;\\nconsole.log(y); // ESLint скажет, что y — не определён\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает Prettier\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Prettier отвечает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"исключительно за стиль форматирования\"},{\"type\":\"text\",\"text\":\", а не за логику. Он автоматически:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ставит одинаковые отступы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"расставляет запятые,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"форматирует кавычки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"переносит строки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавляет/убирает точки с запятой.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример: Prettier отформатирует код\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const obj={name:\\\"Tom\\\",age:20}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"const obj = { name: 'Tom', age: 20 };\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевое отличие в двух фразах\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ESLint отвечает за правильность кода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Prettier отвечает за красоту и единообразие форматирования.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как используют в реальных проектах\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно их ставят \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вместе\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Prettier → автоматически форматирует код\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint → следит за логикой и правилами\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint можно настроить так, чтобы он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не ругался за стиль\"},{\"type\":\"text\",\"text\":\", а отдавал эти задачи Prettier.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Prettier\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Предотвращает ошибки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Делает код аккуратным\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Следит за правилами\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Следит за форматированием\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Про логику\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Про внешний вид\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эти инструменты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не конкуренты\"},{\"type\":\"text\",\"text\":\", а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дополняют друг друга\"},{\"type\":\"text\",\"text\":\", закрывая разные стороны качества кода.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:18:58.905Z",
+        "updatedAt": "2025-10-23T08:18:58.905Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ESLint? Для чего нужен ESLint?",
+        "id": 2317,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что означает термин “статический анализ кода”?",
+        "id": 2319,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2319,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает термин “статический анализ кода”?\"}]}]}",
+        "title": "Что означает термин “статический анализ кода”?",
+        "order": 80412,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Статический анализ кода\"},{\"type\":\"text\",\"text\":\" — это метод проверки программы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без её выполнения\"},{\"type\":\"text\",\"text\":\", при котором инструмент анализирует исходный код и находит потенциальные ошибки, баги, опасные конструкции, нарушения стиля и другие проблемы на этапе разработки.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что именно делает статический анализ\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструменты статического анализа:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверяют синтаксис и структуру кода,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"выявляют неиспользуемые переменные и импорты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ищут потенциальные баги (например, обращения к несуществующим переменным),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"отслеживают использование опасных или нежелательных конструкций,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверяют соблюдение coding style (при заданных правилах),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помогают поддерживать чистоту и единообразие кода.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевая идея\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Код анализируется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как текст и дерево синтаксиса (AST)\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Вывод делается по структуре программы, а не по её поведению во время выполнения.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем применяется\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Статический анализ:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"предотвращает ошибки заранее\"},{\"type\":\"text\",\"text\":\", ещё до запуска приложения,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"снижает стоимость исправления багов (их легче поймать рано),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"делает код \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"надёжнее, безопаснее и понятнее\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помогает командам \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поддерживать единый стиль и качество\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры инструментов\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для JS/TS — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ESLint\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для Python — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"pylint\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для Java — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Checkstyle\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SpotBugs\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"для безопасности — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SonarQube\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Bandit\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Статический анализ — это автоматическая проверка исходного кода без его выполнения, позволяющая находить ошибки, уязвимости и нарушения правил на раннем этапе.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таким образом, статический анализ — это профилактика багов и средство поддержания высокого качества кода в проекте.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:19:14.232Z",
+        "updatedAt": "2025-10-23T08:19:14.232Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем ESLint отличается от Prettier?",
+        "id": 2318,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как ESLint повышает качество кода?",
+        "id": 2320,
+        "premium": true,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2320,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как ESLint повышает качество кода?\"}]}]}",
+        "title": "Как ESLint повышает качество кода?",
+        "order": 80413,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint повышает качество кода за счёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"раннего контроля, единых правил и упрощения поддержки проекта\"},{\"type\":\"text\",\"text\":\". Он делает код предсказуемым, стабильным и менее подверженным ошибкам.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1) Предотвращает ошибки ещё до выполнения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint находит потенциальные баги во время разработки:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"обращение к несуществующим переменным,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"забытые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"return\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неиспользуемые аргументы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"опечатки в импортируемых модулях,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"опасные конструкции (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eval\"},{\"type\":\"text\",\"text\":\", нестрогое равенство и т.д.).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это снижает вероятность логических ошибок на продакшене.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2) Выдерживает единый стиль кодирования\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint не даёт коду “расползаться”. Он заставляет всех писать в одном стиле:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одинаковые кавычки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одинаковый порядок импорта,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"единые правила для функций, переменных, отступов.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Одна кодовая база — один стиль → код проще читать, ревьюить и поддерживать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3) Устраняет мусор в проекте\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint автоматически находит:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неиспользуемые переменные,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неиспользуемые импорты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“мертвые” участки кода.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проект остаётся чистым и аккуратным, без технического долга.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4) Делает поведение кода предсказуемым\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint запрещает анти-паттерны, которые ведут к нестабильности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"var\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"let/const\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"неявные преобразования типов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"слишком сложные условия.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В итоге код становится корректнее и надёжнее.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"5) Упрощает командную работу\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разработчики не спорят о стиле и не исправляют мелочи вручную — ESLint делает это автоматически или подсказывает проблему. Это:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ускоряет ревью,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"снимает субъективность,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"уменьшает количество багов, связанных с невнимательностью.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ESLint повышает качество кода, потому что предотвращает ошибки до исполнения, стандартизирует стиль, убирает мусор, запрещает опасные практики и улучшает читаемость проекта.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он — не “косметика”, а инструмент, который делает код \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"чистым, безопасным и предсказуемым на долгой дистанции\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:19:33.996Z",
+        "updatedAt": "2025-11-10T16:28:58.359Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает термин “статический анализ кода”?",
+        "id": 2319,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое правило ESLint?",
+        "id": 2321,
+        "premium": true,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2321,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое правило ESLint?\"}]}]}",
+        "title": "Что такое правило ESLint?",
+        "order": 80414,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правило ESLint — это отдельное проверяемое условие, которому должен соответствовать код. Каждое правило отвечает за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конкретный аспект качества, стиля или безопасности\"},{\"type\":\"text\",\"text\":\", и при нарушении ESLint сообщает об ошибке или предупреждении.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает правило\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правило может:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"запретить\"},{\"type\":\"text\",\"text\":\" опасную или нежелательную конструкцию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"no-eval\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"no-unused-vars\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навязать единый стиль\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"quotes\"},{\"type\":\"text\",\"text\":\" — одинарные или двойные кавычки)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"предупредить о потенциальных багax\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"(например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eqeqeq\"},{\"type\":\"text\",\"text\":\" — использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"===\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"==\"},{\"type\":\"text\",\"text\":\")\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как правило выглядит в конфиге\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".eslintrc\"},{\"type\":\"text\",\"text\":\" у каждого правила есть уровень:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"json\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"rules\\\": {\\n    \\\"no-unused-vars\\\": \\\"warn\\\",\\n    \\\"eqeqeq\\\": \\\"error\\\",\\n    \\\"quotes\\\": [\\\"error\\\", \\\"single\\\"]\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"off\\\" | \\\"warn\\\" | \\\"error\\\"\"},{\"type\":\"text\",\"text\":\" означает:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Уровень\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что значит\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"off\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правило отключено\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"warn\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"предупреждение, но сборка не падает\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"error\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ошибка — влияет на сборку/коммит\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важный момент\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint — это набор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"правил\"},{\"type\":\"text\",\"text\":\", а не одно общее требование. Каждое правило отвечает за свой участок кода, а вместе они формируют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"код-стайл и правила качества проекта\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Правило ESLint — это конкретная проверка, которая контролирует определённое поведение или стиль в коде и сигнализирует о его нарушении.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"За счёт набора таких правил ESLint обеспечивает чистоту, предсказуемость и единообразие кода в проекте.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:19:49.583Z",
+        "updatedAt": "2025-11-10T16:29:04.018Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Как ESLint повышает качество кода?",
+        "id": 2320,
+        "premium": true,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое плагин в ESlint?",
+        "id": 2322,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2322,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое плагин в ESlint?\"}]}]}",
+        "title": "Что такое плагин в ESlint?",
+        "order": 80415,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагин в ESLint — это расширение, которое добавляет к линтеру \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"дополнительные правила, настройки или возможности анализа кода\"},{\"type\":\"text\",\"text\":\". По сути, ESLint имеет базовый набор проверок, а плагины позволяют дополнять его логикой, которая нужна под конкретные технологии, библиотеки или стандарты.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что делает плагин\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагин может:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"добавлять свои правила (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rules\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"поставлять готовые наборы конфигураций (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"configs\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"включать поддержку специфичных синтаксисов или соглашений\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверять код, связанный с конкретным стеком (React, Vue, импорт модулей и т.п.)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда плагины нужны\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Например:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагин\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eslint-plugin-react\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проверка правильности кода в React-компонентах\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eslint-plugin-import\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"контроль корректности и порядка импортов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eslint-plugin-vue\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"линтинг Vue SFC\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"@typescript-eslint/eslint-plugin\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правила для TypeScript\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без плагинов ESLint не знает о специфике этих технологий.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как плагин подключается\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".eslintrc\"},{\"type\":\"text\",\"text\":\" это выглядит так:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"json\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"plugins\\\": [\\\"react\\\"],\\n  \\\"rules\\\": {\\n    \\\"react/jsx-uses-react\\\": \\\"warn\\\"\\n  }\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"plugins\"},{\"type\":\"text\",\"text\":\" — регистрирует плагин,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rules\"},{\"type\":\"text\",\"text\":\" — включает конкретные правила из него.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Суть в одном предложении\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагин ESLint — это модуль, который добавляет новые правила и расширения, позволяя линтеру анализировать код в контексте нужного фреймворка, языка или соглашений.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Плагины делают ESLint гибким и адаптируемым под любой проект.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:20:10.039Z",
+        "updatedAt": "2025-10-23T08:20:10.039Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое правило ESLint?",
+        "id": 2321,
+        "premium": true,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как реализовать свой плагин в ESLint?",
+        "id": 2323,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2323,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как реализовать свой плагин в ESLint?\"}]}]}",
+        "title": "Как реализовать свой плагин в ESLint?",
+        "order": 80416,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создание своего плагина для ESLint сводится к тому, чтобы определить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"набор правил\"},{\"type\":\"text\",\"text\":\", оформить их в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"npm-пакета\"},{\"type\":\"text\",\"text\":\" и подключить в проект. Важно понимать: плагин — это просто объект с правилами и (опционально) наборами конфигов, который ESLint сможет прочитать.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структура собственного плагина\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минимальный плагин должен содержать:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"eslint-plugin-имя/\\n  ├─ lib/\\n  │   └─ rules/\\n  │       └─ my-rule.js\\n  └─ index.js\\n  └─ package.json\\n\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📌 Важно: название пакета должно начинаться с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"eslint-plugin-\"},{\"type\":\"text\",\"text\":\", иначе ESLint не найдёт его автоматически.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаг 1: создать пакет\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"package.json\"},{\"type\":\"text\",\"text\":\" примерно такой:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"json\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"name\\\": \\\"eslint-plugin-myplugin\\\",\\n  \\\"main\\\": \\\"index.js\\\"\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаг 2: описать правило\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример простого правила, запрещающего идентификатор \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"foo\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"lib/rules/no-foo.js\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"module.exports = {\\n  meta: {\\n    type: \\\"problem\\\",\\n    messages: {\\n      noFoo: \\\"Идентификатор 'foo' запрещён.\\\"\\n    }\\n  },\\n  create(context) {\\n    return {\\n      Identifier(node) {\\n        if (node.name === \\\"foo\\\") {\\n          context.report({ node, messageId: \\\"noFoo\\\" });\\n        }\\n      }\\n    };\\n  }\\n};\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаг 3: подключить правило в плагин\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"index.js\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"module.exports = {\\n  rules: {\\n    \\\"no-foo\\\": require(\\\"./lib/rules/no-foo\\\")\\n  }\\n};\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Шаг 4: использовать в реальном проекте\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\".eslintrc\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"json\"},\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"plugins\\\": [\\\"myplugin\\\"],\\n  \\\"rules\\\": {\\n    \\\"myplugin/no-foo\\\": \\\"error\\\"\\n  }\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это работает внутри\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint создаёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AST (Abstract Syntax Tree)\"},{\"type\":\"text\",\"text\":\" кода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правило подписывается на нужные узлы AST (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Identifier\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"FunctionDeclaration\"},{\"type\":\"text\",\"text\":\", т.п.).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При обходе дерева ESLint вызывает ваши callbacks.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вы вызываете \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"context.report()\"},{\"type\":\"text\",\"text\":\" — и правило срабатывает.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дополнительно (необязательно, но полезно)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вы можете добавить в плагин:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Возможность\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"набор ready-to-use конфигов\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"configs\"},{\"type\":\"text\",\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"index.js\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"автопочинку\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"meta.fixable: \\\"code\\\"\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fix()\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"тесты\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"ESLintRuleTester\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог в одном предложении\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы написать свой ESLint-плагин — создаёшь npm-пакет, добавляешь в него одно или несколько правил, регистрируешь в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"index.js\"},{\"type\":\"text\",\"text\":\" и подключаешь в проект как обычный плагин.\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:20:34.518Z",
+        "updatedAt": "2025-10-23T08:20:34.518Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое плагин в ESlint?",
+        "id": 2322,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое AST при написании плагина и как с ним работать?",
+        "id": 2324,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2324,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое AST при написании плагина и как с ним работать?\"}]}]}",
+        "title": "Что такое AST при написании плагина и как с ним работать?",
+        "order": 80417,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AST (Abstract Syntax Tree, абстрактное синтаксическое дерево)\"},{\"type\":\"text\",\"text\":\" — это древовидное представление исходного кода, в котором каждая конструкция программы (переменная, функция, оператор, выражение) представлена в виде узла дерева с описанием типа и своих свойств. ESLint во время анализа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не работает со строками кода напрямую\"},{\"type\":\"text\",\"text\":\", он сначала преобразует код в AST, а плагин взаимодействует уже с этим деревом.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем нужен AST при написании правил ESLint\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда вы создаёте правило, вам требуется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поймать определённый участок кода\"},{\"type\":\"text\",\"text\":\", например:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вызов функции,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"объявление переменной,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"использование идентификатора,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"if\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"return\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"console.log\"},{\"type\":\"text\",\"text\":\", JSX-элемент и т.п.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"AST даёт это сделать, потому что каждое из этих элементов — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"узел с типом\"},{\"type\":\"text\",\"text\":\", и ESLint позволяет “подписаться” на такие узлы при обходе дерева.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как выглядит работа правила с AST (концептуально)\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint парсит код → строит AST.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ваше правило говорит ESLint: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"«когда встретишь узел типа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Identifier\"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\", вызови мой код»\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESLint вызывает ваш callback с информацией об узле.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вы решаете, репортить ошибку, игнорировать или фиксить код.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример AST-узла (для переменной \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"const x = 10\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"VariableDeclarator\\n├─ id: Identifier (name: \\\"x\\\")\\n└─ init: Literal (value: 10)\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это значит: декларируется переменная \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"x\"},{\"type\":\"text\",\"text\":\" со значением \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"10\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Базовый пример правила, работающего с AST\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"create(context) {\\n  return {\\n    Identifier(node) {\\n      if (node.name === \\\"foo\\\") {\\n        context.report({\\n          node,\\n          message: \\\"Имя 'foo' запрещено.\\\"\\n        });\\n      }\\n    }\\n  };\\n}\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Identifier\"},{\"type\":\"text\",\"text\":\" — тип AST-узла\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node\"},{\"type\":\"text\",\"text\":\" — сам объект узла (в нём есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"name\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"loc\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"parent\"},{\"type\":\"text\",\"text\":\" и т.д.)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"context.report()\"},{\"type\":\"text\",\"text\":\" — способ сообщить ESLint об ошибке\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как понимать AST и писать правила быстрее\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы понимать дерево и узлы, удобно использовать:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструмент\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Задача\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://astexplorer.net/\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://astexplorer.net\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"посмотреть AST кода в реальном времени\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"espree (песочница ESLint-парсера)\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"парсит JS в AST\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ESTree спецификация\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"описывает типы узлов\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AstExplorer\"},{\"type\":\"text\",\"text\":\" — главный инструмент: пишете код слева → получаете AST справа → выбираете нужные узлы → пишете правило.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"✅ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Рабочий процесс при создании правила с AST\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В AstExplorer находите нужный узел по типу (например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CallExpression\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В своём ESLint-правиле подписываетесь на этот узел:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"js\"},\"content\":[{\"type\":\"text\",\"text\":\"CallExpression(node) { ... }\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анализируете свойства (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node.callee\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node.arguments\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node.name\"},{\"type\":\"text\",\"text\":\", и т.д.).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При необходимости вызываете \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"context.report\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"📌 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"AST — это структурированное дерево кода, и правило ESLint работает, обходя это дерево и реагируя на нужные узлы.\"},{\"type\":\"text\",\"text\":\" Работа с AST — это фундамент создания любых кастомных правил ESLint.\"}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если нужно, могу дальше показать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как подписываться на более сложные узлы\"},{\"type\":\"text\",\"text\":\", например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"CallExpression\"},{\"type\":\"text\",\"text\":\" или JSX, или как сделать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"autofix (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"fix\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"context.report\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\". Продолжать?\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 233,
+        "createdAt": "2025-10-23T08:20:54.338Z",
+        "updatedAt": "2025-10-23T08:20:54.338Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 233,
+          "title": "EsLint",
+          "directions": [
+            {
+              "categoryId": 233,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Как реализовать свой плагин в ESLint?",
+        "id": 2323,
+        "premium": false,
+        "category": {
+          "id": 233,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое Prettier? Для чего нужен Prettier?",
+        "id": 2325,
+        "premium": false,
+        "category": {
+          "id": 234,
+          "parent": {
+            "title": "Линтеры и форматтеры",
+            "id": 80,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

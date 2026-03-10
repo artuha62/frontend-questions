@@ -1,0 +1,692 @@
+{
+  "category": {
+    "id": 148,
+    "title": "Основы SEO",
+    "description": " ",
+    "parentId": 9
+  },
+  "totalQuestions": 8,
+  "downloadedAt": "2026-03-09T08:45:52.914Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2424,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое SEO?\"}]}]}",
+        "title": "Что такое SEO?",
+        "order": 90000,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SEO (Search Engine Optimization)\"},{\"type\":\"text\",\"text\":\" — это процесс улучшения сайта, чтобы он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лучше ранжировался в поисковых системах\"},{\"type\":\"text\",\"text\":\" (Google, Яндекс и др.) и привлекал \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"больше органического трафика\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что включает SEO:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Техническая оптимизация\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Скорость загрузки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Мобильная адаптивность\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Безошибочная структура HTML и sitemap\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Устранение дубликатов страниц\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Контентная оптимизация\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Ключевые слова в заголовках и тексте\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Уникальность и ценность контента\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Структура: H1–H6, списки, таблицы, подзаголовки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Мета-описания и title\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внешняя оптимизация (off-page)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Обратные ссылки с других сайтов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Упоминания бренда\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Авторитет домена\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"UX и поведенческие факторы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Время на сайте\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Глубина просмотра\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Отказы (bounce rate)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем нужно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чтобы сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"попадал в топ поисковой выдачи\"},{\"type\":\"text\",\"text\":\", люди его находили, переходили и совершали нужные действия — покупку, регистрацию, подписку и т.д. Без SEO сайт — как магазин без вывески.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:25:49.762Z",
+        "updatedAt": "2025-10-23T09:25:49.762Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как отслеживать ошибки на фронтенде?",
+        "id": 2423,
+        "premium": true,
+        "category": {
+          "id": 84,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие цели преследует SEO-оптимизация?",
+        "id": 2425,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2425,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие цели преследует SEO-оптимизация?\"}]}]}",
+        "title": "Какие цели преследует SEO-оптимизация?",
+        "order": 90001,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Цели SEO-оптимизации:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Привлечение органического трафика\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главная цель — чтобы люди сами находили сайт через поисковые запросы, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без платной рекламы\"},{\"type\":\"text\",\"text\":\". Это даёт стабильный, долгосрочный поток пользователей.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Рост позиций в поисковой выдаче\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быть в топ‑3 по нужным ключевым словам — значит, получать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"больше кликов и охвата\"},{\"type\":\"text\",\"text\":\", чем конкуренты. Чем выше позиция — тем больше доверия.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повышение видимости бренда\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Даже если пользователь не кликает, он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"замечает бренд в выдаче\"},{\"type\":\"text\",\"text\":\". Это работает на узнаваемость и ассоциации: \\\"Эта компания везде\\\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Увеличение конверсий\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Трафик → внимание → действия. Хорошо оптимизированный контент подводит человека к нужному действию: покупке, заявке, подписке.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Снижение зависимости от рекламы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SEO — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"инвестиция\"},{\"type\":\"text\",\"text\":\", а не аренда. В отличие от платного трафика, органика остаётся работать даже без постоянных вливаний.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Долгосрочный рост и устойчивость\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SEO строится медленно, но надолго. Это фундамент, на котором растёт продукт, блог или бизнес.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" SEO — это не только про «ключевые слова». Это стратегия, которая делает сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заметным, надёжным и прибыльным\"},{\"type\":\"text\",\"text\":\" в глазах и поисковика, и пользователя.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:26:21.083Z",
+        "updatedAt": "2025-10-23T09:28:10.445Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое SEO?",
+        "id": 2424,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое органический трафик?",
+        "id": 2426,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2430,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ранжирование?\"}]}]}",
+        "title": "Что такое ранжирование?",
+        "order": 90001,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ранжирование\"},{\"type\":\"text\",\"text\":\" — это процесс, при котором поисковая система \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"оценивает и упорядочивает страницы в результатах поиска по степени релевантности\"},{\"type\":\"text\",\"text\":\" запросу пользователя.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как работает ранжирование:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"После сканирования и индексации\"},{\"type\":\"text\",\"text\":\" страница попадает в базу.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда пользователь вводит запрос, система:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— находит подходящие страницы в индексе,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— оценивает их по сотням факторов,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— сортирует по степени полезности и качества.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что влияет на ранжирование:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевые слова\"},{\"type\":\"text\",\"text\":\" в заголовках, тексте, URL\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Качество контента\"},{\"type\":\"text\",\"text\":\" (уникальность, полнота, структура)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Юзабилити\"},{\"type\":\"text\",\"text\":\" (скорость загрузки, адаптивность, дизайн)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поведение пользователей\"},{\"type\":\"text\",\"text\":\" (время на странице, клики, возвраты)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обратные ссылки\"},{\"type\":\"text\",\"text\":\" (какие сайты ссылаются на эту страницу)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Технические параметры\"},{\"type\":\"text\",\"text\":\" (ошибки, безопасность, мобильность)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"E-E-A-T\"},{\"type\":\"text\",\"text\":\" — экспертность, надёжность, авторитет, опыт\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ранжирование — это то, что решает, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"будет ли твой сайт на первой странице или затеряется на десятой\"},{\"type\":\"text\",\"text\":\". Это ядро поисковой выдачи.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:28:56.559Z",
+        "updatedAt": "2025-11-10T11:29:33.618Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое SEO?",
+        "id": 2424,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое органический трафик?",
+        "id": 2426,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2426,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое органический трафик?\"}]}]}",
+        "title": "Что такое органический трафик?",
+        "order": 90002,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Органический трафик\"},{\"type\":\"text\",\"text\":\" — это переходы на сайт из поисковых систем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без оплаты рекламы\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Источник:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"— Человек вводит запрос в Google или Яндекс → видит результаты поиска → кликает на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обычную (не рекламную)\"},{\"type\":\"text\",\"text\":\" ссылку → попадает на сайт.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это и есть органика.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"В отличие от:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Контекстной рекламы (PPC)\"},{\"type\":\"text\",\"text\":\" — платные клики из объявлений\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Соцсетей\"},{\"type\":\"text\",\"text\":\" — переходы из Instagram, VK, Telegram\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Прямого трафика\"},{\"type\":\"text\",\"text\":\" — человек набрал URL вручную\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Реферального\"},{\"type\":\"text\",\"text\":\" — переход с другого сайта по ссылке\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Почему он ценен:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Бесплатный (в долгосрочной перспективе)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Надёжный и предсказуемый\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Часто приводит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"целевую аудиторию\"},{\"type\":\"text\",\"text\":\", которая сама ищет решение\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Органический трафик — это внимание, за которое не платят напрямую. Его сложно получить, но если получилось — он приносит стабильный поток и рост.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:26:29.660Z",
+        "updatedAt": "2025-10-23T09:28:01.458Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие цели преследует SEO-оптимизация?",
+        "id": 2425,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое индексирование?",
+        "id": 2427,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2431,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что влияет на позиции сайта в выдаче?\"}]}]}",
+        "title": "Что влияет на позиции сайта в выдаче?",
+        "order": 90002,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На позиции сайта в поисковой выдаче влияет сочетание \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"контента, технического состояния, авторитета и поведения пользователей\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Вот основные группы факторов:\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔍 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Качество и релевантность контента\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Наличие ключевых слов в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"заголовках\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тексте\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"meta-тегах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Полнота ответа\"},{\"type\":\"text\",\"text\":\" на пользовательский запрос\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Уникальность\"},{\"type\":\"text\",\"text\":\" и отсутствие дублирования\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Структурированность\"},{\"type\":\"text\",\"text\":\": подзаголовки, списки, таблицы\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Актуальность: насколько контент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"свежий и обновляемый\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"⚙️ 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Техническая оптимизация\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость загрузки\"},{\"type\":\"text\",\"text\":\" (особенно LCP из Core Web Vitals)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Адаптивность под мобильные устройства\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отсутствие технических ошибок (404, redirect loop и др.)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Грамотная структура сайта и sitemap.xml\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отсутствие блокировок в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" и корректные canonical-теги\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔗 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внешние факторы (авторитет)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Количество и качество ссылок\"},{\"type\":\"text\",\"text\":\" с других сайтов\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Репутация домена и траст\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Упоминания в СМИ, соцсетях, форумах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Совпадение с географией запроса (если локальный бизнес)\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"👁️ 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поведенческие сигналы\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CTR\"},{\"type\":\"text\",\"text\":\" (кликают ли по ссылке в выдаче)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Bounce rate\"},{\"type\":\"text\",\"text\":\" (уходят ли сразу)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Время на странице\"},{\"type\":\"text\",\"text\":\" и глубина просмотра\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Повторные визиты\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🧠 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"E-E-A-T (от Google)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Experience\"},{\"type\":\"text\",\"text\":\" — личный опыт автора\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Expertise\"},{\"type\":\"text\",\"text\":\" — экспертность контента\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Authoritativeness\"},{\"type\":\"text\",\"text\":\" — авторитет сайта\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Trustworthiness\"},{\"type\":\"text\",\"text\":\" — надёжность и безопасность\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Позиция сайта — это результат \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"многослойной оценки\"},{\"type\":\"text\",\"text\":\". Одних ключевых слов мало. Нужно, чтобы сайт был полезным, быстрым, безопасным, заслуживающим доверия и честно удерживал внимание.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:29:20.345Z",
+        "updatedAt": "2025-10-23T09:29:20.345Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какие цели преследует SEO-оптимизация?",
+        "id": 2425,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое индексирование?",
+        "id": 2427,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2427,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое индексирование?\"}]}]}",
+        "title": "Что такое индексирование?",
+        "order": 90003,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Индексирование\"},{\"type\":\"text\",\"text\":\" — это процесс, при котором поисковая система \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сохраняет страницы сайта в своей базе данных (индексе)\"},{\"type\":\"text\",\"text\":\", чтобы потом показывать их в результатах поиска.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это происходит:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Краулер (бот)\"},{\"type\":\"text\",\"text\":\" заходит на сайт — сканирует HTML, CSS, контент, ссылки.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Извлекает важную информацию\"},{\"type\":\"text\",\"text\":\" — заголовки, текст, мета-теги, структуру.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Добавляет страницу в индекс\"},{\"type\":\"text\",\"text\":\" — то есть сохраняет её в своей поисковой базе.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При следующем поисковом запросе — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ищет не в интернете, а в своём индексе\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Зачем это нужно:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пока страница \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не проиндексирована\"},{\"type\":\"text\",\"text\":\", она \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не может появиться в выдаче\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сайт может существовать, но быть «невидимым» для Google.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что влияет на индексирование:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"— Наличие ссылки на страницу (внутренней или внешней)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— robots.txt и мета-тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noindex\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Скорость загрузки и доступность сайта\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Структура и карта сайта (sitemap.xml)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Дублирование контента\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Индексирование — это как добавление книги в каталог библиотеки. Пока её там нет — никто не найдёт.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:26:44.741Z",
+        "updatedAt": "2025-10-23T09:27:50.391Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое органический трафик?",
+        "id": 2426,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое сканирование сайта (краулинг)?",
+        "id": 2428,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2428,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое сканирование сайта (краулинг)?\"}]}]}",
+        "title": "Что такое сканирование сайта (краулинг)?",
+        "order": 90004,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сканирование сайта (краулинг)\"},{\"type\":\"text\",\"text\":\" — это процесс, при котором поисковые боты (краулеры) \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"обходят страницы сайта, чтобы обнаружить, что на них есть\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Как это работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Бот заходит на сайт по ссылке\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, Googlebot начинает с главной страницы или внешней ссылки.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Читает HTML-код\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Извлекает текст, заголовки, ссылки, изображения, мета-теги.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Находит новые ссылки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Бот переходит по ним и сканирует дальше — это и есть “ползание” по сайту (crawl).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сохраняет данные\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё найденное передаётся на индексацию — чтобы позже показать в поиске.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что влияет на краулинг:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\" — может запретить доступ к отдельным разделам.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость сервера\"},{\"type\":\"text\",\"text\":\" — если сайт медленный, бот будет реже заходить.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внутренняя перелинковка\"},{\"type\":\"text\",\"text\":\" — чем лучше структура ссылок, тем глубже бот проходит.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Краул-бюджет\"},{\"type\":\"text\",\"text\":\" — лимит на количество страниц, которые бот готов просмотреть на сайте.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Важно:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Краулинг ≠ индексирование\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Бот может просканировать страницу, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не включить её в индекс\"},{\"type\":\"text\",\"text\":\" (например, из-за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noindex\"},{\"type\":\"text\",\"text\":\", дубля или пустого контента).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Краулинг — это как разведка: бот изучает сайт, чтобы решить, что из этого стоит сохранить и показать пользователям.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:27:04.412Z",
+        "updatedAt": "2025-10-23T09:27:39.453Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое индексирование?",
+        "id": 2427,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает поисковый бот (crawler, spider)?",
+        "id": 2429,
+        "premium": true,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2429,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает поисковый бот (crawler, spider)?\"}]}]}",
+        "title": "Что делает поисковый бот (crawler, spider)?",
+        "order": 90005,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поисковый бот\"},{\"type\":\"text\",\"text\":\" (также crawler, spider) — это программа, которую поисковая система (например, Google или Яндекс) использует для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"автоматического обхода и анализа сайтов в интернете\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что делает поисковый бот:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Находит страницы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Начинает с известных URL, затем переходит по ссылкам внутри страниц, открывает другие ресурсы, расширяя карту интернета.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сканирует содержимое\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Читает HTML, заголовки, текст, мета-теги, ссылки, изображения — всё, что есть в коде страницы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оценивает доступность\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Проверяет, можно ли индексировать страницу (смотрит на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"robots.txt\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noindex\"},{\"type\":\"text\",\"text\":\", статус-коды).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обнаруживает обновления\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Периодически возвращается, чтобы понять — появилось ли что-то новое или изменилось старое.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Передаёт данные на индексацию\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё, что считает полезным, он передаёт в поисковый индекс — там это уже обрабатывается для ранжирования.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Что бот не делает:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"— Не заполняет формы,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Не всегда исполняет JavaScript (зависит от движка),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Не просматривает закрытые или защищённые паролем страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поисковый бот — это как робот-архивариус, который постоянно бродит по интернету, собирая данные для поисковой системы. Если он не пришёл — страницы для поиска не существует.\"}]}]}",
+        "grade": null,
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 148,
+        "createdAt": "2025-10-23T09:27:28.730Z",
+        "updatedAt": "2025-11-10T11:29:40.256Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 148,
+          "title": "Основы SEO",
+          "directions": [
+            {
+              "categoryId": 148,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое сканирование сайта (краулинг)?",
+        "id": 2428,
+        "premium": false,
+        "category": {
+          "id": 148,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое семантическая вёрстка?",
+        "id": 2432,
+        "premium": false,
+        "category": {
+          "id": 150,
+          "parent": {
+            "title": "SEO",
+            "id": 9,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

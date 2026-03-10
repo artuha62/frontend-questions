@@ -1,0 +1,522 @@
+{
+  "category": {
+    "id": 83,
+    "title": "Storybook",
+    "description": " ",
+    "parentId": 8
+  },
+  "totalQuestions": 6,
+  "downloadedAt": "2026-03-09T08:44:55.771Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2403,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Storybook?\"}]}]}",
+        "title": "Что такое Storybook?",
+        "order": 80700,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Storybook — это инструмент для разработки, тестирования и документации компонентов пользовательского интерфейса в изоляции. Он используется в основном с такими библиотеками, как React, Vue, Angular и другими.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"визуально отображать компоненты без запуска всего приложения,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"создавать интерактивную «документацию» на каждый компонент (с примерами состояний и входных данных),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проводить тестирование интерфейса (визуальное, взаимодействий и доступности),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"облегчать работу дизайнеров, разработчиков и тестировщиков при командной разработке интерфейсных библиотек.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:17:40.111Z",
+        "updatedAt": "2025-10-23T09:18:00.749Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему изображения — важная причина медленной загрузки?",
+        "id": 2402,
+        "premium": true,
+        "category": {
+          "id": 82,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Для чего используется Storybook?",
+        "id": 2404,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2404,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для чего используется Storybook?\"}]}]}",
+        "title": "Для чего используется Storybook?",
+        "order": 80701,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Storybook используется для:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Изолированной разработки UI-компонентов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Позволяет разрабатывать и просматривать компоненты вне контекста основного приложения — без бизнес-логики, маршрутизации и всего остального.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Визуальной документации\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Каждый компонент оформляется в виде истории (story) с разными состояниями. Это создаёт живую документацию, которую легко просматривать и обновлять.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тестирования внешнего вида и поведения\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поддерживает визуальные тесты (например, snap-тесты), проверку на доступность и автоматизацию пользовательских сценариев.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Командной работы\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Упрощает взаимодействие между дизайнерами, разработчиками и QA — все видят, как должен выглядеть и работать каждый компонент.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Дизайн-систем и переиспользуемых библиотек\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Идеален для построения масштабируемых дизайн-систем, в которых важна чёткость, повторяемость и контроль состояния каждого элемента интерфейса.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:18:16.104Z",
+        "updatedAt": "2025-10-23T09:18:16.104Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Storybook?",
+        "id": 2403,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему Storybook называют “UI playground”?",
+        "id": 2405,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2405,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему Storybook называют “UI playground”?\"}]}]}",
+        "title": "Почему Storybook называют “UI playground”?",
+        "order": 80702,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Потому что Storybook — это место, где компоненты интерфейса можно \\\"играть\\\" в изоляции:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Без всего приложения вокруг.\"},{\"type\":\"text\",\"text\":\" Компонент не зависит от маршрутов, глобального состояния или других модулей.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Можно менять пропсы, состояния, стили — вживую.\"},{\"type\":\"text\",\"text\":\" Это как лаборатория: что будет, если передать такой текст? А если отключить кнопку? А если сделать экран тёмным?\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"У каждой “истории” — свой сценарий.\"},{\"type\":\"text\",\"text\":\" Каждый компонент можно протестировать на крайних кейсах — загрузка, ошибка, пустое состояние и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Всё визуально.\"},{\"type\":\"text\",\"text\":\" Ты видишь изменения сразу, не нужно билдить или переходить по страницам.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Такое пространство и называют playground — потому что можно безопасно экспериментировать с UI, как в песочнице.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:18:29.534Z",
+        "updatedAt": "2025-10-23T09:18:29.534Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Для чего используется Storybook?",
+        "id": 2404,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое UI-catalog?",
+        "id": 2406,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2406,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое UI-catalog?\"}]}]}",
+        "title": "Что такое UI-catalog?",
+        "order": 80703,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"UI-catalog — это визуальное собрание всех компонентов пользовательского интерфейса, используемых в проекте.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он нужен для:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Обзора компонентов.\"},{\"type\":\"text\",\"text\":\" Кнопки, формы, карточки, таблицы и прочее — в одном месте.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повторного использования.\"},{\"type\":\"text\",\"text\":\" Дизайнеры и разработчики видят, какие элементы уже есть, и не изобретают заново.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Унификации дизайна.\"},{\"type\":\"text\",\"text\":\" Все элементы следуют одной системе: одни отступы, цвета, шрифты, поведение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Документации.\"},{\"type\":\"text\",\"text\":\" Часто UI-catalog показывает не только визуал, но и описание: как использовать, какие есть состояния, какие пропсы доступны.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Тестирования.\"},{\"type\":\"text\",\"text\":\" В каталоге проще находить баги, смотреть крайние состояния и проверять доступность.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"По сути — это витрина всех “кирпичиков” интерфейса. Storybook как раз может выполнять эту роль.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:18:41.660Z",
+        "updatedAt": "2025-10-23T09:18:41.660Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему Storybook называют “UI playground”?",
+        "id": 2405,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как Storybook может быть полезен в UI скриншотном тестировании?",
+        "id": 2407,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2407,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как Storybook может быть полезен в UI скриншотном тестировании?\"}]}]}",
+        "title": "Как Storybook может быть полезен в UI скриншотном тестировании?",
+        "order": 80704,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Storybook полезен в UI скриншотном тестировании, потому что:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Каждый компонент уже изолирован.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Storybook по сути — готовая среда, где каждый компонент рендерится отдельно. Это идеальное место для автоматической съёмки скриншотов: нет стороннего шума, нет зависимости от роутов или данных.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Легко зафиксировать визуальные состояния.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Можно задать несколько \\\"историй\\\" для одного компонента (например: по умолчанию, при ошибке, при загрузке) — и сравнивать их скриншоты в разных ветках или релизах.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Интеграция с инструментами.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Storybook хорошо работает с библиотеками визуального регрессионного тестирования, например:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Chromatic\"},{\"type\":\"text\",\"text\":\" (официальный инструмент от создателей Storybook),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Percy\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Loki\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"BackstopJS\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они делают скриншоты, сравнивают пиксель в пиксель и сигналят, если что-то «поехало».\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Автоматизация без браузера.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё можно запускать в CI/CD пайплайне. Компоненты рендерятся — скриншоты снимаются — отклонения проверяются.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Контроль над изменениями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Любое случайное изменение стилей, отступов, теней или цвета — сразу видно на скриншоте. Это даёт жёсткую гарантию, что UI остался стабильным.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" Storybook — это не только playground, но и точка входа для жёсткой визуальной валидации интерфейса, без ручного тыканья.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:19:05.814Z",
+        "updatedAt": "2025-10-23T09:19:05.814Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое UI-catalog?",
+        "id": 2406,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “story” в Storybook?",
+        "id": 2408,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2408,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “story” в Storybook?\"}]}]}",
+        "title": "Что такое “story” в Storybook?",
+        "order": 80705,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В Storybook “story” — это конкретное визуальное состояние UI-компонента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проще:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Компонент\"},{\"type\":\"text\",\"text\":\" — это, например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<Button />\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Сторис\"},{\"type\":\"text\",\"text\":\" — это вариант этого компонента:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— “Primary кнопка”,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— “Disabled кнопка”,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— “С иконкой”,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— “Загрузка…”\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждая “story” описывается как отдельная функция, возвращающая JSX/HTML с нужными пропсами. Storybook рендерит её как самостоятельную страницу. Так разработчик, дизайнер или тестировщик может быстро просмотреть, как компонент ведёт себя в разных ситуациях.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это похоже на витрину с вариантами одного и того же элемента.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 83,
+        "createdAt": "2025-10-23T09:19:20.236Z",
+        "updatedAt": "2025-10-23T09:19:20.236Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 83,
+          "title": "Storybook",
+          "directions": [
+            {
+              "categoryId": 83,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как Storybook может быть полезен в UI скриншотном тестировании?",
+        "id": 2407,
+        "premium": false,
+        "category": {
+          "id": 83,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Зачем внедрять аналитику в веб-приложениях?",
+        "id": 2409,
+        "premium": false,
+        "category": {
+          "id": 84,
+          "parent": {
+            "title": "Frontend инструменты",
+            "id": 8,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

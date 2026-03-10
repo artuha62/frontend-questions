@@ -1,0 +1,400 @@
+{
+  "category": {
+    "id": 228,
+    "title": "yarn",
+    "description": " ",
+    "parentId": 78
+  },
+  "totalQuestions": 4,
+  "downloadedAt": "2026-03-10T09:55:22.377Z",
+  "questions": [
+    {
+      "current": {
+        "id": 2276,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое Yarn?\"}]}]}",
+        "title": "Что такое Yarn?",
+        "order": 80220,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Yarn\"},{\"type\":\"text\",\"text\":\" — это менеджер пакетов для JavaScript-проектов, созданный Facebook как альтернатива npm. Он выполняет те же задачи, что и npm (установка зависимостей, управление версиями, запуск скриптов), но был разработан для повышения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорости, стабильности и предсказуемости сборок\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Основные особенности Yarn\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Более быстрое скачивание пакетов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Yarn использует агрессивное кеширование, что ускоряет повторные установки.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детерминированные (предсказуемые) зависимости\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Файл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn.lock\"},{\"type\":\"text\",\"text\":\" фиксирует точные версии, обеспечивая одинаковую установку у всех разработчиков.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Параллельная установка пакетов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В отличие от исторических версий npm, Yarn строит дерево зависимостей и устанавливает их быстрее.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Улучшенный вывод и UX для разработчика\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Команды короче, вывод чище, меньше шума.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Где применяется\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"в React-, Next.js-, Node.js-проектах\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"как альтернатива npm, когда важны стабильность и скорость\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"на CI/CD, чтобы гарантировать одинаковые сборки\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Yarn — это альтернативный пакетный менеджер для Node.js-проектов\"},{\"type\":\"text\",\"text\":\", ориентированный на скорость, надёжность и детерминированность, выполняющий те же функции, что и npm, но с другим подходом к установке и управлению зависимостями.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 228,
+        "createdAt": "2025-10-23T08:06:03.062Z",
+        "updatedAt": "2025-10-23T08:06:03.062Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 228,
+          "title": "yarn",
+          "directions": [
+            {
+              "categoryId": 228,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Как запустить скрипт по имени?",
+        "id": 2271,
+        "premium": false,
+        "category": {
+          "id": 227,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему появился Yarn, если уже был npm?",
+        "id": 2277,
+        "premium": false,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2277,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему появился Yarn, если уже был npm?\"}]}]}",
+        "title": "Почему появился Yarn, если уже был npm?",
+        "order": 80221,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn появился как реакция на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"проблемы ранних версий npm\"},{\"type\":\"text\",\"text\":\", которые на тот момент существенно мешали разработчикам в крупных проектах. Facebook, Google и другие компании столкнулись с этими ограничениями и создали Yarn как более надёжный и быстрый инструмент.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Какие проблемы npm решал Yarn\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Непредсказуемость зависимостей\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Раньше \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"npm install\"},{\"type\":\"text\",\"text\":\" мог устанавливать разные версии пакетов на разных машинах. Yarn ввёл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn.lock\"},{\"type\":\"text\",\"text\":\" и гарантировал детерминированную установку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Медленная установка\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"npm устанавливал пакеты последовательно, что делало процесс заметно медленным. Yarn сделал \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"параллельную установку\"},{\"type\":\"text\",\"text\":\", что ускорило скачивание.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Отсутствие эффективного кеширования\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Yarn начал агрессивно кешировать пакеты. Повторный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn install\"},{\"type\":\"text\",\"text\":\" стал значительно быстрее, чем в npm того времени.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблемы с офлайн-работой\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Yarn позволял ставить пакеты даже без интернета, если те уже были в кеше.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Более строгий и предсказуемый контроль версий\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это было критично для больших команд и монорепозиториев.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn появился, потому что в тот момент он предлагал:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Преимущество над npm (на момент появления)\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что давал\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"детерминированные сборки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"одинаковый результат у всех разработчиков\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"скорость\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"параллельная установка + кеш\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стабильность\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"строгий контроль зависимостей\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"удобство\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"лучшее управление пакетами\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позже npm перенял многие идеи Yarn (lock-файл, кеш, параллельность), но Yarn стал двигателем прогресса в экосистеме и появился именно для решения реальных ограничений npm.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 228,
+        "createdAt": "2025-10-23T08:06:20.415Z",
+        "updatedAt": "2025-10-23T08:06:20.415Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 228,
+          "title": "yarn",
+          "directions": [
+            {
+              "categoryId": 228,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое Yarn?",
+        "id": 2276,
+        "premium": false,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем Yarn отличается от npm?",
+        "id": 2278,
+        "premium": true,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2278,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем Yarn отличается от npm?\"}]}]}",
+        "title": "Чем Yarn отличается от npm?",
+        "order": 80222,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Yarn\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"npm\"},{\"type\":\"text\",\"text\":\" — это два пакетных менеджера для Node.js, выполняющие одинаковые задачи, но различающиеся по подходу, скорости и организации работы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевые отличия\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Критерий\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"npm\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Файл блокировок\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"package-lock.json\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn.lock\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Скорость установки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"исторически медленнее\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"быстрее за счёт параллельной установки и кеша\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Кеширование\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"стандартное\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"агрессивное, даёт выигрыш при повторных установках\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детерминированность зависимостей\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"появилась позже\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"была изначально, один из главных плюсов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Оффлайн-установка\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ограниченная\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"возможна, если пакет есть в кеше\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Работа с монорепо\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"через внешние инструменты\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"встроенная поддержка через Yarn Workspaces\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"По сути\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"npm\"},{\"type\":\"text\",\"text\":\" — стандартный, встроенный в Node.js менеджер пакетов. Основной, базовый вариант, подходит для большинства проектов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Yarn\"},{\"type\":\"text\",\"text\":\" — более быстрый и детерминированный менеджер пакетов, созданный для улучшения UX, предсказуемости и работы в командах.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"npm\"},{\"type\":\"text\",\"text\":\" — базовый менеджер пакетов, который «идёт из коробки».\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Yarn\"},{\"type\":\"text\",\"text\":\" — альтернатива, ориентированная на скорость, стабильность зависимостей и удобство в крупных проектах.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Функционально они решают одну задачу, но Yarn исторически предложил более надёжные и быстрые механизмы работы с зависимостями, из-за чего стал популярным и продвинул развитие всей экосистемы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 228,
+        "createdAt": "2025-10-23T08:06:35.097Z",
+        "updatedAt": "2025-11-10T16:28:09.641Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 228,
+          "title": "yarn",
+          "directions": [
+            {
+              "categoryId": 228,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему появился Yarn, если уже был npm?",
+        "id": 2277,
+        "premium": false,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему Yarn считается быстрым?",
+        "id": 2279,
+        "premium": false,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 2279,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему Yarn считается быстрым?\"}]}]}",
+        "title": "Почему Yarn считается быстрым?",
+        "order": 80223,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn считается быстрым из-за особенностей своей архитектуры и подхода к установке пакетов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"1. Параллельная установка зависимостей\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"npm долгое время устанавливал пакеты последовательно. Yarn с самого начала загружает и устанавливает зависимости \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"параллельно\"},{\"type\":\"text\",\"text\":\", используя доступные ресурсы процессора. Это заметно ускоряет процесс на больших проектах.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"2. Агрессивное кеширование\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn сохраняет каждую загруженную версию пакета в локальный кеш и при повторной установке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не скачивает её заново\"},{\"type\":\"text\",\"text\":\". Повторный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn install\"},{\"type\":\"text\",\"text\":\" выполняется значительно быстрее, чем \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"npm install\"},{\"type\":\"text\",\"text\":\", особенно на CI и больших командах.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"3. Детерминированность \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn.lock\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Благодаря \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"yarn.lock\"},{\"type\":\"text\",\"text\":\" Yarn строит дерево зависимостей \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"детерминированно\"},{\"type\":\"text\",\"text\":\", без “пересборок” дерева, что снижает количество конфликтов и ускоряет процесс установки при повторных запусках.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"4. Меньше «шума» при работе с файловой системой\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn оптимизирует количество операций записи в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"node_modules\"},{\"type\":\"text\",\"text\":\", в отличие от ранних npm, который создавал множество лишних обращений к диску (что замедляло установку на HDD и CI).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yarn быстрее благодаря \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"параллельной установке, эффективному кешированию, детерминированной структуре зависимостей и оптимизированной работе с файловой системой\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 228,
+        "createdAt": "2025-10-23T08:06:58.281Z",
+        "updatedAt": "2025-10-23T08:06:58.281Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 228,
+          "title": "yarn",
+          "directions": [
+            {
+              "categoryId": 228,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем Yarn отличается от npm?",
+        "id": 2278,
+        "premium": true,
+        "category": {
+          "id": 228,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое pnpm?",
+        "id": 2280,
+        "premium": false,
+        "category": {
+          "id": 229,
+          "parent": {
+            "title": "Пакетные менеджеры",
+            "id": 78,
+            "parent": {
+              "title": "Frontend инструменты",
+              "id": 8,
+              "parent": null
+            }
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

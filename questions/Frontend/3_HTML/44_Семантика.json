@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 44,
+    "title": "Семантика",
+    "description": " ",
+    "parentId": 3
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-09T07:46:24.140Z",
+  "questions": [
+    {
+      "current": {
+        "id": 716,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что означает термин «семантика» в контексте HTML?\"}]}]}",
+        "title": "Что означает термин «семантика» в контексте HTML?",
+        "order": 30200,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Семантика в HTML\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"смысловое значение тегов\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"То есть, это способ \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"передать браузеру, поисковику и человеку\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что именно обозначает конкретный фрагмент контента\"},{\"type\":\"text\",\"text\":\", а не просто как он выглядит.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Простыми словами:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML можно использовать просто для “рисования” структуры,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"семантический HTML\"},{\"type\":\"text\",\"text\":\" описывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"смысл\"},{\"type\":\"text\",\"text\":\", а не оформление.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<b>Важно!</b>  \\n<strong>Важно!</strong>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба выделят текст \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"жирным\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"но:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<b>\"},{\"type\":\"text\",\"text\":\" — просто визуальное выделение (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без смысла\"},{\"type\":\"text\",\"text\":\"),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<strong>\"},{\"type\":\"text\",\"text\":\" — семантически означает “важный текст” (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"со смыслом\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузеры, поисковики и программы для чтения с экрана (например, для людей с нарушением зрения) \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понимают разницу\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Зачем нужна семантика:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Повышает доступность\"},{\"type\":\"text\",\"text\":\" — экранные дикторы могут правильно озвучивать структуру.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Улучшает SEO\"},{\"type\":\"text\",\"text\":\" — поисковики лучше понимают, где заголовок, статья, навигация и т.д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Облегчает поддержку кода\"},{\"type\":\"text\",\"text\":\" — человеку проще ориентироваться в логичной структуре.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Упрощает стилизацию\"},{\"type\":\"text\",\"text\":\" — CSS можно применять по смысловым тегам.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Примеры семантических тегов\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантический тег\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шапка страницы или раздела\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигационное меню\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основное содержимое страницы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самостоятельная статья или запись\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Раздел страницы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<aside>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Боковая панель, дополнительный контент\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подвал страницы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<figure>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<figcaption>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изображение и его подпись\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<strong>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<em>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важное и акцентированное выделение\"}]}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<header>\\n  <h1>Новости</h1>\\n  <nav>\\n    <a href=\\\"#\\\">Главная</a>\\n    <a href=\\\"#\\\">Контакты</a>\\n  </nav>\\n</header>\\n\\n<main>\\n  <article>\\n    <h2>HTML стал ещё проще</h2>\\n    <p>Теперь семантические теги — стандарт.</p>\\n  </article>\\n</main>\\n\\n<footer>\\n  <p>© 2025 Мой сайт</p>\\n</footer>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Несемантические теги (для сравнения)\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" — просто контейнер без смысла.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\" — строчный контейнер без смысла.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Их можно использовать, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только когда нет подходящего семантического тега\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Термин\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Семантика\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Смысловое использование тегов для описания структуры и значения контента\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Зачем нужна\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы браузеры, поисковики и пользователи понимали смысл страницы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\" — шапка, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\" — статья, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\" — подвал\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Простыми словами:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Семантика в HTML — это когда код говорит не только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"“как выглядит”\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"но и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"“что это значит”\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это делает сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понятным не только глазу, но и мозгу — и браузера, и человека.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:45:00.411Z",
+        "updatedAt": "2025-10-18T07:45:00.411Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое атрибут в HTML?",
+        "id": 715,
+        "premium": true,
+        "category": {
+          "id": 43,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему семантическая разметка важна для веб-разработки?",
+        "id": 717,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 717,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему семантическая разметка важна для веб-разработки?\"}]}]}",
+        "title": "Почему семантическая разметка важна для веб-разработки?",
+        "order": 30201,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Очень хороший и уже «взрослый» вопрос 👇\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Семантическая разметка\"},{\"type\":\"text\",\"text\":\" — это не просто про красивый HTML-код.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"основа “умного” веба\"},{\"type\":\"text\",\"text\":\", где страница понятна не только глазу, но и машинам, поисковикам, программам чтения и самим разработчикам.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Потому что семантика придаёт смысл контенту\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML без семантики — просто набор блоков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\").\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Браузер покажет, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не поймёт, что это\"},{\"type\":\"text\",\"text\":\" — меню, статья, подвал или реклама.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div>\\n  <div>Новости</div>\\n  <div>Контакты</div>\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер видит «кучу дивов».\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"А вот семантическая версия:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<nav>\\n  <a href=\\\"#\\\">Новости</a>\\n  <a href=\\\"#\\\">Контакты</a>\\n</nav>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Теперь понятно: это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навигация\"},{\"type\":\"text\",\"text\":\", а не просто текст.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" семантика добавляет смысл, а не только форму.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для поисковых систем (SEO)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковики (Google, Yandex и др.) \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"анализируют структуру\"},{\"type\":\"text\",\"text\":\" страницы, чтобы понять,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"где заголовки, контент, ссылки, меню и футер.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\" → это статья.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\" → начало раздела.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" → главный заголовок.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда структура осмысленная, поисковик \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лучше индексирует страницу\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а значит — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выше место в поиске\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" семантика напрямую влияет на SEO и видимость сайта.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для доступности (Accessibility, A11y)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические теги позволяют программам для слабовидящих \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правильно озвучивать\"},{\"type\":\"text\",\"text\":\" страницу.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" объявляется как “Навигация”, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" — как “Основной контент”.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Без семантики скринридер просто говорит:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Блок, блок, блок, блок…”\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" семантика делает сайты доступными \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всем пользователям\"},{\"type\":\"text\",\"text\":\", а не только зрячим.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для разработчиков и поддержки\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Код с семантическими тегами \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"читабелен, логичен и масштабируем\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Через полгода, открыв проект, ты сразу понимаешь,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"где контент, где меню, где футер — без догадок и лишних комментариев.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<header>...</header>\\n<main>...</main>\\n<footer>...</footer>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Гораздо понятнее, чем:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div class=\\\"top\\\">...</div>\\n<div class=\\\"center\\\">...</div>\\n<div class=\\\"bottom\\\">...</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" семантика — это как чистый код в программировании: упрощает жизнь всем.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Для будущих технологий\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Голосовые помощники, искусственный интеллект, “умные” браузеры и читалки\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"понимают сайты именно через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"семантику\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без неё контент просто «плоский» и непонятный машине.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"text\",\"text\":\" семантическая разметка делает сайт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"готовым к будущему\"},{\"type\":\"text\",\"text\":\" — где страницы читают не только люди.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Причина\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что даёт\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Смысловая структура\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер понимает, где что\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SEO\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Лучше индексируется в поиске\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Доступность\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поддержка скринридеров\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поддерживаемость кода\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Понятный и чистый HTML\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Совместимость с ИИ и голосовыми системами\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Готовность к будущим форматам восприятия контента\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Простыми словами:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Семантическая разметка делает HTML \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"умным\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она помогает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"браузеру понимать, разработчику — читать, поисковику — находить, пользователю — пользоваться\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без неё сайт — просто “картинка”, с ней — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"живая, логичная система\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:46:29.651Z",
+        "updatedAt": "2025-10-18T07:46:29.651Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что означает термин «семантика» в контексте HTML?",
+        "id": 716,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как семантика влияет на SEO?",
+        "id": 718,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 718,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как семантика влияет на SEO?\"}]}]}",
+        "title": "Как семантика влияет на SEO?",
+        "order": 30202,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантика напрямую влияет на SEO, потому что помогает поисковым системам \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понимать смысл и структуру страницы\"},{\"type\":\"text\",\"text\":\", а не просто видеть набор текста и тегов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Поисковик лучше понимает содержание\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда ты используешь семантические теги (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\"), поисковый бот понимает, где основная статья, где меню, где подвал, где вспомогательные блоки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это помогает ему \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правильно классифицировать контент\"},{\"type\":\"text\",\"text\":\" и повысить релевантность страницы в выдаче.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Повышается значимость ключевых слов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Заголовки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\"–\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h6>\"},{\"type\":\"text\",\"text\":\" и семантические элементы помогают поисковику определить, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"что главное, а что второстепенное\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Например, текст внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<strong>\"},{\"type\":\"text\",\"text\":\" считается более важным для тематики страницы, чем текст в обычном \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<p>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. Снижается риск дублирования и путаницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При правильной семантической структуре поисковик видит, где контент повторяется (например, меню или футер),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и не воспринимает эти элементы как “мусорный текст”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он фокусируется на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уникальном содержимом\"},{\"type\":\"text\",\"text\":\" — основном блоке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. Улучшается видимость сниппетов\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантическая разметка (включая \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"structured data\"},{\"type\":\"text\",\"text\":\", например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"http://Schema.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"Schema.org\"},{\"type\":\"text\",\"text\":\") позволяет поисковикам показывать расширенные сниппеты —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"оценки, даты, изображения, FAQ.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это повышает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"CTR\"},{\"type\":\"text\",\"text\":\" (процент переходов из поиска).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. Повышается доступность и поведенческие факторы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантический HTML улучшает взаимодействие пользователей с сайтом,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"делая его удобнее и понятнее. Это снижает показатель отказов,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"повышает время на странице — а эти метрики \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"влияют на SEO\"},{\"type\":\"text\",\"text\":\" косвенно.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Семантика помогает поисковику “читать страницу как человек”: понимать, где смысл, где структура и что действительно важно.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Результат — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"лучшее ранжирование, понятные сниппеты и более высокий трафик\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:47:37.385Z",
+        "updatedAt": "2025-10-18T07:47:37.385Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему семантическая разметка важна для веб-разработки?",
+        "id": 717,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему не рекомендуется использовать <div> и <span> для всего контента страницы?",
+        "id": 719,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 719,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему не рекомендуется использовать <div> и <span> для всего контента страницы?\"}]}]}",
+        "title": "Почему не рекомендуется использовать <div> и <span> для всего контента страницы?",
+        "order": 30203,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\" для всего контента не рекомендуется, потому что эти теги \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не несут смысловой нагрузки\"},{\"type\":\"text\",\"text\":\" — они \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"не сообщают браузеру, поисковику или вспомогательным технологиям\"},{\"type\":\"text\",\"text\":\", что именно находится внутри.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Отсутствие семантики\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"технические контейнеры\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" — блочный,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\" — строчный.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они ничего не говорят о содержимом — это может быть меню, статья или комментарий.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Поисковику приходится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"догадываться\"},{\"type\":\"text\",\"text\":\", что означает каждый блок.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример (плохая разметка):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<div>\\n  <div>Главная</div>\\n  <div>Контакты</div>\\n</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковик видит просто набор блоков — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"без смысла\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Потеря структуры и доступности\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Программы чтения экрана, которыми пользуются незрячие пользователи,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"не смогут определить, где заголовок, где навигация, где основной текст.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Всё звучит как “блок, блок, блок…”.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Семантические теги (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\")\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"помогают понять \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру страницы\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. SEO-проблемы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без семантики поисковая система не может точно определить,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"какая часть страницы важна.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Результат — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хуже ранжирование\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"неправильная индексация\"},{\"type\":\"text\",\"text\":\" контента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. Сложность поддержки и стилизации\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда всё размечено \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\", код становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"трудночитаемым\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"трудно понять, где меню, где подвал, где контент.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Семантические теги делают HTML логичным и самодокументируемым.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример (правильная разметка):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<header>...</header>\\n<nav>...</nav>\\n<main>...</main>\\n<footer>...</footer>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. Совместимость с будущими технологиями\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантическая структура помогает системам ИИ, голосовым помощникам и “умным” браузерам \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"правильно интерпретировать контент\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сайты, построенные на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\", плохо читаются алгоритмами.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<span>\"},{\"type\":\"text\",\"text\":\" нужны только как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"вспомогательные контейнеры\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"когда нет подходящего семантического тега.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Полноценная разметка должна отражать смысл:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\" — шапка, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" — меню, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\" — контент, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\" — подвал.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Так страница становится понятной и для машин, и для людей.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:48:10.413Z",
+        "updatedAt": "2025-10-18T07:48:10.413Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как семантика влияет на SEO?",
+        "id": 718,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Расскажите об основных семантических тегах, которые используются в разработке",
+        "id": 720,
+        "premium": true,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 720,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расскажите об основных семантических тегах, которые используются в разработке\"}]}]}",
+        "title": "Расскажите об основных семантических тегах, которые используются в разработке",
+        "order": 30204,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические теги — это элементы HTML, которые \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"описывают смысл содержимого\"},{\"type\":\"text\",\"text\":\", а не его внешний вид.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они помогают браузерам, поисковым системам и пользователям понимать структуру и значение частей страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. — шапка страницы или раздела\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для заголовков, логотипа, навигации, контактной информации.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Может находиться как в начале всей страницы, так и внутри статьи.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<header>\\n  <h1>Мой блог</h1>\\n  <nav>\\n    <a href=\\\"#\\\">Главная</a>\\n    <a href=\\\"#\\\">Контакты</a>\\n  </nav>\\n</header>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. — навигационное меню\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обозначает раздел со ссылками, по которым можно перемещаться по сайту.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<nav>\\n  <a href=\\\"#\\\">О нас</a>\\n  <a href=\\\"#\\\">Услуги</a>\\n  <a href=\\\"#\\\">Контакты</a>\\n</nav>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. — основной контент страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит то, ради чего пользователь открыл страницу — статьи, товары, посты и т.д.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"На странице должен быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только один \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<main>\\n  <article>...</article>\\n</main>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. — самостоятельный блок контента\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно используется для новостей, постов, комментариев — того, что может существовать отдельно.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<article>\\n  <h2>Как начать изучать HTML</h2>\\n  <p>HTML — основа любого сайта...</p>\\n</article>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. — смысловой раздел страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Группирует связанные по теме элементы внутри страницы или статьи.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<section>\\n  <h2>Отзывы клиентов</h2>\\n  <p>“Отличная работа!”</p>\\n</section>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 6. — дополнительная информация\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для боковых панелей, блоков с рекламой, ссылками, заметками.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<aside>\\n  <h3>Популярные статьи</h3>\\n  <ul>\\n    <li><a href=\\\"#\\\">Основы CSS</a></li>\\n  </ul>\\n</aside>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 7. — подвал страницы или раздела\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В нём размещают копирайт, контакты, ссылки на соцсети и т.д.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<footer>\\n  <p>© 2025 Мой сайт</p>\\n</footer>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 8. и — изображение и подпись\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяют добавить осмысленную подпись к иллюстрации.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<figure>\\n  <img src=\\\"photo.jpg\\\" alt=\\\"Вид на горы\\\">\\n  <figcaption>Закат над Альпами</figcaption>\\n</figure>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 9. , , — контекстные теги\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<mark>\"},{\"type\":\"text\",\"text\":\" — выделяет важный фрагмент текста;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<time>\"},{\"type\":\"text\",\"text\":\" — указывает дату или время;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<address>\"},{\"type\":\"text\",\"text\":\" — контактные данные.\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Собрание состоится <time datetime=\\\"2025-10-20\\\">20 октября</time>.</p>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Шапка страницы или раздела\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основной контент\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Самостоятельная статья или блок\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тематический раздел\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<aside>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дополнительная информация\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подвал\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<figure>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<figcaption>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Изображение и подпись\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<mark>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<time>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<address>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Контекстные смысловые элементы\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические теги делают HTML \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понятным, логичным и удобным\"},{\"type\":\"text\",\"text\":\" — и для пользователя, и для поисковиков, и для будущего развития сайта.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:48:58.252Z",
+        "updatedAt": "2025-11-10T11:18:24.920Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему не рекомендуется использовать <div> и <span> для всего контента страницы?",
+        "id": 719,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чем разница между <main> и <section>?",
+        "id": 721,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 721,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В чем разница между <main> и <section>?\"}]}]}",
+        "title": "В чем разница между <main> и <section>?",
+        "order": 30205,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Разница между \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\" — в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уровне и назначении их смысловой роли\"},{\"type\":\"text\",\"text\":\" в структуре страницы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Оба тега помогают задать семантику, но используются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в разных контекстах\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" — основной контент страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"главная смысловая часть сайта\"},{\"type\":\"text\",\"text\":\", ради которой пользователь вообще открыл страницу.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она должна содержать то, что является \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уникальным и центральным\"},{\"type\":\"text\",\"text\":\": статью, новости, товары, блог и т. д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<main>\\n  <h1>Новости технологий</h1>\\n  <article>\\n    <h2>Новый язык программирования</h2>\\n    <p>Разработчики представили новый стандарт...</p>\\n  </article>\\n</main>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На странице \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"может быть только один \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не должен\"},{\"type\":\"text\",\"text\":\" содержать шапку, меню, футер и боковые панели.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Его смысл: «главное содержание, ради которого существует страница».\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\" — тематический раздел внутри страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разбиения контента на смысловые блоки\"},{\"type\":\"text\",\"text\":\", каждый из которых имеет свой заголовок или тему.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Обычно это часть внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<main>\\n  <section>\\n    <h2>Новости компании</h2>\\n    <p>Мы запустили новый проект...</p>\\n  </section>\\n\\n  <section>\\n    <h2>Отзывы клиентов</h2>\\n    <p>“Отличная работа!”</p>\\n  </section>\\n</main>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На странице может быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"много \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый раздел должен быть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логически завершён\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"иметь свой заголовок\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Он помогает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структурировать\"},{\"type\":\"text\",\"text\":\" основной контент.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Главное различие:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Характеристика\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основной контент страницы\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отдельный раздел внутри контента\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Количество\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Только один на странице\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Может быть несколько\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обязательный заголовок\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не обязателен\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Желателен (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"},{\"type\":\"text\",\"text\":\" и ниже)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расположение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Содержит основную информацию\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Находится внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример аналогии\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главная сцена\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Отдельные эпизоды\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коротко:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всё главное\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\" — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"части внутри этого главного\"},{\"type\":\"text\",\"text\":\", логические разделы с собственным смыслом.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:49:28.800Z",
+        "updatedAt": "2025-10-18T07:49:28.800Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Расскажите об основных семантических тегах, которые используются в разработке",
+        "id": 720,
+        "premium": true,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важно использовать заголовки <h1>–<h6> по порядку?",
+        "id": 722,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 722,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему важно использовать заголовки <h1>–<h6> по порядку?\"}]}]}",
+        "title": "Почему важно использовать заголовки <h1>–<h6> по порядку?",
+        "order": 30206,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Заголовки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\"–\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h6>\"},{\"type\":\"text\",\"text\":\" образуют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"иерархию структуры документа\"},{\"type\":\"text\",\"text\":\", и их правильный порядок нужен не для красоты, а для того, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"браузеры, поисковые системы и вспомогательные технологии\"},{\"type\":\"text\",\"text\":\" понимали логику страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Формируют смысловую структуру страницы\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Заголовки — это «скелет» контента.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"По ним браузер и поисковики строят \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"оглавление документа\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример (правильно):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<h1>Новости</h1>\\n  <h2>Технологии</h2>\\n    <h3>Искусственный интеллект</h3>\\n  <h2>Наука</h2>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь видно:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" — главный заголовок,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"},{\"type\":\"text\",\"text\":\" — раздел,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h3>\"},{\"type\":\"text\",\"text\":\" — подраздел.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если перепутать порядок (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h4>\"},{\"type\":\"text\",\"text\":\" → \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"},{\"type\":\"text\",\"text\":\"), логика рушится —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"поисковики и программы чтения не понимают, что к чему относится.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Влияют на SEO\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поисковые системы анализируют заголовки, чтобы определить \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тематику и приоритеты контента\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" — главный смысл всей страницы (обычно один).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"},{\"type\":\"text\",\"text\":\"–\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h3>\"},{\"type\":\"text\",\"text\":\" — ключевые подтемы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если заголовки идут по порядку, поисковик лучше индексирует контент и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понимает, что важно, а что второстепенно\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. Повышают доступность\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Экранные дикторы и программы для слабовидящих пользователей читают сайт по структуре заголовков.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если порядок нарушен, пользователю будет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"невозможно ориентироваться\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"вместо логичной навигации он услышит хаос вроде «Заголовок уровня 5… потом 2… потом 4…».\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. Облегчают восприятие и поддержку\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для разработчика и читателя последовательные заголовки —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логическая карта документа\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"По ним легко понять, где начинается новая тема и где заканчивается предыдущая.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Уровень\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главный заголовок страницы (один)\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Основные разделы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h3>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подразделы внутри разделов\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h4>\"},{\"type\":\"text\",\"text\":\"–\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h6>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Детализация, подпункты\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Использовать заголовки по порядку — значит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"строить логичную и понятную структуру\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это помогает и поисковикам, и пользователям, и самим разработчикам — страница становится \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступной, SEO-дружественной и легко читаемой\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:50:03.100Z",
+        "updatedAt": "2025-10-18T07:50:03.100Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чем разница между <main> и <section>?",
+        "id": 721,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Расскажите о семантических тегах для работы с текстом",
+        "id": 723,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 723,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расскажите о семантических тегах для работы с текстом\"}]}]}",
+        "title": "Расскажите о семантических тегах для работы с текстом",
+        "order": 30207,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические теги для работы с текстом в HTML задают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"смысловое выделение\"},{\"type\":\"text\",\"text\":\" фрагментов текста — они не просто меняют внешний вид (как жирный или курсив), а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"описывают, зачем это выделено\"},{\"type\":\"text\",\"text\":\". Это помогает поисковикам, браузерам и программам чтения понимать контекст.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<strong>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — важный текст\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для выделения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"смысловой важности\"},{\"type\":\"text\",\"text\":\" (а не просто для жирного шрифта).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Браузер обычно отображает его жирным, но суть — в акценте.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Это <strong>очень важно</strong> для результата.</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Значение: акцент на смысл, поисковики воспринимают как ключевой фрагмент.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<em>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — акцент или эмоциональное выделение\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обозначает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ударение, интонацию или акцент\"},{\"type\":\"text\",\"text\":\" в речи.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Обычно отображается курсивом.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Я сказал <em>сейчас</em>, а не потом.</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Значение: выражает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"эмоциональное выделение\"},{\"type\":\"text\",\"text\":\", а не просто оформление.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<mark>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — выделение важной информации\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"подсветки\"},{\"type\":\"text\",\"text\":\" или указания на ключевую часть текста (например, при поиске).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Отображается как текст с жёлтым фоном.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Ваш запрос: <mark>HTML теги</mark> найден в документе.</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Значение: помогает показать актуальность, внимание, результат поиска.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<abbr>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — сокращения\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Показывает, что внутри — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"аббревиатура или акроним\"},{\"type\":\"text\",\"text\":\", с расшифровкой в атрибуте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"title\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p><abbr title=\\\"HyperText Markup Language\\\">HTML</abbr> — язык разметки гипертекста.</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Значение: улучшает доступность и даёт контекст при наведении курсора.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<cite>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — источник или автор\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для оформления \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"названий произведений, книг, фильмов, исследований\"},{\"type\":\"text\",\"text\":\" и т.д.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Моё любимое произведение — <cite>Преступление и наказание</cite>.</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Значение: подчёркивает авторство и источник.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<q>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — короткая цитата\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"встраиваемых цитат\"},{\"type\":\"text\",\"text\":\" внутри текста, автоматически добавляет кавычки.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Он сказал: <q>Учиться никогда не поздно.</q></p>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 7. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<blockquote>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — длинная цитата\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цитирования больших фрагментов\"},{\"type\":\"text\",\"text\":\" текста, обычно выделяется отдельным блоком.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<blockquote>\\n  «Самое лучшее время начать — сейчас.»\\n</blockquote>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 8. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<code>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<pre>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<kbd>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<samp>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — технические теги\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используются для отображения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"кода и терминов\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<code>\"},{\"type\":\"text\",\"text\":\" — фрагмент программного кода,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<pre>\"},{\"type\":\"text\",\"text\":\" — предварительно форматированный текст (с сохранением пробелов и переносов),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<kbd>\"},{\"type\":\"text\",\"text\":\" — ввод пользователя (например, клавиши),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<samp>\"},{\"type\":\"text\",\"text\":\" — пример вывода программы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Введите <kbd>Ctrl</kbd> + <kbd>S</kbd> для сохранения.</p>\\n<pre><code>print(\\\"Hello, world!\\\")</code></pre>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 9. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<time>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\" — дата или время\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Позволяет браузерам и поисковикам \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"распознавать даты в машинном формате\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<p>Встреча состоится <time datetime=\\\"2025-10-20T18:00\\\">20 октября в 18:00</time>.</p>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<strong>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важный смысловой акцент\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<em>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Эмоциональное или интонационное выделение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<mark>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подсветка ключевой информации\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<abbr>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сокращения с расшифровкой\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<cite>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Название источника или произведения\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<q>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Короткая цитата\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<blockquote>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Длинная цитата\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<code>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<pre>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<kbd>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<samp>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Технические фрагменты\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<time>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Дата и время в машинном формате\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические текстовые теги делают контент \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"понятным, правильно структурированным и индексируемым\"},{\"type\":\"text\",\"text\":\", улучшая как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступность\"},{\"type\":\"text\",\"text\":\", так и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SEO\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:50:54.923Z",
+        "updatedAt": "2025-10-18T07:50:54.923Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему важно использовать заголовки <h1>–<h6> по порядку?",
+        "id": 722,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему правильная семантика улучшает навигацию для пользователей с ограничениями?",
+        "id": 724,
+        "premium": true,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 724,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему правильная семантика улучшает навигацию для пользователей с ограничениями?\"}]}]}",
+        "title": "Почему правильная семантика улучшает навигацию для пользователей с ограничениями?",
+        "order": 30208,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правильная семантика улучшает навигацию для пользователей с ограничениями, потому что делает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"структуру страницы понятной для вспомогательных технологий\"},{\"type\":\"text\",\"text\":\", таких как экранные дикторы, брайлевские дисплеи и голосовые интерфейсы. Эти устройства не «видят» визуальное оформление, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"опираются только на смысловую разметку HTML\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Семантические теги формируют логичную структуру\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Когда страница размечена тегами вроде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<header>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<article>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\", экранный диктор может \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перемещаться между разделами\"},{\"type\":\"text\",\"text\":\", объявляя их смысл.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пользователь слышит не просто «блок», а, например,\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"«Основное содержимое», «Навигация», «Подвал».\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это даёт возможность быстро ориентироваться на странице, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не видя визуального макета\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Заголовки \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>–<h6>\"},{\"type\":\"text\",\"text\":\" создают навигационное “оглавление”\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Слабовидящие пользователи часто перемещаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"по структуре заголовков\"},{\"type\":\"text\",\"text\":\", а не по всему тексту.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если заголовки идут по порядку, они образуют логическую иерархию:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\" — тема страницы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h2>\"},{\"type\":\"text\",\"text\":\" — разделы,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h3>\"},{\"type\":\"text\",\"text\":\" — подразделы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Так человек может “просканировать” страницу и перейти к нужной части.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. Атрибуты и теги описывают смысл, недоступный глазу\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Некоторые пользователи не видят изображения или не могут различить цвет.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Атрибуты вроде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alt\"},{\"type\":\"text\",\"text\":\" у \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<img>\"},{\"type\":\"text\",\"text\":\" или теги вроде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<button>\"},{\"type\":\"text\",\"text\":\" (вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\") дают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"описание функции или содержимого\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<img src=\\\"dog.jpg\\\" alt=\\\"Собака на пляже\\\">\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Экранный диктор озвучит:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Изображение: Собака на пляже.”\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Без \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alt\"},{\"type\":\"text\",\"text\":\" пользователь просто услышал бы “изображение” — без контекста.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. Правильные элементы управления делают интерфейс доступным\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если кнопки созданы семантически правильно (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<button>\"},{\"type\":\"text\",\"text\":\" вместо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<div>\"},{\"type\":\"text\",\"text\":\"),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"скринридеры и клавиатурная навигация \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"распознают их как интерактивные элементы\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это важно для людей, которые пользуются сайтом без мыши.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<button>Отправить</button>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь сможет активировать её клавишей Enter или пробелом, а диктор озвучит “Кнопка: Отправить”.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. Семантика делает сайт совместимым с ARIA и стандартами WCAG\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантическая структура — основа для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступности по международным стандартам\"},{\"type\":\"text\",\"text\":\" (WCAG).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она позволяет дополнять контент атрибутами \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"role\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"aria-label\"},{\"type\":\"text\",\"text\":\", которые уточняют поведение элементов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Преимущество\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что даёт\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантическая структура\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация по разделам страницы\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Правильные заголовки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрый переход к нужному контенту\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибуты \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alt\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"title\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Понимание изображений и ссылок\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Семантические кнопки и ссылки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Корректная работа клавиатуры и скринридеров\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Поддержка ARIA и WCAG\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Соответствие стандартам доступности\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Правильная семантика превращает сайт из набора визуальных блоков в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логически понятную систему\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"доступную людям с любыми способностями.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Без неё сайт может быть “красивым”, но \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"недоступным тем, кто не видит, не слышит или не может пользоваться мышью\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:51:27.879Z",
+        "updatedAt": "2025-11-10T11:18:27.590Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Расскажите о семантических тегах для работы с текстом",
+        "id": 723,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие инструменты помогают проверять семантику HTML?",
+        "id": 725,
+        "premium": false,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 725,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какие инструменты помогают проверять семантику HTML?\"}]}]}",
+        "title": "Какие инструменты помогают проверять семантику HTML?",
+        "order": 30209,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проверить семантику HTML можно с помощью инструментов, которые анализируют структуру, доступность и корректность разметки. Они выявляют ошибки, предупреждения и дают рекомендации по улучшению кода с точки зрения \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"семантики, доступности и SEO\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"W3C Markup Validation Service\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Официальный валидатор HTML от консорциума W3C.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Проверяет, соответствует ли страница стандартам HTML и нет ли ошибок в тегах или их вложенности.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 Сайт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://validator.w3.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://validator.w3.org\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Показывает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"некорректные теги и атрибуты,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"ошибки в структуре (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<section>\"},{\"type\":\"text\",\"text\":\" без заголовка),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"устаревшие элементы.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Lighthouse (встроен в Chrome DevTools)\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструмент от Google для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"аудита качества веб-страниц\"},{\"type\":\"text\",\"text\":\": SEO, производительность, доступность и семантика.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 Как запустить:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открыть сайт в Google Chrome.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нажать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"F12 → Lighthouse\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Запустить анализ.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"✅ Показывает:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правильность заголовков (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h1>\"},{\"type\":\"text\",\"text\":\"–\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<h6>\"},{\"type\":\"text\",\"text\":\"),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"структуру семантических тегов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<main>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<footer>\"},{\"type\":\"text\",\"text\":\" и др.),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"проблемы доступности (например, отсутствует \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alt\"},{\"type\":\"text\",\"text\":\" у изображений).\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"axe DevTools\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Расширение для браузера (Chrome, Firefox), разработанное Deque Systems.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ориентировано на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"аудит доступности и семантики\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 Сайт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://www.deque.com/axe/\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://www.deque.com/axe/\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Проверяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"корректность использования ролей и тегов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"наличие \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"aria\"},{\"type\":\"text\",\"text\":\"-атрибутов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"правильное применение интерактивных элементов.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTMLHint\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструмент для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"статического анализа HTML-кода\"},{\"type\":\"text\",\"text\":\", который можно интегрировать в редакторы вроде VS Code.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 Сайт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://htmlhint.com/\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://htmlhint.com/\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Проверяет:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"структуру документа,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"вложенность тегов,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"устаревшие или неправильные атрибуты.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Wave Evaluation Tool\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Онлайн-сервис и расширение для браузера, созданное WebAIM,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"проверяющее \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"доступность и семантическую корректность\"},{\"type\":\"text\",\"text\":\" страницы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 Сайт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wave.webaim.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://wave.webaim.org\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"✅ Показывает визуально:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"где отсутствуют \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"alt\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"label\"},{\"type\":\"text\",\"text\":\", заголовки,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"где нарушена структура,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"какие элементы не имеют семантического смысла.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 6. \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pa11y\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"CLI-инструмент (для терминала), который проверяет страницы на доступность и семантические ошибки.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Полезен для автоматических тестов и CI/CD.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 Сайт: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://pa11y.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null}}],\"text\":\"https://pa11y.org\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Инструмент\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"W3C Validator\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Проверка синтаксиса и стандартов HTML\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Lighthouse\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"SEO, доступность и семантика\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"axe DevTools\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подробный аудит доступности\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HTMLHint\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Анализ кода во время разработки\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"WAVE\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Визуальная проверка семантики и доступности\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Pa11y\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Автоматизированная проверка в командной строке\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Комбинация \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"W3C Validator\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Lighthouse\"},{\"type\":\"text\",\"text\":\" + \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"axe\"},{\"type\":\"text\",\"text\":\" даёт максимально точную картину:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"они выявляют ошибки в разметке, пропущенные семантические теги, проблемы доступности и неправильную иерархию заголовков.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 44,
+        "createdAt": "2025-10-18T07:52:03.916Z",
+        "updatedAt": "2025-10-18T07:52:03.916Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 44,
+          "title": "Семантика",
+          "directions": [
+            {
+              "categoryId": 44,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему правильная семантика улучшает навигацию для пользователей с ограничениями?",
+        "id": 724,
+        "premium": true,
+        "category": {
+          "id": 44,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое HTML-тег?",
+        "id": 727,
+        "premium": false,
+        "category": {
+          "id": 45,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

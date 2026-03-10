@@ -1,0 +1,862 @@
+{
+  "category": {
+    "id": 50,
+    "title": "Ссылки и навигация",
+    "description": " ",
+    "parentId": 3
+  },
+  "totalQuestions": 10,
+  "downloadedAt": "2026-03-09T07:47:23.083Z",
+  "questions": [
+    {
+      "current": {
+        "id": 916,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ссылка (hyperlink) в HTML?\"}]}]}",
+        "title": "Что такое ссылка (hyperlink) в HTML?",
+        "order": 30800,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка (hyperlink)\"},{\"type\":\"text\",\"text\":\" в HTML — это элемент, который позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переходить с одной страницы на другую\"},{\"type\":\"text\",\"text\":\", либо \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"выполнять действие\"},{\"type\":\"text\",\"text\":\" (например, открыть файл, перейти на e-mail, запустить якорь и т.д.).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ссылки создаются с помощью тега \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" (anchor — “якорь”).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 1. Простейший пример\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">Перейти на сайт</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Что здесь:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" — тег ссылки;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" — (Hypertext REFerence) адрес, куда ведёт ссылка;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"текст внутри (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"Перейти на сайт\"},{\"type\":\"text\",\"text\":\") — то, на что можно нажать.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📘 При клике браузер откроет указанный адрес.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 2. Структура ссылки\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"URL\\\">текст или контент</a>\\n\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Часть\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открывающий тег ссылки\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Адрес (URL) назначения\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"текст\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То, что видит и нажимает пользователь\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"</a>\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Закрывающий тег\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 3. Типы ссылок\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"✅ Внешняя ссылка:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://google.com\\\">Google</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открывает другую страницу или сайт.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"✅ Внутренняя (на другую страницу сайта):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"/about.html\\\">О нас</a>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"✅ Якорная (переход к части страницы):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#contacts\\\">Контакты</a>\\n\\n<section id=\\\"contacts\\\">...</section>\\n\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"✅ Ссылка на файл:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"files/report.pdf\\\" download>Скачать отчёт</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"download\"},{\"type\":\"text\",\"text\":\" заставляет браузер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скачать файл\"},{\"type\":\"text\",\"text\":\", а не открыть его.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":4},\"content\":[{\"type\":\"text\",\"text\":\"✅ Ссылка на почту или телефон:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"mailto:info@example.com\\\">Написать письмо</a>\\n<a href=\\\"tel:+79991234567\\\">Позвонить</a>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 4. Полезные атрибуты\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Атрибут\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Указывает адрес ссылки\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href=\\\"https://example.com\\\"\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"target=\\\"_blank\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открывает ссылку в новой вкладке\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"...\\\" target=\\\"_blank\\\">\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"title\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Подсказка при наведении\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a title=\\\"Перейти на сайт\\\">\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel=\\\"noopener noreferrer\\\"\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Защита при открытии в новой вкладке (рекомендуется с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_blank\"},{\"type\":\"text\",\"text\":\")\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"download\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Скачивание файла\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"file.pdf\\\" download>\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 5. Внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" можно помещать не только текст\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">\\n  <img src=\\\"button.png\\\" alt=\\\"Кнопка\\\">\\n</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🟢 Кликабельной станет сама картинка.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 6. Пример комплексной ссылки\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\" title=\\\"Откроется в новой вкладке\\\">\\n  Перейти на сайт →\\n</a>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"💡 Итого:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Параметр\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значение\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Главный атрибут\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" — адрес перехода\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Назначение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаёт гиперссылку между документами или элементами\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Доп. возможности\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Открытие в новой вкладке, скачивание, якоря, e-mail, телефон\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Применение\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Навигация, кнопки, ссылки, меню, вызовы действий\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Простыми словами:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"мостик\"},{\"type\":\"text\",\"text\":\" между страницами.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он говорит браузеру:\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"“Если пользователь нажмёт сюда — перейди вот по этому адресу.”\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:37:26.536Z",
+        "updatedAt": "2025-10-18T10:37:26.536Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем SVG отличается от растровых изображений?",
+        "id": 913,
+        "premium": false,
+        "category": {
+          "id": 49,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какой тег используется для создания ссылки?",
+        "id": 921,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 921,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какой тег используется для создания ссылки?\"}]}]}",
+        "title": "Какой тег используется для создания ссылки?",
+        "order": 30801,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" (anchor — «якорь») используется в HTML для создания гиперссылок, по которым можно переходить на другие страницы, разделы сайта, файлы или внешние ресурсы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основной синтаксис:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">Текст ссылки</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Атрибуты тега \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\":\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" — обязательный атрибут, указывает адрес ресурса, на который ведёт ссылка.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://google.com\\\">Google</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"target\"},{\"type\":\"text\",\"text\":\" — определяет, где откроется ссылка:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_self\"},{\"type\":\"text\",\"text\":\" — в том же окне (по умолчанию),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_blank\"},{\"type\":\"text\",\"text\":\" — в новой вкладке,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_parent\"},{\"type\":\"text\",\"text\":\" — во фрейме-родителе,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"_top\"},{\"type\":\"text\",\"text\":\" — во всём окне браузера.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пример:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\">Открыть в новой вкладке</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"title\"},{\"type\":\"text\",\"text\":\" — всплывающая подсказка при наведении курсора.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" title=\\\"Перейти на Example\\\">Example</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel\"},{\"type\":\"text\",\"text\":\" — задаёт отношение между текущей страницей и ссылкой. Часто используется для SEO и безопасности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"nofollow\"},{\"type\":\"text\",\"text\":\" — запрещает поисковикам переходить по ссылке,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noopener\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"noreferrer\"},{\"type\":\"text\",\"text\":\" — предотвращают передачу данных между окнами.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пример:\"}]}]}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Безопасная ссылка</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"download\"},{\"type\":\"text\",\"text\":\" — позволяет скачать файл вместо открытия.\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"file.pdf\\\" download>Скачать файл</a>\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Виды ссылок:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внешняя:\"},{\"type\":\"text\",\"text\":\" ведёт на другой сайт\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">Внешняя ссылка</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внутренняя:\"},{\"type\":\"text\",\"text\":\" ведёт на другую страницу вашего сайта\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"/about.html\\\">О нас</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Якорная:\"},{\"type\":\"text\",\"text\":\" ведёт к определённой части страницы\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#section1\\\">Перейти к разделу 1</a>\\n...\\n<h2 id=\\\"section1\\\">Раздел 1</h2>\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" — основной инструмент навигации в HTML. Он делает текст или изображение кликабельным, позволяя пользователю переходить между страницами и ресурсами в сети.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:39:37.022Z",
+        "updatedAt": "2025-10-18T10:39:37.022Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ссылка (hyperlink) в HTML?",
+        "id": 916,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как указать ссылку в теге <a>?",
+        "id": 923,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 923,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как указать ссылку в теге <a>?\"}]}]}",
+        "title": "Как указать ссылку в теге <a>?",
+        "order": 30802,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Ссылка указывается в атрибуте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" тега \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\". Именно этот атрибут сообщает браузеру, куда нужно перейти при клике.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка на внешний сайт:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">Перейти на сайт</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"https://example.com\\\"\"},{\"type\":\"text\",\"text\":\" — адрес страницы, на которую ведёт ссылка.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка на внутреннюю страницу сайта:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"about.html\\\">О нас</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Такая ссылка откроет файл \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"about.html\"},{\"type\":\"text\",\"text\":\", который находится в той же папке.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка на якорь (часть страницы):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#contact\\\">Контакты</a>\\n...\\n<div id=\\\"contact\\\">Раздел с контактами</div>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При клике браузер прокрутит страницу до элемента с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id=\\\"contact\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка для скачивания файла:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"docs/manual.pdf\\\" download>Скачать руководство</a>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ссылка, открывающаяся в новой вкладке:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\">Открыть в новой вкладке</a>\\n\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Чтобы указать ссылку в теге \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\", нужно добавить атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\" и поместить в кавычках адрес (URL), например:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\">Текст ссылки</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:40:14.701Z",
+        "updatedAt": "2025-10-18T10:40:14.701Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какой тег используется для создания ссылки?",
+        "id": 921,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Чем отличаются абсолютные и относительные ссылки?",
+        "id": 925,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 925,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чем отличаются абсолютные и относительные ссылки?\"}]}]}",
+        "title": "Чем отличаются абсолютные и относительные ссылки?",
+        "order": 30803,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Абсолютные и относительные ссылки отличаются \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"тем, как они указывают путь к ресурсу\"},{\"type\":\"text\",\"text\":\" (странице, файлу, изображению и т. д.).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Абсолютная ссылка\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Абсолютная ссылка содержит \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"полный путь\"},{\"type\":\"text\",\"text\":\" к ресурсу — с указанием протокола (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"http://\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"https://\"},{\"type\":\"text\",\"text\":\"), домена и при необходимости — папок и файлов.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com/images/photo.jpg\\\">Посмотреть фото</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"всегда и везде\"},{\"type\":\"text\",\"text\":\", независимо от того, где размещён HTML-файл.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется, когда нужно перейти на \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"другой сайт\"},{\"type\":\"text\",\"text\":\" или точно указать адрес страницы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Минус — если сайт или домен изменится, ссылка перестанет работать.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример перехода между сайтами:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://wikipedia.org/wiki/HTML\\\">Подробнее в Википедии</a>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Относительная ссылка\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Относительная ссылка указывает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"путь относительно текущего файла или каталога\"},{\"type\":\"text\",\"text\":\". Она не содержит домена и протокола.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Примеры:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"about.html\\\">О компании</a>          <!-- Файл в той же папке -->\\n<a href=\\\"folder/page.html\\\">Подробнее</a>     <!-- Вложенная папка -->\\n<a href=\\\"../index.html\\\">На главную</a>       <!-- На уровень выше -->\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Работает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"только внутри одного сайта\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Удобна при разработке — при переносе сайта ссылки не нужно менять.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Браузер сам подставляет текущий домен.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главное различие:\"}]},{\"type\":\"table\",\"content\":[{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тип ссылки\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как выглядит\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Где используется\"}]}]},{\"type\":\"tableHeader\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пример\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Абсолютная\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Полный URL с доменом\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для перехода на другой сайт\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"https://example.com/about.html\"}]}]}]},{\"type\":\"tableRow\",\"content\":[{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Относительная\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Путь внутри сайта\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для внутренних страниц\"}]}]},{\"type\":\"tableCell\",\"attrs\":{\"colspan\":1,\"rowspan\":1,\"colwidth\":null},\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"about.html\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"../index.html\"}]}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Абсолютные ссылки — это как полный адрес с городом и страной.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Относительные — как указание «поверни за угол» внутри одного района.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:41:00.226Z",
+        "updatedAt": "2025-11-10T11:19:08.718Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как указать ссылку в теге <a>?",
+        "id": 923,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое фрагмент | якорь (anchor) в ссылке?",
+        "id": 926,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 926,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое фрагмент | якорь (anchor) в ссылке?\"}]}]}",
+        "title": "Что такое фрагмент | якорь (anchor) в ссылке?",
+        "order": 30804,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Фрагмент (якорь, anchor)\"},{\"type\":\"text\",\"text\":\" — это часть ссылки, которая позволяет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переходить не на всю страницу, а к конкретному месту внутри неё\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как это работает\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Фрагмент обозначается символом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#\"},{\"type\":\"text\",\"text\":\" и идентификатором элемента (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\"), к которому нужно перейти.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Когда пользователь кликает на такую ссылку, браузер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прокручивает страницу\"},{\"type\":\"text\",\"text\":\" до нужного элемента.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#contact\\\">Перейти к контактам</a>\\n\\n<h2 id=\\\"contact\\\">Контакты</h2>\\n<p>Телефон, адрес, почта...</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При нажатии на ссылку страница плавно прокрутится до заголовка с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id=\\\"contact\\\"\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Фрагменты могут быть:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внутренними\"},{\"type\":\"text\",\"text\":\" (ссылка на ту же страницу):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#top\\\">Наверх</a>\\n<div id=\\\"top\\\"></div>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Внешними\"},{\"type\":\"text\",\"text\":\" (ссылка на якорь на другой странице):\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"about.html#team\\\">Наша команда</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Здесь произойдёт переход на страницу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"about.html\"},{\"type\":\"text\",\"text\":\" и прокрутка к элементу с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id=\\\"team\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Якорь \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"не требует отдельного файла\"},{\"type\":\"text\",\"text\":\" — он ссылается на элемент по атрибуту \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Не чувствителен к регистру (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#Contact\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#contact\"},{\"type\":\"text\",\"text\":\" — одно и то же).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"удобной навигации\"},{\"type\":\"text\",\"text\":\" по длинным страницам, меню, оглавлениям, FAQ и т.д.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Фрагмент (якорь)\"},{\"type\":\"text\",\"text\":\" — это внутренняя метка на странице, которая создаётся через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\" и позволяет ссылке с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#\"},{\"type\":\"text\",\"text\":\" моментально перенести пользователя к нужному месту без перезагрузки страницы.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:41:28.944Z",
+        "updatedAt": "2025-10-18T10:41:28.944Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Чем отличаются абсолютные и относительные ссылки?",
+        "id": 925,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как перейти к элементу по ID через ссылку в HTML?",
+        "id": 927,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 927,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как перейти к элементу по ID через ссылку в HTML?\"}]}]}",
+        "title": "Как перейти к элементу по ID через ссылку в HTML?",
+        "order": 30805,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы перейти к элементу по \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ID\"},{\"type\":\"text\",\"text\":\" через ссылку в HTML, нужно:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Присвоить элементу уникальный \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"идентификатор (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\")\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В ссылке \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" указать этот идентификатор после символа \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#\"},{\"type\":\"text\",\"text\":\" в атрибуте \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"href\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"#section1\\\">Перейти к разделу 1</a>\\n\\n<h2 id=\\\"section1\\\">Раздел 1</h2>\\n<p>Это текст нужного раздела...</p>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"👉 При клике на ссылку браузер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прокрутит страницу\"},{\"type\":\"text\",\"text\":\" до элемента с \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id=\\\"section1\\\"\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Переход на якорь на другой странице:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"about.html#team\\\">Наша команда</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На странице \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"about.html\"},{\"type\":\"text\",\"text\":\" должен быть элемент:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<h2 id=\\\"team\\\">Команда</h2>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"После клика произойдёт переход на страницу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"about.html\"},{\"type\":\"text\",\"text\":\" и прокрутка до блока \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"#team\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Можно сделать плавную прокрутку:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы переход выглядел плавно, добавь CSS:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"css\"},\"content\":[{\"type\":\"text\",\"text\":\"html {\\n  scroll-behavior: smooth;\\n}\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы перейти к элементу по ID, нужно:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Присвоить элементу \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id\"},{\"type\":\"text\",\"text\":\", например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"id=\\\"contact\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Сделать ссылку \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a href=\\\"#contact\\\">К контактам</a>\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"При нажатии браузер автоматически прокрутит страницу к элементу с этим ID.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:42:01.745Z",
+        "updatedAt": "2025-10-18T10:42:01.745Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое фрагмент | якорь (anchor) в ссылке?",
+        "id": 926,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как открыть ссылку в новой вкладке в HTML?",
+        "id": 928,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 928,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как открыть ссылку в новой вкладке в HTML?\"}]}]}",
+        "title": "Как открыть ссылку в новой вкладке в HTML?",
+        "order": 30806,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы открыть ссылку в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"новой вкладке\"},{\"type\":\"text\",\"text\":\", в теге \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\" нужно использовать атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"target=\\\"_blank\\\"\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\">Открыть в новой вкладке</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При клике страница \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"https://example.com\"},{\"type\":\"text\",\"text\":\" откроется в новой вкладке браузера, а текущая останется открытой.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Рекомендуется также добавить атрибут \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel=\\\"noopener noreferrer\\\"\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это защита от возможных уязвимостей (чтобы открытая страница не могла получить доступ к исходной вкладке).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Безопасный вариант:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">\\n  Открыть в новой вкладке\\n</a>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Кратко:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"target=\\\"_blank\\\"\"},{\"type\":\"text\",\"text\":\" — открывает ссылку в новой вкладке.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"rel=\\\"noopener noreferrer\\\"\"},{\"type\":\"text\",\"text\":\" — защищает исходную страницу.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<a href=\\\"https://example.com\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Перейти</a>\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:42:38.411Z",
+        "updatedAt": "2025-10-18T10:42:38.411Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как перейти к элементу по ID через ссылку в HTML?",
+        "id": 927,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какой тег используют для группировки навигационных ссылок?",
+        "id": 930,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 930,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какой тег используют для группировки навигационных ссылок?\"}]}]}",
+        "title": "Какой тег используют для группировки навигационных ссылок?",
+        "order": 30807,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для группировки навигационных ссылок в HTML используют тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Назначение:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" обозначает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навигационный раздел страницы\"},{\"type\":\"text\",\"text\":\" — блок, содержащий основные ссылки для перемещения по сайту (меню, оглавление, панель навигации и т.д.).\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<nav>\\n  <a href=\\\"index.html\\\">Главная</a>\\n  <a href=\\\"about.html\\\">О нас</a>\\n  <a href=\\\"services.html\\\">Услуги</a>\\n  <a href=\\\"contact.html\\\">Контакты</a>\\n</nav>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Особенности:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Помогает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поисковым системам и экранным читалкам\"},{\"type\":\"text\",\"text\":\" понимать, где находятся навигационные ссылки.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Можно использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"несколько тегов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" на странице (например, главное меню и футер).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Обычно внутри \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" располагаются ссылки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<a>\"},{\"type\":\"text\",\"text\":\") или списки (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<ul>\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<li>\"},{\"type\":\"text\",\"text\":\").\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример с меню-списком:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<nav>\\n  <ul>\\n    <li><a href=\\\"/\\\">Главная</a></li>\\n    <li><a href=\\\"/news\\\">Новости</a></li>\\n    <li><a href=\\\"/contacts\\\">Контакты</a></li>\\n  </ul>\\n</nav>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тег \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"<nav>\"},{\"type\":\"text\",\"text\":\" используется для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логической группировки навигационных ссылок\"},{\"type\":\"text\",\"text\":\", чтобы обозначить меню или навигационные блоки сайта.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:43:07.077Z",
+        "updatedAt": "2025-11-10T11:19:12.163Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как открыть ссылку в новой вкладке в HTML?",
+        "id": 928,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “breadcrumbs” (хлебные крошки)?",
+        "id": 933,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 933,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “breadcrumbs” (хлебные крошки)?\"}]}]}",
+        "title": "Что такое “breadcrumbs” (хлебные крошки)?",
+        "order": 30808,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"“Breadcrumbs” (хлебные крошки)\"},{\"type\":\"text\",\"text\":\" — это элемент навигации на сайте, показывающий \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"путь пользователя от главной страницы до текущей\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он помогает понять, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"где именно находится пользователь\"},{\"type\":\"text\",\"text\":\" в структуре сайта, и быстро вернуться на предыдущие уровни.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Пример отображения:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"Главная → Каталог → Электроника → Смартфоны → iPhone 15\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Пользователь видит, что он находится в разделе «Смартфоны» внутри «Электроники» и может кликнуть на любой из предыдущих пунктов.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 HTML-пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<nav aria-label=\\\"breadcrumb\\\">\\n  <ol>\\n    <li><a href=\\\"/\\\">Главная</a></li>\\n    <li><a href=\\\"/catalog\\\">Каталог</a></li>\\n    <li><a href=\\\"/catalog/electronics\\\">Электроника</a></li>\\n    <li>Смартфоны</li>\\n  </ol>\\n</nav>\\n\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Зачем нужны хлебные крошки:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удобство навигации.\"},{\"type\":\"text\",\"text\":\" Пользователь быстрее ориентируется в структуре сайта.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Снижение количества кликов.\"},{\"type\":\"text\",\"text\":\" Можно вернуться на любой предыдущий уровень одним нажатием.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"SEO-польза.\"},{\"type\":\"text\",\"text\":\" Поисковые системы (Google, Яндекс) используют их для отображения структуры страниц в результатах поиска.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"UX-ориентир.\"},{\"type\":\"text\",\"text\":\" Показывает пользователю контекст — где он находится и как сюда попал.\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Breadcrumbs (хлебные крошки)\"},{\"type\":\"text\",\"text\":\" — это цепочка навигационных ссылок, отображающая иерархию страниц от главной до текущей.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Они делают сайт понятнее, удобнее и полезнее для SEO.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:43:34.798Z",
+        "updatedAt": "2025-10-18T10:43:34.798Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какой тег используют для группировки навигационных ссылок?",
+        "id": 930,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое “sitemap” и как он связан с навигацией?",
+        "id": 935,
+        "premium": true,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 935,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое “sitemap” и как он связан с навигацией?\"}]}]}",
+        "title": "Что такое “sitemap” и как он связан с навигацией?",
+        "order": 30809,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Sitemap (карта сайта)\"},{\"type\":\"text\",\"text\":\" — это структура, показывающая, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"как организованы страницы на сайте\"},{\"type\":\"text\",\"text\":\" и как они связаны между собой.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она помогает как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пользователям\"},{\"type\":\"text\",\"text\":\", так и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поисковым системам\"},{\"type\":\"text\",\"text\":\" понять логику навигации и быстрее находить нужные страницы.\"}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Виды sitemap\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Визуальная карта сайта (HTML sitemap)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это страница для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"людей\"},{\"type\":\"text\",\"text\":\", где отображаются все основные разделы и подразделы сайта в виде списка ссылок.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Помогает посетителям быстро найти нужный раздел, если навигационное меню слишком большое или сложное.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"html\"},\"content\":[{\"type\":\"text\",\"text\":\"<h1>Карта сайта</h1>\\n<ul>\\n  <li><a href=\\\"/\\\">Главная</a></li>\\n  <li><a href=\\\"/about.html\\\">О нас</a></li>\\n  <li><a href=\\\"/products.html\\\">Товары</a></li>\\n  <li><a href=\\\"/contacts.html\\\">Контакты</a></li>\\n</ul>\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"XML-карта сайта (sitemap.xml)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Это файл для \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поисковых систем\"},{\"type\":\"text\",\"text\":\" (Google, Яндекс и др.), который перечисляет все страницы сайта с их адресами (URL).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он помогает роботам индексировать сайт правильно и полностью.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"xml\"},\"content\":[{\"type\":\"text\",\"text\":\"<urlset xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\\n  <url>\\n    <loc>https://example.com/</loc>\\n    <lastmod>2025-10-18</lastmod>\\n    <priority>1.0</priority>\\n  </url>\\n  <url>\\n    <loc>https://example.com/about.html</loc>\\n    <lastmod>2025-10-10</lastmod>\\n    <priority>0.8</priority>\\n  </url>\\n</urlset>\\n\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔹 Как sitemap связан с навигацией\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"HTML-sitemap — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"резервная навигация\"},{\"type\":\"text\",\"text\":\": помогает пользователю ориентироваться, если меню запутано.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"XML-sitemap — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"навигатор для поисковых систем\"},{\"type\":\"text\",\"text\":\": помогает им находить и индексировать страницы.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба вида карт сайта делают структуру ресурса \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"прозрачной и связанной\"},{\"type\":\"text\",\"text\":\", а переход между страницами — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"логичным и быстрым\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"horizontalRule\"},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":3},\"content\":[{\"type\":\"text\",\"text\":\"🔸 Вывод:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Sitemap\"},{\"type\":\"text\",\"text\":\" — это карта, которая описывает архитектуру сайта.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она связана с навигацией тем, что:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помогает пользователям находить нужные разделы (HTML-версия),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"помогает поисковым системам понять структуру и быстрее индексировать сайт (XML-версия).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 50,
+        "createdAt": "2025-10-18T10:44:13.359Z",
+        "updatedAt": "2025-11-10T11:19:15.682Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 50,
+          "title": "Ссылки и навигация",
+          "directions": [
+            {
+              "categoryId": 50,
+              "directionId": 1,
+              "direction": {
+                "id": 1,
+                "title": "Frontend",
+                "order": 1,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:00:20.829Z",
+                "updatedAt": "2025-09-07T10:00:37.597Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое “breadcrumbs” (хлебные крошки)?",
+        "id": 933,
+        "premium": false,
+        "category": {
+          "id": 50,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какие основные элементы составляют структуру таблицы?",
+        "id": 939,
+        "premium": false,
+        "category": {
+          "id": 51,
+          "parent": {
+            "title": "HTML",
+            "id": 3,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

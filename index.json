@@ -1,0 +1,327 @@
+{
+  "categories": [
+    {
+      "name": "Frontend",
+      "topics": [
+        {
+          "name": "Javascript",
+          "files": [
+            "questions/Frontend/1_JS/1_Основы_языка.json",
+            "questions/Frontend/1_JS/2_Функции.json",
+            "questions/Frontend/1_JS/3_Объекты_и_прототипы.json",
+            "questions/Frontend/1_JS/4_Массивы_и_структуры_данных.json",
+            "questions/Frontend/1_JS/5_Асинхронность_и_Event_Loop.json",
+            "questions/Frontend/1_JS/6_DOM_и_браузер.json",
+            "questions/Frontend/1_JS/7_Классы.json",
+            "questions/Frontend/1_JS/8_Ошибки_и_отладка.json",
+            "questions/Frontend/1_JS/9_Современный_JS_ES6_.json",
+            "questions/Frontend/1_JS/10_Производительность_в_JS.json",
+            "questions/Frontend/1_JS/11_Продвинутые_темы.json"
+          ]
+        },
+        {
+          "name": "React",
+          "files": [
+            "questions/Frontend/2_React/20_Основы_React.json",
+            "questions/Frontend/2_React/28_Компоненты.json",
+            "questions/Frontend/2_React/29_Состояние.json",
+            "questions/Frontend/2_React/30_Хуки.json",
+            "questions/Frontend/2_React/32_Жизненный_цикл.json",
+            "questions/Frontend/2_React/33_Рендеринг_и_производительность.json",
+            "questions/Frontend/2_React/34_Паттерны_и_подходы.json",
+            "questions/Frontend/2_React/36_Роутинг.json",
+            "questions/Frontend/2_React/37_API_и_асинхронность.json",
+            "questions/Frontend/2_React/38_Обработка_ошибок.json",
+            "questions/Frontend/2_React/39_Server_Side_Rendering.json",
+            "questions/Frontend/2_React/40_React_18_.json",
+            "questions/Frontend/2_React/41_TypeScript_в_React.json"
+          ],
+          "subtopics": [
+            {
+              "name": "State Managers",
+              "files": [
+                "questions/Frontend/2_React/Statemanagers/140_Redux.json",
+                "questions/Frontend/2_React/Statemanagers/141_Effector.json",
+                "questions/Frontend/2_React/Statemanagers/142_Zustand.json",
+                "questions/Frontend/2_React/Statemanagers/143_MobX.json",
+                "questions/Frontend/2_React/Statemanagers/144_React_Context.json"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HTML",
+          "files": [
+            "questions/Frontend/3_HTML/43_Основы_HTML.json",
+            "questions/Frontend/3_HTML/44_Семантика.json",
+            "questions/Frontend/3_HTML/45_Теги_и_их_категории.json",
+            "questions/Frontend/3_HTML/46_Атрибуты_HTML.json",
+            "questions/Frontend/3_HTML/47_Метаданные_и__head_.json",
+            "questions/Frontend/3_HTML/48_Формы_и_контролы.json",
+            "questions/Frontend/3_HTML/49_Изображения_и_медиа.json",
+            "questions/Frontend/3_HTML/50_Ссылки_и_навигация.json",
+            "questions/Frontend/3_HTML/51_Таблицы_и_списки.json",
+            "questions/Frontend/3_HTML/52_Accessibility__a11y.json"
+          ]
+        },
+        {
+          "name": "CSS",
+          "files": [
+            "questions/Frontend/4_CSS/54_Основы_CSS.json",
+            "questions/Frontend/4_CSS/55_Селекторы_и_специфичность.json",
+            "questions/Frontend/4_CSS/56_Цвета__шрифты_и_текст.json",
+            "questions/Frontend/4_CSS/57_Box_Model.json",
+            "questions/Frontend/4_CSS/58_Позиционирование_элементов.json",
+            "questions/Frontend/4_CSS/59_Flexbox.json",
+            "questions/Frontend/4_CSS/60_CSS_Grid.json",
+            "questions/Frontend/4_CSS/61_Responsive_дизайн__адаптивность_.json",
+            "questions/Frontend/4_CSS/62_Анимации_и_переходы.json",
+            "questions/Frontend/4_CSS/63_Современные_возможности.json",
+            "questions/Frontend/4_CSS/64_Псевдоклассы_и_псевдоэлементы.json",
+            "questions/Frontend/4_CSS/65_Наследование_и_каскад.json"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "files": [
+            "questions/Frontend/5_TS/66_Основы_TypeScript.json",
+            "questions/Frontend/5_TS/67_Базовые_типы.json",
+            "questions/Frontend/5_TS/68_Типы_и_интерфейсы.json",
+            "questions/Frontend/5_TS/69_Типизация_функций.json",
+            "questions/Frontend/5_TS/70_Массивы_и_коллекции.json",
+            "questions/Frontend/5_TS/71_Union_и_Intersection_типы.json",
+            "questions/Frontend/5_TS/72_Utility_Types.json",
+            "questions/Frontend/5_TS/73_Дженерики.json",
+            "questions/Frontend/5_TS/74_Продвинутые_типы.json",
+            "questions/Frontend/5_TS/75_Типизация_классов_и_ООП.json",
+            "questions/Frontend/5_TS/76_Type_Narrowing_и_Guards.json",
+            "questions/Frontend/5_TS/145_Антипатерны_в_TS.json"
+          ]
+        },
+        {
+          "name": "Vue",
+          "files": [
+            "questions/Frontend/6_Vue/85_Основы_Vue_js.json",
+            "questions/Frontend/6_Vue/86_Реактивность.json",
+            "questions/Frontend/6_Vue/89_Компоненты_Vue.json",
+            "questions/Frontend/6_Vue/90_Состояние_и_данные.json",
+            "questions/Frontend/6_Vue/91_Директивы.json",
+            "questions/Frontend/6_Vue/92_Жизненный_цикл_Vue.json",
+            "questions/Frontend/6_Vue/93_Формы_и_события.json",
+            "questions/Frontend/6_Vue/94_Composition_API.json",
+            "questions/Frontend/6_Vue/95_Options_API.json",
+            "questions/Frontend/6_Vue/96_Роутинг_Vue_Router_.json",
+            "questions/Frontend/6_Vue/97_State_management__pinia_vuex_.json",
+            "questions/Frontend/6_Vue/98_Слоты_и_шаблоны.json",
+            "questions/Frontend/6_Vue/99_Оптимизация_и_производительность.json",
+            "questions/Frontend/6_Vue/100_Тестирование_Vue.json"
+          ]
+        },
+        {
+          "name": "Angular",
+          "files": [
+            "questions/Frontend/7_Angular/207_Основы_Angular.json",
+            "questions/Frontend/7_Angular/208_Архитектура_и_жизненный_цикл.json",
+            "questions/Frontend/7_Angular/210_Компоненты_Angular.json",
+            "questions/Frontend/7_Angular/212_Директивы_Angular.json",
+            "questions/Frontend/7_Angular/213_Шаблоны.json",
+            "questions/Frontend/7_Angular/214_Signals__v17__.json",
+            "questions/Frontend/7_Angular/215_Dependency_injection__DI_.json",
+            "questions/Frontend/7_Angular/216_Сервисы_Angular.json",
+            "questions/Frontend/7_Angular/217_Формы__Forms_.json",
+            "questions/Frontend/7_Angular/218_Роутинг__Routing_.json",
+            "questions/Frontend/7_Angular/219_State_Management_Angular.json",
+            "questions/Frontend/7_Angular/220_RxJS_в_Angular.json",
+            "questions/Frontend/7_Angular/221_SSR_в_Angular.json"
+          ]
+        },
+        {
+          "name": "Next.js",
+          "files": [
+            "questions/Frontend/8_NextJs/101_Основы_Next_js.json",
+            "questions/Frontend/8_NextJs/102_Структура_проекта_.json",
+            "questions/Frontend/8_NextJs/103_Роутинг__App_Pages_.json",
+            "questions/Frontend/8_NextJs/104_Рендеринг_и_стратегии.json",
+            "questions/Frontend/8_NextJs/105_Особенности_компонентов.json",
+            "questions/Frontend/8_NextJs/106_Data_Fetching_и_API.json",
+            "questions/Frontend/8_NextJs/107_Server_Actions.json",
+            "questions/Frontend/8_NextJs/108_Данные_и_кэширование.json",
+            "questions/Frontend/8_NextJs/109_Layout__Metadata_и_SEO.json",
+            "questions/Frontend/8_NextJs/110_Оптимизация_и_скорость.json"
+          ]
+        },
+        {
+          "name": "SEO",
+          "files": [
+            "questions/Frontend/9_SEO/148_Основы_SEO.json",
+            "questions/Frontend/9_SEO/150_Семантическая_верстка.json",
+            "questions/Frontend/9_SEO/151_On_Page_SEO.json",
+            "questions/Frontend/9_SEO/152_Performance_и_скорость.json",
+            "questions/Frontend/9_SEO/153_Technical_SEO.json",
+            "questions/Frontend/9_SEO/222_off_Page_SEO__внешняя_оптимизация_.json"
+          ]
+        },
+        {
+          "name": "Frontend-инструменты",
+          "files": [
+            "questions/Frontend/10_Frontend-инструменты/82_Оптимизация_и_производительность_Frontend_.json",
+            "questions/Frontend/10_Frontend-инструменты/83_Storybook.json",
+            "questions/Frontend/10_Frontend-инструменты/84_Аналитика_и_метрики.json"
+          ],
+          "subtopics": [
+            {
+              "name": "Сборщики и бандлеры",
+              "files": [
+                "questions/Frontend/10_Frontend-инструменты/Сборщики_и_бандлеры/223_Webpack.json",
+                "questions/Frontend/10_Frontend-инструменты/Сборщики_и_бандлеры/224_Vite.json",
+                "questions/Frontend/10_Frontend-инструменты/Сборщики_и_бандлеры/225_TurboPack.json",
+                "questions/Frontend/10_Frontend-инструменты/Сборщики_и_бандлеры/226_EsBuild.json"
+              ]
+            },
+            {
+              "name": "Пакетные менеджеры",
+              "files": [
+                "questions/Frontend/10_Frontend-инструменты/Пакетные_менеджеры/227_npm.json",
+                "questions/Frontend/10_Frontend-инструменты/Пакетные_менеджеры/228_yarn.json",
+                "questions/Frontend/10_Frontend-инструменты/Пакетные_менеджеры/229_pnpm.json"
+              ]
+            },
+            {
+              "name": "Пре/Пост процессоры CSS",
+              "files": [
+                "questions/Frontend/10_Frontend-инструменты/Пре_Пост_процессоры_CSS/230_scss___sass___less.json",
+                "questions/Frontend/10_Frontend-инструменты/Пре_Пост_процессоры_CSS/231_postCSS.json",
+                "questions/Frontend/10_Frontend-инструменты/Пре_Пост_процессоры_CSS/232_TailWind.json"
+              ]
+            },
+            {
+              "name": "Линтеры и форматтеры",
+              "files": [
+                "questions/Frontend/10_Frontend-инструменты/Линтеры_форматтеры/233_EsLint.json",
+                "questions/Frontend/10_Frontend-инструменты/Линтеры_форматтеры/234_Prettier.json",
+                "questions/Frontend/10_Frontend-инструменты/Линтеры_форматтеры/279_Biome.json"
+              ]
+            },
+            {
+              "name": "Тестирование",
+              "files": [
+                "questions/Frontend/10_Frontend-инструменты/Тестирование/235_Jest___vitest.json",
+                "questions/Frontend/10_Frontend-инструменты/Тестирование/236_Скриншотное_UI_тестирование.json",
+                "questions/Frontend/10_Frontend-инструменты/Тестирование/237_React_testing_library.json",
+                "questions/Frontend/10_Frontend-инструменты/Тестирование/238_end_to_end__e2e_.json"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backend",
+      "topics": [
+        {
+          "name": "Node.js",
+          "files": [
+            "questions/Backend/Nodejs/111_Основы_Node_js.json",
+            "questions/Backend/Nodejs/112_Рантайм_и_окружение.json",
+            "questions/Backend/Nodejs/113_Параллелизм_и_масштабирование.json",
+            "questions/Backend/Nodejs/114_Модули_и_загрузка.json",
+            "questions/Backend/Nodejs/115_Файлы_и_I_O.json",
+            "questions/Backend/Nodejs/116_Streams_и_backpressure.json",
+            "questions/Backend/Nodejs/117_События_и_EventEmitter.json",
+            "questions/Backend/Nodejs/165_Express_JS.json",
+            "questions/Backend/Nodejs/166_Nest_JS.json",
+            "questions/Backend/Nodejs/167_HTTP_и_Websockets.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Инструменты и технологии",
+      "topics": [
+        {
+          "name": "Docker",
+          "files": [
+            "questions/Инструменты_и_технологии/Docker/191_Основы_Docker.json",
+            "questions/Инструменты_и_технологии/Docker/192_Docker_образы__images_.json",
+            "questions/Инструменты_и_технологии/Docker/193_Docker_контейнеры.json",
+            "questions/Инструменты_и_технологии/Docker/194_Dockerfile_и_compose.json",
+            "questions/Инструменты_и_технологии/Docker/195_Volumes_и_networking.json",
+            "questions/Инструменты_и_технологии/Docker/196_Docker_registry.json"
+          ]
+        },
+        {
+          "name": "Git",
+          "files": [
+            "questions/Инструменты_и_технологии/Git/318_Основы_Git.json",
+            "questions/Инструменты_и_технологии/Git/319_Базовые_команды_Git.json",
+            "questions/Инструменты_и_технологии/Git/320_Работа_с_ветками__Branches_.json",
+            "questions/Инструменты_и_технологии/Git/321_Работа_с_удал_нными_репозиториями.json",
+            "questions/Инструменты_и_технологии/Git/322_История_коммитов_и_навигация.json",
+            "questions/Инструменты_и_технологии/Git/323_Отмена_изменений_и_Stash.json",
+            "questions/Инструменты_и_технологии/Git/325_Rebase_и_merge.json",
+            "questions/Инструменты_и_технологии/Git/326_Git_workflows.json",
+            "questions/Инструменты_и_технологии/Git/327_Теги_и_релизы___CI_CD.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "topics": [
+        {
+          "name": "SOLID",
+          "files": [
+            "questions/Computer_science/SOLID/159_Single_Responsibility_Principle.json",
+            "questions/Computer_science/SOLID/160_Open_Closed_Principle.json",
+            "questions/Computer_science/SOLID/161_Liskov_Substitution_Principle.json",
+            "questions/Computer_science/SOLID/162_Interface_Segregation_Principle.json",
+            "questions/Computer_science/SOLID/163_Dependency_Inversion_Principle.json"
+          ]
+        },
+        {
+          "name": "Алгоритмы",
+          "files": [
+            "questions/Computer_science/Алгоритмы/121_Основы_алгоритмов.json",
+            "questions/Computer_science/Алгоритмы/123_Сложность_и_оценка_O(n).json",
+            "questions/Computer_science/Алгоритмы/124_Сортировка.json",
+            "questions/Computer_science/Алгоритмы/125_Поиск_и_бинарные_алгоритмы.json",
+            "questions/Computer_science/Алгоритмы/126_Алг._с_массивами_и_строками.json",
+            "questions/Computer_science/Алгоритмы/127_Алгоритмы_с_деревьями.json",
+            "questions/Computer_science/Алгоритмы/128_Алгоритмы_с_графами.json",
+            "questions/Computer_science/Алгоритмы/129_Жадные_алгоритмы.json",
+            "questions/Computer_science/Алгоритмы/130_Динамическое_программирование.json",
+            "questions/Computer_science/Алгоритмы/131_Комбинаторика_и_теория_чисел.json"
+          ]
+        },
+        {
+          "name": "Структуры данных",
+          "files": [
+            "questions/Computer_science/Структуры_данных/132_Основы_структур_данных.json",
+            "questions/Computer_science/Структуры_данных/133_Массивы.json",
+            "questions/Computer_science/Структуры_данных/134_Связные_списки.json",
+            "questions/Computer_science/Структуры_данных/135_Стек__Stack_.json",
+            "questions/Computer_science/Структуры_данных/136_Очередь_и_Дек__Queue_.json",
+            "questions/Computer_science/Структуры_данных/137_Хеш_таблицы.json",
+            "questions/Computer_science/Структуры_данных/138_Деревья.json",
+            "questions/Computer_science/Структуры_данных/139_Графы.json"
+          ]
+        },
+        {
+          "name": "Сети и интернет",
+          "files": [
+            "questions/Computer_science/Сети и интернет/298_Основы_сетей.json",
+            "questions/Computer_science/Сети и интернет/299_Модель_OSI_и_TCP_IP.json",
+            "questions/Computer_science/Сети и интернет/300_Физический_уровень.json",
+            "questions/Computer_science/Сети и интернет/301_Канальный_уровень.json",
+            "questions/Computer_science/Сети и интернет/302_Сетевой_уровень.json",
+            "questions/Computer_science/Сети и интернет/303_Транспортный_уровень.json",
+            "questions/Computer_science/Сети и интернет/304_Прикладной_уровень.json",
+            "questions/Computer_science/Сети и интернет/305_Протокол_HTTP.json",
+            "questions/Computer_science/Сети и интернет/306_DNS.json",
+            "questions/Computer_science/Сети и интернет/307_Безопасность_сетей.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

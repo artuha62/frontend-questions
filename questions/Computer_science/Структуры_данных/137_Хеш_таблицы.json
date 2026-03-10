@@ -1,0 +1,1372 @@
+{
+  "category": {
+    "id": 137,
+    "title": "Хеш-таблицы",
+    "description": " ",
+    "parentId": 11
+  },
+  "totalQuestions": 16,
+  "downloadedAt": "2026-03-10T09:40:20.753Z",
+  "questions": [
+    {
+      "current": {
+        "id": 1564,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое хеш-таблица?\"}]}]}",
+        "title": "Что такое хеш-таблица?",
+        "order": 410600,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-таблица\"},{\"type\":\"text\",\"text\":\" — это структура данных, которая хранит пары \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"(ключ → значение)\"},{\"type\":\"text\",\"text\":\" и позволяет находить элементы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"почти мгновенно\"},{\"type\":\"text\",\"text\":\" — в среднем за \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждый ключ проходит через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш-функцию\"},{\"type\":\"text\",\"text\":\", которая превращает его в число — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Этот хеш указывает, в какую “ячейку” (индекс) таблицы записать значение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При поиске того же ключа хеш-функция вычисляет тот же индекс, и элемент быстро находится.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проблема коллизий:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Иногда разные ключи дают одинаковый хеш — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коллизия\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Решается:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цепочками (chaining)\"},{\"type\":\"text\",\"text\":\" — в ячейке хранится список всех элементов с одинаковым хешем,\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"открытой адресацией\"},{\"type\":\"text\",\"text\":\" — поиск следующей свободной ячейки.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Преимущества:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"быстрый доступ к данным — O(1) в среднем;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"простое добавление и удаление.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"В Python это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"словарь (dict)\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в Java — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"HashMap\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"в C++ — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"unordered_map\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблицы лежат в основе кэшей, словарей, баз данных и множества алгоритмов, где важен быстрый поиск по ключу.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:20:37.964Z",
+        "updatedAt": "2025-10-21T08:20:37.964Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В каких задачах часто используется очередь для решения?",
+        "id": 1563,
+        "premium": false,
+        "category": {
+          "id": 136,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В чём идея хеширования?",
+        "id": 1565,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1565,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В чём идея хеширования?\"}]}]}",
+        "title": "В чём идея хеширования?",
+        "order": 410601,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идея хеширования\"},{\"type\":\"text\",\"text\":\" — в том, чтобы с помощью специальной функции (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш-функции\"},{\"type\":\"text\",\"text\":\") быстро преобразовать произвольные данные (например, строку или объект) в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"фиксированное число — хеш\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Это число используется как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"адрес\"},{\"type\":\"text\",\"text\":\" для хранения или поиска данных в структуре, например, в хеш-таблице.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основная цель:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Сократить время поиска — вместо того чтобы перебирать все элементы, мы сразу вычисляем, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"italic\"}],\"text\":\"где именно\"},{\"type\":\"text\",\"text\":\" должен лежать нужный объект.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключевые свойства хеширования:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Быстрота вычисления\"},{\"type\":\"text\",\"text\":\" — хеш должен считаться быстро.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Равномерность распределения\"},{\"type\":\"text\",\"text\":\" — разные ключи должны давать разные (или хотя бы равномерно распределённые) хеши.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детерминированность\"},{\"type\":\"text\",\"text\":\" — один и тот же ключ всегда даёт один и тот же хеш.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если нужно хранить пользователей по имени:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"hash(\\\"Anna\\\") → 42  \\nhash(\\\"Pavel\\\") → 17  \\nhash(\\\"Olya\\\") → 93\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Каждое имя сразу отправляется в “свою” ячейку таблицы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеширование превращает поиск в вычисление\"},{\"type\":\"text\",\"text\":\" — вместо долгого сравнения всех элементов, мы просто считаем число и идём по адресу.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:20:57.713Z",
+        "updatedAt": "2025-10-21T08:20:57.713Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое хеш-таблица?",
+        "id": 1564,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Как хеш-таблица хранит данные?",
+        "id": 1566,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1566,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Как хеш-таблица хранит данные?\"}]}]}",
+        "title": "Как хеш-таблица хранит данные?",
+        "order": 410602,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица хранит данные в виде \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пар “ключ → значение”\"},{\"type\":\"text\",\"text\":\", используя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"массив\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш-функцию\"},{\"type\":\"text\",\"text\":\", которая определяет, в какой ячейке хранить элемент.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пошагово:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При добавлении элемента вычисляется \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш ключа\"},{\"type\":\"text\",\"text\":\":\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"index = hash(key) % N\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"N\"},{\"type\":\"text\",\"text\":\" — размер массива.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент помещается в ячейку с этим индексом.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При поиске или удалении используется та же хеш-функция — по ключу вычисляется индекс, и доступ к элементу происходит напрямую.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Пусть размер таблицы — 10,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hash(\\\"dog\\\") = 23\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Тогда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"23 % 10 = 3\"},{\"type\":\"text\",\"text\":\", и пара \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"(\\\"dog\\\", \\\"animal\\\")\"},{\"type\":\"text\",\"text\":\" хранится в ячейке №3.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Если коллизия (два ключа дают один индекс):\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"цепочках (chaining)\"},{\"type\":\"text\",\"text\":\" в ячейке хранится список всех элементов с этим индексом;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"при \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"открытой адресации\"},{\"type\":\"text\",\"text\":\" таблица ищет следующую свободную ячейку.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таким образом, хеш-таблица — это по сути \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"массив + хеш-функция + способ обработки коллизий\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"что позволяет быстро находить данные по ключу без полного перебора.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:21:15.142Z",
+        "updatedAt": "2025-10-21T08:21:15.142Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "В чём идея хеширования?",
+        "id": 1565,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое ключ и значение в хеш-таблице?",
+        "id": 1567,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1567,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое ключ и значение в хеш-таблице?\"}]}]}",
+        "title": "Что такое ключ и значение в хеш-таблице?",
+        "order": 410603,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В хеш-таблице каждый элемент хранится как \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пара “ключ → значение”\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключ (key)\"},{\"type\":\"text\",\"text\":\" — это уникальный идентификатор, по которому ищут данные.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Он проходит через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш-функцию\"},{\"type\":\"text\",\"text\":\", которая вычисляет индекс ячейки, где хранится связанное значение.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Ключи не повторяются — если добавить элемент с тем же ключом, старое значение перезапишется.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Значение (value)\"},{\"type\":\"text\",\"text\":\" — это сами данные, которые нужно хранить или получать.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"По ключу можно быстро найти соответствующее значение.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"{ \\\"name\\\": \\\"Анна\\\", \\\"age\\\": 25, \\\"city\\\": \\\"Москва\\\" }\\n\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"name\\\"\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"age\\\"\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"city\\\"\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ключи\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"Анна\\\"\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"25\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"Москва\\\"\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"значения\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция преобразует ключ, например \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"city\\\"\"},{\"type\":\"text\",\"text\":\", в индекс, чтобы моментально найти \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"Москва\\\"\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:21:31.381Z",
+        "updatedAt": "2025-11-10T13:12:39.815Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Как хеш-таблица хранит данные?",
+        "id": 1566,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает хеш-функция?",
+        "id": 1568,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1568,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает хеш-функция?\"}]}]}",
+        "title": "Что делает хеш-функция?",
+        "order": 410604,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-функция\"},{\"type\":\"text\",\"text\":\" принимает ключ (например, строку, число или объект) и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"преобразует его в целое число — хеш\"},{\"type\":\"text\",\"text\":\", которое используется как индекс в хеш-таблице.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главная задача:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"быстро и предсказуемо определить, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в какую ячейку таблицы\"},{\"type\":\"text\",\"text\":\" поместить (или из какой извлечь) элемент по его ключу.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Основные свойства хорошей хеш-функции:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Детерминированность\"},{\"type\":\"text\",\"text\":\" — один и тот же ключ всегда даёт одинаковый хеш.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Равномерность\"},{\"type\":\"text\",\"text\":\" — хеши должны равномерно распределяться по диапазону, чтобы избежать “скоплений” элементов.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Быстрота\"},{\"type\":\"text\",\"text\":\" — вычисление хеша должно занимать мало времени.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Минимум коллизий\"},{\"type\":\"text\",\"text\":\" — разные ключи по возможности дают разные хеши.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"hash(\\\"cat\\\") → 15  \\nhash(\\\"dog\\\") → 42  \\nhash(\\\"bird\\\") → 7\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Тогда элемент с ключом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"dog\\\"\"},{\"type\":\"text\",\"text\":\" хранится в ячейке с индексом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"42 % N\"},{\"type\":\"text\",\"text\":\", где \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"N\"},{\"type\":\"text\",\"text\":\" — размер таблицы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Итог: хеш-функция — это механизм, который \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"переводит ключ в адрес хранения\"},{\"type\":\"text\",\"text\":\", делая поиск и вставку почти мгновенными.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:21:54.618Z",
+        "updatedAt": "2025-10-21T08:21:54.618Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое ключ и значение в хеш-таблице?",
+        "id": 1567,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему хеш-таблица обеспечивает быстрый доступ к данным?",
+        "id": 1569,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1569,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему хеш-таблица обеспечивает быстрый доступ к данным?\"}]}]}",
+        "title": "Почему хеш-таблица обеспечивает быстрый доступ к данным?",
+        "order": 410605,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица обеспечивает быстрый доступ к данным, потому что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"она не ищет элементы последовательно\"},{\"type\":\"text\",\"text\":\", как список, а \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"сразу вычисляет их адрес\"},{\"type\":\"text\",\"text\":\" с помощью хеш-функции.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это происходит:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При поиске элемента берётся его \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"ключ\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция вычисляет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"индекс\"},{\"type\":\"text\",\"text\":\" — позицию, где этот элемент должен лежать.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таблица сразу обращается к этой ячейке и возвращает значение.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"То есть вместо перебора всех элементов (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\") выполняется всего одно вычисление и одно обращение к памяти (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\" в среднем).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"table[\\\"apple\\\"] → hash(\\\"apple\\\") → 57 → ячейка №7 → значение найдено\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Быстрота достигается за счёт того, что \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"поиск сводится к арифметической операции\"},{\"type\":\"text\",\"text\":\", а не к сравнению ключей по одному.\"}]},{\"type\":\"blockquote\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Исключение — когда возникают коллизии, тогда время может вырасти, но при хорошей хеш-функции и правильной реализации средняя сложность остаётся \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:22:14.952Z",
+        "updatedAt": "2025-10-21T08:22:14.952Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает хеш-функция?",
+        "id": 1568,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое «bucket» (корзина) в контексте хеш-таблицы?",
+        "id": 1570,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1570,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое «bucket» (корзина) в контексте хеш-таблицы?\"}]}]}",
+        "title": "Что такое «bucket» (корзина) в контексте хеш-таблицы?",
+        "order": 410606,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Bucket (корзина)\"},{\"type\":\"text\",\"text\":\" — это ячейка в хеш-таблице, где хранятся элементы, чьи ключи после хеширования дали \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"один и тот же индекс\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция вычисляет индекс для ключа:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"index = hash(key) % N\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все элементы, для которых этот индекс совпадает, попадают \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"в одну и ту же корзину\"},{\"type\":\"text\",\"text\":\".\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если таких элементов несколько — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"коллизия\"},{\"type\":\"text\",\"text\":\", и корзина хранит их все (например, в виде списка).\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hash(\\\"cat\\\") % 10 = 3\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"hash(\\\"dog\\\") % 10 = 3\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"оба элемента будут лежать в корзине с индексом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"3\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"bucket[3] → [(\\\"cat\\\", \\\"мяу\\\"), (\\\"dog\\\", \\\"гав\\\")]\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Назначение:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Корзины нужны, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"решать коллизии\"},{\"type\":\"text\",\"text\":\" — хранить несколько элементов, которые попали в одну ячейку.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Иными словами, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"bucket\"},{\"type\":\"text\",\"text\":\" — это мини-хранилище внутри хеш-таблицы, где могут находиться \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"одно или несколько\"},{\"type\":\"text\",\"text\":\" пар “ключ → значение” с одинаковым хеш-индексом.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:22:31.759Z",
+        "updatedAt": "2025-10-21T08:22:31.759Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему хеш-таблица обеспечивает быстрый доступ к данным?",
+        "id": 1569,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое коллизия в хеш-таблице? Почему они неизбежны?",
+        "id": 1571,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1571,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что такое коллизия в хеш-таблице? Почему они неизбежны?\"}]}]}",
+        "title": "Что такое коллизия в хеш-таблице? Почему они неизбежны?",
+        "order": 410607,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Коллизия\"},{\"type\":\"text\",\"text\":\" — это ситуация, когда \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"два разных ключа дают один и тот же хеш-индекс\"},{\"type\":\"text\",\"text\":\", то есть попадают в одну и ту же ячейку (корзину) хеш-таблицы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"hash(\\\"dog\\\") % 10 = 3  \\nhash(\\\"cat\\\") % 10 = 3  \\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Оба ключа будут записаны в корзину №3 — это и есть коллизия.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему они неизбежны:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица имеет \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"конечное количество ячеек\"},{\"type\":\"text\",\"text\":\" (например, 1000),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"а количество возможных ключей — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"почти бесконечно\"},{\"type\":\"text\",\"text\":\" (строки, числа, объекты и т. д.),\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"значит, по принципу Дирихле, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"разные ключи неизбежно будут иметь одинаковый хеш\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Важно:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Коллизии — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"нормальное явление\"},{\"type\":\"text\",\"text\":\", их невозможно полностью устранить.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Главное — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уметь с ними эффективно работать\"},{\"type\":\"text\",\"text\":\" (через цепочки или открытую адресацию),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"чтобы при большом числе элементов таблица всё равно сохраняла быстроту доступа — близкую к \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:22:47.910Z",
+        "updatedAt": "2025-11-10T13:12:43.240Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое «bucket» (корзина) в контексте хеш-таблицы?",
+        "id": 1570,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему идеальная хеш-функция на практике невозможна?",
+        "id": 1572,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1572,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему идеальная хеш-функция на практике невозможна?\"}]}]}",
+        "title": "Почему идеальная хеш-функция на практике невозможна?",
+        "order": 410608,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Идеальная хеш-функция\"},{\"type\":\"text\",\"text\":\" — это такая, которая для всех возможных ключей выдает \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"уникальные хеши без коллизий\"},{\"type\":\"text\",\"text\":\" и равномерно распределяет их по таблице.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"На практике это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"невозможно\"},{\"type\":\"text\",\"text\":\", потому что:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ключей бесконечно много, а ячеек ограничено.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Таблица имеет конечный размер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"N\"},{\"type\":\"text\",\"text\":\", а количество возможных входных данных (строки, числа, объекты) — практически бесконечно.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Значит, разные ключи неизбежно будут попадать в одну и ту же ячейку.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-функция — компромисс между скоростью и равномерностью.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Чтобы быть быстрой, она должна работать просто (арифметические операции, побитовые сдвиги).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Но простота делает невозможным абсолютно равномерное распределение.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Данные непредсказуемы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Невозможно заранее знать, какие именно ключи будут использоваться, а значит — невозможно построить универсальную “идеальную” функцию.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Любое ограничение диапазона (через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"% N\"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\") создаёт пересечения.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Даже если хеши уникальны в 64-битном пространстве, при приведении к диапазону таблицы (например, 0–999) коллизии всё равно появятся.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Идеальная хеш-функция существует только \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"для заранее известного и фиксированного набора ключей\"},{\"type\":\"text\",\"text\":\".\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Для всех остальных случаев приходится использовать \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"приближения\"},{\"type\":\"text\",\"text\":\" — функции, которые минимизируют коллизии, но не могут их устранить полностью.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:23:12.758Z",
+        "updatedAt": "2025-10-21T08:23:12.758Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что такое коллизия в хеш-таблице? Почему они неизбежны?",
+        "id": 1571,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Почему важно, чтобы хеш-функция была быстрой?",
+        "id": 1573,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1573,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Почему важно, чтобы хеш-функция была быстрой?\"}]}]}",
+        "title": "Почему важно, чтобы хеш-функция была быстрой?",
+        "order": 410609,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Важно, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"хеш-функция была быстрой\"},{\"type\":\"text\",\"text\":\", потому что она вызывается \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"при каждой операции\"},{\"type\":\"text\",\"text\":\" с хеш-таблицей: добавлении, поиске, обновлении и удалении элемента.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Если функция медленная — страдает всё:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При каждом обращении к таблице нужно вычислить хеш,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"а значит — даже доступ “за O(1)” превращается в долгий процесс.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблица перестаёт быть эффективной: её преимущество — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорость\"},{\"type\":\"text\",\"text\":\", и именно она теряется.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При большом объёме данных (миллионы ключей) даже лишние микросекунды на вычисление хеша дают огромные задержки.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Цель:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Хеш-функция должна быть достаточно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"простой\"},{\"type\":\"text\",\"text\":\", чтобы выполняться почти мгновенно,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"и достаточно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"качественной\"},{\"type\":\"text\",\"text\":\", чтобы распределять ключи равномерно (минимум коллизий).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Вывод:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Быстрая хеш-функция — это основа производительности хеш-таблицы.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если она медленная, хеш-таблица теряет смысл — проще было бы использовать обычный список или дерево.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:23:30.083Z",
+        "updatedAt": "2025-10-21T08:23:30.083Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему идеальная хеш-функция на практике невозможна?",
+        "id": 1572,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает операция модуль (%) при хешировании? Как она связана с индексами?",
+        "id": 1574,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1574,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает операция модуль (%) при хешировании? Как она связана с индексами?\"}]}]}",
+        "title": "Что делает операция модуль (%) при хешировании? Как она связана с индексами?",
+        "order": 410610,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Операция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модуль (%)\"},{\"type\":\"text\",\"text\":\" при хешировании используется для того, чтобы \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"преобразовать большое значение хеша в допустимый индекс массива\"},{\"type\":\"text\",\"text\":\", где хранятся данные хеш-таблицы.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Как это работает:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция возвращает целое число — иногда очень большое.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таблица имеет ограниченный размер \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"N\"},{\"type\":\"text\",\"text\":\" (например, 100 ячеек).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Чтобы “вписать” хеш в диапазон индексов \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"[0 … N−1]\"},{\"type\":\"text\",\"text\":\", вычисляют:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"index = hash(key) % N\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В результате получается индекс — позиция в массиве, куда будет помещён элемент.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Пример:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"hash(\\\"dog\\\") = 123456\\nN = 10\\nindex = 123456 % 10 = 6\\n\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Значит, элемент с ключом \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"\\\"dog\\\"\"},{\"type\":\"text\",\"text\":\" попадёт в ячейку №6.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему именно модуль:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"%\"},{\"type\":\"text\",\"text\":\" даёт равномерное распределение по диапазону индексов;\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"гарантирует, что индекс \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"никогда не выйдет за пределы массива\"},{\"type\":\"text\",\"text\":\".\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Операция \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"модуль\"},{\"type\":\"text\",\"text\":\" связывает “абстрактный” хеш с конкретным местом хранения в таблице —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"она делает хеш \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"реальным индексом массива\"},{\"type\":\"text\",\"text\":\", где лежат данные.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:23:48.308Z",
+        "updatedAt": "2025-11-10T13:12:47.076Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Почему важно, чтобы хеш-функция была быстрой?",
+        "id": 1573,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какая сложность вставки элемента в хеш таблицу?",
+        "id": 1575,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1575,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какая сложность вставки элемента в хеш таблицу?\"}]}]}",
+        "title": "Какая сложность вставки элемента в хеш таблицу?",
+        "order": 410611,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Средняя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"временная сложность вставки элемента\"},{\"type\":\"text\",\"text\":\" в хеш-таблицу — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\", то есть операция выполняется за постоянное время.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему O(1):\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция быстро вычисляет индекс.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент сразу помещается в нужную ячейку (bucket).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нет необходимости перебирать другие элементы.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Но в худшем случае:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Если возникло \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"много коллизий\"},{\"type\":\"text\",\"text\":\",\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"или таблица \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"слишком заполнена\"},{\"type\":\"text\",\"text\":\",\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"вставка может занять \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\", так как придётся искать свободное место или проходить цепочку элементов в корзине.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Средняя сложность:\"},{\"type\":\"text\",\"text\":\" O(1)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Худшая:\"},{\"type\":\"text\",\"text\":\" O(n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При хорошей хеш-функции и достаточном размере таблицы:\"},{\"type\":\"text\",\"text\":\" вставка почти всегда мгновенная.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:24:04.920Z",
+        "updatedAt": "2025-10-21T08:24:04.920Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает операция модуль (%) при хешировании? Как она связана с индексами?",
+        "id": 1574,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какая сложность доступа к элементу в хеш таблице?",
+        "id": 1576,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1576,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какая сложность доступа к элементу в хеш таблице?\"}]}]}",
+        "title": "Какая сложность доступа к элементу в хеш таблице?",
+        "order": 410612,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Средняя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"временная сложность доступа (поиска) к элементу\"},{\"type\":\"text\",\"text\":\" в хеш-таблице — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\", то есть постоянное время.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему O(1):\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция вычисляет индекс за фиксированное время.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таблица сразу обращается к нужной ячейке (bucket).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В среднем в корзине хранится 1 элемент или очень мало.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"В худшем случае:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если все элементы дали одинаковый хеш (максимальные коллизии),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"все они окажутся в одной корзине, и поиск превратится в \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\" — нужно пройти всю цепочку.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Средняя сложность:\"},{\"type\":\"text\",\"text\":\" O(1)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Худшая сложность:\"},{\"type\":\"text\",\"text\":\" O(n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Амортизированно (на практике):\"},{\"type\":\"text\",\"text\":\" O(1) при хорошей хеш-функции и сбалансированной таблице.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:24:20.500Z",
+        "updatedAt": "2025-11-10T13:12:51.820Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какая сложность вставки элемента в хеш таблицу?",
+        "id": 1575,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Какая сложность удаления элемента в хеш таблице?",
+        "id": 1577,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1577,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Какая сложность удаления элемента в хеш таблице?\"}]}]}",
+        "title": "Какая сложность удаления элемента в хеш таблице?",
+        "order": 410613,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Средняя \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"временная сложность удаления элемента\"},{\"type\":\"text\",\"text\":\" в хеш-таблице — \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(1)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему так:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-функция вычисляет индекс ячейки за постоянное время.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Таблица сразу обращается к нужной корзине (bucket).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Элемент удаляется напрямую, без обхода всей структуры.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Но в худшем случае:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Если в корзине возникло \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"много коллизий\"},{\"type\":\"text\",\"text\":\" (например, в ней хранится длинный список),\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"придётся пройти все элементы в этой корзине, и тогда удаление займёт \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Средняя сложность:\"},{\"type\":\"text\",\"text\":\" O(1)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Худшая:\"},{\"type\":\"text\",\"text\":\" O(n)\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"При нормальной нагрузке (load factor < 0.75)\"},{\"type\":\"text\",\"text\":\" и хорошей хеш-функции —\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"удаление почти всегда происходит мгновенно.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:24:35.610Z",
+        "updatedAt": "2025-10-21T08:24:35.610Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какая сложность доступа к элементу в хеш таблице?",
+        "id": 1576,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что делает операция rehash и почему она считается дорогой?",
+        "id": 1578,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1578,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Что делает операция rehash и почему она считается дорогой?\"}]}]}",
+        "title": "Что делает операция rehash и почему она считается дорогой?",
+        "order": 410614,
+        "premium": false,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Rehash (перехеширование)\"},{\"type\":\"text\",\"text\":\" — это операция, при которой хеш-таблица \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перестраивается заново\"},{\"type\":\"text\",\"text\":\":\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"её размер увеличивается, и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"все элементы пересчитываются и размещаются в новых ячейках\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Когда происходит rehash:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Когда таблица заполняется слишком сильно (например, коэффициент заполнения > 0.7).\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— Чтобы уменьшить количество коллизий и сохранить быструю работу (O(1)).\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Что происходит во время rehash:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Создаётся новый массив — обычно в 2 раза больше старого.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Для каждого элемента из старой таблицы заново вычисляется хеш и новый индекс:\"}]},{\"type\":\"codeBlock\",\"attrs\":{\"language\":\"javascript\"},\"content\":[{\"type\":\"text\",\"text\":\"new_index = hash(key) % new_size\\n\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Все элементы вставляются в новую структуру.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Почему это дорого:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"пройти весь массив\"},{\"type\":\"text\",\"text\":\" и \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"перехешировать каждый ключ\"},{\"type\":\"text\",\"text\":\" — это \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"O(n)\"},{\"type\":\"text\",\"text\":\" операций.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"При больших объёмах данных (миллионы элементов) это занимает заметное время и память.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Итог:\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Rehash — редкая, но тяжёлая операция.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"Она нужна, чтобы поддерживать быструю работу таблицы,\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"но в момент выполнения временно делает её \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"медленной и ресурсоёмкой\"},{\"type\":\"text\",\"text\":\".\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:24:53.044Z",
+        "updatedAt": "2025-10-21T08:24:53.044Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Какая сложность удаления элемента в хеш таблице?",
+        "id": 1577,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "В каких задачах хеш таблицы наиболее эффективны?",
+        "id": 1579,
+        "premium": true,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "current": {
+        "id": 1579,
+        "type": "boolean",
+        "text": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"В каких задачах хеш таблицы наиболее эффективны?\"}]}]}",
+        "title": "В каких задачах хеш таблицы наиболее эффективны?",
+        "order": 410615,
+        "premium": true,
+        "isPopular": false,
+        "explanation": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Хеш-таблицы особенно эффективны в задачах, где нужно \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"часто и быстро искать, вставлять или удалять данные по ключу\"},{\"type\":\"text\",\"text\":\".\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"🔹 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Типичные области применения:\"}]},{\"type\":\"orderedList\",\"attrs\":{\"start\":1,\"type\":null},\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Поиск по ключу (словари, базы данных)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— хранение пар “ключ → значение” (например, \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"{\\\"user_id\\\": user_data}\"},{\"type\":\"text\",\"text\":\")\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— быстрый доступ к информации о пользователях, товарах, сессиях и т. д.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Подсчёт частот (frequency counting)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— сколько раз встречается элемент в списке или тексте (например, подсчёт слов в тексте).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Проверка принадлежности (множества)\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— быстро узнать, есть ли элемент в коллекции (\"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"in\"},{\"type\":\"text\",\"text\":\" в Python).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Кэширование\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— сохранение уже вычисленных результатов, чтобы не пересчитывать заново (например, мемоизация в рекурсивных алгоритмах).\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Удаление дубликатов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— хранение только уникальных значений (через \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"set\"},{\"type\":\"text\",\"text\":\" или \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"dict\"},{\"type\":\"text\",\"text\":\").\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Ассоциативные массивы и таблицы символов\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— связывание имён переменных с их значениями при интерпретации кода.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Хеш-индексация в базах данных\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"— быстрый поиск записей по первичному ключу без полного перебора.\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"📍 \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Главное:\"},{\"type\":\"text\",\"text\":\" хеш-таблицы эффективны там, где важна \"},{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"скорость доступа по ключу\"},{\"type\":\"text\",\"text\":\" и не требуется упорядоченность данных.\"}]}]}",
+        "grade": "trainee",
+        "language": null,
+        "generationSource": "USER",
+        "framework": null,
+        "expectedAnswer": null,
+        "categoryId": 137,
+        "createdAt": "2025-10-21T08:25:14.982Z",
+        "updatedAt": "2025-11-10T13:12:55.758Z",
+        "favoriteByUsers": [],
+        "userProgress": [],
+        "category": {
+          "id": 137,
+          "title": "Хеш-таблицы",
+          "directions": [
+            {
+              "categoryId": 137,
+              "directionId": 3,
+              "direction": {
+                "id": 3,
+                "title": "Computer science",
+                "order": 3,
+                "isReady": true,
+                "isVisible": true,
+                "languages": [],
+                "hasGrades": null,
+                "frameworks": [],
+                "createdAt": "2025-09-07T10:01:17.530Z",
+                "updatedAt": "2025-11-26T11:08:54.386Z"
+              }
+            }
+          ],
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          }
+        }
+      },
+      "previous": {
+        "title": "Что делает операция rehash и почему она считается дорогой?",
+        "id": 1578,
+        "premium": false,
+        "category": {
+          "id": 137,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      },
+      "next": {
+        "title": "Что такое дерево как структура данных?",
+        "id": 1580,
+        "premium": false,
+        "category": {
+          "id": 138,
+          "parent": {
+            "title": "Структуры данных",
+            "id": 11,
+            "parent": null
+          },
+          "directions": [
+            {
+              "directionId": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
