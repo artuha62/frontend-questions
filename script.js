@@ -1,3 +1,5 @@
+const BASE_URL = '/frontend-questions';
+
 // Состояние приложения
 let manifest = null;
 let allQuestions = [];
@@ -41,14 +43,14 @@ async function init() {
   hljs.configure({ ignoreUnescapedHTML: true });
 
   try {
-    manifest = await fetch('/index.json').then(r => r.json());
+    manifest = await fetch(`${BASE_URL}/index.json`).then(r => r.json());
 
     const allPromises = [];
     manifest.categories.forEach(cat => {
       cat.topics.forEach(topic => {
         topic.files.forEach(file => {
           allPromises.push(
-            fetch(`/${file}`)
+            fetch(`${BASE_URL}/${file}`)
               .then(r => r.json())
               .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: null, data }))
           );
@@ -57,7 +59,7 @@ async function init() {
           topic.subtopics.forEach(sub => {
             sub.files.forEach(file => {
               allPromises.push(
-                fetch(`/${file}`)
+                fetch(`${BASE_URL}/${file}`)
                   .then(r => r.json())
                   .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: sub.name, data }))
               );
