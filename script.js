@@ -42,6 +42,10 @@ async function init() {
   loadStatuses();
   hljs.configure({ ignoreUnescapedHTML: true });
 
+  // Инициализируем drawer до загрузки данных
+  setupMobileDrawer();
+  setupScrollToTop();
+
   try {
     manifest = await fetch(`${BASE_URL}/index.json`).then(r => r.json());
 
@@ -283,7 +287,15 @@ function createSidebarQuestion(entry) {
 
   const metaHtml = (gradeHtml || popularHtml) ? `<span class="sq-meta">${gradeHtml}${popularHtml}</span>` : '';
   div.innerHTML = `<span class="sq-dot ${dotClass}"></span><span class="sq-info"><span class="sq-title">${entry.current.title}</span>${metaHtml}</span>`;
-  div.addEventListener('click', () => showQuestion(entry.globalIdx));
+
+  div.addEventListener('click', () => {
+    showQuestion(entry.globalIdx);
+    // Закрываем дровер на мобилке после выбора вопроса
+    if (window.innerWidth <= 768) {
+      closeDrawer();
+    }
+  });
+
   return div;
 }
 
@@ -315,7 +327,6 @@ function applyFilter() {
       subGroup.style.display = hasVisible ? '' : 'none';
     }
   });
-
 
   document.querySelectorAll('.subtopic-group').forEach(stGroup => {
     const stChildren = stGroup.querySelector('.subtopic-children');
@@ -357,7 +368,6 @@ function showQuestion(globalIdx) {
   }
   bc.innerHTML = bcHtml;
 
-
   const gradeEl = document.getElementById('question-grade');
   const labels = { trainee: 'Легкий', junior: 'Junior', middle: 'Middle', senior: 'Senior' };
   let badgesHtml = '';
@@ -369,9 +379,7 @@ function showQuestion(globalIdx) {
   }
   gradeEl.innerHTML = badgesHtml;
 
-
   document.getElementById('question-title').textContent = entry.current.title;
-
 
   let subtitleText = '';
   if (entry.current.text) {
@@ -382,9 +390,7 @@ function showQuestion(globalIdx) {
   }
   document.getElementById('question-subtitle').textContent = subtitleText;
 
-
   updateStatusButtonsUI(entry.current.id);
-
 
   const explanationEl = document.getElementById('explanation-content');
   const expandBtn = document.getElementById('expand-btn');
@@ -709,27 +715,62 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, m => map[m]);
 }
 
-// Scroll to Top Button
-(function setupScrollToTop() {
+// ─── Mobile Drawer ───────────────────────────────────────────────────────────
+// Выносим closeDrawer в глобальную область, чтобы createSidebarQuestion мог её вызвать
+
+function closeDrawer() {
+  const sidebar = document.getElementById('sidebar');
+  const drawerOverlay = document.getElementById('drawer-overlay');
+  if (!sidebar || !drawerOverlay) return;
+  sidebar.classList.remove('open');
+  drawerOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function openDrawer() {
+  const sidebar = document.getElementById('sidebar');
+  const drawerOverlay = document.getElementById('drawer-overlay');
+  if (!sidebar || !drawerOverlay) return;
+  sidebar.classList.add('open');
+  drawerOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function setupMobileDrawer() {
+  const drawerToggle = document.getElementById('mobile-drawer-toggle');
+  const drawerClose = document.getElementById('drawer-close');
+  const drawerOverlay = document.getElementById('drawer-overlay');
+
+  if (!drawerToggle || !drawerClose || !drawerOverlay) return;
+
+  drawerToggle.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  drawerOverlay.addEventListener('click', closeDrawer);
+
+  // Закрываем при ресайзе на десктоп
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeDrawer();
+    }
+  });
+}
+
+// ─── Scroll to Top ───────────────────────────────────────────────────────────
+function setupScrollToTop() {
   const scrollBtn = document.getElementById('scroll-to-top');
   const mainContent = document.getElementById('main-content');
-  
+
   if (!scrollBtn || !mainContent) return;
 
-  // Show/hide button based on scroll position
   mainContent.addEventListener('scroll', () => {
-    if (mainContent.scrollTop > 200) {
+    if (mainContent.scrollTop > 350) {
       scrollBtn.classList.add('visible');
     } else {
       scrollBtn.classList.remove('visible');
     }
   });
 
-  // Scroll to top on click
   scrollBtn.addEventListener('click', () => {
-    mainContent.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    mainContent.scrollTo({ top: 0, behavior: 'smooth' });
   });
-})();
+}

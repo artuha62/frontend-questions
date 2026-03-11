@@ -20,29 +20,54 @@
 }
 
 /* reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box;-webkit-tap-highlight-color: transparent; }
+
 
 html, body {
   overflow: hidden;
+  height: 100%;
   font-family: "Onest", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
-
-/* topbar */
+/* topbar
+   БЕЗ z-index — не создаём stacking context, который мешает дроверу */
 .topbar {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 48px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  z-index: 100;
+  gap: 12px;
   padding-inline: 40px;
   max-width: var(--content-max-width);
   margin-inline: auto;
+  background: var(--bg);
 }
+
+.mobile-drawer-toggle {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.mobile-drawer-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+
+.mobile-drawer-toggle span { font-weight: 500; }
 
 .topbar-search {
   display: flex;
@@ -71,7 +96,7 @@ html, body {
 .search-results {
   position: fixed;
   top: 48px;
-  left: 20px;
+  left: 40px;
   width: 400px;
   max-height: 400px;
   overflow-y: auto;
@@ -79,7 +104,7 @@ html, body {
   border: 1px solid var(--border);
   border-radius: 0 0 var(--radius) var(--radius);
   display: none;
-  z-index: 200;
+  z-index: 9999;
 }
 
 .search-results.active { display: block; }
@@ -101,13 +126,14 @@ html, body {
   margin-top: 2px;
 }
 
-/* layout */
+/* layout
+   КЛЮЧЕВОЕ ИЗМЕНЕНИЕ: убрали position: fixed с .app-layout
+   Это убирает stacking context, который изолировал z-index сайдбара.
+   Вместо этого — height: 100vh + padding-top для учёта топбара. */
 .app-layout {
   display: flex;
-  position: fixed;
-  top: 48px;
-  left: 0; right: 0; bottom: 0;
-  padding-inline: 40px;
+  height: 100vh;
+  padding-top: 48px;
   max-width: var(--content-max-width);
   margin-inline: auto;
 }
@@ -122,6 +148,49 @@ html, body {
   padding: 12px 0;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.drawer-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .15s;
+}
+
+.drawer-close:hover { color: var(--text); }
+
+/* drawer overlay
+   Скрыт по умолчанию везде, показывается только через .active на мобилке */
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 200;
+  opacity: 0;
+  transition: opacity .3s ease;
 }
 
 .compact-toggle {
@@ -172,7 +241,7 @@ html, body {
   padding: 0 8px;
 }
 
-/* sidebar tree — main categories (Frontend, Backend, ...) */
+/* sidebar tree — main categories */
 .main-cat-group { margin-bottom: 4px; }
 
 .main-cat-header {
@@ -189,7 +258,6 @@ html, body {
   user-select: none;
 }
 
-.main-cat-header:hover { background: var(--bg-hover); }
 
 .main-cat-header .arrow {
   transition: transform .2s;
@@ -213,7 +281,7 @@ html, body {
 .main-cat-children { display: none; padding-left: 8px; }
 .main-cat-children.open { display: block; }
 
-/* topics (Javascript, React, ...) */
+/* topics */
 .cat-group { margin-bottom: 2px; }
 
 .cat-header {
@@ -230,7 +298,6 @@ html, body {
   user-select: none;
 }
 
-.cat-header:hover { background: var(--bg-hover); color: var(--text); }
 
 .cat-header .arrow {
   transition: transform .2s;
@@ -269,8 +336,6 @@ html, body {
   user-select: none;
 }
 
-.subcat-header:hover { background: var(--bg-hover); color: var(--text); }
-
 .subcat-header .arrow {
   transition: transform .2s;
   font-size: 10px;
@@ -294,7 +359,7 @@ html, body {
 .subcat-children { display: none; padding-left: 10px; }
 .subcat-children.open { display: block; }
 
-/* subtopics (State Managers, Сборщики, ...) */
+/* subtopics */
 .subtopic-group { margin-bottom: 2px; }
 
 .subtopic-header {
@@ -361,7 +426,6 @@ html, body {
 }
 
 .sidebar-question.active .sq-dot { border-color: var(--text); }
-
 .sidebar-question .sq-dot.status-learned { background: #3fb950; border-color: #3fb950; }
 .sidebar-question .sq-dot.status-repeat { background: #f85149; border-color: #f85149; }
 
@@ -515,7 +579,6 @@ html, body {
   color: var(--text-muted);
 }
 
-.status-btn:hover { border-color: var(--text-dim); color: var(--text-dim); }
 
 .status-btn-repeat.active { background: rgba(248,81,73,0.15); border-color: #f85149; color: #f85149; }
 .status-btn-learned.active { background: rgba(63,185,80,0.15); border-color: #3fb950; color: #3fb950; }
@@ -598,8 +661,11 @@ html, body {
   cursor: pointer;
   transition: background .15s, border-color .15s;
 }
+.nav-btn:active {
+  background: var(--bg-hover);
+  border-color: var(--text-muted);
+}
 
-.nav-btn:hover { background: var(--bg-hover); border-color: var(--text-muted); }
 .nav-btn:disabled { opacity: 0.3; cursor: default; }
 .nav-btn:disabled:hover { background: var(--bg-card); border-color: var(--border); }
 
@@ -621,8 +687,9 @@ pre {
   color: #c9d1d9;
   padding: 10px;
   border-radius: 6px;
-  overflow-x: auto;
   margin: 12px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 pre code {
@@ -632,6 +699,8 @@ pre code {
   font-size: 13px;
   line-height: 1.6;
   border: none;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 blockquote {
@@ -658,8 +727,14 @@ th, td {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
   color: var(--text-dim);
   font-size: 14px;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
 }
 
 th {
@@ -684,7 +759,7 @@ ul, ol { margin: 12px 0; padding-left: 28px; color: var(--text-dim); }
 li { margin: 6px 0; }
 strong { color: var(--text); }
 
-/* scroll to top button */
+/* scroll to top */
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
@@ -702,14 +777,11 @@ strong { color: var(--text); }
   transition: all .3s ease;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+  z-index: 9999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.scroll-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-}
+.scroll-to-top.visible { opacity: 1; visibility: visible; }
 
 .scroll-to-top:hover {
   background: var(--accent);
@@ -719,9 +791,7 @@ strong { color: var(--text); }
   box-shadow: 0 6px 16px rgba(102,126,234,0.4);
 }
 
-.scroll-to-top:active {
-  transform: translateY(0);
-}
+.scroll-to-top:active { transform: translateY(0); }
 
 /* scrollbar */
 ::-webkit-scrollbar { width: 6px; }
@@ -729,15 +799,137 @@ strong { color: var(--text); }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #555; }
 
-/* responsive */
+/* ─── responsive ──────────────────────────────────────────────────────────── */
+
 @media (max-width: 900px) {
   .sidebar { width: 260px; min-width: 260px; }
   .main-content { padding: 20px 24px; }
   .topbar-search { width: 220px; }
 }
 
+@media (max-width: 768px) {
+  .topbar { padding-inline: 16px; }
+  .app-layout { padding-inline: 0; }
+  .main-content { padding: 20px 16px; }
+
+  .mobile-drawer-toggle { display: flex; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 85%;
+    max-width: 340px;
+    min-width: 0;
+    z-index: 300;
+    transition: left .3s ease;
+    border-right: none;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.7);
+  }
+
+  .sidebar.open { left: 0; }
+
+  .sidebar-header { display: flex; }
+
+  /* Оверлей — только когда активен */
+  .drawer-overlay {
+    display: none;
+    z-index: 200;
+  }
+
+  .drawer-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .topbar-search { flex: 1; width: auto; }
+
+  .search-results {
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+
+  .explanation-content table,
+  .main-content table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .explanation-content table td,
+  .explanation-content table th {
+    white-space: normal;
+    min-width: 100px;
+  }
+}
+
 @media (max-width: 640px) {
-  .sidebar { display: none; }
-  .main-content { padding: 16px; }
-  .question-title { font-size: 22px; }
+  .main-content { padding: 16px 12px; }
+  .question-title { font-size: 22px; line-height: 1.25; }
+  .question-subtitle { font-size: 14px; }
+  .breadcrumb { font-size: 11px; margin-bottom: 16px; flex-wrap: wrap; }
+  .explanation-section { margin-bottom: 20px; }
+  .explanation-header { padding: 12px 14px; }
+  .explanation-label { font-size: 16px; }
+  .explanation-content { padding: 0 14px 16px; font-size: 14px; line-height: 1.6; }
+  .question-nav { flex-direction: column; gap: 8px; }
+  .nav-btn { width: 100%; justify-content: center; }
+  .scroll-to-top { bottom: 20px; right: 20px; width: 44px; height: 44px; }
+  .status-bar { margin-bottom: 20px; }
+  .grade-badge { font-size: 10px; padding: 2px 8px; }
+  code.inline-code { font-size: 12px; padding: 1px 4px; }
+  pre { padding: 8px; font-size: 12px; margin: 10px 0; }
+  pre code { font-size: 12px; }
+  table { font-size: 13px; }
+  th, td { padding: 8px; font-size: 12px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 16px; }
+  h5 { font-size: 15px; }
+}
+
+@media (max-width: 375px) {
+  .topbar { padding-inline: 12px; gap: 8px; }
+  .app-layout { padding-inline: 0; }
+  .main-content { padding: 12px 10px; }
+  .mobile-drawer-toggle { padding: 6px 10px; font-size: 12px; }
+  .mobile-drawer-toggle svg { width: 18px; height: 18px; }
+  .topbar-search { font-size: 12px; }
+  .topbar-search input { font-size: 12px; }
+  .question-title { font-size: 20px; }
+  .sidebar { width: 90%; max-width: 300px; }
+  .sidebar-title { font-size: 16px; }
+}
+
+@media (hover: hover) {
+  .sidebar-question:hover {
+    background: var(--bg-hover);
+    color: var(--text-dim);
+  }
+
+  .cat-header:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+  }
+
+  .subcat-header:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+  }
+
+  .subtopic-header:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+  }
+
+  .nav-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--text-muted);
+  }
+
+  .status-btn:hover { border-color: var(--text-dim); color: var(--text-dim); }
 }
