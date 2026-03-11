@@ -15,7 +15,8 @@
 <body>
 
   <!-- Поиск -->
-  <header class="topbar">
+
+    <header class="topbar">
     <div class="topbar-search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input type="text" id="search-input" placeholder="Поиск вопросов..." />
@@ -23,83 +24,90 @@
     <div id="search-results" class="search-results"></div>
   </header>
 
-  <div class="app-layout">
-    <!-- Сайдбар -->
-    <aside class="sidebar" id="sidebar">
-      <button class="compact-toggle" id="compact-toggle">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
-        Компактный вид
-      </button>
-      <select class="sidebar-filter" id="sidebar-filter">
-        <option value="all">Все вопросы</option>
-        <option value="popular">Популярные</option>
-        <option value="learned">Изучено</option>
-        <option value="repeat">Нужно повторить</option>
-        <option value="none">Без статуса</option>
-      </select>
-      <nav class="sidebar-tree" id="sidebar-tree"></nav>
-    </aside>
+    <div class="app-layout">
+      <!-- Сайдбар -->
+      <aside class="sidebar" id="sidebar">
+        <button class="compact-toggle" id="compact-toggle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+          Компактный вид
+        </button>
+        <select class="sidebar-filter" id="sidebar-filter">
+          <option value="all">Все вопросы</option>
+          <option value="popular">Популярные</option>
+          <option value="learned">Изучено</option>
+          <option value="repeat">Нужно повторить</option>
+          <option value="none">Без статуса</option>
+        </select>
+        <nav class="sidebar-tree" id="sidebar-tree"></nav>
+      </aside>
 
-    <!-- Контент -->
-    <main class="main-content" id="main-content">
-      <div id="loading" class="loading">
-        <div class="loading-spinner"></div>
-        <p>Загрузка вопросов...</p>
-      </div>
-
-      <div id="question-view" style="display:none;">
-        <!-- Крошки -->
-        <div class="breadcrumb" id="breadcrumb"></div>
-
-        <!-- Бейджи -->
-        <div class="question-grade" id="question-grade"></div>
-
-        <!-- Заголовок вопроса -->
-        <h1 class="question-title" id="question-title"></h1>
-        <p class="question-subtitle" id="question-subtitle"></p>
-
-        <!-- Статус -->
-        <div class="status-bar" id="status-bar">
-          <span class="status-label">Отметить:</span>
-          <button class="status-btn status-btn-repeat" id="status-repeat" title="Нужно повторить">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-          <button class="status-btn status-btn-learned" id="status-learned" title="Изучено">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          </button>
+      <!-- Контент -->
+      <main class="main-content" id="main-content">
+        <div id="loading" class="loading">
+          <div class="loading-spinner"></div>
+          <p>Загрузка вопросов...</p>
         </div>
 
-        <!-- Объяснение -->
-        <div class="explanation-section">
-          <div class="explanation-header" id="explanation-header">
-            <span class="explanation-label">Объяснение</span>
-            <button class="expand-btn" id="expand-btn">Развернуть <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div id="question-view" style="display:none;">
+          <!-- Крошки -->
+          <div class="breadcrumb" id="breadcrumb"></div>
+
+          <!-- Бейджи -->
+          <div class="question-grade" id="question-grade"></div>
+
+          <!-- Заголовок вопроса -->
+          <h1 class="question-title" id="question-title"></h1>
+          <p class="question-subtitle" id="question-subtitle"></p>
+
+          <!-- Статус -->
+          <div class="status-bar" id="status-bar">
+            <span class="status-label">Отметить:</span>
+            <button class="status-btn status-btn-repeat" id="status-repeat" title="Нужно повторить">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <button class="status-btn status-btn-learned" id="status-learned" title="Изучено">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </button>
           </div>
-          <div class="explanation-content" id="explanation-content"></div>
+
+          <!-- Объяснение -->
+          <div class="explanation-section">
+            <div class="explanation-header" id="explanation-header">
+              <span class="explanation-label">Объяснение</span>
+              <button class="expand-btn" id="expand-btn">Развернуть <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            </div>
+            <div class="explanation-content" id="explanation-content"></div>
+          </div>
+
+          <!-- Навигация -->
+          <div class="question-nav">
+            <button class="nav-btn nav-prev" id="btn-prev">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              <span>Предыдущий</span>
+            </button>
+            <button class="nav-btn nav-next" id="btn-next">
+              <span>Следующий</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
         </div>
 
-        <!-- Навигация -->
-        <div class="question-nav">
-          <button class="nav-btn nav-prev" id="btn-prev">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-            <span>Предыдущий</span>
-          </button>
-          <button class="nav-btn nav-next" id="btn-next">
-            <span>Следующий</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
+        <!-- Экран приветствия -->
+        <div id="welcome-screen" style="display:none;">
+          <div class="welcome-inner">
+            <h2>Выберите вопрос</h2>
+            <p>Откройте категорию в боковой панели и выберите вопрос для изучения.</p>
+          </div>
         </div>
-      </div>
+      </main>
+    </div>
 
-      <!-- Экран приветствия -->
-      <div id="welcome-screen" style="display:none;">
-        <div class="welcome-inner">
-          <h2>Выберите вопрос</h2>
-          <p>Откройте категорию в боковой панели и выберите вопрос для изучения.</p>
-        </div>
-      </div>
-    </main>
-  </div>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" title="Вернуться наверх">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="18 15 12 9 6 15"/>
+      </svg>
+    </button>
 
 <script src="script.js"></script>
 </body>

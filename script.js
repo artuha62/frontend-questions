@@ -708,3 +708,28 @@ function escapeHtml(text) {
   const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
   return text.replace(/[&<>"']/g, m => map[m]);
 }
+
+// Scroll to Top Button
+(function setupScrollToTop() {
+  const scrollBtn = document.getElementById('scroll-to-top');
+  const mainContent = document.getElementById('main-content');
+  
+  if (!scrollBtn || !mainContent) return;
+
+  // Show/hide button based on scroll position
+  mainContent.addEventListener('scroll', () => {
+    if (mainContent.scrollTop > 200) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  scrollBtn.addEventListener('click', () => {
+    mainContent.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();
