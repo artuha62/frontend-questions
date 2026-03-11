@@ -36,7 +36,6 @@ html, body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-inline: 40px;
   max-width: var(--content-max-width);
   margin-inline: auto;
   background: var(--bg);
@@ -83,7 +82,7 @@ html, body {
   outline: none;
   color: var(--text);
   font-family: inherit;
-  font-size: 13px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -893,7 +892,6 @@ strong { color: var(--text); }
   .mobile-drawer-toggle { padding: 6px 10px; font-size: 12px; }
   .mobile-drawer-toggle svg { width: 18px; height: 18px; }
   .topbar-search { font-size: 12px; }
-  .topbar-search input { font-size: 12px; }
   .question-title { font-size: 20px; }
   .sidebar { width: 90%; max-width: 300px; }
   .sidebar-title { font-size: 16px; }
