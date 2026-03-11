@@ -171,7 +171,7 @@ function buildSubcatGroup(subcat) {
   const subGroup = document.createElement('div');
   subGroup.className = 'cat-group';
   subGroup.innerHTML = `<div class="subcat-header">
-    <span class="arrow">&#9654;</span>
+    <span class="arrow">&#9654;&#xFE0E;</span>
     <span class="subcat-title">${subcat.name}</span>
     <span class="cat-count">${subcat.questions.length}</span>
   </div>`;
@@ -198,7 +198,7 @@ function buildSidebar() {
     catGroup.className = 'main-cat-group';
 
     catGroup.innerHTML = `<div class="main-cat-header">
-      <span class="arrow">&#9654;</span>
+      <span class="arrow">&#9654;&#xFE0E;</span>
       <span class="main-cat-title">${cat.name}</span>
       <span class="cat-count">${catTotalQ}</span>
     </div>`;
@@ -211,7 +211,7 @@ function buildSidebar() {
       topicGroup.className = 'cat-group';
 
       topicGroup.innerHTML = `<div class="cat-header">
-        <span class="arrow">&#9654;</span>
+        <span class="arrow">&#9654;&#xFE0E;</span>
         <span class="cat-title">${topic.name}</span>
         <span class="cat-count">${topicTotalQ}</span>
       </div>`;
@@ -228,7 +228,7 @@ function buildSidebar() {
           const stGroup = document.createElement('div');
           stGroup.className = 'subtopic-group';
           stGroup.innerHTML = `<div class="subtopic-header">
-            <span class="arrow">&#9654;</span>
+            <span class="arrow">&#9654;&#xFE0E;</span>
             <span class="subtopic-title">${st.name}</span>
             <span class="cat-count">${stTotalQ}</span>
           </div>`;
@@ -763,7 +763,7 @@ function setupScrollToTop() {
   if (!scrollBtn || !mainContent) return;
 
   mainContent.addEventListener('scroll', () => {
-    if (mainContent.scrollTop > 350) {
+    if (mainContent.scrollTop > 300) {
       scrollBtn.classList.add('visible');
     } else {
       scrollBtn.classList.remove('visible');
