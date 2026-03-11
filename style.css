@@ -23,7 +23,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box;-webkit-tap-highlight-color: transparent; }
 
 html, body {
-  height: 100%;
+  height: 100dvh;
   font-family: "Onest", sans-serif;
   background: var(--bg);
   color: var(--text);
