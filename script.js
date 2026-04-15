@@ -1,6 +1,7 @@
 const BASE_URL = '/frontend-questions';
 
-// Состояние приложения
+// ─── Состояние ───────────────────────────────────────────────────────────────
+
 let manifest = null;
 let allQuestions = [];
 let categoryTree = [];
@@ -8,7 +9,26 @@ let activeQuestion = null;
 let questionStatuses = {};
 let currentFilter = 'all';
 
-// localStorage (статусы вопросов)
+// ─── Кэш DOM-элементов (заполняется один раз в cacheDom) ─────────────────────
+
+const DOM = {};
+
+function cacheDom() {
+  [
+    'loading', 'question-view', 'welcome-screen', 'breadcrumb', 'question-grade',
+    'question-title', 'question-subtitle', 'explanation-content', 'expand-btn',
+    'explanation-header', 'main-content', 'sidebar-tree', 'sidebar', 'sidebar-filter',
+    'search-input', 'search-results', 'btn-prev', 'btn-next', 'scroll-to-top',
+    'status-repeat', 'status-learned', 'status-repeat-bottom', 'status-learned-bottom',
+    'compact-toggle', 'drawer-overlay', 'mobile-drawer-toggle', 'drawer-close'
+  ].forEach(id => { DOM[id] = document.getElementById(id); });
+
+  // Единственный querySelector — закэшируем тоже
+  DOM['explanation-section'] = document.querySelector('.explanation-section');
+}
+
+// ─── localStorage ─────────────────────────────────────────────────────────────
+
 const LS_KEY = 'questions_statuses';
 
 function loadStatuses() {
@@ -35,14 +55,15 @@ function setStatus(questionId, status) {
   saveStatuses();
 }
 
-// Инициализация и загрузка данных
+// ─── Инициализация ────────────────────────────────────────────────────────────
+
 window.addEventListener('DOMContentLoaded', init);
 
 async function init() {
   loadStatuses();
+  cacheDom(); // <-- кэшируем DOM до всего остального
   hljs.configure({ ignoreUnescapedHTML: true });
 
-  // Инициализируем drawer до загрузки данных
   setupMobileDrawer();
   setupScrollToTop();
 
@@ -56,7 +77,7 @@ async function init() {
           allPromises.push(
             fetch(`${BASE_URL}/${file}`)
               .then(r => r.json())
-              .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: null, data }))
+              .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: null, fileName: file, data }))
           );
         });
         if (topic.subtopics) {
@@ -65,7 +86,7 @@ async function init() {
               allPromises.push(
                 fetch(`${BASE_URL}/${file}`)
                   .then(r => r.json())
-                  .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: sub.name, data }))
+                  .then(data => ({ categoryName: cat.name, topicName: topic.name, subtopicName: sub.name, fileName: file, data }))
               );
             });
           });
@@ -75,9 +96,10 @@ async function init() {
 
     const results = await Promise.all(allPromises);
     buildQuestionIndex(results);
+    buildQuestionById(); // O(1)-индекс для prev/next навигации
     buildSidebar();
 
-    document.getElementById('loading').style.display = 'none';
+    DOM['loading'].style.display = 'none';
 
     setupSearch();
     setupCompactToggle();
@@ -85,18 +107,23 @@ async function init() {
     setupStatusButtons();
     setupFilter();
 
-    if (allQuestions.length > 0) {
+    const savedIdx = parseInt(localStorage.getItem('active_question_idx'), 10);
+
+    if (!isNaN(savedIdx) && allQuestions[savedIdx]) {
+      showQuestion(savedIdx);
+    }  else if (allQuestions.length > 0) {
       showQuestion(0);
     } else {
-      document.getElementById('welcome-screen').style.display = 'block';
+      DOM['welcome-screen'].style.display = 'block';
     }
   } catch (err) {
     console.error('Ошибка загрузки:', err);
-    document.getElementById('loading').innerHTML = '<p style="color:#e57373;">Ошибка загрузки данных</p>';
+    DOM['loading'].innerHTML = '<p style="color:#e57373;">Ошибка загрузки данных</p>';
   }
 }
 
-// Построение индекса и дерева
+// ─── Построение индекса ───────────────────────────────────────────────────────
+
 function buildQuestionIndex(results) {
   allQuestions = [];
 
@@ -105,25 +132,37 @@ function buildQuestionIndex(results) {
     const topicMap = new Map();
     cat.topics.forEach(t => {
       const subtopicNames = (t.subtopics || []).map(s => s.name);
-      topicMap.set(t.name, { direct: new Map(), subtopics: new Map(subtopicNames.map(n => [n, new Map()])) });
+      topicMap.set(t.name, {
+        direct: new Map(),
+        subtopics: new Map(subtopicNames.map(n => [n, new Map()]))
+      });
     });
     catMap.set(cat.name, topicMap);
   });
 
-  results.forEach(({ categoryName, topicName, subtopicName, data }) => {
-    const topicData = catMap.get(categoryName).get(topicName);
-    const targetMap = subtopicName ? topicData.subtopics.get(subtopicName) : topicData.direct;
-    data.questions.forEach(q => {
-      const c = q.current || q;
-      const cat = c.category || data.category;
-      if (!cat) return;
-      const subcatTitle = cat.title;
+  results.forEach(({ categoryName, topicName, subtopicName, fileName, data }) => {
+    const topicData = catMap.get(categoryName)?.get(topicName);
+    if (!topicData) return;
 
+    const targetMap = subtopicName
+      ? topicData.subtopics.get(subtopicName)
+      : topicData.direct;
+
+    if (!targetMap) return;
+
+    const subcatTitle = fileName
+      .split('/')
+      .pop()
+      .replace(/\.json$/, '')
+      .replace(/^\d+_/, '')
+      .replace(/_/g, ' ');
+
+    (data.questions || []).forEach(q => {
       const entry = {
         globalIdx: allQuestions.length,
-        current: c,
+        current:  q.current  || q,
         previous: q.previous || null,
-        next: q.next || null,
+        next:     q.next     || null,
         categoryName,
         topicName,
         subtopicName,
@@ -156,7 +195,8 @@ function buildQuestionIndex(results) {
   });
 }
 
-// Сайдбар
+// ─── Сайдбар (DocumentFragment — один reflow) ────────────────────────────────
+
 function countQuestions(topic) {
   let total = topic.subcategories.reduce((s, sc) => s + sc.questions.length, 0);
   if (topic.subtopics) {
@@ -177,9 +217,12 @@ function buildSubcatGroup(subcat) {
   </div>`;
   const subChildren = document.createElement('div');
   subChildren.className = 'subcat-children';
-  subcat.questions.forEach(entry => {
-    subChildren.appendChild(createSidebarQuestion(entry));
-  });
+
+  // Собираем вопросы через фрагмент
+  const frag = document.createDocumentFragment();
+  subcat.questions.forEach(entry => frag.appendChild(createSidebarQuestion(entry)));
+  subChildren.appendChild(frag);
+
   subGroup.appendChild(subChildren);
   subGroup.querySelector('.subcat-header').addEventListener('click', () => {
     subGroup.querySelector('.arrow').classList.toggle('open');
@@ -189,14 +232,13 @@ function buildSubcatGroup(subcat) {
 }
 
 function buildSidebar() {
-  const tree = document.getElementById('sidebar-tree');
-  tree.innerHTML = '';
+  const tree = DOM['sidebar-tree'];
+  const rootFrag = document.createDocumentFragment(); // один reflow для всего дерева
 
   categoryTree.forEach(cat => {
     const catTotalQ = cat.topics.reduce((s, t) => s + countQuestions(t), 0);
     const catGroup = document.createElement('div');
     catGroup.className = 'main-cat-group';
-
     catGroup.innerHTML = `<div class="main-cat-header">
       <span class="arrow">&#9654;&#xFE0E;</span>
       <span class="main-cat-title">${cat.name}</span>
@@ -209,7 +251,6 @@ function buildSidebar() {
       const topicTotalQ = countQuestions(topic);
       const topicGroup = document.createElement('div');
       topicGroup.className = 'cat-group';
-
       topicGroup.innerHTML = `<div class="cat-header">
         <span class="arrow">&#9654;&#xFE0E;</span>
         <span class="cat-title">${topic.name}</span>
@@ -218,9 +259,7 @@ function buildSidebar() {
       const topicChildren = document.createElement('div');
       topicChildren.className = 'cat-children';
 
-      topic.subcategories.forEach(subcat => {
-        topicChildren.appendChild(buildSubcatGroup(subcat));
-      });
+      topic.subcategories.forEach(subcat => topicChildren.appendChild(buildSubcatGroup(subcat)));
 
       if (topic.subtopics) {
         topic.subtopics.forEach(st => {
@@ -234,9 +273,7 @@ function buildSidebar() {
           </div>`;
           const stChildren = document.createElement('div');
           stChildren.className = 'subtopic-children';
-          st.subcategories.forEach(subcat => {
-            stChildren.appendChild(buildSubcatGroup(subcat));
-          });
+          st.subcategories.forEach(subcat => stChildren.appendChild(buildSubcatGroup(subcat)));
           stGroup.appendChild(stChildren);
           stGroup.querySelector('.subtopic-header').addEventListener('click', () => {
             stGroup.querySelector('.arrow').classList.toggle('open');
@@ -251,7 +288,6 @@ function buildSidebar() {
         topicGroup.querySelector('.arrow').classList.toggle('open');
         topicChildren.classList.toggle('open');
       });
-
       catChildren.appendChild(topicGroup);
     });
 
@@ -261,8 +297,11 @@ function buildSidebar() {
       catChildren.classList.toggle('open');
     });
 
-    tree.appendChild(catGroup);
+    rootFrag.appendChild(catGroup);
   });
+
+  tree.innerHTML = '';
+  tree.appendChild(rootFrag); // единственный reflow
 }
 
 function createSidebarQuestion(entry) {
@@ -276,24 +315,19 @@ function createSidebarQuestion(entry) {
   const gradeHtml = grade
     ? `<span class="sq-grade sq-grade-${grade}">${gradeLabels[grade] || grade}</span>`
     : '';
-  const popularHtml = entry.current.isPopular
-    ? `<span class="sq-popular">★ популярный</span>`
-    : '';
+  const popularHtml = entry.current.isPopular ? `<span class="sq-popular">★ популярный</span>` : '';
 
   if (entry.current.isPopular) div.dataset.popular = '1';
 
   const status = getStatus(entry.current.id);
   const dotClass = status ? `status-${status}` : '';
-
   const metaHtml = (gradeHtml || popularHtml) ? `<span class="sq-meta">${gradeHtml}${popularHtml}</span>` : '';
+
   div.innerHTML = `<span class="sq-dot ${dotClass}"></span><span class="sq-info"><span class="sq-title">${entry.current.title}</span>${metaHtml}</span>`;
 
   div.addEventListener('click', () => {
     showQuestion(entry.globalIdx);
-    // Закрываем дровер на мобилке после выбора вопроса
-    if (window.innerWidth <= 768) {
-      closeDrawer();
-    }
+    if (window.innerWidth <= 768) closeDrawer();
   });
 
   return div;
@@ -307,211 +341,274 @@ function updateSidebarDot(questionId) {
   });
 }
 
-// Фильтрация
+// ─── Фильтрация (через requestAnimationFrame) ─────────────────────────────────
+
 function applyFilter() {
-  document.querySelectorAll('.sidebar-question').forEach(el => {
-    const qid = el.dataset.qid;
-    const status = getStatus(Number(qid));
-    let show = true;
-    if (currentFilter === 'learned') show = status === 'learned';
-    else if (currentFilter === 'repeat') show = status === 'repeat';
-    else if (currentFilter === 'none') show = !status;
-    else if (currentFilter === 'popular') show = el.dataset.popular === '1';
-    el.style.display = show ? '' : 'none';
-  });
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.sidebar-question').forEach(el => {
+      const status = getStatus(Number(el.dataset.qid));
+      let show = true;
+      if      (currentFilter === 'learned') show = status === 'learned';
+      else if (currentFilter === 'repeat')  show = status === 'repeat';
+      else if (currentFilter === 'none')    show = !status;
+      else if (currentFilter === 'popular') show = el.dataset.popular === '1';
+      el.style.display = show ? '' : 'none';
+    });
 
-  document.querySelectorAll('.subcat-children').forEach(container => {
-    const hasVisible = container.querySelector('.sidebar-question:not([style*="display: none"])');
-    const subGroup = container.closest('.cat-group');
-    if (subGroup && subGroup.querySelector('.subcat-header')) {
-      subGroup.style.display = hasVisible ? '' : 'none';
-    }
-  });
+    document.querySelectorAll('.subcat-children').forEach(container => {
+      const hasVisible = container.querySelector('.sidebar-question:not([style*="display: none"])');
+      const subGroup = container.closest('.cat-group');
+      if (subGroup?.querySelector('.subcat-header')) {
+        subGroup.style.display = hasVisible ? '' : 'none';
+      }
+    });
 
-  document.querySelectorAll('.subtopic-group').forEach(stGroup => {
-    const stChildren = stGroup.querySelector('.subtopic-children');
-    if (!stChildren) return;
-    const hasVisible = stChildren.querySelector('.cat-group:not([style*="display: none"])');
-    stGroup.style.display = hasVisible ? '' : 'none';
-  });
+    document.querySelectorAll('.subtopic-group').forEach(stGroup => {
+      const stChildren = stGroup.querySelector('.subtopic-children');
+      if (!stChildren) return;
+      const hasVisible = stChildren.querySelector('.cat-group:not([style*="display: none"])');
+      stGroup.style.display = hasVisible ? '' : 'none';
+    });
 
-  document.querySelectorAll('.cat-children').forEach(container => {
-    const topicGroup = container.closest('.cat-group');
-    if (!topicGroup || !topicGroup.querySelector('.cat-header')) return;
-    const hasVisibleSub = container.querySelector('.cat-group:not([style*="display: none"]), .subtopic-group:not([style*="display: none"])');
-    topicGroup.style.display = hasVisibleSub ? '' : 'none';
-  });
+    document.querySelectorAll('.cat-children').forEach(container => {
+      const topicGroup = container.closest('.cat-group');
+      if (!topicGroup?.querySelector('.cat-header')) return;
+      const hasVisibleSub = container.querySelector('.cat-group:not([style*="display: none"]), .subtopic-group:not([style*="display: none"])');
+      topicGroup.style.display = hasVisibleSub ? '' : 'none';
+    });
 
-  document.querySelectorAll('.main-cat-group').forEach(mainGroup => {
-    const children = mainGroup.querySelector('.main-cat-children');
-    if (!children) return;
-    const hasVisibleTopic = children.querySelector('.cat-group:not([style*="display: none"])');
-    mainGroup.style.display = hasVisibleTopic ? '' : 'none';
+    document.querySelectorAll('.main-cat-group').forEach(mainGroup => {
+      const children = mainGroup.querySelector('.main-cat-children');
+      if (!children) return;
+      const hasVisibleTopic = children.querySelector('.cat-group:not([style*="display: none"])');
+      mainGroup.style.display = hasVisibleTopic ? '' : 'none';
+    });
   });
 }
 
-// Отображение вопроса
+// ─── Мемоизация HTML объяснений ───────────────────────────────────────────────
+
+const explanationCache = new Map();
+const subtitleCache = new Map();
+
+function getExplanationHtml(entry) {
+  const id = entry.current.id;
+  if (explanationCache.has(id)) return explanationCache.get(id);
+  let html = '';
+  if (entry.current.explanation) {
+    try { html = extractTextFromJSON(JSON.parse(entry.current.explanation)); }
+    catch(e) { html = entry.current.explanation; }
+  }
+  explanationCache.set(id, html);
+  return html;
+}
+
+function getSubtitleText(entry) {
+  const id = entry.current.id;
+  if (subtitleCache.has(id)) return subtitleCache.get(id);
+  let text = '';
+  if (entry.current.text) {
+    try { text = plainTextFromJSON(JSON.parse(entry.current.text)); }
+    catch(e) { text = entry.current.text; }
+  }
+  subtitleCache.set(id, text);
+  return text;
+}
+
+// Открытие сайдбара при обновлении страницы
+function expandSidebarToActive(globalIdx) {
+  const el = document.querySelector(`.sidebar-question[data-idx="${globalIdx}"]`);
+  if (!el) return;
+
+  let parent = el.parentElement;
+
+  while (parent) {
+    // раскрываем контейнеры
+    if (parent.classList.contains('subcat-children') ||
+      parent.classList.contains('cat-children') ||
+      parent.classList.contains('subtopic-children') ||
+      parent.classList.contains('main-cat-children')) {
+      parent.classList.add('open');
+    }
+
+    // крутим стрелки
+    const group =
+      parent.closest('.cat-group') ||
+      parent.closest('.subtopic-group') ||
+      parent.closest('.main-cat-group');
+
+    if (group) {
+      const arrow = group.querySelector('.arrow');
+      if (arrow) arrow.classList.add('open');
+    }
+
+    parent = parent.parentElement;
+  }
+}
+
+// ─── Отображение вопроса ──────────────────────────────────────────────────────
+
+const gradeLabels = { trainee: 'Легкий', junior: 'Junior', middle: 'Middle', senior: 'Senior' };
+
 function showQuestion(globalIdx) {
   const entry = allQuestions[globalIdx];
   if (!entry) return;
+
+  localStorage.setItem('active_question_idx', globalIdx);
+
   activeQuestion = entry;
 
-  document.getElementById('welcome-screen').style.display = 'none';
-  document.getElementById('question-view').style.display = 'block';
+  DOM['welcome-screen'].style.display = 'none';
+  DOM['question-view'].style.display = 'block';
 
   // Breadcrumb
-  const bc = document.getElementById('breadcrumb');
   let bcHtml = `<span>${entry.categoryName}</span><span class="bc-sep">&gt;</span><span>${entry.topicName}</span>`;
   if (entry.subtopicName) bcHtml += `<span class="bc-sep">&gt;</span><span>${entry.subtopicName}</span>`;
   if (entry.subcatTitle !== entry.topicName && entry.subcatTitle !== entry.subtopicName) {
     bcHtml += `<span class="bc-sep">&gt;</span><span>${entry.subcatTitle}</span>`;
   }
-  bc.innerHTML = bcHtml;
+  DOM['breadcrumb'].innerHTML = bcHtml;
 
-  const gradeEl = document.getElementById('question-grade');
-  const labels = { trainee: 'Легкий', junior: 'Junior', middle: 'Middle', senior: 'Senior' };
+  // Бейджи
   let badgesHtml = '';
-  if (entry.current.grade) {
-    badgesHtml += `<span class="grade-badge grade-${entry.current.grade}">${labels[entry.current.grade] || entry.current.grade}</span>`;
-  }
-  if (entry.current.isPopular) {
-    badgesHtml += `<span class="grade-badge popular-badge">★ популярный</span>`;
-  }
-  gradeEl.innerHTML = badgesHtml;
+  if (entry.current.grade)     badgesHtml += `<span class="grade-badge grade-${entry.current.grade}">${gradeLabels[entry.current.grade] || entry.current.grade}</span>`;
+  if (entry.current.isPopular) badgesHtml += `<span class="grade-badge popular-badge">★ популярный</span>`;
+  DOM['question-grade'].innerHTML = badgesHtml;
 
-  document.getElementById('question-title').textContent = entry.current.title;
-
-  let subtitleText = '';
-  if (entry.current.text) {
-    try {
-      const parsed = JSON.parse(entry.current.text);
-      subtitleText = plainTextFromJSON(parsed);
-    } catch(e) { subtitleText = entry.current.text; }
-  }
-  document.getElementById('question-subtitle').textContent = subtitleText;
+  DOM['question-title'].textContent    = entry.current.title;
+  DOM['question-subtitle'].textContent = getSubtitleText(entry); // мемоизовано
 
   updateStatusButtonsUI(entry.current.id);
 
-  const explanationEl = document.getElementById('explanation-content');
-  const expandBtn = document.getElementById('expand-btn');
+  // Объяснение — сбрасываем состояние
+  const expandBtn = DOM['expand-btn'];
+  const explanationEl = DOM['explanation-content'];
   expandBtn.classList.remove('open');
   explanationEl.classList.remove('open');
   expandBtn.innerHTML = 'Развернуть <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
 
-  if (entry.current.explanation) {
-    try {
-      const expData = JSON.parse(entry.current.explanation);
-      explanationEl.innerHTML = extractTextFromJSON(expData);
-    } catch(e) {
-      explanationEl.innerHTML = entry.current.explanation;
-    }
-    document.querySelector('.explanation-section').style.display = '';
+  const html = getExplanationHtml(entry); // мемоизовано
+  if (html) {
+    explanationEl.innerHTML = html;
+    DOM['explanation-section'].style.display = '';
   } else {
-    document.querySelector('.explanation-section').style.display = 'none';
+    DOM['explanation-section'].style.display = 'none';
   }
 
-  // Prev/Next
   setupNavButtons(entry);
 
-  // Highlight sidebar
+  // Активный элемент в сайдбаре
   document.querySelectorAll('.sidebar-question').forEach(el => el.classList.remove('active'));
   const activeEl = document.querySelector(`.sidebar-question[data-idx="${globalIdx}"]`);
+
+  expandSidebarToActive(globalIdx);
+
   if (activeEl) {
     activeEl.classList.add('active');
-    if (activeEl.offsetParent) {
-      activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-    }
+    if (activeEl.offsetParent) activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 
-  // Highlight code
+  // Подсветка кода только если объяснение открыто
   setTimeout(() => {
-    document.querySelectorAll('.explanation-content pre code').forEach(block => {
+    DOM['explanation-content'].querySelectorAll('pre code').forEach(block => {
       hljs.highlightElement(block);
     });
   }, 50);
 
-  document.getElementById('main-content').scrollTo(0, 0);
+  DOM['main-content'].scrollTo(0, 0);
 }
 
-// Статус-кнопки
-function setupStatusButtons() {
-  document.getElementById('status-repeat').addEventListener('click', () => {
-    if (!activeQuestion) return;
-    setStatus(activeQuestion.current.id, 'repeat');
-    updateStatusButtonsUI(activeQuestion.current.id);
-    updateSidebarDot(activeQuestion.current.id);
-  });
+// ─── Статус-кнопки ────────────────────────────────────────────────────────────
 
-  document.getElementById('status-learned').addEventListener('click', () => {
+function setupStatusButtons() {
+  const handle = (status) => {
     if (!activeQuestion) return;
-    setStatus(activeQuestion.current.id, 'learned');
+    setStatus(activeQuestion.current.id, status);
     updateStatusButtonsUI(activeQuestion.current.id);
     updateSidebarDot(activeQuestion.current.id);
-  });
+  };
+
+  ['status-repeat', 'status-repeat-bottom'].forEach(id =>
+    DOM[id].addEventListener('click', () => handle('repeat'))
+  );
+  ['status-learned', 'status-learned-bottom'].forEach(id =>
+    DOM[id].addEventListener('click', () => handle('learned'))
+  );
 }
 
 function updateStatusButtonsUI(questionId) {
   const status = getStatus(questionId);
-  const repeatBtn = document.getElementById('status-repeat');
-  const learnedBtn = document.getElementById('status-learned');
-  repeatBtn.classList.toggle('active', status === 'repeat');
-  learnedBtn.classList.toggle('active', status === 'learned');
+  ['repeat', 'learned'].forEach(s => {
+    [`status-${s}`, `status-${s}-bottom`].forEach(id => {
+      DOM[id]?.classList.toggle('active', status === s);
+    });
+  });
 }
 
-// Навигация
+// ─── Навигация ────────────────────────────────────────────────────────────────
+
+// Индекс по id для быстрого поиска prev/next (O(1) вместо O(n))
+const questionById = new Map();
+
+function buildQuestionById() {
+  allQuestions.forEach(entry => questionById.set(entry.current.id, entry));
+}
+
 function setupNavButtons(entry) {
-  const btnPrev = document.getElementById('btn-prev');
-  const btnNext = document.getElementById('btn-next');
+  const btnPrev = DOM['btn-prev'];
+  const btnNext = DOM['btn-next'];
 
   let prevGlobal = entry.globalIdx > 0 ? entry.globalIdx - 1 : null;
   let nextGlobal = entry.globalIdx < allQuestions.length - 1 ? entry.globalIdx + 1 : null;
 
   if (entry.previous) {
-    const found = allQuestions.find(q => q.current.id === entry.previous.id);
+    const found = questionById.get(entry.previous.id);
     if (found) prevGlobal = found.globalIdx;
   }
   if (entry.next) {
-    const found = allQuestions.find(q => q.current.id === entry.next.id);
+    const found = questionById.get(entry.next.id);
     if (found) nextGlobal = found.globalIdx;
   }
 
-  btnPrev.disabled = prevGlobal === null || prevGlobal === undefined;
-  btnNext.disabled = nextGlobal === null || nextGlobal === undefined;
+  btnPrev.disabled = prevGlobal == null;
+  btnNext.disabled = nextGlobal == null;
 
   btnPrev.onclick = () => { if (prevGlobal != null) showQuestion(prevGlobal); };
   btnNext.onclick = () => { if (nextGlobal != null) showQuestion(nextGlobal); };
 }
 
-// Развернуть/свернуть объяснение
+// ─── Развернуть/свернуть объяснение ──────────────────────────────────────────
+
 function setupExpandBtn() {
-  const header = document.getElementById('explanation-header');
-  const btn = document.getElementById('expand-btn');
-  const content = document.getElementById('explanation-content');
+  const btn     = DOM['expand-btn'];
+  const content = DOM['explanation-content'];
+  const svgDown = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
 
-  const toggle = () => {
-    btn.classList.toggle('open');
-    content.classList.toggle('open');
-    if (content.classList.contains('open')) {
-      btn.innerHTML = 'Свернуть <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+  DOM['explanation-header'].addEventListener('click', () => {
+    const isOpen = content.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.innerHTML = (isOpen ? 'Свернуть ' : 'Развернуть ') + svgDown;
+
+    if (isOpen) {
       setTimeout(() => {
-        content.querySelectorAll('pre code').forEach(block => {
-          hljs.highlightElement(block);
-        });
+        content.querySelectorAll('pre code').forEach(block => hljs.highlightElement(block));
       }, 50);
-    } else {
-      btn.innerHTML = 'Развернуть <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
     }
-  };
-
-  header.addEventListener('click', toggle);
+  });
 }
 
-// Поиск
-function setupSearch() {
-  const input = document.getElementById('search-input');
-  const results = document.getElementById('search-results');
+// ─── Поиск (с дебаунсом) ─────────────────────────────────────────────────────
 
-  input.addEventListener('input', () => {
+function debounce(fn, delay = 350) {
+  let timer;
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), delay); };
+}
+
+function setupSearch() {
+  const input   = DOM['search-input'];
+  const results = DOM['search-results'];
+
+  const handleInput = debounce(() => {
     const query = input.value.trim().toLowerCase();
     if (query.length < 2) {
       results.classList.remove('active');
@@ -545,12 +642,12 @@ function setupSearch() {
         results.classList.remove('active');
       });
     });
-  });
+  }, 200);
+
+  input.addEventListener('input', handleInput);
 
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.topbar')) {
-      results.classList.remove('active');
-    }
+    if (!e.target.closest('.topbar')) results.classList.remove('active');
   });
 }
 
@@ -562,25 +659,24 @@ function highlightMatch(text, query) {
     escapeHtml(text.slice(idx + query.length));
 }
 
-// Компактный вид и фильтр setup
+// ─── Компактный вид и фильтр ─────────────────────────────────────────────────
+
 function setupCompactToggle() {
-  const btn = document.getElementById('compact-toggle');
-  const sidebar = document.getElementById('sidebar');
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-    sidebar.classList.toggle('compact');
+  DOM['compact-toggle'].addEventListener('click', () => {
+    DOM['compact-toggle'].classList.toggle('active');
+    DOM['sidebar'].classList.toggle('compact');
   });
 }
 
 function setupFilter() {
-  const select = document.getElementById('sidebar-filter');
-  select.addEventListener('change', () => {
-    currentFilter = select.value;
+  DOM['sidebar-filter'].addEventListener('change', () => {
+    currentFilter = DOM['sidebar-filter'].value;
     applyFilter();
   });
 }
 
-// Парсинг JSON
+// ─── Парсинг JSON → HTML (не тронуто) ────────────────────────────────────────
+
 function extractTextFromJSON(jsonObj) {
   if (!jsonObj) return '';
   let result = '';
@@ -623,8 +719,8 @@ function processBlock(block, inTableCell = false) {
             let text = item.text || '';
             if (item.marks) {
               item.marks.forEach(mark => {
-                if (mark.type === 'bold') text = `<strong>${text}</strong>`;
-                if (mark.type === 'code') text = `<code class="inline-code">${escapeHtml(text)}</code>`;
+                if (mark.type === 'bold')   text = `<strong>${text}</strong>`;
+                if (mark.type === 'code')   text = `<code class="inline-code">${escapeHtml(text)}</code>`;
                 if (mark.type === 'italic') text = `<em>${text}</em>`;
               });
             }
@@ -637,23 +733,23 @@ function processBlock(block, inTableCell = false) {
       result = inTableCell ? result : `<p>${result}</p>`;
       break;
 
-    case 'heading':
+    case 'heading': {
       const level = block.attrs?.level || 1;
       const headingText = block.content?.map(c => c.text).join('') || '';
       result += `<h${Math.min(level + 2, 6)}>${headingText}</h${Math.min(level + 2, 6)}>`;
       break;
+    }
 
-    case 'codeBlock':
+    case 'codeBlock': {
       const lang = block.attrs?.language || 'javascript';
       const code = block.content?.map(c => c.text).join('') || '';
       result += `<pre><code class="language-${lang}">${escapeHtml(code)}</code></pre>`;
       break;
+    }
 
     case 'blockquote':
       result += '<blockquote>';
-      if (block.content) {
-        block.content.forEach(item => { result += processBlock(item); });
-      }
+      if (block.content) block.content.forEach(item => { result += processBlock(item); });
       result += '</blockquote>';
       break;
 
@@ -666,22 +762,21 @@ function processBlock(block, inTableCell = false) {
       break;
 
     case 'bulletList':
-    case 'orderedList':
+    case 'orderedList': {
       const tag = block.type === 'bulletList' ? 'ul' : 'ol';
       result += `<${tag}>`;
       if (block.content) {
         block.content.forEach(item => {
           if (item.type === 'listItem') {
             result += '<li>';
-            if (item.content) {
-              item.content.forEach(subItem => { result += processBlock(subItem); });
-            }
+            if (item.content) item.content.forEach(subItem => { result += processBlock(subItem); });
             result += '</li>';
           }
         });
       }
       result += `</${tag}>`;
       break;
+    }
   }
 
   return result;
@@ -697,17 +792,14 @@ function processTable(tableBlock) {
           const isHeader = rowIndex === 0 && (cell.type === 'tableHeader' || cell.type === 'tableCell');
           const cellTag = isHeader ? 'th' : 'td';
           let cellText = '';
-          if (cell.content) {
-            cell.content.forEach(item => { cellText += processBlock(item, true); });
-          }
+          if (cell.content) cell.content.forEach(item => { cellText += processBlock(item, true); });
           result += `<${cellTag}>${cellText}</${cellTag}>`;
         });
         result += '</tr>';
       }
     });
   }
-  result += '</table>';
-  return result;
+  return result + '</table>';
 }
 
 function escapeHtml(text) {
@@ -715,59 +807,41 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, m => map[m]);
 }
 
-// ─── Mobile Drawer ───────────────────────────────────────────────────────────
-// Выносим closeDrawer в глобальную область, чтобы createSidebarQuestion мог её вызвать
+// ─── Mobile Drawer ────────────────────────────────────────────────────────────
 
 function closeDrawer() {
-  const sidebar = document.getElementById('sidebar');
-  const drawerOverlay = document.getElementById('drawer-overlay');
-  if (!sidebar || !drawerOverlay) return;
-  sidebar.classList.remove('open');
-  drawerOverlay.classList.remove('active');
+  DOM['sidebar'].classList.remove('open');
+  DOM['drawer-overlay'].classList.remove('active');
   document.body.style.overflow = '';
 }
 
 function openDrawer() {
-  const sidebar = document.getElementById('sidebar');
-  const drawerOverlay = document.getElementById('drawer-overlay');
-  if (!sidebar || !drawerOverlay) return;
-  sidebar.classList.add('open');
-  drawerOverlay.classList.add('active');
+  DOM['sidebar'].classList.add('open');
+  DOM['drawer-overlay'].classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 
 function setupMobileDrawer() {
-  const drawerToggle = document.getElementById('mobile-drawer-toggle');
-  const drawerClose = document.getElementById('drawer-close');
-  const drawerOverlay = document.getElementById('drawer-overlay');
+  if (!DOM['mobile-drawer-toggle'] || !DOM['drawer-close'] || !DOM['drawer-overlay']) return;
 
-  if (!drawerToggle || !drawerClose || !drawerOverlay) return;
+  DOM['mobile-drawer-toggle'].addEventListener('click', openDrawer);
+  DOM['drawer-close'].addEventListener('click', closeDrawer);
+  DOM['drawer-overlay'].addEventListener('click', closeDrawer);
 
-  drawerToggle.addEventListener('click', openDrawer);
-  drawerClose.addEventListener('click', closeDrawer);
-  drawerOverlay.addEventListener('click', closeDrawer);
-
-  // Закрываем при ресайзе на десктоп
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      closeDrawer();
-    }
+    if (window.innerWidth > 768) closeDrawer();
   });
 }
 
-// ─── Scroll to Top ───────────────────────────────────────────────────────────
-function setupScrollToTop() {
-  const scrollBtn = document.getElementById('scroll-to-top');
-  const mainContent = document.getElementById('main-content');
+// ─── Scroll to Top ────────────────────────────────────────────────────────────
 
+function setupScrollToTop() {
+  const scrollBtn    = DOM['scroll-to-top'];
+  const mainContent  = DOM['main-content'];
   if (!scrollBtn || !mainContent) return;
 
   mainContent.addEventListener('scroll', () => {
-    if (mainContent.scrollTop > 300) {
-      scrollBtn.classList.add('visible');
-    } else {
-      scrollBtn.classList.remove('visible');
-    }
+    scrollBtn.classList.toggle('visible', mainContent.scrollTop > 300);
   });
 
   scrollBtn.addEventListener('click', () => {
